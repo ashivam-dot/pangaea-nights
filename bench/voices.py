@@ -26,10 +26,9 @@ PASSAGE = [
     "There is no rush here. The tide breathes in, and the tide breathes out. A curtain of tiny drifting creatures "
     "glows for a moment, and then fades, like a thought you no longer need to hold.",
 ]
-KOKORO = ["bm_george", "bm_fable", "bm_lewis", "bm_daniel", "bf_emma", "bf_isabella", "bf_alice", "am_michael",
-          "af_heart", "af_nicole"]
-SPEEDS = [0.85, 0.92]
-REFERENCES = ["bm_george", "bf_emma"]
+KOKORO = ["af_heart", "bf_emma", "bf_isabella", "am_michael", "bm_george", "bm_daniel"]
+SPEEDS = [0.8, 0.85]
+REFERENCES = ["af_heart", "bf_emma"]
 
 
 def score(name: str, audio: np.ndarray, sr: int, seconds: float, out: Path, extra: dict) -> dict:
@@ -59,7 +58,7 @@ def kokoro(out: Path) -> list[dict]:
     refs = out / "refs"
     refs.mkdir(exist_ok=True)
     for v in REFERENCES:
-        take = voice.paragraph(PASSAGE[1], v, 0.92, check=False)
+        take = voice.paragraph(PASSAGE[1], v, 0.85, check=False)
         sf.write(refs / f"{v}.wav", take.audio[: 12 * voice.SR], voice.SR, subtype="PCM_16")
     return rows
 

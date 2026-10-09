@@ -46,7 +46,7 @@ jobs:
       - name: Install
         run: |
           pip install -q --extra-index-url https://download.pytorch.org/whl/cpu torch==2.6.0+cpu torchaudio==2.6.0+cpu
-          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts==0.1.7 faster-whisper soundfile torch==2.6.0+cpu torchaudio==2.6.0+cpu
+          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts==0.1.7 faster-whisper soundfile torch==2.6.0+cpu torchaudio==2.6.0+cpu "setuptools<81"
       - name: Bake-off
         run: python bench/voices.py chatterbox bench-voice kokoro-out/refs
       - uses: actions/upload-artifact@v6

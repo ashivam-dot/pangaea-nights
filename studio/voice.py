@@ -14,9 +14,9 @@ from .speech import speakable, split_sentences
 
 SR = 24000
 VOICE = os.environ.get("PANGAEA_VOICE", "bm_george")
-SPEED = float(os.environ.get("PANGAEA_SPEED", "0.9"))
-SENTENCE_GAP = 0.65
-PARAGRAPH_GAP = 1.7
+SPEED = float(os.environ.get("PANGAEA_SPEED", "0.85"))
+SENTENCE_GAP = 1.05  # Kokoro reads ~180-210 wpm; these pauses bring the whole to ~120 wpm
+PARAGRAPH_GAP = 2.3
 MIN_HEARD = 0.86
 _pipe = None
 _whisper = None
