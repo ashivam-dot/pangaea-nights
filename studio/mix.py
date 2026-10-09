@@ -25,12 +25,13 @@ def _run(args: list[str]) -> str:
 def integrated(path: Path, extra: list[str] | None = None) -> dict:
     """EBU R128 summary: integrated (I), loudness range (LRA), true peak and the loudest momentary value."""
     err = _run(["ffmpeg", "-hide_banner", "-nostats", "-i", str(path), *(extra or []), "-af",
-                "ebur128=peak=true:framelog=verbose", "-f", "null", "-"])
+                "ebur128=peak=true:framelog=info", "-f", "null", "-"])
     moments = [float(m) for m in re.findall(r"\sM:\s*(-?[\d.]+)", err)]
     summary = err[err.rfind("Summary:"):]
     get = lambda key: float(re.search(key + r":\s*(-?[\d.]+)", summary).group(1))  # noqa: E731
-    return {"I": get("I"), "LRA": get("LRA"), "true_peak": get("Peak"),
-            "max_momentary": max(moments) if moments else None}
+    if not moments:
+        raise RuntimeError("ebur128 printed no momentary loudness values")
+    return {"I": get("I"), "LRA": get("LRA"), "true_peak": get("Peak"), "max_momentary": max(moments)}
 
 
 def _gain_to(path: Path, target: float) -> float:
