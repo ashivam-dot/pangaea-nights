@@ -1,0 +1,21 @@
+{
+  "_note": "Nature ambience used under CC0 1.0 or public domain. Each file is re-checked at download time: the Freesound page must link CC0 1.0, the Commons file page must report CC0 or public domain, or the file is skipped and the synthetic bed is used instead.",
+  "ocean": [
+    {"source": "freesound", "id": 176617, "title": "Seawash (calm)", "author": "craiggroshek", "page": "https://freesound.org/people/craiggroshek/sounds/176617/", "url": "https://cdn.freesound.org/previews/176/176617_3278970-hq.mp3", "license": "CC0 1.0"},
+    {"source": "freesound", "id": 463250, "title": "Beach Waves 04", "author": "DylanTheFish", "page": "https://freesound.org/people/DylanTheFish/sounds/463250/", "url": "https://cdn.freesound.org/previews/463/463250_7482766-hq.mp3", "license": "CC0 1.0"},
+    {"source": "commons", "id": "File:Ocean Waves on a Tropical Beach.ogg", "title": "Ocean Waves on a Tropical Beach", "author": "see Wikimedia Commons file page", "page": "https://commons.wikimedia.org/wiki/File:Ocean_Waves_on_a_Tropical_Beach.ogg", "url": "", "license": "CC0 1.0"}
+  ],
+  "underwater": [
+    {"source": "freesound", "id": 393819, "title": "Underwater Ambience", "author": "Kinoton", "page": "https://freesound.org/people/Kinoton/sounds/393819/", "url": "https://cdn.freesound.org/previews/393/393819_2247456-hq.mp3", "license": "CC0 1.0"},
+    {"source": "freesound", "id": 193822, "title": "Deep Sea Ambience", "author": "jhumbucker", "page": "https://freesound.org/people/jhumbucker/sounds/193822/", "url": "https://cdn.freesound.org/previews/193/193822_208303-hq.mp3", "license": "CC0 1.0"}
+  ],
+  "rain": [
+    {"source": "freesound", "id": 466241, "title": "Soft rain on a tile roof", "author": "richwise", "page": "https://freesound.org/people/richwise/sounds/466241/", "url": "https://cdn.freesound.org/previews/466/466241_1481531-hq.mp3", "license": "CC0 1.0"},
+    {"source": "freesound", "id": 417616, "title": "Gentle Rain Mix (2018)", "author": "esh9419", "page": "https://freesound.org/people/esh9419/sounds/417616/", "url": "https://cdn.freesound.org/previews/417/417616_3285887-hq.mp3", "license": "CC0 1.0"},
+    {"source": "freesound", "id": 678435, "title": "Soft Rain in Forest Raindrops fall on leaves", "author": "Borgory", "page": "https://freesound.org/people/Borgory/sounds/678435/", "url": "https://cdn.freesound.org/previews/678/678435_801011-hq.mp3", "license": "CC0 1.0"}
+  ],
+  "wind": [
+    {"source": "freesound", "id": 335889, "title": "Wind Through Trees", "author": "Yoyodaman234", "page": "https://freesound.org/people/Yoyodaman234/sounds/335889/", "url": "https://cdn.freesound.org/previews/335/335889_2792951-hq.mp3", "license": "CC0 1.0"},
+    {"source": "freesound", "id": 183496, "title": "Wind and Leaves", "author": "ecfike", "page": "https://freesound.org/people/ecfike/sounds/183496/", "url": "https://cdn.freesound.org/previews/183/183496_2337290-hq.mp3", "license": "CC0 1.0"}
+  ]
+}
