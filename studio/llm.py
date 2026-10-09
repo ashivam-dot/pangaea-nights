@@ -33,6 +33,20 @@ def _rank(name: str) -> tuple:
     return (tier >= 3, -gen if tier < 3 else 0, tier, preview, n)
 
 
+def _thinking(model: str) -> dict | None:
+    """Keep thinking modest so it cannot eat the output budget: a budget for 2.5 models, a level for 3.x."""
+    n = model.lower()
+    if "gemma" in n:
+        return None
+    m = re.search(r"gemini-(\d+(?:\.\d+)?)", n)
+    gen = float(m.group(1)) if m else 0.0
+    if gen >= 3:
+        return {"thinkingLevel": "low"}
+    if gen >= 2.5:
+        return {"thinkingBudget": 2048}
+    return None
+
+
 class Gemini:
     def __init__(self, key: str | None = None, prefer: str = "quality"):
         self.key = key or os.environ.get("GEMINI_API_KEY", "")
@@ -81,7 +95,7 @@ class Gemini:
         self._window.append((now, tokens))
 
     def generate(self, system: str, prompt: str, schema: dict | None = None, temperature: float = 0.8,
-                 max_tokens: int = 16384, models: list[str] | None = None) -> dict | str:
+                 max_tokens: int = 32768, models: list[str] | None = None) -> dict | str:
         """Text (or parsed JSON when a schema is given) from the best model that still has quota."""
         last = ""
         for model in models or self.models:
@@ -90,6 +104,9 @@ class Gemini:
             gemma = "gemma" in model
             body = {"contents": [{"role": "user", "parts": [{"text": (system + "\n\n" + prompt) if gemma else prompt}]}],
                     "generationConfig": {"temperature": temperature, "maxOutputTokens": max_tokens}}
+            thinking = _thinking(model)
+            if thinking:
+                body["generationConfig"]["thinkingConfig"] = thinking
             if not gemma:
                 body["systemInstruction"] = {"parts": [{"text": system}]}
                 if schema:
@@ -99,11 +116,15 @@ class Gemini:
                 body["contents"][0]["parts"][0]["text"] += ("\n\nReply with JSON only, matching this schema:\n"
                                                             + json.dumps(schema))
             self._pace((len(system) + len(prompt)) // 4 + max_tokens // 4)
+            truncated = 0
             for attempt in range(4):
+                started = time.monotonic()
                 try:
-                    r = self.session.post(f"{BASE}/{model}:generateContent", data=json.dumps(body), timeout=600)
+                    r = self.session.post(f"{BASE}/{model}:generateContent", data=json.dumps(body), timeout=420)
                 except requests.RequestException as e:
                     last = f"{model}: {type(e).__name__}"
+                    print(f"llm: {model.split('/')[-1]} {type(e).__name__} after {time.monotonic() - started:.0f}s",
+                          flush=True)
                     time.sleep(10 * (attempt + 1))
                     continue
                 if r.status_code == 429:
@@ -120,6 +141,10 @@ class Gemini:
                     last = f"{model}: HTTP {r.status_code}"
                     time.sleep(15 * (attempt + 1))
                     continue
+                if r.status_code == 400 and "thinking" in r.text.lower() and \
+                        "thinkingConfig" in body["generationConfig"]:
+                    body["generationConfig"].pop("thinkingConfig")
+                    continue
                 if r.status_code in (400, 404):
                     last = f"{model}: HTTP {r.status_code} {r.text[:200]}"
                     self.exhausted.add(model)
@@ -129,13 +154,24 @@ class Gemini:
                 cand = (d.get("candidates") or [{}])[0]
                 parts = cand.get("content", {}).get("parts", [])
                 text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
+                use = d.get("usageMetadata", {})
+                finish = cand.get("finishReason")
+                print(f"llm: {model.split('/')[-1]} {time.monotonic() - started:.0f}s finish={finish} "
+                      f"in={use.get('promptTokenCount')} out={use.get('candidatesTokenCount')} "
+                      f"thoughts={use.get('thoughtsTokenCount')}", flush=True)
+                if finish == "MAX_TOKENS":
+                    truncated += 1
+                    last = f"{model}: truncated"
+                    if truncated >= 2:
+                        break
+                    continue
                 if not text.strip():
-                    last = f"{model}: empty ({cand.get('finishReason')})"
+                    last = f"{model}: empty ({finish})"
                     continue
                 try:
                     out = parse_json(text) if schema else text
                 except ValueError:
-                    last = f"{model}: unparseable JSON ({cand.get('finishReason')})"
+                    last = f"{model}: unparseable JSON ({finish})"
                     continue
                 if model not in self.used:
                     self.used.append(model)

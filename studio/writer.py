@@ -174,6 +174,8 @@ SOURCES:
             report = gates.chapter_report(paragraphs, src, opening, shape.hedges_per_chapter,
                                           shape.words_per_chapter)
             log.append({"chapter": i + 1, "attempt": attempt + 1, "problems": report.problems})
+            print(f"writer: chapter {i + 1} attempt {attempt + 1}: {sum(len(p.split()) for p in paragraphs)} words, "
+                  f"{len(report.problems)} problems {report.problems[:4]}", flush=True)
             if best is None or len(report.problems) < len(best[1].problems):
                 best = (paragraphs, report, out.get("scenes", []))
             if report.ok:
