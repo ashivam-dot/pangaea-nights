@@ -70,7 +70,10 @@ def _words_value(words: list[str]) -> float | None:
 
 def quantities(text: str) -> list[Quantity]:
     out: list[Quantity] = []
+    consumed = 0  # end of the scale words already read as part of a digit quantity
     for m in _TOKEN.finditer(text):
+        if m.start() < consumed:
+            continue
         if m.group("num"):
             raw = m.group("num")
             prev = text[max(0, m.start() - 1):m.start()]
@@ -83,11 +86,13 @@ def quantities(text: str) -> list[Quantity]:
                 word = after.group(1).lower()
                 value *= SCALES.get(word, UNIT_SCALES.get(word, 1))
                 label = raw + " " + after.group(1)
+                consumed = m.end() + after.end()
                 # 'five hundred million': a digit followed by 'hundred million'
-                more = _SCALE_AFTER.match(text[m.end() + after.end():])
+                more = _SCALE_AFTER.match(text[consumed:])
                 if word == "hundred" and more and more.group(1).lower() in SCALES:
                     value *= SCALES[more.group(1).lower()]
                     label += " " + more.group(1)
+                    consumed += more.end()
             out.append(Quantity(value, label, m.start()))
         else:
             phrase = m.group("word")

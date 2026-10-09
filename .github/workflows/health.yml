@@ -1,0 +1,40 @@
+name: health
+
+on:
+  schedule:
+    - cron: "15 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  uploads:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      PAUSED: ${{ vars.PAUSED }}
+      PANGAEA_STATE: ${{ github.workspace }}/state
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: State branch
+        run: |
+          git fetch --depth 1 origin state
+          git worktree add state FETCH_HEAD
+      - name: Hours since the last upload
+        id: check
+        run: python -m studio.cli health --hours 30
+      - name: Alert
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open=$(gh issue list -R "$GITHUB_REPOSITORY" --label alert --state open --search "No upload" --json number --jq length)
+          if [ "$open" = "0" ]; then
+            gh issue create -R "$GITHUB_REPOSITORY" --label alert --title "No upload in the last 30 hours" \
+              --body "health.yml found no Pangaea Nights upload in the last 30 hours while the channel is not paused."
+          fi
