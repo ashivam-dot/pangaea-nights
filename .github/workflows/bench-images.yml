@@ -1,0 +1,48 @@
+name: bench-images
+# Compare permissively licensed text-to-image models on a standard CPU runner: speed, memory, automatic review.
+on:
+  workflow_dispatch:
+    inputs:
+      candidates:
+        description: "JSON list of candidates from studio/sdcpp.py"
+        type: string
+        default: '["klein4b-q8","klein4b-q8-small-vae","klein4b-q4","klein4b-q8-1344","zimage-q8","zimage-q4k","zimage-q8-6step","qwen2512-q3-lightning4"]'
+
+permissions:
+  contents: read
+
+jobs:
+  bench:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        candidate: ${{ fromJSON(inputs.candidates) }}
+    env:
+      PANGAEA_MODELS: /mnt/models
+      CANDIDATE: ${{ matrix.candidate }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL
+          sudo mkdir -p /mnt/models && sudo chown "$USER" /mnt/models
+          df -h / /mnt; nproc; free -g; lscpu | grep -E "Model name|Flags" | cut -c1-300
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: pip install -q -r requirements/base.txt -r requirements/ml.txt
+      - name: Benchmark
+        run: |
+          n=5
+          case "$CANDIDATE" in qwen*) n=1;; esac
+          python bench/images.py "$CANDIDATE" bench-out "$n"
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: bench-images-${{ matrix.candidate }}
+          path: bench-out
+          retention-days: 14

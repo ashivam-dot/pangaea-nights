@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+work/
+bench-out/
+bench-voice/
+state/
+secrets/
+.env
+*.mp4
+*.wav
+*.flac

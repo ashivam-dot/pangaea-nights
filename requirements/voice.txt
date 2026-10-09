@@ -1,0 +1,4 @@
+kokoro>=0.9.4,<1
+misaki[en]>=0.9.4,<1
+faster-whisper>=1.1,<2
+librosa>=0.10,<1.1

@@ -1,0 +1,56 @@
+name: bench-voice
+# Calm-narrator bake-off on CPU: Kokoro-82M voices (Apache-2.0) and Chatterbox (MIT) cloning a Kokoro reference.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  kokoro:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng > /dev/null
+          pip install -q -r requirements/base.txt -r requirements/ml.txt -r requirements/voice.txt
+      - name: Bake-off
+        run: python bench/voices.py kokoro bench-voice
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: bench-voice-kokoro
+          path: bench-voice
+          retention-days: 14
+
+  chatterbox:
+    needs: kokoro
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - uses: actions/download-artifact@v6
+        with:
+          name: bench-voice-kokoro
+          path: kokoro-out
+      - name: Install
+        run: |
+          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu torch==2.6.0+cpu torchaudio==2.6.0+cpu
+          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts==0.1.7 faster-whisper soundfile torch==2.6.0+cpu torchaudio==2.6.0+cpu
+      - name: Bake-off
+        run: python bench/voices.py chatterbox bench-voice kokoro-out/refs
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: bench-voice-chatterbox
+          path: bench-voice
+          retention-days: 14
