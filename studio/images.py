@@ -52,7 +52,7 @@ def _seed(job_id: str, take: int, episode_id: str) -> int:
     return int(hashlib.sha1(f"{episode_id}:{job_id}:{take}".encode()).hexdigest()[:8], 16) % 2_000_000_000
 
 
-def generate(episode: dict, out: Path, k: int, n: int, budget_s: float = 80 * 60,
+def generate(episode: dict, out: Path, k: int, n: int, budget_s: float = 72 * 60,
              model: str = sdcpp.DEFAULT) -> dict:
     jobs = shard(manifest(episode), k, n)
     out.mkdir(parents=True, exist_ok=True)

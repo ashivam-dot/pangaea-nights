@@ -37,8 +37,9 @@ class Shape:
 
 
 SHAPES = {
-    "full": Shape("full", 14, 1030, (8, 10), 10.0, 8, 2, 5, 15, 5, 15, 2),
-    "short": Shape("short", 2, 560, (6, 6), 1.0, 1, 1, 4, 4, 2, 3, 1),
+    # 18 image + 2 voice runners = the 20 concurrent jobs of a free public repo; at most 8 images per image runner.
+    "full": Shape("full", 14, 1030, (8, 9), 10.0, 6, 2, 4, 18, 2, 15, 2),
+    "short": Shape("short", 2, 560, (6, 6), 1.0, 1, 1, 4, 6, 2, 3, 1),
 }
 
 

@@ -13,8 +13,8 @@ parallel runners.
 | Stage | Job | What it does |
 |---|---|---|
 | Plan and write | `plan` (1) | The planner picks the next topic: never one already published, and never from either of the last two series. It fetches the topic's five Wikipedia articles at pinned revisions. Gemini then writes the outline, 14 chapters (about 14,500 words) and 2 trailers. Each chapter goes through the gates and up to three rewrites (`studio/writer.py`, `gates.py`, `numbers.py`). |
-| Images | `images` (15) | Each runner generates its share of about 160 stills with stable-diffusion.cpp on CPU. Every take is reviewed automatically (CLIP checks for people, text and broken anatomy, prompt similarity, an aesthetic score and pixel statistics), with up to three takes per image. A Real-ESRGAN upscale and a Depth Anything V2 depth map turn each still into a render plate (`sdcpp.py`, `qa.py`, `plates.py`, `images.py`). |
-| Voice | `voice` (5) | Kokoro reads each chapter one sentence at a time, with calm pauses, at about 120 wpm. faster-whisper listens to every paragraph and re-reads any paragraph it cannot hear clearly (`voice.py`, `narrate.py`, `speech.py`). |
+| Images | `images` (18) | Each runner generates its share of 141 stills (at most 8 per runner) with FLUX.2 klein 4B (Q8 GGUF, 768x432, 4 steps) in stable-diffusion.cpp on CPU. Every take is reviewed automatically (CLIP checks for people, text and broken anatomy, prompt similarity, an aesthetic score and pixel statistics), with up to three takes per image. A Real-ESRGAN upscale and a Depth Anything V2 depth map turn each still into a render plate (`sdcpp.py`, `qa.py`, `plates.py`, `images.py`). |
+| Voice | `voice` (2) | Kokoro (`af_heart`) reads each chapter one sentence at a time, with calm pauses, at about 120 wpm. The first paragraph of each chapter sets its reading speed (never below 0.8), and the pauses are then scaled to land on the target. faster-whisper listens to every paragraph and re-reads any paragraph it cannot hear clearly (`voice.py`, `narrate.py`, `speech.py`). |
 | Audio | `audio` (1) | Builds the timeline: chapter starts, title cards, shots, and the ambience tail. It then mixes the narration with the code-generated score and the CC0 ambience loop, using two-pass loudnorm to -20 LUFS / -3 dBTP (`timeline.py`, `score.py`, `ambience.py`, `mix.py`). |
 | Render | `render` (15) | Each runner renders one contiguous run of shots at 1920x1080, 24 fps: depth-parallax camera moves, 4 s crossfades, grain and serif cards, encoded with x264 (`render.py`). |
 | Finish | `finish` (1) | Joins the segments with a stream copy, muxes the audio and embeds chapter markers. It checks the format, duration, loudness, sample frames and swapped images. It also builds the thumbnail (with a contrast and OCR legibility test) and the Shorts (`finish.py`, `thumbnail.py`, `shorts.py`). Then **publish** runs, and the run is **recorded** in the ledger on the `state` branch. |
@@ -86,7 +86,7 @@ requirements/ pinned dependency sets per job
 | Part | Licence |
 |---|---|
 | stable-diffusion.cpp | MIT |
-| Image model (see the benchmark notes) | Apache-2.0 |
+| FLUX.2 klein 4B (GGUF by leejet) and the FLUX.2 small decoder | Apache-2.0 |
 | Qwen3-4B text encoder | Apache-2.0 |
 | Real-ESRGAN realesr-general-x4v3 | BSD-3-Clause |
 | spandrel | MIT |

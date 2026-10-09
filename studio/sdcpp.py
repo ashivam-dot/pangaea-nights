@@ -104,7 +104,7 @@ CANDIDATES = {
         steps=4, extra=["--flow-shift", "3"],
         prompt_suffix="<lora:Qwen-Image-2512-Lightning-4steps-V1.0-bf16:1>"),
 }
-DEFAULT = os.environ.get("PANGAEA_IMAGE_MODEL", "klein4b-q8")
+DEFAULT = os.environ.get("PANGAEA_IMAGE_MODEL", "klein4b-q8-768")
 
 
 def _download(url: str, path: Path, tries: int = 4) -> Path:
