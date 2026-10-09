@@ -29,24 +29,44 @@ def chapter_shards(episode: dict, n: int) -> list[list[int]]:
     return groups + [[] for _ in range(n - len(groups))]
 
 
+MIN_PAUSE_SCALE, MAX_PAUSE_SCALE = 0.75, 2.2
+
+
+def pause_scale(words: int, speech_s: float, sentence_weights: float, paragraph_gaps: int) -> float:
+    """How much to stretch the default pauses so the block reads at TARGET_WPM (bounded, so pauses stay natural)."""
+    base = sentence_weights * voice.SENTENCE_GAP + paragraph_gaps * voice.PARAGRAPH_GAP
+    if base <= 0:
+        return 1.0
+    want = words / voice.TARGET_WPM * 60
+    return min(MAX_PAUSE_SCALE, max(MIN_PAUSE_SCALE, (want - speech_s) / base))
+
+
 def _voice_block(paragraphs: list[str], voice_name: str, speed: float) -> tuple[np.ndarray, dict]:
+    takes = [voice.paragraph(text, voice_name, speed) for text in paragraphs]
+    speech = sum(len(a) for t in takes for a, _, _ in t.parts) / voice.SR
+    weights = sum(w for t in takes for _, _, w in t.parts[:-1])
+    n_words = sum(len(p.split()) for p in paragraphs)
+    scale = pause_scale(n_words, speech, weights, len(takes) - 1)
     audio, words, spans, t = [], [], [], 0.0
-    for i, text in enumerate(paragraphs):
-        take = voice.paragraph(text, voice_name, speed)
-        spans.append({"start": round(t, 3), "end": round(t + len(take.audio) / voice.SR, 3),
+    for i, take in enumerate(takes):
+        para, para_words = voice.join(take.parts, voice.SENTENCE_GAP * scale)
+        spans.append({"start": round(t, 3), "end": round(t + len(para) / voice.SR, 3),
                       "heard": round(take.heard, 3)})
         words += [{"text": w["text"], "start": round(w["start"] + t, 3), "end": round(w["end"] + t, 3)}
-                  for w in take.words]
-        audio.append(take.audio)
-        t += len(take.audio) / voice.SR
-        if i < len(paragraphs) - 1:
-            audio.append(np.zeros(int(voice.PARAGRAPH_GAP * voice.SR), np.float32))
-            t += voice.PARAGRAPH_GAP
+                  for w in para_words]
+        audio.append(para)
+        t += len(para) / voice.SR
+        if i < len(takes) - 1:
+            n = int(voice.PARAGRAPH_GAP * scale * voice.SR)
+            audio.append(np.zeros(n, np.float32))
+            t += n / voice.SR
     joined = np.concatenate(audio) if audio else np.zeros(1, np.float32)
     peak = float(np.abs(joined).max(initial=0.0))
     if peak > 0.98:
         joined = joined * (0.98 / peak)
-    return joined, {"duration": round(len(joined) / voice.SR, 3), "paragraphs": spans, "words": words}
+    duration = len(joined) / voice.SR
+    return joined, {"duration": round(duration, 3), "paragraphs": spans, "words": words,
+                    "pause_scale": round(scale, 3), "wpm": round(n_words / duration * 60, 1)}
 
 
 def narrate(episode: dict, out: Path, k: int, n: int, voice_name: str = voice.VOICE,
