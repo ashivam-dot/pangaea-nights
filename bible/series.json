@@ -1,0 +1,90 @@
+{
+  "seas-before-fish": {
+    "name": "Seas Before Fish",
+    "era": "Precambrian to Silurian oceans",
+    "promise": "The first animal worlds, drifting through shallow ancient seas long before fish ruled them.",
+    "ambience": "ocean",
+    "palette": "deep teal and jade water, pale sand, soft shafts of greenish light, muted amber accents",
+    "camera": "low over the sea floor, macro close-ups of textures, wide views of luminous shallow water",
+    "titles": ["Fall Asleep in {title} | {hours} Hours of Calm Deep-Time Science",
+               "{title} | A Calm Sleep Documentary of the First Seas",
+               "Drift Off to {title} | Gentle Ancient Ocean Stories for Sleep"]
+  },
+  "giant-insects": {
+    "name": "The Age of Giant Insects",
+    "era": "Devonian to Permian forests and swamps",
+    "promise": "The first forests, the coal swamps and the oxygen-rich air where insects and arthropods grew large.",
+    "ambience": "rain",
+    "palette": "mossy greens, black still water, silver mist, warm dawn gold low on the horizon",
+    "camera": "eye level in fern forests, reflections in swamp water, close-ups of wings and bark",
+    "titles": ["Fall Asleep in {title} | {hours} Hours of the Ancient Forests",
+               "{title} | Calm Deep-Time Sleep Documentary",
+               "Drift Off in {title} | Rain, Ferns and Giant Insects for Sleep"]
+  },
+  "ice-age-nights": {
+    "name": "Ice Age Nights",
+    "era": "Pleistocene glaciations and megafauna",
+    "promise": "Slow walks across frozen steppes and quiet ice-age valleys with the great animals of the cold.",
+    "ambience": "wind",
+    "palette": "midnight blue, snow white, pale moonlight, faint aurora green, warm brown fur tones",
+    "camera": "wide snowy plains, herds far away, gentle close-ups of fur, ice and breath in cold air",
+    "titles": ["Fall Asleep on {title} | {hours} Hours of Calm Ice Age Science",
+               "{title} | An Ice Age Sleep Documentary",
+               "Ice Age Nights: {title} | Gentle Sleep Story of the Cold Earth"]
+  },
+  "before-the-continents": {
+    "name": "Before the Continents Drifted",
+    "era": "Earth's formation, supercontinents and planetary-scale change",
+    "promise": "The slow making of the Earth itself: its first crust, its lost supercontinents and frozen ages.",
+    "ambience": "wind",
+    "palette": "basalt greys, ember orange at a distance, ice blue, deep violet dusk, vast quiet scale",
+    "camera": "very wide landscapes and coastlines, aerial views of ancient land, close-ups of rock and crystal",
+    "titles": ["Fall Asleep to {title} | {hours} Hours of Calm Earth Science",
+               "{title} | A Slow Sleep Documentary of the Young Earth",
+               "Drift Off to {title} | Gentle Deep-Time Geology for Sleep"]
+  },
+  "deep-sea": {
+    "name": "The Deep Sea Before Us",
+    "era": "The deep ocean, its ancient lineages and its hidden ecosystems",
+    "promise": "Descending slowly into the dark, where ancient ways of living carry on without sunlight.",
+    "ambience": "underwater",
+    "palette": "near-black blue, soft bioluminescent cyan and violet points, pale ghostly whites",
+    "camera": "slow descents through dark water, glowing creatures in negative space, sea floor close-ups",
+    "titles": ["Fall Asleep in {title} | {hours} Hours of Calm Deep Sea Science",
+               "{title} | A Deep Sea Sleep Documentary",
+               "Drift Down to {title} | Gentle Ocean Depths for Sleep"]
+  },
+  "ancient-giants-of-the-sea": {
+    "name": "Oceans of the Ancient Giants",
+    "era": "Devonian to Miocene seas and their great swimmers",
+    "promise": "The great swimmers of vanished oceans, met gently, one slow encounter at a time.",
+    "ambience": "ocean",
+    "palette": "open-ocean blues, silver light under the surface, warm sunset sea, soft shadow",
+    "camera": "underwater wide shots in blue water, surface light ripples, calm profiles of large animals",
+    "titles": ["Fall Asleep in {title} | {hours} Hours of Calm Prehistoric Ocean Science",
+               "{title} | A Prehistoric Ocean Sleep Documentary",
+               "Drift Off with {title} | Gentle Ancient Sea Stories for Sleep"]
+  },
+  "forests-of-the-dinosaurs": {
+    "name": "Forests of the Dinosaurs",
+    "era": "Triassic, Jurassic and Cretaceous land",
+    "promise": "Quiet evenings in Mesozoic forests, floodplains and coasts, watching dinosaurs and their world.",
+    "ambience": "rain",
+    "palette": "warm evening greens, conifer shadows, river silver, dusky rose sky",
+    "camera": "wide floodplains at dusk, forest edges, close-ups of skin, feathers and leaves",
+    "titles": ["Fall Asleep in {title} | {hours} Hours of Calm Dinosaur Science",
+               "{title} | A Calm Dinosaur Sleep Documentary",
+               "Drift Off to {title} | Gentle Mesozoic Stories for Sleep"]
+  },
+  "worlds-between-the-ice": {
+    "name": "Worlds Between the Ice",
+    "era": "From the Great Dying to the warm and changing worlds of the Cenozoic",
+    "promise": "How life and landscapes slowly recovered and changed after great upheavals, told calmly.",
+    "ambience": "ocean",
+    "palette": "sun-warmed ochre, lagoon turquoise, soft mist, quiet golden grasslands",
+    "camera": "broad warm landscapes, still lakes and lagoons, close-ups of leaves, shells and fur",
+    "titles": ["Fall Asleep in {title} | {hours} Hours of Calm Deep-Time Science",
+               "{title} | A Gentle Sleep Documentary of Earth's Changes",
+               "Drift Off to {title} | Calm Earth History for Sleep"]
+  }
+}
