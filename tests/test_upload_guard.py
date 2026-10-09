@@ -45,10 +45,11 @@ def test_paused_unless_explicitly_false(monkeypatch):
         assert cli._paused() is want
 
 
-def test_publish_time_is_the_next_slot_at_least_two_hours_away():
+def test_publish_time_is_the_next_slot_at_least_twenty_minutes_away():
     at = datetime(2026, 10, 10, 18, 0, tzinfo=timezone.utc)
     assert youtube.publish_at(0, 0, 30, now=at) == "2026-10-11T00:30:00Z"
-    late = datetime(2026, 10, 10, 23, 0, tzinfo=timezone.utc)
+    assert youtube.publish_at(0, 0, 30, now=at.replace(hour=23, minute=55)) == "2026-10-11T00:30:00Z"
+    late = datetime(2026, 10, 11, 0, 20, tzinfo=timezone.utc)
     assert youtube.publish_at(0, 0, 30, now=late) == "2026-10-12T00:30:00Z"
     assert youtube.after("2026-10-11T00:30:00Z", 14.5) == "2026-10-11T15:00:00Z"
 

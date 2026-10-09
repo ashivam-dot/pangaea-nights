@@ -133,10 +133,10 @@ def _insert(api, path: Path, body: dict) -> str:
 
 
 def publish_at(day_offset: int = 0, hour: int = 0, minute: int = 30, now: datetime | None = None) -> str:
-    """The next HH:MM UTC at least two hours away, plus day_offset days, as RFC 3339."""
+    """The next HH:MM UTC at least twenty minutes away, plus day_offset days, as RFC 3339."""
     now = now or datetime.now(timezone.utc)
     at = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
-    while at < now + timedelta(hours=2):
+    while at < now + timedelta(minutes=20):
         at += timedelta(days=1)
     return (at + timedelta(days=day_offset)).strftime("%Y-%m-%dT%H:%M:%SZ")
 

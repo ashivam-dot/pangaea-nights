@@ -2,7 +2,7 @@ name: episode
 
 on:
   schedule:
-    - cron: "40 17 * * *"  # ~6.5 h of build time before the 00:30 UTC premiere slot
+    - cron: "10 16 * * *"  # ~8 h of build time before the 00:30 UTC premiere slot
   workflow_dispatch:
     inputs:
       mode:
@@ -41,7 +41,7 @@ jobs:
     if: github.event_name != 'schedule' || vars.PAUSED == 'false'
     runs-on: ubuntu-24.04
     environment: youtube
-    timeout-minutes: 90
+    timeout-minutes: 150
     outputs:
       images: ${{ steps.matrix.outputs.images }}
       voice: ${{ steps.matrix.outputs.voice }}

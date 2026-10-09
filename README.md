@@ -46,7 +46,7 @@ the earlier upload instead of creating a duplicate.
 | A 2-chapter test (~8–10 min) | Actions → episode → mode `short` |
 | A full-length dry run (never uploads) | Actions → episode → mode `dry` |
 | A real episode now | Actions → episode → mode `publish` (still refused while paused) |
-| Daily episodes | Set `PAUSED=false`; the 17:40 UTC schedule builds and schedules each one for 00:30 UTC |
+| Daily episodes | Set `PAUSED=false`; the 16:10 UTC schedule builds and schedules each one for 00:30 UTC |
 
 With writer `auto`, Gemini is used when `GEMINI_API_KEY` exists. Without the key, the run uses the stub writer, which
 assembles the script from real Wikipedia sentences to prove the media stages. Stub output can never be published.
