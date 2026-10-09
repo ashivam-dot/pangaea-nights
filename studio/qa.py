@@ -22,7 +22,7 @@ LABELS = {
              "a seascape under a dark sky"],
 }
 LIMITS = {"person": 0.30, "text": 0.30, "broken": 0.40, "similarity": 0.19, "aesthetic": 4.6,
-          "dark": 10.0, "bright": 215.0, "flat": 9.0, "sharp": 12.0}
+          "dark": 10.0, "bright": 215.0, "flat": 9.0, "sharp": 8.0}
 
 _model = None
 

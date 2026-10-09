@@ -47,6 +47,7 @@ class Candidate:
     height: int = 576
     extra: list[str] = field(default_factory=list)
     prompt_suffix: str = ""
+    threads: int | None = None
 
 
 _ZIMAGE_VAE = Weights("vae", "Comfy-Org/z_image_turbo", "split_files/vae/ae.safetensors")
@@ -67,6 +68,22 @@ CANDIDATES = {
         Weights("diffusion-model", "leejet/FLUX.2-klein-4B-GGUF", "flux-2-klein-4b-Q8_0.gguf"),
         Weights("llm", "unsloth/Qwen3-4B-GGUF", "Qwen3-4B-Q8_0.gguf"), _KLEIN_VAE_FULL], steps=4,
         width=1344, height=768),
+    "klein4b-q4-768": Candidate("klein4b-q4-768", "Apache-2.0", [
+        Weights("diffusion-model", "leejet/FLUX.2-klein-4B-GGUF", "flux-2-klein-4b-Q4_0.gguf"),
+        Weights("llm", "unsloth/Qwen3-4B-GGUF", "Qwen3-4B-Q4_K_M.gguf"), _KLEIN_VAE_SMALL], steps=4,
+        width=768, height=432),
+    "klein4b-q4-768-t2": Candidate("klein4b-q4-768-t2", "Apache-2.0", [
+        Weights("diffusion-model", "leejet/FLUX.2-klein-4B-GGUF", "flux-2-klein-4b-Q4_0.gguf"),
+        Weights("llm", "unsloth/Qwen3-4B-GGUF", "Qwen3-4B-Q4_K_M.gguf"), _KLEIN_VAE_SMALL], steps=4,
+        width=768, height=432, threads=2),
+    "klein4b-q4-672": Candidate("klein4b-q4-672", "Apache-2.0", [
+        Weights("diffusion-model", "leejet/FLUX.2-klein-4B-GGUF", "flux-2-klein-4b-Q4_0.gguf"),
+        Weights("llm", "unsloth/Qwen3-4B-GGUF", "Qwen3-4B-Q4_K_M.gguf"), _KLEIN_VAE_SMALL], steps=4,
+        width=672, height=384),
+    "klein4b-q8-768": Candidate("klein4b-q8-768", "Apache-2.0", [
+        Weights("diffusion-model", "leejet/FLUX.2-klein-4B-GGUF", "flux-2-klein-4b-Q8_0.gguf"),
+        Weights("llm", "unsloth/Qwen3-4B-GGUF", "Qwen3-4B-Q8_0.gguf"), _KLEIN_VAE_SMALL], steps=4,
+        width=768, height=432),
     "zimage-q8": Candidate("zimage-q8", "Apache-2.0", [
         Weights("diffusion-model", "leejet/Z-Image-Turbo-GGUF", "z_image_turbo-Q8_0.gguf"),
         Weights("llm", "unsloth/Qwen3-4B-Instruct-2507-GGUF", "Qwen3-4B-Instruct-2507-Q8_0.gguf"), _ZIMAGE_VAE],
@@ -145,7 +162,7 @@ class Server:
 
     def __init__(self, candidate: Candidate | str = DEFAULT, threads: int | None = None):
         self.c = CANDIDATES[candidate] if isinstance(candidate, str) else candidate
-        self.threads = threads or os.cpu_count() or 4
+        self.threads = threads or self.c.threads or os.cpu_count() or 4
         self.port = _port()
         self.proc: subprocess.Popen | None = None
         self.load_seconds = 0.0
