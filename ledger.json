@@ -20,7 +20,16 @@
    "shorts": [
     "ck4CYWKVdRk",
     "ldatEDhsdB8"
-   ]
+   ],
+   "snapshots": [
+    {
+     "age_h": 11.3,
+     "views": 5,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "views_at_72h": null
   }
  ],
  "dry_runs": [
@@ -89,11 +98,28 @@
    "duration": 7532.16,
    "run": "38036482234",
    "refusals": null
+  },
+  {
+   "id": "2026-10-10-coal-forests",
+   "topic": "coal-forests",
+   "series": "giant-insects",
+   "title": "Fall Asleep in the Coal Forests | 2 Hours of the Ancient Forests",
+   "writer": "gemini",
+   "words": 13473,
+   "shape": "full",
+   "mode": "publish",
+   "created": "2026-10-10T17:23:35Z",
+   "qa_ok": false,
+   "duration": 7463.04,
+   "run": "38067314840",
+   "refusals": [
+    "media QA failed: true peak -1.9 dBFS; thumbnail failed the legibility test"
+   ]
   }
  ],
  "last_upload": "2026-10-10T08:36:41Z",
  "learned": {
-  "at": "2026-10-10T08:36:41+00:00",
+  "at": "2026-10-10T20:13:13+00:00",
   "scored": 0,
   "min_samples": 4,
   "lifts": {}
