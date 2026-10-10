@@ -1,11 +1,11 @@
 """Pick tonight's topic: never a published one, never the same series as either of the last two episodes, and the
-series that has rested longest goes first. Titles rotate through each series' patterns and never near-duplicate.
+series that has rested longest goes first (the channel's learned series lift can reorder the three most rested). Titles rotate through each series' patterns and never near-duplicate.
 """
 from __future__ import annotations
 
 import re
 
-from . import config, ledger
+from . import config, learn, ledger
 
 
 class BacklogExhausted(RuntimeError):
@@ -35,7 +35,7 @@ def next_topic(data: dict, backlog: list[dict] | None = None, series: dict | Non
 
     open_series = sorted({t["series"] for t in free}, key=rested)
     choices = [s for s in open_series if s not in recent] or open_series
-    chosen = choices[0]
+    chosen = learn.prefer(choices, data)[0]
     return next(t for t in free if t["series"] == chosen)
 
 

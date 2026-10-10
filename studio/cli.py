@@ -158,10 +158,24 @@ def finish(args) -> None:
     print(json.dumps({k: report[k] for k in ("ok", "problems", "duration", "loudness", "size_mb")}, indent=1))
 
 
+def _channel_stats() -> None:
+    """Read the channel's numbers for the record step; never blocks a publish."""
+    from . import learn, youtube
+
+    if not os.environ.get("YOUTUBE_OAUTH_JSON"):
+        return
+    try:
+        api = youtube.client()
+        _save("out/channel_stats.json", learn.fetch(api, youtube.identity(api)))
+    except Exception as exc:
+        print(f"channel stats: {type(exc).__name__}: {exc}"[:300])
+
+
 def publish(args) -> None:
     from . import timeline, youtube
 
     ep, tl, qa = _load("episode.json"), _load("timeline.json"), _load("out/qa.json")
+    _channel_stats()
     why = youtube.refusals(ep, args.mode, _paused(), qa)
     if why:
         print("not publishing:\n- " + "\n- ".join(why))
@@ -234,6 +248,14 @@ def record(args) -> None:
     else:
         entry["refusals"] = pub.get("refusals")
         ledger.record_dry_run(data, entry)
+    stats_path = W / "out" / "channel_stats.json"
+    if stats_path.exists():
+        from . import learn
+
+        try:  # the episode record above must be saved even if the numbers are malformed
+            learn.update(data, json.loads(stats_path.read_text()))
+        except Exception as exc:
+            print(f"learn: {type(exc).__name__}: {exc}"[:300])
     ledger.save(data)
     print(json.dumps(entry, indent=1))
 
