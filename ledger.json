@@ -18,6 +18,21 @@
     "mode is 'short', not 'publish'",
     "the channel is paused (repository variable PAUSED)"
    ]
+  },
+  {
+   "id": "dry-2026-10-10-ediacaran-garden-38014674108",
+   "topic": "ediacaran-garden",
+   "series": "seas-before-fish",
+   "title": "Fall Asleep in the Garden of Ediacara | 2 Hours of Calm Deep-Time Science",
+   "writer": "gemini",
+   "words": 12912,
+   "shape": "full",
+   "mode": "dry",
+   "created": "2026-10-10T01:59:27Z",
+   "qa_ok": null,
+   "duration": null,
+   "run": "38014674108",
+   "refusals": null
   }
  ],
  "last_upload": null
