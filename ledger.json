@@ -1,5 +1,24 @@
 {
  "episodes": [],
- "dry_runs": [],
+ "dry_runs": [
+  {
+   "id": "short-2026-10-09-ediacaran-garden-37996866686",
+   "topic": "ediacaran-garden",
+   "series": "seas-before-fish",
+   "title": "Fall Asleep in the Garden of Ediacara | 1 Hours of Calm Deep-Time Science",
+   "writer": "gemini",
+   "words": 1073,
+   "shape": "short",
+   "mode": "short",
+   "created": "2026-10-09T22:09:02Z",
+   "qa_ok": true,
+   "duration": 660.19,
+   "run": "37996866686",
+   "refusals": [
+    "mode is 'short', not 'publish'",
+    "the channel is paused (repository variable PAUSED)"
+   ]
+  }
+ ],
  "last_upload": null
 }
