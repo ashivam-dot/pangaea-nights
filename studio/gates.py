@@ -176,6 +176,9 @@ def check_prompt(prompt: str) -> list[str]:
     low = " " + prompt.lower() + " "
     issues = [f"mentions '{w.strip()}'" for w in HUMAN_WORDS if re.search(r"\b" + re.escape(w.strip()) + r"\b", low)]
     issues += [f"mentions '{w}'" for w in TEXT_WORDS if re.search(r"\b" + re.escape(w) + r"s?\b", low)]
+    # Image models draw the comparison itself: "leaf-like ridges" on an Ediacaran Charnia came out as a land plant.
+    issues += [f"compares ('{m.group(0)}'); describe the actual shape" for m in
+               re.finditer(r"\b\w+-like\b|\bresembl\w*\b", low)]
     if len(prompt.split()) < 18:
         issues.append("too short to describe a scene")
     return issues

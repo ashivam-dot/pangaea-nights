@@ -71,7 +71,9 @@ SCENE_RULES = """Image prompts: each describes one still image as a nature-docum
 the creatures or landforms, with their anatomy described concretely from the sources (body shape, limbs, shell,
 colour only if known, size relative to surroundings). Mix wide landscapes or seascapes, medium shots of animals,
 and close-ups of textures (sand, bark, shell, water, ice, rock). 35 to 80 words each. Never include people, hands,
-boats, buildings, text, signs, labels, maps or diagrams. Do not mention the art style; it is added separately."""
+boats, buildings, text, signs, labels, maps or diagrams. Never compare a creature to something else ("leaf-like",
+"resembling a fern"): the image model draws the thing compared. Describe its real shape instead ("a flat oval
+frond of fine parallel ridges"). Do not mention the art style; it is added separately."""
 
 
 def sources_block(docs: list[dict]) -> str:

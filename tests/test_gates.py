@@ -68,6 +68,8 @@ def test_prompts_reject_people_and_text():
     assert any("diver" in i for i in gates.check_prompt(good + " A diver watches."))
     assert any("text" in i for i in gates.check_prompt(good + " With a text label."))
     assert "too short to describe a scene" in gates.check_prompt("A reef.")
+    assert any("leaf-like" in i for i in gates.check_prompt(good + " Its leaf-like ridges sway."))
+    assert any("resembling" in i for i in gates.check_prompt(good + " A disc resembling a flower."))
 
 
 def test_drop_sentences_removes_only_bad_ones():
