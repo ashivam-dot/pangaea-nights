@@ -113,6 +113,39 @@ def _fix_prompts(llm: Gemini, prompts: list[str], context: str) -> list[str]:
     return [p for p in prompts if not gates.check_prompt(p)]
 
 
+def _extend(llm, brief: str, title: str, paragraphs: list[str], scenes: list, target: int, n_scenes: int,
+            closing: bool, block: str) -> tuple[list[str], list]:
+    """Models reliably write ~550 words per call: continue a short draft instead of rewriting it from scratch."""
+    for _ in range(2):
+        words = sum(len(p.split()) for p in paragraphs)
+        missing = target - words
+        if missing < 0.2 * target:
+            break
+        end = ("Keep winding down and finish with a peaceful image and a quiet goodnight." if closing else
+               "Do not end the evening; stop at a natural pause.")
+        ask = f"""{brief}
+Here is the beginning of chapter "{title}" ({words} words). CONTINUE it seamlessly from its last sentence with
+about {missing} more words in {max(2, round(missing / 120))} to 8 new paragraphs (60 to 170 words each). Cover facts
+from the sources that the draft has not used yet, never repeat what it already said, keep the same calm second-person
+voice and frame uncertain science as uncertain. {end} Also write {max(1, n_scenes - len(scenes))} image prompts for
+the new paragraphs, in order.
+{SCENE_RULES}
+
+DRAFT SO FAR:
+{json.dumps(paragraphs)}
+
+SOURCES:
+{block}"""
+        out = llm.generate(SYSTEM, ask, CHAPTER_SCHEMA, temperature=0.7)
+        more = _clean_paragraphs(out.get("paragraphs", []))
+        if not more:
+            break
+        paragraphs = paragraphs + more
+        scenes = list(scenes) + list(out.get("scenes", []))
+        print(f"writer: extended \"{title}\" by {sum(len(p.split()) for p in more)} words", flush=True)
+    return paragraphs, scenes
+
+
 def write(topic: dict, docs: list[dict], shape: config.Shape, llm: Gemini | None = None) -> dict:
     llm = llm or Gemini()
     series = config.series()[topic["series"]]
@@ -173,6 +206,12 @@ SOURCES:
             paragraphs = _clean_paragraphs(out.get("paragraphs", []))
             report = gates.chapter_report(paragraphs, src, opening, shape.hedges_per_chapter,
                                           shape.words_per_chapter)
+            if any(p.startswith("too short") for p in report.problems):
+                paragraphs, more_scenes = _extend(llm, brief, plan["title"], paragraphs, out.get("scenes", []),
+                                                  shape.words_per_chapter, n_scenes, closing, block)
+                out = {**out, "scenes": more_scenes}
+                report = gates.chapter_report(paragraphs, src, opening, shape.hedges_per_chapter,
+                                              shape.words_per_chapter)
             log.append({"chapter": i + 1, "attempt": attempt + 1, "problems": report.problems})
             print(f"writer: chapter {i + 1} attempt {attempt + 1}: {sum(len(p.split()) for p in paragraphs)} words, "
                   f"{len(report.problems)} problems {report.problems[:4]}", flush=True)
