@@ -54,6 +54,30 @@ def test_publish_time_is_the_next_slot_at_least_twenty_minutes_away():
     assert youtube.after("2026-10-11T00:30:00Z", 14.5) == "2026-10-11T15:00:00Z"
 
 
+def test_release_now_is_twenty_minutes_ahead():
+    at = datetime(2026, 10, 10, 9, 41, 37, tzinfo=timezone.utc)
+    assert youtube.soon(now=at) == "2026-10-10T10:01:00Z"
+
+
+def test_promote_turns_a_full_dry_run_into_a_publish_episode(tmp_path, monkeypatch):
+    import json
+
+    monkeypatch.setattr(cli, "W", tmp_path)
+    dry = {"id": "dry-2026-10-10-ediacaran-garden-38024945464", "topic": "ediacaran-garden", "shape": "full",
+           "writer": "gemini", "mode": "dry", "created": "2026-10-10T04:51:00Z", "title": "T"}
+    (tmp_path / "episode.json").write_text(json.dumps(dry))
+    cli.promote(None)
+    ep = json.loads((tmp_path / "episode.json").read_text())
+    assert ep["id"] == "2026-10-10-ediacaran-garden" and ep["mode"] == "publish"
+    assert ep["promoted_from"] == dry["id"]
+    cli.promote(None)
+    assert json.loads((tmp_path / "episode.json").read_text())["promoted_from"] == dry["id"]
+    for bad in ({"shape": "short"}, {"writer": "stub"}):
+        (tmp_path / "episode.json").write_text(json.dumps(dry | bad))
+        with pytest.raises(SystemExit):
+            cli.promote(None)
+
+
 def test_metadata_is_clean_and_bounded():
     ep = {**GOOD, "summary": "A <calm> night.", "tags": ["t" * 60] * 20}
     desc = youtube.description(ep, [("0:00", "One")], [{"title": "A", "page_url": "u"}], [], "FLUX.2 klein 4B",

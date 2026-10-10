@@ -1,0 +1,131 @@
+name: promote
+
+# Publish a successful full-length dry run without rebuilding it: re-run finish (assemble, QA, thumbnail, Shorts) on
+# that run's artifacts, then the usual publish guard. Artifacts expire after 2-3 days.
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "id of a successful episode run in mode dry (full length)"
+        type: string
+        required: true
+      release:
+        description: "now = public about 20 minutes after upload; slot = the next 00:30 UTC"
+        type: choice
+        options: [now, slot]
+        default: now
+
+concurrency:
+  group: episode-publish
+  cancel-in-progress: false
+
+permissions:
+  actions: read
+  contents: write
+  issues: write
+
+env:
+  PANGAEA_WORK: ${{ github.workspace }}/work
+  PANGAEA_STATE: ${{ github.workspace }}/state
+  PANGAEA_MODELS: /mnt/models
+  PAUSED: ${{ vars.PAUSED }}
+  PANGAEA_RELEASE: ${{ inputs.release }}
+  SOURCE_RUN: ${{ inputs.run_id }}
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+jobs:
+  finish:
+    runs-on: ubuntu-24.04
+    environment: youtube
+    timeout-minutes: 240
+    steps:
+      - name: Check the source run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          case "$SOURCE_RUN" in ''|*[!0-9]*) echo "run_id must be a number"; exit 1;; esac
+          info=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$SOURCE_RUN" --jq '"\(.name) \(.conclusion)"')
+          echo "source: $info"
+          [ "$info" = "episode success" ] || { echo "the source must be a successful episode run"; exit 1; }
+      - uses: actions/checkout@v5
+      - name: Free disk
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/*.txt
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg tesseract-ocr
+      - run: pip install -q -r requirements/base.txt -r requirements/ml.txt -r requirements/publish.txt
+      - uses: actions/download-artifact@v6
+        with:
+          name: plan
+          path: work
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v6
+        with:
+          name: audio
+          path: work
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v6
+        with:
+          pattern: voice-*
+          path: work/voice
+          merge-multiple: true
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v6
+        with:
+          pattern: img-*
+          path: work/images
+          merge-multiple: true
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - uses: actions/download-artifact@v6
+        with:
+          pattern: seg-*
+          path: work/segments
+          merge-multiple: true
+          run-id: ${{ inputs.run_id }}
+          github-token: ${{ github.token }}
+      - name: Promote the episode
+        run: python -m studio.cli promote
+      - name: Assemble, check, thumbnail, Shorts
+        run: python -m studio.cli finish
+      - name: Publish (refuses unless every guard passes)
+        env:
+          YOUTUBE_OAUTH_JSON: ${{ secrets.YOUTUBE_OAUTH_JSON }}
+        run: python -m studio.cli publish --mode publish
+      - name: Record in the ledger
+        if: always()
+        run: |
+          git fetch --depth 1 origin state
+          git worktree add state FETCH_HEAD
+          python -m studio.cli record
+          cd state
+          git add ledger.json
+          git -c user.name=pangaea-nights-bot -c user.email=actions@users.noreply.github.com commit -q -m "ledger: promote run $SOURCE_RUN" || true
+          git push origin HEAD:state
+      - name: Review files
+        if: always()
+        run: |
+          mkdir -p review
+          cp -r work/out/checks review/ 2>/dev/null || true
+          cp work/out/*.json work/out/*.jpg work/out/excerpt-*.mp4 work/out/short*.mp4 review/ 2>/dev/null || true
+          cp work/episode.json work/timeline.json work/audio.json review/ 2>/dev/null || true
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: review
+          path: review
+          retention-days: 14
+      - name: Open an alert issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh issue create -R "$GITHUB_REPOSITORY" --label alert \
+            --title "Promote failed ($(date -u +%Y-%m-%d))" --body "Promoting run $SOURCE_RUN failed: $RUN_URL"

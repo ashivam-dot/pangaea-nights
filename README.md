@@ -46,6 +46,7 @@ the earlier upload instead of creating a duplicate.
 | A 2-chapter test (~8–10 min) | Actions → episode → mode `short` |
 | A full-length dry run (never uploads) | Actions → episode → mode `dry` |
 | A real episode now | Actions → episode → mode `publish` (still refused while paused) |
+| Publish a passed full dry run without rebuilding | Actions → promote → its run id; release `now` (public ~20 min after upload) or `slot` (next 00:30 UTC). Same guard; artifacts expire after 2–3 days |
 | Daily episodes | Set `PAUSED=false`; the 16:10 UTC schedule builds and schedules each one for 00:30 UTC |
 
 With writer `auto`, Gemini is used when `GEMINI_API_KEY` exists. Without the key, the run uses the stub writer, which

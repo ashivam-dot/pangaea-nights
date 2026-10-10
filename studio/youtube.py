@@ -141,6 +141,12 @@ def publish_at(day_offset: int = 0, hour: int = 0, minute: int = 30, now: dateti
     return (at + timedelta(days=day_offset)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+def soon(minutes: int = 20, now: datetime | None = None) -> str:
+    """A release time a few minutes ahead (publishAt must be in the future once processing ends), as RFC 3339."""
+    at = (now or datetime.now(timezone.utc)) + timedelta(minutes=minutes)
+    return at.replace(second=0, microsecond=0).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
 def after(when: str, hours: float) -> str:
     at = datetime.strptime(when, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc) + timedelta(hours=hours)
     return at.strftime("%Y-%m-%dT%H:%M:%SZ")

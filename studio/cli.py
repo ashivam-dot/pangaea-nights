@@ -174,7 +174,7 @@ def publish(args) -> None:
     desc = youtube.description(ep, rows, ep["docs"], audio["ambience"]["recordings"],
                                _model_label(), os.environ.get("PANGAEA_VOICE", "bm_george"))
     out = W / "out"
-    when = youtube.publish_at(0, 0, 30)
+    when = youtube.soon() if os.environ.get("PANGAEA_RELEASE") == "now" else youtube.publish_at(0, 0, 30)
     main = youtube.upload(api, channel, out / "episode.mp4", ep["title"], desc, youtube.tags(ep), when,
                           out / "thumbnail.jpg")
     when = main.get("publish_at") or when
@@ -191,6 +191,20 @@ def publish(args) -> None:
         result["shorts"].append(res)
         _save("out/publish.json", result)
     print(json.dumps(result, indent=1))
+
+
+def promote(args) -> None:
+    """Turn a full-length dry run's episode into a publish episode, so its finished media can be published without
+    a rebuild. The publish guard still applies: real writer, full shape, media QA, not paused."""
+    ep = _load("episode.json")
+    if ep.get("shape") != "full" or ep.get("writer") != "gemini":
+        sys.exit("only a full-length episode from the real writer can be promoted")
+    if ep.get("mode") != "publish":
+        ep["promoted_from"] = ep["id"]
+        ep["id"] = f"{ep['created'][:10]}-{ep['topic']}"
+        ep["mode"] = "publish"
+        _save("episode.json", ep)
+    print(json.dumps({k: ep.get(k) for k in ("id", "promoted_from", "title", "mode")}, indent=1))
 
 
 def _model_label() -> str:
@@ -273,6 +287,7 @@ def main(argv: list[str] | None = None) -> None:
     s = sub.add_parser("publish")
     s.add_argument("--mode", choices=["publish", "dry", "short"], default="dry")
     s.set_defaults(fn=publish)
+    sub.add_parser("promote").set_defaults(fn=promote)
     sub.add_parser("record").set_defaults(fn=record)
     s = sub.add_parser("health")
     s.add_argument("--hours", type=float, default=30)
