@@ -1,5 +1,28 @@
 {
- "episodes": [],
+ "episodes": [
+  {
+   "id": "2026-10-10-ediacaran-garden",
+   "topic": "ediacaran-garden",
+   "series": "seas-before-fish",
+   "title": "Fall Asleep in the Garden of Ediacara | 2 Hours of Calm Deep-Time Science",
+   "writer": "gemini",
+   "words": 13365,
+   "shape": "full",
+   "mode": "publish",
+   "created": "2026-10-10T04:51:59Z",
+   "qa_ok": true,
+   "duration": 7532.16,
+   "run": "38037699157",
+   "video_id": "_-IKbT1IRF4",
+   "url": "https://www.youtube.com/watch?v=_-IKbT1IRF4",
+   "publish_at": "2026-10-10T08:55:00Z",
+   "uploaded_at": "2026-10-10T08:36:41Z",
+   "shorts": [
+    "ck4CYWKVdRk",
+    "ldatEDhsdB8"
+   ]
+  }
+ ],
  "dry_runs": [
   {
    "id": "short-2026-10-09-ediacaran-garden-37996866686",
@@ -68,5 +91,11 @@
    "refusals": null
   }
  ],
- "last_upload": null
+ "last_upload": "2026-10-10T08:36:41Z",
+ "learned": {
+  "at": "2026-10-10T08:36:41+00:00",
+  "scored": 0,
+  "min_samples": 4,
+  "lifts": {}
+ }
 }
