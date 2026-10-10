@@ -119,6 +119,17 @@ def render_cmd(args) -> None:
     print(json.dumps(rep))
 
 
+def thumb_source(images: Path) -> Path:
+    """The thumbnail's own image, or when every take of it failed the gates, the earliest chapter plate (plates
+    exist only for takes that passed the hard person/text checks)."""
+    if (own := images / "thumb.png").exists():
+        return own
+    plates = sorted(images.glob("c[0-9][0-9]s[0-9][0-9].jpg"))
+    if not plates:
+        raise RuntimeError("no thumbnail image and no chapter plate to fall back on")
+    return plates[0]
+
+
 def finish(args) -> None:
     from . import finish as fin
     from . import shorts, thumbnail
@@ -132,7 +143,7 @@ def finish(args) -> None:
     words = ep["thumbnail"]["words"].split()[:5]
     if len(words) < 2:
         words = ep["title_core"].split()[:4]
-    thumb = thumbnail.build(W / "images" / "thumb.png", words, out / "thumbnail.jpg")
+    thumb = thumbnail.build(thumb_source(W / "images"), words, out / "thumbnail.jpg")
     key = config.series()[ep["series"]]["ambience"]
     made = [shorts.build(ep, k, W / "voice", W / "images", out, key) for k in range(len(ep["trailers"]))]
     report = fin.qa(ep, tl, final, out / "checks", thumb, made)

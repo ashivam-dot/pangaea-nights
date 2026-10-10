@@ -32,9 +32,10 @@ def manifest(episode: dict) -> list[dict]:
             jobs.append({"id": f"t{k}s{j:02d}", "kind": "trailer", "trailer": k, "scene": scene,
                          "prompt": writer.image_prompt(scene, art + ", tall vertical composition"), "vertical": True})
     th = episode["thumbnail"]
-    jobs.append({"id": "thumb", "kind": "thumb", "scene": th["prompt"],
-                 "prompt": writer.image_prompt(th["prompt"], art + ", subject large on the right, calm dark empty "
-                                                                  "space on the left"), "vertical": False})
+    # First, so a shard's time budget can never cut it to a single take.
+    jobs.insert(0, {"id": "thumb", "kind": "thumb", "scene": th["prompt"],
+                    "prompt": writer.image_prompt(th["prompt"], art + ", subject large on the right, calm dark empty "
+                                                                     "space on the left"), "vertical": False})
     return jobs
 
 
