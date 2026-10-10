@@ -16,7 +16,9 @@ from pathlib import Path
 from . import config
 
 MARKER = "pangaea-nights:"
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube"]
+# What the channel's OAuth grant holds; asking for any other scope on refresh fails with invalid_scope.
+SCOPES = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube.force-ssl",
+          "https://www.googleapis.com/auth/yt-analytics.readonly"]
 
 
 class Refused(RuntimeError):
@@ -54,7 +56,8 @@ def client():
     raw = os.environ.get("YOUTUBE_OAUTH_JSON", "")
     if not raw:
         raise Refused("YOUTUBE_OAUTH_JSON is not set")
-    creds = Credentials.from_authorized_user_info(json.loads(raw), SCOPES)
+    info = json.loads(raw)
+    creds = Credentials.from_authorized_user_info(info, info.get("scopes") or SCOPES)
     if not creds.valid:
         creds.refresh(Request())
     return build("youtube", "v3", credentials=creds, cache_discovery=False)
