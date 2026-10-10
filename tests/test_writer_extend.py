@@ -16,12 +16,12 @@ def para(n):
 
 
 def test_extend_appends_until_close_to_target():
-    llm = FakeLLM([{"paragraphs": [para(150), para(150)], "scenes": ["a"]},
-                   {"paragraphs": [para(140)], "scenes": ["b"]}])
+    llm = FakeLLM([{"paragraphs": [para(150)], "scenes": ["a"]},
+                   {"paragraphs": [para(140), para(140)], "scenes": ["b"]}])
     paragraphs, scenes = writer._extend(llm, "brief", "Ch", [para(150)] * 4, ["s1", "s2"], 1030, 9, False, "src")
-    assert sum(len(p.split()) for p in paragraphs) == 1040
+    assert sum(len(p.split()) for p in paragraphs) == 1030
     assert scenes == ["s1", "s2", "a", "b"]
-    assert "CONTINUE" in llm.asks[0]
+    assert len(llm.asks) == 2 and "CONTINUE" in llm.asks[0]
 
 
 def test_extend_stops_when_long_enough_or_empty():
