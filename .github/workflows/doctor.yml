@@ -14,7 +14,7 @@ on:
     inputs:
       mode:
         type: choice
-        options: [heal, improve, growth]
+        options: [heal, improve, growth, tidy]
         default: heal
       run_id:
         description: failed run id to heal
