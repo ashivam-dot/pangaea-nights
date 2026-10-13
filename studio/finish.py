@@ -51,6 +51,18 @@ def check_frames(path: Path, tl: dict, out_dir: Path, n: int = 14) -> dict:
     return {"frames": rows, "problems": problems}
 
 
+def limited_mix(mix_path: Path) -> Path:
+    """The mix as it is, or, when its true peak is too hot (mixes made before the limiter), a limited copy."""
+    if mix.integrated(mix_path)["true_peak"] <= mix.LIMIT_TP + 0.5:
+        return mix_path
+    flac = mix_path.with_name("mix-limited.flac")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mix_path), "-af", mix.peak_limiter(),
+                    "-c:a", "flac", str(flac)], check=True)
+    out = mix.to_aac(flac, mix_path.with_name("mix-limited.m4a"))
+    flac.unlink()
+    return out
+
+
 def assemble(tl: dict, seg_dir: Path, mix_path: Path, out: Path) -> Path:
     segs = sorted(seg_dir.rglob("seg*.mp4"))
     if len(segs) != len(tl["render_shards"]):

@@ -138,7 +138,7 @@ def finish(args) -> None:
     out = W / "out"
     out.mkdir(parents=True, exist_ok=True)
     t0 = time.monotonic()
-    final = fin.assemble(tl, W / "segments", W / "mix.m4a", out / "episode.mp4")
+    final = fin.assemble(tl, W / "segments", fin.limited_mix(W / "mix.m4a"), out / "episode.mp4")
     t_assemble = time.monotonic() - t0
     words = ep["thumbnail"]["words"].split()[:5]
     if len(words) < 2:
@@ -180,6 +180,8 @@ def publish(args) -> None:
     if why:
         print("not publishing:\n- " + "\n- ".join(why))
         _save("out/publish.json", {"published": False, "refusals": why})
+        if args.mode == "publish" and not _paused():
+            sys.exit("a publish run made nothing publishable: failing the run so the alert and the doctor see it")
         return
     api = youtube.client()
     channel = youtube.identity(api)

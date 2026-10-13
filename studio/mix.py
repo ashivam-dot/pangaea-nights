@@ -13,6 +13,8 @@ from pathlib import Path
 
 TARGET_I = -20.0
 TARGET_TP = -3.0
+# AAC encoding adds up to ~1 dB of inter-sample overshoot, so the FLAC master is limited well under TARGET_TP.
+LIMIT_TP = -4.5
 LEVELS = {"narration": -20.0, "score": -39.0, "ambience": -36.0}
 TAIL_LIFT_DB = 6.0
 MAX_MOMENTARY_OVER = 8.0
@@ -79,7 +81,7 @@ def mix(narration: Path, score: Path, ambience_loop: Path, total: float, narrati
     norm = (f"loudnorm=I={TARGET_I}:TP={TARGET_TP}:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
             f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:"
             f"linear=true")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(pre), "-af", norm + ",aresample=48000",
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(pre), "-af", norm + "," + peak_limiter(),
                     "-c:a", "flac", str(out)], check=True)
     pre.unlink()
     stats = integrated(out)
@@ -87,6 +89,12 @@ def mix(narration: Path, score: Path, ambience_loop: Path, total: float, narrati
     stats["ok"] = (abs(stats["I"] - TARGET_I) <= 1.0 and stats["true_peak"] <= TARGET_TP + 0.5
                    and stats["momentary_over_integrated"] <= MAX_MOMENTARY_OVER)
     return {"gains_db": {k: round(v, 2) for k, v in gains.items()}, "loudness": stats}
+
+
+def peak_limiter(limit_db: float = LIMIT_TP) -> str:
+    """A brickwall limiter run at 4x the sample rate, so it catches inter-sample (true) peaks, then back to 48 kHz."""
+    return (f"aresample=192000,alimiter=limit={10 ** (limit_db / 20):.4f}:attack=1:release=80:level=disabled,"
+            "aresample=48000")
 
 
 def to_aac(src: Path, out: Path) -> Path:
