@@ -51,6 +51,12 @@
      "views": 8,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 132.11,
+     "views": 9,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "views_at_72h": 8.0
@@ -82,6 +88,12 @@
      "views": 1,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 60.35,
+     "views": 1,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "views_at_72h": null
@@ -106,6 +118,37 @@
    "shorts": [
     "qUC2P-KFeS4",
     "NJFMk16Nz1k"
+   ],
+   "snapshots": [
+    {
+     "age_h": 20.53,
+     "views": 2,
+     "likes": 0,
+     "comments": 1
+    }
+   ],
+   "views_at_72h": null
+  },
+  {
+   "id": "2026-10-15-earth-forms",
+   "topic": "earth-forms",
+   "series": "before-the-continents",
+   "title": "Fall Asleep to the Hadean Earth | 2 Hours of Calm Earth Science",
+   "writer": "gemini",
+   "words": 12996,
+   "shape": "full",
+   "mode": "publish",
+   "created": "2026-10-15T18:04:02Z",
+   "qa_ok": true,
+   "duration": 7286.78,
+   "run": "38770279440",
+   "video_id": "gZc5tTHJX_k",
+   "url": "https://www.youtube.com/watch?v=gZc5tTHJX_k",
+   "publish_at": "2026-10-16T00:30:00Z",
+   "uploaded_at": "2026-10-15T21:01:46Z",
+   "shorts": [
+    "3nM1_8Ly0tM",
+    "k-EDWU6Bq3c"
    ]
   }
  ],
@@ -228,9 +271,9 @@
    ]
   }
  ],
- "last_upload": "2026-10-14T20:20:06Z",
+ "last_upload": "2026-10-15T21:01:46Z",
  "learned": {
-  "at": "2026-10-14T20:20:06+00:00",
+  "at": "2026-10-15T21:01:46+00:00",
   "scored": 1,
   "min_samples": 4,
   "lifts": {}
