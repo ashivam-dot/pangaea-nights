@@ -57,6 +57,12 @@
      "views": 9,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 179.23,
+     "views": 9,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "views_at_72h": 8.0
@@ -94,9 +100,15 @@
      "views": 1,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 107.47,
+     "views": 1,
+     "likes": 0,
+     "comments": 1
     }
    ],
-   "views_at_72h": null
+   "views_at_72h": 1.0
   },
   {
    "id": "2026-10-14-mammoth-steppe",
@@ -125,6 +137,12 @@
      "views": 2,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 67.65,
+     "views": 8,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "views_at_72h": null
@@ -149,6 +167,37 @@
    "shorts": [
     "3nM1_8Ly0tM",
     "k-EDWU6Bq3c"
+   ],
+   "snapshots": [
+    {
+     "age_h": 43.65,
+     "views": 0,
+     "likes": 0,
+     "comments": 1
+    }
+   ],
+   "views_at_72h": null
+  },
+  {
+   "id": "2026-10-17-hydrothermal-vents",
+   "topic": "hydrothermal-vents",
+   "series": "deep-sea",
+   "title": "Fall Asleep in Hydrothermal Vent Gardens | 2 Hours of Calm Deep Sea Science",
+   "writer": "gemini",
+   "words": 13622,
+   "shape": "full",
+   "mode": "publish",
+   "created": "2026-10-17T16:39:55Z",
+   "qa_ok": true,
+   "duration": 7542.34,
+   "run": "39049653613",
+   "video_id": "kkgt8wdnzKk",
+   "url": "https://www.youtube.com/watch?v=kkgt8wdnzKk",
+   "publish_at": "2026-10-18T00:30:00Z",
+   "uploaded_at": "2026-10-17T20:09:02Z",
+   "shorts": [
+    "TreY86u4L_c",
+    "meZhl1UzdOA"
    ]
   }
  ],
@@ -271,10 +320,10 @@
    ]
   }
  ],
- "last_upload": "2026-10-15T21:01:46Z",
+ "last_upload": "2026-10-17T20:09:02Z",
  "learned": {
-  "at": "2026-10-15T21:01:46+00:00",
-  "scored": 1,
+  "at": "2026-10-17T20:09:02+00:00",
+  "scored": 2,
   "min_samples": 4,
   "lifts": {}
  }
