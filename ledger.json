@@ -63,6 +63,12 @@
      "views": 9,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 202.89,
+     "views": 9,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "views_at_72h": 8.0
@@ -106,6 +112,12 @@
      "views": 1,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 131.12,
+     "views": 1,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "views_at_72h": 1.0
@@ -143,9 +155,15 @@
      "views": 8,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 91.3,
+     "views": 8,
+     "likes": 0,
+     "comments": 1
     }
    ],
-   "views_at_72h": null
+   "views_at_72h": 8.0
   },
   {
    "id": "2026-10-15-earth-forms",
@@ -174,6 +192,12 @@
      "views": 0,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 67.3,
+     "views": 0,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "views_at_72h": null
@@ -198,6 +222,36 @@
    "shorts": [
     "TreY86u4L_c",
     "meZhl1UzdOA"
+   ],
+   "snapshots": [
+    {
+     "age_h": 19.3,
+     "views": 1,
+     "likes": 0,
+     "comments": 1
+    }
+   ],
+   "views_at_72h": null
+  },
+  {
+   "id": "2026-10-18-ichthyosaurs",
+   "topic": "ichthyosaurs",
+   "series": "ancient-giants-of-the-sea",
+   "title": "Fall Asleep in Mesozoic Seas of Ichthyosaurs | 2 Hours of Calm Prehistoric Ocean Science",
+   "writer": "gemini",
+   "words": 12884,
+   "shape": "full",
+   "mode": "publish",
+   "created": "2026-10-18T16:43:19Z",
+   "qa_ok": true,
+   "duration": 7176.49,
+   "run": "39145315231",
+   "video_id": "-Pcx1fPHJHI",
+   "url": "https://www.youtube.com/watch?v=-Pcx1fPHJHI",
+   "publish_at": "2026-10-19T00:30:00Z",
+   "uploaded_at": "2026-10-18T19:48:13Z",
+   "shorts": [
+    "xg0as2we09Y"
    ]
   }
  ],
@@ -320,10 +374,10 @@
    ]
   }
  ],
- "last_upload": "2026-10-17T20:09:02Z",
+ "last_upload": "2026-10-18T19:48:13Z",
  "learned": {
-  "at": "2026-10-17T20:09:02+00:00",
-  "scored": 2,
+  "at": "2026-10-18T19:48:13+00:00",
+  "scored": 3,
   "min_samples": 4,
   "lifts": {}
  }
