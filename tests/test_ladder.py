@@ -249,3 +249,45 @@ def test_pterosaur_prompts_spell_out_membrane_wings():
     jobs = {j["id"]: j for j in ladder.image_jobs(p)}
     assert "no feathers" in jobs["o1"]["prompt"] and "no feathers" not in jobs["o2"]["prompt"]
     assert jobs["o1"]["scene"] == "A giant Quetzalcoatlus soaring"  # CLIP similarity still scores the plain scene
+
+
+def test_readback_flags_a_failed_upload():
+    assert youtube.readback_problems(readback(uploadStatus="uploaded"), WHEN) == []
+    assert youtube.readback_problems(readback(uploadStatus="processed"), WHEN) == []
+    bad = youtube.readback_problems(readback(uploadStatus="failed", failureReason="conversion"), WHEN)
+    assert any("uploadStatus is 'failed' (conversion)" in x for x in bad)
+
+
+def test_insert_resumes_after_a_dropped_connection(monkeypatch, tmp_path):
+    import ssl
+    import sys
+    import types
+
+    errors, http = types.ModuleType("googleapiclient.errors"), types.ModuleType("googleapiclient.http")
+    errors.HttpError = type("HttpError", (Exception,), {})
+    http.MediaFileUpload = lambda *a, **kw: None
+    for name, mod in [("googleapiclient", types.ModuleType("googleapiclient")), ("googleapiclient.errors", errors),
+                      ("googleapiclient.http", http)]:
+        monkeypatch.setitem(sys.modules, name, mod)
+    monkeypatch.setattr(youtube.time, "sleep", lambda s: None)
+    calls = []
+
+    class Request:
+        def next_chunk(self, num_retries=0):
+            calls.append(1)
+            if len(calls) == 1:
+                raise ssl.SSLEOFError("EOF occurred in violation of protocol")
+            return None, {"id": "abc"}
+
+    class Videos:
+        def insert(self, **kw):
+            return Request()
+
+    class Api:
+        def videos(self):
+            return Videos()
+
+    clip = tmp_path / "short.mp4"
+    clip.write_bytes(b"\0" * 16)
+    assert youtube._insert(Api(), clip, {}) == "abc"
+    assert len(calls) == 2

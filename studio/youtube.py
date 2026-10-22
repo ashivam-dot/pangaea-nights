@@ -132,6 +132,11 @@ def _insert(api, path: Path, body: dict) -> str:
                 time.sleep(min(60, 2 ** errors))
                 continue
             raise
+        except OSError:  # a dropped connection (test upload 2 died on ssl.SSLEOFError): next_chunk resumes the session
+            if errors >= 8:
+                raise
+            errors += 1
+            time.sleep(min(60, 2 ** errors))
     return response["id"]
 
 
@@ -321,9 +326,16 @@ def readback_problems(video: dict, when: str | None, now: datetime | None = None
         out.append(f"privacyStatus is {st.get('privacyStatus')!r}, not 'private' before release")
     if _instant(st.get("publishAt")) != when and not (_released(when, now) and st.get("privacyStatus") == "public"):
         out.append(f"publishAt is {st.get('publishAt')!r}, not {when!r}")
+    if st.get("uploadStatus") in ("failed", "rejected", "deleted"):
+        out.append(f"uploadStatus is {st['uploadStatus']!r}{_reason(st)}: delete it by hand so a rerun uploads again")
     if "containsSyntheticMedia" in st and st["containsSyntheticMedia"] is not True:
         out.append("containsSyntheticMedia is not True")
     return out
+
+
+def _reason(st: dict) -> str:
+    why = st.get("failureReason") or st.get("rejectionReason")
+    return f" ({why})" if why else ""
 
 
 def upload_ladder(api, channel: dict, path: Path, p: dict, desc: str, tag_list: list[str], when: str | None) -> dict:
@@ -336,7 +348,7 @@ def upload_ladder(api, channel: dict, path: Path, p: dict, desc: str, tag_list: 
     return {"video_id": video_id, "url": f"https://www.youtube.com/shorts/{video_id}", "existing": bool(existing),
             "title": video["snippet"]["title"], "privacy": st.get("privacyStatus"),
             "publish_at": _instant(st.get("publishAt")), "made_for_kids": st.get("madeForKids"),
-            "self_declared_made_for_kids": st.get("selfDeclaredMadeForKids"),
+            "self_declared_made_for_kids": st.get("selfDeclaredMadeForKids"), "upload_status": st.get("uploadStatus"),
             "readback_problems": readback_problems(video, when)}
 
 
