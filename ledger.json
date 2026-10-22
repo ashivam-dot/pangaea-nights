@@ -420,6 +420,17 @@
     "failures": [],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-22T15:00:25Z",
+    "mode": "test",
+    "slot": "A",
+    "premise": "countdown-01",
+    "run": "39787991414",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [],
