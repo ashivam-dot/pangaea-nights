@@ -144,6 +144,11 @@ def publish_at(day_offset: int = 0, hour: int = 0, minute: int = 30, now: dateti
     return (at + timedelta(days=day_offset)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+def episode_slot(now: datetime | None = None) -> str:
+    """The long episode's premiere: the next config.EPISODE_SLOT_UTC (21:00 UTC), as RFC 3339."""
+    return publish_at(0, *config.EPISODE_SLOT_UTC, now=now)
+
+
 def soon(minutes: int = 20, now: datetime | None = None) -> str:
     """A release time a few minutes ahead (publishAt must be in the future once processing ends), as RFC 3339."""
     at = (now or datetime.now(timezone.utc)) + timedelta(minutes=minutes)

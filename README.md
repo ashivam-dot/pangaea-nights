@@ -1,7 +1,7 @@
 # Pangaea Nights studio
 
-This is a fully automated, free studio for the **Pangaea Nights** YouTube channel: two-hour sleep documentaries
-about Earth's deep past, published daily, with vertical trailers. Everything runs on the GitHub-hosted CPU runners
+This is a fully automated, free studio for the **Pangaea Nights** YouTube channel: two- and three-hour sleep
+documentaries about Earth's deep past, published on Tuesdays and Fridays at 21:00 UTC. Everything runs on the GitHub-hosted CPU runners
 of this public repository; nothing runs on a personal machine. The binding editorial rules are in
 [`CHANNEL.md`](CHANNEL.md).
 
@@ -12,7 +12,7 @@ parallel runners.
 
 | Stage | Job | What it does |
 |---|---|---|
-| Plan and write | `plan` (1) | The planner picks the next topic: never one already published, and never from either of the last two series. It fetches the topic's five Wikipedia articles at pinned revisions. Gemini then writes the outline, 14 chapters (about 14,500 words) and 2 trailers. Each chapter goes through the gates and up to three rewrites (`studio/writer.py`, `gates.py`, `numbers.py`). |
+| Plan and write | `plan` (1) | The planner picks the next topic: never one already published, and never from either of the last two series. It fetches the topic's five Wikipedia articles at pinned revisions. Gemini then writes the outline, 14 chapters (about 14,500 words; 21 chapters for the 3-hour form). Trailers are off (`config.TRAILER_SHORTS`). Each chapter goes through the gates and up to three rewrites (`studio/writer.py`, `gates.py`, `numbers.py`). |
 | Images | `images` (18) | Each runner generates its share of 141 stills (at most 8 per runner) with FLUX.2 klein 4B (Q8 GGUF, 768x432, 4 steps) in stable-diffusion.cpp on CPU. Every take is reviewed automatically (CLIP checks for people, text and broken anatomy, prompt similarity, an aesthetic score and pixel statistics), with up to three takes per image. A Real-ESRGAN upscale and a Depth Anything V2 depth map turn each still into a render plate (`sdcpp.py`, `qa.py`, `plates.py`, `images.py`). |
 | Voice | `voice` (2) | Kokoro (`af_heart`) reads each chapter one sentence at a time, with calm pauses, at about 120 wpm. The first paragraph of each chapter sets its reading speed (never below 0.8), and the pauses are then scaled to land on the target. faster-whisper listens to every paragraph and re-reads any paragraph it cannot hear clearly (`voice.py`, `narrate.py`, `speech.py`). |
 | Audio | `audio` (1) | Builds the timeline: chapter starts, title cards, shots, and the ambience tail. It then mixes the narration with the code-generated score and the CC0 ambience loop, using two-pass loudnorm to -20 LUFS / -3 dBTP (`timeline.py`, `score.py`, `ambience.py`, `mix.py`). |
@@ -21,7 +21,7 @@ parallel runners.
 | Alert | `alert` | When a scheduled or publish run fails, it opens an issue labelled `alert`. |
 
 `health.yml` runs every six hours and opens an `alert` issue when the channel is not paused and there has been no
-upload for 30 hours. `tests.yml` runs the unit tests and a smoke test. The smoke test runs every media stage on
+upload for 108 hours. `tests.yml` runs the unit tests and a smoke test. The smoke test runs every media stage on
 synthetic inputs in about five minutes.
 
 ## Publishing guard
@@ -34,7 +34,7 @@ synthetic inputs in about five minutes.
 - media QA passed;
 - `channels.list(mine=true)` returns exactly one channel, and its id is `UCtVG78IUTqvP9rH-LLies0A`.
 
-Videos are uploaded private with `publishAt` set to the next 00:30 UTC. Every upload uses category 27 (Education),
+Videos are uploaded private with `publishAt` set to the next 21:00 UTC (`youtube.episode_slot()`). Every upload uses category 27 (Education),
 `selfDeclaredMadeForKids: false`, `containsSyntheticMedia: true`, and language `en`. Shorts are scheduled 14.5 h
 and 38.5 h after the episode, and their descriptions link to it. Each upload carries a marker tag, so a rerun finds
 the earlier upload instead of creating a duplicate.
@@ -46,8 +46,8 @@ the earlier upload instead of creating a duplicate.
 | A 2-chapter test (~8–10 min) | Actions → episode → mode `short` |
 | A full-length dry run (never uploads) | Actions → episode → mode `dry` |
 | A real episode now | Actions → episode → mode `publish` (still refused while paused) |
-| Publish a passed full dry run without rebuilding | Actions → promote → its run id; release `now` (public ~20 min after upload) or `slot` (next 00:30 UTC). Same guard; artifacts expire after 2–3 days |
-| Daily episodes | Set `PAUSED=false`; the 16:10 UTC schedule builds and schedules each one for 00:30 UTC |
+| Publish a passed full dry run without rebuilding | Actions → promote → its run id; release `now` (public ~20 min after upload) or `slot` (next scheduled slot). Same guard; artifacts expire after 2–3 days |
+| Scheduled episodes | Set `PAUSED=false`; the Tue/Fri 14:10 UTC schedule builds each one (alternating 2 h / 3 h) and schedules it for 21:00 UTC |
 
 With writer `auto`, Gemini is used when `GEMINI_API_KEY` exists. Without the key, the run uses the stub writer, which
 assembles the script from real Wikipedia sentences to prove the media stages. Stub output can never be published.

@@ -5,7 +5,7 @@ import pytest
 from studio import learn, planner
 
 AT = datetime(2026, 11, 1, 12, 0, tzinfo=timezone.utc)
-SERIES = {s: {"titles": ["{title} | {hours} Hours"]} for s in ("a", "b", "c", "d")}
+SERIES = {s: {"name": s} for s in ("a", "b", "c", "d")}
 BACKLOG = [{"id": f"{s}{i}", "series": s, "title": f"Topic {s}{i}"} for s in "abcd" for i in range(6)]
 
 
@@ -43,3 +43,13 @@ def test_planner_prefers_a_strong_series_among_the_most_rested_but_never_repeats
     assert planner.next_topic(data, BACKLOG, SERIES)["series"] == "a"
     data["learned"] = {"lifts": {"b": {"lift": 1.3}, "d": {"lift": 1.35}}}
     assert planner.next_topic(data, BACKLOG, SERIES)["series"] == "b"
+
+
+def test_lengths_compare_the_two_episode_shapes():
+    eps = [{**ep(i, "a", 100), "shape": "full"} for i in range(2)] + [{**ep(5, "b", 400), "shape": "full3h"},
+                                                                      {**ep(6, "b"), "shape": "full3h"}]
+    out = learn.lengths(eps)
+    assert out == {"full": {"n": 2, "typical_views_at_72h": 100}, "full3h": {"n": 1, "typical_views_at_72h": 400}}
+    data = {"episodes": eps}
+    learn.update(data, {}, at=AT)
+    assert data["learned"]["lengths"]["full3h"]["n"] == 1

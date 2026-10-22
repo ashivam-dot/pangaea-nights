@@ -4,8 +4,7 @@ import pytest
 
 from studio import config, ledger, planner
 
-SERIES = {s: {"titles": ["Fall Asleep in {title} | {hours} Hours", "{title}: A Sleep Documentary",
-                         "Drift Through {title} | Calm Deep-Time Story"]} for s in ("a", "b", "c")}
+SERIES = {s: {"name": s} for s in ("a", "b", "c")}
 BACKLOG = [{"id": f"{s}{i}", "series": s, "title": f"Topic {s}{i}"} for s in "abc" for i in range(3)]
 
 
@@ -46,13 +45,72 @@ def test_override_and_unknown_topic():
         planner.next_topic(data_with(), BACKLOG, SERIES, override="nope")
 
 
-def test_titles_rotate_and_avoid_near_duplicates():
+TOPIC = {"id": "last-day", "series": "a", "title": "The Last Day of the Dinosaurs",
+         "lead": "The Last Day of the Dinosaurs", "promise": "The Asteroid and the Long Dark"}
+
+
+def test_titles_follow_the_famous_first_formula_and_rotate():
     d = data_with()
-    t1 = planner.title(BACKLOG[0], "The Cambrian Seas", 2, d, SERIES)
-    assert t1 == "Fall Asleep in the Cambrian Seas | 2 Hours"
-    d["episodes"].append({"id": "x", "topic": "x", "series": "a", "title": t1})
-    t2 = planner.title(BACKLOG[0], "The Cambrian Seas", 2, d, SERIES)
-    assert t2 != t1 and len(t2) <= 100
+    t1 = planner.title(TOPIC, "ignored core", 2, d, SERIES)
+    assert t1 == "The Last Day of the Dinosaurs: The Asteroid and the Long Dark | Documentary for Sleep"
+    assert planner.title_problems(t1) == []
+    d["episodes"].append({"id": "x", "topic": "x", "series": "a", "title": "Something Else | Sleep Documentary"})
+    t2 = planner.title(TOPIC, "ignored core", 2, d, SERIES)
+    assert t2 == "The Last Day of the Dinosaurs: The Asteroid and the Long Dark | Sleep Documentary"
+    d["episodes"].append({"id": "y", "topic": "y", "series": "a", "title": t1})
+    t3 = planner.title(TOPIC, "ignored core", 2, d, SERIES)
+    assert t3 != t1 and len(t3) <= 100 and not planner.title_problems(t3)
+
+
+def test_title_without_a_lead_uses_the_writers_core():
+    t = planner.title({"id": "z", "series": "a", "title": "x"}, "Megalodon and the Whales", 2, data_with(), SERIES)
+    assert t == "Megalodon and the Whales | Documentary for Sleep"
+
+
+@pytest.mark.parametrize("bad, why", [
+    ("Fall Asleep in the Garden of Ediacara | 2 Hours", "jargon"),
+    ("The Hadean Earth: Earth's First Oceans | Documentary for Sleep", "jargon"),
+    ("Life in the Carboniferous: Coal Forests | Sleep Documentary", "jargon"),
+    ("Dinosaurs (As We Understand It) | Boring History For Sleep", "banned"),
+    ("Megalodon: The Giant Shark | SELECTED SOURCES | Sleep Documentary", "banned"),
+    ("What If Dinosaurs Never Went Extinct | Documentary for Sleep", "banned"),
+    ("Megalodon: The Giant Shark of the Warm Ancient Ocean", "suffix"),
+    ("A Quiet Evening Story: Calm Thoughts | Documentary for Sleep", "famous"),
+    ("Dickinsonia: Soft Quilted Creatures | Documentary for Sleep", "uncommon"),
+])
+def test_title_gate_rejects_jargon_banned_phrases_and_obscure_leads(bad, why):
+    problems = planner.title_problems(bad)
+    assert problems
+    key = {"jargon": "jargon", "banned": "banned", "suffix": "must end", "famous": "nothing famous",
+           "uncommon": "uncommon"}[why]
+    assert any(key in p for p in problems), problems
+
+
+def test_every_backlog_title_passes_the_gate():
+    data = data_with()
+    for t in config.backlog():
+        assert t["lead"] and t["promise"], t["id"]
+        made = planner.title(t, t["lead"], 2, data, config.series())
+        assert planner.title_problems(made) == [], (t["id"], made, planner.title_problems(made))
+        assert made.startswith(t["lead"]), made
+
+
+PUBLISHED = [("ediacaran-garden", "seas-before-fish"), ("coal-forests", "giant-insects"),
+             ("mammoth-steppe", "ice-age-nights"), ("earth-forms", "before-the-continents"),
+             ("hydrothermal-vents", "deep-sea"), ("ichthyosaurs", "ancient-giants-of-the-sea")]
+FAMOUS_FIRST = ["last-day-dinosaurs", "dinosaurs-never-extinct", "pangaea", "megalodon", "last-glacial-maximum",
+                "hell-creek", "plesiosaurs", "meganeura-wings", "siberian-traps", "snowball-earth"]
+
+
+def test_famous_topics_come_first_in_order_from_the_real_ledger():
+    backlog, series = config.backlog(), config.series()
+    d = data_with(*PUBLISHED)
+    picks = []
+    for _ in range(len(FAMOUS_FIRST)):
+        t = planner.next_topic(d, backlog, series)
+        picks.append(t["id"])
+        d["episodes"].append({"id": t["id"], "topic": t["id"], "series": t["series"], "title": t["title"]})
+    assert picks == FAMOUS_FIRST
 
 
 def test_ledger_refuses_a_second_publish_of_a_topic():

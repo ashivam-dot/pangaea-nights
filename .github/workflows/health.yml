@@ -27,7 +27,7 @@ jobs:
           git worktree add state FETCH_HEAD
       - name: Hours since the last upload
         id: check
-        run: python -m studio.cli health --hours 30
+        run: python -m studio.cli health --hours 108  # Tue/Fri: the Fri->Tue gap is 96 h
       - name: Alert
         if: failure()
         env:
@@ -35,6 +35,6 @@ jobs:
         run: |
           open=$(gh issue list -R "$GITHUB_REPOSITORY" --label alert --state open --search "No upload" --json number --jq length)
           if [ "$open" = "0" ]; then
-            gh issue create -R "$GITHUB_REPOSITORY" --label alert --title "No upload in the last 30 hours" \
-              --body "health.yml found no Pangaea Nights upload in the last 30 hours while the channel is not paused."
+            gh issue create -R "$GITHUB_REPOSITORY" --label alert --title "No upload in the last 108 hours" \
+              --body "health.yml found no Pangaea Nights upload in the last 108 hours while the channel is not paused."
           fi

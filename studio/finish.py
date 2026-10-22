@@ -100,7 +100,7 @@ def qa(episode: dict, tl: dict, final: Path, out_dir: Path, thumb: dict, shorts:
     if swapped > MAX_SWAPPED:
         problems.append(f"{swapped:.0%} of shots reuse a neighbour image")
     if not thumb.get("ok"):
-        problems.append("thumbnail failed the legibility test")
+        problems.append("thumbnail failed its gates: " + "; ".join(thumb.get("problems") or ["legibility"]))
     hard = [w for c in episode["chapters"] for w in c.get("warnings", [])
             if w.startswith(("unsupported", "name not", "exclamation", "alarm", "call to"))]
     if hard:
