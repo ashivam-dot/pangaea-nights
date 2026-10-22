@@ -506,10 +506,28 @@
     "failures": [],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-22T19:04:04Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "countdown-01",
+    "run": "39830179361",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [],
   "summaries": [],
-  "tests": []
+  "tests": [],
+  "proven": []
+ },
+ "topics": {
+  "outliers": [],
+  "tried": [],
+  "boosts": {},
+  "scans": []
  }
 }
