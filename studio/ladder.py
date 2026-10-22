@@ -55,8 +55,9 @@ HEDGE_SOURCE = re.compile(r"\b(may|might|could|likely|probably|possibly|thought|
                           r"hypothes\w*|believed|apparently|unlikely)\b", re.I)
 EXTRA_PROMPT_BANS = ["raft", "canoe", "paddle", "rope", "torch", "spear", "footprint of a", "sleeping bag", "backpack",
                      "flag", "house", "cabin", "road", "car ", "phone", "camera", "pov of a"]
-STYLE = ("photoreal painterly deep-time scene, tall vertical composition, bright moonlit teal and indigo night "
-         "with one warm focal light, cinematic depth, rich fine detail")
+STYLE = ("photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, "
+         "luminous blue-hour twilight sky, one bright warm glowing focal light, clear readable midtones, "
+         "cinematic depth, rich fine detail")
 # Pictographs, dingbats, misc symbols and arrows (variation selectors are dropped, not counted).
 _EMOJI = re.compile("[\U0001F000-\U0001FAFF☀-➿⬀-⯿⌀-⏿←-⇿㊗㊙]")
 

@@ -304,6 +304,8 @@ def publish(args) -> None:
         _save(args.slot, "out/publish.json", {"published": False, "refusals": why, "mode": args.mode})
         if args.mode == "publish":  # a planned publish slot that made nothing: fail so the alert and the doctor see it
             sys.exit("a planned publish slot was refused")
+        if not gates.get("ok"):  # a dry or test run whose Short failed its gates must not end green
+            sys.exit("the Short failed its gates")
         return
     data = ledger.load()
     tag_list = youtube.ladder_tags(p, marker)

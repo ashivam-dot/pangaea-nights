@@ -296,3 +296,23 @@ def test_a_late_single_runner_stage_is_not_fanned_out():
     assert not fanout.fanned_out([{"name": "plan", "status": "completed"}, {"name": "finish", "status": "in_progress"}])
     assert fanout.fanned_out([{"name": "images (3)", "status": "queued"}])
     assert fanout.fanned_out([{"name": "render (A)", "status": "in_progress"}])
+
+
+def test_exposure_grade_lifts_dark_take_with_a_focal_light():
+    from PIL import Image
+    from studio import ladder_images as li
+    a = np.full((200, 120), 30, np.uint8)
+    a[:, :60] = np.linspace(10, 90, 60, dtype=np.uint8)
+    a[90:110, 50:70] = 230  # warm focal light
+    graded, st = li.expose(Image.fromarray(a).convert("RGB"), 130.0)
+    assert 110 <= np.asarray(graded.convert("L")).mean() <= 150
+    assert li.exposure_problems(st) == []
+
+
+def test_exposure_grade_cannot_rescue_a_flat_muddy_take():
+    from PIL import Image
+    from studio import ladder_images as li
+    flat = Image.fromarray(np.full((200, 120), 35, np.uint8)).convert("RGB")
+    _, st = li.expose(flat, 130.0)
+    probs = li.exposure_problems(st)
+    assert any("focal light" in p for p in probs) and any("tonal spread" in p for p in probs)

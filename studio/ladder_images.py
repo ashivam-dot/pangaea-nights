@@ -12,12 +12,22 @@ import json
 import time
 from pathlib import Path
 
+import numpy as np
+from PIL import Image
+
 from . import ladder, plates, qa, sdcpp
 
 TAKES = 4
 KEEP = 2
 MIN_SIMILARITY = 0.25
 HARD = ("person", "text", "broken")
+# Exposure grade: CPU klein renders night scenes underexposed (raw mean luma 24-61 in the first dry run), so each take
+# is graded with one gamma towards its band's centre before review. The grade can only move midtones, so two raw
+# checks keep it honest: the take must already hold a real highlight (a focal light), and the graded picture must keep
+# a real tonal spread (a flat, muddy frame lifted to the band still fails).
+GAMMA_RANGE = (0.4, 1.6)
+RAW_P99_FLOOR = 100.0
+SPREAD = (40.0, 235.0)
 
 
 def shard(jobs: list[dict], k: int, n: int) -> list[dict]:
@@ -26,6 +36,33 @@ def shard(jobs: list[dict], k: int, n: int) -> list[dict]:
 
 def _seed(key: str, job_id: str, take: int) -> int:
     return int(hashlib.sha1(f"{key}:{job_id}:{take}".encode()).hexdigest()[:8], 16) % 2_000_000_000
+
+
+def _luma(img: Image.Image) -> np.ndarray:
+    return np.asarray(img.convert("L"), dtype=np.float32)
+
+
+def expose(img: Image.Image, target: float) -> tuple[Image.Image, dict]:
+    """One gamma that moves the mean luma to `target` (bounded by GAMMA_RANGE), plus the raw/graded stats."""
+    raw = _luma(img)
+    mean = max(float(raw.mean()), 1.0)
+    gamma = float(np.clip(np.log(target / 255.0) / np.log(mean / 255.0), *GAMMA_RANGE))
+    lut = [round(255.0 * (i / 255.0) ** gamma) for i in range(256)]
+    graded = img.convert("RGB").point(lut * 3)
+    g = _luma(graded)
+    return graded, {"raw_mean": round(mean, 1), "raw_p99": round(float(np.percentile(raw, 99)), 1),
+                    "gamma": round(gamma, 3),
+                    "spread": round(float(np.percentile(g, 90) - np.percentile(g, 10)), 1)}
+
+
+def exposure_problems(stats: dict) -> list[str]:
+    out = []
+    if stats["raw_p99"] < RAW_P99_FLOOR:
+        out.append(f"no focal light: raw p99 {stats['raw_p99']:.0f} < {RAW_P99_FLOOR:.0f}")
+    lo, hi = SPREAD
+    if not lo <= stats["spread"] <= hi:
+        out.append(f"tonal spread {stats['spread']:.0f} outside {lo:.0f}-{hi:.0f}")
+    return out
 
 
 def take_problems(verdict, job: dict) -> list[str]:
@@ -54,13 +91,16 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                 if take and time.monotonic() - start > budget_s:
                     break
                 t = time.monotonic()
-                img = sdcpp.to_pil(server.generate(job["prompt"], _seed(key, job["id"], take), w, h))
+                raw = sdcpp.to_pil(server.generate(job["prompt"], _seed(key, job["id"], take), w, h))
+                img, exposure = expose(raw, sum(job["luma"]) / 2)
                 verdict = qa.review(img, job["scene"])
-                probs = take_problems(verdict, job)
+                probs = exposure_problems(exposure) + take_problems(verdict, job)
                 entry["takes"].append({"seconds": round(time.monotonic() - t, 1), "problems": probs,
-                                       **verdict.as_dict()})
+                                       "exposure": exposure, **verdict.as_dict()})
                 print(f"{job['id']} take {take + 1}: {'ok' if not probs else probs}", flush=True)
-                if probs:
+                if probs:  # keep a small preview of every refused take so a failing run can be diagnosed
+                    (out / "refused").mkdir(exist_ok=True)
+                    img.resize((216, 384)).save(out / "refused" / f"{job['id']}-t{take + 1}.jpg", quality=80)
                     continue
                 stem = f"{job['id']}" if not entry["kept"] else f"{job['id']}-alt{len(entry['kept'])}"
                 img.save(out / f"{stem}.png")
