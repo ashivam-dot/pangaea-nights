@@ -441,13 +441,23 @@ def plan_problems(p: dict, data: dict, at: date, planned: list[dict] | None = No
 
 
 IMAGE_IDS = [f"o{n}" for n in range(1, OPTIONS + 1)] + ["end"]
+# The CPU model draws prehistoric flyers as feathered birds (dry run 3: "a giant Quetzalcoatlus" came out an eagle),
+# which a deep-time audience notices at once. Prompts naming one get the anatomy spelled out.
+ANATOMY = {("pterosaur", "quetzalcoatlus", "pteranodon", "nyctosaurus", "rhamphorhynchus"):
+           "the pterosaur has bare leathery membrane wings stretched from one long finger, a long beak, no feathers, "
+           "not a bird"}
+
+
+def anatomy(prompt: str) -> str:
+    low = prompt.lower()
+    return "".join(f" {text}." for names, text in ANATOMY.items() if any(n in low for n in names))
 
 
 def image_jobs(p: dict) -> list[dict]:
     """Nine vertical stills: the eight options (option 1 is also frame 0, the thumbnail) and the end-card plate."""
     art = p["art_direction"].strip().rstrip(".")
     jobs = [{"id": f"o{o['n']}", "n": o["n"], "scene": o["image_prompt"],
-             "prompt": f"{o['image_prompt'].strip().rstrip('.')}. {art}. {STYLE}.",
+             "prompt": f"{o['image_prompt'].strip().rstrip('.')}.{anatomy(o['image_prompt'])} {art}. {STYLE}.",
              "luma": (92.0, 168.0) if o["n"] == 1 else (62.0, 198.0)} for o in p["options"]]
     end = (f"A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open "
            f"calm sky in the upper half of the frame. {art}. {STYLE}.")

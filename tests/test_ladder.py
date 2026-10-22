@@ -240,3 +240,12 @@ def test_description_cites_the_pinned_revision():
     p = ALL[0]
     d = youtube.ladder_description(p, None)
     assert f"oldid={p['fact']['wiki_revid']}" in d and youtube.LADDER_DISCLOSURE in d
+
+
+def test_pterosaur_prompts_spell_out_membrane_wings():
+    from studio import ladder
+    p = {"art_direction": "a", "options": [{"n": 1, "image_prompt": "A giant Quetzalcoatlus soaring"},
+                                           {"n": 2, "image_prompt": "A herd of Triceratops"}]}
+    jobs = {j["id"]: j for j in ladder.image_jobs(p)}
+    assert "no feathers" in jobs["o1"]["prompt"] and "no feathers" not in jobs["o2"]["prompt"]
+    assert jobs["o1"]["scene"] == "A giant Quetzalcoatlus soaring"  # CLIP similarity still scores the plain scene
