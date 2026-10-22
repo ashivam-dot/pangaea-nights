@@ -109,7 +109,11 @@ def check(args) -> None:
     problems = {}
     for path in sorted(ladder.BANKS.glob("*.json")):
         problems.update({f"{path.name} {k}": v for k, v in ladder.bank_problems(ladder.load_bank(path)).items()})
-    print(json.dumps({"usable": {s: len(ps) for s, ps in banks.items()}, "problems": problems}, indent=1))
+    # Proven premises live on the state branch and are re-gated at plan time; one failing there is left out, never a
+    # reason to stop the day's Shorts, so they are counted here but do not fail the check.
+    proven = sum(len(ps) for ps in ladder.with_proven({}, ledger.load()).values())
+    print(json.dumps({"usable": {s: len(ps) for s, ps in banks.items()}, "proven": proven, "problems": problems},
+                     indent=1))
     if problems:
         sys.exit("bank premises fail their gates")
 
@@ -123,7 +127,7 @@ def ramp(args) -> None:
 
 def plan(args) -> None:
     data = ledger.load()
-    banks = ladder.load_banks(strict=False)
+    banks = ladder.with_proven(ladder.load_banks(strict=False), data)
     today = ladder.now_day()
     if args.mode == "publish":
         slots, why = ladder.slots_allowed(ladder.launch_day(os.environ.get("SHORTS_LAUNCH")), today,
@@ -410,7 +414,8 @@ def learn(args) -> None:
             print(f"analytics client: {type(exc).__name__}")
     if args.dry:
         api = None  # the learner posts pending first comments through the Data API: a dry run must not write
-    sm = ladder_learn.run(data, ladder.load_banks(strict=False), analytics, api, datetime.now(timezone.utc))
+    sm = ladder_learn.run(data, ladder.with_proven(ladder.load_banks(strict=False), data), analytics, api,
+                          datetime.now(timezone.utc))
     msg = ladder_learn.message(sm)
     print(msg)
     if args.dry:  # a dispatch dry run: compute and print, but neither save the ledger nor message anyone

@@ -1,8 +1,9 @@
 """Pick the next topic and its title.
 
 Topics: never a published one (a topic is used once, forever) and never the same series as either of the last
-two episodes. Within that, bible/backlog.json is read in order, so the famous topics at its top go first; the
-channel's learned series lift can reorder the three front-most series.
+two episodes. Within that, bible/backlog.json is read in order, so the famous topics at its top go first, except
+that a topic a competitor's long-form outlier has proven (the weekly scan's boosts) moves ahead; the channel's
+learned series lift can reorder the three front-most series.
 
 Titles follow one formula, famous thing first: "<lead>: <promise> | Documentary for Sleep" (or "| Sleep
 Documentary"), where the lead is a plain, searchable subject ("The Last Day of the Dinosaurs", "Megalodon") and
@@ -11,6 +12,7 @@ never a period name. title_problems() is the gate every backlog title must pass.
 from __future__ import annotations
 
 import re
+from datetime import datetime, timedelta, timezone
 
 from . import config, learn, ledger
 
@@ -35,9 +37,30 @@ def next_topic(data: dict, backlog: list[dict] | None = None, series: dict | Non
     history = [e["series"] for e in data["episodes"]]
     fresh = ([t for t in free if t["series"] not in set(history[-2:])] or
              [t for t in free if t["series"] not in set(history[-1:])] or free)
+    # A topic a competitor's long-form outlier has proven (studio/topics.py) moves to the front of the open topics,
+    # strongest first; the stable sort keeps backlog order for the rest, so with no boosts nothing changes.
+    boost = boosts(data)
+    fresh = sorted(fresh, key=lambda t: -boost.get(t["id"], 0.0))
     order = list(dict.fromkeys(t["series"] for t in fresh))  # series in backlog order of their first open topic
     chosen = learn.prefer(order, data)[0]
     return next(t for t in fresh if t["series"] == chosen)
+
+
+BOOST_DAYS = 60  # a competitor's outlier stops moving a topic forward this long after it was seen
+
+
+def boosts(data: dict, at: datetime | None = None) -> dict[str, float]:
+    """{topic id: the outlier's views / its channel's median} for every boost recorded in the last BOOST_DAYS."""
+    at = at or datetime.now(timezone.utc)
+    out = {}
+    for tid, b in ((data.get("topics") or {}).get("boosts") or {}).items():
+        try:
+            seen = datetime.fromisoformat(str(b.get("at", "")).replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        if seen.tzinfo and at - seen <= timedelta(days=BOOST_DAYS):
+            out[tid] = float(b.get("ratio") or 0.0)
+    return out
 
 
 # --------------------------------------------------------------------------------------------- titles

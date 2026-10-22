@@ -281,6 +281,25 @@ def load_banks(root: Path = BANKS, strict: bool = True) -> dict[str, list[dict]]
     return out
 
 
+def with_proven(banks: dict[str, list[dict]], data: dict) -> dict[str, list[dict]]:
+    """The banks plus the proven-topics premises kept in the ledger (ladder.proven, written by studio/topics.py).
+    Each is gated again here exactly as a bank premise is, so a gate tightened since it was accepted still holds;
+    one that fails is left out (and printed) rather than failing the run."""
+    out = {s: list(ps) for s, ps in banks.items()}
+    ids = {p["id"] for ps in banks.values() for p in ps}
+    for p in (data.get("ladder") or {}).get("proven", []):
+        series = p.get("series")
+        if series not in SERIES or p.get("id") in ids:
+            continue
+        probs = premise_problems(p, series)
+        if probs:
+            print(f"proven premise {p.get('id')} left out: {'; '.join(probs[:3])}")
+            continue
+        out.setdefault(series, []).append(p)
+        ids.add(p["id"])
+    return out
+
+
 def find(banks: dict[str, list[dict]], premise_id: str) -> dict | None:
     return next((p for ps in banks.values() for p in ps if p["id"] == premise_id), None)
 
@@ -390,8 +409,9 @@ def recent_alerts(data: dict, kind: str, at: date, days: int = FAILED_DAYS) -> l
 
 def pick(banks: dict[str, list[dict]], data: dict, at: date, planned: list[dict] | None = None,
          override: str | None = None, exclude: set[str] | None = None) -> dict:
-    """The next premise: a queued pt.2 first, then the best-weighted series that has rested longest, within the
-    rotation rules; never a premise already published, one that keeps failing (demoted) or one in exclude.
+    """The next premise: a queued pt.2 first, then a proven-topics premise (oldest accepted first), then the
+    best-weighted series that has rested longest, all within the rotation rules; never a premise already published,
+    one that keeps failing (demoted) or one in exclude.
     planned = premises already chosen for earlier slots today. An override is taken as given."""
     planned = planned or []
     taken = used_premises(data) | {p["id"] for p in planned}
@@ -409,6 +429,12 @@ def pick(banks: dict[str, list[dict]], data: dict, at: date, planned: list[dict]
     for qid in queue:
         p = find(banks, qid)
         if p and not rotation_problems(past, p["series"], at):
+            return p
+    # Proven premises (a competitor's outlier retold as our own deep-time premise) go ahead of untested bank ones.
+    proven = sorted((p for ps in banks.values() for p in ps if p.get("provenance") and p["id"] not in taken),
+                    key=lambda p: (p.get("added_at", ""), p["id"]))
+    for p in proven:
+        if not rotation_problems(past, p["series"], at):
             return p
     choices = []
     for series in sorted(banks):

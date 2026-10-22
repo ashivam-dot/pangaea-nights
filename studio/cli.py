@@ -6,6 +6,7 @@
     python -m studio.cli finish            python -m studio.cli publish
     python -m studio.cli record            python -m studio.cli health
     python -m studio.cli ladder-...        the choice-ladder Shorts (see studio/ladder_cli.py)
+    python -m studio.cli topics-scan       the weekly proven-topics feed (see studio/topics.py)
 """
 from __future__ import annotations
 
@@ -338,9 +339,10 @@ def main(argv: list[str] | None = None) -> None:
     s = sub.add_parser("health")
     s.add_argument("--hours", type=float, default=30)
     s.set_defaults(fn=health)
-    from . import ladder_cli
+    from . import ladder_cli, topics
 
     ladder_cli.register(sub)
+    topics.register(sub)
     args = p.parse_args(argv)
     args.fn(args)
 

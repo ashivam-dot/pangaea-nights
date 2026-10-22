@@ -33,6 +33,7 @@ def first_jobs(doc):
     ("episode.yml", "vars.PAUSED == 'false'"),
     ("shorts.yml", "vars.PAUSED == 'false' && vars.SHORTS_PAUSED != 'true'"),
     ("shorts-learn.yml", "vars.PAUSED == 'false' && vars.SHORTS_PAUSED != 'true'"),
+    ("topics.yml", "vars.PAUSED == 'false' && vars.SHORTS_PAUSED != 'true'"),
 ])
 def test_schedules_are_gated_on_pause(name, gate):
     doc = load(name)
@@ -41,7 +42,7 @@ def test_schedules_are_gated_on_pause(name, gate):
         assert "github.event_name != 'schedule'" in job["if"] and gate in job["if"]
 
 
-@pytest.mark.parametrize("name", ["shorts.yml", "shorts-learn.yml"])
+@pytest.mark.parametrize("name", ["shorts.yml", "shorts-learn.yml", "topics.yml"])
 def test_dispatch_defaults_to_dry_run(name):
     inp = load(name)["on"]["workflow_dispatch"]["inputs"]["dry_run"]
     assert inp["type"] == "boolean" and inp["default"] is True
@@ -60,6 +61,21 @@ def test_cadence():
     assert load("shorts.yml")["on"]["schedule"] == [{"cron": "0 8 * * *"}]
     assert load("episode.yml")["on"]["schedule"] == [{"cron": "10 14 * * 2,5"}]
     assert config.EPISODE_SLOT_UTC == (21, 0)
+    assert load("topics.yml")["on"]["schedule"] == [{"cron": "0 5 * * 1"}]  # Mondays, before the learner
+
+
+def test_topics_scan_saves_only_when_not_dry_and_alerts():
+    doc = load("topics.yml")
+    job = doc["jobs"]["scan"]
+    assert job["environment"] == "youtube" and doc["concurrency"]["group"] == "topics"
+    assert job["env"]["DRY"] == "${{ github.event_name != 'schedule' && inputs.dry_run != false }}"
+    steps = {s.get("name"): s for s in job["steps"]}
+    assert "--dry" in steps["Scan"]["run"] and {"YOUTUBE_OAUTH_JSON", "GEMINI_API_KEY"} <= set(steps["Scan"]["env"])
+    for name in ("Save the ledger", "Low supply"):
+        assert steps[name]["if"] == "env.DRY != 'true'"
+    assert "alerts.txt" in steps["Low supply"]["run"] and "--label alert" in steps["Low supply"]["run"]
+    assert "failure()" in steps["Alert"]["if"] and "alert.send" in steps["Alert"]["run"]
+    assert "topics" in load("doctor.yml")["on"]["workflow_run"]["workflows"]
 
 
 def test_concurrency_stays_within_twenty():

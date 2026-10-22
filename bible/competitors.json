@@ -1,0 +1,42 @@
+{
+ "source": "pangaea-replication-2026-10-22/research/REPORT.md (ranking table and section 7); every channel id checked against its own teardown",
+ "channels": [
+  {"rank": 1, "id": "UCUuUQ0rQtFZRVxXDk0B-znQ", "name": "MonAI", "handle": "@IAmont", "format": "shorts", "niche": "Spanish choose-one / price ladders (the format we adapt)"},
+  {"rank": 2, "id": "UC-VJfdJxMqbTcB9yVDEwfcQ", "name": "insanespidey", "handle": "@HEROISINSANOS-m9s", "format": "shorts", "niche": "wordless melodrama"},
+  {"rank": 3, "id": "UCMSNlO5nTRJztWSjMnog-3A", "name": "Goats of football", "handle": "@Thegoatfootballs", "format": "shorts", "niche": "Spanish two-door dilemmas"},
+  {"rank": 4, "id": "UCu5trKWQNy1uHN22oZGupkQ", "name": "Risaventuras", "handle": "@risaventuras", "format": "shorts", "niche": "Spanish 3D sitcom"},
+  {"rank": 5, "id": "UCFabwiDctYWqV93d1ZuH8rQ", "name": "Bandar Apna Dost", "handle": "@BandarApnaDost", "format": "shorts", "niche": "Hindi photoreal animal comedy"},
+  {"rank": 6, "id": "UC4oOA0pU7YvHPGOHubo2chg", "name": "Gossip Goblin", "handle": "@Gossip.Goblin", "format": "shorts", "niche": "original sci-fi"},
+  {"rank": 7, "id": "UC775l4ifggdTkvyPhfm8hLQ", "name": "Pouty Frenchie", "handle": "@PoutyFrenchie", "format": "shorts", "niche": "wordless cartoon loops"},
+  {"rank": 8, "id": "UCx-KHuSRKUX9hH1yLqWLMeg", "name": "Miracle Animal Rescues", "handle": "@MiracleAnimalRescues", "format": "shorts", "niche": "paradox animal loops"},
+  {"rank": 9, "id": "UC1B2ma19CGdF26bEgTgfSlg", "name": "Riki TV", "handle": "@RikiTV-j3p", "format": "shorts", "niche": "Hindi nursery rhymes"},
+  {"rank": 10, "id": "UCy3Hgwj12x3fDQUcutNm2DA", "name": "Sleepless Historian", "handle": "@SleeplessHistorian", "format": "long", "niche": "history for sleep"},
+  {"rank": 11, "id": "UCZB1r1In9RfE7tpVrYgcjLQ", "name": "Chloe VS History", "handle": "@ChloeVSHistory", "format": "mixed", "niche": "time-travel host vlogs"},
+  {"rank": 12, "id": "UCNZegH5HQPx_chNsPqJw1Rw", "name": "Sleepy Science Channel", "handle": "@SleepyScienceChannel", "format": "long", "niche": "deep-time science for sleep"},
+  {"rank": 13, "id": "UCAYuF-mUUwfwnOOTePtWcUA", "name": "AI HISTORY", "handle": "@theaihistory22", "format": "shorts", "niche": "Hindi POV invention Shorts"},
+  {"rank": 14, "id": "UC6gf2t9dKojAJcAFaFZFHuw", "name": "AI Trailer Cinema", "handle": "@AItrailercinema", "format": "long", "niche": "survival films"},
+  {"rank": 15, "id": "UC5FCyk1QkTBLgWm-w866PGg", "name": "Epic AI Films", "handle": "@epicaifilms2024", "format": "long", "niche": "fantasy saga"},
+  {"rank": 16, "id": "UCajYzp_LvHDF58OlHE5lYow", "name": "Historian Sleepy", "handle": "@HistorianSleepy", "format": "long", "niche": "history for sleep"},
+  {"rank": 17, "id": "UC6LYB8YhQKo2H6EK3q6U6kw", "name": "Bedtime & Historian", "handle": "@TheBedtimeHistory-icdi", "format": "long", "niche": "history for sleep"},
+  {"rank": 18, "id": "UCU6f-Yvey1jKxB4TB3J-Ofg", "name": "Dreamoria", "handle": "@TheDreamoria", "format": "long", "niche": "myth sleep stories"},
+  {"rank": 19, "id": "UCPlUfxXfP-Cgg4_qM-y8ivA", "name": "Silence of the Earth", "handle": "@SilenceoftheEarth", "format": "long", "niche": "deep-time sleep documentaries (our niche)"}
+ ],
+ "do_not_copy": [
+  "MonAI", "el brayan", "insanespidey", "Miranha", "Goats of football", "Lamine Yamal", "Risaventuras",
+  "Larín Junior", "Larin Junior", "Bandar Apna Dost", "Boltu", "Halku", "Tuntun mausi", "Pagli mausi", "Motu bhai",
+  "Bablu", "Dogesh", "Pouty Frenchie", "Pouty", "Miracle Animal Rescues", "Animal Robots", "Nyra", "Riki TV",
+  "Aalu Kachalu", "Baby Baingan", "Mota Hathi", "AI HISTORY", "aihistory", "Thirteen Cycles", "the Basilisk",
+  "Niiro Cradle", "NiiroCore", "WOODNUTS", "Age of Kingdoms", "Gossip Goblin", "Claudette", "MiiMii",
+  "Cosmic Nullifier", "Chloe VS History", "Sleepless Historian", "Historian Sleepy", "Bedtime & Historian",
+  "Bedtime Historian", "Sleepy Science", "one sleepy soul at a time", "Dreamoria", "Silence of the Earth",
+  "let the silence take hold", "Epic AI Films", "Age of Dragons", "Mother of Dragons", "Varic", "Corvin", "Freya",
+  "AI Trailer Cinema", "ASHBORN", "LAST OF THE HERD", "FORGOTTEN SOLDIER", "Naya", "Nuka", "Korr", "Oriel",
+  "Elias Vance", "Maya Serrano", "Golu", "Chunnu Munnu", "Kalu Madari", "Lakdi Ki Kathi", "Chanda Mama",
+  "Nani Teri Morni", "Kimberly", "Kima", "Tralalero", "Tung Tung Sahur", "don ramon", "Fikra", "The Hand of God",
+  "Boring History For Sleep", "As We Understand It", "SELECTED SOURCES", "Hey guys, tonight",
+  "dim the lights, maybe turn on a fan", "David Attenborough", "national geographic", "Jurassic Park",
+  "Jurassic World", "Star Wars", "Flintstones", "Lord of the Rings", "Game of Thrones", "KPop Demon Hunters",
+  "Wednesday", "Mario", "SpongeBob", "Hulk", "Italian brainrot", "brainrot", "El Chavo", "Roblox", "Labubu",
+  "Dragon Ball", "Oreo", "LEGO", "Kevin MacLeod"
+ ]
+}

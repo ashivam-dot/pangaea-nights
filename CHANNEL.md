@@ -64,6 +64,17 @@ mammoths, the world of T. rex, the Jurassic seas, giant insects, the Great Dying
 episodes a week the backlog lasts about nine months. Add topics before it runs out: the planner stops with
 `BacklogExhausted` instead of repeating a topic.
 
+**Proven topics.** Every week the channel looks at what is over-performing on the top AI channels
+(`bible/competitors.json`) and takes only the appeal: the dilemma, the scale or the countdown. It never takes the
+words. Only public metadata is read: the video id, title, view count, date, length and channel. Descriptions,
+transcripts, captions, thumbnails and media are never downloaded, stored or sent to a model.
+- A Shorts outlier becomes a new premise of our own. It is about deep-time Earth history only and grounded in a
+  sentence of a pinned Wikipedia revision.
+- It must pass every bank gate, and it must not reuse a competitor title, share any four-word run with one, or
+  name a competitor's channel, character or brand *(gate: `topics.problems`)*.
+- A long-form outlier never adds a topic. It can only move a matching backlog topic forward for 60 days *(gate:
+  `planner.boosts`)*.
+
 ## Cadence and length
 
 - **When.** `episode.yml` builds on Tuesday and Friday at 14:10 UTC (`10 14 * * 2,5`). A 2-hour build takes about

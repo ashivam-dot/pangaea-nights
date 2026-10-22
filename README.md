@@ -56,6 +56,16 @@ and a ceiling) → `publish` → `record`.
 - Every upload is read back with `videos.list` (madeForKids, selfDeclaredMadeForKids, privacy, publishAt). A
   mismatch goes to Telegram, to an `alert` issue and to `ladder.alerts` in the ledger.
 - `shorts-learn.yml` (06:00 UTC) reads 24 h / 72 h numbers and updates the series weights and the pt.2 queue.
+- `topics.yml` (Mondays 05:00 UTC, `python -m studio.cli topics-scan`; `studio/outliers.py`, `studio/topics.py`)
+  reads the 50 latest uploads of the channels in `bible/competitors.json`. It takes public metadata only (id, title,
+  views, date, length, channel), about 40 API units. It flags outliers: at least 3x the channel's median for that
+  kind, Shorts (≤180 s) and long-form apart, above a floor. Gemini sees only an outlier's title. It writes our own
+  deep-time premise, grounded in one sentence of a Wikipedia revision pinned by the fetch. The premise must pass
+  every bank gate plus four more: the source, the niche (no people or myth), the copy gate (no competitor title
+  verbatim, no shared 4-word run, no competitor names) and dedupe. Passing premises go to `ladder.proven` on the
+  state branch (at most 7 a week, ids from `-101`), and the picker takes them before untested bank premises.
+  Long-form outliers only boost an existing backlog topic (`topics.boosts`, 60 days). It alerts when fewer than
+  14 days of premises are left. A dispatch is a dry run unless `dry_run` is turned off.
 - Runner budget: the episode's plan job waits for any active Shorts run before fanning out (18 + 2 jobs), and the
   Shorts wait for an episode that has already fanned out (`studio/fanout.py`), so the two stay within 20 jobs.
 - `python -m studio.cli ladder-check` validates every bank premise; fix failing data rather than the gates.
@@ -96,7 +106,8 @@ YouTube limits that still apply:
 ## Repository layout
 
 ```
-bible/        series.json (8 series), backlog.json (85 topics, 5 verified Wikipedia articles each), ladder/ (Shorts banks)
+bible/        series.json (8 series), backlog.json (85 topics, 5 verified Wikipedia articles each), ladder/ (Shorts banks),
+              competitors.json (channels the proven-topics scan reads, and the names we never use)
 studio/       the pipeline (see the table above); cli.py runs each stage
 assets/       fonts (Cormorant Garamond, OFL) and the CC0 ambience catalogue
 bench/        the CPU image-model and voice benchmarks

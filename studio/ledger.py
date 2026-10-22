@@ -2,7 +2,9 @@
 
 Published episodes consume their topic forever; dry and test runs are recorded separately and consume nothing.
 Shorts live in their own list and never touch `last_upload`, so a Short can never hold back a long-form episode.
-`ladder` holds what the Shorts learner keeps: weights, the pt.2 queue, per-build gate results, alerts and summaries.
+`ladder` holds what the Shorts learner keeps: weights, the pt.2 queue, per-build gate results, alerts and summaries,
+plus the proven-topics premises (studio/topics.py). `topics` holds that weekly scan's competitor outliers (public
+metadata only), the outliers already tried, and the long-form backlog boosts the planner reads.
 """
 from __future__ import annotations
 
@@ -14,7 +16,8 @@ from . import config
 
 EMPTY = {"episodes": [], "dry_runs": [], "last_upload": None, "shorts": [],
          "ladder": {"weights": {}, "streaks": {}, "queue": [], "needs_bank": [], "builds": [], "alerts": [],
-                    "summaries": [], "tests": []}}
+                    "summaries": [], "tests": [], "proven": []},
+         "topics": {"outliers": [], "tried": [], "boosts": {}, "scans": []}}
 
 
 def path(state: Path | None = None) -> Path:
@@ -28,8 +31,9 @@ def load(state: Path | None = None) -> dict:
     data = json.loads(p.read_text(encoding="utf-8"))
     for k, v in EMPTY.items():
         data.setdefault(k, json.loads(json.dumps(v)))
-    for k, v in EMPTY["ladder"].items():
-        data["ladder"].setdefault(k, json.loads(json.dumps(v)))
+    for group in ("ladder", "topics"):
+        for k, v in EMPTY[group].items():
+            data[group].setdefault(k, json.loads(json.dumps(v)))
     return data
 
 

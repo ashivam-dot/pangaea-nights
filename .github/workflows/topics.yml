@@ -1,0 +1,81 @@
+name: topics
+# The proven-topics feed (studio/topics.py): the competitor channels' outliers (public metadata only, ~40 API units)
+# -> our own deep-time Shorts premises, every gate re-run, saved to the ledger on the state branch; long-form outliers
+# boost a matching backlog topic. Mondays 05:00 UTC, clear of the 06:00 learner and the 08:00 Shorts build; one job.
+# Alerts on failure and when fewer than 14 days of unused premises are left.
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "scan, draft and print; do not save the ledger, open issues or message Telegram"
+        type: boolean
+        default: true
+
+concurrency:
+  group: topics
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  scan:
+    if: github.event_name != 'schedule' || (vars.PAUSED == 'false' && vars.SHORTS_PAUSED != 'true')
+    runs-on: ubuntu-24.04
+    environment: youtube
+    timeout-minutes: 40
+    env:
+      PANGAEA_STATE: ${{ github.workspace }}/state
+      PANGAEA_WORK: ${{ github.workspace }}/work
+      DRY: ${{ github.event_name != 'schedule' && inputs.dry_run != false }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/*.txt
+      - run: pip install -q -r requirements/base.txt -r requirements/plan.txt -r requirements/publish.txt
+      - name: State branch
+        run: |
+          git fetch --depth 1 origin state
+          git worktree add state FETCH_HEAD
+      - name: Scan
+        env:
+          YOUTUBE_OAUTH_JSON: ${{ secrets.YOUTUBE_OAUTH_JSON }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ "$DRY" = "true" ]; then python -m studio.cli topics-scan --dry; else python -m studio.cli topics-scan; fi
+      - name: Save the ledger
+        if: env.DRY != 'true'
+        run: |
+          cd state
+          git add ledger.json
+          git -c user.name=pangaea-nights-bot -c user.email=actions@users.noreply.github.com commit -q -m "ledger: proven topics $GITHUB_RUN_ID" || true
+          git push origin HEAD:state
+      - name: Low supply
+        if: env.DRY != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s work/topics/alerts.txt ]; then
+            gh issue create -R "$GITHUB_REPOSITORY" --label alert \
+              --title "Shorts premises running low ($(date -u +%Y-%m-%d))" --body-file work/topics/alerts.txt
+          fi
+      - name: Alert
+        if: failure() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python -c "import os; from studio import alert; alert.send('Pangaea Nights proven-topics scan failed: ' + os.environ['RUN_URL'])"
+          gh issue create -R "$GITHUB_REPOSITORY" --label alert \
+            --title "Proven-topics scan failed ($(date -u +%Y-%m-%d))" --body "The scheduled scan failed: $RUN_URL"
