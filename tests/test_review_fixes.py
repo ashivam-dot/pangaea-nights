@@ -350,3 +350,21 @@ def test_soft_fallback_only_for_mild_softness():
     assert not li.soft_only(["broken 0.49", "mushy 7.5"], 7.5)
     assert not li.soft_only(["mushy 7.0", "luma 80 outside 92-168"], 7.0)
     assert not li.soft_only(["person 0.62"], 12.0) and not li.soft_only([], 12.0)
+
+
+def test_a_dry_run_refused_only_as_too_close_to_its_sibling_ends_red(dirs, monkeypatch):
+    from argparse import Namespace
+    monkeypatch.setenv("PAUSED", "false")
+    d = _plan("B", ALL[0], mode="dry")
+    (d / "out" / "gates.json").write_text(json.dumps(_gates_json([1, 0, 0.01], {"o1": [0, 1, 0]})))
+    a = config.WORK / "ladder" / "A" / "out"
+    a.mkdir(parents=True, exist_ok=True)
+    (a / "gates.json").write_text(json.dumps(_gates_json([1, 0, 0], {"o1": [0, 1, 0]})))
+    with pytest.raises(SystemExit, match="sibling"):
+        ladder_cli.publish(Namespace(slot="B", mode="dry"))
+
+
+def test_take_score_ranks_by_figure_not_sleepdoc_person():
+    from studio import ladder_images as li
+    v = qa.Verdict(True, [], 0.6, 0.0, 0.0, 0.30, 6.0, 120.0, 40.0, 12.0)
+    assert abs(li.take_score(v, 0.05) - (6.0 + 12 * 0.30 - 4 * 0.05)) < 1e-9

@@ -84,6 +84,11 @@ def take_problems(verdict, job: dict, figure: float) -> list[str]:
     return out
 
 
+def take_score(verdict, figure: float) -> float:
+    """qa's take score with the figure contrast in place of the sleep-doc person label (which misreads these scenes)."""
+    return verdict.score() + 4 * (verdict.person - figure)
+
+
 def soft_only(problems: list[str], sharpness: float) -> bool:
     """True when a refused take failed on nothing but mild softness (the fallback above)."""
     return bool(problems) and all(q.startswith("mushy") for q in problems) and sharpness >= SOFT_SHARP_FLOOR
@@ -103,14 +108,14 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
             entry = {"id": job["id"], "takes": [], "kept": []}
             soft = []  # (score, take, img, verdict) of soft-only refusals
 
-            def keep(img, verdict, take, fallback=False):
+            def keep(img, verdict, fig, take, fallback=False):
                 stem = f"{job['id']}" if not entry["kept"] else f"{job['id']}-alt{len(entry['kept'])}"
                 img.save(out / f"{stem}.png")
                 files = plates.save_plate(img, out / stem, vertical=True)
                 entry["kept"].append({"plate": files["plate"], "depth": files["depth"], "take": take,
                                       "similarity": round(verdict.similarity, 4),
                                       "luma": round(verdict.brightness, 1), "embedding": qa.pack(qa.embed(img)),
-                                      "score": round(verdict.score(), 3), "fallback": fallback})
+                                      "score": round(take_score(verdict, fig), 3), "fallback": fallback})
             for take in range(TAKES):
                 if take and time.monotonic() - start > budget_s:
                     break
@@ -127,15 +132,15 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                     (out / "refused").mkdir(exist_ok=True)
                     img.resize((216, 384)).save(out / "refused" / f"{job['id']}-t{take + 1}.jpg", quality=80)
                     if soft_only(probs, verdict.sharpness):
-                        soft.append((verdict.score(), take, img, verdict))
+                        soft.append((take_score(verdict, fig), take, img, verdict, fig))
                     continue
-                keep(img, verdict, take)
+                keep(img, verdict, fig, take)
                 if len(entry["kept"]) >= KEEP:
                     break
             if not entry["kept"] and soft:
-                _, take, img, verdict = max(soft, key=lambda c: c[0])
+                _, take, img, verdict, fig = max(soft, key=lambda c: c[0])
                 print(f"{job['id']}: keeping soft take {take + 1} (sharpness {verdict.sharpness:.1f})", flush=True)
-                keep(img, verdict, take, fallback=True)
+                keep(img, verdict, fig, take, fallback=True)
             entry["ok"] = bool(entry["kept"])
             report["images"].append(entry)
             (out / f"shard-{k:02d}.json").write_text(json.dumps(report, indent=1))

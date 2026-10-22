@@ -131,12 +131,14 @@ def embed(img: Image.Image) -> np.ndarray:
 # labels only, so a sunlit fireball, smoke column or root tunnel matches none of them and its mass leaks into "person"
 # (0.30-0.72 on empty scenes in dry run 2), while small human silhouettes in a landscape score as low as 0.00. This
 # check is a two-sided contrast: deep-time scene types against people. On 31 empty ladder takes it scored at most 0.38;
-# on 14 Commons photos of people (portraits, hikers, silhouettes, beach figures) at least 0.64.
+# on 14 Commons photos of people (portraits, hikers, silhouettes, beach figures) at least 0.64. The face and hand labels
+# catch a stray body part: hands/faces pasted into 18 empty takes were caught 16/18 with them, 13/18 without.
 FIGURE_NO = ["an empty landscape", "a prehistoric animal", "a dramatic sky with fire, smoke or lightning",
              "a cave, burrow or hollow tree", "the sea, a shore or underwater", "plants, a forest or roots",
              "a volcano or lava"]
 FIGURE_YES = ["a landscape with a person in it", "a human silhouette", "a person", "people",
-              "a small figure of a person in the distance", "a diver or a swimmer"]
+              "a small figure of a person in the distance", "a diver or a swimmer", "a human face",
+              "a human hand or arm"]
 FIGURE_LIMIT = 0.50
 _figure_emb = None
 

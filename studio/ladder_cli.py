@@ -281,7 +281,8 @@ def publish(args) -> None:
         why.append(refusal)
     if not gates.get("ok"):
         why.append("gates failed: " + "; ".join(gates.get("failures", [])[:6]))
-    why += sibling_refusals(args.slot, gates)
+    sibling = sibling_refusals(args.slot, gates)
+    why += sibling
     when, api, channel, existing = None, None, None, None
     test_run = pl["run"] if args.mode == "test" else None
     marker = youtube.ladder_marker(p, test_run)
@@ -304,8 +305,8 @@ def publish(args) -> None:
         _save(args.slot, "out/publish.json", {"published": False, "refusals": why, "mode": args.mode})
         if args.mode == "publish":  # a planned publish slot that made nothing: fail so the alert and the doctor see it
             sys.exit("a planned publish slot was refused")
-        if not gates.get("ok"):  # a dry or test run whose Short failed its gates must not end green
-            sys.exit("the Short failed its gates")
+        if not gates.get("ok") or sibling:  # a dry or test run whose Short a publish run would refuse must not end green
+            sys.exit("the Short failed its gates" if not gates.get("ok") else "the Short is too close to its sibling slot")
         return
     data = ledger.load()
     tag_list = youtube.ladder_tags(p, marker)
