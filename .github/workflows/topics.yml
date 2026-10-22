@@ -1,7 +1,10 @@
 name: topics
 # The proven-topics feed (studio/topics.py): the competitor channels' outliers (public metadata only, ~40 API units)
 # -> our own deep-time Shorts premises, every gate re-run, saved to the ledger on the state branch; long-form outliers
-# boost a matching backlog topic. Mondays 05:00 UTC, clear of the 06:00 learner and the 08:00 Shorts build; one job.
+# boost a matching backlog topic. Mondays 05:00 UTC, clear of the 08:00 Shorts build; one job. A real (non-dry) run
+# shares the "state-ledger" concurrency group with the learner, so the two never push the state branch at once even
+# when the cron starts late. The Scan step has 30 minutes (studio/topics.py holds Gemini inside 24) and saves the
+# ledger as it goes, so a slow Gemini day still pushes the scan, the tried outliers and every accepted premise.
 # Alerts on failure and when fewer than 14 days of unused premises are left.
 
 on:
@@ -15,7 +18,7 @@ on:
         default: true
 
 concurrency:
-  group: topics
+  group: ${{ (github.event_name == 'schedule' || inputs.dry_run == false) && 'state-ledger' || 'topics-dry' }}
   cancel-in-progress: false
 
 permissions:
@@ -45,6 +48,7 @@ jobs:
           git fetch --depth 1 origin state
           git worktree add state FETCH_HEAD
       - name: Scan
+        timeout-minutes: 30
         env:
           YOUTUBE_OAUTH_JSON: ${{ secrets.YOUTUBE_OAUTH_JSON }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -53,7 +57,7 @@ jobs:
         run: |
           if [ "$DRY" = "true" ]; then python -m studio.cli topics-scan --dry; else python -m studio.cli topics-scan; fi
       - name: Save the ledger
-        if: env.DRY != 'true'
+        if: always() && env.DRY != 'true'
         run: |
           cd state
           git add ledger.json

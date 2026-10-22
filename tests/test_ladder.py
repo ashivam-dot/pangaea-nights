@@ -1,6 +1,5 @@
 """The ladder Shorts: banks, cadence ramp, rotation, novelty, timeline, upload flags and read-back."""
 import copy
-import re
 from datetime import date, datetime, timedelta, timezone
 
 import pytest
@@ -36,7 +35,7 @@ def test_no_mascot_and_a_spoken_verdict():
     for p in ALL:
         assert p["verdict_vo"].startswith(f"Real answer: number {p['answer_n']}"), p["id"]
         text = " ".join([p["verdict_vo"], p["hook_vo"], p["art_direction"], p["description"]])
-        assert not re.search(r"\bMoss\b|mascot|chibi", text), p["id"]  # the plant is fine
+        assert not ladder.MASCOT.search(text), p["id"]  # the plant is fine
 
 
 def test_bank_failures_are_caught():

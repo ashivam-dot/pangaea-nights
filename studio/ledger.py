@@ -9,6 +9,7 @@ metadata only), the outliers already tried, and the long-form backlog boosts the
 from __future__ import annotations
 
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -40,7 +41,9 @@ def load(state: Path | None = None) -> dict:
 def save(data: dict, state: Path | None = None) -> None:
     p = path(state)
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    tmp = p.with_name(p.name + ".tmp")  # whole or not at all: a job killed mid-save never leaves half a ledger
+    tmp.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    os.replace(tmp, p)
 
 
 def now() -> str:

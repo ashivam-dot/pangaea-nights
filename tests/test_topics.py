@@ -455,3 +455,244 @@ def test_an_outlier_with_no_honest_deep_time_version_is_rejected(one_channel):
     sm = topics.run(data, FakeApi(), Rejects(p), fake_fetch(p), banks=banks_without(p), backlog=[], at=AT)
     assert sm["accepted"] == [] and [r["video_id"] for r in sm["rejected"]] == ["sOUT"]
     assert data["ladder"]["proven"] == [] and data["topics"]["tried"] == ["sOUT"]
+
+
+# ---------------------------------------------------------------------------------------------------- review fixes
+
+
+def many_shorts():
+    """Ten normal Shorts and five outliers (v0..v4), so a run has several fresh ideas to work through."""
+    items = [video(f"s{i}", f"Short clip number {i}", 40_000 + 2_000 * i) for i in range(10)]
+    items += [video(f"v{i}", f"Outlier number {i}", 1_200_000 + i) for i in range(5)]
+    return items
+
+
+class ManyLLM(FakeLLM):
+    """Maps every fresh outlier to the model premise's article; each draft is the model premise."""
+
+    def __init__(self, premise, fail=None):
+        super().__init__(premise)
+        self.fail = fail
+        self.drafted = 0
+
+    def generate(self, system, prompt, schema=None, temperature=0.8):
+        if self.fail == "map":
+            raise self._exc
+        p = self.premise
+        if schema is topics.MAP_SCHEMA:
+            ids = [i for i in ("v0", "v1", "v2", "v3", "v4") if f'"video_id": "{i}"' in prompt]
+            return {"ideas": [{"video_id": i, "series": "countdown", "era": p["era"], "idea": "a catastrophe",
+                               "wiki_title": p["fact"]["wiki_title"], "reject": ""} for i in ids]}
+        self.drafted += 1
+        if self.fail == "draft":
+            raise self._exc
+        return super().generate(system, prompt, schema, temperature)
+
+
+def _manyrun(data, llm, **kw):
+    p = model_premise()
+    return topics.run(data, FakeApi(many_shorts()), llm, fake_fetch(p), banks=banks_without(p), backlog=[], at=AT,
+                      **kw)
+
+
+@pytest.mark.parametrize("exc", [__import__("studio.llm", fromlist=["NoModel"]).NoModel("down"),
+                                 __import__("requests").HTTPError("403 Forbidden"), AttributeError("'str'.get")])
+def test_a_failed_map_marks_nothing_tried_and_still_finishes(one_channel, exc):
+    llm = ManyLLM(model_premise(), fail="map")
+    llm._exc = exc
+    data, saved = fresh(), []
+    sm = _manyrun(data, llm, checkpoint=lambda d: saved.append(json.dumps(d)))
+    assert data["topics"]["tried"] == [] and sm["accepted"] == []
+    assert any(type(exc).__name__ in n for n in sm["notes"])
+    # the scan bookkeeping, the supply check and the scan record still happen
+    assert len(data["topics"]["outliers"]) == 5 and data["topics"]["scans"] and "supply_days" in sm
+    assert saved  # the scan was checkpointed
+    # next week the same outliers are fresh again and are worked on
+    sm2 = _manyrun(data, ManyLLM(model_premise()))
+    assert [a["id"] for a in sm2["accepted"]] == ["countdown-101"]
+
+
+def test_a_draft_outage_leaves_the_idea_untried(one_channel):
+    import requests
+
+    llm = ManyLLM(model_premise(), fail="draft")
+    llm._exc = requests.HTTPError("403")
+    data = fresh()
+    sm = _manyrun(data, llm)
+    assert llm.drafted == 1 and data["topics"]["tried"] == [] and sm["accepted"] == []
+    assert any("HTTPError" in n for n in sm["notes"])
+
+
+def test_ideas_past_the_cap_are_not_marked_tried(one_channel):
+    data = fresh()
+    sm = _manyrun(data, ManyLLM(model_premise()), cap=1)
+    assert [a["id"] for a in sm["accepted"]] == ["countdown-101"]
+    assert data["topics"]["tried"] == ["v0"]  # the first idea; v1..v4 were never reached
+    assert any("cap" in n for n in sm["notes"])
+
+
+def test_the_time_budget_stops_drafting_and_keeps_the_rest_for_next_week(one_channel):
+    ticks = iter(range(0, 10_000, 100))
+    data = fresh()
+    sm = _manyrun(data, ManyLLM(model_premise()), budget_s=150, clock=lambda: next(ticks))
+    assert len(sm["accepted"]) == 1 and len(data["topics"]["tried"]) == 1
+    assert any("time budget" in n for n in sm["notes"])
+
+
+@pytest.mark.parametrize("raw", [["a list"], "a string", {"fact": "a string", "tags": None, "options": "x"},
+                                 {"options": [1, "two"], "fact": None, "tags": "one,two"}])
+def test_a_malformed_draft_is_a_rejection_not_a_crash(one_channel, raw):
+    p = model_premise()
+    data = fresh()
+    sm = topics.run(data, FakeApi(), FakeLLM(p, drafts=[raw, raw]), fake_fetch(p), banks=banks_without(p),
+                    backlog=[], at=AT)
+    assert sm["accepted"] == [] and [r["video_id"] for r in sm["rejected"]] == ["sOUT"]
+    assert data["topics"]["tried"] == ["sOUT"]
+    shaped = topics.shape(raw, "countdown", "countdown-101", {"title": "T", "revid": 1})
+    assert ladder.premise_problems(shaped, "countdown")
+
+
+def test_a_malformed_map_reply_marks_nothing(one_channel):
+    class Bad(FakeLLM):
+        def generate(self, system, prompt, schema=None, temperature=0.8):
+            return {"ideas": "none"} if schema is topics.MAP_SCHEMA else super().generate(system, prompt, schema)
+    p = model_premise()
+    data = fresh()
+    sm = topics.run(data, FakeApi(), Bad(p), fake_fetch(p), banks=banks_without(p), backlog=[], at=AT)
+    assert data["topics"]["tried"] == [] and sm["rejected"] == [] and any("ValueError" in n for n in sm["notes"])
+
+
+def test_cli_checkpoints_a_real_run_only(monkeypatch, tmp_path, one_channel):
+    p, sent, seen = model_premise(), [], []
+    _cli(monkeypatch, tmp_path, p, sent)
+    real = topics.run
+    monkeypatch.setattr(topics, "run", lambda *a, **kw: seen.append(kw.get("checkpoint")) or real(*a, **kw))
+    topics.scan_cmd(argparse.Namespace(dry=True))
+    topics.scan_cmd(argparse.Namespace(dry=False))
+    assert seen == [None, ledger.save]
+
+
+def test_ids_are_never_reused_even_for_a_proven_premise_that_now_fails(one_channel):
+    p = model_premise()
+    data = fresh()
+    old = copy.deepcopy(p)
+    old.update(id="countdown-101", series="countdown", title="x", added_at="2026-01-01T00:00:00Z",
+               provenance={"video_id": "old"})  # fails a gate today: left out of with_proven
+    data["ladder"]["proven"].append(old)
+    assert "countdown-101" not in {q["id"] for q in ladder.with_proven(banks_without(p), data)["countdown"]}
+    sm = topics.run(data, FakeApi(), FakeLLM(p), fake_fetch(p), banks=banks_without(p), backlog=[], at=AT)
+    assert [a["id"] for a in sm["accepted"]] == ["countdown-102"]
+    ids = [q["id"] for q in data["ladder"]["proven"]]
+    assert len(ids) == len(set(ids))
+
+
+def test_niche_gate_reads_the_image_prompts_and_art_direction():
+    p = copy.deepcopy(model_premise())
+    p["options"][2]["image_prompt"] += ", a glowing dragon god spirit looms above."
+    probs = topics.niche_problems(p)
+    assert any("option 3 image" in x and "dragon" in x for x in probs)
+    assert any(x.startswith("o3 prompt") for x in probs)  # the composed prompt the image model gets
+    p = copy.deepcopy(model_premise())
+    p["art_direction"] = "Moonlit ruins with a ghost in the mist, 24mm lens, one warm ember glow."
+    assert any(x.startswith("art_direction") and "ghost" in x for x in topics.niche_problems(p))
+    # "god rays" is light, not a god
+    p = copy.deepcopy(model_premise())
+    p["art_direction"] = "Deep blue water with heavy god-rays and god rays, 24mm lens, one warm coral glow."
+    assert topics.niche_problems(p) == []
+
+
+MARY = "Mary Anning (21 May 1799 – 9 March 1847) was an English fossil collector and palaeontologist."
+
+
+@pytest.mark.parametrize("title, text", [
+    ("Mary Anning", MARY),
+    ("Mary Anning", MARY.replace("(21", "(; 21")),
+    ("Charles Darwin", "Charles Robert Darwin ( DAR-win; 12 February 1809 – 19 April 1882) was an English "
+                       "naturalist, geologist and biologist, best known for his fossil work."),
+    ("Barnum Brown", "Barnum Brown (February 12, 1873 – February 5, 1963), commonly referred to as Mr. Bones, was an "
+                     "American paleontologist who found fossils 66 million years old."),
+    ("Someone", "Someone was an American paleontologist who dug up Cretaceous fossils."),
+    ("Somebody", "Somebody (died 1850) collected fossils."),
+])
+def test_biographies_are_rejected(title, text):
+    assert any("person" in x for x in topics.article_problems({"title": title, "text": text}))
+
+
+@pytest.mark.parametrize("title, text", [
+    ("1883 eruption of Krakatoa", "Between 19 May and 21 October 1883, the volcanic island erupted. Geologists have "
+                                  "studied the caldera, formed 1.2 million years ago."),
+    ("2004 Indian Ocean earthquake and tsunami", "On 26 December 2004 an earthquake struck. Geologists mapped it."),
+    ("Mount Vesuvius", "Mount Vesuvius is a volcano. Its eruption in 79 AD destroyed Pompeii. Geology: 25,000 years."),
+    ("Big flood", "A flood in which 200 people were killed. Geologists say the valley is 2 million years old."),
+])
+def test_recorded_history_disasters_are_rejected(title, text):
+    assert any("recorded history" in x or "victims" in x
+               for x in topics.article_problems({"title": title, "text": text}, "Pleistocene"))
+
+
+def test_the_article_must_name_the_era_or_a_deep_time_date():
+    doc = {"title": "Krakatoa", "text": "Krakatoa is a volcano studied by geologists, a site for geologists."}
+    assert any("names neither" in x for x in topics.article_problems(doc, "Miocene"))
+    assert topics.article_problems({**doc, "text": doc["text"] + " It formed in the Miocene."}, "Miocene") == []
+    assert topics.article_problems({**doc, "text": doc["text"] + " It is 2.5 million years old."}, "Miocene") == []
+    assert topics.article_problems(doc) == []  # no era given: the deep-time test alone (the bank articles' shape)
+
+
+def test_eras_are_periods_before_recorded_history():
+    assert not {"Holocene", "Quaternary", "Phanerozoic", "Cenozoic"} & topics.ERAS
+    assert {"Pleistocene", "Cretaceous", "Cambrian", "Cryogenian"} <= topics.ERAS
+    assert {p["era"] for ps in BANKS.values() for p in ps} <= topics.ERAS
+    p = copy.deepcopy(model_premise())
+    p["era"] = "Holocene"
+    assert any("geological" in x for x in topics.niche_problems(p))
+
+
+def test_mascots_fail_every_premise_gate():
+    p = copy.deepcopy(model_premise())
+    p["description"] += " Our mascot Moss watches."
+    probs = ladder.premise_problems(p, p["series"])
+    assert any("mascot" in x for x in probs)
+    p = copy.deepcopy(model_premise())
+    p["options"][4]["image_prompt"] += " a chibi creature"
+    assert any("chibi" in x for x in ladder.premise_problems(p, p["series"]))
+
+
+def test_a_proven_premise_meets_names_added_later(one_channel, monkeypatch):
+    p = model_premise()
+    data = fresh()
+    topics.run(data, FakeApi(), FakeLLM(p), fake_fetch(p), banks=banks_without(p), backlog=[], at=AT)
+    assert "countdown-101" in {q["id"] for q in ladder.with_proven(banks_without(p), data)["countdown"]}
+    word = p["options"][0]["image_prompt"].split()[3]
+    real = outliers.do_not_copy
+    monkeypatch.setattr(outliers, "do_not_copy", lambda *a, **kw: real() + [word])
+    assert "countdown-101" not in {q["id"] for q in ladder.with_proven(banks_without(p), data)["countdown"]}
+    # and the niche gate: an off-niche line written into the stored premise
+    monkeypatch.setattr(outliers, "do_not_copy", real)
+    data["ladder"]["proven"][0]["options"][1]["image_prompt"] += " a ghost watches"
+    assert "countdown-101" not in {q["id"] for q in ladder.with_proven(banks_without(p), data)["countdown"]}
+
+
+def test_gemini_holds_to_the_callers_timeout_and_deadline(monkeypatch):
+    import time as _time
+
+    from studio import llm
+
+    calls = []
+
+    class Resp:
+        status_code = 503
+        text = ""
+
+    g = llm.Gemini.__new__(llm.Gemini)
+    g.timeout, g.attempts, g.deadline = 150, 2, _time.monotonic() + 3600
+    g.models, g.exhausted, g.used, g._window = ["models/gemini-x"], set(), [], []
+    g.session = type("S", (), {"post": lambda self, url, data, timeout: calls.append(timeout) or Resp()})()
+    monkeypatch.setattr(llm.time, "sleep", lambda s: None)
+    with pytest.raises(llm.NoModel):
+        g.generate("s", "p")
+    assert len(calls) == 2 and max(calls) <= 150
+    g.deadline = _time.monotonic() + 1  # spent: no request starts
+    calls.clear()
+    with pytest.raises(llm.NoModel):
+        g.generate("s", "p")
+    assert calls == []

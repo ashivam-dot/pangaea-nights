@@ -58,6 +58,9 @@ EXTRA_PROMPT_BANS = ["raft", "canoe", "paddle", "rope", "torch", "spear", "footp
 STYLE = ("photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, "
          "luminous blue-hour twilight sky, one bright warm glowing focal light, clear readable midtones, "
          "cinematic depth, rich fine detail")
+# The channel has no mascot: no named character (the old "Moss") and no mascot or chibi look in any line or prompt.
+# "moss" the plant is fine.
+MASCOT = re.compile(r"\bMoss\b|mascot|chibi")
 # Pictographs, dingbats, misc symbols and arrows (variation selectors are dropped, not counted).
 _EMOJI = re.compile("[\U0001F000-\U0001FAFF☀-➿⬀-⯿⌀-⏿←-⇿㊗㊙]")
 
@@ -218,6 +221,12 @@ def premise_problems(p: dict, series: str | None = None) -> list[str]:
     for field_ in ("banner", "hook_vo", "verdict_vo", "art_direction"):
         out += [f"{field_} hits the blocklist: {b}" for b in blocklist_hits(p[field_])]
     out += [f"fact hits the blocklist: {b}" for b in blocklist_hits(str(fact.get("text", "")))]
+    mascot_lines = {k: str(p.get(k, "")) for k in ("title", "banner", "hook_vo", "verdict_vo", "art_direction",
+                                                     "description")}
+    mascot_lines["fact"] = str(fact.get("text", ""))
+    mascot_lines.update({f"option {o.get('n')}": " ".join(str(o.get(k, "")) for k in ("label", "vo", "image_prompt"))
+                         for o in opts if isinstance(o, dict)})
+    out += [f"{k} has a mascot: '{m.group(0)}'" for k, v in mascot_lines.items() for m in MASCOT.finditer(v)]
     if len(opts) == OPTIONS and all(isinstance(o, dict) for o in opts):
         # The prompts the image model actually gets: art_direction rides on all nine, and is most of the end plate.
         for job in image_jobs(p):
@@ -283,15 +292,25 @@ def load_banks(root: Path = BANKS, strict: bool = True) -> dict[str, list[dict]]
 
 def with_proven(banks: dict[str, list[dict]], data: dict) -> dict[str, list[dict]]:
     """The banks plus the proven-topics premises kept in the ledger (ladder.proven, written by studio/topics.py).
-    Each is gated again here exactly as a bank premise is, so a gate tightened since it was accepted still holds;
-    one that fails is left out (and printed) rather than failing the run."""
+    Each is gated again here as a bank premise is, and by the proven-topics niche and competitor gates against the
+    competitor titles and do-not-copy names as they stand today, so a gate tightened (or a name added) since it was
+    accepted still holds; one that fails is left out (and printed) rather than failing the run."""
+    from . import outliers, topics  # topics imports this module
+
     out = {s: list(ps) for s, ps in banks.items()}
     ids = {p["id"] for ps in banks.values() for p in ps}
-    for p in (data.get("ladder") or {}).get("proven", []):
+    proven = [p for p in (data.get("ladder") or {}).get("proven", []) if isinstance(p, dict)]
+    if not proven:
+        return out
+    titles = [str(o.get("title", "")) for o in (data.get("topics") or {}).get("outliers", [])]
+    names = outliers.do_not_copy()
+    for p in proven:
         series = p.get("series")
         if series not in SERIES or p.get("id") in ids:
             continue
         probs = premise_problems(p, series)
+        if not probs:
+            probs = topics.niche_problems(p) + topics.copy_problems(p, titles, names)
         if probs:
             print(f"proven premise {p.get('id')} left out: {'; '.join(probs[:3])}")
             continue

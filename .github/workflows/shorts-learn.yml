@@ -1,6 +1,7 @@
 name: shorts-learn
 # The ladder learner (studio/ladder_learn.py): 24 h / 72 h numbers per Short -> series weights, pt.2 queue, retire
-# list and a Telegram summary. Runs at 06:00 UTC, well clear of the 08:00 Shorts build; one job.
+# list and a Telegram summary. Runs at 06:00 UTC, well clear of the 08:00 Shorts build; one job. A real (non-dry)
+# run shares the "state-ledger" concurrency group with the Monday topics scan: they never push the state branch at once.
 
 on:
   schedule:
@@ -13,7 +14,7 @@ on:
         default: true
 
 concurrency:
-  group: shorts-learn
+  group: ${{ (github.event_name == 'schedule' || inputs.dry_run == false) && 'state-ledger' || 'shorts-learn-dry' }}
   cancel-in-progress: false
 
 permissions:

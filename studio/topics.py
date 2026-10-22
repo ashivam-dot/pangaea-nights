@@ -27,8 +27,11 @@ import json
 import os
 import re
 import sys
+import time
 import unicodedata
 from datetime import date, datetime, timedelta, timezone
+
+import requests
 
 from . import config, gates, ladder, ledger, outliers
 
@@ -42,16 +45,43 @@ COPY_NGRAM = 4
 ARTICLE_CHARS = 18000
 KEEP_OUTLIERS, KEEP_TRIED, KEEP_SCANS = 400, 2000, 26
 MATCH_MIN = 4  # long-form: weighted shared words a backlog topic needs to be boosted
+# topics.yml gives the Scan step 30 minutes (the job 40): the Gemini stage starts no new idea after this, and each
+# request is held to LLM_TIMEOUT_S x LLM_ATTEMPTS and the overall deadline, so the run always reaches the save.
+DRAFT_BUDGET_S = 20 * 60
+LLM_TIMEOUT_S, LLM_ATTEMPTS = 150, 2
 
-ERAS = set(gates.GEOLOGY[:gates.GEOLOGY.index("Earth")])
-# Not deep-time Earth history: people, and myth or fiction. Checked on every line we publish.
+# Geological periods before recorded history. The Holocene (and the Quaternary, which contains it) is the age of
+# recorded human history and its disasters, and the eon/era umbrellas (Phanerozoic, Cenozoic) name no one period:
+# none of them is ever a premise's era. No bank premise uses any of them.
+NOT_ERAS = {"Holocene", "Quaternary", "Phanerozoic", "Cenozoic"}
+ERAS = set(gates.GEOLOGY[:gates.GEOLOGY.index("Earth")]) - NOT_ERAS
+# Not deep-time Earth history: people, and myth or fiction. Checked on every line we publish, on the art direction
+# and on every image prompt (as composed for the image model). "god rays" is a lighting term, not a god.
 OFF_NICHE = re.compile(
     r"\b(people|person|humans?|mankind|man|men|woman|women|child|children|boy|girl|tribes?|villages?|caveman|"
-    r"cavemen|neanderthals?|hominins?|homo|kings?|queens?|army|armies|soldiers?|gods?|goddess\w*|myth\w*|"
+    r"cavemen|neanderthals?|hominins?|homo|kings?|queens?|army|armies|soldiers?|gods?(?![-\s]rays?\b)|goddess\w*|"
+    r"myth\w*|"
     r"legend\w*|folklore|dragons?|demons?|ghosts?|spirits?|magic\w*|zombies?|aliens?|curse\w*|angels?|wizards?|"
     r"witch\w*|bible|jesus|celebrit\w*|influencers?)\b", re.I)
 DEEP_TIME = re.compile(r"million years|billion years|fossil|extinct|prehistoric|geolog|paleontolog|palaeontolog",
                        re.I)
+# A date of at least ten thousand years ago, as Wikipedia writes one.
+DEEP_DATE = re.compile(r"\b\d[\d,.]*\s*(?:million|billion|thousand)\s+years|\b\d{1,3}(?:,\d{3})+\s+years|"
+                       r"\b\d+(?:\.\d+)?\s*(?:Ma|Ga|ka|mya|kya)\b")
+# A biography's lead: "(born 1950)", "(died 1850)", "(1799–1847)", "(21 May 1799 – 9 March 1847)", with or without a
+# pronunciation first ("( DAR-win; 12 February 1809 – 19 April 1882)") or US-style dates; or "X was an English
+# fossil collector" (a nationality before the occupation, so "a site studied by geologists" is not a person).
+BIOGRAPHY = re.compile(
+    r"\(born\b|\bborn \d{3,4}\b|\((?:died|d\.)\s|\bdied \d{3,4}\b|"
+    r"\([^()]{0,80}?\b\d{3,4}\s*[–-]\s*[^()]{0,40}?\b\d{3,4}\)|"
+    r"\b(?:was|is) an? (?:[A-Z][\w-]+ )+(?:[a-z]+ )?(?:palaeontologist|paleontologist|geologist|naturalist|biologist|"
+    r"scientist|explorer|collector|anatomist|zoologist|botanist|physician|writer|author|engineer)s?\b")
+# Recorded history: a calendar year in the title, an AD/BC date or casualty words in the lead. A real disaster with
+# real victims is never an entertainment premise.
+HISTORY_YEAR = re.compile(r"\b(?:1[0-9]{3}|20[0-9]{2})\b")
+HISTORY_LEAD = re.compile(r"\b\d+\s*(?:AD|BC|BCE|CE)\b|\bA\.?D\.? \d+")
+CASUALTIES = re.compile(r"death toll|casualt|fatalit|victims|people (?:were )?killed|"
+                        r"killing (?:over |at least |more than |about |some )?\d", re.I)
 SERIES_FORMAT = {
     "survive_night": "One night in a prehistoric place: eight places to sleep or hide, from safest to deadliest.",
     "level_1_8": "Level 1 to 8: eight escalating versions of one prehistoric thing (pets, armour, rides, the "
@@ -112,21 +142,43 @@ def copy_problems(p: dict, titles: list[str], names: list[str]) -> list[str]:
     return out
 
 
+def _image_lines(p: dict) -> dict[str, str]:
+    """What the image model is told: the art direction, each option's scene, and the composed prompts."""
+    out = {"art_direction": str(p.get("art_direction", ""))}
+    opts = [o for o in p.get("options") or [] if isinstance(o, dict)]
+    for o in opts:
+        out[f"option {o.get('n')} image"] = str(o.get("image_prompt", ""))
+    if opts and len(opts) == len(p.get("options") or []):
+        try:
+            out.update({f"{j['id']} prompt": j["prompt"] for j in ladder.image_jobs(p)})
+        except (KeyError, TypeError, AttributeError):
+            pass
+    return out
+
+
 def niche_problems(p: dict) -> list[str]:
-    """Deep-time Earth history only: a geological era, and no people or mythology in anything we publish."""
+    """Deep-time Earth history only: a geological era, and no people or mythology in anything we publish or draw."""
     out = [] if p.get("era") in ERAS else [f"era {p.get('era')!r} is not a geological period"]
-    for field_, text in _published_lines(p).items():
+    for field_, text in {**_published_lines(p), **_image_lines(p)}.items():
         out += [f"{field_} is off the niche: '{m.group(0)}'" for m in OFF_NICHE.finditer(text)]
     return out
 
 
-def article_problems(doc: dict) -> list[str]:
-    """The pinned article must be about deep time, and never a biography."""
-    text = doc.get("text", "")
-    out = [] if DEEP_TIME.search(text[:ARTICLE_CHARS]) else [f"{doc.get('title')!r} is not about deep time"]
-    if re.search(r"\(born\b|\bborn \d{3,4}\b|\(\d{4}\s*[–-]\s*\d{4}\)", text[:400]):
-        out.append(f"{doc.get('title')!r} is about a person")
-    out += [f"article names a competitor brand: {b}" for b in ladder.blocklist_hits(doc.get("title", ""))]
+def article_problems(doc: dict, era: str | None = None) -> list[str]:
+    """The pinned article must be about deep time (and name the premise's era or a date of at least ten thousand
+    years ago), never a biography, and never a disaster of recorded history."""
+    text, title = doc.get("text", ""), doc.get("title", "")
+    body = text[:ARTICLE_CHARS]
+    out = [] if DEEP_TIME.search(body) else [f"{title!r} is not about deep time"]
+    if era is not None and not (re.search(r"\b" + re.escape(era) + r"\b", body) or DEEP_DATE.search(body)):
+        out.append(f"{title!r} names neither the {era} nor a deep-time date")
+    if BIOGRAPHY.search(text[:400]):
+        out.append(f"{title!r} is about a person")
+    if HISTORY_YEAR.search(title) or HISTORY_LEAD.search(text[:600]):
+        out.append(f"{title!r} is an event of recorded history")
+    if CASUALTIES.search(text[:600]):
+        out.append(f"{title!r} is about a disaster with human victims")
+    out += [f"article names a competitor brand: {b}" for b in ladder.blocklist_hits(title)]
     return out
 
 
@@ -239,7 +291,12 @@ def map_ideas(llm, rows: list[dict]) -> list[dict]:
     out = llm.generate(SYSTEM, ask, MAP_SCHEMA, temperature=0.4)
     known = {r["video_id"] for r in rows}
     ideas = []
-    for i in (out or {}).get("ideas", []):
+    got = out.get("ideas") if isinstance(out, dict) else None
+    if not isinstance(got, list):  # a malformed reply maps nothing: no outlier counts as looked at
+        raise ValueError(f"malformed map reply ({type(out).__name__})")
+    for i in got:
+        if not isinstance(i, dict):
+            continue
         if (i.get("video_id") in known and not str(i.get("reject", "")).strip() and i.get("series") in ladder.SERIES
                 and i.get("era") in ERAS and str(i.get("wiki_title", "")).strip() and str(i.get("idea", "")).strip()):
             ideas.append({k: str(i[k]).strip() for k in ("video_id", "series", "era", "idea", "wiki_title")})
@@ -293,18 +350,22 @@ def draft(llm, idea: dict, doc: dict, example: str, fix: list[str] | None = None
 
 
 def shape(raw: dict, series: str, pid: str, doc: dict) -> dict:
-    """The bank schema exactly, from a model reply: unknown keys dropped, the citation taken from the fetch."""
+    """The bank schema exactly, from a model reply: unknown keys dropped, the citation taken from the fetch. A reply
+    of the wrong shape (a fallback model is not held to the schema) becomes an empty premise the gates reject."""
+    raw = raw if isinstance(raw, dict) else {}
+    opts = raw.get("options") if isinstance(raw.get("options"), list) else []
     opts = [{"n": o.get("n"), "label": str(o.get("label", "")), "vo": str(o.get("vo", "")),
              "danger": o.get("danger"), "image_prompt": str(o.get("image_prompt", ""))}
-            for o in raw.get("options", []) if isinstance(o, dict)]
-    fact = raw.get("fact") or {}
+            for o in opts if isinstance(o, dict)]
+    fact = raw.get("fact") if isinstance(raw.get("fact"), dict) else {}
+    tags = raw.get("tags") if isinstance(raw.get("tags"), list) else []
     return {"id": pid, "era": str(raw.get("era", "")), "title": str(raw.get("title", "")),
             "banner": str(raw.get("banner", "")), "hook_vo": str(raw.get("hook_vo", "")),
             "art_direction": str(raw.get("art_direction", "")), "options": opts, "answer_n": raw.get("answer_n"),
             "verdict_vo": str(raw.get("verdict_vo", "")),
             "fact": {"text": str(fact.get("text", "")), "wiki_title": doc["title"], "wiki_revid": doc["revid"],
                      "source_sentence": str(fact.get("source_sentence", ""))},
-            "description": str(raw.get("description", "")), "tags": [str(t) for t in raw.get("tags", [])][:20],
+            "description": str(raw.get("description", "")), "tags": [str(t) for t in tags][:20],
             "related_topic_hint": str(raw.get("related_topic_hint", "")), "series": series}
 
 
@@ -313,7 +374,7 @@ def write_premise(llm, idea: dict, doc: dict, pid: str, banks: dict, pool: list[
     """(premise, []) when a draft passes every gate, else (None, the last draft's problems)."""
     fix: list[str] = []
     for _ in range(DRAFTS):
-        p = shape(draft(llm, idea, doc, _example(banks, idea["series"]), fix) or {}, idea["series"], pid, doc)
+        p = shape(draft(llm, idea, doc, _example(banks, idea["series"]), fix), idea["series"], pid, doc)
         if p["era"] != idea["era"]:
             p["era"] = idea["era"]  # the era the idea was mapped to, which the article was checked against
         fix = problems(p, doc, pool, used_titles, titles, names)
@@ -411,15 +472,29 @@ def added_since(data: dict, at: datetime, days: int = 7) -> int:
 # ---------------------------------------------------------------------------------------------------- run
 
 
+class _Deadline(Exception):
+    pass
+
+
 def run(data: dict, api, llm, fetch, banks: dict | None = None, backlog: list[dict] | None = None,
-        at: datetime | None = None, cap: int = WEEKLY_CAP) -> dict:
+        at: datetime | None = None, cap: int = WEEKLY_CAP, budget_s: float | None = None,
+        checkpoint=None, clock=time.monotonic) -> dict:
     """One weekly pass. Changes `data` in place (the caller decides whether to save); returns the summary.
     api: the YouTube Data API client or None (no scan); llm: a Gemini or None (no new premises); fetch(title) ->
-    wiki.fetch-style {title, revid, text}."""
+    wiki.fetch-style {title, revid, text}. budget_s: wall-clock seconds for the Gemini stage (default
+    DRAFT_BUDGET_S), after which no new idea is started. checkpoint(data): called whenever `data` is consistent
+    (after the scan and after each idea), so a run cut short still keeps what it finished.
+
+    An outlier counts as tried (and is never looked at again) only once it was really processed: the model rejected
+    it, or its idea was fetched and drafted. A model outage, a non-retried HTTP error or a malformed reply in the
+    mapping step marks nothing; ideas left over at the weekly cap or the time budget wait for next week."""
     at = at or datetime.now(timezone.utc)
     stamp = at.strftime("%Y-%m-%dT%H:%M:%SZ")
     banks = banks if banks is not None else ladder.load_banks(strict=False)
     backlog = backlog if backlog is not None else config.backlog()
+    budget_s = DRAFT_BUDGET_S if budget_s is None else budget_s
+    started = clock()
+    save = checkpoint or (lambda d: None)
     top = data["topics"]
     sm: dict = {"at": stamp, "scanned": 0, "units": 0, "errors": {}, "outliers": {"short": 0, "long": 0},
                 "accepted": [], "rejected": [], "boosts": [], "notes": []}
@@ -439,9 +514,15 @@ def run(data: dict, api, llm, fetch, banks: dict | None = None, backlog: list[di
         top["outliers"] = (top["outliers"] + [{**o, "seen": stamp} for o in found if o["video_id"] not in seen]
                            )[-KEEP_OUTLIERS:]
         sm["boosts"] = record_boosts(data, [o for o in found if o["kind"] == "long"], backlog, at)
+        save(data)
     room = max(0, cap - added_since(data, at))
     tried = set(top["tried"])
     fresh = [o for o in found if o["kind"] == "short" and o["video_id"] not in tried][:MAP_BATCH]
+
+    def mark(video_id: str) -> None:
+        if video_id not in top["tried"]:
+            top["tried"] = (top["tried"] + [video_id])[-KEEP_TRIED:]
+
     if fresh and not room:
         sm["notes"].append(f"weekly cap of {cap} proven premises reached")
     elif fresh and llm is None:
@@ -452,42 +533,71 @@ def run(data: dict, api, llm, fetch, banks: dict | None = None, backlog: list[di
         names = outliers.do_not_copy()
         pool = [p for ps in ladder.with_proven(banks, data).values() for p in ps]
         used_titles = [s.get("title", "") for s in data.get("shorts", []) if s.get("video_id")]
-        taken = {p["id"] for p in pool} | ladder.used_premises(data)
+        # every id the ledger or the banks hold, gated or not: a proven premise left out by a tightened gate keeps
+        # its id, so a new premise never shares it
+        taken = ({p["id"] for p in pool} | {str(p.get("id")) for p in data["ladder"]["proven"]} |
+                 {p["id"] for ps in banks.values() for p in ps} | ladder.used_premises(data))
         by_id = {o["video_id"]: o for o in fresh}
         try:
             ideas = map_ideas(llm, fresh)
+        except Exception as exc:  # an outage, a refused key or a malformed reply costs this week's premises only
+            ideas = None
+            sm["notes"].append(f"Gemini map: {type(exc).__name__}: {exc}"[:200])
+        if ideas is not None:
             mapped = {i["video_id"] for i in ideas}
-            sm["rejected"] += [{"video_id": v, "why": ["no honest deep-time version"]} for v in by_id if v not in mapped]
-            for idea in ideas:
-                if len(sm["accepted"]) >= room:
-                    break
-                o = by_id[idea["video_id"]]
-                try:
-                    doc = fetch(idea["wiki_title"])
-                except Exception as exc:  # a missing article rejects this idea, not the run
-                    sm["rejected"].append({"video_id": o["video_id"], "why": [f"article: {type(exc).__name__}"]})
-                    continue
-                bad = article_problems(doc)
-                if bad:
-                    sm["rejected"].append({"video_id": o["video_id"], "why": bad})
-                    continue
-                pid = next_id(idea["series"], taken)
-                p, why = write_premise(llm, idea, doc, pid, banks, pool, used_titles, titles, names)
-                if not p:
-                    sm["rejected"].append({"video_id": o["video_id"], "why": why[:6]})
-                    continue
-                p.update(added_at=stamp, provenance={
-                    "channel_id": o["channel_id"], "video_id": o["video_id"], "title": o["title"],
-                    "views": o["views"], "median": o["median"], "ratio": o["ratio"], "published": o["published"],
-                    "wiki_title": doc["title"], "wiki_revid": doc["revid"]})
-                data["ladder"]["proven"].append(p)
-                pool.append(p)
-                taken.add(pid)
-                sm["accepted"].append({"id": pid, "title": p["title"], "video_id": o["video_id"],
-                                       "ratio": o["ratio"]})
-        except NoModel as exc:  # a Gemini outage costs this week's premises, never the scan or the supply check
-            sm["notes"].append(f"Gemini: {exc}"[:200])
-        top["tried"] = (top["tried"] + [o["video_id"] for o in fresh])[-KEEP_TRIED:]
+            for v in by_id:
+                if v not in mapped:
+                    sm["rejected"].append({"video_id": v, "why": ["no honest deep-time version"]})
+                    mark(v)
+            save(data)
+            try:
+                for idea in ideas:
+                    if len(sm["accepted"]) >= room:
+                        sm["notes"].append(f"weekly cap of {cap} reached: the other ideas wait for next week")
+                        break
+                    if clock() - started > budget_s:
+                        raise _Deadline()
+                    o = by_id[idea["video_id"]]
+                    try:
+                        doc = fetch(idea["wiki_title"])
+                    except Exception as exc:  # a missing article rejects this idea, not the run
+                        sm["rejected"].append({"video_id": o["video_id"], "why": [f"article: {type(exc).__name__}"]})
+                        mark(o["video_id"])
+                        save(data)
+                        continue
+                    bad = article_problems(doc, idea["era"])
+                    if bad:
+                        sm["rejected"].append({"video_id": o["video_id"], "why": bad})
+                        mark(o["video_id"])
+                        save(data)
+                        continue
+                    pid = next_id(idea["series"], taken)
+                    try:
+                        p, why = write_premise(llm, idea, doc, pid, banks, pool, used_titles, titles, names)
+                    except (NoModel, requests.RequestException):
+                        raise  # the model or the key, not this idea: stop, and leave it for next week
+                    except Exception as exc:  # a reply of the wrong shape rejects this idea, not the run
+                        p, why = None, [f"draft: {type(exc).__name__}"]
+                    mark(o["video_id"])
+                    if not p:
+                        sm["rejected"].append({"video_id": o["video_id"], "why": why[:6]})
+                        save(data)
+                        continue
+                    p.update(added_at=stamp, provenance={
+                        "channel_id": o["channel_id"], "video_id": o["video_id"], "title": o["title"],
+                        "views": o["views"], "median": o["median"], "ratio": o["ratio"], "published": o["published"],
+                        "wiki_title": doc["title"], "wiki_revid": doc["revid"]})
+                    data["ladder"]["proven"].append(p)
+                    pool.append(p)
+                    taken.add(pid)
+                    sm["accepted"].append({"id": pid, "title": p["title"], "video_id": o["video_id"],
+                                           "ratio": o["ratio"]})
+                    save(data)
+            except _Deadline:
+                sm["notes"].append(f"time budget of {budget_s / 60:.0f} min spent: the other ideas wait for next "
+                                   "week")
+            except Exception as exc:  # NoModel, an HTTP error: never the scan, the boosts or the supply check
+                sm["notes"].append(f"Gemini: {type(exc).__name__}: {exc}"[:200])
     full = ladder.with_proven(banks, data)
     sm["proven_unused"] = sum(1 for p in data["ladder"]["proven"] if p["id"] not in ladder.used_premises(data))
     sm["supply_days"] = supply_days(full, data, at.date())
@@ -536,8 +646,9 @@ def _youtube():
 def _gemini():
     from .llm import Gemini, NoModel
 
-    try:
-        return Gemini()
+    try:  # held well inside the Scan step's 30 minutes, so a slow Gemini day still reaches the save
+        return Gemini(timeout=LLM_TIMEOUT_S, attempts=LLM_ATTEMPTS,
+                      deadline=time.monotonic() + DRAFT_BUDGET_S + 4 * 60)
     except NoModel as exc:
         print(f"llm: {exc}")
         return None
@@ -549,8 +660,11 @@ def scan_cmd(args) -> None:
     out = config.WORK / "topics"
     out.mkdir(parents=True, exist_ok=True)
     data = ledger.load()
+    # a dispatch dry run saves nothing; a real one saves at every consistent point, so a run cut short (the Scan
+    # step's timeout) still leaves the scan, the tried outliers and every accepted premise for the Save step
+    keep = None if args.dry else ledger.save
     try:
-        sm = run(data, _youtube(), _gemini(), lambda t: wiki.fetch(t, cache=out / "wiki"))
+        sm = run(data, _youtube(), _gemini(), lambda t: wiki.fetch(t, cache=out / "wiki"), checkpoint=keep)
     except Exception as exc:
         if not args.dry:
             alert.send(f"Pangaea Nights proven-topics scan failed: {type(exc).__name__}: {exc}"[:400])

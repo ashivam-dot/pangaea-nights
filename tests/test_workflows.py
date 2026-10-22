@@ -67,15 +67,32 @@ def test_cadence():
 def test_topics_scan_saves_only_when_not_dry_and_alerts():
     doc = load("topics.yml")
     job = doc["jobs"]["scan"]
-    assert job["environment"] == "youtube" and doc["concurrency"]["group"] == "topics"
+    assert job["environment"] == "youtube"
     assert job["env"]["DRY"] == "${{ github.event_name != 'schedule' && inputs.dry_run != false }}"
     steps = {s.get("name"): s for s in job["steps"]}
     assert "--dry" in steps["Scan"]["run"] and {"YOUTUBE_OAUTH_JSON", "GEMINI_API_KEY"} <= set(steps["Scan"]["env"])
-    for name in ("Save the ledger", "Low supply"):
-        assert steps[name]["if"] == "env.DRY != 'true'"
+    assert steps["Low supply"]["if"] == "env.DRY != 'true'"
+    # the Scan step times out inside the job, and the save still runs: run() checkpoints the ledger as it goes
+    assert steps["Scan"]["timeout-minutes"] < job["timeout-minutes"]
+    assert steps["Save the ledger"]["if"] == "always() && env.DRY != 'true'"
+    from studio import topics
+    assert topics.DRAFT_BUDGET_S + 4 * 60 + 3 * 60 < steps["Scan"]["timeout-minutes"] * 60
     assert "alerts.txt" in steps["Low supply"]["run"] and "--label alert" in steps["Low supply"]["run"]
     assert "failure()" in steps["Alert"]["if"] and "alert.send" in steps["Alert"]["run"]
     assert "topics" in load("doctor.yml")["on"]["workflow_run"]["workflows"]
+
+
+def test_state_pushers_share_one_concurrency_group():
+    """topics and shorts-learn both push ledger.json to the state branch with a plain push: a real run of either
+    waits for the other (a late Monday cron would otherwise race the 06:00 learner); dry runs push nothing and stay
+    out of the way."""
+    for name, dry in (("topics.yml", "topics-dry"), ("shorts-learn.yml", "shorts-learn-dry")):
+        doc = load(name)
+        assert doc["concurrency"]["group"] == ("${{ (github.event_name == 'schedule' || inputs.dry_run == false) "
+                                               f"&& 'state-ledger' || '{dry}' }}}}"), name
+        assert doc["concurrency"]["cancel-in-progress"] is False
+        job = next(iter(doc["jobs"].values()))
+        assert job["env"]["DRY"] == "${{ github.event_name != 'schedule' && inputs.dry_run != false }}"
 
 
 def test_concurrency_stays_within_twenty():

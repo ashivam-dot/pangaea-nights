@@ -48,7 +48,11 @@ def _thinking(model: str) -> dict | None:
 
 
 class Gemini:
-    def __init__(self, key: str | None = None, prefer: str = "quality"):
+    def __init__(self, key: str | None = None, prefer: str = "quality", timeout: float = 420, attempts: int = 4,
+                 deadline: float | None = None):
+        """timeout: seconds per request; attempts: tries per model; deadline: a time.monotonic() after which no
+        request starts (NoModel instead), and no request or retry sleep runs past it."""
+        self.timeout, self.attempts, self.deadline = timeout, max(1, attempts), deadline
         self.key = key or os.environ.get("GEMINI_API_KEY", "")
         if not self.key:
             raise NoModel("GEMINI_API_KEY is not set")
@@ -94,6 +98,19 @@ class Gemini:
             self._window = [(t, n) for t, n in self._window if now - t < 60]
         self._window.append((now, tokens))
 
+    def _left(self) -> float | None:
+        return None if self.deadline is None else self.deadline - time.monotonic()
+
+    def _timeout(self) -> float:
+        left = self._left()
+        if left is not None and left <= 5:
+            raise NoModel("the caller's time budget is spent")
+        return self.timeout if left is None else min(self.timeout, left)
+
+    def _sleep(self, seconds: float) -> None:
+        left = self._left()
+        time.sleep(seconds if left is None else max(0.0, min(seconds, left)))
+
     def generate(self, system: str, prompt: str, schema: dict | None = None, temperature: float = 0.8,
                  max_tokens: int = 32768, models: list[str] | None = None) -> dict | str:
         """Text (or parsed JSON when a schema is given) from the best model that still has quota."""
@@ -117,21 +134,22 @@ class Gemini:
                                                             + json.dumps(schema))
             self._pace((len(system) + len(prompt)) // 4 + max_tokens // 4)
             truncated = 0
-            for attempt in range(4):
+            for attempt in range(self.attempts):
                 started = time.monotonic()
+                timeout = self._timeout()
                 try:
-                    r = self.session.post(f"{BASE}/{model}:generateContent", data=json.dumps(body), timeout=420)
+                    r = self.session.post(f"{BASE}/{model}:generateContent", data=json.dumps(body), timeout=timeout)
                 except requests.RequestException as e:
                     last = f"{model}: {type(e).__name__}"
                     print(f"llm: {model.split('/')[-1]} {type(e).__name__} after {time.monotonic() - started:.0f}s",
                           flush=True)
-                    time.sleep(10 * (attempt + 1))
+                    self._sleep(10 * (attempt + 1))
                     continue
                 if r.status_code == 429:
                     info = r.text[:2000]
-                    if "PerMinute" in info and attempt < 3:
+                    if "PerMinute" in info and attempt < self.attempts - 1:
                         delay = re.search(r'"retryDelay":\s*"(\d+)s"', info)
-                        time.sleep(min(90, int(delay.group(1)) + 2 if delay else 30))
+                        self._sleep(min(90, int(delay.group(1)) + 2 if delay else 30))
                         continue
                     self.exhausted.add(model)
                     last = f"{model}: quota exhausted"
@@ -139,7 +157,7 @@ class Gemini:
                     break
                 if r.status_code in (500, 502, 503, 504):
                     last = f"{model}: HTTP {r.status_code}"
-                    time.sleep(15 * (attempt + 1))
+                    self._sleep(15 * (attempt + 1))
                     continue
                 if r.status_code == 400 and "thinking" in r.text.lower() and \
                         "thinkingConfig" in body["generationConfig"]:
