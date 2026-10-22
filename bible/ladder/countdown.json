@@ -3,151 +3,1379 @@
  "premises": [
   {
    "id": "countdown-01",
-   "era": "End-Cretaceous",
-   "title": "The Asteroid Hits in 60 Seconds — Where Do You Hide? ☄️",
-   "banner": "60 seconds. Where do you hide?",
-   "hook_vo": "The asteroid hits in sixty seconds. Hide where?",
-   "art_direction": "The last night of the Cretaceous, a blazing streak crossing a starry sky over a floodplain forest, the world lit orange from above.",
+   "era": "Cretaceous",
+   "title": "The Asteroid Hits in 60 Seconds — Which Hideout Saves You? ☄️",
+   "banner": "Asteroid incoming. Where do you hide?",
+   "hook_vo": "The asteroid hits in sixty seconds. Pick your hideout.",
+   "art_direction": "Late-Cretaceous floodplain at dusk, sulphur-orange fireball against deep indigo sky, 24mm wide lens, heat shimmer.",
    "options": [
-    {"n": 1, "label": "Deep burrow", "vo": "Number one: a deep burrow underground.", "danger": 1,
-     "image_prompt": "A deep burrow tunnel dug into a riverbank under conifer roots, cool earth walls, a fiery orange glow of a falling asteroid lighting the entrance from outside"},
-    {"n": 2, "label": "Under a lake", "vo": "Number two: the bottom of a quiet lake.", "danger": 2,
-     "image_prompt": "Looking up from beneath the surface of a still forest lake at night, weed swaying, the sky above burning with a warm orange streak of a falling asteroid"},
-    {"n": 3, "label": "Rock cave", "vo": "Number three: a small cave in a cliff.", "danger": 3,
-     "image_prompt": "The mouth of a small cave in a sandstone cliff at night, the floodplain below lit by a blazing warm orange streak crossing the sky, cool shadows deep inside"},
-    {"n": 4, "label": "Hollow tree", "vo": "Number four: inside a hollow tree trunk.", "danger": 4,
-     "image_prompt": "Inside a huge hollow conifer trunk looking out through a crack, bark edges glowing with the orange light of an asteroid streak across a starry sky"},
-    {"n": 5, "label": "Dense forest", "vo": "Number five: deep in the forest.", "danger": 5,
-     "image_prompt": "A dense Cretaceous conifer forest at night, tall trunks lit from above by a warm orange glare, needles drifting, a burning streak visible through gaps in the canopy"},
-    {"n": 6, "label": "Mountain top", "vo": "Number six: the highest mountain top.", "danger": 6,
-     "image_prompt": "A bare rocky mountain summit at night, the land spread far below, the sky above split by a huge glowing orange asteroid trail heading for the horizon"},
-    {"n": 7, "label": "Open plain", "vo": "Number seven: the middle of an open plain.", "danger": 7,
-     "image_prompt": "A wide open fern plain at night with a herd of dinosaurs looking up, the sky blazing warm orange with a falling asteroid, long shadows across the ground"},
-    {"n": 8, "label": "Gulf coast", "vo": "Number eight: the shore of the Gulf.", "danger": 8,
-     "image_prompt": "A shallow tropical sea shore at night, calm water reflecting a blinding warm glow of a fireball descending on the horizon, palms and cycads bending in a hot wind"}
+    {
+     "n": 1,
+     "label": "Hollow conifer trunk",
+     "vo": "Curl up inside a giant hollow tree.",
+     "danger": 1,
+     "image_prompt": "POV from inside a hollow conifer trunk on a Cretaceous floodplain, bark walls glowing orange, a blazing fireball crossing a deep indigo dusk sky, photoreal painterly, vertical composition, one warm focal light from the fireball"
+    },
+    {
+     "n": 2,
+     "label": "Behind a Triceratops herd",
+     "vo": "Crouch behind a wall of Triceratops.",
+     "danger": 2,
+     "image_prompt": "A herd of Triceratops standing shoulder to shoulder on a fern prairie at dusk, frills lit orange by a blazing fireball low in the indigo sky, photoreal painterly, vertical composition, one warm focal light from the fireball"
+    },
+    {
+     "n": 3,
+     "label": "Tiny underground burrow",
+     "vo": "Squeeze into a tiny mammal burrow.",
+     "danger": 3,
+     "image_prompt": "POV from deep inside a narrow earthen burrow under tree roots, looking up the tunnel at an orange sky glowing above the entrance, photoreal painterly, vertical composition, one warm focal light from the glowing entrance"
+    },
+    {
+     "n": 4,
+     "label": "Top of the hill",
+     "vo": "Climb the highest hill for a view.",
+     "danger": 4,
+     "image_prompt": "View from a bare grassy hilltop over a Cretaceous floodplain, a huge fireball descending toward the horizon, indigo sky streaked with sulphur orange, photoreal painterly, vertical composition, one warm focal light from the fireball"
+    },
+    {
+     "n": 5,
+     "label": "Inside a T. rex nest",
+     "vo": "Hide inside a T. rex nest.",
+     "danger": 5,
+     "image_prompt": "A wide mound nest of mud and ferns with large speckled eggs, a Tyrannosaurus rex looming over it at dusk, sky burning orange behind, photoreal painterly, vertical composition, one warm focal light from the burning sky"
+    },
+    {
+     "n": 6,
+     "label": "On a pterosaur's back",
+     "vo": "Cling to a giant pterosaur and fly.",
+     "danger": 6,
+     "image_prompt": "Aerial POV from the back of a giant Quetzalcoatlus soaring over a misty floodplain, a fireball blazing ahead in the indigo sky, photoreal painterly, vertical composition, one warm focal light from the fireball"
+    },
+    {
+     "n": 7,
+     "label": "Flat in open ferns",
+     "vo": "Lie flat in the open ferns.",
+     "danger": 7,
+     "image_prompt": "Low POV lying among open ferns on a flat prairie, the whole sky above turning a furious glowing orange as debris streaks down, photoreal painterly, vertical composition, one warm focal light from the glowing sky"
+    },
+    {
+     "n": 8,
+     "label": "Watch it from the beach",
+     "vo": "Stand on the beach and watch it land.",
+     "danger": 8,
+     "image_prompt": "An empty Cretaceous beach at dusk, a colossal fireball striking the sea on the horizon and a wall of light rising, photoreal painterly, vertical composition, one warm focal light from the impact flash"
+    }
    ],
-   "answer_n": 1,
-   "verdict_vo": "Real answer: number 1, because any burrowing animal would likely have had extra protection from the impact's aftermath.",
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because burrowing animals had extra protection from the impact's after-effects. Probably your best bet.",
    "fact": {
-    "text": "Any burrowing or semiaquatic mammal would have had additional protection from K–Pg boundary environmental stresses.",
+    "text": "Burrowing or semiaquatic mammals had extra protection from the environmental stresses of the K–Pg extinction.",
     "wiki_title": "Cretaceous–Paleogene extinction event",
     "wiki_revid": 1379830492,
     "source_sentence": "Any burrowing or semiaquatic mammal would have had additional protection from K–Pg boundary environmental stresses."
    },
-   "description": "Sixty seconds before the asteroid strikes, eight places to hide, from underground to right on the coast. Which one gives you a real chance?",
-   "tags": ["asteroid", "dinosaur extinction", "Cretaceous", "60 seconds", "deep time", "would you survive"],
-   "related_topic_hint": "asteroid impact last day of the dinosaurs Chicxulub"
+   "description": "Sixty seconds before the asteroid, eight places to hide, and only one with real science behind it. The verdict comes from the fossil record of who made it through the end of the dinosaurs.",
+   "tags": [
+    "asteroid",
+    "dinosaurs",
+    "extinction",
+    "Cretaceous",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "science"
+   ],
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
   },
   {
    "id": "countdown-02",
-   "era": "End-Permian",
-   "title": "The Great Dying Begins in 60 Seconds — Where Do You Go? 🌋",
-   "banner": "The Great Dying. Pick fast.",
-   "hook_vo": "Earth's worst extinction starts now. Sixty seconds. Go.",
-   "art_direction": "The end of the Permian in Siberia, vast lava floods under a sulphur-yellow night sky, ash drifting over a dying conifer forest.",
+   "era": "Cretaceous",
+   "title": "Asteroid Tsunami Heading for the Coast — Where Do You Run? 🌊",
+   "banner": "Mega-tsunami coming. Where do you go?",
+   "hook_vo": "The asteroid just hit the sea. The wave is coming.",
+   "art_direction": "Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon.",
    "options": [
-    {"n": 1, "label": "Dig a burrow", "vo": "Number one: dig a burrow in the riverbank.", "danger": 1,
-     "image_prompt": "A fresh burrow entrance in a dry riverbank of red mud, ash flakes drifting down, a warm lava glow from the far horizon lighting the bank"},
-    {"n": 2, "label": "Polar forest", "vo": "Number two: run to the cold polar forest.", "danger": 2,
-     "image_prompt": "A cold polar forest of seed ferns under a pale night sky, frost on the ground, a faint warm glow of distant eruptions on the low clouds"},
-    {"n": 3, "label": "Shallow sea", "vo": "Number three: dive into a shallow sea.", "danger": 3,
-     "image_prompt": "A warm shallow Permian sea at night, reefs and crinoids under cloudy water, the surface above lit by an orange volcanic glow from the shore"},
-    {"n": 4, "label": "Big lake", "vo": "Number four: wade into a big lake.", "danger": 4,
-     "image_prompt": "A wide still lake under an ash-filled sky, dead conifers standing in the shallows, the water reflecting a warm lava glow from distant fissures"},
-    {"n": 5, "label": "Cave", "vo": "Number five: shelter in a limestone cave.", "danger": 5,
-     "image_prompt": "A limestone cave mouth on a hillside at night, ash drifting past the entrance, a deep warm orange volcanic glow lighting the rocks outside"},
-    {"n": 6, "label": "High plateau", "vo": "Number six: climb onto a high plateau.", "danger": 6,
-     "image_prompt": "A high rocky plateau above a burning lowland, curtains of lava fountaining far below, a sulphur-yellow sky and warm glowing ash clouds rolling in"},
-    {"n": 7, "label": "Deep ocean", "vo": "Number seven: swim out to the deep ocean.", "danger": 7,
-     "image_prompt": "A dark open ocean surface at night under a hazy sulphur sky, long swells catching a warm orange glow from a volcanic coastline on the horizon"},
-    {"n": 8, "label": "Lava fields", "vo": "Number eight: stay near the lava fields.", "danger": 8,
-     "image_prompt": "Endless flood basalt lava fields with glowing orange rivers of molten rock, steam and ash rising into a black sky, scorched conifer stumps in the foreground"}
+    {
+     "n": 1,
+     "label": "Cosy sea cave",
+     "vo": "Shelter in a cosy sea cave.",
+     "danger": 1,
+     "image_prompt": "POV from inside a dry limestone sea cave looking out at a calm Cretaceous bay at night, violet sky, distant red glow on the horizon, photoreal painterly, vertical composition, one warm focal light from the distant glow"
+    },
+    {
+     "n": 2,
+     "label": "Tallest beach dune",
+     "vo": "Climb the tallest dune on the beach.",
+     "danger": 2,
+     "image_prompt": "A tall pale sand dune above a Cretaceous beach, wind-whipped grass on its crest, a dark sea swelling under a violet storm sky, photoreal painterly, vertical composition, one warm focal light from a lightning flash"
+    },
+    {
+     "n": 3,
+     "label": "Swamp cypress canopy",
+     "vo": "Climb high into a swamp tree.",
+     "danger": 3,
+     "image_prompt": "Looking down from the crown of a towering swamp cypress over a flooded coastal forest, a strange dark line rising on the sea beyond, photoreal painterly, vertical composition, one warm focal light from a red horizon glow"
+    },
+    {
+     "n": 4,
+     "label": "Ride a giant sea turtle",
+     "vo": "Ride a giant Archelon out to sea.",
+     "danger": 4,
+     "image_prompt": "A giant Archelon sea turtle swimming at the surface of a heaving dark sea, shell glistening, huge swells rising behind it under violet clouds, photoreal painterly, vertical composition, one warm focal light from lightning"
+    },
+    {
+     "n": 5,
+     "label": "Swim past the breakers",
+     "vo": "Swim out beyond the breaking waves.",
+     "danger": 5,
+     "image_prompt": "Low POV at the waterline of a wild surf zone at night, foaming breakers rolling in under a violet sky lit by distant fire, photoreal painterly, vertical composition, one warm focal light from the distant fire"
+    },
+    {
+     "n": 6,
+     "label": "Run for the far hills",
+     "vo": "Run inland for the faraway hills.",
+     "danger": 6,
+     "image_prompt": "A moonlit coastal plain stretching inland to a line of high wooded hills, hadrosaurs fleeing across it, the dark sea far behind, photoreal painterly, vertical composition, one warm focal light from a warm moonrise"
+    },
+    {
+     "n": 7,
+     "label": "Sleep on the tidal flats",
+     "vo": "Sleep out on the wide tidal flats.",
+     "danger": 7,
+     "image_prompt": "Vast glistening tidal flats at night after the sea has drained far out, stranded fish and shells, the horizon swelling dark, photoreal painterly, vertical composition, one warm focal light from a red horizon glow"
+    },
+    {
+     "n": 8,
+     "label": "Stand on the crater rim",
+     "vo": "Stand right on the edge of impact.",
+     "danger": 8,
+     "image_prompt": "A smoking crater rim at the edge of a churning sea, molten rock glowing and steam erupting under a black violet sky, photoreal painterly, vertical composition, one warm focal light from the molten rock"
+    }
    ],
-   "answer_n": 1,
-   "verdict_vo": "Real answer: number 1, because the survivor Lystrosaurus has been found preserved in burrows, suggesting it lived in them.",
+   "answer_n": 6,
+   "verdict_vo": "Real answer: number 6, because the impact sent megatsunamis over 100 metres tall. Only high ground far inland probably stands a chance.",
    "fact": {
-    "text": "Lystrosaurus individuals have been found preserved in burrows, suggesting that they were habitually fossorial.",
-    "wiki_title": "Lystrosaurus",
-    "wiki_revid": 1369641214,
-    "source_sentence": "Specimens of Lystrosaurus individuals have been found preserved in burrows, suggesting that they were habitually fossorial, and were capable of constructing burrows relatively early in life."
-   },
-   "description": "The Siberian lava floods have begun and the worst extinction in Earth's history is underway. Eight places to run, and one strange survivor shows the way.",
-   "tags": ["Great Dying", "mass extinction", "Permian", "supervolcano", "60 seconds", "deep time"],
-   "related_topic_hint": "Great Dying Permian extinction Siberian Traps"
-  },
-  {
-   "id": "countdown-03",
-   "era": "End-Cretaceous",
-   "title": "Asteroid Mega-Tsunami in 60 Seconds — Pick Your Spot 🌊",
-   "banner": "Mega-tsunami coming. Where do you stand?",
-   "hook_vo": "The impact wave is coming. Sixty seconds. Choose.",
-   "art_direction": "The Gulf coast moments after the end-Cretaceous impact, a churning sea, a sky glowing orange and a wall of water rising far offshore.",
-   "options": [
-    {"n": 1, "label": "Far inland", "vo": "Number one: run far inland.", "danger": 1,
-     "image_prompt": "A forested inland valley far from any coast at night, conifers and ferns under a sky glowing warm orange from the distant impact, a calm river below"},
-    {"n": 2, "label": "Tall sea cliff", "vo": "Number two: a very tall sea cliff.", "danger": 2,
-     "image_prompt": "A towering sea cliff above a churning ocean at night, spray rising, the sky lit warm orange by the distant impact and a dark wall of water on the horizon"},
-    {"n": 3, "label": "Coastal hill", "vo": "Number three: a hill near the coast.", "danger": 3,
-     "image_prompt": "A grassy coastal hill of ferns looking down on a retreating sea at night, the seabed exposed, a warm orange glow on clouds above the far horizon"},
-    {"n": 4, "label": "Tallest tree", "vo": "Number four: climb the tallest tree.", "danger": 4,
-     "image_prompt": "Looking down from the top of a very tall conifer at a coastal forest at night, the sea pulling back below, a warm orange glow of the impact on the clouds"},
-    {"n": 5, "label": "River mouth", "vo": "Number five: the mouth of a wide river.", "danger": 5,
-     "image_prompt": "A broad river mouth spilling into a strange retreating sea at night, mudflats glistening in the moonlight, a warm orange impact glow over the water"},
-    {"n": 6, "label": "Open water", "vo": "Number six: swim out to open water.", "danger": 6,
-     "image_prompt": "Open dark ocean water at night swelling into a long rising wave, the sky glowing warm orange behind it, foam streaking across the surface"},
-    {"n": 7, "label": "Beach", "vo": "Number seven: stay on the beach.", "danger": 7,
-     "image_prompt": "A wide empty tropical beach at night with the sea strangely drawn back, wet sand reflecting a warm orange sky, a dark line of water rising on the horizon"},
-    {"n": 8, "label": "Next to impact", "vo": "Number eight: right beside the impact site.", "danger": 8,
-     "image_prompt": "A vast steaming crater rim on a shallow sea floor at night, molten rock glowing orange, boiling water pouring back in and a towering column of ash"}
-   ],
-   "answer_n": 1,
-   "verdict_vo": "Real answer: number 1, because one simulation suggests the first waves may have reached 1.5 kilometers high.",
-   "fact": {
-    "text": "The impact spawned megatsunamis over 100 meters tall, with one simulation suggesting the immediate waves may have reached up to 1.5 kilometers high.",
+    "text": "The Chicxulub impact spawned megatsunamis more than 100 metres tall.",
     "wiki_title": "Chicxulub crater",
     "wiki_revid": 1379989654,
     "source_sentence": "The impact, expansion of water after filling the crater, and related seismic activity spawned megatsunamis over 100 meters (300 ft) tall, with one simulation suggesting the immediate waves from the impact may have reached up to 1.5 kilometers (0.9 mi) high."
    },
-   "description": "The asteroid has hit the Gulf and a mega-tsunami is on its way. Eight places to stand, and the waves were taller than any cliff.",
-   "tags": ["asteroid", "tsunami", "dinosaur extinction", "60 seconds", "deep time", "would you survive"],
-   "related_topic_hint": "Chicxulub asteroid impact tsunami last day of the dinosaurs"
+   "description": "The asteroid that ended the dinosaurs hit the sea, and the coast had minutes. Eight escape plans, ranked from tempting to terrible, and the real wave height behind the answer.",
+   "tags": [
+    "asteroid",
+    "tsunami",
+    "dinosaurs",
+    "Cretaceous",
+    "Chicxulub",
+    "survival",
+    "prehistoric",
+    "science"
+   ],
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
+  },
+  {
+   "id": "countdown-03",
+   "era": "Cretaceous",
+   "title": "Dinosaur Winter After the Asteroid — Which Home Gets You Through? ❄️",
+   "banner": "Months of darkness. Which home survives?",
+   "hook_vo": "The sun is gone for months. Choose your home.",
+   "art_direction": "Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Warm nest under ferns",
+     "vo": "Stay in a warm nest under ferns.",
+     "danger": 1,
+     "image_prompt": "A woven nest of dry ferns under a fallen log in a grey ash-dusted forest, soot drifting down in gloomy twilight, photoreal painterly, vertical composition, one warm focal light from a smouldering ember"
+    },
+    {
+     "n": 2,
+     "label": "Hollow fallen log",
+     "vo": "Crawl inside a hollow fallen log.",
+     "danger": 2,
+     "image_prompt": "POV from inside a hollow fallen log looking out at a dim ash-covered forest floor, grey flakes falling, photoreal painterly, vertical composition, one warm focal light from a smouldering stump outside"
+    },
+    {
+     "n": 3,
+     "label": "Shallow sea reef",
+     "vo": "Hide in a shallow sea reef.",
+     "danger": 3,
+     "image_prompt": "A shallow Cretaceous reef of rudist shells under murky grey water, dim light filtering down through floating ash, photoreal painterly, vertical composition, one warm focal light from a faint orange shaft of light"
+    },
+    {
+     "n": 4,
+     "label": "Quiet freshwater pond",
+     "vo": "Sink into a quiet freshwater pond.",
+     "danger": 4,
+     "image_prompt": "A still freshwater pond in a grey ash-dusted forest, lily pads and reeds, a turtle resting on a log, mist over dark water, photoreal painterly, vertical composition, one warm focal light from a smouldering stump"
+    },
+    {
+     "n": 5,
+     "label": "Inside a fallen Triceratops",
+     "vo": "Shelter inside a fallen Triceratops.",
+     "danger": 5,
+     "image_prompt": "The huge dark form of a fallen Triceratops lying in grey ash on a frozen plain, frill dusted with soot, photoreal painterly, vertical composition, one warm focal light from a smouldering tree behind it"
+    },
+    {
+     "n": 6,
+     "label": "Ride a mosasaur",
+     "vo": "Ride a mosasaur into open ocean.",
+     "danger": 6,
+     "image_prompt": "A mosasaur gliding through cold murky open ocean under a grey ash-veiled surface, dim and empty water around it, photoreal painterly, vertical composition, one warm focal light from a faint orange glow above"
+    },
+    {
+     "n": 7,
+     "label": "Mountain peak in the ash",
+     "vo": "Climb above the ash cloud.",
+     "danger": 7,
+     "image_prompt": "A bare rocky mountain summit poking above a sea of grey ash cloud, a dim smothered sun barely visible, photoreal painterly, vertical composition, one warm focal light from the dim red sun"
+    },
+    {
+     "n": 8,
+     "label": "Open plain in the cold",
+     "vo": "Wait it out on the open plain.",
+     "danger": 8,
+     "image_prompt": "A wide frozen plain under falling soot, dead ferns crusted in frost, endless grey twilight, photoreal painterly, vertical composition, one warm focal light from a distant wildfire on the horizon"
+    }
+   ],
+   "answer_n": 4,
+   "verdict_vo": "Real answer: number 4, because freshwater animals had low extinction rates after the impact. A quiet pond was probably the safest home.",
+   "fact": {
+    "text": "Freshwater animals had low extinction rates in the K–Pg extinction.",
+    "wiki_title": "Cretaceous–Paleogene extinction event",
+    "wiki_revid": 1379830492,
+    "source_sentence": "The relatively low levels of extinction seen among amphibians probably reflect the low extinction rates seen in freshwater animals."
+   },
+   "description": "After the asteroid came the long dark. Eight places to wait out the impact winter, and the one the fossil record quietly favours.",
+   "tags": [
+    "asteroid",
+    "dinosaurs",
+    "impact winter",
+    "extinction",
+    "Cretaceous",
+    "survival",
+    "prehistoric",
+    "science"
+   ],
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
   },
   {
    "id": "countdown-04",
-   "era": "Cryogenian",
-   "title": "Snowball Earth Freezes in 60 Seconds — Where Do You Go? ❄️",
-   "banner": "Earth is freezing. Where do you go?",
-   "hook_vo": "The whole planet is freezing. Sixty seconds. Move.",
-   "art_direction": "The Cryogenian Snowball Earth, endless white ice under a dim cold sun, blue glacier light and steam from rare volcanic vents.",
+   "era": "Permian",
+   "title": "Pangaea's Supervolcano Wakes Up — Which Plan Saves You? 🌋",
+   "banner": "The Great Dying begins. Pick your plan.",
+   "hook_vo": "Pangaea's biggest volcano just woke up. Choose fast.",
+   "art_direction": "Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon.",
    "options": [
-    {"n": 1, "label": "Equator open water", "vo": "Number one: open water at the equator.", "danger": 1,
-     "image_prompt": "A narrow band of dark open sea between vast ice sheets near the equator, gentle waves, a low warm golden sun on the water and ice cliffs on both sides"},
-    {"n": 2, "label": "Volcanic vent", "vo": "Number two: a steaming volcanic vent.", "danger": 2,
-     "image_prompt": "A steaming volcanic vent melting a pool in an endless ice sheet, orange glow of lava inside the crater, pale blue twilight sky above"},
-    {"n": 3, "label": "Hot spring", "vo": "Number three: a hot spring under the ice.", "danger": 3,
-     "image_prompt": "A small steaming hot spring pool in a hollow of blue ice, mineral crust glowing warm orange around its rim, frost crystals and a dim cold sun"},
-    {"n": 4, "label": "Ice cave", "vo": "Number four: a cave deep in the glacier.", "danger": 4,
-     "image_prompt": "Inside a tall blue glacier ice cave, translucent walls glowing, meltwater dripping, a warm amber shaft of low sunlight entering from the far opening"},
-    {"n": 5, "label": "Seafloor", "vo": "Number five: the dark sea floor below the ice.", "danger": 5,
-     "image_prompt": "The dark ocean floor beneath a thick ice ceiling, faint blue light filtering down, a warm orange glow from a hydrothermal vent among the rocks"},
-    {"n": 6, "label": "Glacier edge", "vo": "Number six: the edge of a moving glacier.", "danger": 6,
-     "image_prompt": "The cracked blue front of a vast moving glacier at twilight, seracs leaning, snow blowing across the ice and a thin warm sunset band on the horizon"},
-    {"n": 7, "label": "Mountain top", "vo": "Number seven: a mountain poking above the ice.", "danger": 7,
-     "image_prompt": "A lone dark mountain peak rising above an endless sea of ice at dusk, wind-blown snow streaming off it, a dim warm golden sun near the horizon"},
-    {"n": 8, "label": "Pole", "vo": "Number eight: the frozen pole.", "danger": 8,
-     "image_prompt": "A flat white polar ice plain under a dark sky full of stars and green aurora, snow drifts sculpted by wind, a faint warm glow of the hidden sun"}
+    {
+     "n": 1,
+     "label": "Hide in a fern thicket",
+     "vo": "Hide deep in a seed-fern thicket.",
+     "danger": 1,
+     "image_prompt": "A dense thicket of Glossopteris seed ferns on a dry Permian plain, red-brown haze above, leaves dusted with ash, photoreal painterly, vertical composition, one warm focal light from a lava glow on the horizon"
+    },
+    {
+     "n": 2,
+     "label": "Cool river cave",
+     "vo": "Shelter in a cool river cave.",
+     "danger": 2,
+     "image_prompt": "POV from inside a shaded rock cave above a slow Permian river, red haze over the far bank, photoreal painterly, vertical composition, one warm focal light from a lava glow through the haze"
+    },
+    {
+     "n": 3,
+     "label": "Wallow in swamp mud",
+     "vo": "Wallow in the swamp mud.",
+     "danger": 3,
+     "image_prompt": "A steaming Permian swamp of grey mud and horsetails under a rust-coloured sky, bubbles rising from the mire, photoreal painterly, vertical composition, one warm focal light from a volcanic glow behind the trees"
+    },
+    {
+     "n": 4,
+     "label": "Follow the gorgonopsid",
+     "vo": "Follow the sabre-toothed gorgonopsid.",
+     "danger": 4,
+     "image_prompt": "A sabre-toothed Inostrancevia stalking across a cracked red plain, long fangs bared, ash drifting in the haze, photoreal painterly, vertical composition, one warm focal light from a lava river behind it"
+    },
+    {
+     "n": 5,
+     "label": "Dig in with Lystrosaurus",
+     "vo": "Dig in with the tusked Lystrosaurus herd.",
+     "danger": 5,
+     "image_prompt": "A herd of stocky tusked Lystrosaurus digging burrows into a dry riverbank, realistic reptilian skin, red haze above, photoreal painterly, vertical composition, one warm focal light from a low orange sun"
+    },
+    {
+     "n": 6,
+     "label": "Watch from a volcanic ridge",
+     "vo": "Climb a ridge to watch the eruption.",
+     "danger": 6,
+     "image_prompt": "View from a black basalt ridge over endless fissure eruptions, curtains of lava fountaining across Siberian Pangaea, photoreal painterly, vertical composition, one warm focal light from the lava fountains"
+    },
+    {
+     "n": 7,
+     "label": "Shallow sea bay",
+     "vo": "Wade out into a warm sea bay.",
+     "danger": 7,
+     "image_prompt": "A warm shallow Permian bay turning murky purple and still, dead shells on the sand, sulphurous haze overhead, photoreal painterly, vertical composition, one warm focal light from a lava glow beyond"
+    },
+    {
+     "n": 8,
+     "label": "Walk onto the lava fields",
+     "vo": "Walk straight onto the lava fields.",
+     "danger": 8,
+     "image_prompt": "A cracked crust of fresh basalt glowing red through its seams, steam and gas venting into a black sky, photoreal painterly, vertical composition, one warm focal light from the molten cracks"
+    }
    ],
-   "answer_n": 1,
-   "verdict_vo": "Real answer: number 1, though scientists still argue whether a thin band of open equatorial water survived at all.",
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because Lystrosaurus survived the Permian–Triassic extinction and thrived after it. Sticking with that tusked herd is probably your best bet.",
    "fact": {
-    "text": "Several unanswered questions remain, including whether Earth was a full snowball or a slushball with a thin equatorial band of open or seasonally open water.",
+    "text": "Lystrosaurus survived the Permian–Triassic extinction and its fossils are the most common land-vertebrate fossils of the Early Triassic.",
+    "wiki_title": "Lystrosaurus",
+    "wiki_revid": 1369641214,
+    "source_sentence": "Lystrosaurus survived the Permian-Triassic extinction event (Earth's most severe) 252 million years ago and thrived in the immediate aftermath; its fossils are, by far, the most common terrestrial vertebrate fossils in Early Triassic beds around the world, such as in the Lystrosaurus Assemblage Zone in South Africa."
+   },
+   "description": "The worst extinction in Earth's history began with volcanoes the size of a continent. Eight plans for surviving the Great Dying on Pangaea, and the stubby digger that actually did.",
+   "tags": [
+    "Pangaea",
+    "Great Dying",
+    "Permian",
+    "supervolcano",
+    "extinction",
+    "prehistoric",
+    "survival",
+    "science"
+   ],
+   "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
+  },
+  {
+   "id": "countdown-05",
+   "era": "Triassic",
+   "title": "Pangaea Is Overheating — Which Escape Plan Keeps You Alive? 🔥",
+   "banner": "The tropics turn lethal. Go where?",
+   "hook_vo": "Pangaea's tropics are too hot to live in.",
+   "art_direction": "Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Shady tropical riverbank",
+     "vo": "Rest on a shady tropical riverbank.",
+     "danger": 1,
+     "image_prompt": "A sluggish tropical river through a bleached Triassic desert, a few scorched conifers casting thin shade, heat haze rising, photoreal painterly, vertical composition, one warm focal light from a copper setting sun"
+    },
+    {
+     "n": 2,
+     "label": "Equator lagoon",
+     "vo": "Float in a warm equator lagoon.",
+     "danger": 2,
+     "image_prompt": "A glassy hot lagoon on the Triassic equator, steam rising from pale turquoise water, white salt rims, photoreal painterly, vertical composition, one warm focal light from a blazing low sun"
+    },
+    {
+     "n": 3,
+     "label": "Hollow in the dunes",
+     "vo": "Dig into a hollow between dunes.",
+     "danger": 3,
+     "image_prompt": "A deep hollow between towering red Triassic sand dunes, ripples glowing in the heat, the air wobbling with haze, photoreal painterly, vertical composition, one warm focal light from the setting sun"
+    },
+    {
+     "n": 4,
+     "label": "Red cliff cave",
+     "vo": "Hide in a cave in red cliffs.",
+     "danger": 4,
+     "image_prompt": "POV from inside a shallow cave in red sandstone cliffs, a shimmering bleached plain stretching outside, photoreal painterly, vertical composition, one warm focal light from a copper dusk sun"
+    },
+    {
+     "n": 5,
+     "label": "Chase the monsoon storms",
+     "vo": "Chase the giant monsoon storms.",
+     "danger": 5,
+     "image_prompt": "A colossal monsoon thunderstorm towering over an arid Pangaea plain, sheets of rain and lightning, dust racing ahead, photoreal painterly, vertical composition, one warm focal light from lightning"
+    },
+    {
+     "n": 6,
+     "label": "Volcanic hot spring",
+     "vo": "Settle by a volcanic hot spring.",
+     "danger": 6,
+     "image_prompt": "A steaming volcanic hot spring in orange mineral terraces on a scorched Triassic plain, sulphur haze drifting, photoreal painterly, vertical composition, one warm focal light from a glowing vent"
+    },
+    {
+     "n": 7,
+     "label": "Trek to the far south",
+     "vo": "Trek thousands of kilometres south.",
+     "danger": 7,
+     "image_prompt": "A long dusty ridge path leading south across Pangaea toward cooler green forests under a deep blue twilight, Triassic reptiles walking it, photoreal painterly, vertical composition, one warm focal light from a warm last sunlight"
+    },
+    {
+     "n": 8,
+     "label": "Noon in the inland desert",
+     "vo": "Cross the inland desert at noon.",
+     "danger": 8,
+     "image_prompt": "The bleached heart of the Pangaea desert at noon, cracked salt pans to the horizon, air shimmering violently, photoreal painterly, vertical composition, one warm focal light from the blinding sun"
+    }
+   ],
+   "answer_n": 7,
+   "verdict_vo": "Real answer: number 7, because extreme heat may have left Pangaea's tropics empty of land vertebrates. Your best bet is far south.",
+   "fact": {
+    "text": "After the Permian–Triassic extinction, extreme heat may have made Pangaea's low latitudes uninhabitable for tetrapods, the land vertebrates.",
+    "wiki_title": "Permian–Triassic extinction event",
+    "wiki_revid": 1380638197,
+    "source_sentence": "A tetrapod gap may have existed from the Induan until the early Spathian between ~30 °N and ~ 40 °S due to extreme heat making these low latitudes uninhabitable for these animals."
+   },
+   "description": "Just after the Great Dying, the middle of Pangaea got so hot that land animals may have vanished from it. Eight ways to beat the heat, and the long walk the evidence points to.",
+   "tags": [
+    "Pangaea",
+    "Triassic",
+    "heat",
+    "supercontinent",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "science"
+   ],
+   "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
+  },
+  {
+   "id": "countdown-06",
+   "era": "Precambrian",
+   "title": "The Ocean Freezes Solid on Snowball Earth — Where Does Life Hide? 🧊",
+   "banner": "Earth freezes over. Where does life hide?",
+   "hook_vo": "The whole planet is freezing. Where does life hide?",
+   "art_direction": "Glacial cyan and white under a pale dim sun, crystalline ice textures, macro-to-wide contrast, black abyss below.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Inside a frozen wave",
+     "vo": "Hide inside a frozen breaking wave.",
+     "danger": 1,
+     "image_prompt": "A towering breaking wave frozen solid on a white Cryogenian sea, crystal-blue ice curling overhead, pale dim sun behind, photoreal painterly, vertical composition, one warm focal light from the low sun"
+    },
+    {
+     "n": 2,
+     "label": "Frozen shoreline boulders",
+     "vo": "Shelter among frozen shoreline boulders.",
+     "danger": 2,
+     "image_prompt": "Ice-glazed boulders on a frozen shoreline of bare rock, no plants anywhere, white sea ice to the horizon, photoreal painterly, vertical composition, one warm focal light from a pale sunset"
+    },
+    {
+     "n": 3,
+     "label": "Snowfield at the equator",
+     "vo": "Wait on the snowfield at the equator.",
+     "danger": 3,
+     "image_prompt": "A blinding white snowfield stretching flat to every horizon on the Cryogenian equator, a small cold sun overhead, photoreal painterly, vertical composition, one warm focal light from the small sun"
+    },
+    {
+     "n": 4,
+     "label": "Deep hydrothermal vent",
+     "vo": "Sink to a deep hydrothermal vent.",
+     "danger": 4,
+     "image_prompt": "A deep-ocean hydrothermal vent chimney in total darkness, mineral smoke billowing, microbial mats glowing on the rock, photoreal painterly, vertical composition, one warm focal light from the vent's heat shimmer"
+    },
+    {
+     "n": 5,
+     "label": "Drifting ice floe",
+     "vo": "Ride a drifting ice floe.",
+     "danger": 5,
+     "image_prompt": "A cracked ice floe drifting on a slushy grey-white sea under a pale sky, sharp blue fractures, photoreal painterly, vertical composition, one warm focal light from a weak low sun"
+    },
+    {
+     "n": 6,
+     "label": "Glacier crevasse",
+     "vo": "Drop into a glacier crevasse.",
+     "danger": 6,
+     "image_prompt": "POV looking down into a deep blue glacier crevasse, walls of layered ice vanishing into darkness, photoreal painterly, vertical composition, one warm focal light from faint sunlight from above"
+    },
+    {
+     "n": 7,
+     "label": "Frozen salt flat",
+     "vo": "Cross the frozen salt flat.",
+     "danger": 7,
+     "image_prompt": "A frozen salt flat cracked into hexagons of ice and white crust, wind-blown snow streaming, photoreal painterly, vertical composition, one warm focal light from a pale orange sun"
+    },
+    {
+     "n": 8,
+     "label": "Top of the ice sheet",
+     "vo": "Climb to the top of the ice sheet.",
+     "danger": 8,
+     "image_prompt": "The crest of a kilometre-thick ice sheet under a black star-filled sky, wind tearing snow off the edge, photoreal painterly, vertical composition, one warm focal light from a thin dawn glow"
+    }
+   ],
+   "answer_n": 4,
+   "verdict_vo": "Real answer: number 4, because scientists propose life survived around deep-ocean hydrothermal vents. The dark, hot deep is probably your best bet.",
+   "fact": {
+    "text": "One proposed refuge for life during Snowball Earth was deep-ocean hydrothermal vents powered by chemicals rather than sunlight.",
     "wiki_title": "Snowball Earth",
     "wiki_revid": 1380491304,
-    "source_sentence": "Several unanswered questions remain, including whether Earth was a full \"snowball\" or a \"slushball\" with a thin equatorial band of open (or seasonally open) water."
+    "source_sentence": "In reservoirs of anaerobic and low-oxygen life powered by chemicals in deep oceanic hydrothermal vents surviving in Earth's deep oceans and crust; but photosynthesis would not have been possible there."
    },
-   "description": "The whole planet is icing over, from the poles to the tropics. Eight places to wait it out, and the best one may not have existed at all.",
-   "tags": ["Snowball Earth", "ice age", "deep time", "60 seconds", "Earth history", "would you survive"],
-   "related_topic_hint": "Snowball Earth Cryogenian global glaciation"
+   "description": "Hundreds of millions of years ago, ice may have reached the equator. Eight places for life to wait out Snowball Earth, and the one scientists keep coming back to.",
+   "tags": [
+    "Snowball Earth",
+    "ice age",
+    "ocean",
+    "Precambrian",
+    "deep time",
+    "early life",
+    "survival",
+    "science"
+   ],
+   "related_topic_hint": "Snowball Earth: The Planet That Froze"
+  },
+  {
+   "id": "countdown-07",
+   "era": "Devonian",
+   "title": "The Ancient Ocean Is Suffocating — Which Water Saves You? 🐟",
+   "banner": "The sea is losing oxygen. Swim where?",
+   "hook_vo": "The Devonian sea is suffocating. Pick your water.",
+   "art_direction": "Murky jade and olive underwater haze, suspended particles, fisheye 14mm, shafts of amber light through green water.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Warm shallow reef",
+     "vo": "Stay on the warm shallow reef.",
+     "danger": 1,
+     "image_prompt": "A warm shallow Devonian reef of stromatoporoid mounds and rugose corals, olive water hazy with particles, photoreal painterly, vertical composition, one warm focal light from an amber light shaft"
+    },
+    {
+     "n": 2,
+     "label": "Sunny lagoon shallows",
+     "vo": "Laze in the sunny lagoon shallows.",
+     "danger": 2,
+     "image_prompt": "Sunlit lagoon shallows over pale sand and sea lilies, water turning cloudy and green, photoreal painterly, vertical composition, one warm focal light from a warm sun shaft"
+    },
+    {
+     "n": 3,
+     "label": "Inside a sponge mound",
+     "vo": "Hide inside a giant sponge mound.",
+     "danger": 3,
+     "image_prompt": "POV from inside a cavity of a giant reef sponge mound, olive water outside thick with drifting particles, photoreal painterly, vertical composition, one warm focal light from a warm amber light"
+    },
+    {
+     "n": 4,
+     "label": "Follow Dunkleosteus",
+     "vo": "Follow the armoured Dunkleosteus.",
+     "danger": 4,
+     "image_prompt": "A huge armoured Dunkleosteus gliding through murky jade water, bony jaw plates gleaming, photoreal painterly, vertical composition, one warm focal light from an amber shaft of light behind it"
+    },
+    {
+     "n": 5,
+     "label": "Swim to colder water",
+     "vo": "Swim out to colder northern water.",
+     "danger": 5,
+     "image_prompt": "Clear cold blue-green open water far from the reef, a school of armoured fish heading away from murky warm shallows, photoreal painterly, vertical composition, one warm focal light from a pale warm light above"
+    },
+    {
+     "n": 6,
+     "label": "Warm river mouth",
+     "vo": "Shelter at a warm river mouth.",
+     "danger": 6,
+     "image_prompt": "A warm muddy river mouth pouring brown water into a Devonian sea, plant debris swirling, photoreal painterly, vertical composition, one warm focal light from an amber sunset above the surface"
+    },
+    {
+     "n": 7,
+     "label": "Stagnant black basin",
+     "vo": "Sink into a still black basin.",
+     "danger": 7,
+     "image_prompt": "A stagnant basin of black still water over dark mud, dead shells on the bottom, no movement anywhere, photoreal painterly, vertical composition, one warm focal light from a faint amber glow above"
+    },
+    {
+     "n": 8,
+     "label": "Bottom of the dead sea",
+     "vo": "Rest on the oxygen-dead seafloor.",
+     "danger": 8,
+     "image_prompt": "The lifeless black seafloor of a Devonian sea, purple bacterial film over dark mud, trilobite shells scattered, photoreal painterly, vertical composition, one warm focal light from a dim amber gleam"
+    }
+   ],
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because the Kellwasser crisis hit shallow warm-water life harder than cool-water life. Head for colder water.",
+   "fact": {
+    "text": "The Late Devonian Kellwasser event hit shallow warm-water organisms harder than cool-water organisms.",
+    "wiki_title": "Late Devonian mass extinction",
+    "wiki_revid": 1378694342,
+    "source_sentence": "The Kellwasser event and most other Later Devonian pulses primarily affected the marine community, and had a greater effect on shallow warm-water organisms than on cool-water organisms."
+   },
+   "description": "Long before the dinosaurs, the great Devonian reefs collapsed as the sea lost its oxygen. Eight places to swim, and the clue the fossils give about which water was safest.",
+   "tags": [
+    "ocean",
+    "Devonian",
+    "extinction",
+    "sea monsters",
+    "ancient fish",
+    "prehistoric",
+    "survival",
+    "science"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "countdown-08",
+   "era": "Ordovician",
+   "title": "An Ice Age Hits the Ancient Ocean — Where Do You Hide? 🧊",
+   "banner": "An ice age drains the sea. Where?",
+   "hook_vo": "An ice age is draining the sea. Move now.",
+   "art_direction": "Steel-blue cold water over pale green shelves, crisp clarity, split-level waterline framing, silver winter light.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Warm inland sea",
+     "vo": "Stay in the warm inland sea.",
+     "danger": 1,
+     "image_prompt": "A warm shallow inland sea of the Ordovician over a sandy floor with trilobites and sea lilies, water drawing back, photoreal painterly, vertical composition, one warm focal light from a silver sun above"
+    },
+    {
+     "n": 2,
+     "label": "Shallow tidal pool",
+     "vo": "Hide in a shallow tidal pool.",
+     "danger": 2,
+     "image_prompt": "A shrinking tidal pool on bare Ordovician rock with stranded trilobites, no plants on land, steel-blue sky, photoreal painterly, vertical composition, one warm focal light from a low winter sun"
+    },
+    {
+     "n": 3,
+     "label": "Coral and sponge reef",
+     "vo": "Shelter in the coral reef.",
+     "danger": 3,
+     "image_prompt": "A tabulate coral and sponge reef in steel-blue water, the sea level visibly dropping toward it, photoreal painterly, vertical composition, one warm focal light from a silver sun shaft"
+    },
+    {
+     "n": 4,
+     "label": "Inside a nautiloid shell",
+     "vo": "Squeeze into an empty nautiloid shell.",
+     "danger": 4,
+     "image_prompt": "A giant empty straight-shelled nautiloid shell lying on a pale green seafloor, the open end facing the viewer, photoreal painterly, vertical composition, one warm focal light from a soft warm light shaft"
+    },
+    {
+     "n": 5,
+     "label": "Deep, dim seafloor",
+     "vo": "Sink to the deep, dim seafloor.",
+     "danger": 5,
+     "image_prompt": "A dim deep seafloor of grey mud far below the shelf, thin-shelled creatures in the gloom, photoreal painterly, vertical composition, one warm focal light from a faint warm glow from above"
+    },
+    {
+     "n": 6,
+     "label": "Outer shelf edge",
+     "vo": "Move out to the outer shelf edge.",
+     "danger": 6,
+     "image_prompt": "The outer edge of a continental shelf in cold clear water, brachiopod shells clustered on the slope, open blue beyond, photoreal painterly, vertical composition, one warm focal light from a warm sun shaft"
+    },
+    {
+     "n": 7,
+     "label": "Drift as plankton",
+     "vo": "Drift with the plankton at the surface.",
+     "danger": 7,
+     "image_prompt": "A cloud of tiny drifting plankton and graptolite colonies near a cold sunlit surface, open water below, photoreal painterly, vertical composition, one warm focal light from the low sun"
+    },
+    {
+     "n": 8,
+     "label": "Under the polar ice",
+     "vo": "Hide under the polar ice sheet.",
+     "danger": 8,
+     "image_prompt": "POV looking up at the underside of a thick polar ice sheet over a black sea, cracks glowing faintly, photoreal painterly, vertical composition, one warm focal light from a thin warm glow through the ice"
+    }
+   ],
+   "answer_n": 6,
+   "verdict_vo": "Real answer: number 6, because cold-loving shellfish probably spread along the outer shelf as the ice age struck. Follow them there.",
+   "fact": {
+    "text": "During the Late Ordovician glaciation, the cold-adapted Hirnantia brachiopod fauna spread along outer shelf environments.",
+    "wiki_title": "Late Ordovician mass extinction",
+    "wiki_revid": 1379841207,
+    "source_sentence": "During the glaciation, a high-latitude brachiopod assemblage, the Hirnantia fauna, established itself along outer shelf environments in lower latitudes, probably in response to cooling."
+   },
+   "description": "Before there were trees, an ice age drained the shallow seas and wiped out most marine species. Eight places to hide, and the cold-water survivors that point to the answer.",
+   "tags": [
+    "ice age",
+    "ocean",
+    "Ordovician",
+    "extinction",
+    "trilobites",
+    "prehistoric",
+    "survival",
+    "science"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "countdown-09",
+   "era": "Triassic",
+   "title": "Pangaea Tears Open at the End of the Triassic — Pick Your Plan 🌋",
+   "banner": "Volcanoes split Pangaea. What saves you?",
+   "hook_vo": "Pangaea is ripping apart. Volcanic winter is coming.",
+   "art_direction": "Cold ash-blue volcanic winter split by a molten orange rift, frost on red rock, 50mm natural perspective.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Bask on warm rocks",
+     "vo": "Bask on the last warm rocks.",
+     "danger": 1,
+     "image_prompt": "A flat red rock shelf dusted with frost beside a rift valley, a pale sun behind volcanic haze, photoreal painterly, vertical composition, one warm focal light from a molten fissure in the distance"
+    },
+    {
+     "n": 2,
+     "label": "Join the giant croc cousins",
+     "vo": "Join the giant crocodile cousins.",
+     "danger": 2,
+     "image_prompt": "A massive rauisuchian predator on a frosty riverbank, armoured back and heavy skull, ash falling, photoreal painterly, vertical composition, one warm focal light from a lava rift glowing behind it"
+    },
+    {
+     "n": 3,
+     "label": "Armoured aetosaur shell",
+     "vo": "Hide under aetosaur armour plates.",
+     "danger": 3,
+     "image_prompt": "An armoured aetosaur crouched low on a frosty plain, spiked plates rimed with ice, grey sky, photoreal painterly, vertical composition, one warm focal light from a far fissure eruption"
+    },
+    {
+     "n": 4,
+     "label": "Small, fuzzy, warm-blooded",
+     "vo": "Be small, fuzzy and warm-blooded.",
+     "danger": 4,
+     "image_prompt": "A small feathered early dinosaur fluffed against the cold on a frosty fern bank, breath steaming, ash-blue dusk, photoreal painterly, vertical composition, one warm focal light from a distant lava rift"
+    },
+    {
+     "n": 5,
+     "label": "Swim the rift lake",
+     "vo": "Swim across the new rift lake.",
+     "danger": 5,
+     "image_prompt": "A long dark lake filling a fresh rift valley, steam rising off the surface, basalt cliffs on both sides, photoreal painterly, vertical composition, one warm focal light from a lava glow"
+    },
+    {
+     "n": 6,
+     "label": "Shelter by the lava rift",
+     "vo": "Warm up beside the lava rift.",
+     "danger": 6,
+     "image_prompt": "A low glowing fissure of lava splitting a frosty plain, heat shimmer melting the frost around it, photoreal painterly, vertical composition, one warm focal light from the lava fissure"
+    },
+    {
+     "n": 7,
+     "label": "Cold highland plateau",
+     "vo": "Climb to the cold highland plateau.",
+     "danger": 7,
+     "image_prompt": "A windswept highland plateau under ash-blue cloud, thin snow on dead conifers, the rift glowing far below, photoreal painterly, vertical composition, one warm focal light from the rift glow"
+    },
+    {
+     "n": 8,
+     "label": "Sleep on fresh lava",
+     "vo": "Sleep on the fresh lava crust.",
+     "danger": 8,
+     "image_prompt": "A glossy black crust of fresh basalt with orange light pulsing through its cracks, steam venting into a cold night, photoreal painterly, vertical composition, one warm focal light from the molten cracks"
+    }
+   ],
+   "answer_n": 4,
+   "verdict_vo": "Real answer: number 4, because volcanic cold snaps may have favoured insulated animals like early dinosaurs. Fuzz probably beats scales here.",
+   "fact": {
+    "text": "Volcanic cold periods at the end of the Triassic may have favoured insulated warm-blooded animals such as dinosaurs, pterosaurs and mammals over large pseudosuchians.",
+    "wiki_title": "Triassic–Jurassic extinction",
+    "wiki_revid": 1378821292,
+    "source_sentence": "Cold periods induced by volcanic ejecta clouding the atmosphere might have favoured endothermic animals, with dinosaurs, pterosaurs, and mammals being more capable at enduring these conditions than large pseudosuchians due to insulation."
+   },
+   "description": "As Pangaea split, giant eruptions brought cold snaps that may have handed the world to the dinosaurs. Eight survival plans, and why fluff may have beaten armour.",
+   "tags": [
+    "Pangaea",
+    "dinosaurs",
+    "Triassic",
+    "volcano",
+    "extinction",
+    "prehistoric",
+    "survival",
+    "science"
+   ],
+   "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
+  },
+  {
+   "id": "countdown-10",
+   "era": "Pleistocene",
+   "title": "Ice Age Flood Bursts Through the Ice Dam — Where Do You Run? 🌊",
+   "banner": "The ice dam broke. Run where?",
+   "hook_vo": "The ice dam just broke. The flood is coming.",
+   "art_direction": "Moonlit black basalt and silver churning water, cold blue night with a single amber moonrise, 28mm low angle.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Cosy cave by the river",
+     "vo": "Shelter in a cave by the river.",
+     "danger": 1,
+     "image_prompt": "POV from a dry basalt cave just above a quiet river at night, moonlit valley outside, distant roar of mist, photoreal painterly, vertical composition, one warm focal light from an amber moonrise"
+    },
+    {
+     "n": 2,
+     "label": "Climb the high basalt ridge",
+     "vo": "Scramble up the highest basalt ridge.",
+     "danger": 2,
+     "image_prompt": "Looking down from a towering basalt ridge at night onto a valley about to flood, grasses whipping in the wind, photoreal painterly, vertical composition, one warm focal light from an amber moonrise"
+    },
+    {
+     "n": 3,
+     "label": "Behind a giant boulder",
+     "vo": "Crouch behind a giant boulder.",
+     "danger": 3,
+     "image_prompt": "A lone giant boulder on a moonlit valley floor, a wall of churning silver water appearing far up the valley, photoreal painterly, vertical composition, one warm focal light from the amber moon"
+    },
+    {
+     "n": 4,
+     "label": "Top of a tall pine",
+     "vo": "Climb to the top of a pine.",
+     "danger": 4,
+     "image_prompt": "View from the crown of a tall pine over a moonlit valley as a white wall of water surges toward it, photoreal painterly, vertical composition, one warm focal light from an amber moon low"
+    },
+    {
+     "n": 5,
+     "label": "Outrun it with mammoths",
+     "vo": "Run with the mammoths down the valley.",
+     "danger": 5,
+     "image_prompt": "Columbian mammoths stampeding down a moonlit valley, a churning silver flood chasing them, spray in the air, photoreal painterly, vertical composition, one warm focal light from the amber moon"
+    },
+    {
+     "n": 6,
+     "label": "Ride a floating ice block",
+     "vo": "Ride a giant floating ice block.",
+     "danger": 6,
+     "image_prompt": "A huge block of glacier ice tumbling in a churning silver floodwater at night, debris and spray, photoreal painterly, vertical composition, one warm focal light from an amber moonrise"
+    },
+    {
+     "n": 7,
+     "label": "Dry canyon shelter",
+     "vo": "Hide in the dry canyon below.",
+     "danger": 7,
+     "image_prompt": "The bottom of a narrow dry basalt canyon at night, moonlight on the walls, a growing roar of water upstream, photoreal painterly, vertical composition, one warm focal light from the amber moon"
+    },
+    {
+     "n": 8,
+     "label": "Stand by the ice dam",
+     "vo": "Stand right by the ice dam.",
+     "danger": 8,
+     "image_prompt": "The base of a colossal cracking ice dam at night, water jetting through fractures, chunks falling, photoreal painterly, vertical composition, one warm focal light from an amber moon behind it"
+    }
+   ],
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because this Ice Age flood raced at up to 130 kilometres per hour. You cannot outrun it, so climb.",
+   "fact": {
+    "text": "The largest Missoula floods reached maximum flow speeds of about 36 metres per second, roughly 130 km/h.",
+    "wiki_title": "Missoula floods",
+    "wiki_revid": 1375033537,
+    "source_sentence": "The maximum flow speed approached 36 meters/second (130 km/h or 80 mph)."
+   },
+   "description": "At the end of the last Ice Age, a glacier holding back a vast lake gave way again and again. Eight places to be when the water came, and the speed that settles it.",
+   "tags": [
+    "Ice Age",
+    "flood",
+    "megaflood",
+    "Pleistocene",
+    "mammoths",
+    "survival",
+    "prehistoric",
+    "science"
+   ],
+   "related_topic_hint": "One Night in the Ice Age"
+  },
+  {
+   "id": "countdown-11",
+   "era": "Miocene",
+   "title": "Supervolcano Ash Falls on Ancient Rhinos — Where Do You Go? 🌋",
+   "banner": "Volcanic ash falling. Where to go?",
+   "hook_vo": "A supervolcano a thousand miles away just erupted.",
+   "art_direction": "Soft powder-grey ashfall over golden savanna grass, muted sepia with a hazy orange sun, 70mm gentle compression.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Cool, muddy waterhole",
+     "vo": "Cool off at the muddy waterhole.",
+     "danger": 1,
+     "image_prompt": "A muddy Miocene waterhole on a golden savanna, Teleoceras rhinos wading, fine grey ash drifting down, photoreal painterly, vertical composition, one warm focal light from a hazy orange sun"
+    },
+    {
+     "n": 2,
+     "label": "Shade with the rhino herd",
+     "vo": "Stand in the shade with the rhinos.",
+     "danger": 2,
+     "image_prompt": "A herd of barrel-bodied Teleoceras rhinos huddled under scattered trees on a savanna, ash settling on their backs, photoreal painterly, vertical composition, one warm focal light from a hazy orange sun"
+    },
+    {
+     "n": 3,
+     "label": "Bare windswept ridge",
+     "vo": "Climb a bare, windswept ridge.",
+     "danger": 3,
+     "image_prompt": "A bare windswept grassy ridge above a savanna, wind sweeping falling ash off the crest, photoreal painterly, vertical composition, one warm focal light from a hazy orange sun on the horizon"
+    },
+    {
+     "n": 4,
+     "label": "Grassy hollow out of wind",
+     "vo": "Lie low in a grassy hollow.",
+     "danger": 4,
+     "image_prompt": "A sheltered grassy hollow in rolling Miocene plains, grey ash piling softly into the low ground, photoreal painterly, vertical composition, one warm focal light from a hazy orange sun"
+    },
+    {
+     "n": 5,
+     "label": "Under a lone tree",
+     "vo": "Wait under a lone savanna tree.",
+     "danger": 5,
+     "image_prompt": "A lone wide-crowned tree on a grey-dusted savanna, ash falling through its branches, photoreal painterly, vertical composition, one warm focal light from a hazy orange sun behind it"
+    },
+    {
+     "n": 6,
+     "label": "Run with three-toed horses",
+     "vo": "Gallop away with the three-toed horses.",
+     "danger": 6,
+     "image_prompt": "A herd of small three-toed Miocene horses galloping across a savanna through falling grey ash, dust trailing, photoreal painterly, vertical composition, one warm focal light from a hazy orange sun"
+    },
+    {
+     "n": 7,
+     "label": "Dig into the ash",
+     "vo": "Dig a hole into the ash.",
+     "danger": 7,
+     "image_prompt": "A deep soft drift of pale volcanic ash piled in a gully, the surface sculpted by wind, photoreal painterly, vertical composition, one warm focal light from a hazy orange sun above"
+    },
+    {
+     "n": 8,
+     "label": "Walk toward the volcano",
+     "vo": "Walk west toward the volcano.",
+     "danger": 8,
+     "image_prompt": "A distant column of volcanic ash towering above the western horizon of a savanna, lightning inside the plume, photoreal painterly, vertical composition, one warm focal light from the glowing plume"
+    }
+   ],
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because ash piled 8 to 10 feet deep in the old waterhole hollow. Stay off the low ground, probably.",
+   "fact": {
+    "text": "At the Ashfall Fossil Beds, volcanic ash collected 8 to 10 feet deep in the depression of a watering hole.",
+    "wiki_title": "Ashfall Fossil Beds",
+    "wiki_revid": 1379554091,
+    "source_sentence": "At the Ashfall Fossil Beds site, the ash depth is instead 8 to 10 feet due to the depression of a watering hole."
+   },
+   "description": "Twelve million years ago, ash from a supervolcano drifted across the plains and buried a waterhole full of rhinos. Eight places to wait out the ashfall, and where the ash piled deepest.",
+   "tags": [
+    "supervolcano",
+    "Miocene",
+    "rhinos",
+    "ashfall",
+    "volcano",
+    "prehistoric",
+    "survival",
+    "science"
+   ],
+   "related_topic_hint": "The Lost Giants of the Ancient Plains"
+  },
+  {
+   "id": "countdown-12",
+   "era": "Pliocene",
+   "title": "The Ocean Pours Into a Dry Sea — Which Plan Keeps You Alive? 🌊",
+   "banner": "The ocean is flooding back. Escape where?",
+   "hook_vo": "The ocean just broke through. The basin is filling.",
+   "art_direction": "Blinding white salt basin under turquoise torrent, saturated cyan against bone white, drone-high 20mm perspective.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Salt-crust oasis pool",
+     "vo": "Rest by a salt-crust oasis pool.",
+     "danger": 1,
+     "image_prompt": "A small green oasis pool ringed by white salt crust on the dry floor of the Mediterranean basin, heat haze, photoreal painterly, vertical composition, one warm focal light from a golden late sun"
+    },
+    {
+     "n": 2,
+     "label": "Shady canyon floor",
+     "vo": "Shelter on a shady canyon floor.",
+     "danger": 2,
+     "image_prompt": "The shaded floor of a deep canyon cut into the dry basin, dry salt-crusted riverbed, cliffs rising high, photoreal painterly, vertical composition, one warm focal light from a golden sun slit above"
+    },
+    {
+     "n": 3,
+     "label": "Low rocky knoll",
+     "vo": "Climb a low rocky knoll.",
+     "danger": 3,
+     "image_prompt": "A low rocky knoll rising from a vast white salt flat, a turquoise torrent spreading across the far basin, photoreal painterly, vertical composition, one warm focal light from a golden sun"
+    },
+    {
+     "n": 4,
+     "label": "Wait for calm water",
+     "vo": "Wait for the water to calm down.",
+     "danger": 4,
+     "image_prompt": "A white salt plain with a shallow sheet of turquoise water sliding toward the viewer, photoreal painterly, vertical composition, one warm focal light from a golden sunset over the far rim"
+    },
+    {
+     "n": 5,
+     "label": "Ride the torrent's spray",
+     "vo": "Ride the torrent's spray downhill.",
+     "danger": 5,
+     "image_prompt": "A colossal turquoise torrent of ocean water roaring down a channel into a dry basin, spray rising into rainbows, photoreal painterly, vertical composition, one warm focal light from the low golden sun"
+    },
+    {
+     "n": 6,
+     "label": "Cave in the basin wall",
+     "vo": "Hide in a cave low in the wall.",
+     "danger": 6,
+     "image_prompt": "POV from a cave low in a basin cliff, the turquoise flood spreading across the salt flat below, photoreal painterly, vertical composition, one warm focal light from a golden sun on the water"
+    },
+    {
+     "n": 7,
+     "label": "Climb the basin rim",
+     "vo": "Climb all the way up the rim.",
+     "danger": 7,
+     "image_prompt": "Looking down from the high rim of the Mediterranean basin at a turquoise flood filling the white salt floor far below, photoreal painterly, vertical composition, one warm focal light from a golden sunset"
+    },
+    {
+     "n": 8,
+     "label": "Stand at the strait",
+     "vo": "Stand at the breach in the strait.",
+     "danger": 8,
+     "image_prompt": "The breach in the rock barrier between ocean and basin, a thundering wall of turquoise water bursting through, photoreal painterly, vertical composition, one warm focal light from the golden sun in the spray"
+    }
+   ],
+   "answer_n": 7,
+   "verdict_vo": "Real answer: number 7, because the water may have risen over 10 metres a day. Climb out of the basin, fast.",
+   "fact": {
+    "text": "During the Zanclean flood, sea level in the refilling basin may at times have risen faster than 10 metres per day.",
+    "wiki_title": "Zanclean flood",
+    "wiki_revid": 1374947780,
+    "source_sentence": "Sea level rise in the basin may at times have reached rates greater than 10 metres per day (5 fathom/d; 30 ft/d)."
+   },
+   "description": "Over five million years ago the Mediterranean was a dry salt basin, until the Atlantic broke back in. Eight ways to ride out the refill, and how fast the water may have climbed.",
+   "tags": [
+    "ocean",
+    "flood",
+    "Mediterranean",
+    "Pliocene",
+    "deep time",
+    "prehistoric",
+    "survival",
+    "science"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "countdown-13",
+   "era": "Carboniferous",
+   "title": "Giant Bug Forest Is Drying Up — Which Plan Saves You? 🪲",
+   "banner": "The coal forest is dying. Your plan?",
+   "hook_vo": "The giant bug forest is drying out. Choose wisely.",
+   "art_direction": "Humid emerald swamp fading to dry tan, iridescent insect wings, backlit mist, 100mm macro bokeh.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Stay in the swamp pools",
+     "vo": "Stay in the shrinking swamp pools.",
+     "danger": 1,
+     "image_prompt": "Shrinking swamp pools among towering scale trees in a Carboniferous forest, mud cracking at the edges, photoreal painterly, vertical composition, one warm focal light from a warm low sun through mist"
+    },
+    {
+     "n": 2,
+     "label": "Be a giant amphibian",
+     "vo": "Be a big swamp amphibian.",
+     "danger": 2,
+     "image_prompt": "A large Carboniferous amphibian lying in a drying pool, broad flat head and glistening skin, cracked mud around, photoreal painterly, vertical composition, one warm focal light from a warm sun shaft"
+    },
+    {
+     "n": 3,
+     "label": "Ride a giant millipede",
+     "vo": "Ride a two-metre giant millipede.",
+     "danger": 3,
+     "image_prompt": "A two-metre Arthropleura millipede crawling over a fallen scale tree on a forest floor, segmented armour gleaming, photoreal painterly, vertical composition, one warm focal light from a warm sun shaft"
+    },
+    {
+     "n": 4,
+     "label": "Hunt like a griffinfly",
+     "vo": "Hunt in the air as a griffinfly.",
+     "danger": 4,
+     "image_prompt": "A giant Meganeura griffinfly hovering over a drying swamp, iridescent wings spread wide, mist below, photoreal painterly, vertical composition, one warm focal light from a warm backlit sun"
+    },
+    {
+     "n": 5,
+     "label": "Lay shelled eggs on land",
+     "vo": "Lay shelled eggs on dry land.",
+     "danger": 5,
+     "image_prompt": "A clutch of small leathery eggs in a dry hollow under ferns, a small early reptile beside them, forest drying around, photoreal painterly, vertical composition, one warm focal light from a warm low sun"
+    },
+    {
+     "n": 6,
+     "label": "Last soggy forest patch",
+     "vo": "Cling to the last soggy forest patch.",
+     "danger": 6,
+     "image_prompt": "A last small island of green swamp forest surrounded by dry tan plains, scale trees crowded together, photoreal painterly, vertical composition, one warm focal light from a warm hazy sun"
+    },
+    {
+     "n": 7,
+     "label": "Climb a giant club moss",
+     "vo": "Climb a forty-metre club moss.",
+     "danger": 7,
+     "image_prompt": "Looking down from the crown of a forty-metre Lepidodendron scale tree over a drying coal forest, photoreal painterly, vertical composition, one warm focal light from a warm sun through mist"
+    },
+    {
+     "n": 8,
+     "label": "Wait on the dry flats",
+     "vo": "Wait out on the dry flats.",
+     "danger": 8,
+     "image_prompt": "Open dry tan flats where a coal forest used to be, dead trunks standing, dust devils rising, photoreal painterly, vertical composition, one warm focal light from a harsh warm sun"
+    }
+   ],
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because as the coal forests collapsed, many amphibians died out while early reptile and mammal ancestors diversified.",
+   "fact": {
+    "text": "In the Carboniferous rainforest collapse many amphibian species went extinct, while the ancestors of reptiles and mammals diversified.",
+    "wiki_title": "Carboniferous rainforest collapse",
+    "wiki_revid": 1379704079,
+    "source_sentence": "Many amphibian species became extinct, while the ancestors of reptiles and mammals diversified into more species after the initial crisis."
+   },
+   "description": "The age of giant insects ran on swamp forests, and then the swamps dried up. Eight survival plans, and the egg that changed everything on land.",
+   "tags": [
+    "giant insects",
+    "Carboniferous",
+    "coal forest",
+    "prehistoric",
+    "extinction",
+    "survival",
+    "deep time",
+    "science"
+   ],
+   "related_topic_hint": "Giant Insects of the Coal Forests"
+  },
+  {
+   "id": "countdown-14",
+   "era": "Pleistocene",
+   "title": "The Ice Age Is Ending — Where Does Your Mammoth Herd Go? 🦣",
+   "banner": "The ice melts. Move the herd where?",
+   "hook_vo": "The Ice Age is ending. Your mammoth herd must move.",
+   "art_direction": "Pastel Arctic dusk, lavender snow and peach sky, long blue shadows, 200mm telephoto across tundra.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Sheltered river valley",
+     "vo": "Head down into a sheltered valley.",
+     "danger": 1,
+     "image_prompt": "A sheltered river valley on the thawing mammoth steppe, willow thickets and meltwater, lavender dusk, photoreal painterly, vertical composition, one warm focal light from a peach sunset"
+    },
+    {
+     "n": 2,
+     "label": "Southern grassland",
+     "vo": "Walk south to the old grasslands.",
+     "danger": 2,
+     "image_prompt": "Rolling southern grasslands turning to shrubs as the Ice Age ends, woolly mammoths walking in a line, photoreal painterly, vertical composition, one warm focal light from a peach sunset"
+    },
+    {
+     "n": 3,
+     "label": "Edge of the melting glacier",
+     "vo": "Graze at the melting glacier edge.",
+     "danger": 3,
+     "image_prompt": "The calving front of a melting glacier above a meltwater lake, woolly mammoths small in the foreground, photoreal painterly, vertical composition, one warm focal light from a peach dusk glow"
+    },
+    {
+     "n": 4,
+     "label": "Dense new birch forest",
+     "vo": "Push into the new birch forest.",
+     "danger": 4,
+     "image_prompt": "A dense young birch forest swallowing the old steppe, a woolly mammoth squeezing between pale trunks, photoreal painterly, vertical composition, one warm focal light from a peach low sun"
+    },
+    {
+     "n": 5,
+     "label": "Follow the woolly rhinos",
+     "vo": "Follow the woolly rhinos north.",
+     "danger": 5,
+     "image_prompt": "Woolly rhinos trudging across a lavender snowy tundra at dusk, long shadows, mist from their breath, photoreal painterly, vertical composition, one warm focal light from a peach sunset"
+    },
+    {
+     "n": 6,
+     "label": "Remote Arctic island",
+     "vo": "Cross the ice to a remote island.",
+     "danger": 6,
+     "image_prompt": "A remote windswept Arctic island of tundra and low hills ringed by sea ice, a small mammoth herd grazing, photoreal painterly, vertical composition, one warm focal light from a peach dusk glow"
+    },
+    {
+     "n": 7,
+     "label": "Ride an iceberg south",
+     "vo": "Drift south on an iceberg.",
+     "danger": 7,
+     "image_prompt": "A woolly mammoth standing on a drifting iceberg in a dark lavender sea, the coast receding, photoreal painterly, vertical composition, one warm focal light from a peach sunset"
+    },
+    {
+     "n": 8,
+     "label": "Thawing bog flats",
+     "vo": "Cross the thawing bog flats.",
+     "danger": 8,
+     "image_prompt": "Endless soggy thawing bog flats with pools of meltwater, a lone mammoth sinking to its knees, photoreal painterly, vertical composition, one warm focal light from a low peach sun"
+    }
+   ],
+   "answer_n": 6,
+   "verdict_vo": "Real answer: number 6, because the last mammoths survived on Wrangel Island until about 4,000 years ago. Isolation bought them time.",
+   "fact": {
+    "text": "Mainland Siberian woolly mammoths died out around 10,000 years ago, but isolated populations survived on St. Paul Island until 5,600 years ago and on Wrangel Island until 4,000 years ago.",
+    "wiki_title": "Woolly mammoth",
+    "wiki_revid": 1380409560,
+    "source_sentence": "The population of woolly mammoths declined at the end of the Late Pleistocene, with the last populations on mainland Siberia persisting until around 10,000 years ago, although isolated populations survived on St. Paul Island until 5,600 years ago and on Wrangel Island until 4,000 years ago."
+   },
+   "description": "When the Ice Age ended, the mammoth steppe melted away beneath the herds. Eight places to take them, and the islands where the very last mammoths held on.",
+   "tags": [
+    "mammoth",
+    "Ice Age",
+    "Pleistocene",
+    "woolly mammoth",
+    "extinction",
+    "prehistoric",
+    "survival",
+    "science"
+   ],
+   "related_topic_hint": "One Night in the Ice Age"
+  },
+  {
+   "id": "countdown-15",
+   "era": "Cambrian",
+   "title": "Ancient Ocean Mudslide Incoming — Where Do You Swim? ⏳",
+   "banner": "A mud flow is coming. Swim where?",
+   "hook_vo": "A wall of mud is sliding down the reef.",
+   "art_direction": "Sepia-amber underwater dusk with drifting silt, warm ochre against teal shadow, close 35mm with shallow focus.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Burrow in soft mud",
+     "vo": "Burrow down into the soft mud.",
+     "danger": 1,
+     "image_prompt": "A soft Cambrian seafloor of fine grey mud with worm burrows, silt hanging in teal water, photoreal painterly, vertical composition, one warm focal light from a warm ochre light shaft"
+    },
+    {
+     "n": 2,
+     "label": "Cling to a tall sponge",
+     "vo": "Cling to a tall sponge stalk.",
+     "danger": 2,
+     "image_prompt": "A tall Vauxia sponge rising from a Cambrian seafloor, small creatures clinging to it, teal water clouding with silt, photoreal painterly, vertical composition, one warm focal light from a warm ochre light"
+    },
+    {
+     "n": 3,
+     "label": "Swim up into open water",
+     "vo": "Swim up into the open water.",
+     "danger": 3,
+     "image_prompt": "Looking up from the seafloor toward open teal water near the surface, small Cambrian swimmers rising away from a billowing silt cloud, photoreal painterly, vertical composition, one warm focal light from a warm ochre sun shaft"
+    },
+    {
+     "n": 4,
+     "label": "Hide in an empty shell",
+     "vo": "Hide inside an empty shell.",
+     "danger": 4,
+     "image_prompt": "An empty Cambrian shell half buried on a muddy seafloor, opening facing the viewer, silt drifting, photoreal painterly, vertical composition, one warm focal light from a warm ochre glow"
+    },
+    {
+     "n": 5,
+     "label": "Ride on Anomalocaris",
+     "vo": "Ride on top of an Anomalocaris.",
+     "danger": 5,
+     "image_prompt": "An Anomalocaris gliding over the seafloor with rippling side flaps and spiny frontal appendages, teal water, photoreal painterly, vertical composition, one warm focal light from a warm ochre light behind it"
+    },
+    {
+     "n": 6,
+     "label": "Base of the reef cliff",
+     "vo": "Shelter at the base of the cliff.",
+     "danger": 6,
+     "image_prompt": "The base of a towering underwater reef escarpment, loose mud and rubble at its foot, silt beginning to slide, photoreal painterly, vertical composition, one warm focal light from a warm ochre glow above"
+    },
+    {
+     "n": 7,
+     "label": "Bottom of the deep basin",
+     "vo": "Sink to the bottom of the basin.",
+     "danger": 7,
+     "image_prompt": "A dark deep basin floor at the foot of a Cambrian reef, still water and fine black mud, photoreal painterly, vertical composition, one warm focal light from a faint ochre light far above"
+    },
+    {
+     "n": 8,
+     "label": "Right under the mud cloud",
+     "vo": "Wait right under the mud cloud.",
+     "danger": 8,
+     "image_prompt": "A towering rolling cloud of mud and silt pouring down an underwater slope toward the viewer, sea creatures tumbling in it, photoreal painterly, vertical composition, one warm focal light from a warm ochre light through it"
+    }
+   ],
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because Burgess Shale animals were buried by sudden sediment-rich currents. Swimming up off the seafloor is probably your best bet.",
+   "fact": {
+    "text": "The animals of the Burgess Shale are thought to have been rapidly buried by sediment-rich water flows before they could decay.",
+    "wiki_title": "Burgess Shale",
+    "wiki_revid": 1381270537,
+    "source_sentence": "The organisms that are found in the Burgess Shale are thought to have been rapidly entombed by sediment rich water current flows before they could have had a significant chance to decay."
+   },
+   "description": "Half a billion years ago, sudden mud flows buried whole communities of strange sea animals so fast that their soft bodies survived as fossils. Eight places to be when the mud slides, and the one that probably keeps you out of the rock.",
+   "tags": [
+    "ocean",
+    "Cambrian",
+    "Burgess Shale",
+    "fossils",
+    "sea creatures",
+    "prehistoric",
+    "survival",
+    "science"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "countdown-16",
+   "era": "Jurassic",
+   "title": "Jurassic Sea Monsters and a Dying Ocean — Pick Your Plan 🦕",
+   "banner": "The ocean loses its oxygen. Your plan?",
+   "hook_vo": "The Jurassic ocean is running out of oxygen.",
+   "art_direction": "Deep sapphire and storm grey with bioluminescent sparks, rain-dimpled surface, split over-under waterline shot, 18mm.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Hide among sea lilies",
+     "vo": "Hide in a forest of sea lilies.",
+     "danger": 1,
+     "image_prompt": "A forest of giant crinoid sea lilies swaying on a Jurassic seafloor in sapphire water, particles drifting, photoreal painterly, vertical composition, one warm focal light from a warm bioluminescent spark"
+    },
+    {
+     "n": 2,
+     "label": "Ammonite shell in shallows",
+     "vo": "Be an ammonite in the shallows.",
+     "danger": 2,
+     "image_prompt": "A shoal of coiled ammonites drifting in warm murky shallows of a Jurassic sea, shells gleaming, photoreal painterly, vertical composition, one warm focal light from a warm sun shaft from above"
+    },
+    {
+     "n": 3,
+     "label": "Deep cold water",
+     "vo": "Dive down into deep cold water.",
+     "danger": 3,
+     "image_prompt": "Dark deep cold Jurassic water far below the surface, faint drifting particles and no life in sight, photoreal painterly, vertical composition, one warm focal light from a lone warm bioluminescent glow"
+    },
+    {
+     "n": 4,
+     "label": "Join the belemnite swarm",
+     "vo": "Join a swarm of belemnites.",
+     "danger": 4,
+     "image_prompt": "A swarm of torpedo-shaped belemnites with trailing arms jetting through sapphire water, photoreal painterly, vertical composition, one warm focal light from a warm bioluminescent shimmer"
+    },
+    {
+     "n": 5,
+     "label": "Bury in seafloor mud",
+     "vo": "Bury yourself in the seafloor mud.",
+     "danger": 5,
+     "image_prompt": "Black organic-rich mud on a still Jurassic seafloor, a few burrows and empty shells, no movement, photoreal painterly, vertical composition, one warm focal light from a faint warm glow above"
+    },
+    {
+     "n": 6,
+     "label": "Lagoon by the reef",
+     "vo": "Shelter in a lagoon by the reef.",
+     "danger": 6,
+     "image_prompt": "A warm shallow lagoon behind a reef under a stormy grey sky, rain dimpling the still surface, photoreal painterly, vertical composition, one warm focal light from a warm break in the clouds"
+    },
+    {
+     "n": 7,
+     "label": "Ride the storm surface",
+     "vo": "Ride the stormy surface waves.",
+     "danger": 7,
+     "image_prompt": "Over-under view at the surface of a heaving storm-grey Jurassic sea, rain hammering the water, sapphire depths below, photoreal painterly, vertical composition, one warm focal light from a warm lightning flash"
+    },
+    {
+     "n": 8,
+     "label": "Join the giant ichthyosaurs",
+     "vo": "Swim with the giant ichthyosaurs.",
+     "danger": 8,
+     "image_prompt": "A pod of large ichthyosaurs surfacing to breathe in a rain-dimpled storm-grey sea, sapphire water below, photoreal painterly, vertical composition, one warm focal light from a warm break in the clouds"
+    }
+   ],
+   "answer_n": 8,
+   "verdict_vo": "Real answer: number 8, because this Jurassic oxygen crash had only minor effects on air-breathing marine reptiles. Breathe air, survive.",
+   "fact": {
+    "text": "The Toarcian Oceanic Anoxic Event had relatively minor effects on marine reptiles, unlike its major impact on many marine invertebrates.",
+    "wiki_title": "Toarcian Oceanic Anoxic Event",
+    "wiki_revid": 1379822914,
+    "source_sentence": "The TOAE had relatively minor effects on marine reptiles, in stark contrast to its major impact on many clades of marine invertebrates."
+   },
+   "description": "In the Early Jurassic the seas lost much of their oxygen and many sea creatures paid for it. Eight plans, and why the giant air-breathers came through better than almost anything else.",
+   "tags": [
+    "sea monsters",
+    "Jurassic",
+    "ocean",
+    "ichthyosaur",
+    "extinction",
+    "prehistoric",
+    "survival",
+    "science"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
   }
  ]
 }

@@ -35,7 +35,7 @@ SAME_SERIES_MAX = 2  # in a row
 SERIES_PER_WEEK = 3  # distinct series in any 7 days
 
 # A famous token in the first five words of the title: what people already search for.
-FAMOUS = ["dinosaur", "t. rex", "t-rex", "tyrannosaurus", "asteroid", "ocean", "sea", "ice age", "pangaea",
+FAMOUS = ["dinosaur", "t. rex", "t rex", "t-rex", "tyrannosaurus", "asteroid", "ocean", "sea", "ice age", "pangaea",
           "giant bug", "giant insect", "megalodon", "mammoth", "jurassic", "cretaceous", "triassic", "volcano",
           "supervolcano", "prehistoric", "snowball earth", "ichthyosaur", "mosasaur", "sabre-tooth", "saber-tooth",
           "great dying", "extinction", "ammonite", "deep sea", "coal forest"]
@@ -125,10 +125,11 @@ def _names(text: str) -> list[str]:
     return out
 
 
-def fact_problems(text: str, source_sentence: str) -> list[str]:
-    """Every number and every name in `text` must be in the one source sentence (numbers.py rules)."""
+def fact_problems(text: str, source_sentence: str, article: str = "") -> list[str]:
+    """Every number in `text` must be in the one source sentence (numbers.py rules), and every name in that sentence
+    or in the title of the article it comes from (Wikipedia sentences name their subject as "It ...")."""
     vals = numbers.values(source_sentence)
-    src = gates.Sources([source_sentence])
+    src = gates.Sources([source_sentence, article])
     out = [f"number '{q.text}' is not in the source sentence" for q in numbers.unsupported(text, vals)]
     out += [f"name '{w}' is not in the source sentence" for w in _names(text) if not src.has_word(w)]
     return out
@@ -205,8 +206,8 @@ def premise_problems(p: dict, series: str | None = None) -> list[str]:
         if not isinstance(fact["wiki_revid"], int) or fact["wiki_revid"] <= 0:
             out.append("fact.wiki_revid must be a positive integer")
         src = fact.get("source_sentence", "")
-        out += [f"fact: {x}" for x in fact_problems(fact.get("text", ""), src)]
-        out += [f"verdict: {x}" for x in fact_problems(_verdict_claim(p["verdict_vo"]), src)]
+        out += [f"fact: {x}" for x in fact_problems(fact.get("text", ""), src, fact["wiki_title"])]
+        out += [f"verdict: {x}" for x in fact_problems(_verdict_claim(p["verdict_vo"]), src, fact["wiki_title"])]
         if HEDGE_SOURCE.search(src) and not _hedged(p["verdict_vo"]):
             out.append("verdict states as certain what the source only suggests: word it as opinion")
     if not 2 <= len(gates.sentences(p["description"])) <= 3:

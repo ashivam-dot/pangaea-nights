@@ -1,0 +1,321 @@
+name: shorts
+# The choice-ladder Shorts (studio/ladder_cli.py). One run a day builds every slot the ramp allows: slot A releases
+# at 14:30 UTC the same day, slot B at 00:30 UTC the next morning (from launch day 8, after 7 gate-clean Shorts).
+# Peak 19 jobs (17 image + 2 voice); the episode never fans out while this runs (studio/fanout.py).
+
+on:
+  schedule:
+    - cron: "0 8 * * *"  # worst-case critical path ~4 h, so slot A (upload by 14:10) is met with room to spare
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "build and gate everything, upload nothing"
+        type: boolean
+        default: true
+      mode:
+        description: "used only when dry_run is off: test = private upload, no release; publish = scheduled release"
+        type: choice
+        options: [test, publish]
+        default: test
+      slot:
+        description: "auto = what the ramp allows (dry/test runs use A), or force A or B"
+        type: choice
+        options: [auto, A, B]
+        default: auto
+      premise:
+        description: "premise id (optional)"
+        type: string
+        default: ""
+
+concurrency:
+  group: shorts
+  cancel-in-progress: false
+
+permissions:
+  actions: read
+  contents: write
+  issues: write
+
+env:
+  MODE: ${{ github.event_name == 'schedule' && 'publish' || (inputs.dry_run != false && 'dry' || inputs.mode) }}
+  PANGAEA_WORK: ${{ github.workspace }}/work
+  PANGAEA_STATE: ${{ github.workspace }}/state
+  PANGAEA_MODELS: /mnt/models
+  PAUSED: ${{ vars.PAUSED }}
+  SHORTS_PAUSED: ${{ vars.SHORTS_PAUSED }}
+  SHORTS_LAUNCH: ${{ vars.SHORTS_LAUNCH }}
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+jobs:
+  plan:
+    if: github.event_name != 'schedule' || (vars.PAUSED == 'false' && vars.SHORTS_PAUSED != 'true')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 75
+    outputs:
+      slots: ${{ steps.plan.outputs.slots }}
+      images: ${{ steps.plan.outputs.images }}
+      any: ${{ steps.plan.outputs.any }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/*.txt
+      - name: State branch
+        run: |
+          git fetch --depth 1 origin state
+          git worktree add state FETCH_HEAD
+      - name: Install
+        run: pip install -q -r requirements/base.txt -r requirements/plan.txt
+      - name: Wait for a fanned-out episode (20 concurrent jobs)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -m studio.fanout --wait-for episode.yml --fanned-out --minutes 60
+      - name: Banks pass their gates
+        run: python -m studio.cli ladder-check
+      - name: Ramp
+        run: python -m studio.cli ladder-ramp
+      - name: Choose premises
+        id: plan
+        env:
+          SLOT: ${{ inputs.slot != 'auto' && inputs.slot || '' }}
+          PREMISE: ${{ inputs.premise }}
+        run: python -m studio.cli ladder-plan --mode "$MODE" --slot "$SLOT" --premise "$PREMISE"
+      - uses: actions/upload-artifact@v5
+        if: steps.plan.outputs.any == 'true'
+        with:
+          name: ladder-plan
+          path: work/ladder
+          retention-days: 7
+
+  images:
+    needs: plan
+    if: needs.plan.outputs.any == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    strategy:
+      fail-fast: true
+      max-parallel: 17  # + 2 voice = 19, so an episode plan job alongside keeps the total at 20
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.images) }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Free disk
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+          sudo mkdir -p /mnt/models && sudo chown "$USER" /mnt/models
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/*.txt
+      - run: pip install -q -r requirements/base.txt -r requirements/ml.txt
+      - uses: actions/download-artifact@v6
+        with:
+          name: ladder-plan
+          path: work/ladder
+      - name: Generate
+        env:
+          SLOT: ${{ matrix.slot }}
+          SHARD: ${{ matrix.shard }}
+        run: python -m studio.cli ladder-images --slot "$SLOT" --shard "$SHARD"
+      - name: Artifact name
+        id: name
+        env:
+          SLOT: ${{ matrix.slot }}
+          SHARD: ${{ matrix.shard }}
+        run: echo "name=ladder-img-$SLOT-${SHARD%%/*}" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v5
+        with:
+          name: ${{ steps.name.outputs.name }}
+          path: work/ladder/${{ matrix.slot }}/images
+          retention-days: 3
+
+  voice:
+    needs: plan
+    if: needs.plan.outputs.any == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: true
+      matrix:
+        slot: ${{ fromJSON(needs.plan.outputs.slots) }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/*.txt
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng
+      - run: pip install -q -r requirements/base.txt -r requirements/ml.txt -r requirements/voice.txt
+      - uses: actions/download-artifact@v6
+        with:
+          name: ladder-plan
+          path: work/ladder
+      - name: Narrate
+        env:
+          SLOT: ${{ matrix.slot }}
+        run: python -m studio.cli ladder-voice --slot "$SLOT"
+      - uses: actions/upload-artifact@v5
+        with:
+          name: ladder-voice-${{ matrix.slot }}
+          path: work/ladder/${{ matrix.slot }}/voice
+          retention-days: 3
+
+  render:
+    needs: [plan, images, voice]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        slot: ${{ fromJSON(needs.plan.outputs.slots) }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/*.txt
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg tesseract-ocr
+      - run: pip install -q -r requirements/base.txt -r requirements/ml.txt
+      - name: State branch (first-frame history)
+        run: |
+          git fetch --depth 1 origin state
+          git worktree add state FETCH_HEAD
+      - uses: actions/download-artifact@v6
+        with:
+          name: ladder-plan
+          path: work/ladder
+      - uses: actions/download-artifact@v6
+        with:
+          pattern: ladder-img-${{ matrix.slot }}-*
+          path: work/ladder/${{ matrix.slot }}/images
+          merge-multiple: true
+      - uses: actions/download-artifact@v6
+        with:
+          name: ladder-voice-${{ matrix.slot }}
+          path: work/ladder/${{ matrix.slot }}/voice
+      - name: Render and gate
+        env:
+          SLOT: ${{ matrix.slot }}
+        run: python -m studio.cli ladder-render --slot "$SLOT"
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: ladder-out-${{ matrix.slot }}
+          path: work/ladder/${{ matrix.slot }}/out
+          retention-days: 14
+          if-no-files-found: ignore
+
+  publish:
+    needs: [plan, render]
+    if: ${{ !cancelled() && needs.plan.outputs.any == 'true' }}  # one slot's render crash must not block the other
+    runs-on: ubuntu-24.04
+    environment: youtube
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 1  # one upload at a time on the channel
+      matrix:
+        slot: ${{ fromJSON(needs.plan.outputs.slots) }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/*.txt
+      - run: pip install -q -r requirements/base.txt -r requirements/publish.txt
+      - name: State branch (related episode)
+        run: |
+          git fetch --depth 1 origin state
+          git worktree add state FETCH_HEAD
+      - uses: actions/download-artifact@v6
+        with:
+          name: ladder-plan
+          path: work/ladder
+      - uses: actions/download-artifact@v6
+        with:
+          name: ladder-out-${{ matrix.slot }}
+          path: work/ladder/${{ matrix.slot }}/out
+      - name: Publish (refuses unless every gate passed and the channel is live)
+        env:
+          SLOT: ${{ matrix.slot }}
+          YOUTUBE_OAUTH_JSON: ${{ secrets.YOUTUBE_OAUTH_JSON }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m studio.cli ladder-publish --slot "$SLOT" --mode "$MODE"
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: ladder-pub-${{ matrix.slot }}
+          path: work/ladder/${{ matrix.slot }}/out/publish.json
+          retention-days: 14
+          if-no-files-found: ignore
+
+  record:
+    needs: [plan, images, voice, render, publish]
+    if: always() && needs.plan.outputs.any == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements/base.txt
+      - uses: actions/download-artifact@v6
+        with:
+          name: ladder-plan
+          path: work/ladder
+      - uses: actions/download-artifact@v6
+        with:
+          pattern: ladder-out-*
+          path: work/dl
+      - uses: actions/download-artifact@v6
+        with:
+          pattern: ladder-pub-*
+          path: work/dl
+      - name: Gate and publish reports into each slot
+        run: |
+          for d in work/dl/ladder-out-* work/dl/ladder-pub-*; do
+            [ -d "$d" ] || continue
+            slot="${d##*-}"
+            mkdir -p "work/ladder/$slot/out"
+            cp -r "$d"/. "work/ladder/$slot/out/"
+          done
+          rm -f work/ladder/*/out/short.mp4
+      - name: Record in the ledger
+        run: |
+          git fetch --depth 1 origin state
+          git worktree add state FETCH_HEAD
+          python -m studio.cli ladder-record
+          cd state
+          git add ledger.json
+          git -c user.name=pangaea-nights-bot -c user.email=actions@users.noreply.github.com commit -q -m "ledger: shorts run $GITHUB_RUN_ID" || true
+          git push origin HEAD:state
+      - name: Alert on a read-back mismatch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s work/ladder/alerts.txt ]; then
+            gh issue create -R "$GITHUB_REPOSITORY" --label alert \
+              --title "Short read-back mismatch ($(date -u +%Y-%m-%d))" --body-file work/ladder/alerts.txt
+          fi
+
+  alert:
+    needs: [plan, images, voice, render, publish, record]
+    if: failure() && (github.event_name == 'schedule' || (inputs.dry_run == false && inputs.mode == 'publish'))
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Open an alert issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh issue create -R "$GITHUB_REPOSITORY" --label alert \
+            --title "Shorts failed ($(date -u +%Y-%m-%d))" \
+            --body "The scheduled Shorts run failed: $RUN_URL"

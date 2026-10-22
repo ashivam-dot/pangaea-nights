@@ -191,7 +191,7 @@ def publish(args) -> None:
     desc = youtube.description(ep, rows, ep["docs"], audio["ambience"]["recordings"],
                                _model_label(), os.environ.get("PANGAEA_VOICE", "bm_george"))
     out = W / "out"
-    when = youtube.soon() if os.environ.get("PANGAEA_RELEASE") == "now" else youtube.publish_at(0, 0, 30)
+    when = youtube.soon() if os.environ.get("PANGAEA_RELEASE") == "now" else youtube.episode_slot()
     main = youtube.upload(api, channel, out / "episode.mp4", ep["title"], desc, youtube.tags(ep), when,
                           out / "thumbnail.jpg")
     when = main.get("publish_at") or when
@@ -214,7 +214,7 @@ def promote(args) -> None:
     """Turn a full-length dry run's episode into a publish episode, so its finished media can be published without
     a rebuild. The publish guard still applies: real writer, full shape, media QA, not paused."""
     ep = _load("episode.json")
-    if ep.get("shape") != "full" or ep.get("writer") != "gemini":
+    if ep.get("shape") not in config.LONG_SHAPES or ep.get("writer") != "gemini":
         sys.exit("only a full-length episode from the real writer can be promoted")
     if ep.get("mode") != "publish":
         ep["promoted_from"] = ep["id"]

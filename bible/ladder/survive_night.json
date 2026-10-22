@@ -3,151 +3,1379 @@
  "premises": [
   {
    "id": "survive_night-01",
-   "era": "Late Cretaceous",
-   "title": "One Night in the Cretaceous — Which Shelter Do You Pick? 🦖",
-   "banner": "Which shelter gets you to dawn?",
-   "hook_vo": "One night in the Cretaceous. Pick your shelter.",
-   "art_direction": "A Late Cretaceous floodplain under a full moon, tall conifers and ferns, mist on a slow river and a far volcano glowing on the horizon.",
+   "era": "Cretaceous",
+   "title": "Stranded With a T. rex for One Night — Where Do You Sleep? 🦖",
+   "banner": "Where do you sleep tonight?",
+   "hook_vo": "One night in T. rex country. Pick your bed.",
+   "art_direction": "Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens.",
    "options": [
-    {"n": 1, "label": "Hollow log", "vo": "Number one: a dry hollow log by the river.", "danger": 1,
-     "image_prompt": "Looking out from inside a huge hollow fallen conifer log, rough dry bark framing a misty moonlit river, a warm orange glow from a distant volcano low on the horizon"},
-    {"n": 2, "label": "Fern thicket", "vo": "Number two: deep inside a fern thicket.", "danger": 2,
-     "image_prompt": "A dense thicket of giant tree ferns at night, dew shining on curled fronds, silver moonlight between the leaves and a warm amber glow of distant lava behind them"},
-    {"n": 3, "label": "Small burrow", "vo": "Number three: a small burrow under the roots.", "danger": 3,
-     "image_prompt": "Close view of a small round burrow entrance dug into a sandy bank under twisted conifer roots, soft moonlight on the soil, a warm ember glow far behind on the plain"},
-    {"n": 4, "label": "Treetop nest", "vo": "Number four: up a tree, beside a nest.", "danger": 4,
-     "image_prompt": "High in a moonlit conifer crown, a large nest of sticks with speckled eggs on a thick branch, the floodplain far below and a warm volcano glow on the clouds"},
-    {"n": 5, "label": "Riverbank mud", "vo": "Number five: half buried in riverbank mud.", "danger": 5,
-     "image_prompt": "A wide glistening mudbank along a slow Cretaceous river at night, ripples catching moonlight, crocodile eyes just above the water and a warm sunset-coloured glow from distant lava"},
-    {"n": 6, "label": "Sauropod herd", "vo": "Number six: against a sleeping sauropod herd.", "danger": 6,
-     "image_prompt": "A herd of huge long-necked sauropods resting together on a moonlit plain, their massive grey flanks rising like hills, warm orange volcano glow outlining their necks"},
-    {"n": 7, "label": "Open plain", "vo": "Number seven: out on the open plain.", "danger": 7,
-     "image_prompt": "A vast flat open floodplain of low ferns under a huge bright moon, nothing to hide behind for miles, a lone warm ember glow of a lava flow on the far horizon"},
-    {"n": 8, "label": "Tyrannosaur trail", "vo": "Number eight: right beside a fresh T. rex trail.", "danger": 8,
-     "image_prompt": "Enormous fresh three-toed tracks pressed deep into wet moonlit mud, leading into dark conifers, rain puddles reflecting a warm red volcano glow, a huge shadowed tyrannosaur shape between the trees"}
+    {
+     "n": 1,
+     "label": "Hollow log by the creek",
+     "vo": "A hollow log beside the creek.",
+     "danger": 1,
+     "image_prompt": "POV from inside a mossy hollow log looking out at a moonlit Cretaceous creek lined with horsetails and ferns, a smouldering stump glowing on the far bank, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Across the river, upwind",
+     "vo": "Across the river, with the wind in your face.",
+     "danger": 2,
+     "image_prompt": "POV on a gravel bank across a wide moonlit river, wind rippling the water toward a distant dark conifer forest, river mist streaming past, ember glow on the far shore, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "High in a conifer",
+     "vo": "Forty metres up an ancient conifer.",
+     "danger": 3,
+     "image_prompt": "POV looking down from the high branches of a towering Cretaceous conifer over a misty floodplain far below, moonlight on the canopy, a glowing stump deep below, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Inside a Triceratops skull",
+     "vo": "Curled up inside an old Triceratops skull.",
+     "danger": 4,
+     "image_prompt": "POV from inside the hollow of a weathered Triceratops skull lying in tall ferns, looking out between the brow horns at a moonlit floodplain, ember glow in the distance, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Between sleeping duckbills",
+     "vo": "Squeezed between a herd of sleeping duckbills.",
+     "danger": 5,
+     "image_prompt": "Low POV between the huge resting flanks of a herd of Edmontosaurus asleep in ferns on a moonlit Cretaceous floodplain, breath steaming, one ember-lit stump behind them, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Beside a dinosaur nest",
+     "vo": "In the ferns, right next to a nest.",
+     "danger": 6,
+     "image_prompt": "POV in dense ferns beside a mound nest of large speckled dinosaur eggs on a moonlit riverbank, a broad feathered shape stirring in the shadows, warm ember glow, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "In a T. rex footprint",
+     "vo": "Curled up in a fresh T. rex footprint.",
+     "danger": 7,
+     "image_prompt": "POV from inside a huge fresh three-toed Tyrannosaurus footprint pressed into wet riverbank mud, moonlight pooling in it, deep fresh tracks leading into dark forest, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Behind a fresh carcass",
+     "vo": "Behind a fresh Triceratops carcass.",
+     "danger": 8,
+     "image_prompt": "POV crouched behind a fallen Triceratops in moonlit ferns, the vast head of a Tyrannosaurus rex emerging from the dark treeline nostrils flared, ember glow on its scales, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    }
    ],
-   "answer_n": 3,
-   "verdict_vo": "Real answer: number 3, because early mammals seem to have burrowed to shelter from climate and daytime predators.",
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because T. rex had a highly developed sense of smell, so staying upwind is probably your best bet.",
    "fact": {
-    "text": "Burrowing, which allowed sheltering from climate and diurnal predators, appears to be a basal mammalian trait.",
-    "wiki_title": "Nocturnal bottleneck",
-    "wiki_revid": 1381219565,
-    "source_sentence": "Burrowing lifestyle allowing sheltering from climate and diurnal predators appears to be a basal mammalian trait."
+    "text": "Tyrannosaurus had very large olfactory bulbs and nerves for its brain size, giving it a heightened sense of smell.",
+    "wiki_title": "Tyrannosaurus",
+    "wiki_revid": 1381030609,
+    "source_sentence": "Tyrannosaurus had very large olfactory bulbs and olfactory nerves relative to their brain size, the organs responsible for a heightened sense of smell."
    },
-   "description": "Eight places to spend one night in the Late Cretaceous, ranked from cosy to deadly. Which one would really get you to sunrise?",
-   "tags": ["Cretaceous", "dinosaurs", "prehistoric survival", "deep time", "would you survive", "paleontology"],
-   "related_topic_hint": "last day of the dinosaurs Cretaceous mammals nocturnal"
+   "description": "One night on a Cretaceous floodplain, about 66 million years ago, and eight places to sleep. Pick your number, then hear what the fossils say about the nose of Tyrannosaurus rex.",
+   "tags": [
+    "dinosaurs",
+    "T. rex",
+    "Cretaceous",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "paleontology",
+    "would you rather"
+   ],
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like? (Cretaceous / T. rex)"
   },
   {
    "id": "survive_night-02",
-   "era": "Late Triassic",
-   "title": "Pick Your Campsite on Pangaea — Only One Survives the Night 🌙",
-   "banner": "Where do you sleep on Pangaea?",
-   "hook_vo": "One night on Pangaea. Where do you sleep?",
-   "art_direction": "The Triassic supercontinent Pangaea under a vast starry sky, red rock, dry riverbeds and a far glimmer of open sea.",
+   "era": "Permian",
+   "title": "One Night on Pangaea — Which Campsite Do You Pick? 🌙",
+   "banner": "Pick your spot on Pangaea",
+   "hook_vo": "One supercontinent. One night. Where do you stop?",
+   "art_direction": "Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression.",
    "options": [
-    {"n": 1, "label": "Sea breeze shore", "vo": "Number one: a beach with a cool sea breeze.", "danger": 1,
-     "image_prompt": "A quiet Triassic shoreline at night, gentle waves on pale sand, low conifers along the dunes, a full moon over the sea and a warm golden glow of dawn starting at the edge"},
-    {"n": 2, "label": "River delta", "vo": "Number two: a reedy river delta.", "danger": 2,
-     "image_prompt": "A wide river delta of braided channels and horsetail reeds under the moon, still water reflecting stars, a warm amber glow of sunset fading behind low hills"},
-    {"n": 3, "label": "Conifer grove", "vo": "Number three: a grove of tall conifers.", "danger": 3,
-     "image_prompt": "A grove of tall straight Triassic conifers with fallen needles on red soil, moonbeams slanting between the trunks, a warm ember glow from a smouldering lightning-struck stump"},
-    {"n": 4, "label": "Salt flat", "vo": "Number four: a glittering salt flat.", "danger": 4,
-     "image_prompt": "An endless white salt flat cracked into hexagons under a bright moon, the crust glittering, cold blue shadows and a thin warm sunset band low on the far horizon"},
-    {"n": 5, "label": "Red canyon ledge", "vo": "Number five: a ledge in a red canyon.", "danger": 5,
-     "image_prompt": "A narrow ledge high on a deep red sandstone canyon wall at night, layered cliffs dropping into darkness, moonlight on the rock and a warm glow of embers far below"},
-    {"n": 6, "label": "Dune sea", "vo": "Number six: the middle of a dune sea.", "danger": 6,
-     "image_prompt": "Towering wind-carved sand dunes rolling to the horizon under a sky full of stars, sharp moonlit crests, deep indigo hollows and a warm orange glow of heat haze at the edge"},
-    {"n": 7, "label": "Dry interior", "vo": "Number seven: the far dry heart of Pangaea.", "danger": 7,
-     "image_prompt": "The barren interior of a supercontinent at night, a cracked dry riverbed winding through red rock and dust, a huge moon and a faint warm glow of a far desert storm"},
-    {"n": 8, "label": "Lava field", "vo": "Number eight: a warm field of fresh lava.", "danger": 8,
-     "image_prompt": "A black volcanic plain of fresh lava crust split by glowing orange cracks, steam rising into the moonlit sky, red rock mesas silhouetted far behind"}
+    {
+     "n": 1,
+     "label": "Coastal fern gully",
+     "vo": "A damp fern gully near the sea.",
+     "danger": 1,
+     "image_prompt": "POV down into a damp fern gully opening onto a calm moonlit Permian sea, glossopterid trees overhead, a copper moon rising over the water, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Dry riverbed inland",
+     "vo": "A dry riverbed, a day's walk inland.",
+     "danger": 2,
+     "image_prompt": "POV standing in a cracked dry riverbed winding inland through red rock under a violet starfield, scattered seed-fern stumps, copper moon low on the horizon, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Middle of the dunes",
+     "vo": "Right in the middle of the dunes.",
+     "danger": 3,
+     "image_prompt": "POV on the crest of an endless sea of rust-red dunes under a blazing starfield, frost forming on the sand, a copper moon rising behind the ridgelines, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Salt flat, dead centre",
+     "vo": "Dead centre of a giant salt flat.",
+     "danger": 4,
+     "image_prompt": "POV standing on a vast cracked white salt flat stretching to every horizon under a violet night sky, frost glittering, one copper moon low in the east, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Back against a Dimetrodon",
+     "vo": "Back to back with a sleeping Dimetrodon.",
+     "danger": 5,
+     "image_prompt": "Low POV beside a sleeping Dimetrodon curled on warm red sandstone, its tall sail silhouetted against the stars, copper moonlight along the sail spines, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Inside a dune burrow",
+     "vo": "Dug into a burrow in the dunes.",
+     "danger": 6,
+     "image_prompt": "POV from inside a narrow sand burrow looking up its mouth at the violet Permian night sky, loose red sand trickling down, copper moonlight at the entrance, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Lone mesa in a storm",
+     "vo": "On top of a lone mesa, storm coming.",
+     "danger": 7,
+     "image_prompt": "POV on the flat top of a lone red mesa as a towering dry lightning storm rolls over the Pangaean desert, dust wall approaching, copper lightning glow, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "The supercontinent's heart",
+     "vo": "The exact heart of the supercontinent.",
+     "danger": 8,
+     "image_prompt": "POV at the barren heart of Pangaea, endless rippled red desert and dry salt pans under a freezing starfield, no plants anywhere, one copper moon, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
+    }
    ],
    "answer_n": 1,
-   "verdict_vo": "Real answer: number 1, because the inner parts of Pangaea were likely far drier, with extreme swings of heat and cold.",
+   "verdict_vo": "Real answer: number 1, because Pangaea's interior was far drier than its shores, with extreme heat and cold. Stay coastal, probably.",
    "fact": {
-    "text": "The inner parts of Pangaea were, compared to its shores, significantly drier, likely forming one of the most extensive desert systems in Earth's history with extreme variations of heat and cold.",
+    "text": "The interior of Pangaea was significantly drier than its shores and saw extreme variations of heat and cold.",
     "wiki_title": "Pangaea",
     "wiki_revid": 1376395143,
     "source_sentence": "The inner parts of the supercontinent were, in comparison to its shores, significantly drier and cooler, likely forming one of the most extensive desert systems in Earth's geological history with extreme variations of heat and cold (continental climate), though several paleoclimatologists have found evidence of short rainy seasons in the interior regions."
    },
-   "description": "Eight campsites on the supercontinent Pangaea, from a breezy shore to a field of fresh lava. Only one is a sensible place to spend the night.",
-   "tags": ["Pangaea", "Triassic", "supercontinent", "prehistoric survival", "deep time", "would you survive"],
-   "related_topic_hint": "Pangaea supercontinent one night Triassic desert"
+   "description": "Every continent fused into one, and you have a single night to get through it. Eight spots, from a fern gully by the sea to the dead centre of Pangaea. Which one keeps you alive?",
+   "tags": [
+    "Pangaea",
+    "supercontinent",
+    "Permian",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "Earth history",
+    "would you rather"
+   ],
+   "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
   },
   {
    "id": "survive_night-03",
-   "era": "Late Pleistocene",
-   "title": "Stuck in the Ice Age Overnight — Which Cave Do You Pick? 🧊",
-   "banner": "Which cave do you sleep in?",
-   "hook_vo": "Ice Age, one freezing night. Pick a cave.",
-   "art_direction": "Late Pleistocene Europe in deep winter, snow on limestone cliffs, a frozen river and green aurora over the steppe.",
+   "era": "Pleistocene",
+   "title": "One Ice Age Night — Which Cave Do You Sleep In? 🧊",
+   "banner": "Which shelter do you pick?",
+   "hook_vo": "Ice Age Europe, a freezing night. Choose your shelter.",
+   "art_direction": "Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel.",
    "options": [
-    {"n": 1, "label": "Snow hollow", "vo": "Number one: a hollow scooped into deep snow.", "danger": 1,
-     "image_prompt": "A small hollow scooped into a deep snowdrift on an open steppe at night, blue moonlit snow, green aurora overhead and a warm golden glow of dawn just starting on the horizon"},
-    {"n": 2, "label": "Rock overhang", "vo": "Number two: a shallow rock overhang.", "danger": 2,
-     "image_prompt": "A shallow limestone overhang above a frozen river, icicles hanging from the lip, snow drifting in, aurora light and a warm ember-coloured sunset glow on the far valley"},
-    {"n": 3, "label": "Blue ice crevasse", "vo": "Number three: a crack in a blue glacier.", "danger": 3,
-     "image_prompt": "Inside a narrow crevasse of translucent blue glacier ice, walls glowing with moonlight from above, frost crystals sparkling and a warm amber glint of dawn at the top"},
-    {"n": 4, "label": "Hot spring grotto", "vo": "Number four: a grotto beside a steaming spring.", "danger": 4,
-     "image_prompt": "A rocky grotto beside a steaming hot spring pool in a snowy valley, mist curling in the moonlight, mineral terraces glowing warm orange around the water"},
-    {"n": 5, "label": "Dripping limestone cave", "vo": "Number five: a deep cave full of dripping stone.", "danger": 5,
-     "image_prompt": "A tall limestone cave with stalactites and stalagmites, water dripping into still pools, moonlight falling through a crack in the roof and a warm golden glow on wet flowstone"},
-    {"n": 6, "label": "Cave bear den", "vo": "Number six: a den where a giant bear hibernates.", "danger": 6,
-     "image_prompt": "A huge cave bear curled asleep on a bed of dry straw deep in a limestone cave, thick brown fur rising and falling, a warm amber glow of moonlit snow at the entrance"},
-    {"n": 7, "label": "Cave lion lair", "vo": "Number seven: a lair that smells of cave lion.", "danger": 7,
-     "image_prompt": "A cave lion lying alert at the mouth of a rocky lair on a snowy cliff, pale fur and bright eyes, aurora behind it and a warm sunset glow on the snow"},
-    {"n": 8, "label": "Hyena bone cave", "vo": "Number eight: a cave piled with cracked bones.", "danger": 8,
-     "image_prompt": "A low cave floor heaped with cracked bison and horse bones, spotted cave hyenas watching from the shadows, moonlight from the entrance and a warm ember glow on the wet rock"}
+    {
+     "n": 1,
+     "label": "Snow hollow in a drift",
+     "vo": "A hollow dug into a snowdrift.",
+     "danger": 1,
+     "image_prompt": "POV from inside a hollow dug into a deep snowdrift, looking out at a frozen Ice Age valley in blue hour, spruce trees heavy with snow, amber glow far away, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Shallow rock overhang",
+     "vo": "A shallow overhang, open to the valley.",
+     "danger": 2,
+     "image_prompt": "POV under a shallow limestone overhang open to a snowy Ice Age valley, frost on the rock lip, a small amber resin fire glowing on the dry ground, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Under a fallen spruce",
+     "vo": "Under the roots of a fallen spruce.",
+     "danger": 3,
+     "image_prompt": "POV tucked beneath the upturned roots of a fallen giant spruce in deep snow, icicles hanging from the roots, amber glow through the frozen forest, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Inside a mammoth rib arch",
+     "vo": "Under the ribs of an old mammoth.",
+     "danger": 4,
+     "image_prompt": "POV beneath the arching weathered ribs of a long-dead woolly mammoth half buried in snow, starlight through the gaps, an amber glow on the ivory, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Frozen lake shore",
+     "vo": "Right on the frozen lake shore.",
+     "danger": 5,
+     "image_prompt": "POV on the shore of a vast frozen lake at night, wind scouring the ice, snow devils racing across it, one amber glow on the far bank, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Deep cave with old bones",
+     "vo": "Deep in a cave littered with bones.",
+     "danger": 6,
+     "image_prompt": "POV deep inside a dark limestone cave, the floor scattered with huge old bear bones and skulls, frost at the entrance far behind, amber glow on the walls, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Cave with fresh claw marks",
+     "vo": "A cave with fresh claw marks.",
+     "danger": 7,
+     "image_prompt": "POV at the mouth of a snow-dusted cave, deep fresh claw gouges scored across the limestone walls, warm musky breath steaming from the dark inside, amber glow, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "The cave bear's den",
+     "vo": "The back of a cave bear's den.",
+     "danger": 8,
+     "image_prompt": "POV deep in a cave as a massive cave bear lifts its head from a hibernation hollow, eyes catching amber light, steam rising from its thick fur, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    }
    ],
-   "answer_n": 6,
-   "verdict_vo": "Real answer: number 6, because cave bears are thought to have been almost entirely plant-eaters.",
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because cave bears frequently hibernated in caves through winter. The open overhang is probably safer.",
    "fact": {
-    "text": "Unlike brown bears, cave bears are thought to have been almost entirely or exclusively herbivorous.",
+    "text": "Cave bears frequently used caves to hibernate during the winter months.",
     "wiki_title": "Cave bear",
     "wiki_revid": 1378613344,
-    "source_sentence": "Unlike brown bears, cave bears are thought to have been almost entirely or exclusively herbivorous."
+    "source_sentence": "This reflects the views of experts that cave bears spent more time in caves than the brown bear, frequently using them to hibernate during the winter months."
    },
-   "description": "Eight places to wait out one freezing Ice Age night, from a snow hollow to a hyena den. The safest cave might surprise you.",
-   "tags": ["Ice Age", "cave bear", "Pleistocene", "prehistoric survival", "deep time", "would you survive"],
-   "related_topic_hint": "Ice Age megafauna mammoth steppe Pleistocene winter"
+   "description": "Glacial Europe, a night far below freezing, and eight places to sleep. The cosy-looking caves were not always empty. Pick your number before the verdict.",
+   "tags": [
+    "Ice Age",
+    "cave bear",
+    "Pleistocene",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "megafauna",
+    "would you rather"
+   ],
+   "related_topic_hint": "One Night in the Ice Age (Pleistocene megafauna)"
   },
   {
    "id": "survive_night-04",
-   "era": "Late Carboniferous",
-   "title": "Prehistoric Coal Forest at Night — Where Do You Sleep? 🪲",
-   "banner": "Where do you sleep in here?",
-   "hook_vo": "A coal forest, three hundred million years ago. Sleep where?",
-   "art_direction": "A Late Carboniferous coal swamp forest at night, towering scale trees and tree ferns, black still water and drifting mist.",
+   "era": "Jurassic",
+   "title": "Stranded on a Dinosaur Island — Where Do You Spend the Night? 🏝️",
+   "banner": "Pick your spot on the island",
+   "hook_vo": "Jurassic islands, a warm lagoon. Pick your bed.",
+   "art_direction": "Late Jurassic Solnhofen archipelago: pale turquoise brine lagoons, bleached limestone, sea-green night sky, coral-pink moon, 28mm.",
    "options": [
-    {"n": 1, "label": "Mossy high branch", "vo": "Number one: a mossy branch high above the swamp.", "danger": 1,
-     "image_prompt": "A thick mossy branch high in a towering scale tree, the misty swamp far below, diamond-patterned bark in moonlight and a warm golden glow of dawn behind the canopy"},
-    {"n": 2, "label": "Dense tree ferns", "vo": "Number two: deep inside a dense tree fern forest.", "danger": 2,
-     "image_prompt": "A dense dark forest of tree ferns packed tightly together, layered fronds overhead, moonlight in thin shafts and a warm amber glow of decaying wood on the forest floor"},
-    {"n": 3, "label": "Dry peat bank", "vo": "Number three: a soft, dry peat bank.", "danger": 3,
-     "image_prompt": "A raised bank of soft brown peat between swamp pools, fallen scale tree trunks and ferns around it, mist in the moonlight and a warm ember glow of smouldering peat"},
-    {"n": 4, "label": "Giant horsetails", "vo": "Number four: a stand of giant horsetails.", "danger": 4,
-     "image_prompt": "A stand of giant jointed horsetail stems taller than trees rising from shallow water, moonlight on their ribbed green trunks and a warm sunset glow through the mist"},
-    {"n": 5, "label": "Swamp island", "vo": "Number five: a tiny island in black water.", "danger": 5,
-     "image_prompt": "A tiny island of roots and moss in a wide black swamp, still water mirroring the moon, scale trees all around and a warm orange glow of a distant lightning fire"},
-    {"n": 6, "label": "Open riverbank", "vo": "Number six: an open, sparsely wooded riverbank.", "danger": 6,
-     "image_prompt": "An open sparsely wooded riverbank in a Carboniferous forest, a few scale trees, a wide moonlit river and a long dark segmented millipede moving along the sand in a warm sunset glow"},
-    {"n": 7, "label": "Griffenfly roost", "vo": "Number seven: under a roost of giant griffenflies.", "danger": 7,
-     "image_prompt": "Giant griffenflies with wide veined wings resting on a fallen trunk above swamp water, wings glinting in moonlight, a warm amber glow of dawn behind the mist"},
-    {"n": 8, "label": "Millipede trail", "vo": "Number eight: across a giant millipede's trail.", "danger": 8,
-     "image_prompt": "A wide double track of many small leg marks crossing wet sand into the ferns, the armoured tail of an enormous millipede vanishing into the dark, warm ember glow on the water"}
+    {
+     "n": 1,
+     "label": "Soft sand above the tide",
+     "vo": "Soft sand, just above the tide.",
+     "danger": 1,
+     "image_prompt": "POV on soft pale sand above the tideline of a Jurassic island beach at night, gentle surf, scrubby conifers behind, a coral-pink moon over the water, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Under scrubby conifers",
+     "vo": "Under the scrubby conifers on the ridge.",
+     "danger": 2,
+     "image_prompt": "POV beneath low wind-bent scrubby conifers on a firm limestone ridge above a moonlit turquoise lagoon, dry needles underfoot, coral-pink moonlight, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "On the warm lagoon flats",
+     "vo": "Out on the warm lagoon flats.",
+     "danger": 3,
+     "image_prompt": "POV on wide warm shallow lagoon flats at night, ankle-deep milky turquoise water, a dead silence over the brine, coral-pink moon reflected, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "In a pterosaur roost",
+     "vo": "Inside a pterosaur roost on the rocks.",
+     "danger": 4,
+     "image_prompt": "POV on a rocky outcrop crowded with roosting long-tailed Rhamphorhynchus pterosaurs folding their wings in the moonlight over a pale lagoon, coral-pink glow, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "On a driftwood log",
+     "vo": "Drifting on a big driftwood log.",
+     "danger": 5,
+     "image_prompt": "POV lying on a huge bleached driftwood log floating across a moonlit Jurassic lagoon, the island receding, coral-pink moonlight on the ripples, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Dried lagoon mud",
+     "vo": "Dead centre of the dried lagoon mud.",
+     "danger": 6,
+     "image_prompt": "POV standing on a vast cracked white carbonate mud flat of a half-dried lagoon, tiny feathered dinosaur tracks ending in sticky mud, coral-pink moonlight, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Wading out to the reef",
+     "vo": "Wading out to the sponge reef.",
+     "danger": 7,
+     "image_prompt": "POV wading through dark warm water toward a distant sponge reef at night, long shapes of Jurassic marine reptiles gliding under the surface, coral-pink moon, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Swim to the next island",
+     "vo": "Swimming to the next island at night.",
+     "danger": 8,
+     "image_prompt": "Low POV at water level in an open dark Jurassic sea far from any shore, a distant island on the horizon, a huge fin cutting the moonlit surface, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+    }
    ],
    "answer_n": 2,
-   "verdict_vo": "Real answer: number 2, because the giant millipede seems to have lived in open, sparsely wooded places near water.",
+   "verdict_vo": "Real answer: number 2, because the drying lagoons left sticky mud that trapped insects and small dinosaurs. Stay on firm ground.",
    "fact": {
-    "text": "The giant millipede lived in open, sparsely wooded environments near water, and may have been amphibious.",
-    "wiki_title": "Arthropleura",
-    "wiki_revid": 1373001873,
-    "source_sentence": "It lived in open, sparsely wooded environments near water, and may have been amphibious."
+    "text": "The Solnhofen lagoons at times almost dried out, exposing sticky carbonate mud that trapped insects and a few small dinosaurs.",
+    "wiki_title": "Solnhofen Limestone",
+    "wiki_revid": 1376454427,
+    "source_sentence": "At times, the lagoons almost dried out, exposing sticky carbonate muds that trapped insects and a few small dinosaurs."
    },
-   "description": "One night in a coal swamp forest of giant insects and towering scale trees. Eight places to sleep, and only one keeps you away from its biggest resident.",
-   "tags": ["giant insects", "Carboniferous", "coal forest", "prehistoric survival", "deep time", "giant bug"],
-   "related_topic_hint": "giant insects coal forests Carboniferous"
+   "description": "A Late Jurassic island chain in what is now Germany, with warm lagoons that look perfect for the night. Eight choices, from a conifer ridge to a swim in open water. Which do you trust?",
+   "tags": [
+    "dinosaurs",
+    "Jurassic",
+    "pterosaurs",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "fossils",
+    "would you rather"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs / Jurassic seas"
+  },
+  {
+   "id": "survive_night-05",
+   "era": "Carboniferous",
+   "title": "Giant Bug Swamp at Night — Which Plan Keeps You Alive? 🪲",
+   "banner": "Giant bugs. Which plan?",
+   "hook_vo": "Coal forest, giant bugs, one night. Pick your plan.",
+   "art_direction": "Carboniferous coal swamp: oily green-black water, emerald tree-fern canopy, total dark broken by one far orange flame, 16mm ultra-wide.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Among the tree ferns",
+     "vo": "Tucked among the tree ferns.",
+     "danger": 1,
+     "image_prompt": "POV tucked among the trunks of towering Carboniferous tree ferns, dense emerald fronds overhead, swamp water glinting, one orange glow far off, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Bare sandbar, stay dark",
+     "vo": "A bare sandbar, and no fire at all.",
+     "danger": 2,
+     "image_prompt": "POV on a bare pale sandbar in a slow river through a dark coal forest, no flame anywhere near, stars over the canopy gap, a faint orange glow far away, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "On a fallen clubmoss log",
+     "vo": "On top of a fallen giant clubmoss.",
+     "danger": 3,
+     "image_prompt": "POV lying along a fallen Lepidodendron trunk with diamond-patterned bark spanning dark swamp water, emerald canopy above, an orange glow in the mist, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Next to a millipede trail",
+     "vo": "Next to a giant millipede trail.",
+     "danger": 4,
+     "image_prompt": "Low POV beside a wide fresh Arthropleura trackway in the leaf litter, the segmented body of a very long giant millipede disappearing into ferns, orange glow, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Catch a giant dragonfly",
+     "vo": "Catch a giant dragonfly for dinner.",
+     "danger": 5,
+     "image_prompt": "POV looking up at a Meganeura griffinfly with a seventy-centimetre wingspan hovering over swamp water, wings glittering, one orange glow behind it, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Sleep in a peat hollow",
+     "vo": "Sleep in a soft hollow of dry peat.",
+     "danger": 6,
+     "image_prompt": "POV in a soft hollow of dry crumbling peat between clubmoss roots, dead fronds heaped around, the emerald forest dark above, a faint orange glow, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Small fire for dinner",
+     "vo": "A small cooking fire under the ferns.",
+     "danger": 7,
+     "image_prompt": "Close low view of a small crackling orange fire on the forest floor beneath low dry tree-fern fronds, sparks drifting upward into the dense green canopy, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Bonfire in dry peat",
+     "vo": "A huge bonfire on dry peat.",
+     "danger": 8,
+     "image_prompt": "Low wide view of a roaring orange bonfire on dry peat in a Carboniferous coal forest, flames leaping into the tree-fern canopy, smoke and sparks filling the night, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because oxygen climbed to 25 to 30 percent, so any fire would probably spread fast. Stay dark.",
+   "fact": {
+    "text": "Atmospheric oxygen rose from 15-20% at the start of the Carboniferous to highs of 25-30% during the period.",
+    "wiki_title": "Carboniferous",
+    "wiki_revid": 1380624760,
+    "source_sentence": "However, whilst exact numbers vary, all models show an overall increase in atmospheric oxygen levels from a low of between 15 and 20% at the beginning of the Carboniferous to highs of 25–30% during the Period."
+   },
+   "description": "The coal forests of the Carboniferous, with millipedes longer than you and dragonflies the size of hawks. Eight plans for one night. Pick yours, then hear why the air itself changes the answer.",
+   "tags": [
+    "giant insects",
+    "Carboniferous",
+    "coal forest",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "Arthropleura",
+    "would you rather"
+   ],
+   "related_topic_hint": "Giant Insects of the Coal Forests"
+  },
+  {
+   "id": "survive_night-06",
+   "era": "Cretaceous",
+   "title": "Dinosaur-Eating Crocodile Swamp — Where Do You Sleep Tonight? 🐊",
+   "banner": "Croc swamp. Where do you sleep?",
+   "hook_vo": "A crocodile big enough to eat dinosaurs. Pick your bed.",
+   "art_direction": "Late Cretaceous coastal bayou: olive-bronze water, Spanish-moss cypress, low fog, one amber glow of a burning snag, 50mm at water height.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Pine ridge, far from water",
+     "vo": "A pine ridge, far from the water.",
+     "danger": 1,
+     "image_prompt": "POV on a dry sandy ridge among tall conifers well back from a foggy Cretaceous bayou, the water a distant silver line, amber glow of a burning snag, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Up a swamp cypress",
+     "vo": "Up in a swamp cypress.",
+     "danger": 2,
+     "image_prompt": "POV looking down from the branches of a moss-draped swamp cypress over still olive water, fog curling between the trunks, an amber glow on the far bank, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Sandbank midstream",
+     "vo": "A sandbank in the middle of the river.",
+     "danger": 3,
+     "image_prompt": "POV on a narrow sandbank in the middle of a wide foggy estuary at night, dark water sliding past on both sides, amber glow on the shore, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "In a hadrosaur nest mound",
+     "vo": "Inside a warm hadrosaur nest mound.",
+     "danger": 4,
+     "image_prompt": "POV curled into a warm rotting-vegetation hadrosaur nest mound on a riverbank, eggs half buried, adult duckbills looming in the fog, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "On a floating log",
+     "vo": "Asleep on a floating log.",
+     "danger": 5,
+     "image_prompt": "POV lying on a floating log in a foggy Cretaceous bayou, olive water lapping at the bark, two eyes and a long armoured snout breaking the surface nearby, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Shallows with turtles",
+     "vo": "In the shallows with the sea turtles.",
+     "danger": 6,
+     "image_prompt": "POV knee-deep in warm shallows where large sea turtles rest at night, olive water rippling, a long armoured back drifting closer, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Beside a drinking duckbill",
+     "vo": "Next to a duckbill drinking at the edge.",
+     "danger": 7,
+     "image_prompt": "Low POV at the waterline beside a hadrosaur lowering its head to drink at a foggy bayou, the water bulging as something huge rises below, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "At the water's edge",
+     "vo": "Right at the water's edge.",
+     "danger": 8,
+     "image_prompt": "POV lying on mud at the very edge of a still olive bayou at night, the colossal head of Deinosuchus rising from the water just ahead, amber glow on its teeth, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 1,
+   "verdict_vo": "Real answer: number 1, because Deinosuchus probably ambushed dinosaurs at the water's edge, then dragged them under. Sleep far from water.",
+   "fact": {
+    "text": "Deinosuchus is thought to have ambushed dinosaurs and other land animals at the water's edge and submerged them until they drowned.",
+    "wiki_title": "Deinosuchus",
+    "wiki_revid": 1378716335,
+    "source_sentence": "Deinosuchus is generally thought to have employed hunting tactics similar to those of modern crocodilians, ambushing dinosaurs and other terrestrial animals at the water's edge and then submerging them until they drowned."
+   },
+   "description": "Late Cretaceous North America had a crocodylian big enough to hunt dinosaurs. One foggy night on its coast, eight places to sleep. Choose carefully.",
+   "tags": [
+    "dinosaurs",
+    "Deinosuchus",
+    "Cretaceous",
+    "crocodile",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "would you rather"
+   ],
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like? (Late Cretaceous North America)"
+  },
+  {
+   "id": "survive_night-07",
+   "era": "Pleistocene",
+   "title": "Lost on the Mammoth Steppe at Night — Where Do You Shelter? 🦣",
+   "banner": "Ice Age plains. Pick shelter.",
+   "hook_vo": "Frozen grassland, mammoths everywhere. Where do you sleep?",
+   "art_direction": "Pleistocene mammoth steppe under aurora: pale straw grass, ice-white frost, faint green aurora, one amber glow on the horizon, 21mm ultra-wide.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Open grass, clear sky",
+     "vo": "Open grass under a clear sky.",
+     "danger": 1,
+     "image_prompt": "POV lying in open frost-covered steppe grass under an enormous clear starry sky with a faint green aurora, nothing in any direction, amber glow on the horizon, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Frozen riverbed",
+     "vo": "Down in a frozen riverbed.",
+     "danger": 2,
+     "image_prompt": "POV standing on the ice of a frozen riverbed cutting through flat Ice Age grassland at night, frost smoke rising, green aurora above, amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Boulder windbreak, dug in",
+     "vo": "Dug in behind a big boulder.",
+     "danger": 3,
+     "image_prompt": "POV dug into the lee side of a huge lichen-covered glacial boulder on the steppe, wind-blown snow streaming past the other side, aurora and amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Downwind of the mammoths",
+     "vo": "Downwind of a sleeping mammoth herd.",
+     "danger": 4,
+     "image_prompt": "POV in frosted grass downwind of a herd of woolly mammoths sleeping in a tight group on the steppe, breath steaming, green aurora above, amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Beside a woolly rhino",
+     "vo": "Leaning on a sleeping woolly rhino.",
+     "danger": 5,
+     "image_prompt": "Close POV leaning against the shaggy flank of a sleeping woolly rhinoceros in frosted grass, its long horn silhouetted against the aurora, amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "On the frozen lake",
+     "vo": "Out in the middle of the frozen lake.",
+     "danger": 6,
+     "image_prompt": "POV in the centre of a vast frozen lake on the Ice Age steppe, cracks in the ice glowing under green aurora, wind howling, amber glow far off, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Hilltop in full wind",
+     "vo": "On the hilltop, in full wind.",
+     "danger": 7,
+     "image_prompt": "POV on a bare windswept hilltop above the mammoth steppe, frost crusting the grass, snow streaming sideways under a green aurora, amber glow below, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Beside a cave lion kill",
+     "vo": "Next to a cave lion's fresh kill.",
+     "danger": 8,
+     "image_prompt": "POV in frosted grass beside a fallen bison as a pride of cave lions looks up from it, eyes catching amber light, green aurora overhead, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because the steppe's clear skies let warmth radiate away into the winter night. Get out of the wind.",
+   "fact": {
+    "text": "The mammoth steppe had more clear-sky days than today, so warmth radiated from the ground into the night sky in winter, making it cold.",
+    "wiki_title": "Mammoth steppe",
+    "wiki_revid": 1369090040,
+    "source_sentence": "These kept rainfall low and created more days with clear skies than are seen today, which increased evaporation in the summer leading to aridity, and radiation of warmth from the ground into the night sky in winter leading to cold."
+   },
+   "description": "The biggest grassland the world has known, stretching across the Ice Age north. No trees, no cover, and one long night. Eight shelters, ranked from cosy to fatal.",
+   "tags": [
+    "Ice Age",
+    "mammoth",
+    "woolly mammoth",
+    "Pleistocene",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "megafauna"
+   ],
+   "related_topic_hint": "One Night in the Ice Age (mammoth steppe)"
+  },
+  {
+   "id": "survive_night-08",
+   "era": "Permian",
+   "title": "Toxic Gas Night on Pangaea — Where Do You Sleep? 🌋",
+   "banner": "Toxic gas night. Where?",
+   "hook_vo": "The end of the Permian. The air turns poisonous.",
+   "art_direction": "End-Permian dying world: sulphur-yellow haze, bruised purple sky, black basalt, one molten-orange volcanic glow on the horizon, 35mm.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Sheltered valley hollow",
+     "vo": "A sheltered hollow in the valley.",
+     "danger": 1,
+     "image_prompt": "POV in a still, sheltered valley hollow at dusk, a thin yellow haze lying low over the ground, dead seed ferns around, molten-orange glow on the horizon, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Calm coastal lagoon",
+     "vo": "Beside a calm coastal lagoon.",
+     "danger": 2,
+     "image_prompt": "POV on the shore of a glassy coastal lagoon with purple-green water and bubbles rising, a sulphur haze over the surface, molten-orange glow far away, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Windy bare ridge",
+     "vo": "Up on a bare, windy ridge.",
+     "danger": 3,
+     "image_prompt": "POV on a high bare rocky ridge with strong clean wind blowing, a yellow haze pooled in the valleys far below, molten-orange volcanic glow on the horizon, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Inside a hollow tree",
+     "vo": "Inside a hollow dead tree.",
+     "danger": 4,
+     "image_prompt": "POV from inside a hollow dead glossopterid trunk, looking out at a hazy purple Permian dusk, ash drifting down, molten-orange glow in the distance, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Next to a gorgonopsid den",
+     "vo": "Next to a gorgonopsid's den.",
+     "danger": 5,
+     "image_prompt": "Low POV at the mouth of a burrow where a sabre-toothed gorgonopsid stares out with glowing eyes, sulphur haze drifting past, molten-orange light, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Volcanic crater rim",
+     "vo": "On the rim of a steaming crater.",
+     "danger": 6,
+     "image_prompt": "POV on the rim of a steaming basalt crater, yellow sulphur crust underfoot, molten lava glowing orange in the vent below, purple sky, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Low swamp, rotten-egg smell",
+     "vo": "A low swamp that smells of rotten eggs.",
+     "danger": 7,
+     "image_prompt": "POV in a low dead swamp with still black water and a thick yellow haze clinging to the surface, dead fish on the mud, molten-orange glow, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Bottom of a sinkhole",
+     "vo": "At the bottom of a deep sinkhole.",
+     "danger": 8,
+     "image_prompt": "POV at the bottom of a deep rock sinkhole filled with motionless yellow haze, a small circle of purple sky far above, molten-orange glow on the rim, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because hydrogen sulfide is slightly denser than air, so it probably pooled in low ground. Climb high.",
+   "fact": {
+    "text": "Hydrogen sulfide is slightly denser than air.",
+    "wiki_title": "Hydrogen sulfide",
+    "wiki_revid": 1379984989,
+    "source_sentence": "Hydrogen sulfide is slightly denser than air."
+   },
+   "description": "The end of the Permian, the worst extinction in Earth's history. One hypothesis has oxygen-starved seas releasing hydrogen sulfide. Eight places to wait out the night: which one?",
+   "tags": [
+    "mass extinction",
+    "Great Dying",
+    "Permian",
+    "Pangaea",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "volcano"
+   ],
+   "related_topic_hint": "The Great Dying (end-Permian extinction / Siberian Traps)"
+  },
+  {
+   "id": "survive_night-09",
+   "era": "Devonian",
+   "title": "Stranded by the Ancient Ocean — Where Do You Spend the Night? 🐟",
+   "banner": "Armored fish sea. Pick a spot.",
+   "hook_vo": "Devonian coast. Armored giants offshore. Pick your bed.",
+   "art_direction": "Late Devonian shoreline: slate-blue sea, bronze-green first forests, wet black rock, one warm gold moon path on the water, 40mm.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Under the first trees",
+     "vo": "Under some of the first trees on Earth.",
+     "danger": 1,
+     "image_prompt": "POV under a grove of early Archaeopteris trees on a Devonian shore, bronze-green fronds overhead, the slate-blue sea beyond, gold moon path on the water, slate-blue sea, bronze-green early forest, wet black rock, warm gold moon path, 40mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Tide pool ledge",
+     "vo": "On a ledge above the tide pools.",
+     "danger": 2,
+     "image_prompt": "POV on a wet black rock ledge above Devonian tide pools full of trilobites, waves breaking below, gold moon path across the slate-blue sea, slate-blue sea, bronze-green early forest, wet black rock, warm gold moon path, 40mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "On a stranded coral head",
+     "vo": "On a coral head at low tide.",
+     "danger": 3,
+     "image_prompt": "POV on an exposed rugose coral head at low tide far from shore, the tide starting to turn, slate-blue water all around, gold moon path, slate-blue sea, bronze-green early forest, wet black rock, warm gold moon path, 40mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Under an armor plate",
+     "vo": "Under a washed-up armor plate.",
+     "danger": 4,
+     "image_prompt": "POV sheltering under a huge washed-up bony head plate of a giant armoured fish on the beach, waves at the edge, gold moonlight on the sand, slate-blue sea, bronze-green early forest, wet black rock, warm gold moon path, 40mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Floating on a log",
+     "vo": "Floating out on a log.",
+     "danger": 5,
+     "image_prompt": "POV lying on a floating Archaeopteris log drifting away from a Devonian shore into slate-blue water, the forest receding, gold moon path ahead, slate-blue sea, bronze-green early forest, wet black rock, warm gold moon path, 40mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Wading out to the reef",
+     "vo": "Wading out to the reef at night.",
+     "danger": 6,
+     "image_prompt": "POV waist-deep in dark slate-blue water wading toward a distant Devonian reef, long armoured shapes moving under the surface, gold moon path, slate-blue sea, bronze-green early forest, wet black rock, warm gold moon path, 40mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Swimming over the reef",
+     "vo": "Swimming over the reef edge.",
+     "danger": 7,
+     "image_prompt": "Underwater POV at the edge of a Devonian reef where it drops into deep blue, a Dunkleosteus with bony blade jaws gliding out of the dark, gold moonlight from above, slate-blue sea, bronze-green early forest, wet black rock, warm gold moon path, 40mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Far into open water",
+     "vo": "Swimming far out into open water.",
+     "danger": 8,
+     "image_prompt": "Underwater POV in open deep slate-blue water far from any reef, the massive armoured head of Dunkleosteus opening its blade jaws straight ahead, gold moon shafts, slate-blue sea, bronze-green early forest, wet black rock, warm gold moon path, 40mm lens, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 1,
+   "verdict_vo": "Real answer: number 1, because Dunkleosteus hunted the open water, one of the first vertebrate apex predators. Stay ashore.",
+   "fact": {
+    "text": "Dunkleosteus was a pelagic fish of open waters and one of the first vertebrate apex predators.",
+    "wiki_title": "Dunkleosteus",
+    "wiki_revid": 1374991596,
+    "source_sentence": "It was a pelagic fish inhabiting open waters, and one of the first vertebrate apex predators of any ecosystem."
+   },
+   "description": "The Late Devonian, when the first forests met a sea ruled by armoured fish. One night on that coast and eight places to rest. Do you trust the land or the water?",
+   "tags": [
+    "ocean",
+    "Dunkleosteus",
+    "Devonian",
+    "prehistoric fish",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "would you rather"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "survive_night-10",
+   "era": "Miocene",
+   "title": "Megalodon Coast, One Night — Where Do You Sleep? 🦈",
+   "banner": "Megalodon waters. Pick a spot.",
+   "hook_vo": "Miocene coast. Megalodon offshore. Where do you sleep?",
+   "art_direction": "Miocene warm coast: deep ultramarine water, phosphorescent surf, sandstone cliffs, one rose-gold moon, 70mm from above.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Warm shallow bay",
+     "vo": "On the shore of a warm, shallow bay.",
+     "danger": 1,
+     "image_prompt": "POV on the sandy shore of a calm warm shallow bay at night, glassy ultramarine water, faint blue phosphorescence, rose-gold moon low over the sea, deep ultramarine water, faint blue phosphorescent surf, ochre sandstone, rose-gold moonlight, 70mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Clifftop above the surf",
+     "vo": "On the clifftop, high above the surf.",
+     "danger": 2,
+     "image_prompt": "POV from the top of a tall ochre sandstone sea cliff looking down at phosphorescent surf far below, wind in the dune grass, rose-gold moon, deep ultramarine water, faint blue phosphorescent surf, ochre sandstone, rose-gold moonlight, 70mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Sea cave at low tide",
+     "vo": "In a sea cave at low tide.",
+     "danger": 3,
+     "image_prompt": "POV from inside a sandstone sea cave at low tide looking out at ultramarine water, wet weed on the floor, the tide line high above, rose-gold moon, deep ultramarine water, faint blue phosphorescent surf, ochre sandstone, rose-gold moonlight, 70mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "On a stranded whale",
+     "vo": "On top of a stranded whale.",
+     "danger": 4,
+     "image_prompt": "POV standing on the back of a huge stranded baleen whale on a moonlit beach, waves washing around it, a large fin circling offshore, rose-gold moon, deep ultramarine water, faint blue phosphorescent surf, ochre sandstone, rose-gold moonlight, 70mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Sandbar at low tide",
+     "vo": "Out on a sandbar at low tide.",
+     "danger": 5,
+     "image_prompt": "POV on a narrow sandbar far out in the bay at low tide, ultramarine water closing in on both sides, faint phosphorescence, rose-gold moon, deep ultramarine water, faint blue phosphorescent surf, ochre sandstone, rose-gold moonlight, 70mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Floating kelp mat",
+     "vo": "Lying on a floating kelp mat.",
+     "danger": 6,
+     "image_prompt": "POV lying on a thick floating kelp mat offshore at night, ultramarine swell lifting it, a huge dorsal fin breaking the surface nearby, rose-gold moon, deep ultramarine water, faint blue phosphorescent surf, ochre sandstone, rose-gold moonlight, 70mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Wading in the shallows",
+     "vo": "Wading in the warm shallows.",
+     "danger": 7,
+     "image_prompt": "POV waist-deep in warm phosphorescent shallows, a young megalodon several metres long sliding past glowing blue in the dark water, rose-gold moon, deep ultramarine water, faint blue phosphorescent surf, ochre sandstone, rose-gold moonlight, 70mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Swimming with whales",
+     "vo": "Swimming beside a pod of whales.",
+     "danger": 8,
+     "image_prompt": "Underwater POV beside a pod of small Miocene whales in moonlit ultramarine water, the vast open jaws of an adult megalodon rising from the deep below, deep ultramarine water, faint blue phosphorescent surf, ochre sandstone, rose-gold moonlight, 70mm lens, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because young megalodons lived in warm coastal waters. Those cosy shallows were probably a nursery. Stay high.",
+   "fact": {
+    "text": "Juvenile megalodons inhabited warm coastal waters, where they fed on fish and small whales.",
+    "wiki_title": "Megalodon",
+    "wiki_revid": 1380888665,
+    "source_sentence": "Juveniles inhabited warm coastal waters and fed on fish and small whales."
+   },
+   "description": "A warm Miocene coastline, millions of years before the Ice Age, in the age of the biggest shark that ever lived. Eight places to spend one night. The calm water is not what it seems.",
+   "tags": [
+    "megalodon",
+    "shark",
+    "Miocene",
+    "ocean",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "would you rather"
+   ],
+   "related_topic_hint": "Megalodon waters / giants of the prehistoric ocean"
+  },
+  {
+   "id": "survive_night-11",
+   "era": "Precambrian",
+   "title": "Earth's Worst Ice Age, One Night — Where Do You Shelter? ❄️",
+   "banner": "Frozen planet. Where do you sleep?",
+   "hook_vo": "The whole planet froze. You get one night.",
+   "art_direction": "Cryogenian Snowball Earth: blinding blue-white ice to every horizon, black volcanic rock, a thin cyan sky, one red-orange lava glow, 14mm.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Snow cave in a drift",
+     "vo": "A snow cave dug into a drift.",
+     "danger": 1,
+     "image_prompt": "POV from inside a snow cave dug into a wind-packed drift on an endless frozen plain, blue-white walls, a red-orange glow far away on the horizon, blue-white glacier ice, black volcanic rock, thin cyan twilight sky, red-orange lava glow, 14mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Under an ice shelf lip",
+     "vo": "Under the lip of an ice shelf.",
+     "danger": 2,
+     "image_prompt": "POV under the overhanging lip of a towering blue ice shelf on a frozen sea, icicles hanging, cyan twilight beyond, red-orange glow in the distance, blue-white glacier ice, black volcanic rock, thin cyan twilight sky, red-orange lava glow, 14mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Beside a volcanic vent",
+     "vo": "Beside a steaming volcanic vent.",
+     "danger": 3,
+     "image_prompt": "POV beside a steaming volcanic vent melting a circle of black rock out of the ice sheet, warm mist rising, red-orange lava glow, ice to every horizon, blue-white glacier ice, black volcanic rock, thin cyan twilight sky, red-orange lava glow, 14mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Crack in the sea ice",
+     "vo": "Inside a crack in the sea ice.",
+     "danger": 4,
+     "image_prompt": "POV down inside a narrow crack in thick blue sea ice, frozen walls rising on both sides, a strip of cyan sky above, red-orange glow on the ice, blue-white glacier ice, black volcanic rock, thin cyan twilight sky, red-orange lava glow, 14mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Inside a frozen waterfall",
+     "vo": "Behind a frozen waterfall.",
+     "danger": 5,
+     "image_prompt": "POV from behind a frozen waterfall, the curtain of blue ice glowing, bare black rock all around, no life on land anywhere, red-orange glow beyond, blue-white glacier ice, black volcanic rock, thin cyan twilight sky, red-orange lava glow, 14mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "On a bare glacier",
+     "vo": "Out on the bare glacier.",
+     "danger": 6,
+     "image_prompt": "POV standing on a bare wind-scoured glacier under a thin cyan sky, snow streaming across the ice, nothing alive in any direction, red-orange glow, blue-white glacier ice, black volcanic rock, thin cyan twilight sky, red-orange lava glow, 14mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Into a crevasse",
+     "vo": "Down inside a crevasse.",
+     "danger": 7,
+     "image_prompt": "POV looking down into a deep blue crevasse on an ice sheet, the walls fading to black far below, wind-blown snow falling in, red-orange glow above, blue-white glacier ice, black volcanic rock, thin cyan twilight sky, red-orange lava glow, 14mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Under the sea ice",
+     "vo": "Under the sea ice, in the water.",
+     "danger": 8,
+     "image_prompt": "Underwater POV beneath kilometre-thick sea ice in dim blue water, faint red-orange light filtering through a single crack far above, total darkness below, blue-white glacier ice, black volcanic rock, thin cyan twilight sky, red-orange lava glow, 14mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because volcanic carbon dioxide is the proposed trigger that melted snowball Earth. Volcanoes were probably your warmest neighbour.",
+   "fact": {
+    "text": "Carbon dioxide emitted mainly by volcanic activity, accumulating over millions of years, is the proposed trigger for melting a snowball Earth.",
+    "wiki_title": "Snowball Earth",
+    "wiki_revid": 1380491304,
+    "source_sentence": "Global warming associated with large accumulations of carbon dioxide in the atmosphere over millions of years, emitted primarily by volcanic activity, is the proposed trigger for melting a snowball Earth."
+   },
+   "description": "Around 700 million years ago, ice may have reached almost to the equator. No plants, no animals on land, and one night to survive. Eight shelters, ranked.",
+   "tags": [
+    "Snowball Earth",
+    "Ice Age",
+    "Cryogenian",
+    "Precambrian",
+    "survival",
+    "deep time",
+    "Earth history",
+    "volcano"
+   ],
+   "related_topic_hint": "Snowball Earth / Earth's coldest age"
+  },
+  {
+   "id": "survive_night-12",
+   "era": "Cretaceous",
+   "title": "The Asteroid Just Hit — Where Do You Spend the Night? ☄️",
+   "banner": "Asteroid day. Where do you hide?",
+   "hook_vo": "The asteroid just hit. Night is falling. Hide.",
+   "art_direction": "Chicxulub impact evening: blood-orange sky full of falling glowing debris, charcoal smoke, ash-grey ferns, one hot ember-red horizon, 24mm.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Deep forest canopy",
+     "vo": "Deep under the forest canopy.",
+     "danger": 1,
+     "image_prompt": "POV under a dense Cretaceous forest canopy as glowing streaks fall through a blood-orange sky beyond the leaves, smoke drifting between trunks, blood-orange sky streaked with glowing falling debris, charcoal smoke, ash-grey ferns, ember-red horizon, 24mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Up a tall tree",
+     "vo": "Up at the top of a tall tree.",
+     "danger": 2,
+     "image_prompt": "POV from the top of a tall conifer above the forest as the whole sky glows blood-orange with falling debris, smoke columns on the horizon, blood-orange sky streaked with glowing falling debris, charcoal smoke, ash-grey ferns, ember-red horizon, 24mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Burrow in a riverbank",
+     "vo": "Dug deep into a riverbank burrow.",
+     "danger": 3,
+     "image_prompt": "POV from deep inside an earthen burrow in a riverbank looking up the tunnel at a blood-orange sky, cool damp soil all around, ember-red glow at the entrance, blood-orange sky streaked with glowing falling debris, charcoal smoke, ash-grey ferns, ember-red horizon, 24mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Inside a hadrosaur carcass",
+     "vo": "Hidden inside a hadrosaur carcass.",
+     "danger": 4,
+     "image_prompt": "POV sheltering beneath the ribs of a fallen hadrosaur in ash-grey ferns, glowing debris falling through the blood-orange sky, smoke all around, blood-orange sky streaked with glowing falling debris, charcoal smoke, ash-grey ferns, ember-red horizon, 24mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Hilltop to watch it",
+     "vo": "On a hilltop to watch the sky.",
+     "danger": 5,
+     "image_prompt": "POV on a bare hilltop looking across a Cretaceous landscape under a blood-orange sky raining glowing streaks, distant forests starting to smoke, blood-orange sky streaked with glowing falling debris, charcoal smoke, ash-grey ferns, ember-red horizon, 24mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "In a dry fern field",
+     "vo": "Lying down in a dry fern field.",
+     "danger": 6,
+     "image_prompt": "POV lying in a field of dry ferns as small fires flicker to life around it, glowing debris streaking down from a blood-orange sky, blood-orange sky streaked with glowing falling debris, charcoal smoke, ash-grey ferns, ember-red horizon, 24mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "On the coast",
+     "vo": "Down on the coast, by the sea.",
+     "danger": 7,
+     "image_prompt": "POV on a Cretaceous beach as the sea pulls far back from the shore, a towering dark wave on the blood-orange horizon, glowing debris overhead, blood-orange sky streaked with glowing falling debris, charcoal smoke, ash-grey ferns, ember-red horizon, 24mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Toward the crater",
+     "vo": "Walking toward the crater.",
+     "danger": 8,
+     "image_prompt": "POV facing a colossal glowing impact plume rising into a blood-orange sky over a burning horizon, shockwave dust racing across the plain, blood-orange sky streaked with glowing falling debris, charcoal smoke, ash-grey ferns, ember-red horizon, 24mm lens, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because burrowing mammals probably had extra protection from the impact's worst effects. Dig in, like they did.",
+   "fact": {
+    "text": "Burrowing or semiaquatic mammals would have had additional protection from the environmental stresses of the K–Pg boundary.",
+    "wiki_title": "Cretaceous–Paleogene extinction event",
+    "wiki_revid": 1379830492,
+    "source_sentence": "Any burrowing or semiaquatic mammal would have had additional protection from K–Pg boundary environmental stresses."
+   },
+   "description": "66 million years ago an asteroid struck what is now Mexico, and the sky over the dinosaurs filled with falling debris. You have until morning. Eight places to hide, and one that the survivors used.",
+   "tags": [
+    "asteroid",
+    "dinosaur extinction",
+    "Chicxulub",
+    "Cretaceous",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "would you rather"
+   ],
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
+  },
+  {
+   "id": "survive_night-13",
+   "era": "Jurassic",
+   "title": "Which Dinosaur Do You Sleep Beside While Allosaurus Hunts? 🦕",
+   "banner": "Which dinosaur guards you?",
+   "hook_vo": "Allosaurus hunts tonight. Pick a dinosaur to sleep beside.",
+   "art_direction": "Late Jurassic Morrison plains: dusty sage scrub, ochre river sand, a deep cobalt night, one amber glow of a distant grass fire, 50mm eye-level.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Alone in the ferns",
+     "vo": "No one. Alone in the ferns.",
+     "danger": 1,
+     "image_prompt": "POV lying alone in a patch of ferns on a Jurassic floodplain at night, cobalt sky full of stars, distant amber glow, nothing else nearby, dusty sage scrub, ochre river sand, deep cobalt night sky, amber distant grass-fire glow, 50mm eye level, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "With a Dryosaurus herd",
+     "vo": "In a herd of small Dryosaurus.",
+     "danger": 2,
+     "image_prompt": "POV in the middle of a herd of small slender Dryosaurus resting in sage scrub at night, heads up and alert, cobalt sky, amber glow, dusty sage scrub, ochre river sand, deep cobalt night sky, amber distant grass-fire glow, 50mm eye level, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Beside a Stegosaurus",
+     "vo": "Right beside a sleeping Stegosaurus.",
+     "danger": 3,
+     "image_prompt": "Low POV beside a resting Stegosaurus in ochre sand, its tall back plates and long spiked tail silhouetted against a cobalt night sky, amber glow, dusty sage scrub, ochre river sand, deep cobalt night sky, amber distant grass-fire glow, 50mm eye level, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Under a Brachiosaurus",
+     "vo": "Under a sleeping Brachiosaurus.",
+     "danger": 4,
+     "image_prompt": "POV lying directly under the enormous belly and pillar legs of a resting Brachiosaurus, its long neck rising into the cobalt stars, amber glow, dusty sage scrub, ochre river sand, deep cobalt night sky, amber distant grass-fire glow, 50mm eye level, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "On a sauropod's back",
+     "vo": "Up on a sauropod's back.",
+     "danger": 5,
+     "image_prompt": "POV lying along the back of a huge Diplodocus walking slowly across moonlit plains, its long tail swaying behind, cobalt sky, amber glow, dusty sage scrub, ochre river sand, deep cobalt night sky, amber distant grass-fire glow, 50mm eye level, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Next to a Ceratosaurus",
+     "vo": "Next to a sleeping Ceratosaurus.",
+     "danger": 6,
+     "image_prompt": "Close POV beside a sleeping Ceratosaurus with its nose horn and bony brow crests, one eye half open in the dark, cobalt sky, amber glow, dusty sage scrub, ochre river sand, deep cobalt night sky, amber distant grass-fire glow, 50mm eye level, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "In an Allosaurus nest",
+     "vo": "Inside an Allosaurus nest.",
+     "danger": 7,
+     "image_prompt": "POV inside a scraped dinosaur nest of large eggs in ochre sand, a huge Allosaurus parent standing over it in the dark, amber glow on its teeth, dusty sage scrub, ochre river sand, deep cobalt night sky, amber distant grass-fire glow, 50mm eye level, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Beside an Allosaurus kill",
+     "vo": "Beside an Allosaurus at its kill.",
+     "danger": 8,
+     "image_prompt": "POV in sage scrub a few metres from an Allosaurus feeding at a fallen sauropod, it lifts its head and stares straight ahead, amber glow behind it, dusty sage scrub, ochre river sand, deep cobalt night sky, amber distant grass-fire glow, 50mm eye level, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because an Allosaurus tail bone has a puncture that a Stegosaurus spike fits perfectly. It probably fought back.",
+   "fact": {
+    "text": "A punctured Allosaurus tail vertebra has a hole into which a Stegosaurus tail spike fits perfectly.",
+    "wiki_title": "Stegosaurus",
+    "wiki_revid": 1380821913,
+    "source_sentence": "Additional support for this idea was a punctured tail vertebra of an Allosaurus into which a tail spike fits perfectly."
+   },
+   "description": "The Late Jurassic plains of North America, and Allosaurus is hunting tonight. Eight dinosaurs you could sleep beside, from tiny to towering. The fossils have an opinion on the best one.",
+   "tags": [
+    "dinosaurs",
+    "Stegosaurus",
+    "Allosaurus",
+    "Jurassic",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "would you rather"
+   ],
+   "related_topic_hint": "Giants of the Jurassic (Morrison Formation dinosaurs)"
+  },
+  {
+   "id": "survive_night-14",
+   "era": "Pleistocene",
+   "title": "Ice Age Tar Pits at Night — Which Spot Keeps You Safe? 🦣",
+   "banner": "Tar pits. Where do you sleep?",
+   "hook_vo": "Ice Age California. Shiny pools. Choose your spot.",
+   "art_direction": "Late Pleistocene Rancho La Brea: glossy black asphalt pools mirroring a dusty rose moon, olive oak hills, warm haze, 85mm telephoto.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Soft ground by a pool",
+     "vo": "Soft ground beside a shiny pool.",
+     "danger": 1,
+     "image_prompt": "POV on soft dark ground beside a still pool reflecting the dusty rose moon like a mirror, leaves floating on its glossy black surface, oak hills beyond, glossy black asphalt mirroring the moon, olive oak hills, dusty rose moonlight, warm haze, 85mm telephoto, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Oak hillside, uphill",
+     "vo": "An oak hillside, far uphill.",
+     "danger": 2,
+     "image_prompt": "POV on a dry oak-covered hillside high above a basin of glinting black pools, dry grass and acorns underfoot, dusty rose moon over the valley, glossy black asphalt mirroring the moon, olive oak hills, dusty rose moonlight, warm haze, 85mm telephoto, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Under a juniper bush",
+     "vo": "Under a juniper at the basin edge.",
+     "danger": 3,
+     "image_prompt": "POV crouched under a twisted juniper at the edge of a basin dotted with glossy black pools, dusty rose moonlight, warm haze over the ground, glossy black asphalt mirroring the moon, olive oak hills, dusty rose moonlight, warm haze, 85mm telephoto, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Near a stuck bison",
+     "vo": "Near a bison stuck in the pool.",
+     "danger": 4,
+     "image_prompt": "POV a few steps from a large ancient bison mired to its belly in a black glossy pool at night, struggling, dusty rose moon, oak hills behind, glossy black asphalt mirroring the moon, olive oak hills, dusty rose moonlight, warm haze, 85mm telephoto, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Next to a ground sloth",
+     "vo": "Snuggled up to a giant ground sloth.",
+     "danger": 5,
+     "image_prompt": "Low POV leaning on the shaggy side of a sleeping giant ground sloth under an oak tree, its huge curved claws folded, dusty rose moonlight, glossy black asphalt mirroring the moon, olive oak hills, dusty rose moonlight, warm haze, 85mm telephoto, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "With a dire wolf pack",
+     "vo": "Bedding down with a dire wolf pack.",
+     "danger": 6,
+     "image_prompt": "POV in long grass beside a resting pack of dire wolves, several heads turning toward the viewer with glinting eyes, dusty rose moon, black pools behind, glossy black asphalt mirroring the moon, olive oak hills, dusty rose moonlight, warm haze, 85mm telephoto, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "On the asphalt crust",
+     "vo": "On the crust of a hardened pool.",
+     "danger": 7,
+     "image_prompt": "POV standing on the thin dusty crust of an asphalt seep, black ooze welling up through cracks around the edges, dusty rose moonlight, warm haze, glossy black asphalt mirroring the moon, olive oak hills, dusty rose moonlight, warm haze, 85mm telephoto, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "At a Smilodon's meal",
+     "vo": "Beside a sabre-tooth cat's meal.",
+     "danger": 8,
+     "image_prompt": "POV at the edge of a black glossy pool where a Smilodon crouches over a trapped horse, it turns its long sabre fangs toward the viewer, dusty rose moon, glossy black asphalt mirroring the moon, olive oak hills, dusty rose moonlight, warm haze, 85mm telephoto, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because trapped animals lured predators into the tar, which then got stuck too. Stay far uphill.",
+   "fact": {
+    "text": "At La Brea, predators came to eat trapped animals and then became stuck themselves, a so-called predator trap.",
+    "wiki_title": "La Brea Tar Pits",
+    "wiki_revid": 1378881791,
+    "source_sentence": "Predators entered to eat the trapped animals and then also become stuck, a phenomenon called a \"predator trap\"."
+   },
+   "description": "Ice Age California, where pools of natural asphalt looked like water and caught everything from bison to sabre-tooth cats. One night, eight spots. Choose before the verdict.",
+   "tags": [
+    "Ice Age",
+    "tar pits",
+    "Smilodon",
+    "Pleistocene",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "megafauna"
+   ],
+   "related_topic_hint": "One Night in the Ice Age (Ice Age predators)"
+  },
+  {
+   "id": "survive_night-15",
+   "era": "Cretaceous",
+   "title": "Polar Dinosaur Winter, Months of Dark — Where Do You Shelter? 🌌",
+   "banner": "Months of dark. Where?",
+   "hook_vo": "Polar winter with dinosaurs. The sun is gone for weeks.",
+   "art_direction": "Early Cretaceous polar Australia in winter darkness: emerald-violet aurora, snow-dusted conifers, black braided rivers, one amber glow, 20mm.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Open floodplain, starlight",
+     "vo": "Out on the open floodplain.",
+     "danger": 1,
+     "image_prompt": "POV on an open frosted floodplain in polar winter darkness, braided rivers glinting under an emerald and violet aurora, amber glow on the horizon, emerald and violet aurora, snow-dusted conifers, black braided river ice, amber glow, 20mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Frozen riverbank hollow",
+     "vo": "In a hollow in the frozen riverbank.",
+     "danger": 2,
+     "image_prompt": "POV from inside a hollow cut into a frozen riverbank, icicles on the roots above, a braided river below, emerald aurora overhead, amber glow, emerald and violet aurora, snow-dusted conifers, black braided river ice, amber glow, 20mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Deep conifer forest",
+     "vo": "Deep in the evergreen conifer forest.",
+     "danger": 3,
+     "image_prompt": "POV deep in a dense snow-dusted conifer and fern forest in polar darkness, aurora glimpsed through the branches, still air, amber glow between trunks, emerald and violet aurora, snow-dusted conifers, black braided river ice, amber glow, 20mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "With small dinosaurs",
+     "vo": "Huddled with a group of small dinosaurs.",
+     "danger": 4,
+     "image_prompt": "Close POV among a huddle of small big-eyed Leaellynasaura resting in ferns in the polar dark, frost on their feathers, emerald aurora, amber glow, emerald and violet aurora, snow-dusted conifers, black braided river ice, amber glow, 20mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "On the glacier's edge",
+     "vo": "At the edge of the glacier.",
+     "danger": 5,
+     "image_prompt": "POV at the foot of a blue glacier tongue spilling onto a polar floodplain at night, meltwater frozen solid, violet aurora above, amber glow, emerald and violet aurora, snow-dusted conifers, black braided river ice, amber glow, 20mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "By a giant amphibian pond",
+     "vo": "By a giant amphibian's pond.",
+     "danger": 6,
+     "image_prompt": "POV at the edge of a dark half-frozen pond where the flat broad head of a giant Koolasuchus amphibian rises through the ice, emerald aurora, amber glow, emerald and violet aurora, snow-dusted conifers, black braided river ice, amber glow, 20mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Out on river ice",
+     "vo": "Out on the thin river ice.",
+     "danger": 7,
+     "image_prompt": "POV standing on thin cracking river ice in polar winter darkness, black water visible through the cracks, violet aurora reflected, amber glow, emerald and violet aurora, snow-dusted conifers, black braided river ice, amber glow, 20mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Near a megaraptor's den",
+     "vo": "Near a megaraptor's den.",
+     "danger": 8,
+     "image_prompt": "POV in snowy ferns near a den where a large megaraptoran theropod with huge hooked forelimb claws stirs in the polar dark, emerald aurora, amber glow, emerald and violet aurora, snow-dusted conifers, black braided river ice, amber glow, 20mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because polar winters may have lasted up to four and a half months, yet forests still grew there.",
+   "fact": {
+    "text": "In the Cretaceous south polar region, polar winters may have lasted from six weeks to four and a half months depending on latitude.",
+    "wiki_title": "East Gondwana",
+    "wiki_revid": 1373726524,
+    "source_sentence": "Depending on the latitude, the polar winters may have lasted from six weeks to four and a half months."
+   },
+   "description": "Dinosaurs lived inside the Antarctic Circle, through winters when the sun did not rise for weeks. Eight places to wait out the dark in Cretaceous Australia. Pick your number.",
+   "tags": [
+    "dinosaurs",
+    "polar dinosaurs",
+    "Cretaceous",
+    "Australia",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "would you rather"
+   ],
+   "related_topic_hint": "Dinosaurs of the polar night (Cretaceous Gondwana)"
+  },
+  {
+   "id": "survive_night-16",
+   "era": "Triassic",
+   "title": "Dinosaur Desert, Monsoon Night — Where Do You Sleep? ⛈️",
+   "banner": "Storm coming. Pick your spot.",
+   "hook_vo": "Triassic desert. A monsoon storm is rolling in.",
+   "art_direction": "Late Triassic Chinle badlands in a monsoon: banded maroon and lavender rock, slate storm sky, white lightning, one copper sunset seam, 28mm low angle.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Sand in a dry wash",
+     "vo": "Soft sand in a dry wash.",
+     "danger": 1,
+     "image_prompt": "POV lying on soft sand in a dry wash between banded maroon badlands, storm clouds building overhead, a copper sunset seam on the horizon, banded maroon and lavender rock, slate storm clouds, white lightning flicker, copper sunset seam, 28mm low angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Narrow slot canyon",
+     "vo": "Deep in a narrow slot canyon.",
+     "danger": 2,
+     "image_prompt": "POV looking up from the floor of a narrow lavender sandstone slot canyon at a sliver of slate storm sky, distant thunder, a copper glow on the walls, banded maroon and lavender rock, slate storm clouds, white lightning flicker, copper sunset seam, 28mm low angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "High sandstone ledge",
+     "vo": "A high ledge on the canyon wall.",
+     "danger": 3,
+     "image_prompt": "POV on a high dry sandstone ledge well above a canyon floor in the Triassic badlands, rain sweeping in across the plain, copper sunset seam beyond, banded maroon and lavender rock, slate storm clouds, white lightning flicker, copper sunset seam, 28mm low angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Under a giant conifer log",
+     "vo": "Under a giant fallen conifer log.",
+     "danger": 4,
+     "image_prompt": "POV tucked beneath a giant fallen conifer trunk on a dry riverbank, rain starting to fall on banded maroon hills, lightning, copper glow, banded maroon and lavender rock, slate storm clouds, white lightning flicker, copper sunset seam, 28mm low angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Beside a Coelophysis pack",
+     "vo": "Next to a pack of Coelophysis.",
+     "danger": 5,
+     "image_prompt": "Low POV beside a pack of slender early Coelophysis dinosaurs sheltering from rain under a rock lip, heads turning toward the viewer, copper glow, banded maroon and lavender rock, slate storm clouds, white lightning flicker, copper sunset seam, 28mm low angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Hilltop in the lightning",
+     "vo": "On the hilltop, in the lightning.",
+     "danger": 6,
+     "image_prompt": "POV on a bare lavender badland hilltop as forked white lightning strikes the plain nearby, rain lashing sideways, copper sunset seam, banded maroon and lavender rock, slate storm clouds, white lightning flicker, copper sunset seam, 28mm low angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "On the riverbank mud",
+     "vo": "On the soft mud of the riverbank.",
+     "danger": 7,
+     "image_prompt": "POV on soft red riverbank mud as a brown flash flood wave rounds the bend upstream carrying logs, slate storm sky, copper glow, banded maroon and lavender rock, slate storm clouds, white lightning flicker, copper sunset seam, 28mm low angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Next to a Postosuchus",
+     "vo": "Right next to a Postosuchus.",
+     "danger": 8,
+     "image_prompt": "POV under a rock overhang as a large Postosuchus with a deep skull and armoured back steps in out of the rain beside the viewer, lightning behind it, banded maroon and lavender rock, slate storm clouds, white lightning flicker, copper sunset seam, 28mm low angle, photoreal painterly, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because Pangaea's monsoons reached their peak in the Triassic. Dry washes probably flooded fast. Sleep high.",
+   "fact": {
+    "text": "During the Triassic period, Pangaea's monsoons reached their maximum extent.",
+    "wiki_title": "Pangaea",
+    "wiki_revid": 1376395143,
+    "source_sentence": "During the Triassic period, the monsoons reached their maximum extent, such that the previously dry conditions of the Colorado Plateau were alleviated and it started to receive moisture due to the changing wind directions."
+   },
+   "description": "The Late Triassic, when the first dinosaurs shared the land with bigger crocodile-line predators, and monsoons swept Pangaea. A storm is coming. Eight places to sleep.",
+   "tags": [
+    "dinosaurs",
+    "Triassic",
+    "Coelophysis",
+    "Pangaea",
+    "prehistoric",
+    "survival",
+    "deep time",
+    "would you rather"
+   ],
+   "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent (Triassic)"
   }
  ]
 }

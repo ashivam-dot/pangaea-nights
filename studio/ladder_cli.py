@@ -111,7 +111,7 @@ def plan(args) -> None:
         print(json.dumps({"slot": slot, "premise": p["id"], "title": p["title"],
                           "gates": {k: v["ok"] for k, v in g.items()}}))
     print(f"slots: {made} ({why})")
-    _output({"slots": made, "images": [{"slot": s, "shard": k} for s in made for k in range(args.shards)],
+    _output({"slots": made, "images": [{"slot": s, "shard": f"{k}/{args.shards}"} for s in made for k in range(args.shards)],
              "any": bool(made)})
 
 
@@ -213,6 +213,8 @@ def publish(args) -> None:
     if why:
         print("not publishing:\n- " + "\n- ".join(why))
         _save(args.slot, "out/publish.json", {"published": False, "refusals": why, "mode": args.mode})
+        if args.mode == "publish":  # a planned publish slot that made nothing: fail so the alert and the doctor see it
+            sys.exit("a planned publish slot was refused")
         return
     data = ledger.load()
     api = youtube.client()
@@ -234,6 +236,7 @@ def publish(args) -> None:
 def record(args) -> None:
     """Fold every planned slot's outcome into the ledger: a build entry always, a Short only when published."""
     data = ledger.load()
+    mismatches = []
     for slot in _planned_slots():
         pl = _load(slot, "plan.json")
         p = pl["premise"]
@@ -249,6 +252,7 @@ def record(args) -> None:
         if pub.get("readback_problems"):
             ledger.ladder_log(data, "alerts", {"kind": "readback", "premise": p["id"],
                                                "video_id": pub["video_id"], "problems": pub["readback_problems"]})
+            mismatches.append(f"{p['id']} {pub['url']}:\n- " + "\n- ".join(pub["readback_problems"]))
         entry = {"premise": p["id"], "series": p["series"], "era": p["era"], "slot": slot,
                  "video_id": pub["video_id"], "url": pub["url"], "title": pub["title"],
                  "publish_at": pub.get("publish_at"), "uploaded_at": ledger.now(), "comment": pub.get("comment"),
@@ -260,6 +264,10 @@ def record(args) -> None:
         ledger.record_short(data, entry)
         data["ladder"]["queue"] = [q for q in data["ladder"]["queue"] if q != p["id"]]
     ledger.save(data)
+    # shorts.yml opens an "alert" issue from this file, so the mismatch also reaches the doctor's digest.
+    alerts = config.WORK / "ladder" / "alerts.txt"
+    alerts.parent.mkdir(parents=True, exist_ok=True)
+    alerts.write_text("\n\n".join(mismatches) + ("\n" if mismatches else ""))
     print(json.dumps(data["ladder"]["builds"][-3:], indent=1))
 
 
@@ -275,10 +283,14 @@ def learn(args) -> None:
             analytics = youtube.analytics_client()
         except Exception as exc:
             print(f"analytics client: {type(exc).__name__}")
+    if args.dry:
+        api = None  # the learner posts pending first comments through the Data API: a dry run must not write
     sm = ladder_learn.run(data, ladder.load_banks(strict=False), analytics, api, datetime.now(timezone.utc))
-    ledger.save(data)
     msg = ladder_learn.message(sm)
     print(msg)
+    if args.dry:  # a dispatch dry run: compute and print, but neither save the ledger nor message anyone
+        return
+    ledger.save(data)
     alert.send(msg)
 
 
@@ -306,4 +318,6 @@ def register(sub) -> None:
     s.add_argument("--mode", choices=MODES, default="dry")
     s.set_defaults(fn=publish)
     sub.add_parser("ladder-record").set_defaults(fn=record)
-    sub.add_parser("ladder-learn").set_defaults(fn=learn)
+    s = sub.add_parser("ladder-learn")
+    s.add_argument("--dry", action="store_true")
+    s.set_defaults(fn=learn)

@@ -1,0 +1,65 @@
+name: shorts-learn
+# The ladder learner (studio/ladder_learn.py): 24 h / 72 h numbers per Short -> series weights, pt.2 queue, retire
+# list and a Telegram summary. Runs at 06:00 UTC, well clear of the 08:00 Shorts build; one job.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "compute and print; do not save the ledger, post comments or message Telegram"
+        type: boolean
+        default: true
+
+concurrency:
+  group: shorts-learn
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  learn:
+    if: github.event_name != 'schedule' || (vars.PAUSED == 'false' && vars.SHORTS_PAUSED != 'true')
+    runs-on: ubuntu-24.04
+    environment: youtube
+    timeout-minutes: 20
+    env:
+      PANGAEA_STATE: ${{ github.workspace }}/state
+      DRY: ${{ github.event_name != 'schedule' && inputs.dry_run != false }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements/*.txt
+      - run: pip install -q -r requirements/base.txt -r requirements/plan.txt -r requirements/publish.txt
+      - name: State branch
+        run: |
+          git fetch --depth 1 origin state
+          git worktree add state FETCH_HEAD
+      - name: Learn
+        env:
+          YOUTUBE_OAUTH_JSON: ${{ secrets.YOUTUBE_OAUTH_JSON }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ "$DRY" = "true" ]; then python -m studio.cli ladder-learn --dry; else python -m studio.cli ladder-learn; fi
+      - name: Save the ledger
+        if: env.DRY != 'true'
+        run: |
+          cd state
+          git add ledger.json
+          git -c user.name=pangaea-nights-bot -c user.email=actions@users.noreply.github.com commit -q -m "ledger: shorts learn $GITHUB_RUN_ID" || true
+          git push origin HEAD:state
+      - name: Alert
+        if: failure() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh issue create -R "$GITHUB_REPOSITORY" --label alert \
+            --title "Shorts learner failed ($(date -u +%Y-%m-%d))" --body "The scheduled learner run failed: $RUN_URL"

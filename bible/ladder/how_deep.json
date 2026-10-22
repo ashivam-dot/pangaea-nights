@@ -3,151 +3,1379 @@
  "premises": [
   {
    "id": "how_deep-01",
-   "era": "Late Jurassic",
-   "title": "How Deep Could a Jurassic Ichthyosaur Dive? Pick a Number 🐬",
-   "banner": "How deep could it dive?",
-   "hook_vo": "A Jurassic ichthyosaur takes a breath. How deep?",
-   "art_direction": "The Late Jurassic sea, the water column from moonlit surface down into the dark twilight zone, with huge eyes and drifting ammonites.",
+   "era": "Cryogenian",
+   "title": "The Ocean Froze Solid on Snowball Earth — How Deep Do You Go? 🧊",
+   "banner": "Frozen ocean: how deep do you go?",
+   "hook_vo": "The whole ocean froze over. Pick your depth.",
+   "art_direction": "Glacial blue-white palette, sunlight diffusing through thick ice overhead, ultra-wide 14mm lens, one warm amber glow from far below.",
    "options": [
-    {"n": 1, "label": "10 metres", "vo": "Number one: ten metres, just under the waves.", "danger": 1,
-     "image_prompt": "A sleek ichthyosaur gliding just under moonlit waves, silver light rippling across its back, a warm golden glow of dawn through the surface"},
-    {"n": 2, "label": "50 metres", "vo": "Number two: fifty metres, over a sunken reef.", "danger": 2,
-     "image_prompt": "An ichthyosaur swimming over a Jurassic sponge reef in blue water, shafts of moonlight from above and a warm amber glow of bioluminescent plankton"},
-    {"n": 3, "label": "100 metres", "vo": "Number three: one hundred metres, where blue fades.", "danger": 3,
-     "image_prompt": "An ichthyosaur descending through deep blue water with fading light above, a shoal of belemnites scattering, warm bioluminescent sparks around them"},
-    {"n": 4, "label": "250 metres", "vo": "Number four: two hundred fifty metres, among ammonites.", "danger": 4,
-     "image_prompt": "Coiled ammonites drifting in dim indigo water with an ichthyosaur passing above them, a warm glowing bioluminescent cloud lighting their shells"},
-    {"n": 5, "label": "400 metres", "vo": "Number five: four hundred metres, almost no light.", "danger": 5,
-     "image_prompt": "An ichthyosaur with huge eyes deep in nearly black water, faint blue light far above, tiny warm bioluminescent sparks drifting past its snout"},
-    {"n": 6, "label": "600 metres", "vo": "Number six: six hundred metres, the twilight zone.", "danger": 6,
-     "image_prompt": "An ichthyosaur with enormous eyes hunting squid in the deep twilight zone, near darkness, a warm glowing bioluminescent squid lighting its face"},
-    {"n": 7, "label": "1,500 metres", "vo": "Number seven: fifteen hundred metres, total darkness.", "danger": 7,
-     "image_prompt": "Total darkness of the deep sea with only a few warm glowing bioluminescent creatures, a ghostly pale shape of a large marine reptile at the edge of their light"},
-    {"n": 8, "label": "4,000 metres", "vo": "Number eight: four kilometres, the sea floor.", "danger": 8,
-     "image_prompt": "The abyssal sea floor of soft grey ooze in darkness, glass sponges and sea lilies, a warm orange glow of a hydrothermal vent in the distance"}
+    {
+     "n": 1,
+     "label": "On top of the ice",
+     "vo": "One: standing on endless ice, wind howling.",
+     "danger": 1,
+     "image_prompt": "POV low over an endless flat sheet of frozen ocean at dusk, wind-blown snow streaming across cracked blue ice, a single warm amber sunset glow on the horizon, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Just under the ice",
+     "vo": "Two: right under the ice, faint light leaking through.",
+     "danger": 2,
+     "image_prompt": "looking up from just beneath a thin ceiling of translucent sea ice, pale green light seeping through cracks, drifting green algae mats under the ice, one warm golden beam piercing a crack, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Ten metres, blue twilight",
+     "vo": "Three: ten metres down, freezing blue twilight.",
+     "danger": 3,
+     "image_prompt": "underwater view ten metres below a vast ice ceiling, deep cobalt water, ice keels hanging down in jagged columns, a lone warm amber shaft of light falling through a fissure, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Fifty metres, last light",
+     "vo": "Four: fifty metres, the last light fades.",
+     "danger": 4,
+     "image_prompt": "dim underwater scene at fifty metres, the ice ceiling now a faint pale smear above, dark navy water full of drifting ice crystals, one warm soft glow fading overhead, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Two hundred metres, black",
+     "vo": "Five: two hundred metres. Total black.",
+     "danger": 5,
+     "image_prompt": "near-total darkness of a frozen ancient sea at two hundred metres, faint suspended particles caught in a single warm amber glow from an unseen source, cold indigo gradient, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "One kilometre, crushing cold",
+     "vo": "Six: one kilometre. Crushing cold, no light.",
+     "danger": 6,
+     "image_prompt": "abyssal dark water one kilometre deep, tiny drifting marine snow, distant black basalt slope barely visible, a single faint warm orange glimmer far off in the gloom, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "The frozen-world seafloor",
+     "vo": "Seven: the seafloor, kilometres under the ice.",
+     "danger": 7,
+     "image_prompt": "bleak volcanic seafloor kilometres beneath a frozen ocean, black basalt pillows dusted with grey sediment, deep indigo darkness, one warm orange ember glow from a fissure in the rock, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Sitting on a boiling vent",
+     "vo": "Eight: on top of a boiling vent.",
+     "danger": 8,
+     "image_prompt": "towering black hydrothermal chimney on a dark ancient seafloor, shimmering superheated water billowing from its top, orange mineral crusts, one fierce warm glow from molten rock at its base, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because photosynthesis can work under ice up to 20 metres thick. That's where the food is, probably you too.",
+   "fact": {
+    "text": "Photosynthesis can work under ice up to about 20 metres thick, and models suggest equatorial ice on Snowball Earth stayed under about 10 metres.",
+    "wiki_title": "Snowball Earth",
+    "wiki_revid": 1380491304,
+    "source_sentence": "Photosynthesis can occur under ice up to 20 m thick, and at the temperatures predicted by models, equatorial sublimation would prevent equatorial ice thickness from exceeding 10 m."
+   },
+   "description": "The whole ocean froze over, and you get to pick how deep you sink. Some of Earth's early life seems to have hung on through this; the trick is knowing where.",
+   "tags": [
+    "snowball earth",
+    "ice age",
+    "ocean",
+    "deep sea",
+    "prehistoric",
+    "how deep",
+    "survival",
+    "earth history"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "how_deep-02",
+   "era": "Ediacaran",
+   "title": "Earth's First Ocean Life, 560 Million Years Ago — How Deep? 🌊",
+   "banner": "Earth's first animals: how deep?",
+   "hook_vo": "Before fish, before shells. How deep do you go?",
+   "art_direction": "Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Sunny tidal mat flats",
+     "vo": "One: warm shallows over slimy microbial mats.",
+     "danger": 1,
+     "image_prompt": "ankle-deep tidal shallows over wrinkled green and bronze microbial mats on a barren ancient coast, no plants on land, one warm rose-gold sunset reflecting on the water, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Waist-deep sandy shoal",
+     "vo": "Two: waist-deep, quilted creatures on the sand.",
+     "danger": 2,
+     "image_prompt": "underwater view in clear shallow water over rippled sand, flat oval quilted soft-bodied creatures lying on the bottom, gentle light ripples, one warm rose-gold sun disc above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Ten metres, wave-churned",
+     "vo": "Three: ten metres, storm waves churning sand.",
+     "danger": 3,
+     "image_prompt": "murky underwater scene at ten metres with storm surge churning clouds of sand, soft flat organisms half buried, swirling sediment, one warm amber glow filtering from the surface, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Fifty metres, silent gloom",
+     "vo": "Four: fifty metres, quiet and dim.",
+     "danger": 4,
+     "image_prompt": "dim teal water at fifty metres over a smooth muddy seafloor, scattered disc-shaped soft organisms, nothing moving, one warm faint glow above in the haze, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Edge of the deep slope",
+     "vo": "Five: the lip of a deep slope.",
+     "danger": 5,
+     "image_prompt": "dramatic drop-off edge of a muddy continental slope disappearing into dark blue depths, fine sediment drifting over the brink, one warm rose glow catching the rim, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Cold slope, two hundred metres",
+     "vo": "Six: two hundred metres down the cold slope.",
+     "danger": 6,
+     "image_prompt": "steep grey sediment slope at two hundred metres in deep indigo water, faint marine snow falling, scattered spindle-shaped soft organisms, one warm dim glow in the distance, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "Deep frond meadow",
+     "vo": "Seven: a deep, still meadow of feathery fronds.",
+     "danger": 7,
+     "image_prompt": "still deep seafloor meadow of tall feathery fronds anchored by round holdfasts, all leaning the same way in a slow current, deep blue darkness, one warm rose-gold glow among them, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Under a falling ash cloud",
+     "vo": "Eight: volcanic ash raining down to bury everything.",
+     "danger": 8,
+     "image_prompt": "thick grey volcanic ash raining down through deep dark water onto a seafloor of feathery fronds, the bottom vanishing under a soft blanket, one warm orange volcanic glow far above, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 7,
+   "verdict_vo": "Real answer: number 7, because Charnia probably lived in deep water, well below the wave base. Calm, dark, and probably nothing hunting you.",
+   "fact": {
+    "text": "Charnia, one of the oldest large complex organisms, probably lived in deep water well below the wave base, out of reach of photosynthesis.",
+    "wiki_title": "Charnia",
+    "wiki_revid": 1373445695,
+    "source_sentence": "According to one currently popular hypothesis, it probably lived in deep waters, well below the wave base, thus placing it out of range of photosynthesis."
+   },
+   "description": "Life before fish, shells or eyes. Eight depths in Earth's first animal ocean, and one of them is calmer than you'd think.",
+   "tags": [
+    "ediacaran",
+    "ocean",
+    "deep sea",
+    "prehistoric life",
+    "how deep",
+    "first animals",
+    "earth history",
+    "survival"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "how_deep-03",
+   "era": "Cambrian",
+   "title": "The Cambrian Ocean Has a Hunter — How Deep Do You Hide? 🦐",
+   "banner": "Cambrian hunter: where do you hide?",
+   "hook_vo": "A spiked-claw hunter owns this ocean. Pick a depth.",
+   "art_direction": "Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Floating at the surface",
+     "vo": "One: floating at the sunlit surface.",
+     "danger": 1,
+     "image_prompt": "view just below a sunlit ocean surface looking up at rippling light, tiny drifting larvae sparkling in turquoise water, one warm amber sun glint dancing on the waves, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "In the drifting plankton",
+     "vo": "Two: drifting in a plankton cloud.",
+     "danger": 2,
+     "image_prompt": "dense shimmering cloud of tiny swimming arthropods and jellies in bright turquoise water, light rays streaming down, one warm golden sun shaft through the swarm, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Open water, mid-depth",
+     "vo": "Three: hanging in open water, nowhere to hide.",
+     "danger": 3,
+     "image_prompt": "vast empty open water at mid-depth, blue in every direction, a small soft swimming creature alone, a long segmented shadow far off, one warm amber light shaft, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Beside the sponge reef",
+     "vo": "Four: beside a reef of cup-shaped sponges.",
+     "danger": 4,
+     "image_prompt": "Cambrian reef of tall cup-shaped sponges and branching growths on a sunlit seabed, small shrimp darting between them, one warm amber light patch on the reef crest, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Above the trilobite field",
+     "vo": "Five: just above crawling trilobites.",
+     "danger": 5,
+     "image_prompt": "close view a metre above a seafloor crowded with crawling trilobites, their segmented shells catching light, a big flap-finned predator gliding overhead, one warm amber glint, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Flat on the seafloor",
+     "vo": "Six: lying flat on the seafloor mud.",
+     "danger": 6,
+     "image_prompt": "POV pressed flat on fine grey Cambrian seafloor mud, trilobites ploughing past at eye level, a huge flap-finned predator silhouette passing high above in bright water, one warm amber glint, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "Down the reef cliff",
+     "vo": "Seven: dropping down the dark reef cliff.",
+     "danger": 7,
+     "image_prompt": "steep underwater cliff of reef rock dropping into deep blue darkness, spiny worms clinging to ledges, one warm amber shaft of light fading along the wall, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Lit water, giant eyes",
+     "vo": "Eight: open bright water, face to face with Anomalocaris.",
+     "danger": 8,
+     "image_prompt": "a giant Anomalocaris filling the frame in bright open water, segmented swimming flaps rippling, spiny grasping frontal appendages reaching forward, huge stalked compound eyes, one warm amber sun shaft behind it, photoreal painterly, vertical composition"
+    }
    ],
    "answer_n": 6,
-   "verdict_vo": "Real answer: number 6, because Ophthalmosaurus could likely reach 600 metres or more during a dive.",
+   "verdict_vo": "Real answer: number 6, because Anomalocaris probably didn't hunt on the seafloor, where grabbing prey could damage its claws. Lie flat.",
    "fact": {
-    "text": "Ophthalmosaurus could reach depths of 600 metres or more during a dive, reaching the mesopelagic zone.",
+    "text": "Anomalocaris probably did not hunt animals on the seafloor, since grabbing prey there at speed could damage its frontal appendages.",
+    "wiki_title": "Anomalocaris",
+    "wiki_revid": 1379615198,
+    "source_sentence": "It probably would have not hunted benthic animals like trilobites, considering the possibility of damaging the frontal appendages on the substrate while trying to grab prey from seafloor at speed."
+   },
+   "description": "The ocean's first apex predator is cruising overhead and you have eight places to hide. The safest one goes against every instinct.",
+   "tags": [
+    "cambrian",
+    "ocean",
+    "anomalocaris",
+    "prehistoric predator",
+    "how deep",
+    "survival",
+    "deep sea",
+    "prehistoric"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "how_deep-04",
+   "era": "Ordovician",
+   "title": "Ocean of Giant Shelled Hunters — How Deep Do You Dare Go? 🐚",
+   "banner": "Giant shell hunters: how deep?",
+   "hook_vo": "Two-metre shells with tentacles. How deep do you go?",
+   "art_direction": "Warm aquamarine tropical palette fading to ink, wide 24mm lens with heavy god-rays, one warm coral-orange glow per frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Sunlit tropical shallows",
+     "vo": "One: bathtub-warm tropical shallows.",
+     "danger": 1,
+     "image_prompt": "crystal clear tropical shallows over pale carbonate sand, small corals and bryozoan mounds, bright aquamarine water, one warm coral-orange sunset glow on the surface, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Coral and bryozoan garden",
+     "vo": "Two: a garden of early corals.",
+     "danger": 2,
+     "image_prompt": "underwater garden of honeycomb corals and lacy bryozoan fans in sunlit water, tiny cephalopods with straight shells drifting, one warm orange light pool on the reef, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Among the long shells",
+     "vo": "Three: among drifting long cone shells.",
+     "danger": 3,
+     "image_prompt": "a slow procession of large straight cone-shaped shells with trailing tentacles drifting through bright shallow water, sun rays slanting down, one warm orange glow on the nearest shell, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Shelf edge, fading blue",
+     "vo": "Four: the shelf edge, light fading.",
+     "danger": 4,
+     "image_prompt": "edge of a tropical carbonate shelf where pale sand falls away into deep blue, a giant straight-shelled cephalopod hanging at the rim, one warm orange glow along the drop, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Below the shelf, dim",
+     "vo": "Five: below the shelf, dim and cool.",
+     "danger": 5,
+     "image_prompt": "dim cool water below a tropical shelf, the bright reef now a distant glow overhead, empty deep blue around, a few small drifting graptolite colonies, one warm faint orange glow above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Down the dark slope",
+     "vo": "Six: down the slope into the dark.",
+     "danger": 6,
+     "image_prompt": "steep muddy slope descending into dark indigo water, faint marine snow, the last light far above, one warm dim orange glow far up the slope, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "The cold black basin",
+     "vo": "Seven: the cold black basin floor.",
+     "danger": 7,
+     "image_prompt": "cold black basin floor under deep water, fine dark mud, scattered empty shells half buried, a single warm faint orange glimmer from above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Airless black water",
+     "vo": "Eight: the airless black bottom water.",
+     "danger": 8,
+     "image_prompt": "stagnant black bottom water over dark shale mud with no life, a faint sulphur haze, one warm sickly orange glow far off in the darkness, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because Cameroceras thrived in shallow tropical seas. Just below the shelf is probably your best bet.",
+   "fact": {
+    "text": "The giant shelled cephalopod Cameroceras was abundant in the Late Ordovician, living in shallow tropical seas.",
+    "wiki_title": "Cameroceras",
+    "wiki_revid": 1353695863,
+    "source_sentence": "It was particularly abundant and widespread in the Late Ordovician, inhabiting the shallow tropical seas in and around Laurentia, Baltica and Siberia (equivalent to modern North America, Europe, and Asia)."
+   },
+   "description": "Giant straight-shelled cephalopods ruled these warm seas long before fish took over. Eight depths, and only one sweet spot between the hunters and the dark.",
+   "tags": [
+    "ordovician",
+    "ocean",
+    "cephalopod",
+    "prehistoric sea",
+    "how deep",
+    "survival",
+    "prehistoric",
+    "deep sea"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "how_deep-05",
+   "era": "Silurian",
+   "title": "Giant Bug of the Ocean: Sea Scorpions — How Deep Do You Hide? 🦂",
+   "banner": "Giant sea scorpion: where do you hide?",
+   "hook_vo": "A sea scorpion nearly two metres long. Pick a depth.",
+   "art_direction": "Olive-green and bronze estuary palette, murky backlight, low-angle 35mm lens, one warm brass-coloured glow per frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Muddy shoreline shallows",
+     "vo": "One: ankle-deep on a muddy shore.",
+     "danger": 1,
+     "image_prompt": "ankle-deep muddy shoreline of a Silurian sea, low mossy green mats on bare rock, olive water, one warm brass-coloured sunset glow on the ripples, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Knee-deep in the shallows",
+     "vo": "Two: knee-deep, little scorpions everywhere.",
+     "danger": 2,
+     "image_prompt": "knee-deep olive water crowded with small eurypterids scuttling over the mud, their broad flat swimming legs churning silt, one warm brass sun glint on the surface, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Clear sunlit water",
+     "vo": "Three: clear, sunlit, wide open water.",
+     "danger": 3,
+     "image_prompt": "clear sunlit water over a pale seabed, open and empty, a large clawed sea scorpion shadow far away, sharp light rays, one warm brass glow from the surface, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Twilight water, sixty metres",
+     "vo": "Four: sixty metres, dim green twilight.",
+     "danger": 4,
+     "image_prompt": "dim olive-green twilight water at sixty metres, the seabed blurred, faint drifting particles, a distant clawed silhouette, one warm brass glow barely reaching down, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Pitch black, no light",
+     "vo": "Five: deep enough that light gives up.",
+     "danger": 5,
+     "image_prompt": "pitch black deep water where the last light has vanished, only a few drifting particles caught in one warm brass glow from far above, nothing visible beyond arm's length, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Cold silt bottom",
+     "vo": "Six: the cold silt floor, blind.",
+     "danger": 6,
+     "image_prompt": "cold dark silty seafloor in deep water, soft grey mud, faint tracks crossing it, one warm dim brass glimmer above, heavy darkness all around, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "Beside the claw burrows",
+     "vo": "Seven: next to a nest of claws.",
+     "danger": 7,
+     "image_prompt": "cluster of large burrows in a muddy bed with spiny segmented legs poking out, giant serrated claws resting at the entrances, one warm brass glint on the claw tips, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Eye to eye, Pterygotus",
+     "vo": "Eight: face to face with Pterygotus.",
+     "danger": 8,
+     "image_prompt": "a giant Pterygotus sea scorpion lunging straight toward the viewer in murky green water, huge toothed claws spread wide, compound eyes catching one warm brass glow, broad flat tail behind, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because Pterygotus hunted with claws and sharp eyesight. Where the light runs out, a sight hunter probably loses you.",
+   "fact": {
+    "text": "Pterygotus was a large, active predator with big grasping claws and sharp vision comparable to modern predatory arthropods.",
+    "wiki_title": "Pterygotus",
+    "wiki_revid": 1371893021,
+    "source_sentence": "Like its close relative Jaekelopterus, Pterygotus was a large and active predator noted for its robust and enlarged cheliceral claws that would have allowed it to puncture and grasp prey and a visual acuity (clarity of vision) comparable to that of modern predatory arthropods."
+   },
+   "description": "Sea scorpions grew to monstrous sizes in these waters, and they hunted by sight. Pick your depth carefully.",
+   "tags": [
+    "silurian",
+    "sea scorpion",
+    "eurypterid",
+    "ocean",
+    "how deep",
+    "giant bug",
+    "prehistoric predator",
+    "survival"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "how_deep-06",
+   "era": "Devonian",
+   "title": "The Devonian Ocean's Armoured Giant — How Deep Do You Swim? 🐟",
+   "banner": "Armoured giant fish: how deep?",
+   "hook_vo": "An armoured fish with bone blades for teeth. Choose.",
+   "art_direction": "Steel-blue and gunmetal palette, hard side light on armour plates, 28mm lens, one warm copper glow per frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Reef lagoon, ankle-deep",
+     "vo": "One: a warm reef lagoon, ankle-deep.",
+     "danger": 1,
+     "image_prompt": "sunlit ankle-deep reef lagoon with stromatoporoid mounds and corals, clear steel-blue water, low bare coastline, one warm copper sunset glow across the surface, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Reef flat with youngsters",
+     "vo": "Two: reef flat, only young armoured fish.",
+     "danger": 2,
+     "image_prompt": "shallow Devonian reef flat with small young armoured fish patrolling between coral heads, their head plates gleaming, bright water, one warm copper glow on the reef, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Reef crest, surging waves",
+     "vo": "Three: the reef crest, waves pounding.",
+     "danger": 3,
+     "image_prompt": "reef crest battered by surging waves, white foam above, corals and crinoid stalks swaying below, one warm copper light shaft through the bubbles, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Outer reef wall",
+     "vo": "Four: the outer reef wall.",
+     "danger": 4,
+     "image_prompt": "steep outer reef wall of corals and crinoid gardens dropping into blue, small sharks gliding past, one warm copper glow along the wall face, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Open blue water",
+     "vo": "Five: open blue water, no cover.",
+     "danger": 5,
+     "image_prompt": "endless open steel-blue water with no cover, a distant shape of a huge armoured fish cruising, slanting light rays, one warm copper glow above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Deep basin twilight",
+     "vo": "Six: the deep basin twilight.",
+     "danger": 6,
+     "image_prompt": "deep basin twilight water, gloomy gunmetal blue, faint sediment drifting, a massive armoured head shape emerging slowly from the dark, one warm copper glint on its plates, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "Black-shale basin floor",
+     "vo": "Seven: the black mud basin floor.",
+     "danger": 7,
+     "image_prompt": "dark basin floor of black organic mud in deep still water, scattered shells, the shadow of something huge overhead, one warm faint copper glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Jaws of Dunkleosteus",
+     "vo": "Eight: inside the jaws of Dunkleosteus.",
+     "danger": 8,
+     "image_prompt": "the gaping bony jaws of a giant Dunkleosteus filling the frame, sharp self-sharpening bone blades, heavy armoured head plates, deep dark water, one warm copper glow on the blades, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because adult Dunkleosteus probably lived in the deep sea, leaving youngsters in the shallows. Smaller bites, still bites.",
+   "fact": {
+    "text": "Adult Dunkleosteus probably lived in deep sea locations, while younger ones lived in shallow waters.",
+    "wiki_title": "Dunkleosteus",
+    "wiki_revid": 1374991596,
+    "source_sentence": "Mature individuals probably inhabited deep sea locations, like other placoderms, living in shallow waters during adolescence."
+   },
+   "description": "The Devonian seas belonged to armoured fish with bone blades for teeth. Eight depths, and the big ones were probably not where you'd expect.",
+   "tags": [
+    "devonian",
+    "dunkleosteus",
+    "ocean",
+    "prehistoric fish",
+    "how deep",
+    "survival",
+    "prehistoric predator",
+    "age of fishes"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "how_deep-07",
+   "era": "Carboniferous",
+   "title": "Giant Bug Era Swamp Lake at Night — How Deep Do You Wade? 🪲",
+   "banner": "Coal swamp lake: how deep?",
+   "hook_vo": "Giant dragonflies above. Something bigger below. Wade in?",
+   "art_direction": "Dense emerald and peat-brown palette, humid haze, 35mm lens at water level, one warm moonlit-gold glow per frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Ankle-deep on the bank",
+     "vo": "One: ankle-deep on the muddy bank.",
+     "danger": 1,
+     "image_prompt": "ankle-deep tea-brown water at the muddy edge of a coal swamp lake, scaly-barked lycopsid trunks rising into mist, a giant dragonfly overhead, one warm golden moon glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Knee-deep among horsetails",
+     "vo": "Two: knee-deep among giant horsetails.",
+     "danger": 2,
+     "image_prompt": "knee-deep dark water among tall jointed horsetail stems, floating peat and fallen branches, a giant millipede on a log, one warm golden glow through the mist, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Waist-deep, roots underfoot",
+     "vo": "Three: waist-deep, tangled roots underfoot.",
+     "danger": 3,
+     "image_prompt": "water-level view waist-deep in a black swamp lake, tangled lycopsid roots breaking the surface, mist drifting, one warm golden moon reflection rippling, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Swimming the open lake",
+     "vo": "Four: swimming out into open water.",
+     "danger": 4,
+     "image_prompt": "surface-level view of a wide open swamp lake at night, flat black water, distant wall of tree trunks, a long ripple wake approaching, one warm golden moon glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Under the surface, murky",
+     "vo": "Five: under the surface, brown murk.",
+     "danger": 5,
+     "image_prompt": "murky underwater view in tannin-brown swamp water, sunken branches and drifting peat flakes, visibility a metre, one warm golden glow above the surface, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Down among sunken logs",
+     "vo": "Six: down among the sunken logs.",
+     "danger": 6,
+     "image_prompt": "dark lake bottom littered with huge sunken lycopsid logs, small amphibians hiding in the gaps, silt drifting, one warm faint golden glow from above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "The deep river channel",
+     "vo": "Seven: the deep river channel, current pulling.",
+     "danger": 7,
+     "image_prompt": "deep dark river channel feeding the lake, strong current dragging silt, steep muddy walls, a long heavy fish body shadow gliding, one warm golden glint, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Face of Rhizodus",
+     "vo": "Eight: the bottom, where Rhizodus waits.",
+     "danger": 8,
+     "image_prompt": "a giant Rhizodus lobe-finned fish lunging out of murky brown water straight at the viewer, two huge front fangs, armoured scales, one warm golden glow on its teeth, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 1,
+   "verdict_vo": "Real answer: number 1, because Rhizodus was a giant predator of freshwater lakes, rivers and swamps. Less water, better odds.",
+   "fact": {
+    "text": "Rhizodus was a giant apex predator of freshwater lakes, river systems and large swamps.",
+    "wiki_title": "Rhizodus",
+    "wiki_revid": 1371898271,
+    "source_sentence": "Rhizodus was a giant apex predator that resided in freshwater lakes, river systems and large swamps, with R. hibberti measuring 5.14–5.63 metres (16.9–18.5 ft) long and weighing 1–1.5 metric tons (1.1–1.7 short tons)."
+   },
+   "description": "Coal-swamp lakes under giant dragonflies, ruled by a fish over five metres long. Choose how far in you wade.",
+   "tags": [
+    "carboniferous",
+    "coal forest",
+    "giant insects",
+    "prehistoric fish",
+    "how deep",
+    "swamp",
+    "survival",
+    "prehistoric"
+   ],
+   "related_topic_hint": "Giant Insects of the Coal Forests"
+  },
+  {
+   "id": "how_deep-08",
+   "era": "Permian",
+   "title": "Pangaea's Inland Sea Has a Buzzsaw — How Deep Do You Go? 🌀",
+   "banner": "Pangaea's sea: how deep?",
+   "hook_vo": "Its teeth grew in a spiral. Pick your depth.",
+   "art_direction": "Dusty ochre and deep teal desert-sea palette, hazy heat at the surface, 50mm lens, one warm saffron glow per frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Hot salty beach",
+     "vo": "One: a blazing salty beach on Pangaea.",
+     "danger": 1,
+     "image_prompt": "blazing salt-crusted beach on the edge of a vast inland sea, red desert dunes behind, shimmering heat haze, one warm saffron sun low on the horizon, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Warm lagoon shallows",
+     "vo": "Two: warm, shallow lagoon water.",
+     "danger": 2,
+     "image_prompt": "clear warm lagoon shallows over pale sand, small fish and brachiopod shells, red cliffs reflected on the surface, one warm saffron glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Ten metres, sandy shelf",
+     "vo": "Three: ten metres over a sandy shelf.",
+     "danger": 3,
+     "image_prompt": "underwater sandy shelf at ten metres in warm teal water, sponges and crinoids scattered, small coiled ammonoids drifting, one warm saffron light shaft, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Ammonoid drift zone",
+     "vo": "Four: where coiled ammonoids drift.",
+     "danger": 4,
+     "image_prompt": "dense drift of coiled ammonoid shells in mid-water, tentacles trailing, deep teal water fading below, one warm saffron light catching their shells, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Edge of the deep sea",
+     "vo": "Five: the edge where it turns deep.",
+     "danger": 5,
+     "image_prompt": "edge of a sandy shelf dropping into a deep inland sea, dark teal void beyond, a long sleek fish silhouette rising from the depths, one warm saffron glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Deep basin twilight",
+     "vo": "Six: deep basin, dim twilight.",
+     "danger": 6,
+     "image_prompt": "dim deep basin twilight water, schools of squid-shaped cephalopods scattering, a large streamlined shadow below, one warm faint saffron glow from above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "Black water, spiral shadows",
+     "vo": "Seven: black water, spiral shadows below.",
+     "danger": 7,
+     "image_prompt": "black deep water of an inland sea, faint glimpses of large sleek fish circling, spiral tooth shapes glinting, one warm saffron glint in the dark, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "The buzzsaw jaw",
+     "vo": "Eight: right in front of the spiral jaw.",
+     "danger": 8,
+     "image_prompt": "a Helicoprion fish opening its lower jaw to reveal a spiral whorl of serrated teeth, deep dark teal water, one warm saffron glow on the tooth whorl, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because Helicoprion fossils cluster where deep inland seas once were. Staying shallow is probably your best bet.",
+   "fact": {
+    "text": "The most Helicoprion fossils come from Idaho and Russia, once covered by deep inland seas where Helicoprion may have congregated.",
+    "wiki_title": "Helicoprion",
+    "wiki_revid": 1380647724,
+    "source_sentence": "The highest concentrations of these come from Idaho and Russia, which used to be covered by deep inland seas where Helicoprion may have congregated."
+   },
+   "description": "On the supercontinent Pangaea, deep inland seas hid a fish with a spiral of teeth in its lower jaw. Eight depths to choose from.",
+   "tags": [
+    "pangaea",
+    "permian",
+    "helicoprion",
+    "prehistoric shark",
+    "how deep",
+    "ocean",
+    "survival",
+    "prehistoric"
+   ],
+   "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
+  },
+  {
+   "id": "how_deep-09",
+   "era": "Triassic",
+   "title": "A Triassic Ocean Lagoon Hides a Long Neck — How Deep? 🦎",
+   "banner": "Long-neck lagoon: how deep?",
+   "hook_vo": "Its neck is longer than its body. Choose a depth.",
+   "art_direction": "Pale lime and limestone-white palette, glassy calm water, telephoto 135mm lens, one warm peach glow per frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "On the limestone shore",
+     "vo": "One: dry on a white limestone shore.",
+     "danger": 1,
+     "image_prompt": "dry white limestone shore beside a calm Triassic lagoon, low conifers and ferns, glassy lime-green water, one warm peach sunset glow on the horizon, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Ankle-deep, glassy calm",
+     "vo": "Two: ankle-deep in glassy calm water.",
+     "danger": 2,
+     "image_prompt": "ankle-deep glassy lagoon water over white carbonate mud, tiny fish darting, a very long thin neck rising from the reeds far away, one warm peach glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Thigh-deep near the reeds",
+     "vo": "Three: thigh-deep near the shoreline plants.",
+     "danger": 3,
+     "image_prompt": "thigh-deep water at the edge of horsetail stands in a calm lagoon, a long slender neck slowly arching over the water, one warm peach light reflection, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Shallow, fish everywhere",
+     "vo": "Four: shallow water swarming with fish.",
+     "danger": 4,
+     "image_prompt": "shallow sunlit lagoon water swarming with silver fish, a narrow toothy head on a very long neck striking down from above, one warm peach glow on the scales, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Lagoon mouth channel",
+     "vo": "Five: the channel out of the lagoon.",
+     "danger": 5,
+     "image_prompt": "tidal channel at the lagoon mouth where clear lime water meets deeper blue, current swirling over limestone, one warm peach light shaft through the water, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Open water beyond",
+     "vo": "Six: open, deeper water beyond the lagoon.",
+     "danger": 6,
+     "image_prompt": "open deeper blue water beyond a lagoon reef, sandy bottom fading into the distance, nothing nearby, calm and empty, one warm peach glow from above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "Nothosaur hunting grounds",
+     "vo": "Seven: where nothosaurs hunt.",
+     "danger": 7,
+     "image_prompt": "deeper blue water with a sleek long-bodied nothosaur gliding past, needle teeth glinting, scattered fish, one warm peach light shaft, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Deep basin, big reptiles",
+     "vo": "Eight: the deep basin with the big reptiles.",
+     "danger": 8,
+     "image_prompt": "dark deep basin water with large marine reptiles circling below, faint silhouettes of flipper limbs and long jaws, one warm peach glow above, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 6,
+   "verdict_vo": "Real answer: number 6, because Tanystropheus was built for short swimming bursts in shallow water. Deeper open water is probably safer.",
+   "fact": {
+    "text": "Tanystropheus had large, muscular hindlimbs and tail base suited to short bursts of active swimming in shallow water.",
+    "wiki_title": "Tanystropheus",
+    "wiki_revid": 1381219945,
+    "source_sentence": "The hindlimbs and the base of the tail were large and muscular, capable of short bursts of active swimming in shallow water."
+   },
+   "description": "A reptile whose neck outmeasured the rest of it hunted these calm Triassic shallows. Eight depths, and the calm-looking ones are the trap.",
+   "tags": [
+    "triassic",
+    "tanystropheus",
+    "marine reptile",
+    "lagoon",
+    "how deep",
+    "ocean",
+    "survival",
+    "prehistoric"
+   ],
+   "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
+  },
+  {
+   "id": "how_deep-10",
+   "era": "Jurassic",
+   "title": "The Jurassic Ocean at Midnight — How Deep Can You Hide? 🌊",
+   "banner": "Giant eyes in the dark: how deep?",
+   "hook_vo": "Its eyes were the size of plates. Pick a depth.",
+   "art_direction": "Moonlit sapphire palette with silver highlights, very wide 16mm lens, one warm bioluminescent amber glow per frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Moonlit surface",
+     "vo": "One: bobbing at the moonlit surface.",
+     "danger": 1,
+     "image_prompt": "moonlit Jurassic ocean surface at midnight, gentle silver swells, bright full moon, one warm amber glow of plankton sparkling in a wave crest, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Ten metres, silver light",
+     "vo": "Two: ten metres, moonlight still reaching.",
+     "danger": 2,
+     "image_prompt": "underwater at ten metres at night, silver moonlight rippling down, small fish schools flickering, one warm amber spark of glowing plankton, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Squid swarm at fifty",
+     "vo": "Three: fifty metres, in a squid swarm.",
+     "danger": 3,
+     "image_prompt": "swarm of belemnite squid at fifty metres in dark sapphire water, bullet-shaped bodies and tentacles, one warm amber bioluminescent glow among them, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Two hundred metres, dusk",
+     "vo": "Four: two hundred metres, permanent dusk.",
+     "danger": 4,
+     "image_prompt": "permanent dusk at two hundred metres, deep sapphire gradient, a sleek dolphin-shaped ichthyosaur with an enormous eye gliding past, one warm amber glint in its eye, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Three hundred, eyes everywhere",
+     "vo": "Five: three hundred metres, big eyes everywhere.",
+     "danger": 5,
+     "image_prompt": "near-black water at three hundred metres, several huge ichthyosaur eyes catching the faint light, slender bodies circling, one warm amber bioluminescent glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Four hundred, hunted",
+     "vo": "Six: four hundred metres, something is following.",
+     "danger": 6,
+     "image_prompt": "a giant ichthyosaur eye filling half the frame in near darkness at four hundred metres, bony ring around the pupil, one warm amber reflection in the lens, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "Six hundred metres",
+     "vo": "Seven: six hundred metres, the edge of its range.",
+     "danger": 7,
+     "image_prompt": "deep mesopelagic darkness at six hundred metres, a lone ichthyosaur turning back upward, tiny glowing animals drifting, one warm amber glow below, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Deeper than six hundred",
+     "vo": "Eight: deeper than six hundred metres, pitch black.",
+     "danger": 8,
+     "image_prompt": "pitch black abyss deeper than six hundred metres, only a few drifting glowing specks, crushing emptiness, one warm amber pinprick of bioluminescence, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 8,
+   "verdict_vo": "Real answer: number 8, because Ophthalmosaurus could probably dive to 600 metres or more. Only deeper than that escapes those eyes.",
+   "fact": {
+    "text": "Ophthalmosaurus, an ichthyosaur with huge eyes, could probably reach depths of 600 metres or more during a dive.",
     "wiki_title": "Ophthalmosaurus",
     "wiki_revid": 1376972610,
     "source_sentence": "Assuming a conservative cruising speed of 1 metre per second (3.3 ft/s) (2 metres per second (6.6 ft/s) being more likely), Ophthalmosaurus could reach depths of 600 metres (2,000 ft) or more during a dive, reaching the mesopelagic zone."
    },
-   "description": "A Jurassic ichthyosaur with eyes the size of plates takes one breath and dives. Eight depths, from just under the waves to the sea floor: how far down could it go?",
-   "tags": ["ichthyosaur", "Jurassic", "deep sea", "marine reptiles", "how deep", "deep time"],
-   "related_topic_hint": "Jurassic sea marine reptiles ichthyosaurs"
+   "description": "An ichthyosaur with some of the biggest eyes of its time hunted these midnight waters. Eight depths, and the dark is not as safe as it looks.",
+   "tags": [
+    "jurassic",
+    "ichthyosaur",
+    "ocean",
+    "sea monster",
+    "how deep",
+    "deep sea",
+    "night",
+    "prehistoric"
+   ],
+   "related_topic_hint": "Jurassic sea monsters long-form"
   },
   {
-   "id": "how_deep-02",
-   "era": "Miocene",
-   "title": "How Deep Could Megalodon Really Go? Pick a Number Before It's Gone 🦈",
-   "banner": "How deep could megalodon go?",
-   "hook_vo": "Could megalodon still hide in the deep? Pick.",
-   "art_direction": "The Miocene ocean at night, warm coastal shallows with whales and kelp shading down into the cold black deep.",
+   "id": "how_deep-11",
+   "era": "Cretaceous",
+   "title": "The Dinosaur-Age Ocean Belongs to Mosasaurus — How Deep? 🦖",
+   "banner": "Mosasaurus is hunting: how deep?",
+   "hook_vo": "A giant sea lizard is hungry. Pick a depth.",
+   "art_direction": "Storm-grey and jade palette, choppy surface light, 24mm lens tilted upward, one warm lightning-gold glow per frame.",
    "options": [
-    {"n": 1, "label": "Lagoon", "vo": "Number one: a warm shallow lagoon.", "danger": 1,
-     "image_prompt": "A warm shallow lagoon at night, sandy bottom and seagrass lit by moonlight, a warm golden glow of dawn on the surface above"},
-    {"n": 2, "label": "Warm coast", "vo": "Number two: warm coastal water over the shelf.", "danger": 2,
-     "image_prompt": "A gigantic megalodon shark cruising over a sunlit continental shelf in warm coastal water, a pod of small whales ahead, warm golden light rays from above"},
-    {"n": 3, "label": "Kelp edge", "vo": "Number three: the edge of a kelp forest.", "danger": 3,
-     "image_prompt": "The edge of a tall kelp forest in clear green water, fronds swaying, a huge shadow of a shark passing beyond, warm sunset light through the surface"},
-    {"n": 4, "label": "Open blue", "vo": "Number four: the open blue, two hundred metres.", "danger": 4,
-     "image_prompt": "Deep open blue ocean water fading to darkness below, a lone baleen whale silhouette, a warm golden glow of the sun far above at the surface"},
-    {"n": 5, "label": "Twilight zone", "vo": "Number five: the twilight zone, five hundred metres.", "danger": 5,
-     "image_prompt": "The dim twilight zone of the ocean, faint blue light from far above, lanternfish with tiny warm glowing bioluminescent dots drifting through the dark"},
-    {"n": 6, "label": "Cold midnight zone", "vo": "Number six: the cold midnight zone.", "danger": 6,
-     "image_prompt": "The cold black midnight zone of the deep ocean, a few warm glowing bioluminescent jellyfish, marine snow drifting slowly downward"},
-    {"n": 7, "label": "Trench wall", "vo": "Number seven: the wall of a deep trench.", "danger": 7,
-     "image_prompt": "The steep rocky wall of a deep ocean trench vanishing into blackness, white sea anemones on ledges, a warm glow of a bioluminescent anglerfish lure"},
-    {"n": 8, "label": "Abyss", "vo": "Number eight: the abyss, still hiding today.", "danger": 8,
-     "image_prompt": "A vast abyssal plain in total darkness, soft grey sediment and a lonely sea cucumber, a warm orange glow of a hydrothermal vent on the far horizon"}
+    {
+     "n": 1,
+     "label": "Floating, storm overhead",
+     "vo": "One: floating on the surface under a storm.",
+     "danger": 1,
+     "image_prompt": "view at the surface of a stormy Cretaceous ocean, dark jade swells, heavy grey clouds, one warm gold flash of distant lightning on the horizon, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Just under the waves",
+     "vo": "Two: just under the waves.",
+     "danger": 2,
+     "image_prompt": "just beneath choppy jade waves, bubbles and churning foam overhead, sunlight broken into shards, one warm gold glow piercing the surface, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Among the ammonites",
+     "vo": "Three: among drifting ammonites.",
+     "danger": 3,
+     "image_prompt": "mid-water scene among large coiled ammonites drifting in jade water, ribbed shells catching light, one warm gold shaft from the surface, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Open water, fish school",
+     "vo": "Four: in open water beside a fish school.",
+     "danger": 4,
+     "image_prompt": "open jade water beside a huge silver fish school forming a ball, a long powerful marine lizard shape cutting through it, one warm gold sun shaft, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Surface hunting lane",
+     "vo": "Five: right in its surface hunting lane.",
+     "danger": 5,
+     "image_prompt": "a giant Mosasaurus gliding along just below the surface toward the viewer, long toothed jaws, flipper limbs, shark-shaped tail fluke, one warm gold glow behind it, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Below the light",
+     "vo": "Six: below where the light reaches.",
+     "danger": 6,
+     "image_prompt": "dim deep water below the reach of light, faint glimpse of a large silhouette far above against the bright surface, one warm faint gold glow overhead, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "The deep seafloor",
+     "vo": "Seven: on the deep, quiet seafloor.",
+     "danger": 7,
+     "image_prompt": "quiet deep seafloor of pale chalky ooze far below a Cretaceous sea, scattered shells, the bright surface a distant glow, one warm gold glimmer above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Inside the open jaws",
+     "vo": "Eight: inside Mosasaurus's open jaws.",
+     "danger": 8,
+     "image_prompt": "inside view of a giant Mosasaurus mouth opening wide, rows of conical teeth framing bright jade water, one warm gold sun shaft streaming in, photoreal painterly, vertical composition"
+    }
    ],
-   "answer_n": 2,
-   "verdict_vo": "Real answer: number 2, because the shark lived in warm coastal waters and probably could not survive the cold deep sea.",
+   "answer_n": 7,
+   "verdict_vo": "Real answer: number 7, because Mosasaurus likely preferred hunting in open water near the surface. The deep seafloor is probably your best bet.",
    "fact": {
-    "text": "Megalodon lived in warm coastal waters and probably could not survive in the cold and nutrient-poor deep sea environment.",
-    "wiki_title": "Otodus megalodon",
+    "text": "Mosasaurus likely preferred to hunt in open water near the surface.",
+    "wiki_title": "Mosasaurus",
+    "wiki_revid": 1381031127,
+    "source_sentence": "It likely preferred to hunt in open water near the surface."
+   },
+   "description": "The giant marine lizard of the late dinosaur age ruled this ocean. Eight depths to pick from, and the bright water is where it hunted.",
+   "tags": [
+    "mosasaurus",
+    "cretaceous",
+    "dinosaur age",
+    "ocean",
+    "sea monster",
+    "how deep",
+    "survival",
+    "prehistoric"
+   ],
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
+  },
+  {
+   "id": "how_deep-12",
+   "era": "Cretaceous",
+   "title": "The Asteroid Hits the Sea — How Deep Was the Water? ☄️",
+   "banner": "How deep was ground zero?",
+   "hook_vo": "The asteroid hits the sea. How deep was it?",
+   "art_direction": "Blinding white-orange sky over gunmetal sea, 20mm lens, high contrast, one warm fireball glow in every frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Ankle-deep beach",
+     "vo": "One: an ankle-deep beach.",
+     "danger": 1,
+     "image_prompt": "ankle-deep turquoise beach water on a Cretaceous coast, palm-shaped cycads behind, a blinding fireball streaking down across the sky, one warm orange fireball glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Ten metres, a lagoon",
+     "vo": "Two: a ten-metre lagoon.",
+     "danger": 2,
+     "image_prompt": "shallow lagoon ten metres deep seen from just under the surface, sandy bottom, the sky overhead lit orange by an incoming fireball, one warm glow through the water, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Fifty metres, reef",
+     "vo": "Three: fifty metres over a reef.",
+     "danger": 3,
+     "image_prompt": "underwater reef at fifty metres with rudist clams and fish, the surface above suddenly glowing orange, one warm fireball glow filtering down, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Two hundred metres",
+     "vo": "Four: two hundred metres of open sea.",
+     "danger": 4,
+     "image_prompt": "open gunmetal sea seen from the surface, two hundred metres deep beneath, a huge burning asteroid filling the upper sky, one warm orange fireball glow on the water, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "About 650 metres",
+     "vo": "Five: about six hundred and fifty metres.",
+     "danger": 5,
+     "image_prompt": "wide view of a calm deep sea at dusk, the water darkening to indigo below, a colossal blazing asteroid about to strike, one warm orange fireball glow reflected across the swells, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Two kilometres deep",
+     "vo": "Six: two kilometres of deep ocean.",
+     "danger": 6,
+     "image_prompt": "deep ocean surface from high above, dark navy water stretching to the horizon, the asteroid piercing the clouds, one warm orange fireball glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "Five kilometres, abyss",
+     "vo": "Seven: a five-kilometre abyss.",
+     "danger": 7,
+     "image_prompt": "abyssal plain five kilometres deep seen from below, black water, the faint orange flash of impact far above, one warm glow spreading through the dark, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Ocean trench, ten km",
+     "vo": "Eight: a ten-kilometre ocean trench.",
+     "danger": 8,
+     "image_prompt": "view down into a vast dark ocean trench ten kilometres deep, sheer black walls, faint orange shock light rippling down from above, one warm fireball glow, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because the sea at the impact centre was an estimated 650 metres deep, ranging from 100 to over 1,200.",
+   "fact": {
+    "text": "The sea at the Chicxulub impact site was about 100 metres deep on the western edge, over 1,200 metres on the northeastern edge, and about 650 metres at the centre.",
+    "wiki_title": "Chicxulub crater",
+    "wiki_revid": 1379989654,
+    "source_sentence": "The water depth at the impact site varied from 100 meters (330 ft) on the western edge of the crater to over 1,200 meters (3,900 ft) on the northeastern edge, with an estimated depth at the center of the impact of approximately 650 meters (2,130 ft)."
+   },
+   "description": "The asteroid that ended the age of dinosaurs struck the sea, not dry land. Guess how deep the water was at ground zero before the answer.",
+   "tags": [
+    "asteroid",
+    "dinosaur extinction",
+    "chicxulub",
+    "ocean",
+    "cretaceous",
+    "how deep",
+    "impact",
+    "prehistoric"
+   ],
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
+  },
+  {
+   "id": "how_deep-13",
+   "era": "Eocene",
+   "title": "Ocean of the First Giant Whales — How Deep Do You Dive? 🐋",
+   "banner": "Serpent whale above: how deep?",
+   "hook_vo": "A whale with fangs patrols this sea. Pick a depth.",
+   "art_direction": "Warm turquoise and sandstone palette of a desert-edged sea, 28mm lens, one warm desert-sunset glow per frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Mangrove shallows",
+     "vo": "One: shallow water among mangrove roots.",
+     "danger": 1,
+     "image_prompt": "shallow warm water among mangrove roots on a desert-edged Eocene coast, small fish in the roots, sandstone cliffs behind, one warm desert sunset glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Seagrass meadow",
+     "vo": "Two: a seagrass meadow full of sea cows.",
+     "danger": 2,
+     "image_prompt": "sunlit seagrass meadow in warm turquoise water with early sea cows grazing, gentle light ripples, one warm golden sun glow from above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "At the surface, open sea",
+     "vo": "Three: at the surface of open sea.",
+     "danger": 3,
+     "image_prompt": "surface-level view of open warm sea, a long serpentine whale back breaking the surface nearby, small dorsal ridge, one warm desert sunset glow on the water, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Just under the surface",
+     "vo": "Four: just under the surface.",
+     "danger": 4,
+     "image_prompt": "just under the surface in bright turquoise water, an enormously long eel-shaped whale with tiny hind limbs gliding past, sharp teeth, one warm golden light shaft, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Thirty metres, sandy bottom",
+     "vo": "Five: thirty metres over a sandy bottom.",
+     "danger": 5,
+     "image_prompt": "calm sandy bottom thirty metres down, nummulite coin shells scattered, the long whale silhouette far above at the bright surface, one warm golden glow overhead, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Below the thermocline",
+     "vo": "Six: below the warm layer, cold and dim.",
+     "danger": 6,
+     "image_prompt": "dim cold water below a shimmering warm layer, the bright surface far above, a few sharks gliding, one warm faint golden glow overhead, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "Deep shark water",
+     "vo": "Seven: deep water, where big sharks roam.",
+     "danger": 7,
+     "image_prompt": "deep dark blue water with several large sharks circling, their bodies catching faint light, one warm golden glint far above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Deep canyon floor",
+     "vo": "Eight: the black floor of a canyon.",
+     "danger": 8,
+     "image_prompt": "black floor of a deep undersea canyon, steep sediment walls, nothing visible but drifting marine snow, one warm golden pinprick far above, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because Basilosaurus probably couldn't sustain swimming or dive deep. Below its surface patrol is probably your best bet.",
+   "fact": {
+    "text": "Basilosaurus, a giant early whale, is not believed to have been capable of sustained swimming or deep diving.",
+    "wiki_title": "Basilosaurus",
+    "wiki_revid": 1381174565,
+    "source_sentence": "Judging from the relatively weak axial musculature and the thick bones in the limbs, Basilosaurus is not believed to have been capable of sustained swimming or deep diving, or terrestrial locomotion."
+   },
+   "description": "One of the first giant whales, armed with real teeth, ruled this warm sea. Eight depths, and its weakness decides the answer.",
+   "tags": [
+    "basilosaurus",
+    "prehistoric whale",
+    "eocene",
+    "ocean",
+    "how deep",
+    "sea monster",
+    "survival",
+    "prehistoric"
+   ],
+   "related_topic_hint": "Ocean giants after the dinosaurs"
+  },
+  {
+   "id": "how_deep-14",
+   "era": "Miocene",
+   "title": "Megalodon Waters at Night — How Deep Do You Dare Go? 🦈",
+   "banner": "Megalodon below: how deep?",
+   "hook_vo": "A giant shark is circling. Pick a depth.",
+   "art_direction": "Inky navy and electric-teal night palette, harsh moon backlight, 21mm lens looking up, one warm red-orange glow per frame.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Warm moonlit shallows",
+     "vo": "One: warm, moonlit shallows.",
+     "danger": 1,
+     "image_prompt": "warm moonlit coastal shallows over pale sand, gentle swells, a distant shoreline of palms, one warm red-orange glow of the setting moon on the water, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Shark nursery bay",
+     "vo": "Two: a shark nursery bay.",
+     "danger": 2,
+     "image_prompt": "warm shallow bay at night with several young sharks circling over seagrass, moonlight rippling, one warm red-orange glow from the shore, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Warm coastal reef",
+     "vo": "Three: a warm coastal reef.",
+     "danger": 3,
+     "image_prompt": "warm coastal reef at night, corals and rocks in moonlight, small fish hiding, a huge dark fin cutting the surface above, one warm red-orange glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Whale migration lane",
+     "vo": "Four: in a whale migration lane.",
+     "danger": 4,
+     "image_prompt": "open coastal water at night with a pod of small baleen whales passing, moonlight above, a vast shark silhouette below them, one warm red-orange glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Open blue, no cover",
+     "vo": "Five: open blue water, no cover.",
+     "danger": 5,
+     "image_prompt": "looking up from open water at a colossal megalodon silhouette against the moonlit surface, enormous pectoral fins spread, one warm red-orange moon glow behind it, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Two hundred metres, twilight",
+     "vo": "Six: two hundred metres, cold twilight.",
+     "danger": 6,
+     "image_prompt": "cold twilight water two hundred metres down, the moonlit surface a faint smear, small glowing animals drifting, one warm red-orange glow above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "One kilometre, freezing",
+     "vo": "Seven: one kilometre, freezing and empty.",
+     "danger": 7,
+     "image_prompt": "freezing empty darkness one kilometre deep, drifting marine snow, a lone glowing jellyfish, one warm red-orange bioluminescent glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "The cold abyss",
+     "vo": "Eight: the cold, food-poor abyss.",
+     "danger": 8,
+     "image_prompt": "cold food-poor abyssal plain kilometres down, pale sediment and scattered sea cucumbers, total darkness except one warm red-orange bioluminescent glow, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 8,
+   "verdict_vo": "Real answer: number 8, because megalodon lived in warm coastal waters and probably couldn't survive the cold, food-poor deep sea.",
+   "fact": {
+    "text": "Megalodon lived in warm coastal waters and probably could not survive in the cold, nutrient-poor deep sea.",
+    "wiki_title": "Megalodon",
     "wiki_revid": 1380888665,
     "source_sentence": "The claims that megalodon could remain elusive in the depths, similar to the megamouth shark which was discovered in 1976, are unlikely as the shark lived in warm coastal waters and probably could not survive in the cold and nutrient-poor deep sea environment."
    },
-   "description": "Some say megalodon could still be hiding in the deep ocean. Eight depths, from a warm lagoon to the abyss, and only one was really its home.",
-   "tags": ["megalodon", "sharks", "deep sea", "ocean", "how deep", "deep time"],
-   "related_topic_hint": "megalodon Miocene ocean giant shark"
+   "description": "One of the largest sharks that ever lived owned these warm coastal seas. Eight depths, and the answer depends on what megalodon couldn't handle.",
+   "tags": [
+    "megalodon",
+    "prehistoric shark",
+    "ocean",
+    "deep sea",
+    "how deep",
+    "miocene",
+    "survival",
+    "sea monster"
+   ],
+   "related_topic_hint": "Megalodon long-form"
   },
   {
-   "id": "how_deep-03",
-   "era": "Late Cretaceous",
-   "title": "How Deep Did Ammonites Live in the Prehistoric Sea? Pick One 🐚",
-   "banner": "How deep did ammonites live?",
-   "hook_vo": "Ammonites filled the dinosaur seas. But how deep?",
-   "art_direction": "The Late Cretaceous Western Interior Seaway at night, shimmering coiled shells drifting in layers of turquoise and indigo water.",
+   "id": "how_deep-15",
+   "era": "Pliocene",
+   "title": "The Atlantic Ocean Floods a Dry Sea — Where Do You Stand? 🌊",
+   "banner": "A dry sea is refilling: how deep?",
+   "hook_vo": "An empty sea basin. The ocean is coming back.",
+   "art_direction": "Bleached salt-white and burnt sienna palette, harsh dust haze, 18mm lens, one warm low-sun gold glow per frame.",
    "options": [
-    {"n": 1, "label": "Tide pools", "vo": "Number one: shallow tide pools on the shore.", "danger": 1,
-     "image_prompt": "Rocky tide pools on a Cretaceous shore at night, small snails and seaweed in clear water, a warm golden glow of sunset reflected on the wet rocks"},
-    {"n": 2, "label": "Surface waves", "vo": "Number two: right under the surface waves.", "danger": 2,
-     "image_prompt": "Just under rolling moonlit surface waves, bubbles and light ripples, a single coiled ammonite drifting upward into a warm golden glow of dawn"},
-    {"n": 3, "label": "Sunlit shelf", "vo": "Number three: a sunlit shelf, thirty metres.", "danger": 3,
-     "image_prompt": "A sunlit sandy sea shelf with oysters and sea lilies, a few coiled ammonites drifting above, warm golden light rays slanting down through the turquoise water"},
-    {"n": 4, "label": "Mid-water", "vo": "Number four: drifting in mid-water, one hundred metres.", "danger": 4,
-     "image_prompt": "A drifting group of coiled ammonite shells drifting together in blue mid-water, tentacles trailing, warm amber light from the surface glowing on their ribbed shells"},
-    {"n": 5, "label": "Upper 250 metres", "vo": "Number five: anywhere in the upper 250 metres.", "danger": 5,
-     "image_prompt": "Layers of ocean water from bright turquoise above to deep indigo below, ammonites of many sizes scattered through it, a warm glow of sunset at the top"},
-    {"n": 6, "label": "Deep reef", "vo": "Number six: a dark reef far below.", "danger": 6,
-     "image_prompt": "A dark deep reef of sponges and stalked sea lilies in dim blue water, faint warm glowing bioluminescent sparks, a mosasaur shape far above"},
-    {"n": 7, "label": "Midnight zone", "vo": "Number seven: the midnight zone.", "danger": 7,
-     "image_prompt": "Pitch-dark deep ocean water with marine snow falling, a few warm glowing bioluminescent creatures and the faint outline of a coiled shell"},
-    {"n": 8, "label": "Sea floor ooze", "vo": "Number eight: the ooze of the deep sea floor.", "danger": 8,
-     "image_prompt": "The soft grey ooze of a deep sea floor in darkness, empty broken coiled shells half buried, a warm orange glow of a vent far away"}
+    {
+     "n": 1,
+     "label": "On the high rim",
+     "vo": "One: up on the high rim.",
+     "danger": 1,
+     "image_prompt": "high rocky rim overlooking a vast dried-out sea basin of white salt flats far below, hazy dusty air, one warm low gold sun on the horizon, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Halfway down the cliffs",
+     "vo": "Two: halfway down the canyon cliffs.",
+     "danger": 2,
+     "image_prompt": "steep sienna cliffs dropping into a deep empty basin, salt glittering below, a distant roaring white waterfall on the horizon, one warm gold sun glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "On a salt plateau",
+     "vo": "Three: a salt plateau, deep in the basin.",
+     "danger": 3,
+     "image_prompt": "wide cracked white salt plateau deep inside a dry basin, towering cliffs all around, a faint roaring mist far west, one warm gold low sun, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "By a brine lake",
+     "vo": "Four: beside a hot brine lake.",
+     "danger": 4,
+     "image_prompt": "shimmering pink hypersaline lake in a scorching basin floor, salt crusts and dead shells, heat haze, one warm gold sun reflected in the brine, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "Down a carved canyon",
+     "vo": "Five: down a deep river canyon.",
+     "danger": 5,
+     "image_prompt": "narrow deep river canyon carved into the basin floor, sheer walls, a trickle of water at the bottom, one warm gold beam of sunlight down the gorge, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Basin floor, rising water",
+     "vo": "Six: the basin floor as water arrives.",
+     "danger": 6,
+     "image_prompt": "basin floor with a wall of churning muddy water rushing in over the salt flats, spray filling the air, one warm gold low sun behind the mist, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "Under the giant waterfall",
+     "vo": "Seven: at the foot of the great falls.",
+     "danger": 7,
+     "image_prompt": "colossal waterfall of ocean water pouring over a far rocky gap into a dry basin, a vast wall of white spray, one warm gold sun glow through the mist, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "The deepest salt pit",
+     "vo": "Eight: the lowest point, kilometres below sea level.",
+     "danger": 8,
+     "image_prompt": "lowest salt pit of a vast dry sea basin, kilometres below the rim, brown floodwater already swirling in from every side, one warm gold sun shaft through the haze, photoreal painterly, vertical composition"
+    }
    ],
-   "answer_n": 5,
-   "verdict_vo": "Real answer: number 5, because ammonites appear to have lived in the upper 250 metres of the water column.",
+   "answer_n": 1,
+   "verdict_vo": "Real answer: number 1, because the refilling sea may have risen more than 10 metres a day. Stay high, and probably start climbing.",
    "fact": {
-    "text": "In general, they appear to have inhabited the upper 250 metres of the water column.",
-    "wiki_title": "Ammonoidea",
-    "wiki_revid": 1380225373,
-    "source_sentence": "In general, they appear to have inhabited the upper 250 metres (820 ft) of the water column."
+    "text": "When the Zanclean flood refilled the dried-out basin, sea level may at times have risen more than 10 metres per day.",
+    "wiki_title": "Zanclean flood",
+    "wiki_revid": 1374947780,
+    "source_sentence": "Sea level rise in the basin may at times have reached rates greater than 10 metres per day (5 fathom/d; 30 ft/d)."
    },
-   "description": "Ammonites drifted through the seas of the dinosaurs for millions of years. Eight depths, from tide pools to the sea floor: where did they really live?",
-   "tags": ["ammonites", "Cretaceous", "prehistoric sea", "ocean", "how deep", "deep time"],
-   "related_topic_hint": "ammonites Western Interior Seaway Cretaceous sea"
+   "description": "The Mediterranean once dried out into a salt desert, then the Atlantic broke back in. Pick where you wait in the empty basin.",
+   "tags": [
+    "ocean",
+    "mediterranean",
+    "flood",
+    "prehistoric earth",
+    "how deep",
+    "survival",
+    "catastrophe",
+    "earth history"
+   ],
+   "related_topic_hint": "Earth's greatest floods long-form"
   },
   {
-   "id": "how_deep-04",
-   "era": "End-Cretaceous",
-   "title": "How Deep Was the Asteroid Crater That Ended the Dinosaurs? 🌋",
-   "banner": "How deep did the asteroid dig?",
-   "hook_vo": "The asteroid hits. How deep is the hole?",
-   "art_direction": "The Chicxulub impact site seconds to hours after the strike, a vast glowing wound in the sea floor beneath a burning sky.",
+   "id": "how_deep-16",
+   "era": "Pleistocene",
+   "title": "Ice Age Lake Bigger Than the Great Lakes — How Deep Was It? 🧊",
+   "banner": "Ice Age mega-lake: how deep?",
+   "hook_vo": "An Ice Age lake bigger than the Great Lakes. Guess.",
+   "art_direction": "Pewter and glacier-cyan palette, flat overcast light, 40mm lens, one warm low amber glow per frame.",
    "options": [
-    {"n": 1, "label": "100 metres", "vo": "Number one: a hundred metres, a big pond.", "danger": 1,
-     "image_prompt": "A shallow round crater filled with steaming water on a tropical coast at night, ferns scorched around the rim, a warm orange glow of fire in the sky"},
-    {"n": 2, "label": "500 metres", "vo": "Number two: five hundred metres deep.", "danger": 2,
-     "image_prompt": "A deep bowl-shaped crater in limestone at night, smoke rising from its sides, the rim lit by a warm orange glow of burning forest"},
-    {"n": 3, "label": "1 kilometre", "vo": "Number three: one kilometre deep.", "danger": 3,
-     "image_prompt": "Looking down into a huge crater a kilometre deep, molten rock glowing orange at the bottom, steam clouds rolling up the cliffs under a dark sky"},
-    {"n": 4, "label": "3 kilometres", "vo": "Number four: three kilometres, deeper than canyons.", "danger": 4,
-     "image_prompt": "A crater wall plunging kilometres down into darkness, layered rock exposed, a deep warm lava glow from far below and ash falling through the air"},
-    {"n": 5, "label": "10 kilometres", "vo": "Number five: ten kilometres down.", "danger": 5,
-     "image_prompt": "A colossal crater seen from high above at night, its depths glowing molten orange, the sea rushing in over the rim in white torrents"},
-    {"n": 6, "label": "20 kilometres", "vo": "Number six: twenty kilometres down.", "danger": 6,
-     "image_prompt": "A vast transient cavity in the crust seen from the edge, layers of glowing molten rock and vapour, the far rim lost in a burning orange haze"},
-    {"n": 7, "label": "30 kilometres", "vo": "Number seven: thirty kilometres, into the crust.", "danger": 7,
-     "image_prompt": "An unimaginably deep cavity punched into the crust of the Earth, walls of molten glowing rock collapsing inward, a sky of fire and debris above"},
-    {"n": 8, "label": "Earth's core", "vo": "Number eight: all the way to the core.", "danger": 8,
-     "image_prompt": "A cutaway view of the planet with a glowing molten orange core deep inside, a bright scar on the surface above, stars and a dark sky around the curve of the Earth"}
+    {
+     "n": 1,
+     "label": "Ankle-deep meltwater",
+     "vo": "One: ankle-deep meltwater at the edge.",
+     "danger": 1,
+     "image_prompt": "ankle-deep milky meltwater at the edge of an Ice Age lake, gravel beach, spruce trees, a distant glacier wall, one warm low amber sun glow, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Ten metres, cold green",
+     "vo": "Two: ten metres, cold and green.",
+     "danger": 2,
+     "image_prompt": "cold green underwater view at ten metres in a glacial lake, gravel bottom, drifting silt, one warm amber light shaft from the surface, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Thirty metres, glacier silt",
+     "vo": "Three: thirty metres, thick glacier silt.",
+     "danger": 3,
+     "image_prompt": "thick milky glacier silt at thirty metres, visibility almost gone, faint cyan glow above, one warm amber glimmer in the haze, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Eighty metres, near freezing",
+     "vo": "Four: eighty metres, near freezing.",
+     "danger": 4,
+     "image_prompt": "near-freezing dark water at eighty metres, fine silt drifting down, a few small fish, one warm faint amber glow far above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 5,
+     "label": "One hundred fifty metres",
+     "vo": "Five: one hundred and fifty metres down.",
+     "danger": 5,
+     "image_prompt": "dim pewter water one hundred and fifty metres down in a glacial lake, utter stillness, falling silt flakes, one warm amber glimmer above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "About 260 metres",
+     "vo": "Six: about two hundred and sixty metres.",
+     "danger": 6,
+     "image_prompt": "soft clay lake bottom about two hundred and sixty metres down in an Ice Age lake, thin layered mud, pitch dark, one warm faint amber glow from above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 7,
+     "label": "Five hundred metres",
+     "vo": "Seven: five hundred metres.",
+     "danger": 7,
+     "image_prompt": "bottomless-looking black water five hundred metres deep, nothing in sight, cold cyan tint, one warm amber pinprick far above, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Under the ice sheet",
+     "vo": "Eight: under the ice sheet itself.",
+     "danger": 8,
+     "image_prompt": "dark blue water beneath a towering ice sheet edge, the ice ceiling cracked and groaning, glacial meltwater streaming, one warm amber glow through a crevasse, photoreal painterly, vertical composition"
+    }
    ],
-   "answer_n": 7,
-   "verdict_vo": "Real answer: number 7, because the impact produced a transient cavity 100 kilometers wide and 30 kilometers deep.",
+   "answer_n": 6,
+   "verdict_vo": "Real answer: number 6, because Lake Agassiz averaged about 258 metres deep in its late Moorhead Phase. Roughly where the mud began.",
    "fact": {
-    "text": "The impact produced a transient cavity 100 kilometers wide and 30 kilometers deep that later collapsed.",
-    "wiki_title": "Chicxulub crater",
-    "wiki_revid": 1379989654,
-    "source_sentence": "Such amounts of energy generated winds in excess of 1,000 kilometers per hour (600 mph) near the blast's center, and produced a transient cavity 100 kilometers (60 mi) wide and 30 kilometers (20 mi) deep that later collapsed."
+    "text": "During its late Moorhead Phase, the Ice Age meltwater Lake Agassiz averaged 258 metres deep.",
+    "wiki_title": "Lake Agassiz",
+    "wiki_revid": 1374182980,
+    "source_sentence": "The average depth of Lake Agassiz during the late Moorhead Phase was 258 metres (846 ft)."
    },
-   "description": "The asteroid that ended the age of dinosaurs struck with unimaginable force. Eight guesses at how deep it punched into the Earth, from a pond to the core.",
-   "tags": ["asteroid", "dinosaur extinction", "Chicxulub", "how deep", "deep time", "Earth history"],
-   "related_topic_hint": "Chicxulub asteroid impact crater last day of the dinosaurs"
+   "description": "As the Ice Age glaciers melted, they filled a lake bigger than all of today's Great Lakes combined. Guess how deep it got before the answer.",
+   "tags": [
+    "ice age",
+    "lake agassiz",
+    "glacier",
+    "prehistoric",
+    "how deep",
+    "pleistocene",
+    "meltwater",
+    "earth history"
+   ],
+   "related_topic_hint": "Ice Age megafauna long-form"
   }
  ]
 }

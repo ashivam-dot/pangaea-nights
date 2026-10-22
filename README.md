@@ -35,9 +35,30 @@ synthetic inputs in about five minutes.
 - `channels.list(mine=true)` returns exactly one channel, and its id is `UCtVG78IUTqvP9rH-LLies0A`.
 
 Videos are uploaded private with `publishAt` set to the next 21:00 UTC (`youtube.episode_slot()`). Every upload uses category 27 (Education),
-`selfDeclaredMadeForKids: false`, `containsSyntheticMedia: true`, and language `en`. Shorts are scheduled 14.5 h
-and 38.5 h after the episode, and their descriptions link to it. Each upload carries a marker tag, so a rerun finds
-the earlier upload instead of creating a duplicate.
+`selfDeclaredMadeForKids: false`, `containsSyntheticMedia: true`, and language `en`. Trailer Shorts cut from the
+episode are off (`config.TRAILER_SHORTS`); the Shorts are the ladder below. Each upload carries a marker tag, so a
+rerun finds the earlier upload instead of creating a duplicate.
+
+## Ladder Shorts
+
+`shorts.yml` (08:00 UTC daily) builds 30–45 s "pick a number 1–8" Shorts from the premise banks in `bible/ladder/`
+(four series, 16 premises each; every fact is one sentence of a pinned Wikipedia revision). The narrator speaks the
+verdict ("Real answer: number N.") with the sourced fact; there is no mascot. `studio/ladder_cli.py` runs one stage
+per job: `plan` → `images` (9 stills per slot, at most 17 jobs at once) and `voice` → `render` (every gate has a floor
+and a ceiling) → `publish` → `record`.
+
+- Cadence: slot A releases 14:30 UTC. From launch day 8 (`SHORTS_LAUNCH`, YYYY-MM-DD) slot B (00:30 UTC next day)
+  is added, but only while the previous 7 publish builds passed every gate. No launch date means no publishing.
+- Pause: schedules need `PAUSED=false` and `SHORTS_PAUSED` not `true`. Dispatches default to `dry_run` (build and
+  gate, upload nothing); with it off, `test` uploads private with no release and consumes no premise.
+- Novelty: 4-gram overlap ≤35% against the last 30 scripts, first frame CLIP ≤0.93 against the last 30, every
+  option pair CLIP ≤0.90.
+- Every upload is read back with `videos.list` (madeForKids, selfDeclaredMadeForKids, privacy, publishAt). A
+  mismatch goes to Telegram, to an `alert` issue and to `ladder.alerts` in the ledger.
+- `shorts-learn.yml` (06:00 UTC) reads 24 h / 72 h numbers and updates the series weights and the pt.2 queue.
+- Runner budget: the episode's plan job waits for any active Shorts run before fanning out (18 + 2 jobs), and the
+  Shorts wait for an episode that has already fanned out (`studio/fanout.py`), so the two stay within 20 jobs.
+- `python -m studio.cli ladder-check` validates every bank premise; fix failing data rather than the gates.
 
 ## Running it
 
@@ -48,6 +69,7 @@ the earlier upload instead of creating a duplicate.
 | A real episode now | Actions → episode → mode `publish` (still refused while paused) |
 | Publish a passed full dry run without rebuilding | Actions → promote → its run id; release `now` (public ~20 min after upload) or `slot` (next scheduled slot). Same guard; artifacts expire after 2–3 days |
 | Scheduled episodes | Set `PAUSED=false`; the Tue/Fri 14:10 UTC schedule builds each one (alternating 2 h / 3 h) and schedules it for 21:00 UTC |
+| A ladder Short test | Actions → shorts → `dry_run` on (default), or off with mode `test` for a private upload |
 
 With writer `auto`, Gemini is used when `GEMINI_API_KEY` exists. Without the key, the run uses the stub writer, which
 assembles the script from real Wikipedia sentences to prove the media stages. Stub output can never be published.
@@ -69,12 +91,12 @@ YouTube limits that still apply:
 - Until the Cloud project passes YouTube's API audit, uploads from unverified projects are locked to private.
 - Videos longer than 15 minutes and custom thumbnails need a phone-verified channel.
 - The default quota of 10,000 units a day covers one episode (1,600 for the upload, 50 for the thumbnail) and two
-  Shorts.
+  ladder Shorts (1,600 each, plus a first comment and the read-back).
 
 ## Repository layout
 
 ```
-bible/        series.json (8 series) and backlog.json (85 topics, 5 verified Wikipedia articles each)
+bible/        series.json (8 series), backlog.json (85 topics, 5 verified Wikipedia articles each), ladder/ (Shorts banks)
 studio/       the pipeline (see the table above); cli.py runs each stage
 assets/       fonts (Cormorant Garamond, OFL) and the CC0 ambience catalogue
 bench/        the CPU image-model and voice benchmarks

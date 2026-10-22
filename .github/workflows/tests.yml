@@ -20,7 +20,7 @@ jobs:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: requirements/*.txt
-      - run: pip install -q -r requirements/base.txt -r requirements/plan.txt pytest
+      - run: pip install -q -r requirements/base.txt -r requirements/plan.txt pytest pyyaml
       - run: python -m pytest -q tests
 
   smoke:

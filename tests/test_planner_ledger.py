@@ -132,7 +132,8 @@ def test_dry_runs_never_consume_topics_and_are_capped():
 
 def test_ledger_round_trip_and_hours(tmp_path):
     d = ledger.load(tmp_path)
-    assert d == {"episodes": [], "dry_runs": [], "last_upload": None}
+    assert d == ledger.EMPTY and d is not ledger.EMPTY
+    assert d["episodes"] == [] and d["shorts"] == [] and d["last_upload"] is None
     d["last_upload"] = "2026-10-10T00:00:00Z"
     ledger.save(d, tmp_path)
     again = ledger.load(tmp_path)
