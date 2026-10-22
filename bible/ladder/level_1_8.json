@@ -755,7 +755,7 @@
     }
    ],
    "answer_n": 1,
-   "verdict_vo": "Real answer: number 1, because Microraptor was among the smallest known dinosaurs, weighing about 0.5 to 1.4 kilos. Probably your easiest keeper.",
+   "verdict_vo": "Real answer: number 1, because Microraptor was among the smallest known dinosaurs, weighing about 0.5 to 1.4 kilos. Easiest keeper.",
    "fact": {
     "text": "Microraptor was among the smallest known non-avian dinosaurs, weighing about 0.5–1.4 kg.",
     "source_sentence": "Microraptor was among the smallest-known non-avian dinosaurs, with the holotype of M. gui measuring 77 centimetres (2.53 ft) in length, 88–94 centimetres (2.89–3.08 ft) in wingspan and weighing 0.5–1.4 kilograms (1.1–3.1 lb).",
@@ -927,7 +927,7 @@
     }
    ],
    "answer_n": 7,
-   "verdict_vo": "Real answer: number 7, because Ankylosaurus was covered in bony osteoderm plates and carried a large tail club. Probably the best suit around.",
+   "verdict_vo": "Real answer: number 7, because Ankylosaurus was covered in bony osteoderm plates and carried a large tail club. Best suit around.",
    "fact": {
     "text": "Ankylosaurus was covered in armor plates, or osteoderms, and had a large club on the end of its tail.",
     "source_sentence": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
@@ -1357,7 +1357,7 @@
     }
    ],
    "answer_n": 6,
-   "verdict_vo": "Real answer: number 6, because the woolly mammoth was covered in long guard hairs over a shorter undercoat. Warm, if it doesn't roll over.",
+   "verdict_vo": "Real answer: number 6, because the woolly mammoth was covered in long guard hairs over a shorter undercoat. Mind the rollover.",
    "fact": {
     "text": "The woolly mammoth was covered in fur, with an outer covering of long guard hairs and a shorter undercoat.",
     "source_sentence": "It was covered in fur, with an outer covering of long guard hairs and a shorter undercoat.",

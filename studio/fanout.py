@@ -4,7 +4,8 @@ Each workflow can fill the runner pool on its own (episode: 18 image + 2 voice j
 neither may fan out while the other is fanned out. The rule is asymmetric so the two can never wait on each other:
 
 - the episode's plan job, before it emits its matrix, waits for every other active shorts.yml run to finish;
-- the Shorts' plan job waits only for an episode run that is already past its plan job (a fanned-out episode).
+- the Shorts' plan job waits only for an episode run with matrix jobs (images, voice, render) active: a
+  fanned-out episode.
 
 An episode still in its plan job is one runner, and the Shorts' peak is 19, so that overlap stays at 20.
 
@@ -29,9 +30,14 @@ def active(runs: list[dict], self_id: str | None = None) -> list[dict]:
     return [r for r in runs if r.get("status") in ACTIVE and str(r.get("databaseId")) != str(self_id or "")]
 
 
+FAN_OUT = ("images", "voice", "render")  # the matrix stages; audio, finish, publish, record hold one runner each
+
+
 def fanned_out(jobs: list[dict]) -> bool:
-    """A run is fanned out once any job other than its plan job has started or is queued (gh run view --json jobs)."""
-    return any(j.get("name") != "plan" and j.get("status") in ACTIVE for j in jobs)
+    """A run is fanned out while any of its matrix jobs (images, voice, render: named "images (3)" and so on) is
+    active (gh run view --json jobs). A late run still in a single-runner stage such as finish holds one runner,
+    which the Shorts' peak of 19 leaves room for."""
+    return any(j.get("name", "").split(" ")[0] in FAN_OUT and j.get("status") in ACTIVE for j in jobs)
 
 
 def _gh(*args: str) -> list | dict:

@@ -87,9 +87,21 @@ def record_short(data: dict, entry: dict) -> dict:
     return data
 
 
-def ladder_log(data: dict, key: str, entry: dict, keep: int = 120) -> dict:
-    """Append to one of the ladder's rolling logs (builds, alerts, summaries, tests)."""
+def ladder_log(data: dict, key: str, entry: dict, keep: int = 120, unique: tuple[str, ...] = ()) -> dict:
+    """Append to one of the ladder's rolling logs (builds, alerts, summaries, tests). unique: fields that identify an
+    entry (e.g. run and slot); an entry with the same values replaces the earlier one, so a re-run of the record job
+    never counts a build twice."""
     log = data["ladder"].setdefault(key, [])
-    log.append({"at": now(), **entry})
+    row = {"at": now(), **entry}
+    if unique:
+        ident = tuple(entry.get(k) for k in unique)
+        for i, old in enumerate(log):
+            if tuple(old.get(k) for k in unique) == ident:
+                log[i] = {**row, "at": old.get("at") or row["at"]}
+                break
+        else:
+            log.append(row)
+    else:
+        log.append(row)
     data["ladder"][key] = log[-keep:]
     return data

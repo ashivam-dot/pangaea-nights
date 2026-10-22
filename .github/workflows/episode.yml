@@ -301,6 +301,8 @@ jobs:
       - name: Publish (refuses unless every guard passes)
         env:
           YOUTUBE_OAUTH_JSON: ${{ secrets.YOUTUBE_OAUTH_JSON }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python -m studio.cli publish --mode "$MODE"
       - name: Record in the ledger
         if: always()
@@ -312,6 +314,15 @@ jobs:
           git add ledger.json
           git -c user.name=pangaea-nights-bot -c user.email=actions@users.noreply.github.com commit -q -m "ledger: run $GITHUB_RUN_ID" || true
           git push origin HEAD:state
+      - name: Alert on a read-back mismatch
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s work/out/alerts.txt ]; then
+            gh issue create -R "$GITHUB_REPOSITORY" --label alert \
+              --title "Episode read-back mismatch ($(date -u +%Y-%m-%d))" --body-file work/out/alerts.txt
+          fi
       - name: Review files
         if: always()
         run: |

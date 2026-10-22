@@ -38,3 +38,33 @@ jobs:
             gh issue create -R "$GITHUB_REPOSITORY" --label alert --title "No upload in the last 108 hours" \
               --body "health.yml found no Pangaea Nights upload in the last 108 hours while the channel is not paused."
           fi
+
+  shorts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      PAUSED: ${{ vars.PAUSED }}
+      SHORTS_PAUSED: ${{ vars.SHORTS_PAUSED }}
+      SHORTS_LAUNCH: ${{ vars.SHORTS_LAUNCH }}
+      PANGAEA_STATE: ${{ github.workspace }}/state
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: State branch
+        run: |
+          git fetch --depth 1 origin state
+          git worktree add state FETCH_HEAD
+      - name: Hours since the last Short
+        run: python -m studio.cli ladder-health --hours 30  # a daily slot, plus the 08:00 build's slack
+      - name: Alert
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open=$(gh issue list -R "$GITHUB_REPOSITORY" --label alert --state open --search "No Short" --json number --jq length)
+          if [ "$open" = "0" ]; then
+            gh issue create -R "$GITHUB_REPOSITORY" --label alert --title "No Short in the last 30 hours" \
+              --body "health.yml (shorts job) found no Short uploaded in the last 30 hours while the Shorts are not paused."
+          fi

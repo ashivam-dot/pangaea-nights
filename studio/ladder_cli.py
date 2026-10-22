@@ -9,6 +9,7 @@
     python -m studio.cli ladder-publish --slot A --mode publish
     python -m studio.cli ladder-record                     builds, Shorts, alerts into the ledger
     python -m studio.cli ladder-learn                      24 h / 72 h numbers -> weights, queue, summary
+    python -m studio.cli ladder-health --hours 30          a Short uploaded in the last 30 h (after launch)
 
 Modes: 'publish' schedules a public release at the slot time; 'test' uploads a private video with no release time
 (and consumes no premise); 'dry' builds and gates everything but uploads nothing.
@@ -24,6 +25,11 @@ from pathlib import Path
 from . import config, ladder, ledger
 
 MODES = ("publish", "test", "dry")
+IMAGE_JOBS = 17  # image runner jobs per run, across slots: + 2 voice = 19 (studio/fanout.py)
+PLAN_TRIES = 8  # premises tried per slot before the slot is given up
+# The one private test upload the launch checklist asks for happens while PAUSED is still true; it needs this
+# separately named switch (shorts.yml input allow_test_while_paused), so a plain test dispatch never uploads.
+TEST_WHILE_PAUSED = "SHORTS_TEST_WHILE_PAUSED"
 
 
 def _dir(slot: str) -> Path:
@@ -45,6 +51,40 @@ def paused() -> bool:
     from .cli import _paused
 
     return _paused() or os.environ.get("SHORTS_PAUSED", "").strip().lower() == "true"
+
+
+def upload_refusal(mode: str) -> str | None:
+    """Why a run in this mode must not write to the channel (None = it may). Every writing mode honours the pause."""
+    if mode == "dry":
+        return "dry run: nothing is uploaded"
+    if not paused():
+        return None
+    if mode == "test" and os.environ.get(TEST_WHILE_PAUSED, "").strip().lower() == "true":
+        return None
+    return "paused (PAUSED or SHORTS_PAUSED)" + (f": a test upload needs {TEST_WHILE_PAUSED}=true" if mode == "test"
+                                                 else "")
+
+
+def _plan_alerts(rows: list[dict]) -> None:
+    """Problems found while planning, for ladder-record to file (ledger alerts + the alert issue)."""
+    root = config.WORK / "ladder"
+    root.mkdir(parents=True, exist_ok=True)
+    (root / "plan_alerts.json").write_text(json.dumps(rows, indent=1, ensure_ascii=False))
+
+
+def choose(banks: dict, data: dict, today, planned: list[dict], mode: str, override: str | None):
+    """A premise and its plan gates. Without an override, a premise whose premise, reuse, novelty or rotation gate
+    already fails is skipped for the next candidate rather than planned to certain failure. Raises BankError."""
+    skipped: set[str] = set()
+    for _ in range(PLAN_TRIES):
+        p = ladder.pick(banks, data, today, planned, override=override, exclude=skipped)
+        g = ladder.plan_problems(p, data, today, planned)
+        hard = [k for k in ("premise", "reuse", "novelty_4gram", "rotation") if not g[k]["ok"]]
+        if override or not hard or (mode != "publish" and hard == ["rotation"]):
+            return p, g, sorted(skipped)
+        print(f"skipping {p['id']}: {', '.join(hard)} not ok")
+        skipped.add(p["id"])
+    raise ladder.BankError(f"no premise passes its plan gates after {PLAN_TRIES} tries (skipped {sorted(skipped)})")
 
 
 def _output(rows: dict) -> None:
@@ -95,14 +135,21 @@ def plan(args) -> None:
     else:
         slots, why = [args.slot or "A"], f"{args.mode} run"
     run = os.environ.get("GITHUB_RUN_ID", "local")
-    planned, made = [], []
+    planned, made, alerts = [], [], []
+    seen = {a.get("premise") for a in ladder.recent_alerts(data, "demoted", today)}
+    for pid, n in sorted(ladder.demoted(data, today).items()):
+        if pid not in seen:
+            alerts.append({"kind": "demoted", "premise": pid, "run": run,
+                           "problems": [f"{n} failed publish builds in {ladder.FAILED_DAYS} days: resting it; fix the "
+                                        "premise (see the builds' failures in the ledger)"]})
     for slot in slots:
         try:
-            p = ladder.pick(banks, data, today, planned, override=args.premise or None)
+            p, g, skipped = choose(banks, data, today, planned, args.mode, args.premise or None)
         except ladder.BankError as exc:
             print(f"slot {slot}: {exc}")
+            if args.mode == "publish":  # an allowed slot that plans nothing must be seen, not end a green run
+                alerts.append({"kind": "plan", "slot": slot, "run": run, "problems": [str(exc)]})
             continue
-        g = ladder.plan_problems(p, data, today, planned)
         planned.append(p)
         _save(slot, "plan.json", {"slot": slot, "mode": args.mode, "day": today.isoformat(), "run": run,
                                   "key": f"{today.isoformat()}-{p['id']}", "premise": p, "gates": g,
@@ -111,8 +158,26 @@ def plan(args) -> None:
         print(json.dumps({"slot": slot, "premise": p["id"], "title": p["title"],
                           "gates": {k: v["ok"] for k, v in g.items()}}))
     print(f"slots: {made} ({why})")
-    _output({"slots": made, "images": [{"slot": s, "shard": f"{k}/{args.shards}"} for s in made for k in range(args.shards)],
-             "any": bool(made)})
+    _plan_alerts(alerts)
+    if alerts:
+        from . import alert
+
+        alert.send("Pangaea Nights Shorts plan:\n" + "\n".join(
+            f"- {a.get('slot') or a.get('premise')}: {'; '.join(a['problems'])}" for a in alerts))
+    _output({"slots": made, "images": image_matrix(made, args.shards), "any": bool(made)})
+    if any(a["kind"] == "plan" for a in alerts) and not made:
+        sys.exit("an allowed publish slot planned no premise")
+
+
+def image_matrix(slots: list[str], shards: int, budget: int = IMAGE_JOBS) -> list[dict]:
+    """The image jobs: every slot gets its own shards, and all of them fit in one wave of `budget` runners, so slot
+    A's render never waits on a second wave for slot B (a later slot takes fewer shards, two images on some)."""
+    out, left = [], budget
+    for i, slot in enumerate(slots):
+        n = max(1, min(shards, left - (len(slots) - i - 1)))
+        out += [{"slot": slot, "shard": f"{k}/{n}"} for k in range(n)]
+        left -= n
+    return out
 
 
 def images(args) -> None:
@@ -155,6 +220,18 @@ def _frame0_history(data: dict, frame0: Path) -> tuple[float | None, str]:
     return (max((qa.cosine(vec, p) for p in past), default=None), qa.pack(vec))
 
 
+def _hook_onset(wav: Path) -> float | None:
+    """When the hook's voice is first heard in the Short: its placement plus the onset measured in its wav."""
+    import soundfile as sf
+
+    from . import shorts_ladder
+
+    if not wav.exists():
+        return None
+    audio, sr = sf.read(str(wav), dtype="float32")
+    return shorts_ladder.HOOK_VO_AT + shorts_ladder.onset_s(audio, sr)
+
+
 def render(args) -> None:
     import subprocess
 
@@ -184,7 +261,7 @@ def render(args) -> None:
         sim, packed = _frame0_history(ledger.load(), out / "frame0.jpg")
     else:
         media, sim, packed = {}, None, None
-    g = shorts_ladder.gates(tl, frames, media, vo, img_stats, pl, sim)
+    g = shorts_ladder.gates(tl, frames, media, vo, img_stats, pl, sim, _hook_onset(d / "voice" / "hook.wav"))
     ok = shorts_ladder.all_ok(g)
     report = {"ok": ok, "failures": shorts_ladder.failures(g), "gates": g, "media": media,
               "frames": {k: v for k, v in frames.items() if k != "parallax"}, "images": img_stats,
@@ -199,17 +276,29 @@ def publish(args) -> None:
     pl, gates = _load(args.slot, "plan.json"), _load(args.slot, "out/gates.json")
     p = pl["premise"]
     why = []
-    if args.mode == "dry":
-        why.append("dry run: nothing is uploaded")
-    if args.mode == "publish" and paused():
-        why.append("paused (PAUSED or SHORTS_PAUSED)")
+    refusal = upload_refusal(args.mode)
+    if refusal:
+        why.append(refusal)
     if not gates.get("ok"):
         why.append("gates failed: " + "; ".join(gates.get("failures", [])[:6]))
-    when = None
+    why += sibling_refusals(args.slot, gates)
+    when, api, channel, existing = None, None, None, None
+    test_run = pl["run"] if args.mode == "test" else None
+    marker = youtube.ladder_marker(p, test_run)
+    if not why:
+        api = youtube.client()
+        channel = youtube.identity(api)
+        # A re-run after an upload that crashed before publish.json: find it first, keep its release time and file it
+        # under its slot, instead of refusing it as late and leaving a live Short out of the ledger.
+        existing = youtube.find(api, channel, marker)
     if args.mode == "publish" and not why:
-        when = youtube.slot_publish_at(args.slot, datetime.fromisoformat(pl["day"]).date())
-        if not when:
-            why.append(f"slot {args.slot} is less than 20 minutes away: skipped rather than late")
+        if existing:
+            when = youtube._instant(existing.get("status", {}).get("publishAt")) or \
+                youtube.slot_publish_at(args.slot, datetime.fromisoformat(pl["day"]).date(), late_ok=True)
+        else:
+            when = youtube.slot_publish_at(args.slot, datetime.fromisoformat(pl["day"]).date())
+            if not when:
+                why.append(f"slot {args.slot} is less than 20 minutes away: skipped rather than late")
     if why:
         print("not publishing:\n- " + "\n- ".join(why))
         _save(args.slot, "out/publish.json", {"published": False, "refusals": why, "mode": args.mode})
@@ -217,20 +306,36 @@ def publish(args) -> None:
             sys.exit("a planned publish slot was refused")
         return
     data = ledger.load()
-    api = youtube.client()
-    channel = youtube.identity(api)
-    test_run = pl["run"] if args.mode == "test" else None
-    tag_list = youtube.ladder_tags(p, youtube.ladder_marker(p, test_run))
+    tag_list = youtube.ladder_tags(p, marker)
     episode = youtube.related_episode(data, p["related_topic_hint"])
     desc = youtube.ladder_description(p, episode)
     res = youtube.upload_ladder(api, channel, _dir(args.slot) / "out" / "short.mp4", p, desc, tag_list, when)
-    res["comment"] = youtube.first_comment(api, res["video_id"], ladder.FIRST_COMMENT)
+    try:  # the upload is done: nothing after it may abort before publish.json is written
+        res["comment"] = youtube.first_comment(api, res["video_id"], ladder.FIRST_COMMENT)
+    except Exception as exc:
+        res["comment"] = f"pending: {type(exc).__name__}"
     res.update({"published": True, "mode": args.mode, "slot": args.slot, "related": (episode or {}).get("url")})
     _save(args.slot, "out/publish.json", res)
     if res["readback_problems"]:
         alert.send(f"Pangaea Nights Short {p['id']} ({res['url']}): read-back mismatch:\n- " +
                    "\n- ".join(res["readback_problems"]))
     print(json.dumps(res, indent=1))
+
+
+def sibling_refusals(slot: str, gates: dict) -> list[str]:
+    """Slot B against slot A of the same run (the ledger's history cannot see a Short made in this run). Only B is
+    refused, and only when A's own gates passed, so one of the two still goes out."""
+    if slot != "B":
+        return []
+    other = _dir("A") / "out" / "gates.json"
+    if not other.exists():
+        return []
+    a = json.loads(other.read_text())
+    if not a.get("ok"):
+        return []
+    from . import shorts_ladder
+
+    return [f"too close to slot A: {x}" for x in shorts_ladder.sibling_problems(gates, a)]
 
 
 def record(args) -> None:
@@ -246,12 +351,13 @@ def record(args) -> None:
         ledger.ladder_log(data, "builds", {"mode": pl["mode"], "slot": slot, "premise": p["id"], "run": pl["run"],
                                            "ok": bool(gates.get("ok")), "failures": gates.get("failures", [])[:12],
                                            "published": bool(pub.get("published")),
-                                           "refusals": pub.get("refusals")})
+                                           "refusals": pub.get("refusals")}, unique=("run", "slot"))
         if not pub.get("published"):
             continue
         if pub.get("readback_problems"):
-            ledger.ladder_log(data, "alerts", {"kind": "readback", "premise": p["id"],
-                                               "video_id": pub["video_id"], "problems": pub["readback_problems"]})
+            ledger.ladder_log(data, "alerts", {"kind": "readback", "premise": p["id"], "run": pl["run"], "slot": slot,
+                                               "video_id": pub["video_id"], "problems": pub["readback_problems"]},
+                              unique=("kind", "run", "slot"))
             mismatches.append(f"{p['id']} {pub['url']}:\n- " + "\n- ".join(pub["readback_problems"]))
         entry = {"premise": p["id"], "series": p["series"], "era": p["era"], "slot": slot,
                  "video_id": pub["video_id"], "url": pub["url"], "title": pub["title"],
@@ -259,16 +365,32 @@ def record(args) -> None:
                  "script": pl["script"], "frame0": gates.get("frame0"), "related": pub.get("related"),
                  "run": pl["run"], "checkpoints": {}}
         if pl["mode"] == "test":  # a test upload never consumes a premise or counts toward the learner
-            ledger.ladder_log(data, "tests", {k: entry[k] for k in ("premise", "video_id", "url", "run")})
+            ledger.ladder_log(data, "tests", {k: entry[k] for k in ("premise", "video_id", "url", "run", "slot")},
+                              unique=("run", "slot"))
             continue
         ledger.record_short(data, entry)
         data["ladder"]["queue"] = [q for q in data["ladder"]["queue"] if q != p["id"]]
+    plan_alerts = config.WORK / "ladder" / "plan_alerts.json"
+    for a in json.loads(plan_alerts.read_text()) if plan_alerts.exists() else []:
+        ledger.ladder_log(data, "alerts", a, unique=("kind", "run", "slot", "premise"))
+        mismatches.append(f"{a['kind']} {a.get('slot') or a.get('premise')}:\n- " + "\n- ".join(a["problems"]))
     ledger.save(data)
     # shorts.yml opens an "alert" issue from this file, so the mismatch also reaches the doctor's digest.
     alerts = config.WORK / "ladder" / "alerts.txt"
     alerts.parent.mkdir(parents=True, exist_ok=True)
     alerts.write_text("\n\n".join(mismatches) + ("\n" if mismatches else ""))
     print(json.dumps(data["ladder"]["builds"][-3:], indent=1))
+
+
+def health(args) -> None:
+    if paused():
+        print("Shorts paused: no upload expected")
+        return
+    why = ladder.stale(ledger.load(), ladder.launch_day(os.environ.get("SHORTS_LAUNCH")), datetime.now(timezone.utc),
+                       args.hours)
+    if why:
+        sys.exit(why)
+    print("Shorts are on schedule")
 
 
 def learn(args) -> None:
@@ -299,7 +421,7 @@ def register(sub) -> None:
     sub.add_parser("ladder-ramp").set_defaults(fn=ramp)
     s = sub.add_parser("ladder-plan")
     s.add_argument("--mode", choices=MODES, default="dry")
-    s.add_argument("--slot", choices=list(ladder.SLOTS), default="")
+    s.add_argument("--slot", choices=["", *ladder.SLOTS], default="", help="empty = every slot the ramp allows")
     s.add_argument("--premise", default="")
     s.add_argument("--shards", type=int, default=len(ladder.IMAGE_IDS))
     s.set_defaults(fn=plan)
@@ -318,6 +440,9 @@ def register(sub) -> None:
     s.add_argument("--mode", choices=MODES, default="dry")
     s.set_defaults(fn=publish)
     sub.add_parser("ladder-record").set_defaults(fn=record)
+    s = sub.add_parser("ladder-health")
+    s.add_argument("--hours", type=float, default=30)
+    s.set_defaults(fn=health)
     s = sub.add_parser("ladder-learn")
     s.add_argument("--dry", action="store_true")
     s.set_defaults(fn=learn)

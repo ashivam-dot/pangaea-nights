@@ -9,7 +9,9 @@
 
 1080x1920 at 30 fps, 30-45 s. Frames are rendered in Python and piped to ffmpeg (no -loop 1 inputs, no overlay
 filters), and every measurement is taken on the rendered frames, before the encoder, so the gates measure the
-picture and not the codec. Each floor has a paired ceiling.
+picture and not the codec. Motion is measured on the camera's frames before the grade's film grain, and parallax on
+each plate's measured depth spread, so neither can be passed by grain or by the camera constants alone. Each floor has
+a paired ceiling.
 """
 from __future__ import annotations
 
@@ -34,13 +36,16 @@ TOTAL = (30.0, 45.0)
 FADE = 0.22  # overlays fade in over this long
 
 GATES = {
-    "duration_s": (30.0, 45.0), "hook_vo_start_s": (0.0, 0.30), "hook_hold_s": (1.6, 4.2), "option_hold_s": HOLD,
-    "parallax_frac": (0.005, 0.04), "banner_height_frac": (0.10, 0.28), "banner_contrast": (4.5, 18.0),
+    "duration_s": (30.0, 45.0), "hook_vo_onset_s": (0.0, 0.30), "hook_hold_s": (1.6, 4.2),
+    "option_vo_s": (0.5, HOLD[1] - OPTION_LEAD - 0.10), "parallax_frac": (0.005, 0.04), "banner_height_frac": (0.10, 0.28), "banner_contrast": (4.5, 18.0),
     "banner_ocr": (0.75, 1.0), "frame0_luma": (90.0, 170.0), "luma": (60.0, 200.0), "luma_drop": (0.0, 0.35),
     "motion": (0.15, 9.0), "loudness_lufs": (-15.0, -13.0), "true_peak_db": (-12.0, -1.5), "wer": (0.0, 0.08),
-    "wpm": (140.0, 190.0), "prompt_similarity": (0.25, 1.0), "option_pair_similarity": (0.30, 0.90),
+    "wer_line": (0.0, 0.25), "wpm": (160.0, 190.0), "prompt_similarity": (0.25, 1.0), "option_pair_similarity": (0.30, 0.90),
     "frame0_vs_history": (0.0, 0.93), "novelty_4gram": (0.0, ladder.NOVELTY_MAX), "fps": (FPS, FPS),
 }
+# The bank check estimates every line at the slowest pace the wpm gate accepts, and the timeline must still fit with
+# this much room under the total ceiling (a Whisper retake reads a line 4% slower).
+FIT_MARGIN_S = 0.3
 # Ladder camera moves (fractions of the plate margin, as in render.MOTIONS): steadier than the sleep moves, but with
 # enough depth parallax to feel alive on a phone.
 MOTIONS = [
@@ -111,6 +116,30 @@ def timeline(p: dict, durations: dict[str, float], fps: int = FPS) -> dict:
             "verdict_start": round(shots[-3]["start"], 3), "problems": problems}
 
 
+def estimated_durations(p: dict, wpm: float) -> dict[str, float]:
+    """Line lengths at a given pace (written words, as ladder_voice.wpm counts them), plus Kokoro's lead and tail."""
+    import re
+
+    from .ladder_voice import line_id
+
+    return {line_id(s): len(re.findall(r"[A-Za-z0-9']+", s["text"])) * 60.0 / wpm + 0.1
+            for s in ladder.segments(p)}
+
+
+def fit_problems(p: dict) -> list[str]:
+    """Will this premise's narration fit the timeline at the slowest pace the wpm gate accepts? Checked at bank time,
+    so a premise that cannot fit fails here and not after a whole image, voice and render run."""
+    tl = timeline(p, estimated_durations(p, GATES["wpm"][0]))
+    out = [f"at {GATES['wpm'][0]:.0f} wpm: {x}" for x in tl["problems"] if not x.startswith("total")]
+    if tl["seconds"] > TOTAL[1] - FIT_MARGIN_S:
+        out.append(f"at {GATES['wpm'][0]:.0f} wpm the Short runs {tl['seconds']:.2f}s: over {TOTAL[1] - FIT_MARGIN_S:.1f}s "
+                   "(shorten the verdict, the hook or the longest options)")
+    if tl["hook_end"] > GATES["hook_hold_s"][1]:
+        out.append(f"at {GATES['wpm'][0]:.0f} wpm the hook holds {tl['hook_end']:.2f}s: over "
+                   f"{GATES['hook_hold_s'][1]}s")
+    return out
+
+
 def shot_at(tl: dict, f: int) -> dict:
     # Option 1 starts at frame 0 but option 2 starts later: the last shot whose span holds f, from the end.
     for s in reversed(tl["shots"]):
@@ -126,13 +155,21 @@ def shot_u(s: dict, f: int, fps: int = FPS) -> float:
     return (f / fps - s["start"]) / max(s["end"] - s["start"], 1e-6)
 
 
-def parallax_fraction(motion: dict, plate_w: int, plate_h: int, w: int = W, h: int = H) -> float:
+def depth_spread(depth: np.ndarray) -> float:
+    """How much depth the plate really has: the 10th-90th percentile spread of its depth map (0 = flat, 1 = the
+    nearest tenth sits a whole depth unit in front of the farthest tenth)."""
+    lo, hi = np.percentile(depth[::4, ::4], (10, 90))
+    return float(hi - lo)
+
+
+def parallax_fraction(motion: dict, plate_w: int, plate_h: int, spread: float, w: int = W, h: int = H) -> float:
     """How far near ground moves against far ground over one shot, as a fraction of the frame width: the depth
-    offsets of render.Camera (par x margin, at depth +-0.5) plus the depth-dependent zoom."""
+    offsets of render.Camera (par x margin x depth) plus the depth-dependent zoom, on this plate's measured depth
+    spread. A flat or degenerate depth map has no parallax, whatever the camera move asks for."""
     mx, my = (plate_w - w) / 2, (plate_h - h) / 2
     lateral = 2 * float(np.hypot(motion["par"][0] * mx, motion["par"][1] * my))
     zoom = abs(motion["dz"][1] - motion["dz"][0]) * w
-    return (lateral + zoom) / w
+    return (lateral + zoom) * spread / w
 
 
 def captions(tl: dict, voice: dict) -> list[dict]:
@@ -161,9 +198,32 @@ def frame_luma(frame: np.ndarray) -> float:
     return float((0.299 * s[..., 0] + 0.587 * s[..., 1] + 0.114 * s[..., 2]).mean())
 
 
+def motion_sample(frame: np.ndarray) -> np.ndarray:
+    """The camera's picture at 1/8 size, for the motion measure. Taken before the grade's film grain and the overlays,
+    so it measures the camera move on the plate: a frozen picture scores 0, however much grain is laid on top."""
+    import cv2
+
+    h, w = frame.shape[:2]
+    return cv2.resize(frame, (max(w // 8, 1), max(h // 8, 1)), interpolation=cv2.INTER_AREA).astype(np.float32)
+
+
+def motion_diffs(samples: list[np.ndarray]) -> list[float]:
+    return [float(np.abs(b - a).mean()) for a, b in zip(samples, samples[1:])]
+
+
+def onset_s(audio: np.ndarray, sr: int, floor: float = 0.02) -> float:
+    """When a line's voice actually starts: the first sample above floor x its peak, in seconds."""
+    a = np.abs(np.asarray(audio, np.float32))
+    if a.ndim > 1:
+        a = a.max(axis=1)
+    loud = np.flatnonzero(a > floor * max(float(a.max(initial=0.0)), 1e-6))
+    return float(loud[0]) / sr if loud.size else float(len(a)) / sr
+
+
 def luma_report(lumas: list[float], diffs: list[float], cuts: list[int]) -> dict:
     """Per-frame luma (60-200), the largest frame-to-frame drop away from cuts (at most 35%), and how much the
-    picture moves at all (median mean-absolute frame difference: a still image fails, so does strobing)."""
+    camera moves at all (median mean-absolute difference of the ungraded camera frames: a still image fails, so does
+    strobing)."""
     cut = set(cuts)
     drops = [(lumas[i - 1] - lumas[i]) / max(lumas[i - 1], 1.0) for i in range(1, len(lumas)) if i not in cut]
     motion = [d for i, d in enumerate(diffs, start=1) if i not in cut]
@@ -212,14 +272,36 @@ def _pick_images(reports: list[dict]) -> tuple[dict[str, str], dict]:
     stats = {"missing": [k for k in ladder.IMAGE_IDS if k not in takes], "pair_max": sim,
              "pair_min": min((p[0] for p in pairs), default=sim),
              "prompt_similarity_min": min((takes[k][choice[k]]["similarity"] for k in opts), default=None),
-             "choice": choice}
+             "choice": choice, "embeddings": {k: takes[k][choice[k]]["embedding"] for k in opts}}
     return files, stats
+
+
+def sibling_problems(mine: dict, other: dict) -> list[str]:
+    """Two Shorts built in the same run (slots A and B) never see each other in the ledger's history, so compare
+    them directly: first frames at most frame0_vs_history apart, and no option image of one within
+    option_pair_similarity of an option image of the other. mine/other: the slots' out/gates.json."""
+    from . import qa
+
+    out = []
+    if mine.get("frame0") and other.get("frame0"):
+        sim = qa.cosine(qa.unpack(mine["frame0"]), qa.unpack(other["frame0"]))
+        if sim > GATES["frame0_vs_history"][1]:
+            out.append(f"first frame is {sim:.3f} similar to the other slot's (ceiling "
+                       f"{GATES['frame0_vs_history'][1]})")
+    a = (mine.get("images") or {}).get("embeddings") or {}
+    b = (other.get("images") or {}).get("embeddings") or {}
+    pairs = [(qa.cosine(qa.unpack(x), qa.unpack(y)), i, j) for i, x in a.items() for j, y in b.items()]
+    if pairs:
+        sim, i, j = max(pairs)
+        if sim > GATES["option_pair_similarity"][1]:
+            out.append(f"option image {i} is {sim:.3f} similar to the other slot's {j} (ceiling "
+                       f"{GATES['option_pair_similarity'][1]})")
+    return out
 
 
 def render(p: dict, tl: dict, voice: dict, images: Path, files: dict[str, str], out: Path,
            size: tuple[int, int] = (W, H)) -> dict:
     """Frames to out/video.mp4 (no audio), plus frame0.jpg and review stills; returns the frame measurements."""
-    import cv2
     from PIL import Image
 
     from . import overlay
@@ -250,16 +332,22 @@ def render(p: dict, tl: dict, voice: dict, images: Path, files: dict[str, str], 
     enc = rd.Encoder(out / "video.mp4", w, h, crf=19, maxrate="9M", fps=fps)
     lumas, diffs, prev = [], [], None
     stills = {s["f0"] + (s["f1"] - s["f0"]) // 2: s["image"] for s in tl["shots"]}
-    parallax = {}
+    parallax, spreads = {}, {}
     ci = 0
     for f in range(tl["frames"]):
         t = f / fps
         s = shot_at(tl, f)
         pl = plate(s["image"])
         motion = MOTIONS[s["motion"]]
-        if s["kind"] == "option":
-            parallax[s["n"]] = parallax_fraction(motion, pl.pw, pl.ph, w, h)
-        frame = grade.apply(cam.shoot(pl, shot_u(s, f, fps), motion), f, 1.0)
+        if s["kind"] == "option" and s["n"] not in parallax:
+            spreads[s["image"]] = spreads.get(s["image"]) or depth_spread(pl.depth)
+            parallax[s["n"]] = parallax_fraction(motion, pl.pw, pl.ph, spreads[s["image"]], w, h)
+        shot = cam.shoot(pl, shot_u(s, f, fps), motion)
+        small = motion_sample(shot)
+        if prev is not None:
+            diffs.append(float(np.abs(small - prev).mean()))
+        prev = small
+        frame = grade.apply(shot, f, 1.0)
         a = min(1.0, max(0.0, (t - s["overlay_from"]) / FADE)) if s["kind"] != "loop" else 0.0
         banner.draw(frame)
         mark.draw(frame)
@@ -282,10 +370,6 @@ def render(p: dict, tl: dict, voice: dict, images: Path, files: dict[str, str], 
                 layers.append(cap_cache[key])
             cap_cache[key].draw(frame)
         lumas.append(frame_luma(frame))
-        small = cv2.resize(frame, (w // 8, h // 8), interpolation=cv2.INTER_AREA).astype(np.float32)
-        if prev is not None:
-            diffs.append(float(np.abs(small - prev).mean()))
-        prev = small
         enc.write(frame)
         if f == 0:
             Image.fromarray(frame).save(out / "frame0.jpg", quality=92)
@@ -297,7 +381,7 @@ def render(p: dict, tl: dict, voice: dict, images: Path, files: dict[str, str], 
     rep.update({"frame0_luma": lumas[0], "loop_match": float(np.abs(lumas[0] - lumas[-1])),
                 "banner_height_frac": geo["height_frac"], "banner_contrast": overlay.banner_contrast(frame0, geo),
                 "banner_ocr": banner_ocr(frame0, geo, p["banner"]),
-                "parallax": parallax, "safe": all(overlay.inside(x.box, w, h) for x in layers)})
+                "parallax": parallax, "depth_spread": spreads, "safe": all(overlay.inside(x.box, w, h) for x in layers)})
     return rep
 
 
@@ -336,11 +420,28 @@ def count_frames(path: Path) -> int:
 # ---------------------------------------------------------------------------------------------------- gates
 
 
+def verdict_heard(voice: dict, n: int) -> bool | None:
+    """Did Whisper hear 'number N' in the verdict line? None when the transcript was not kept."""
+    from .voice import _norm_words
+
+    heard = (voice.get("segments", {}).get("verdict") or {}).get("heard")
+    if heard is None:
+        return None
+    want, got = _norm_words(f"number {n}"), _norm_words(heard)
+    return any(got[i:i + len(want)] == want for i in range(len(got) - len(want) + 1))
+
+
 def gates(tl: dict, frames: dict, media: dict, voice: dict, images: dict, plan: dict,
-          frame0_history: float | None) -> dict:
+          frame0_history: float | None, hook_onset: float | None = None) -> dict:
     """Every publish gate, as {name: {value, floor, ceiling, ok}}; the Short may publish only if all are ok."""
-    holds = [s["hold"] for s in tl["shots"] if s["kind"] == "option"]
+    vo = voice.get("durations", {})
+    # each option line as measured, unclamped: it must exist and must fit its hold with the lead and a short tail
+    opt_vo = [vo[f"o{s['n']}"] for s in tl["shots"] if s["kind"] == "option" and f"o{s['n']}" in vo]
     par = list(frames.get("parallax", {}).values())
+    seg_wer = {k: s.get("wer") for k, s in voice.get("segments", {}).items()}
+    worst = max(seg_wer.items(), key=lambda kv: -1 if kv[1] is None else kv[1], default=(None, None))
+    rotation = plan["gates"].get("rotation", {"ok": True, "problems": []})
+    heard = verdict_heard(voice, plan["premise"]["answer_n"]) if "premise" in plan else None
     g = {
         "timeline": {"ok": not tl["problems"], "problems": tl["problems"]},
         "duration_s": gate("duration_s", media.get("duration")),
@@ -348,10 +449,10 @@ def gates(tl: dict, frames: dict, media: dict, voice: dict, images: dict, plan: 
                            "ok": media.get("frames") == tl["frames"]},
         "fps": gate("fps", media.get("fps")),
         "size": {"value": media.get("size"), "ok": media.get("size") == [W, H]},
-        "hook_vo_start_s": gate("hook_vo_start_s", tl["lines"][0]["start"]),
+        "hook_vo_onset_s": gate("hook_vo_onset_s", hook_onset),
         "hook_hold_s": gate("hook_hold_s", tl["hook_end"]),
-        "option_hold_min_s": gate("option_hold_s", min(holds)),
-        "option_hold_max_s": gate("option_hold_s", max(holds)),
+        "option_vo_min_s": gate("option_vo_s", min(opt_vo) if opt_vo else None),
+        "option_vo_max_s": gate("option_vo_s", max(opt_vo) if opt_vo else None),
         "parallax_min": gate("parallax_frac", min(par) if par else None),
         "parallax_max": gate("parallax_frac", max(par) if par else None),
         "banner_height_frac": gate("banner_height_frac", frames.get("banner_height_frac")),
@@ -366,6 +467,8 @@ def gates(tl: dict, frames: dict, media: dict, voice: dict, images: dict, plan: 
         "loudness_lufs": gate("loudness_lufs", media.get("I")),
         "true_peak_db": gate("true_peak_db", media.get("true_peak")),
         "wer": gate("wer", voice.get("wer")),
+        "wer_line_max": {**gate("wer_line", worst[1]), "line": worst[0]},
+        "verdict_number_heard": {"value": heard, "ok": heard is True},
         "wpm": gate("wpm", voice.get("wpm")),
         "images_clean": {"ok": images.get("missing") == [], "missing": images.get("missing")},
         "prompt_similarity": gate("prompt_similarity", images.get("prompt_similarity_min")),
@@ -374,6 +477,8 @@ def gates(tl: dict, frames: dict, media: dict, voice: dict, images: dict, plan: 
         "frame0_vs_history": gate("frame0_vs_history", frame0_history if frame0_history is not None else 0.0),
         "novelty_4gram": gate("novelty_4gram", plan["gates"]["novelty_4gram"]["value"]),
         "premise": {"ok": plan["gates"]["premise"]["ok"] and plan["gates"]["reuse"]["ok"]},
+        # a test or dry run consumes nothing, so only a publish build is held to the rotation
+        "rotation": {"ok": rotation["ok"] or plan.get("mode") != "publish", "problems": rotation["problems"]},
     }
     return g
 

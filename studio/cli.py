@@ -120,18 +120,20 @@ def render_cmd(args) -> None:
     print(json.dumps(rep))
 
 
-def thumb_source(images: Path) -> Path:
+def thumb_source(images: Path, usable=None) -> Path:
     """The thumbnail's own image, or when every take of it failed the gates, the earliest chapter plate (plates
-    exist only for takes that passed the hard person/text checks)."""
-    if (own := images / "thumb.png").exists():
-        return own
-    plates = sorted(images.glob("c[0-9][0-9]s[0-9][0-9].jpg"))
-    if not plates:
+    exist only for takes that passed the hard person/text checks). usable(path) -> bool: skip candidates that fail
+    it (a key with no bright focal subject); when none passes, the first candidate, whose gates then report why."""
+    own = images / "thumb.png"
+    candidates = ([own] if own.exists() else []) + sorted(images.glob("c[0-9][0-9]s[0-9][0-9].jpg"))
+    if not candidates:
         raise RuntimeError("no thumbnail image and no chapter plate to fall back on")
-    return plates[0]
+    return next((c for c in candidates if usable is None or usable(c)), candidates[0])
 
 
 def finish(args) -> None:
+    from PIL import Image
+
     from . import finish as fin
     from . import shorts, thumbnail
 
@@ -144,7 +146,8 @@ def finish(args) -> None:
     words = ep["thumbnail"]["words"].split()[:5]
     if len(words) < 2:
         words = ep["title_core"].split()[:4]
-    thumb = thumbnail.build(thumb_source(W / "images"), words, out / "thumbnail.jpg")
+    key_image = thumb_source(W / "images", lambda c: not thumbnail.source_problems(Image.open(c)))
+    thumb = thumbnail.build(key_image, words, out / "thumbnail.jpg")
     key = config.series()[ep["series"]]["ambience"]
     made = [shorts.build(ep, k, W / "voice", W / "images", out, key) for k in range(len(ep["trailers"]))]
     report = fin.qa(ep, tl, final, out / "checks", thumb, made)
@@ -207,7 +210,18 @@ def publish(args) -> None:
                              youtube.after(when.replace(".000Z", "Z"), 14.5 + 24 * s["k"]))
         result["shorts"].append(res)
         _save("out/publish.json", result)
+    problems = readback_alerts(result)
+    if problems:
+        from . import alert
+
+        alert.send(f"Pangaea Nights episode {ep['id']}: read-back mismatch:\n" + "\n".join(problems))
     print(json.dumps(result, indent=1))
+
+
+def readback_alerts(pub: dict) -> list[str]:
+    """One line per uploaded video whose read-back (made for kids, privacy, publishAt) differs from what was asked."""
+    rows = [pub["episode"], *pub.get("shorts", [])] if pub.get("published") else []
+    return [f"- {r['url']}: " + "; ".join(r["readback_problems"]) for r in rows if r.get("readback_problems")]
 
 
 def promote(args) -> None:
@@ -243,6 +257,13 @@ def record(args) -> None:
              "writer": ep["writer"], "words": ep["words"], "shape": ep["shape"], "mode": ep["mode"],
              "created": ep["created"], "qa_ok": qa.get("ok"), "duration": qa.get("duration"),
              "run": os.environ.get("GITHUB_RUN_ID")}
+    mismatches = readback_alerts(pub)
+    if mismatches:
+        ledger.ladder_log(data, "alerts", {"kind": "readback", "episode": ep["id"], "run": entry["run"],
+                                           "problems": mismatches}, unique=("kind", "episode", "run"))
+    # episode.yml opens an "alert" issue from this file
+    (W / "out").mkdir(parents=True, exist_ok=True)
+    (W / "out" / "alerts.txt").write_text(f"{ep['id']}:\n" + "\n".join(mismatches) + "\n" if mismatches else "")
     if pub.get("published"):
         main = pub["episode"]
         entry.update({"video_id": main["video_id"], "url": main["url"], "publish_at": main["publish_at"],

@@ -186,8 +186,8 @@ def premise_problems(p: dict, series: str | None = None) -> list[str]:
             if not 1 <= len(words(o.get("vo", ""))) <= LIMITS["option_vo_words"]:
                 out.append(f"option {o['n']} vo has {len(words(o.get('vo', '')))} words (1-9)")
             out += [f"option {o['n']} image: {x}" for x in prompt_problems(o.get("image_prompt", ""))]
-            out += [f"option {o['n']} hits the blocklist: {b}" for b in blocklist_hits(o.get("label", "") + " " +
-                                                                                       o.get("vo", ""))]
+            out += [f"option {o['n']} hits the blocklist: {b}" for b in blocklist_hits(" ".join(
+                [o.get("label", ""), o.get("vo", ""), o.get("image_prompt", "")]))]
         labels = [o.get("label", "").lower() for o in opts]
         if len(set(labels)) != len(labels):
             out.append("two options share a label")
@@ -213,7 +213,28 @@ def premise_problems(p: dict, series: str | None = None) -> list[str]:
     if not 2 <= len(gates.sentences(p["description"])) <= 3:
         out.append("description must be 2-3 sentences")
     out += [f"description hits the blocklist: {b}" for b in blocklist_hits(p["description"])]
+    # Everything that ships: the banner is burned into frame 0 (the thumbnail), the lines are spoken.
+    for field_ in ("banner", "hook_vo", "verdict_vo", "art_direction"):
+        out += [f"{field_} hits the blocklist: {b}" for b in blocklist_hits(p[field_])]
+    out += [f"fact hits the blocklist: {b}" for b in blocklist_hits(str(fact.get("text", "")))]
+    if len(opts) == OPTIONS and all(isinstance(o, dict) for o in opts):
+        # The prompts the image model actually gets: art_direction rides on all nine, and is most of the end plate.
+        for job in image_jobs(p):
+            out += [f"{job['id']} prompt: {x}" for x in composed_prompt_problems(job["prompt"])]
+        if not out:
+            from .shorts_ladder import fit_problems
+
+            out += fit_problems(p)
     return out
+
+
+def composed_prompt_problems(prompt: str) -> list[str]:
+    """The people, text and prop bans on a composed image prompt (scene + art direction + house style). The warm-light
+    rule is checked on each scene alone: the house style always names a warm focal light."""
+    low = " " + prompt.lower() + " "
+    out = gates.check_prompt(prompt)
+    return out + [f"mentions '{w.strip()}'" for w in EXTRA_PROMPT_BANS
+                  if re.search(r"\b" + re.escape(w.strip()) + r"\b", low)]
 
 
 def _verdict_claim(verdict: str) -> str:
@@ -334,10 +355,43 @@ def weight(data: dict, series: str, era: str) -> float:
     return float((data.get("ladder") or {}).get("weights", {}).get(f"{series}|{era}", 1.0))
 
 
+FAILED_MAX = 2  # publish builds of one premise that made nothing, within FAILED_DAYS: then it rests
+FAILED_DAYS = 14
+
+
+def demoted(data: dict, at: date) -> dict[str, int]:
+    """{premise: failed publish builds in the last FAILED_DAYS} for every premise at or over FAILED_MAX. A premise
+    that keeps failing a gate that does not change from day to day would otherwise be picked again every day (its
+    series stays the longest rested) and hold every slot; it rests until a human fixes it or the window passes."""
+    count: Counter = Counter()
+    for b in builds(data):
+        if b.get("mode") != "publish" or b.get("published") or not b.get("premise"):
+            continue
+        try:
+            day = _day(b["at"]) if b.get("at") else at
+        except ValueError:
+            day = at
+        if at - timedelta(days=FAILED_DAYS) < day <= at:
+            count[b["premise"]] += 1
+    return {k: n for k, n in count.items() if n >= FAILED_MAX}
+
+
+def recent_alerts(data: dict, kind: str, at: date, days: int = FAILED_DAYS) -> list[dict]:
+    out = []
+    for a in (data.get("ladder") or {}).get("alerts", []):
+        try:
+            if a.get("kind") == kind and at - timedelta(days=days) < _day(a.get("at") or "") <= at:
+                out.append(a)
+        except ValueError:
+            continue
+    return out
+
+
 def pick(banks: dict[str, list[dict]], data: dict, at: date, planned: list[dict] | None = None,
-         override: str | None = None) -> dict:
+         override: str | None = None, exclude: set[str] | None = None) -> dict:
     """The next premise: a queued pt.2 first, then the best-weighted series that has rested longest, within the
-    rotation rules; never a premise already published. planned = premises already chosen for earlier slots today."""
+    rotation rules; never a premise already published, one that keeps failing (demoted) or one in exclude.
+    planned = premises already chosen for earlier slots today. An override is taken as given."""
     planned = planned or []
     taken = used_premises(data) | {p["id"] for p in planned}
     if override:
@@ -347,6 +401,7 @@ def pick(banks: dict[str, list[dict]], data: dict, at: date, planned: list[dict]
         if p["id"] in taken:
             raise BankError(f"premise {override} was already published")
         return p
+    taken |= set(demoted(data, at)) | set(exclude or ())
     past = [(_day(s["publish_at"]), s["series"]) for s in history(data)] + [(at, p["series"]) for p in planned]
     last_used = {s: i for i, (_, s) in enumerate(past)}
     queue = [q for q in (data.get("ladder") or {}).get("queue", []) if q not in taken]
@@ -438,3 +493,19 @@ def slots_allowed(launch: date | None, today: date, past_builds: list[dict]) -> 
         return ["A"], (f"slot B waits for {RAMP_CLEAN} gate-clean Shorts in a row "
                        f"(have {len(recent)}, {bad} failed)")
     return ["A", "B"], f"launch day {day}: both slots"
+
+
+def stale(data: dict, launch: date | None, now: datetime, hours: float) -> str | None:
+    """Why the Shorts look stalled (None = fine): no Short uploaded for `hours` once the launch day has begun. The
+    long-form health check reads last_upload, which a Short never touches, so this is the Shorts' own check."""
+    if launch is None or now.date() < launch:
+        return None
+    ups = [s["uploaded_at"] for s in data.get("shorts", []) if s.get("video_id") and s.get("uploaded_at")]
+    since = datetime(launch.year, launch.month, launch.day, tzinfo=timezone.utc)
+    if ups:
+        since = max(since, max(datetime.fromisoformat(u.replace("Z", "+00:00")) for u in ups))
+    gap = (now - since).total_seconds() / 3600
+    if gap <= hours:
+        return None
+    return (f"no Short uploaded for {gap:.0f} hours (limit {hours:g})" if ups else
+            f"no Short uploaded since the launch on {launch.isoformat()} ({gap:.0f} hours)")

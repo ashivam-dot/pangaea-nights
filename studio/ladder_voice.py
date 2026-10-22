@@ -14,8 +14,15 @@ from . import ladder
 
 VOICE = os.environ.get("PANGAEA_LADDER_VOICE", "am_michael")
 TARGET_WPM = 165.0
+PACE_TOLERANCE = 3.0  # wpm: corrections continue until the pace is this close to TARGET_WPM
+PACE_TAKES = 3
 SPEED = (0.85, 1.30)
 MAX_WER = 0.08
+
+
+def line_id(segment: dict) -> str:
+    """hook, o1..o8, verdict, cta: the name of one narration line (and of its wav)."""
+    return segment["kind"] if segment["kind"] in ("hook", "verdict", "cta") else f"o{segment['n']}"
 
 
 def wer(expected: str, heard: str) -> float:
@@ -70,18 +77,25 @@ def narrate(p: dict, out: Path) -> dict:
     from .voice import SR
 
     out.mkdir(parents=True, exist_ok=True)
-    lines = [{"id": "hook" if s["kind"] == "hook" else "verdict" if s["kind"] == "verdict" else
-              "cta" if s["kind"] == "cta" else f"o{s['n']}", "text": s["text"]} for s in ladder.segments(p)]
+    lines = [{"id": line_id(s), "text": s["text"]} for s in ladder.segments(p)]
     speed = 1.0
     segs = _take(lines, speed)
     pace = wpm(segs)
-    if abs(pace - TARGET_WPM) > 8:  # one correction toward the target pace
-        speed = min(max(speed * TARGET_WPM / pace, SPEED[0]), SPEED[1])
+    # Corrections toward the target pace (Kokoro's pace is close to linear in speed). The bank check
+    # (shorts_ladder.fit_problems) assumes no slower than the wpm gate's floor, so a slow read must not be accepted.
+    for _ in range(PACE_TAKES - 1):
+        if abs(pace - TARGET_WPM) <= PACE_TOLERANCE:
+            break
+        new = min(max(speed * TARGET_WPM / pace, SPEED[0]), SPEED[1])
+        if new == speed:
+            break
+        speed = new
         segs = _take(lines, speed)
         pace = wpm(segs)
     for attempt in range(2):
         for s in segs.values():
-            s["wer"] = round(wer(s["text"], _transcribe(s["audio"], SR)), 3)
+            s["heard"] = _transcribe(s["audio"], SR).strip()
+            s["wer"] = round(wer(s["text"], s["heard"]), 3)
         bad = [k for k, s in segs.items() if s["wer"] > MAX_WER]
         if not bad or attempt:
             break

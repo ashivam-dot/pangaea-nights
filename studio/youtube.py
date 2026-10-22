@@ -182,9 +182,14 @@ def upload(api, channel: dict, path: Path, title: str, desc: str, tag_list: list
             "privacyStatus": "private", "publishAt": when, "selfDeclaredMadeForKids": False,
             "containsSyntheticMedia": True, "embeddable": True, "publicStatsViewable": True}}).execute()
         video = api.videos().list(part="snippet,status", id=video_id).execute()["items"][0]
+    # the same read-back as every Short: made-for-kids (as YouTube classified it), privacy and the release time
+    want = _instant(when) if not existing else (_instant(video["status"].get("publishAt")) or _instant(when))
     result = {"video_id": video_id, "url": f"https://www.youtube.com/watch?v={video_id}",
               "title": video["snippet"]["title"], "privacy": video["status"]["privacyStatus"],
-              "publish_at": video["status"].get("publishAt"), "existing": bool(existing)}
+              "publish_at": video["status"].get("publishAt"), "existing": bool(existing),
+              "made_for_kids": video["status"].get("madeForKids"),
+              "self_declared_made_for_kids": video["status"].get("selfDeclaredMadeForKids"),
+              "readback_problems": readback_problems(video, want)}
     if thumbnail and thumbnail.exists():
         from googleapiclient.errors import HttpError
         from googleapiclient.http import MediaFileUpload
@@ -216,16 +221,17 @@ LADDER_DISCLOSURE = ("How this was made: the images are AI-generated artistic re
                      "against the Wikipedia revision linked below.")
 
 
-def slot_publish_at(slot: str, build_day, now: datetime | None = None) -> str | None:
+def slot_publish_at(slot: str, build_day, now: datetime | None = None, late_ok: bool = False) -> str | None:
     """The slot's release time for a build on build_day (slot A 14:30 UTC the same day, slot B 00:30 UTC the next),
-    or None when it is less than twenty minutes away: a late build skips its slot rather than drift into the next."""
+    or None when it is less than twenty minutes away: a late build skips its slot rather than drift into the next.
+    late_ok: the time regardless (an upload that already exists keeps its slot)."""
     from . import ladder
 
     hour, minute = ladder.SLOTS[slot]
     at = datetime(build_day.year, build_day.month, build_day.day, hour, minute, tzinfo=timezone.utc)
     if slot == "B":
         at += timedelta(days=1)
-    if at < (now or datetime.now(timezone.utc)) + timedelta(minutes=20):
+    if not late_ok and at < (now or datetime.now(timezone.utc)) + timedelta(minutes=20):
         return None
     return at.strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -290,8 +296,16 @@ def _instant(text: str | None) -> str | None:
     return text.replace(".000Z", "Z") if text else None
 
 
-def readback_problems(video: dict, when: str | None) -> list[str]:
-    """Where the uploaded video's status (from videos.list) differs from what was asked (empty = it matches)."""
+def _released(when: str | None, now: datetime | None) -> bool:
+    if not when:
+        return False
+    at = datetime.strptime(_instant(when), "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    return at <= (now or datetime.now(timezone.utc))
+
+
+def readback_problems(video: dict, when: str | None, now: datetime | None = None) -> list[str]:
+    """Where the uploaded video's status (from videos.list) differs from what was asked (empty = it matches). Once
+    the release time has passed (a re-run that found the earlier upload), public is the expected privacy."""
     st = video.get("status", {})
     out = []
     if video.get("snippet", {}).get("channelId") != config.CHANNEL_ID:
@@ -300,9 +314,12 @@ def readback_problems(video: dict, when: str | None) -> list[str]:
         out.append(f"madeForKids is {st.get('madeForKids')!r}, not False")
     if st.get("selfDeclaredMadeForKids") is not False:
         out.append(f"selfDeclaredMadeForKids is {st.get('selfDeclaredMadeForKids')!r}, not False")
-    if st.get("privacyStatus") != "private":
+    if _released(when, now):
+        if st.get("privacyStatus") not in ("private", "public"):
+            out.append(f"privacyStatus is {st.get('privacyStatus')!r} after the release time")
+    elif st.get("privacyStatus") != "private":
         out.append(f"privacyStatus is {st.get('privacyStatus')!r}, not 'private' before release")
-    if _instant(st.get("publishAt")) != when:
+    if _instant(st.get("publishAt")) != when and not (_released(when, now) and st.get("privacyStatus") == "public"):
         out.append(f"publishAt is {st.get('publishAt')!r}, not {when!r}")
     if "containsSyntheticMedia" in st and st["containsSyntheticMedia"] is not True:
         out.append("containsSyntheticMedia is not True")

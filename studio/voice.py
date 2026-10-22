@@ -54,15 +54,26 @@ def _sentence(text: str, voice: str, speed: float) -> Take:
         pieces.append(audio)
         t += len(audio) / SR
     audio = np.concatenate(pieces) if pieces else np.zeros(1, np.float32)
-    return Take(_trim(audio), words)
+    audio, cut = _trim(audio)
+    return Take(audio, shift_words(words, -cut / SR, len(audio) / SR))
 
 
-def _trim(audio: np.ndarray, floor: float = 0.008) -> np.ndarray:
+def _trim(audio: np.ndarray, floor: float = 0.008) -> tuple[np.ndarray, int]:
+    """The audio without its leading and trailing silence (keeping 40 ms each side), and how many samples were cut
+    from the front: Kokoro's word times count from the untrimmed start, so they must move back by that much."""
     loud = np.flatnonzero(np.abs(audio) > floor * max(np.abs(audio).max(initial=0.0), 1e-6))
     if not loud.size:
-        return audio
+        return audio, 0
     keep = int(0.04 * SR)
-    return audio[max(0, loud[0] - keep): loud[-1] + keep]
+    start = max(0, loud[0] - keep)
+    return audio[start: loud[-1] + keep], int(start)
+
+
+def shift_words(words: list[dict], offset: float, length: float | None = None) -> list[dict]:
+    """Word times moved by offset seconds, clamped to [0, length]."""
+    hi = float("inf") if length is None else length
+    return [{**w, "start": min(max(w["start"] + offset, 0.0), hi), "end": min(max(w["end"] + offset, 0.0), hi)}
+            for w in words]
 
 
 def whisper():

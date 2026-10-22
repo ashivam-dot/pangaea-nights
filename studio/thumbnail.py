@@ -8,7 +8,13 @@ then three gates.
   It is measured on the composed picture at feed size, so it reads what a viewer sees, not the encoder.
 
 The key image is first eased toward a bright mid-tone (brighten), then failing layouts are retried with other
-shades and sizes.
+shades and sizes. Because brighten can lift any frame over the luma floor, two more gates read the art itself:
+
+- Focal light, on the key image before brighten: its brightest 5% must reach FOCAL_MIN (a bright creature or
+  light exists); a uniformly dark key is rejected however far it could be lifted (cli.thumb_source then tries the
+  next image).
+- Tonal spread, a floor with its ceiling, on the finished thumbnail: p90-p10 luma within SPREAD, so a gamma lift
+  that flattens the shadows into grey fails, as does a picture that is all clipped black and white.
 """
 from __future__ import annotations
 
@@ -28,6 +34,8 @@ MAX_WORDS = 4
 LUMA_FLOOR, LUMA_CEIL = 70.0, 200.0
 LUMA_TARGET = (115.0, 185.0)  # brighten() eases the key image into this band before the words go on
 CONTRAST_MIN = 4.5
+FOCAL_MIN = 100.0  # 95th-percentile luma of the key image before brighten
+SPREAD = (40.0, 230.0)  # p90 - p10 luma of the finished thumbnail
 WEIGHT = 700
 WIDTH = 0.58  # the words may span this share of the width
 STOP = {"the", "of", "a", "an", "and", "in", "on", "to", "for", "at", "with"}
@@ -56,6 +64,31 @@ def luma_problems(value: float) -> list[str]:
         return [f"thumbnail too dark (mean luma {value:.0f} < {LUMA_FLOOR:.0f})"]
     if value > LUMA_CEIL:
         return [f"thumbnail too bright (mean luma {value:.0f} > {LUMA_CEIL:.0f})"]
+    return []
+
+
+def _luma_feed(img: Image.Image) -> np.ndarray:
+    a = np.asarray(img.convert("RGB").resize((320, 180), Image.BILINEAR), np.float32)
+    return 0.299 * a[..., 0] + 0.587 * a[..., 1] + 0.114 * a[..., 2]
+
+
+def source_problems(img: Image.Image) -> list[str]:
+    """The key image as generated, before any lift: is there a bright focal subject at all?"""
+    focal = float(np.percentile(_luma_feed(img), 95))
+    return [] if focal >= FOCAL_MIN else [f"key image has no bright focal subject (95th-percentile luma {focal:.0f} "
+                                          f"< {FOCAL_MIN:.0f}): a dark key lifted by brighten() is still flat"]
+
+
+def spread(img: Image.Image) -> float:
+    lo, hi = np.percentile(_luma_feed(img), (10, 90))
+    return float(hi - lo)
+
+
+def spread_problems(value: float) -> list[str]:
+    if value < SPREAD[0]:
+        return [f"thumbnail is flat (p90-p10 luma {value:.0f} < {SPREAD[0]:.0f})"]
+    if value > SPREAD[1]:
+        return [f"thumbnail is harsh (p90-p10 luma {value:.0f} > {SPREAD[1]:.0f})"]
     return []
 
 
@@ -174,19 +207,21 @@ def build(image_png: Path, words: list[str], out: Path, upscale: bool = True) ->
     if not 2 <= len(words) <= MAX_WORDS:
         raise ValueError(f"thumbnail needs 2-{MAX_WORDS} words, got {len(words)}")
     src = Image.open(image_png).convert("RGB")
+    key_problems = source_problems(src)
     base = brighten(plates.upscale(src, (W, H)) if upscale else plates.cover(src, (W, H)))
     attempts, best = [], None
     for size, shade, panel in ATTEMPTS:
         img, box, plain = _layout(base, words, size, shade, panel)
         behind = np.asarray(plain)[box[1]:box[3], box[0]:box[2]]
         ratio = contrast(render.INK, behind)
-        luma = mean_luma(img)
+        luma, tone = mean_luma(img), spread(img)
         ok, seen = legible(img, words, box)
         problems = ([] if ok else ["OCR could not read every word"]) + \
                    ([] if ratio >= CONTRAST_MIN else [f"text contrast {ratio:.1f} < {CONTRAST_MIN}"]) + \
-                   luma_problems(luma)
+                   luma_problems(luma) + spread_problems(tone) + key_problems
         attempts.append({"size": size, "shade": shade, "panel": panel, "contrast": round(ratio, 2),
-                         "luma": round(luma, 1), "ocr": seen, "ok": not problems, "problems": problems})
+                         "luma": round(luma, 1), "spread": round(tone, 1), "ocr": seen, "ok": not problems,
+                         "problems": problems})
         if best is None or len(problems) < len(best[1]):
             best = (img, problems, luma)
         if not problems:

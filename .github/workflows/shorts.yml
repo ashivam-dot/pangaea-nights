@@ -26,9 +26,14 @@ on:
         description: "premise id (optional)"
         type: string
         default: ""
+      allow_test_while_paused:
+        description: "test mode only: make a private test upload even while PAUSED/SHORTS_PAUSED is set"
+        type: boolean
+        default: false
 
 concurrency:
-  group: shorts
+  # one run per mode at a time: a manual dry run must not queue behind (or be dropped by) the daily publish run
+  group: shorts-${{ github.event_name == 'schedule' && 'publish' || (inputs.dry_run != false && 'dry' || inputs.mode) }}
   cancel-in-progress: false
 
 permissions:
@@ -81,6 +86,8 @@ jobs:
         env:
           SLOT: ${{ inputs.slot != 'auto' && inputs.slot || '' }}
           PREMISE: ${{ inputs.premise }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python -m studio.cli ladder-plan --mode "$MODE" --slot "$SLOT" --premise "$PREMISE"
       - uses: actions/upload-artifact@v5
         if: steps.plan.outputs.any == 'true'
@@ -95,7 +102,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 120
     strategy:
-      fail-fast: true
+      fail-fast: false  # one slot's failed shard must not cancel the other slot's images
       max-parallel: 17  # + 2 voice = 19, so an episode plan job alongside keeps the total at 20
       matrix:
         include: ${{ fromJSON(needs.plan.outputs.images) }}
@@ -138,7 +145,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
         slot: ${{ fromJSON(needs.plan.outputs.slots) }}
     steps:
@@ -166,6 +173,7 @@ jobs:
 
   render:
     needs: [plan, images, voice]
+    if: ${{ !cancelled() && needs.plan.outputs.any == 'true' }}  # a slot with missing images/voice fails its own gates
     runs-on: ubuntu-24.04
     timeout-minutes: 60
     strategy:
@@ -241,12 +249,19 @@ jobs:
         with:
           name: ladder-out-${{ matrix.slot }}
           path: work/ladder/${{ matrix.slot }}/out
+      - name: Same-day sibling (slot B is compared with slot A's gates)
+        uses: actions/download-artifact@v6
+        continue-on-error: true
+        with:
+          name: ladder-out-${{ matrix.slot == 'B' && 'A' || 'B' }}
+          path: work/ladder/${{ matrix.slot == 'B' && 'A' || 'B' }}/out
       - name: Publish (refuses unless every gate passed and the channel is live)
         env:
           SLOT: ${{ matrix.slot }}
           YOUTUBE_OAUTH_JSON: ${{ secrets.YOUTUBE_OAUTH_JSON }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SHORTS_TEST_WHILE_PAUSED: ${{ inputs.allow_test_while_paused == true && 'true' || 'false' }}
         run: python -m studio.cli ladder-publish --slot "$SLOT" --mode "$MODE"
       - uses: actions/upload-artifact@v5
         if: always()
@@ -297,13 +312,13 @@ jobs:
           git add ledger.json
           git -c user.name=pangaea-nights-bot -c user.email=actions@users.noreply.github.com commit -q -m "ledger: shorts run $GITHUB_RUN_ID" || true
           git push origin HEAD:state
-      - name: Alert on a read-back mismatch
+      - name: Alert on a read-back mismatch or a plan alert
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           if [ -s work/ladder/alerts.txt ]; then
             gh issue create -R "$GITHUB_REPOSITORY" --label alert \
-              --title "Short read-back mismatch ($(date -u +%Y-%m-%d))" --body-file work/ladder/alerts.txt
+              --title "Shorts alert ($(date -u +%Y-%m-%d))" --body-file work/ladder/alerts.txt
           fi
 
   alert:
