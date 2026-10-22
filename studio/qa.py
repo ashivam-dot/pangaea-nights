@@ -127,6 +127,35 @@ def embed(img: Image.Image) -> np.ndarray:
     return emb[0].numpy().astype(np.float32)
 
 
+# Figure check for the bright, dramatic ladder scenes. The softmax over LABELS has calm sleep-documentary "good"
+# labels only, so a sunlit fireball, smoke column or root tunnel matches none of them and its mass leaks into "person"
+# (0.30-0.72 on empty scenes in dry run 2), while small human silhouettes in a landscape score as low as 0.00. This
+# check is a two-sided contrast: deep-time scene types against people. On 31 empty ladder takes it scored at most 0.38;
+# on 14 Commons photos of people (portraits, hikers, silhouettes, beach figures) at least 0.64.
+FIGURE_NO = ["an empty landscape", "a prehistoric animal", "a dramatic sky with fire, smoke or lightning",
+             "a cave, burrow or hollow tree", "the sea, a shore or underwater", "plants, a forest or roots",
+             "a volcano or lava"]
+FIGURE_YES = ["a landscape with a person in it", "a human silhouette", "a person", "people",
+              "a small figure of a person in the distance", "a diver or a swimmer"]
+FIGURE_LIMIT = 0.50
+_figure_emb = None
+
+
+def figure(img: Image.Image) -> float:
+    """Probability mass on the people side of the FIGURE contrast (0-1)."""
+    global _figure_emb
+    import torch
+
+    model, _, tok = _load()[:3]
+    with torch.no_grad():
+        if _figure_emb is None:
+            _figure_emb = model.encode_text(tok(FIGURE_NO + FIGURE_YES)).float()
+            _figure_emb /= _figure_emb.norm(dim=-1, keepdim=True)
+        emb = torch.from_numpy(embed(img)).unsqueeze(0)
+        probs = (100 * emb @ _figure_emb.T).softmax(dim=-1)[0]
+    return float(probs[len(FIGURE_NO):].sum())
+
+
 def pack(vec: np.ndarray) -> str:
     """An embedding as base64 float16, small enough to keep in JSON and in the ledger."""
     import base64

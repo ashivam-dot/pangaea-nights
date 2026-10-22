@@ -316,3 +316,28 @@ def test_exposure_grade_cannot_rescue_a_flat_muddy_take():
     _, st = li.expose(flat, 130.0)
     probs = li.exposure_problems(st)
     assert any("focal light" in p for p in probs) and any("tonal spread" in p for p in probs)
+
+
+def _verdict(reasons, brightness=130.0, similarity=0.30):
+    from types import SimpleNamespace
+    return SimpleNamespace(reasons=reasons, brightness=brightness, similarity=similarity)
+
+
+def test_ladder_person_gate_uses_figure_contrast_not_sleepdoc_label():
+    from studio import ladder_images as li, qa
+    job = {"luma": (92, 168)}
+    # dry run 2: an empty fireball scene got "person 0.54" from the sleep-doc labels; the figure contrast clears it
+    assert li.take_problems(_verdict(["person 0.54"]), job, figure=0.20) == []
+    assert li.take_problems(_verdict([]), job, figure=qa.FIGURE_LIMIT + 0.1) == [f"person {qa.FIGURE_LIMIT + 0.1:.2f}"]
+    # the other hard reasons still refuse a take
+    assert li.take_problems(_verdict(["text 0.41", "broken 0.50"]), job, figure=0.1) == ["text 0.41", "broken 0.50"]
+
+
+def test_frame0_dark_take_reaches_option1_band():
+    from PIL import Image
+    from studio import ladder_images as li
+    a = np.full((200, 120), 34, np.uint8)
+    a[:, :60] = np.linspace(8, 70, 60, dtype=np.uint8)
+    a[90:110, 50:70] = 240
+    graded, st = li.expose(Image.fromarray(a).convert("RGB"), 130.0)
+    assert st["raw_mean"] < 45 and 92 <= np.asarray(graded.convert("L")).mean() <= 168

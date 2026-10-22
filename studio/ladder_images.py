@@ -1,6 +1,6 @@
 """The nine vertical stills of a ladder Short (options 1-8 and the end plate), one runner job per image.
 
-Each image gets up to four takes. A take is kept only if CLIP sees no person and no text, the picture matches its
+Each image gets up to four takes. A take is kept only if CLIP sees no person (qa.figure) and no text, the picture matches its
 scene (prompt similarity at least 0.25) and its brightness sits in the job's band (option 1 is frame 0, so its band
 is the tightest). Up to two passing takes are kept, each upscaled (Real-ESRGAN) with a depth map, so the render can
 swap in the second take when two options look too alike.
@@ -25,7 +25,7 @@ HARD = ("person", "text", "broken")
 # is graded with one gamma towards its band's centre before review. The grade can only move midtones, so two raw
 # checks keep it honest: the take must already hold a real highlight (a focal light), and the graded picture must keep
 # a real tonal spread (a flat, muddy frame lifted to the band still fails).
-GAMMA_RANGE = (0.4, 1.6)
+GAMMA_RANGE = (0.3, 1.6)  # 0.4 left frame-0 takes (raw mean 35-43) at luma 82-86, under option 1's band
 RAW_P99_FLOOR = 100.0
 SPREAD = (40.0, 235.0)
 
@@ -65,8 +65,12 @@ def exposure_problems(stats: dict) -> list[str]:
     return out
 
 
-def take_problems(verdict, job: dict) -> list[str]:
-    out = [r for r in verdict.reasons if r.split()[0] in HARD or r.startswith(("too ", "flat", "mushy", "aesth"))]
+def take_problems(verdict, job: dict, figure: float) -> list[str]:
+    """`figure` is qa.figure(); it replaces the sleep-doc "person" label, which misreads bright ladder scenes."""
+    out = [r for r in verdict.reasons
+           if (r.split()[0] in HARD and r.split()[0] != "person") or r.startswith(("too ", "flat", "mushy", "aesth"))]
+    if figure > qa.FIGURE_LIMIT:
+        out.append(f"person {figure:.2f}")
     if verdict.similarity < MIN_SIMILARITY:
         out.append(f"prompt similarity {verdict.similarity:.3f} < {MIN_SIMILARITY}")
     lo, hi = job["luma"]
@@ -94,9 +98,10 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                 raw = sdcpp.to_pil(server.generate(job["prompt"], _seed(key, job["id"], take), w, h))
                 img, exposure = expose(raw, sum(job["luma"]) / 2)
                 verdict = qa.review(img, job["scene"])
-                probs = exposure_problems(exposure) + take_problems(verdict, job)
+                fig = qa.figure(img)
+                probs = exposure_problems(exposure) + take_problems(verdict, job, fig)
                 entry["takes"].append({"seconds": round(time.monotonic() - t, 1), "problems": probs,
-                                       "exposure": exposure, **verdict.as_dict()})
+                                       "exposure": exposure, "figure": round(fig, 4), **verdict.as_dict()})
                 print(f"{job['id']} take {take + 1}: {'ok' if not probs else probs}", flush=True)
                 if probs:  # keep a small preview of every refused take so a failing run can be diagnosed
                     (out / "refused").mkdir(exist_ok=True)
