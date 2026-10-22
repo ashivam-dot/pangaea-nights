@@ -14,6 +14,10 @@ from .llm import Gemini
 
 STYLE = ("painterly photorealistic nature documentary still, cinematic composition, natural soft light, "
          "rich fine detail, calm and quiet mood")
+# The thumbnail overrides the episode's dark sleep palette: one bright, sharply lit focal creature (thumbnail.py
+# gates its mean luminance between a floor and a ceiling).
+THUMB_LOOK = ("but for this frame bright daylight or golden-hour light, one single focal creature large and right of "
+              "centre, sharply lit against a brighter sky or sunlit water, simple open uncluttered space on the left")
 
 SYSTEM = """You write Pangaea Nights, a calm English sleep-documentary channel about Earth's deep past and its
 ancient and deep oceans. Listeners play an episode at bedtime and drift off while it plays.
@@ -161,14 +165,18 @@ def write(topic: dict, docs: list[dict], shape: config.Shape, llm: Gemini | None
 Plan an episode of about {shape.chapters * shape.words_per_chapter} spoken words in exactly {shape.chapters}
 chapters that flow like one slow evening journey through this subject, each chapter about one aspect, in a sensible
 order (setting, life, daily rhythms, change over time, a gentle closing). Return JSON with:
-- title_core: the episode's subject in 2 to 6 words (it fills the title "Fall Asleep in <title_core>").
+- title_core: the episode's subject in 2 to 6 plain words for the title card (the famous thing first, for example
+  "The Last Day of the Dinosaurs"; no period names such as Ediacaran, Hadean or Carboniferous; say "before the
+  dinosaurs", "coal forests" or "Earth's first oceans" instead).
 - summary: 2 to 3 calm sentences for the video description, no hype.
 - art_direction: one sentence fixing this episode's visual palette, light and lens, consistent with the series
   palette, dark and calm enough for sleep.
 - chapters: for each, a calm 2 to 6 word title, its focus, and 5 to 8 specific facts from the sources it will use.
-- thumbnail_words: 2 to 4 evocative words for the thumbnail (no numbers, no question).
-- thumbnail_prompt: one image prompt (rules below) for a striking but calm thumbnail with the subject large on the
-  right and quiet empty dark space on the left.
+- thumbnail_words: 2 to 4 short, bold, plain words naming the famous subject, for example "LAST DAY OF DINOSAURS"
+  or "MEGALODON" plus one word (no numbers, no question, no period names).
+- thumbnail_prompt: one image prompt (rules below) for a bright, clearly lit thumbnail: ONE focal creature, large
+  and right of centre, sharply lit against a brighter sky or sunlit water, with simple open uncluttered space on
+  the left for words. Daylight or golden hour, not night.
 - tail_scenes: {shape.tail_scenes} image prompts for a wordless ending: ever darker, emptier, peaceful views of
   this world at night.
 - tags: 10 to 15 YouTube search tags.
@@ -252,7 +260,7 @@ SOURCES:
                          "scenes": scenes[: shape.scenes_per_chapter[1]], "warnings": report.problems})
         previous = paragraphs[-1]
     trailers = []
-    for k in range(shape.trailers):
+    for k in range(config.trailer_count(shape)):  # none while config.TRAILER_SHORTS is off
         chapter = chapters[min(len(chapters) - 1, k * 3 + 1)]
         t_ask = f"""{brief}
 Write vertical Short trailer {k + 1} for this episode, drawn from the chapter "{chapter['title']}":
@@ -351,12 +359,13 @@ def write_stub(topic: dict, docs: list[dict], shape: config.Shape) -> dict:
     trailers = [{"hook": topic["title"], "narration": " ".join(chapters[0]["paragraphs"][1].split()[:80]) +
                  " The full journey is on Pangaea Nights.",
                  "scenes": [c for c in chapters[0]["scenes"][: shape.trailer_scenes]], "chapter": 1}
-                for _ in range(shape.trailers)]
+                for _ in range(config.trailer_count(shape))]
+    lead = topic.get("lead", topic["title"])
     return {
         "writer": "stub", "models": [], "publishable": False,
-        "title_core": topic["title"], "summary": topic["angle"], "art_direction": series["palette"],
+        "title_core": lead, "summary": topic["angle"], "art_direction": series["palette"],
         "chapters": chapters, "trailers": trailers,
-        "thumbnail": {"words": " ".join(topic["title"].split()[:4]), "prompt": chapters[0]["scenes"][0]},
+        "thumbnail": {"words": " ".join(lead.split()[:4]), "prompt": chapters[0]["scenes"][0]},
         "tail_scenes": [f"A dark, peaceful, empty night view of {topic['title']}, faint moonlight on still water "
                         f"or land, deep in prehistoric time, nothing moving, {series['palette']}."
                         for _ in range(shape.tail_scenes)],

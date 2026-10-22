@@ -70,6 +70,20 @@ def lifts(episodes: list[dict]) -> dict:
     return out
 
 
+def lengths(episodes: list[dict]) -> dict:
+    """The length experiment's scoreboard: scored episodes and their typical views at 72 h, per shape. Report only;
+    studio/length.py keeps alternating whatever it says, so both arms keep collecting samples."""
+    out: dict[str, dict] = {}
+    for e in episodes:
+        if e.get("views_at_72h") is None or not e.get("shape"):
+            continue
+        out.setdefault(e["shape"], {"n": 0, "logs": []})
+        out[e["shape"]]["n"] += 1
+        out[e["shape"]]["logs"].append(math.log1p(e["views_at_72h"]))
+    return {s: {"n": g["n"], "typical_views_at_72h": round(math.expm1(sum(g["logs"]) / g["n"]))}
+            for s, g in sorted(out.items())}
+
+
 def update(data: dict, stats: dict, at: datetime | None = None) -> dict:
     """Snapshot each published episode that has gone public, rescore, relearn. Changes `data` in place."""
     at = at or datetime.now(timezone.utc)
@@ -85,7 +99,8 @@ def update(data: dict, stats: dict, at: datetime | None = None) -> dict:
                                             "comments": s["comment"]}]
         e["snapshots"] = snaps[-KEEP_SNAPSHOTS:]
         e["views_at_72h"] = views_at(e["snapshots"], SCORE_AT_H)
-    data["learned"] = {"at": at.replace(microsecond=0).isoformat(), **lifts(data["episodes"])}
+    data["learned"] = {"at": at.replace(microsecond=0).isoformat(), **lifts(data["episodes"]),
+                       "lengths": lengths(data["episodes"])}
     return data
 
 

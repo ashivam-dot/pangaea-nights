@@ -1,9 +1,10 @@
 # Pangaea Nights — channel bible
 
-**Pangaea Nights** (`@PangaeaNights`, channel id `UCtVG78IUTqvP9rH-LLies0A`) publishes one long, calm sleep
-documentary a day about Earth's deep past and its ancient and deep oceans. Each episode is about two hours: slow
-narration over slowly moving images and quiet nature sound, then about ten minutes of ambience alone.
-Short vertical trailers point to the full episodes.
+**Pangaea Nights** (`@PangaeaNights`, channel id `UCtVG78IUTqvP9rH-LLies0A`) publishes a long, calm sleep
+documentary twice a week (Tuesday and Friday, premiering at 21:00 UTC) about Earth's deep past and its ancient and
+deep oceans. Each episode is two or three hours (the length experiment below): slow narration over slowly moving
+images and quiet nature sound, then about ten minutes of ambience alone. The old calm per-episode trailer Shorts
+are switched off (`config.TRAILER_SHORTS = False`; the code in `studio/shorts.py` stays).
 
 ## Binding rules
 
@@ -30,8 +31,9 @@ These are enforced in code. A rule marked *(gate)* stops the pipeline or refuses
    average, which is set to -20 LUFS integrated *(gate: `finish.qa`)*.
 7. **Every episode is distinct.** Each episode has its own topic, script, images, chord path, music key and
    ambience. A topic is never published twice *(gate: `ledger.record_episode`)*. The series rotate, and the next
-   episode always comes from a series that was not used in the last two episodes. Titles rotate through each
-   series' patterns and are never close to an earlier title.
+   episode always comes from a series that was not used in the last two episodes. Titles follow one formula (see
+   Packaging), rotate between its forms and are never close to an earlier title *(gate: `planner.title_problems`,
+   tested on every backlog topic)*.
 8. **Honest disclosure.** Every upload declares `containsSyntheticMedia: true` and is marked not made for kids.
    The description says which parts are AI-made, lists the sources, and credits each CC0 recording.
 9. **The right channel only.** Uploads go only to `UCtVG78IUTqvP9rH-LLies0A`. Before any write, the signed-in
@@ -47,16 +49,51 @@ These are enforced in code. A rule marked *(gate)* stops the pipeline or refuses
 | Seas Before Fish | Precambrian to Silurian oceans | ocean | 11 |
 | The Age of Giant Insects | Devonian to Permian forests and swamps | rain | 11 |
 | Ice Age Nights | Pleistocene glaciations and megafauna | wind | 11 |
-| Before the Continents Drifted | Earth's formation and supercontinents | wind | 11 |
+| Before the Continents Drifted | Earth's formation and supercontinents | wind | 10 |
 | The Deep Sea Before Us | The deep ocean and its ancient lineages | underwater | 11 |
 | Oceans of the Ancient Giants | Devonian to Miocene seas and their great swimmers | ocean | 10 |
-| Forests of the Dinosaurs | Triassic, Jurassic and Cretaceous land | rain | 10 |
-| Worlds Between the Ice | From the Great Dying to the Cenozoic | ocean | 10 |
+| Forests of the Dinosaurs | Triassic, Jurassic and Cretaceous land | rain | 11 |
+| Worlds Between the Ice | From the Great Dying to the Cenozoic | ocean | 12 |
 
-The backlog holds 85 topics (`bible/backlog.json`), each with five Wikipedia articles. Every article title was
-checked against the Wikipedia API to confirm it exists and is not a redirect. At one episode a day this lasts
-almost three months. Add topics before the backlog runs out: the planner stops with `BacklogExhausted` instead of
-repeating a topic.
+The backlog holds 87 topics (`bible/backlog.json`), each with five Wikipedia articles, a `lead` and a `promise`
+for its title. Every article title was checked against the Wikipedia API to confirm it exists and is not a
+redirect (last checked 2026-10-22, all 417). Six topics are already published and can never run again. The
+planner reads the backlog in order, so the famous topics at its top go first, in this order: the last day of the
+dinosaurs, what if the asteroid had missed (science framing, hedged), Pangaea, megalodon, the Ice Age and woolly
+mammoths, the world of T. rex, the Jurassic seas, giant insects, the Great Dying and Snowball Earth. At two
+episodes a week the backlog lasts about nine months. Add topics before it runs out: the planner stops with
+`BacklogExhausted` instead of repeating a topic.
+
+## Cadence and length
+
+- **When.** `episode.yml` builds on Tuesday and Friday at 14:10 UTC (`10 14 * * 2,5`). A 2-hour build takes about
+  3.5 hours and a 3-hour build about 4.5, and the episode is scheduled for the next 21:00 UTC
+  (`config.EPISODE_SLOT_UTC`, `youtube.episode_slot()`). The build only overlaps the end of the 08:00 UTC Shorts
+  window, which is done by about 16:00. `health.yml` alerts after 108 hours without an upload (the Friday to
+  Tuesday gap is 96).
+- **Length experiment.** Published long episodes alternate 2 hours (`full`: 14 chapters of ~1,030 words) and
+  3 hours (`full3h`: 21 chapters, 17 image and 3 voice runners, at most 8 images each, ~80 s per image), starting
+  with 2 hours from 2026-10-27. The plan job runs `python -m studio.length` (the `length` input forces `2h` or
+  `3h`), the episode keeps its shape, the ledger records it, and `learn.lengths()` compares typical views at
+  72 hours by shape. Both lengths pass the same loudness and sleep gates.
+
+## Packaging
+
+- **Titles.** `<lead>: <promise> | Documentary for Sleep` (or `| Sleep Documentary`, or `<lead> | Documentary for
+  Sleep` when the full form is too long). The lead comes first and names something famous and searched for ("The
+  Last Day of the Dinosaurs", "What If the Asteroid Had Missed", "Megalodon"). There is no leading jargon: period
+  and eon names such as Ediacaran, Hadean or Carboniferous are refused, and the plain phrasings "before the
+  dinosaurs", "coal forests" and "Earth's first oceans" are used instead. Rare words in the lead are refused unless
+  they are the famous name. The channel never uses "Boring History For Sleep", "(As We Understand It)", "SELECTED
+  SOURCES", "Fall Asleep in" or a competitor's exact title *(gate: `planner.title_problems`)*.
+- **Thumbnails.** One bright, clearly lit focal creature, large and right of centre, over the episode's dark sleep
+  palette. It has 2–4 large, bold words (Cormorant Garamond at weight 700, up to 190 px) naming the famous subject.
+  Every thumbnail must pass all of these checks *(gate: `thumbnail.build`, enforced by `finish.qa`)*:
+  - Tesseract must read every word back at phone-feed size.
+  - The text must keep 4.5:1 contrast with the image behind it.
+  - The composed thumbnail's mean luma (Rec. 601) must sit between a floor of 70 and a ceiling of 200, measured at
+    feed size on the picture itself. A dark night frame is first lifted toward a mid-tone with a capped gamma
+    curve.
 
 ## Look and sound
 
