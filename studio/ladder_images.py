@@ -28,6 +28,11 @@ HARD = ("person", "text", "broken")
 GAMMA_RANGE = (0.3, 1.6)  # 0.4 left frame-0 takes (raw mean 35-43) at luma 82-86, under option 1's band
 RAW_P99_FLOOR = 100.0
 SPREAD = (40.0, 235.0)
+# A misty aerial scene is soft by nature (the test upload's Quetzalcoatlus-over-mist takes scored sharpness 6.5-7.5
+# against qa's floor of 8; the median over 73 ladder takes is 15.9), and one missing image sinks the whole Short. So
+# when no take passes, the best take whose ONLY problem is mild softness is kept (Real-ESRGAN restores edge detail);
+# a take with any other problem (person, text, broken, luma, exposure, off-prompt) is never used.
+SOFT_SHARP_FLOOR = 6.0
 
 
 def shard(jobs: list[dict], k: int, n: int) -> list[dict]:
@@ -79,6 +84,11 @@ def take_problems(verdict, job: dict, figure: float) -> list[str]:
     return out
 
 
+def soft_only(problems: list[str], sharpness: float) -> bool:
+    """True when a refused take failed on nothing but mild softness (the fallback above)."""
+    return bool(problems) and all(q.startswith("mushy") for q in problems) and sharpness >= SOFT_SHARP_FLOOR
+
+
 def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DEFAULT,
              budget_s: float = 110 * 60) -> dict:
     jobs = shard(ladder.image_jobs(p), k, n)
@@ -91,6 +101,16 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
         report["load_s"] = round(server.load_seconds, 1)
         for job in jobs:
             entry = {"id": job["id"], "takes": [], "kept": []}
+            soft = []  # (score, take, img, verdict) of soft-only refusals
+
+            def keep(img, verdict, take, fallback=False):
+                stem = f"{job['id']}" if not entry["kept"] else f"{job['id']}-alt{len(entry['kept'])}"
+                img.save(out / f"{stem}.png")
+                files = plates.save_plate(img, out / stem, vertical=True)
+                entry["kept"].append({"plate": files["plate"], "depth": files["depth"], "take": take,
+                                      "similarity": round(verdict.similarity, 4),
+                                      "luma": round(verdict.brightness, 1), "embedding": qa.pack(qa.embed(img)),
+                                      "score": round(verdict.score(), 3), "fallback": fallback})
             for take in range(TAKES):
                 if take and time.monotonic() - start > budget_s:
                     break
@@ -106,16 +126,16 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                 if probs:  # keep a small preview of every refused take so a failing run can be diagnosed
                     (out / "refused").mkdir(exist_ok=True)
                     img.resize((216, 384)).save(out / "refused" / f"{job['id']}-t{take + 1}.jpg", quality=80)
+                    if soft_only(probs, verdict.sharpness):
+                        soft.append((verdict.score(), take, img, verdict))
                     continue
-                stem = f"{job['id']}" if not entry["kept"] else f"{job['id']}-alt{len(entry['kept'])}"
-                img.save(out / f"{stem}.png")
-                files = plates.save_plate(img, out / stem, vertical=True)
-                entry["kept"].append({"plate": files["plate"], "depth": files["depth"], "take": take,
-                                      "similarity": round(verdict.similarity, 4),
-                                      "luma": round(verdict.brightness, 1), "embedding": qa.pack(qa.embed(img)),
-                                      "score": round(verdict.score(), 3)})
+                keep(img, verdict, take)
                 if len(entry["kept"]) >= KEEP:
                     break
+            if not entry["kept"] and soft:
+                _, take, img, verdict = max(soft, key=lambda c: c[0])
+                print(f"{job['id']}: keeping soft take {take + 1} (sharpness {verdict.sharpness:.1f})", flush=True)
+                keep(img, verdict, take, fallback=True)
             entry["ok"] = bool(entry["kept"])
             report["images"].append(entry)
             (out / f"shard-{k:02d}.json").write_text(json.dumps(report, indent=1))

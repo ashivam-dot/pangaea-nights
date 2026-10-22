@@ -341,3 +341,12 @@ def test_frame0_dark_take_reaches_option1_band():
     a[90:110, 50:70] = 240
     graded, st = li.expose(Image.fromarray(a).convert("RGB"), 130.0)
     assert st["raw_mean"] < 45 and 92 <= np.asarray(graded.convert("L")).mean() <= 168
+
+
+def test_soft_fallback_only_for_mild_softness():
+    from studio import ladder_images as li
+    assert li.soft_only(["mushy 7.2"], 7.2)
+    assert not li.soft_only(["mushy 5.1"], 5.1)  # truly mushy stays refused
+    assert not li.soft_only(["broken 0.49", "mushy 7.5"], 7.5)
+    assert not li.soft_only(["mushy 7.0", "luma 80 outside 92-168"], 7.0)
+    assert not li.soft_only(["person 0.62"], 12.0) and not li.soft_only([], 12.0)
