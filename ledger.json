@@ -380,5 +380,28 @@
   "scored": 3,
   "min_samples": 4,
   "lifts": {}
+ },
+ "shorts": [],
+ "ladder": {
+  "weights": {},
+  "streaks": {},
+  "queue": [],
+  "needs_bank": [],
+  "builds": [
+   {
+    "at": "2026-10-22T11:35:13Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "countdown-01",
+    "run": "39766129149",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
+   }
+  ],
+  "alerts": [],
+  "summaries": [],
+  "tests": []
  }
 }
