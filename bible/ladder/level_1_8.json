@@ -1,0 +1,153 @@
+{
+ "series": "level_1_8",
+ "premises": [
+  {
+   "id": "level_1_8-01",
+   "era": "Late Cretaceous",
+   "title": "Dinosaur Getaways From Level 1 to 8 — Which One Outruns? 🦖",
+   "banner": "Which dinosaur outruns a predator?",
+   "hook_vo": "Eight dinosaurs. Only one can really outrun danger.",
+   "art_direction": "A Late Cretaceous plain of Mongolia at dusk turning to night, sand dunes, scrub and a dry lake under a rising moon.",
+   "options": [
+    {"n": 1, "label": "Armoured tank", "vo": "Level one: a low armoured tank of a dinosaur.", "danger": 1,
+     "image_prompt": "A heavily armoured ankylosaur standing low among moonlit scrub on a Cretaceous plain, bony plates catching silver light, a warm sunset glow on the dunes behind"},
+    {"n": 2, "label": "Duckbill herd", "vo": "Level two: a big herd of duckbills.", "danger": 2,
+     "image_prompt": "A herd of hadrosaurs with tall crests drinking at a moonlit dry lake, ripples on the shallow water, a warm amber glow of dusk fading on the horizon"},
+    {"n": 3, "label": "Horned grazer", "vo": "Level three: a horned grazer with a frill.", "danger": 3,
+     "image_prompt": "A small frilled horned dinosaur grazing on low ferns beside sand dunes at night, its beaked face lit by the moon and a warm golden glow of the last sunset"},
+    {"n": 4, "label": "Long-necked giant", "vo": "Level four: a slow long-necked giant.", "danger": 4,
+     "image_prompt": "A towering long-necked titanosaur walking slowly across a moonlit plain, its huge body outlined by a warm orange dusk glow, dust drifting around its legs"},
+    {"n": 5, "label": "Ostrich dinosaur", "vo": "Level five: a long-legged ostrich dinosaur.", "danger": 5,
+     "image_prompt": "A long-legged feathered ornithomimid sprinting across moonlit sand dunes, tail held straight, dust kicked up behind it, warm sunset light glowing on the horizon"},
+    {"n": 6, "label": "Sickle-claw raptor", "vo": "Level six: a raptor with a sickle claw.", "danger": 6,
+     "image_prompt": "A feathered velociraptor crouched on a moonlit sandstone ledge, curved sickle claw raised, golden eyes shining, a warm ember glow of dusk behind the dunes"},
+    {"n": 7, "label": "Giant claws", "vo": "Level seven: a giant with metre-long claws.", "danger": 7,
+     "image_prompt": "A huge therizinosaur with enormous long curved claws standing among tall moonlit conifers, shaggy feathers in silver light, a warm amber glow of the last dusk"},
+    {"n": 8, "label": "Tarbosaurus", "vo": "Level eight: a tyrannosaur, fully grown.", "danger": 8,
+     "image_prompt": "A massive tarbosaurus tyrannosaur stepping out of night mist on a Cretaceous plain, jaws open, scaled hide lit by the moon and a warm red glow of the setting sun"}
+   ],
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because Gallimimus was probably a fleet runner, with speed estimated at up to 56 km/h.",
+   "fact": {
+    "text": "As an ornithomimid, Gallimimus would have been a fleet animal, using its speed to escape predators; its speed has been estimated at 42–56 km/h.",
+    "wiki_title": "Gallimimus",
+    "wiki_revid": 1381031574,
+    "source_sentence": "As an ornithomimid, Gallimimus would have been a fleet (or cursorial) animal, using its speed to escape predators; its speed has been estimated at 42–56 km/h (29–34 mph)."
+   },
+   "description": "Eight Late Cretaceous dinosaurs, from an armoured tank to a full-grown tyrannosaur. Only one was built to simply run away.",
+   "tags": ["dinosaurs", "Cretaceous", "fastest dinosaur", "level 1 to 8", "deep time", "paleontology"],
+   "related_topic_hint": "Cretaceous dinosaurs Mongolia predators and prey"
+  },
+  {
+   "id": "level_1_8-02",
+   "era": "Late Carboniferous",
+   "title": "Prehistoric Giant Bugs, Level 1 to 8 — Which Was the Biggest? 🪲",
+   "banner": "Which giant bug was the biggest?",
+   "hook_vo": "Eight giant bugs. One was the biggest ever.",
+   "art_direction": "A humid Late Carboniferous swamp forest at night, glowing fungus on fallen scale trees, thick oxygen-rich mist and green-gold moonlight.",
+   "options": [
+    {"n": 1, "label": "Silverfish", "vo": "Level one: an early silverfish in the moss.", "danger": 1,
+     "image_prompt": "A tiny silverfish insect crawling across a carpet of wet moss on a fallen trunk, glowing orange fungus beside it, soft moonlit mist behind"},
+    {"n": 2, "label": "Swamp cockroach", "vo": "Level two: a swamp cockroach on the bark.", "danger": 2,
+     "image_prompt": "A glossy brown early cockroach on the diamond-patterned bark of a scale tree at night, dew drops on its wings, a warm amber glow of fungus below"},
+    {"n": 3, "label": "Harvestman", "vo": "Level three: a long-legged harvestman.", "danger": 3,
+     "image_prompt": "A long-legged harvestman arachnid walking over a mossy root in a misty swamp forest, thin legs catching moonlight, a warm ember glow of rotting wood behind"},
+    {"n": 4, "label": "Mayfly swarm", "vo": "Level four: a cloud of giant mayflies.", "danger": 4,
+     "image_prompt": "A swarm of large early mayflies with wide wings over black swamp water at night, wings shining in moonlight, a warm golden glow of dawn through the tree ferns"},
+    {"n": 5, "label": "Giant scorpion", "vo": "Level five: a scorpion as long as a cat.", "danger": 5,
+     "image_prompt": "A large ancient scorpion with a raised curved tail on a fallen log beside swamp water, armour glistening in moonlight, a warm amber glow of fungus around it"},
+    {"n": 6, "label": "Griffenfly", "vo": "Level six: a griffenfly as wide as an eagle.", "danger": 6,
+     "image_prompt": "A giant griffenfly with huge veined wings spread wide hovering over a misty swamp at night, wings glinting in moonlight against a warm sunset glow through the trees"},
+    {"n": 7, "label": "Giant millipede", "vo": "Level seven: a millipede longer than a car.", "danger": 7,
+     "image_prompt": "An enormous segmented millipede longer than a fallen tree crawling along a sandy riverbank at night, dark armoured plates lit by the moon and a warm ember glow"},
+    {"n": 8, "label": "Sea scorpion", "vo": "Level eight: a sea scorpion in the shallows.", "danger": 8,
+     "image_prompt": "A huge eurypterid sea scorpion rising out of shallow swamp water, broad swimming limbs and spiked claws dripping, moonlight on its shell and a warm red glow of dusk"}
+   ],
+   "answer_n": 7,
+   "verdict_vo": "Real answer: number 7, because the giant millipede reached at least 2 metres, possibly the largest known land arthropod of all time.",
+   "fact": {
+    "text": "It was a millipede capable of reaching at least 2 metres in length, possibly up to over 2.5 metres, making it the largest known land arthropod of all time.",
+    "wiki_title": "Arthropleura",
+    "wiki_revid": 1373001873,
+    "source_sentence": "It was a millipede, and was capable of reaching at least 2 metres (6 ft 7 in) in length, possibly up to over 2.5 metres (8 ft 2 in), making it the largest known land arthropod of all time."
+   },
+   "description": "Eight giant bugs of the coal swamps, ranked from harmless to terrifying. One of them still holds the record as the biggest land arthropod ever found.",
+   "tags": ["giant bugs", "giant insects", "Carboniferous", "level 1 to 8", "deep time", "paleontology"],
+   "related_topic_hint": "giant insects coal forests Carboniferous oxygen"
+  },
+  {
+   "id": "level_1_8-03",
+   "era": "Late Cretaceous",
+   "title": "Dinosaur Defenses From Level 1 to 8 — Which Stops a T. Rex? 🛡️",
+   "banner": "Which defence stops a T. rex?",
+   "hook_vo": "A T. rex is coming. Which defence works?",
+   "art_direction": "A Late Cretaceous North American forest edge at night, magnolias and conifers, a thunderstorm moving off and lightning on the horizon.",
+   "options": [
+    {"n": 1, "label": "Freeze still", "vo": "Level one: freeze still in the undergrowth.", "danger": 1,
+     "image_prompt": "A small dinosaur frozen still under broad magnolia leaves at night, rain drops on the leaves, moonlight in the gaps and a warm amber glow of lightning fire far away"},
+    {"n": 2, "label": "Camouflage stripes", "vo": "Level two: stripes that melt into the shadows.", "danger": 2,
+     "image_prompt": "A striped small herbivorous dinosaur blending into tall ferns and shadows at night, moonlight in thin bars across its back, a warm sunset glow on the storm clouds"},
+    {"n": 3, "label": "Run for water", "vo": "Level three: run into the river.", "danger": 3,
+     "image_prompt": "A wide dark river at a forest edge at night, a dinosaur wading in up to its chest, ripples in moonlight and a warm orange glow of distant lightning fire"},
+    {"n": 4, "label": "Herd circle", "vo": "Level four: a herd standing in a circle.", "danger": 4,
+     "image_prompt": "A herd of horned dinosaurs standing shoulder to shoulder in a defensive circle on a moonlit clearing, frills overlapping, a warm golden glow of embers in the grass"},
+    {"n": 5, "label": "Bony dome", "vo": "Level five: a thick bony dome for ramming.", "danger": 5,
+     "image_prompt": "A dome-headed pachycephalosaur lowering its thick bony skull in a moonlit forest clearing, rain shining on its scales, a warm ember glow of a lightning fire behind"},
+    {"n": 6, "label": "Three horns", "vo": "Level six: three horns and a giant frill.", "danger": 6,
+     "image_prompt": "A triceratops facing forward with three long horns and a huge frill at the forest edge at night, lightning behind it and a warm amber glow on its beak"},
+    {"n": 7, "label": "Tail club", "vo": "Level seven: a heavy club on the tail.", "danger": 7,
+     "image_prompt": "An ankylosaurus swinging its heavy bony tail club through rain at night, armour plates gleaming in the moonlight, a warm orange glow of lightning fire in the trees"},
+    {"n": 8, "label": "Fight back", "vo": "Level eight: turn around and fight it.", "danger": 8,
+     "image_prompt": "A huge tyrannosaurus rex roaring in heavy rain at a forest edge at night, lightning splitting the sky behind, a warm red glow of a burning conifer on its jaws"}
+   ],
+   "answer_n": 7,
+   "verdict_vo": "Real answer: number 7, because the tail club is thought to have been used in defense against predators.",
+   "fact": {
+    "text": "The tail club is thought to have been used in defense against predators or in intraspecific combat.",
+    "wiki_title": "Ankylosaurus",
+    "wiki_revid": 1369993132,
+    "source_sentence": "The tail club is thought to have been used in defense against predators or in intraspecific combat."
+   },
+   "description": "A tyrannosaur is hunting at the edge of a Cretaceous forest. Eight defences, ranked from hiding to fighting back, and only one was likely built for the job.",
+   "tags": ["dinosaurs", "T. rex", "Cretaceous", "level 1 to 8", "deep time", "paleontology"],
+   "related_topic_hint": "Tyrannosaurus rex Hell Creek last dinosaurs"
+  },
+  {
+   "id": "level_1_8-04",
+   "era": "Early Cretaceous",
+   "title": "Prehistoric Flyers From Level 1 to 8 — Which Had Four Wings? 🪶",
+   "banner": "Which one flew on four wings?",
+   "hook_vo": "Eight prehistoric flyers. One flew on four wings.",
+   "art_direction": "An Early Cretaceous lakeside forest in northeast China at night, ginkgo and conifer trees, a calm lake and a glowing volcanic ridge.",
+   "options": [
+    {"n": 1, "label": "Griffenfly", "vo": "Level one: a giant griffenfly over the lake.", "danger": 1,
+     "image_prompt": "A giant griffenfly with glassy veined wings hovering above a calm moonlit lake, reeds below, a warm orange glow of a volcanic ridge reflected on the water"},
+    {"n": 2, "label": "Gliding lizard", "vo": "Level two: a lizard that glides on skin flaps.", "danger": 2,
+     "image_prompt": "A small gliding reptile with stretched skin flaps leaping between ginkgo branches at night, moonlight through the leaves and a warm ember glow on the far ridge"},
+    {"n": 3, "label": "Early bird", "vo": "Level three: an early bird with a long tail.", "danger": 3,
+     "image_prompt": "An early toothed bird with long tail feathers perched on a conifer branch above a misty lake at night, feathers lit by the moon and a warm golden glow of dawn"},
+    {"n": 4, "label": "Small pterosaur", "vo": "Level four: a small pterosaur skimming the water.", "danger": 4,
+     "image_prompt": "A small pterosaur with leathery wings skimming the surface of a moonlit lake, a trail of ripples behind it, a warm amber glow of a volcano on the horizon"},
+    {"n": 5, "label": "Four-winged glider", "vo": "Level five: a tiny dinosaur with four wings.", "danger": 5,
+     "image_prompt": "A tiny feathered dinosaur gliding between tall trees with long feathers on both arms and legs, iridescent black plumage in moonlight, warm glow of volcanic ridge behind"},
+    {"n": 6, "label": "Feathered raptor", "vo": "Level six: a feathered raptor leaping from a branch.", "danger": 6,
+     "image_prompt": "A feathered dromaeosaur leaping from a high conifer branch with arms spread, claws open, moonlit mist below and a warm ember glow from the volcanic ridge"},
+    {"n": 7, "label": "Crested pterosaur", "vo": "Level seven: a big pterosaur with a tall crest.", "danger": 7,
+     "image_prompt": "A large crested pterosaur soaring low over a moonlit forest canopy, a tall bright crest on its head, wings outlined by a warm sunset glow"},
+    {"n": 8, "label": "Sky giant", "vo": "Level eight: a pterosaur as wide as a plane.", "danger": 8,
+     "image_prompt": "A colossal azhdarchid pterosaur with a long beak and enormous wings gliding across a full moon, the lake far below and a warm red volcanic glow lighting its underside"}
+   ],
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because Microraptor had four wings, one on each of its forelimbs and hindlimbs.",
+   "fact": {
+    "text": "Microraptor had four wings, one on each of its forelimbs and hindlimbs.",
+    "wiki_title": "Microraptor",
+    "wiki_revid": 1380973408,
+    "source_sentence": "Microraptor had four wings, one on each of its forelimbs and hindlimbs, somewhat resembling one possible arrangement of the quartet of flight surfaces on a tandem wing aircraft of today."
+   },
+   "description": "Eight flyers from the skies of deep time, from a giant griffenfly to a pterosaur as wide as a small plane. Only one of them flew on four wings.",
+   "tags": ["prehistoric flyers", "pterosaurs", "feathered dinosaurs", "level 1 to 8", "deep time", "paleontology"],
+   "related_topic_hint": "feathered dinosaurs pterosaurs Early Cretaceous flight"
+  }
+ ]
+}
