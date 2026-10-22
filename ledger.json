@@ -69,6 +69,12 @@
      "views": 9,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 294.23,
+     "views": 10,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "views_at_72h": 8.0
@@ -118,6 +124,12 @@
      "views": 1,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 222.46,
+     "views": 2,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "views_at_72h": 1.0
@@ -161,6 +173,12 @@
      "views": 8,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 182.64,
+     "views": 9,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "views_at_72h": 8.0
@@ -198,9 +216,15 @@
      "views": 0,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 158.64,
+     "views": 0,
+     "likes": 0,
+     "comments": 1
     }
    ],
-   "views_at_72h": null
+   "views_at_72h": 0.0
   },
   {
    "id": "2026-10-17-hydrothermal-vents",
@@ -229,9 +253,15 @@
      "views": 1,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 110.64,
+     "views": 2,
+     "likes": 0,
+     "comments": 1
     }
    ],
-   "views_at_72h": null
+   "views_at_72h": 1.576965185022991
   },
   {
    "id": "2026-10-18-ichthyosaurs",
@@ -252,7 +282,16 @@
    "uploaded_at": "2026-10-18T19:48:13Z",
    "shorts": [
     "xg0as2we09Y"
-   ]
+   ],
+   "snapshots": [
+    {
+     "age_h": 86.64,
+     "views": 1,
+     "likes": 0,
+     "comments": 1
+    }
+   ],
+   "views_at_72h": 0.9116056881941459
   }
  ],
  "dry_runs": [
@@ -372,14 +411,39 @@
    "refusals": [
     "media QA failed: true peak -2.2 dBFS; thumbnail failed the legibility test"
    ]
+  },
+  {
+   "id": "short-2026-10-22-last-day-dinosaurs-39780611718",
+   "topic": "last-day-dinosaurs",
+   "series": "forests-of-the-dinosaurs",
+   "title": "The Last Day of the Dinosaurs: The Asteroid and the Long Dark | Documentary for Sleep",
+   "writer": "gemini",
+   "words": 1051,
+   "shape": "short",
+   "mode": "short",
+   "created": "2026-10-22T13:15:06Z",
+   "qa_ok": true,
+   "duration": 605.18,
+   "run": "39780611718",
+   "refusals": [
+    "mode is 'short', not 'publish'",
+    "the channel is paused (repository variable PAUSED)"
+   ]
   }
  ],
  "last_upload": "2026-10-18T19:48:13Z",
  "learned": {
-  "at": "2026-10-18T19:48:13+00:00",
-  "scored": 3,
+  "at": "2026-10-22T15:08:33+00:00",
+  "scored": 6,
   "min_samples": 4,
-  "lifts": {}
+  "lifts": {},
+  "baseline_views_at_72h": 2,
+  "lengths": {
+   "full": {
+    "n": 6,
+    "typical_views_at_72h": 2
+   }
+  }
  },
  "shorts": [],
  "ladder": {
