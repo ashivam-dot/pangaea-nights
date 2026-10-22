@@ -2,7 +2,7 @@
 import argparse
 import copy
 import json
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 import pytest
 
@@ -696,3 +696,31 @@ def test_gemini_holds_to_the_callers_timeout_and_deadline(monkeypatch):
     with pytest.raises(llm.NoModel):
         g.generate("s", "p")
     assert calls == []
+
+
+def test_two_proven_premises_of_one_series_never_dead_end_the_rotation():
+    # The first live dry scan accepted how_deep-101 and how_deep-102 first; picked greedily they ran back to back
+    # and no series could then keep 3 distinct series in 7 days, so the supply (and the next build) ended on day 1.
+    import copy
+    from datetime import date
+
+    from studio import ladder, ledger, topics
+
+    banks = ladder.load_banks(strict=False)
+    data = copy.deepcopy(ledger.EMPTY)
+    for i in range(2):
+        p = copy.deepcopy(banks["how_deep"][i])
+        p.update(id=f"how_deep-10{i + 1}", provenance={"video_id": f"v{i}"}, added_at=f"2026-10-22T19:00:0{i}Z")
+        data["ladder"]["proven"].append(p)
+    full = {s: list(ps) for s, ps in banks.items()}
+    full["how_deep"] += data["ladder"]["proven"]
+    assert topics.supply_days(full, data, date(2026, 10, 23)) > 30
+    sim, seq = {"shorts": [], "ladder": {"queue": []}}, []
+    for day in range(8):
+        at = date(2026, 10, 23) + timedelta(days=day)
+        p = ladder.pick(full, sim, at)
+        seq.append(p["id"])
+        sim["shorts"].append({"premise": p["id"], "series": p["series"], "era": p["era"], "video_id": "x",
+                              "publish_at": f"{at.isoformat()}T14:30:00Z"})
+    assert "how_deep-101" in seq[:4] and "how_deep-102" in seq
+    assert seq.index("how_deep-102") - seq.index("how_deep-101") >= 2

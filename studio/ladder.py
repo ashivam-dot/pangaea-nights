@@ -449,25 +449,24 @@ def pick(banks: dict[str, list[dict]], data: dict, at: date, planned: list[dict]
         p = find(banks, qid)
         if p and not rotation_problems(past, p["series"], at):
             return p
-    # Proven premises (a competitor's outlier retold as our own deep-time premise) go ahead of untested bank ones.
-    proven = sorted((p for ps in banks.values() for p in ps if p.get("provenance") and p["id"] not in taken),
-                    key=lambda p: (p.get("added_at", ""), p["id"]))
-    for p in proven:
-        if not rotation_problems(past, p["series"], at):
-            return p
     choices = []
     for series in sorted(banks):
         premises = banks[series]
         free = [p for p in premises if p["id"] not in taken]
         if not free or rotation_problems(past, series, at):
             continue
-        best = max(free, key=lambda p: (weight(data, series, p["era"]), -premises.index(p)))
+        # Within a series a proven premise (a competitor's outlier retold as our own, oldest accepted first) goes
+        # ahead of untested bank ones. It never jumps the series choice below: picked greedily, two proven premises
+        # of one series ran back to back and left no series that keeps 3 in any 7 days (a dead end, not a Short).
+        proven = sorted((p for p in free if p.get("provenance")), key=lambda p: (p.get("added_at", ""), p["id"]))
+        best = proven[0] if proven else max(free, key=lambda p: (weight(data, series, p["era"]), -premises.index(p)))
         choices.append((last_used.get(series, -1), weight(data, series, best["era"]), best))
     if not choices:  # rotation cannot be met with what is left: say so rather than break the rule
         raise BankError("no premise satisfies the rotation rules: the banks need more premises")
-    # Among the two series that have rested longest, the better learned weight leads (ties keep rest order).
+    # Among the two series that have rested longest, one holding a proven premise leads, then the better learned
+    # weight (ties keep rest order).
     rested = sorted(choices, key=lambda c: c[0])[:2]
-    return max(rested, key=lambda c: (c[1], -c[0]))[2]
+    return max(rested, key=lambda c: (bool(c[2].get("provenance")), c[1], -c[0]))[2]
 
 
 def plan_problems(p: dict, data: dict, at: date, planned: list[dict] | None = None) -> dict:
