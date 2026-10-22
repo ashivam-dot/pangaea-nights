@@ -1,6 +1,8 @@
 """The record of everything made and published, kept as JSON on the orphan `state` branch.
 
 Published episodes consume their topic forever; dry and test runs are recorded separately and consume nothing.
+Shorts live in their own list and never touch `last_upload`, so a Short can never hold back a long-form episode.
+`ladder` holds what the Shorts learner keeps: weights, the pt.2 queue, per-build gate results, alerts and summaries.
 """
 from __future__ import annotations
 
@@ -10,7 +12,9 @@ from pathlib import Path
 
 from . import config
 
-EMPTY = {"episodes": [], "dry_runs": [], "last_upload": None}
+EMPTY = {"episodes": [], "dry_runs": [], "last_upload": None, "shorts": [],
+         "ladder": {"weights": {}, "streaks": {}, "queue": [], "needs_bank": [], "builds": [], "alerts": [],
+                    "summaries": [], "tests": []}}
 
 
 def path(state: Path | None = None) -> Path:
@@ -24,6 +28,8 @@ def load(state: Path | None = None) -> dict:
     data = json.loads(p.read_text(encoding="utf-8"))
     for k, v in EMPTY.items():
         data.setdefault(k, json.loads(json.dumps(v)))
+    for k, v in EMPTY["ladder"].items():
+        data["ladder"].setdefault(k, json.loads(json.dumps(v)))
     return data
 
 
@@ -67,3 +73,23 @@ def hours_since_upload(data: dict, at: datetime | None = None) -> float | None:
         return None
     last = datetime.fromisoformat(data["last_upload"].replace("Z", "+00:00"))
     return ((at or datetime.now(timezone.utc)) - last).total_seconds() / 3600
+
+
+def record_short(data: dict, entry: dict) -> dict:
+    """Add (or update, by video id) a published Short. A premise can never be published twice."""
+    for s in data["shorts"]:
+        if s.get("video_id") and s["video_id"] == entry.get("video_id"):
+            s.update(entry)
+            return data
+    if any(s["premise"] == entry["premise"] and s.get("video_id") for s in data["shorts"]):
+        raise ValueError(f"premise {entry['premise']} was already published")
+    data["shorts"].append(entry)
+    return data
+
+
+def ladder_log(data: dict, key: str, entry: dict, keep: int = 120) -> dict:
+    """Append to one of the ladder's rolling logs (builds, alerts, summaries, tests)."""
+    log = data["ladder"].setdefault(key, [])
+    log.append({"at": now(), **entry})
+    data["ladder"][key] = log[-keep:]
+    return data

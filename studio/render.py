@@ -173,10 +173,11 @@ def card_alpha(card: dict, t: float) -> float:
 
 
 class Encoder:
-    def __init__(self, out: Path, w: int, h: int, crf: int = 21, preset: str = "medium", maxrate: str = "5M"):
+    def __init__(self, out: Path, w: int, h: int, crf: int = 21, preset: str = "medium", maxrate: str = "5M",
+                 fps: int = FPS):
         self.proc = subprocess.Popen(
             ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}",
-             "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", preset, "-crf", str(crf), "-aq-mode", "3",
+             "-r", str(fps), "-i", "-", "-c:v", "libx264", "-preset", preset, "-crf", str(crf), "-aq-mode", "3",
              "-maxrate", maxrate, "-bufsize", "10M",
              "-x264-params", "stitchable=1:keyint=240:min-keyint=24", "-pix_fmt", "yuv420p", "-an",
              "-movflags", "+faststart", str(out)], stdin=subprocess.PIPE)

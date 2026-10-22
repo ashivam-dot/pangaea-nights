@@ -1,0 +1,153 @@
+{
+ "series": "survive_night",
+ "premises": [
+  {
+   "id": "survive_night-01",
+   "era": "Late Cretaceous",
+   "title": "One Night in the Cretaceous — Which Shelter Do You Pick? 🦖",
+   "banner": "Which shelter gets you to dawn?",
+   "hook_vo": "One night in the Cretaceous. Pick your shelter.",
+   "art_direction": "A Late Cretaceous floodplain under a full moon, tall conifers and ferns, mist on a slow river and a far volcano glowing on the horizon.",
+   "options": [
+    {"n": 1, "label": "Hollow log", "vo": "Number one: a dry hollow log by the river.", "danger": 1,
+     "image_prompt": "Looking out from inside a huge hollow fallen conifer log, rough dry bark framing a misty moonlit river, a warm orange glow from a distant volcano low on the horizon"},
+    {"n": 2, "label": "Fern thicket", "vo": "Number two: deep inside a fern thicket.", "danger": 2,
+     "image_prompt": "A dense thicket of giant tree ferns at night, dew shining on curled fronds, silver moonlight between the leaves and a warm amber glow of distant lava behind them"},
+    {"n": 3, "label": "Small burrow", "vo": "Number three: a small burrow under the roots.", "danger": 3,
+     "image_prompt": "Close view of a small round burrow entrance dug into a sandy bank under twisted conifer roots, soft moonlight on the soil, a warm ember glow far behind on the plain"},
+    {"n": 4, "label": "Treetop nest", "vo": "Number four: up a tree, beside a nest.", "danger": 4,
+     "image_prompt": "High in a moonlit conifer crown, a large nest of sticks with speckled eggs on a thick branch, the floodplain far below and a warm volcano glow on the clouds"},
+    {"n": 5, "label": "Riverbank mud", "vo": "Number five: half buried in riverbank mud.", "danger": 5,
+     "image_prompt": "A wide glistening mudbank along a slow Cretaceous river at night, ripples catching moonlight, crocodile eyes just above the water and a warm sunset-coloured glow from distant lava"},
+    {"n": 6, "label": "Sauropod herd", "vo": "Number six: against a sleeping sauropod herd.", "danger": 6,
+     "image_prompt": "A herd of huge long-necked sauropods resting together on a moonlit plain, their massive grey flanks rising like hills, warm orange volcano glow outlining their necks"},
+    {"n": 7, "label": "Open plain", "vo": "Number seven: out on the open plain.", "danger": 7,
+     "image_prompt": "A vast flat open floodplain of low ferns under a huge bright moon, nothing to hide behind for miles, a lone warm ember glow of a lava flow on the far horizon"},
+    {"n": 8, "label": "Tyrannosaur trail", "vo": "Number eight: right beside a fresh T. rex trail.", "danger": 8,
+     "image_prompt": "Enormous fresh three-toed tracks pressed deep into wet moonlit mud, leading into dark conifers, rain puddles reflecting a warm red volcano glow, a huge shadowed tyrannosaur shape between the trees"}
+   ],
+   "answer_n": 3,
+   "verdict_vo": "Real answer: number 3, because early mammals seem to have burrowed to shelter from climate and daytime predators.",
+   "fact": {
+    "text": "Burrowing, which allowed sheltering from climate and diurnal predators, appears to be a basal mammalian trait.",
+    "wiki_title": "Nocturnal bottleneck",
+    "wiki_revid": 1381219565,
+    "source_sentence": "Burrowing lifestyle allowing sheltering from climate and diurnal predators appears to be a basal mammalian trait."
+   },
+   "description": "Eight places to spend one night in the Late Cretaceous, ranked from cosy to deadly. Which one would really get you to sunrise?",
+   "tags": ["Cretaceous", "dinosaurs", "prehistoric survival", "deep time", "would you survive", "paleontology"],
+   "related_topic_hint": "last day of the dinosaurs Cretaceous mammals nocturnal"
+  },
+  {
+   "id": "survive_night-02",
+   "era": "Late Triassic",
+   "title": "Pick Your Campsite on Pangaea — Only One Survives the Night 🌙",
+   "banner": "Where do you sleep on Pangaea?",
+   "hook_vo": "One night on Pangaea. Where do you sleep?",
+   "art_direction": "The Triassic supercontinent Pangaea under a vast starry sky, red rock, dry riverbeds and a far glimmer of open sea.",
+   "options": [
+    {"n": 1, "label": "Sea breeze shore", "vo": "Number one: a beach with a cool sea breeze.", "danger": 1,
+     "image_prompt": "A quiet Triassic shoreline at night, gentle waves on pale sand, low conifers along the dunes, a full moon over the sea and a warm golden glow of dawn starting at the edge"},
+    {"n": 2, "label": "River delta", "vo": "Number two: a reedy river delta.", "danger": 2,
+     "image_prompt": "A wide river delta of braided channels and horsetail reeds under the moon, still water reflecting stars, a warm amber glow of sunset fading behind low hills"},
+    {"n": 3, "label": "Conifer grove", "vo": "Number three: a grove of tall conifers.", "danger": 3,
+     "image_prompt": "A grove of tall straight Triassic conifers with fallen needles on red soil, moonbeams slanting between the trunks, a warm ember glow from a smouldering lightning-struck stump"},
+    {"n": 4, "label": "Salt flat", "vo": "Number four: a glittering salt flat.", "danger": 4,
+     "image_prompt": "An endless white salt flat cracked into hexagons under a bright moon, the crust glittering, cold blue shadows and a thin warm sunset band low on the far horizon"},
+    {"n": 5, "label": "Red canyon ledge", "vo": "Number five: a ledge in a red canyon.", "danger": 5,
+     "image_prompt": "A narrow ledge high on a deep red sandstone canyon wall at night, layered cliffs dropping into darkness, moonlight on the rock and a warm glow of embers far below"},
+    {"n": 6, "label": "Dune sea", "vo": "Number six: the middle of a dune sea.", "danger": 6,
+     "image_prompt": "Towering wind-carved sand dunes rolling to the horizon under a sky full of stars, sharp moonlit crests, deep indigo hollows and a warm orange glow of heat haze at the edge"},
+    {"n": 7, "label": "Dry interior", "vo": "Number seven: the far dry heart of Pangaea.", "danger": 7,
+     "image_prompt": "The barren interior of a supercontinent at night, a cracked dry riverbed winding through red rock and dust, a huge moon and a faint warm glow of a far desert storm"},
+    {"n": 8, "label": "Lava field", "vo": "Number eight: a warm field of fresh lava.", "danger": 8,
+     "image_prompt": "A black volcanic plain of fresh lava crust split by glowing orange cracks, steam rising into the moonlit sky, red rock mesas silhouetted far behind"}
+   ],
+   "answer_n": 1,
+   "verdict_vo": "Real answer: number 1, because the inner parts of Pangaea were likely far drier, with extreme swings of heat and cold.",
+   "fact": {
+    "text": "The inner parts of Pangaea were, compared to its shores, significantly drier, likely forming one of the most extensive desert systems in Earth's history with extreme variations of heat and cold.",
+    "wiki_title": "Pangaea",
+    "wiki_revid": 1376395143,
+    "source_sentence": "The inner parts of the supercontinent were, in comparison to its shores, significantly drier and cooler, likely forming one of the most extensive desert systems in Earth's geological history with extreme variations of heat and cold (continental climate), though several paleoclimatologists have found evidence of short rainy seasons in the interior regions."
+   },
+   "description": "Eight campsites on the supercontinent Pangaea, from a breezy shore to a field of fresh lava. Only one is a sensible place to spend the night.",
+   "tags": ["Pangaea", "Triassic", "supercontinent", "prehistoric survival", "deep time", "would you survive"],
+   "related_topic_hint": "Pangaea supercontinent one night Triassic desert"
+  },
+  {
+   "id": "survive_night-03",
+   "era": "Late Pleistocene",
+   "title": "Stuck in the Ice Age Overnight — Which Cave Do You Pick? 🧊",
+   "banner": "Which cave do you sleep in?",
+   "hook_vo": "Ice Age, one freezing night. Pick a cave.",
+   "art_direction": "Late Pleistocene Europe in deep winter, snow on limestone cliffs, a frozen river and green aurora over the steppe.",
+   "options": [
+    {"n": 1, "label": "Snow hollow", "vo": "Number one: a hollow scooped into deep snow.", "danger": 1,
+     "image_prompt": "A small hollow scooped into a deep snowdrift on an open steppe at night, blue moonlit snow, green aurora overhead and a warm golden glow of dawn just starting on the horizon"},
+    {"n": 2, "label": "Rock overhang", "vo": "Number two: a shallow rock overhang.", "danger": 2,
+     "image_prompt": "A shallow limestone overhang above a frozen river, icicles hanging from the lip, snow drifting in, aurora light and a warm ember-coloured sunset glow on the far valley"},
+    {"n": 3, "label": "Blue ice crevasse", "vo": "Number three: a crack in a blue glacier.", "danger": 3,
+     "image_prompt": "Inside a narrow crevasse of translucent blue glacier ice, walls glowing with moonlight from above, frost crystals sparkling and a warm amber glint of dawn at the top"},
+    {"n": 4, "label": "Hot spring grotto", "vo": "Number four: a grotto beside a steaming spring.", "danger": 4,
+     "image_prompt": "A rocky grotto beside a steaming hot spring pool in a snowy valley, mist curling in the moonlight, mineral terraces glowing warm orange around the water"},
+    {"n": 5, "label": "Dripping limestone cave", "vo": "Number five: a deep cave full of dripping stone.", "danger": 5,
+     "image_prompt": "A tall limestone cave with stalactites and stalagmites, water dripping into still pools, moonlight falling through a crack in the roof and a warm golden glow on wet flowstone"},
+    {"n": 6, "label": "Cave bear den", "vo": "Number six: a den where a giant bear hibernates.", "danger": 6,
+     "image_prompt": "A huge cave bear curled asleep on a bed of dry straw deep in a limestone cave, thick brown fur rising and falling, a warm amber glow of moonlit snow at the entrance"},
+    {"n": 7, "label": "Cave lion lair", "vo": "Number seven: a lair that smells of cave lion.", "danger": 7,
+     "image_prompt": "A cave lion lying alert at the mouth of a rocky lair on a snowy cliff, pale fur and bright eyes, aurora behind it and a warm sunset glow on the snow"},
+    {"n": 8, "label": "Hyena bone cave", "vo": "Number eight: a cave piled with cracked bones.", "danger": 8,
+     "image_prompt": "A low cave floor heaped with cracked bison and horse bones, spotted cave hyenas watching from the shadows, moonlight from the entrance and a warm ember glow on the wet rock"}
+   ],
+   "answer_n": 6,
+   "verdict_vo": "Real answer: number 6, because cave bears are thought to have been almost entirely plant-eaters.",
+   "fact": {
+    "text": "Unlike brown bears, cave bears are thought to have been almost entirely or exclusively herbivorous.",
+    "wiki_title": "Cave bear",
+    "wiki_revid": 1378613344,
+    "source_sentence": "Unlike brown bears, cave bears are thought to have been almost entirely or exclusively herbivorous."
+   },
+   "description": "Eight places to wait out one freezing Ice Age night, from a snow hollow to a hyena den. The safest cave might surprise you.",
+   "tags": ["Ice Age", "cave bear", "Pleistocene", "prehistoric survival", "deep time", "would you survive"],
+   "related_topic_hint": "Ice Age megafauna mammoth steppe Pleistocene winter"
+  },
+  {
+   "id": "survive_night-04",
+   "era": "Late Carboniferous",
+   "title": "Prehistoric Coal Forest at Night — Where Do You Sleep? 🪲",
+   "banner": "Where do you sleep in here?",
+   "hook_vo": "A coal forest, three hundred million years ago. Sleep where?",
+   "art_direction": "A Late Carboniferous coal swamp forest at night, towering scale trees and tree ferns, black still water and drifting mist.",
+   "options": [
+    {"n": 1, "label": "Mossy high branch", "vo": "Number one: a mossy branch high above the swamp.", "danger": 1,
+     "image_prompt": "A thick mossy branch high in a towering scale tree, the misty swamp far below, diamond-patterned bark in moonlight and a warm golden glow of dawn behind the canopy"},
+    {"n": 2, "label": "Dense tree ferns", "vo": "Number two: deep inside a dense tree fern forest.", "danger": 2,
+     "image_prompt": "A dense dark forest of tree ferns packed tightly together, layered fronds overhead, moonlight in thin shafts and a warm amber glow of decaying wood on the forest floor"},
+    {"n": 3, "label": "Dry peat bank", "vo": "Number three: a soft, dry peat bank.", "danger": 3,
+     "image_prompt": "A raised bank of soft brown peat between swamp pools, fallen scale tree trunks and ferns around it, mist in the moonlight and a warm ember glow of smouldering peat"},
+    {"n": 4, "label": "Giant horsetails", "vo": "Number four: a stand of giant horsetails.", "danger": 4,
+     "image_prompt": "A stand of giant jointed horsetail stems taller than trees rising from shallow water, moonlight on their ribbed green trunks and a warm sunset glow through the mist"},
+    {"n": 5, "label": "Swamp island", "vo": "Number five: a tiny island in black water.", "danger": 5,
+     "image_prompt": "A tiny island of roots and moss in a wide black swamp, still water mirroring the moon, scale trees all around and a warm orange glow of a distant lightning fire"},
+    {"n": 6, "label": "Open riverbank", "vo": "Number six: an open, sparsely wooded riverbank.", "danger": 6,
+     "image_prompt": "An open sparsely wooded riverbank in a Carboniferous forest, a few scale trees, a wide moonlit river and a long dark segmented millipede moving along the sand in a warm sunset glow"},
+    {"n": 7, "label": "Griffenfly roost", "vo": "Number seven: under a roost of giant griffenflies.", "danger": 7,
+     "image_prompt": "Giant griffenflies with wide veined wings resting on a fallen trunk above swamp water, wings glinting in moonlight, a warm amber glow of dawn behind the mist"},
+    {"n": 8, "label": "Millipede trail", "vo": "Number eight: across a giant millipede's trail.", "danger": 8,
+     "image_prompt": "A wide double track of many small leg marks crossing wet sand into the ferns, the armoured tail of an enormous millipede vanishing into the dark, warm ember glow on the water"}
+   ],
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because the giant millipede seems to have lived in open, sparsely wooded places near water.",
+   "fact": {
+    "text": "The giant millipede lived in open, sparsely wooded environments near water, and may have been amphibious.",
+    "wiki_title": "Arthropleura",
+    "wiki_revid": 1373001873,
+    "source_sentence": "It lived in open, sparsely wooded environments near water, and may have been amphibious."
+   },
+   "description": "One night in a coal swamp forest of giant insects and towering scale trees. Eight places to sleep, and only one keeps you away from its biggest resident.",
+   "tags": ["giant insects", "Carboniferous", "coal forest", "prehistoric survival", "deep time", "giant bug"],
+   "related_topic_hint": "giant insects coal forests Carboniferous"
+  }
+ ]
+}

@@ -114,3 +114,32 @@ def review(img: Image.Image, prompt: str) -> Verdict:
         reasons.append(f"mushy {sharp:.1f}")
     return Verdict(not reasons, reasons, groups["person"], groups["text"], groups["broken"], sim, aesthetic,
                    bright, contrast, sharp)
+
+
+def embed(img: Image.Image) -> np.ndarray:
+    """The unit CLIP image embedding (512 floats), for image-to-image similarity."""
+    import torch
+
+    model, preprocess = _load()[:2]
+    with torch.no_grad():
+        emb = model.encode_image(preprocess(img.convert("RGB")).unsqueeze(0)).float()
+        emb /= emb.norm(dim=-1, keepdim=True)
+    return emb[0].numpy().astype(np.float32)
+
+
+def pack(vec: np.ndarray) -> str:
+    """An embedding as base64 float16, small enough to keep in JSON and in the ledger."""
+    import base64
+
+    return base64.b64encode(np.asarray(vec, np.float16).tobytes()).decode()
+
+
+def unpack(text: str) -> np.ndarray:
+    import base64
+
+    v = np.frombuffer(base64.b64decode(text), np.float16).astype(np.float32)
+    return v / max(float(np.linalg.norm(v)), 1e-9)
+
+
+def cosine(a: np.ndarray, b: np.ndarray) -> float:
+    return float(np.dot(a, b) / max(float(np.linalg.norm(a) * np.linalg.norm(b)), 1e-9))

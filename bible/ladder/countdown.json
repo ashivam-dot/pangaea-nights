@@ -1,0 +1,153 @@
+{
+ "series": "countdown",
+ "premises": [
+  {
+   "id": "countdown-01",
+   "era": "End-Cretaceous",
+   "title": "The Asteroid Hits in 60 Seconds — Where Do You Hide? ☄️",
+   "banner": "60 seconds. Where do you hide?",
+   "hook_vo": "The asteroid hits in sixty seconds. Hide where?",
+   "art_direction": "The last night of the Cretaceous, a blazing streak crossing a starry sky over a floodplain forest, the world lit orange from above.",
+   "options": [
+    {"n": 1, "label": "Deep burrow", "vo": "Number one: a deep burrow underground.", "danger": 1,
+     "image_prompt": "A deep burrow tunnel dug into a riverbank under conifer roots, cool earth walls, a fiery orange glow of a falling asteroid lighting the entrance from outside"},
+    {"n": 2, "label": "Under a lake", "vo": "Number two: the bottom of a quiet lake.", "danger": 2,
+     "image_prompt": "Looking up from beneath the surface of a still forest lake at night, weed swaying, the sky above burning with a warm orange streak of a falling asteroid"},
+    {"n": 3, "label": "Rock cave", "vo": "Number three: a small cave in a cliff.", "danger": 3,
+     "image_prompt": "The mouth of a small cave in a sandstone cliff at night, the floodplain below lit by a blazing warm orange streak crossing the sky, cool shadows deep inside"},
+    {"n": 4, "label": "Hollow tree", "vo": "Number four: inside a hollow tree trunk.", "danger": 4,
+     "image_prompt": "Inside a huge hollow conifer trunk looking out through a crack, bark edges glowing with the orange light of an asteroid streak across a starry sky"},
+    {"n": 5, "label": "Dense forest", "vo": "Number five: deep in the forest.", "danger": 5,
+     "image_prompt": "A dense Cretaceous conifer forest at night, tall trunks lit from above by a warm orange glare, needles drifting, a burning streak visible through gaps in the canopy"},
+    {"n": 6, "label": "Mountain top", "vo": "Number six: the highest mountain top.", "danger": 6,
+     "image_prompt": "A bare rocky mountain summit at night, the land spread far below, the sky above split by a huge glowing orange asteroid trail heading for the horizon"},
+    {"n": 7, "label": "Open plain", "vo": "Number seven: the middle of an open plain.", "danger": 7,
+     "image_prompt": "A wide open fern plain at night with a herd of dinosaurs looking up, the sky blazing warm orange with a falling asteroid, long shadows across the ground"},
+    {"n": 8, "label": "Gulf coast", "vo": "Number eight: the shore of the Gulf.", "danger": 8,
+     "image_prompt": "A shallow tropical sea shore at night, calm water reflecting a blinding warm glow of a fireball descending on the horizon, palms and cycads bending in a hot wind"}
+   ],
+   "answer_n": 1,
+   "verdict_vo": "Real answer: number 1, because any burrowing animal would likely have had extra protection from the impact's aftermath.",
+   "fact": {
+    "text": "Any burrowing or semiaquatic mammal would have had additional protection from K–Pg boundary environmental stresses.",
+    "wiki_title": "Cretaceous–Paleogene extinction event",
+    "wiki_revid": 1379830492,
+    "source_sentence": "Any burrowing or semiaquatic mammal would have had additional protection from K–Pg boundary environmental stresses."
+   },
+   "description": "Sixty seconds before the asteroid strikes, eight places to hide, from underground to right on the coast. Which one gives you a real chance?",
+   "tags": ["asteroid", "dinosaur extinction", "Cretaceous", "60 seconds", "deep time", "would you survive"],
+   "related_topic_hint": "asteroid impact last day of the dinosaurs Chicxulub"
+  },
+  {
+   "id": "countdown-02",
+   "era": "End-Permian",
+   "title": "The Great Dying Begins in 60 Seconds — Where Do You Go? 🌋",
+   "banner": "The Great Dying. Pick fast.",
+   "hook_vo": "Earth's worst extinction starts now. Sixty seconds. Go.",
+   "art_direction": "The end of the Permian in Siberia, vast lava floods under a sulphur-yellow night sky, ash drifting over a dying conifer forest.",
+   "options": [
+    {"n": 1, "label": "Dig a burrow", "vo": "Number one: dig a burrow in the riverbank.", "danger": 1,
+     "image_prompt": "A fresh burrow entrance in a dry riverbank of red mud, ash flakes drifting down, a warm lava glow from the far horizon lighting the bank"},
+    {"n": 2, "label": "Polar forest", "vo": "Number two: run to the cold polar forest.", "danger": 2,
+     "image_prompt": "A cold polar forest of seed ferns under a pale night sky, frost on the ground, a faint warm glow of distant eruptions on the low clouds"},
+    {"n": 3, "label": "Shallow sea", "vo": "Number three: dive into a shallow sea.", "danger": 3,
+     "image_prompt": "A warm shallow Permian sea at night, reefs and crinoids under cloudy water, the surface above lit by an orange volcanic glow from the shore"},
+    {"n": 4, "label": "Big lake", "vo": "Number four: wade into a big lake.", "danger": 4,
+     "image_prompt": "A wide still lake under an ash-filled sky, dead conifers standing in the shallows, the water reflecting a warm lava glow from distant fissures"},
+    {"n": 5, "label": "Cave", "vo": "Number five: shelter in a limestone cave.", "danger": 5,
+     "image_prompt": "A limestone cave mouth on a hillside at night, ash drifting past the entrance, a deep warm orange volcanic glow lighting the rocks outside"},
+    {"n": 6, "label": "High plateau", "vo": "Number six: climb onto a high plateau.", "danger": 6,
+     "image_prompt": "A high rocky plateau above a burning lowland, curtains of lava fountaining far below, a sulphur-yellow sky and warm glowing ash clouds rolling in"},
+    {"n": 7, "label": "Deep ocean", "vo": "Number seven: swim out to the deep ocean.", "danger": 7,
+     "image_prompt": "A dark open ocean surface at night under a hazy sulphur sky, long swells catching a warm orange glow from a volcanic coastline on the horizon"},
+    {"n": 8, "label": "Lava fields", "vo": "Number eight: stay near the lava fields.", "danger": 8,
+     "image_prompt": "Endless flood basalt lava fields with glowing orange rivers of molten rock, steam and ash rising into a black sky, scorched conifer stumps in the foreground"}
+   ],
+   "answer_n": 1,
+   "verdict_vo": "Real answer: number 1, because the survivor Lystrosaurus has been found preserved in burrows, suggesting it lived in them.",
+   "fact": {
+    "text": "Lystrosaurus individuals have been found preserved in burrows, suggesting that they were habitually fossorial.",
+    "wiki_title": "Lystrosaurus",
+    "wiki_revid": 1369641214,
+    "source_sentence": "Specimens of Lystrosaurus individuals have been found preserved in burrows, suggesting that they were habitually fossorial, and were capable of constructing burrows relatively early in life."
+   },
+   "description": "The Siberian lava floods have begun and the worst extinction in Earth's history is underway. Eight places to run, and one strange survivor shows the way.",
+   "tags": ["Great Dying", "mass extinction", "Permian", "supervolcano", "60 seconds", "deep time"],
+   "related_topic_hint": "Great Dying Permian extinction Siberian Traps"
+  },
+  {
+   "id": "countdown-03",
+   "era": "End-Cretaceous",
+   "title": "Asteroid Mega-Tsunami in 60 Seconds — Pick Your Spot 🌊",
+   "banner": "Mega-tsunami coming. Where do you stand?",
+   "hook_vo": "The impact wave is coming. Sixty seconds. Choose.",
+   "art_direction": "The Gulf coast moments after the end-Cretaceous impact, a churning sea, a sky glowing orange and a wall of water rising far offshore.",
+   "options": [
+    {"n": 1, "label": "Far inland", "vo": "Number one: run far inland.", "danger": 1,
+     "image_prompt": "A forested inland valley far from any coast at night, conifers and ferns under a sky glowing warm orange from the distant impact, a calm river below"},
+    {"n": 2, "label": "Tall sea cliff", "vo": "Number two: a very tall sea cliff.", "danger": 2,
+     "image_prompt": "A towering sea cliff above a churning ocean at night, spray rising, the sky lit warm orange by the distant impact and a dark wall of water on the horizon"},
+    {"n": 3, "label": "Coastal hill", "vo": "Number three: a hill near the coast.", "danger": 3,
+     "image_prompt": "A grassy coastal hill of ferns looking down on a retreating sea at night, the seabed exposed, a warm orange glow on clouds above the far horizon"},
+    {"n": 4, "label": "Tallest tree", "vo": "Number four: climb the tallest tree.", "danger": 4,
+     "image_prompt": "Looking down from the top of a very tall conifer at a coastal forest at night, the sea pulling back below, a warm orange glow of the impact on the clouds"},
+    {"n": 5, "label": "River mouth", "vo": "Number five: the mouth of a wide river.", "danger": 5,
+     "image_prompt": "A broad river mouth spilling into a strange retreating sea at night, mudflats glistening in the moonlight, a warm orange impact glow over the water"},
+    {"n": 6, "label": "Open water", "vo": "Number six: swim out to open water.", "danger": 6,
+     "image_prompt": "Open dark ocean water at night swelling into a long rising wave, the sky glowing warm orange behind it, foam streaking across the surface"},
+    {"n": 7, "label": "Beach", "vo": "Number seven: stay on the beach.", "danger": 7,
+     "image_prompt": "A wide empty tropical beach at night with the sea strangely drawn back, wet sand reflecting a warm orange sky, a dark line of water rising on the horizon"},
+    {"n": 8, "label": "Next to impact", "vo": "Number eight: right beside the impact site.", "danger": 8,
+     "image_prompt": "A vast steaming crater rim on a shallow sea floor at night, molten rock glowing orange, boiling water pouring back in and a towering column of ash"}
+   ],
+   "answer_n": 1,
+   "verdict_vo": "Real answer: number 1, because one simulation suggests the first waves may have reached 1.5 kilometers high.",
+   "fact": {
+    "text": "The impact spawned megatsunamis over 100 meters tall, with one simulation suggesting the immediate waves may have reached up to 1.5 kilometers high.",
+    "wiki_title": "Chicxulub crater",
+    "wiki_revid": 1379989654,
+    "source_sentence": "The impact, expansion of water after filling the crater, and related seismic activity spawned megatsunamis over 100 meters (300 ft) tall, with one simulation suggesting the immediate waves from the impact may have reached up to 1.5 kilometers (0.9 mi) high."
+   },
+   "description": "The asteroid has hit the Gulf and a mega-tsunami is on its way. Eight places to stand, and the waves were taller than any cliff.",
+   "tags": ["asteroid", "tsunami", "dinosaur extinction", "60 seconds", "deep time", "would you survive"],
+   "related_topic_hint": "Chicxulub asteroid impact tsunami last day of the dinosaurs"
+  },
+  {
+   "id": "countdown-04",
+   "era": "Cryogenian",
+   "title": "Snowball Earth Freezes in 60 Seconds — Where Do You Go? ❄️",
+   "banner": "Earth is freezing. Where do you go?",
+   "hook_vo": "The whole planet is freezing. Sixty seconds. Move.",
+   "art_direction": "The Cryogenian Snowball Earth, endless white ice under a dim cold sun, blue glacier light and steam from rare volcanic vents.",
+   "options": [
+    {"n": 1, "label": "Equator open water", "vo": "Number one: open water at the equator.", "danger": 1,
+     "image_prompt": "A narrow band of dark open sea between vast ice sheets near the equator, gentle waves, a low warm golden sun on the water and ice cliffs on both sides"},
+    {"n": 2, "label": "Volcanic vent", "vo": "Number two: a steaming volcanic vent.", "danger": 2,
+     "image_prompt": "A steaming volcanic vent melting a pool in an endless ice sheet, orange glow of lava inside the crater, pale blue twilight sky above"},
+    {"n": 3, "label": "Hot spring", "vo": "Number three: a hot spring under the ice.", "danger": 3,
+     "image_prompt": "A small steaming hot spring pool in a hollow of blue ice, mineral crust glowing warm orange around its rim, frost crystals and a dim cold sun"},
+    {"n": 4, "label": "Ice cave", "vo": "Number four: a cave deep in the glacier.", "danger": 4,
+     "image_prompt": "Inside a tall blue glacier ice cave, translucent walls glowing, meltwater dripping, a warm amber shaft of low sunlight entering from the far opening"},
+    {"n": 5, "label": "Seafloor", "vo": "Number five: the dark sea floor below the ice.", "danger": 5,
+     "image_prompt": "The dark ocean floor beneath a thick ice ceiling, faint blue light filtering down, a warm orange glow from a hydrothermal vent among the rocks"},
+    {"n": 6, "label": "Glacier edge", "vo": "Number six: the edge of a moving glacier.", "danger": 6,
+     "image_prompt": "The cracked blue front of a vast moving glacier at twilight, seracs leaning, snow blowing across the ice and a thin warm sunset band on the horizon"},
+    {"n": 7, "label": "Mountain top", "vo": "Number seven: a mountain poking above the ice.", "danger": 7,
+     "image_prompt": "A lone dark mountain peak rising above an endless sea of ice at dusk, wind-blown snow streaming off it, a dim warm golden sun near the horizon"},
+    {"n": 8, "label": "Pole", "vo": "Number eight: the frozen pole.", "danger": 8,
+     "image_prompt": "A flat white polar ice plain under a dark sky full of stars and green aurora, snow drifts sculpted by wind, a faint warm glow of the hidden sun"}
+   ],
+   "answer_n": 1,
+   "verdict_vo": "Real answer: number 1, though scientists still argue whether a thin band of open equatorial water survived at all.",
+   "fact": {
+    "text": "Several unanswered questions remain, including whether Earth was a full snowball or a slushball with a thin equatorial band of open or seasonally open water.",
+    "wiki_title": "Snowball Earth",
+    "wiki_revid": 1380491304,
+    "source_sentence": "Several unanswered questions remain, including whether Earth was a full \"snowball\" or a \"slushball\" with a thin equatorial band of open (or seasonally open) water."
+   },
+   "description": "The whole planet is icing over, from the poles to the tropics. Eight places to wait it out, and the best one may not have existed at all.",
+   "tags": ["Snowball Earth", "ice age", "deep time", "60 seconds", "Earth history", "would you survive"],
+   "related_topic_hint": "Snowball Earth Cryogenian global glaciation"
+  }
+ ]
+}

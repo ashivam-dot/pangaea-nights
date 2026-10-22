@@ -51,7 +51,7 @@ def year_words(n: int) -> str:
 
 
 UNITS = {
-    "km²": "square kilometres", "km2": "square kilometres", "m²": "square metres", "km": "kilometres",
+    "km/h": "kilometres per hour", "mph": "miles per hour", "km²": "square kilometres", "km2": "square kilometres", "m²": "square metres", "km": "kilometres",
     "cm": "centimetres", "mm": "millimetres", "m": "metres", "kg": "kilograms",
     "°C": "degrees Celsius", "°F": "degrees Fahrenheit", "Ma": "million years", "mya": "million years ago",
     "Mya": "million years ago", "Ga": "billion years", "bya": "billion years ago", "ka": "thousand years",

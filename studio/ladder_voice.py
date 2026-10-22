@@ -1,0 +1,98 @@
+"""The narrator of a ladder Short: Kokoro am_michael by default, about 165 words a minute, every line checked back
+with Whisper (word error rate at most 8%). Word times come from Kokoro's own token timestamps, for the captions.
+"""
+from __future__ import annotations
+
+import json
+import os
+import re
+from pathlib import Path
+
+import numpy as np
+
+from . import ladder
+
+VOICE = os.environ.get("PANGAEA_LADDER_VOICE", "am_michael")
+TARGET_WPM = 165.0
+SPEED = (0.85, 1.30)
+MAX_WER = 0.08
+
+
+def wer(expected: str, heard: str) -> float:
+    """Word error rate: word-level edit distance over the expected length, on spoken forms ('3' = 'three')."""
+    from .voice import _norm_words
+
+    ref, hyp = _norm_words(expected), _norm_words(heard)
+    if not ref:
+        return 0.0
+    prev = list(range(len(hyp) + 1))
+    for i, r in enumerate(ref, start=1):
+        cur = [i]
+        for j, h in enumerate(hyp, start=1):
+            cur.append(min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (r != h)))
+        prev = cur
+    return prev[-1] / len(ref)
+
+
+def wpm(segments: dict) -> float:
+    words = sum(len(re.findall(r"[A-Za-z0-9']+", s["text"])) for s in segments.values())
+    seconds = sum(s["duration"] for s in segments.values())
+    return 60.0 * words / max(seconds, 1e-6)
+
+
+def _transcribe(audio: np.ndarray, sr: int) -> str:
+    import librosa
+
+    from .voice import whisper
+
+    wav = librosa.resample(audio, orig_sr=sr, target_sr=16000)
+    segs, _ = whisper().transcribe(wav, language="en", beam_size=1, vad_filter=False,
+                                   condition_on_previous_text=False)
+    return " ".join(s.text for s in segs)
+
+
+def _take(lines: list[dict], speed: float) -> dict:
+    from .voice import SR, _sentence
+
+    out = {}
+    for line in lines:
+        take = _sentence(line["text"], VOICE, speed)
+        out[line["id"]] = {"text": line["text"], "audio": take.audio, "words": take.words,
+                           "duration": round(len(take.audio) / SR, 3)}
+    return out
+
+
+def narrate(p: dict, out: Path) -> dict:
+    """voice/<line>.wav for hook, o1..o8, verdict and cta, and voice/voice.json with durations, word times, pace
+    and the Whisper check."""
+    import soundfile as sf
+
+    from .voice import SR
+
+    out.mkdir(parents=True, exist_ok=True)
+    lines = [{"id": "hook" if s["kind"] == "hook" else "verdict" if s["kind"] == "verdict" else
+              "cta" if s["kind"] == "cta" else f"o{s['n']}", "text": s["text"]} for s in ladder.segments(p)]
+    speed = 1.0
+    segs = _take(lines, speed)
+    pace = wpm(segs)
+    if abs(pace - TARGET_WPM) > 8:  # one correction toward the target pace
+        speed = min(max(speed * TARGET_WPM / pace, SPEED[0]), SPEED[1])
+        segs = _take(lines, speed)
+        pace = wpm(segs)
+    for attempt in range(2):
+        for s in segs.values():
+            s["wer"] = round(wer(s["text"], _transcribe(s["audio"], SR)), 3)
+        bad = [k for k, s in segs.items() if s["wer"] > MAX_WER]
+        if not bad or attempt:
+            break
+        retake = _take([ln for ln in lines if ln["id"] in bad], speed * 0.96)
+        for k, s in retake.items():
+            segs[k] = s
+    words = sum(len(re.findall(r"[a-z0-9']+", s["text"].lower())) for s in segs.values())
+    errors = sum(s["wer"] * len(re.findall(r"[a-z0-9']+", s["text"].lower())) for s in segs.values())
+    for k, s in segs.items():
+        sf.write(str(out / f"{k}.wav"), s.pop("audio"), SR)
+    report = {"voice": VOICE, "speed": round(speed, 3), "wpm": round(wpm(segs), 1), "wer": round(errors / words, 3),
+              "segments": segs, "durations": {k: s["duration"] for k, s in segs.items()}}
+    (out / "voice.json").write_text(json.dumps(report, indent=1))
+    return report

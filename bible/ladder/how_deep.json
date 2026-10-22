@@ -1,0 +1,153 @@
+{
+ "series": "how_deep",
+ "premises": [
+  {
+   "id": "how_deep-01",
+   "era": "Late Jurassic",
+   "title": "How Deep Could a Jurassic Ichthyosaur Dive? Pick a Number 🐬",
+   "banner": "How deep could it dive?",
+   "hook_vo": "A Jurassic ichthyosaur takes a breath. How deep?",
+   "art_direction": "The Late Jurassic sea, the water column from moonlit surface down into the dark twilight zone, with huge eyes and drifting ammonites.",
+   "options": [
+    {"n": 1, "label": "10 metres", "vo": "Number one: ten metres, just under the waves.", "danger": 1,
+     "image_prompt": "A sleek ichthyosaur gliding just under moonlit waves, silver light rippling across its back, a warm golden glow of dawn through the surface"},
+    {"n": 2, "label": "50 metres", "vo": "Number two: fifty metres, over a sunken reef.", "danger": 2,
+     "image_prompt": "An ichthyosaur swimming over a Jurassic sponge reef in blue water, shafts of moonlight from above and a warm amber glow of bioluminescent plankton"},
+    {"n": 3, "label": "100 metres", "vo": "Number three: one hundred metres, where blue fades.", "danger": 3,
+     "image_prompt": "An ichthyosaur descending through deep blue water with fading light above, a shoal of belemnites scattering, warm bioluminescent sparks around them"},
+    {"n": 4, "label": "250 metres", "vo": "Number four: two hundred fifty metres, among ammonites.", "danger": 4,
+     "image_prompt": "Coiled ammonites drifting in dim indigo water with an ichthyosaur passing above them, a warm glowing bioluminescent cloud lighting their shells"},
+    {"n": 5, "label": "400 metres", "vo": "Number five: four hundred metres, almost no light.", "danger": 5,
+     "image_prompt": "An ichthyosaur with huge eyes deep in nearly black water, faint blue light far above, tiny warm bioluminescent sparks drifting past its snout"},
+    {"n": 6, "label": "600 metres", "vo": "Number six: six hundred metres, the twilight zone.", "danger": 6,
+     "image_prompt": "An ichthyosaur with enormous eyes hunting squid in the deep twilight zone, near darkness, a warm glowing bioluminescent squid lighting its face"},
+    {"n": 7, "label": "1,500 metres", "vo": "Number seven: fifteen hundred metres, total darkness.", "danger": 7,
+     "image_prompt": "Total darkness of the deep sea with only a few warm glowing bioluminescent creatures, a ghostly pale shape of a large marine reptile at the edge of their light"},
+    {"n": 8, "label": "4,000 metres", "vo": "Number eight: four kilometres, the sea floor.", "danger": 8,
+     "image_prompt": "The abyssal sea floor of soft grey ooze in darkness, glass sponges and sea lilies, a warm orange glow of a hydrothermal vent in the distance"}
+   ],
+   "answer_n": 6,
+   "verdict_vo": "Real answer: number 6, because Ophthalmosaurus could likely reach 600 metres or more during a dive.",
+   "fact": {
+    "text": "Ophthalmosaurus could reach depths of 600 metres or more during a dive, reaching the mesopelagic zone.",
+    "wiki_title": "Ophthalmosaurus",
+    "wiki_revid": 1376972610,
+    "source_sentence": "Assuming a conservative cruising speed of 1 metre per second (3.3 ft/s) (2 metres per second (6.6 ft/s) being more likely), Ophthalmosaurus could reach depths of 600 metres (2,000 ft) or more during a dive, reaching the mesopelagic zone."
+   },
+   "description": "A Jurassic ichthyosaur with eyes the size of plates takes one breath and dives. Eight depths, from just under the waves to the sea floor: how far down could it go?",
+   "tags": ["ichthyosaur", "Jurassic", "deep sea", "marine reptiles", "how deep", "deep time"],
+   "related_topic_hint": "Jurassic sea marine reptiles ichthyosaurs"
+  },
+  {
+   "id": "how_deep-02",
+   "era": "Miocene",
+   "title": "How Deep Could Megalodon Really Go? Pick a Number Before It's Gone 🦈",
+   "banner": "How deep could megalodon go?",
+   "hook_vo": "Could megalodon still hide in the deep? Pick.",
+   "art_direction": "The Miocene ocean at night, warm coastal shallows with whales and kelp shading down into the cold black deep.",
+   "options": [
+    {"n": 1, "label": "Lagoon", "vo": "Number one: a warm shallow lagoon.", "danger": 1,
+     "image_prompt": "A warm shallow lagoon at night, sandy bottom and seagrass lit by moonlight, a warm golden glow of dawn on the surface above"},
+    {"n": 2, "label": "Warm coast", "vo": "Number two: warm coastal water over the shelf.", "danger": 2,
+     "image_prompt": "A gigantic megalodon shark cruising over a sunlit continental shelf in warm coastal water, a pod of small whales ahead, warm golden light rays from above"},
+    {"n": 3, "label": "Kelp edge", "vo": "Number three: the edge of a kelp forest.", "danger": 3,
+     "image_prompt": "The edge of a tall kelp forest in clear green water, fronds swaying, a huge shadow of a shark passing beyond, warm sunset light through the surface"},
+    {"n": 4, "label": "Open blue", "vo": "Number four: the open blue, two hundred metres.", "danger": 4,
+     "image_prompt": "Deep open blue ocean water fading to darkness below, a lone baleen whale silhouette, a warm golden glow of the sun far above at the surface"},
+    {"n": 5, "label": "Twilight zone", "vo": "Number five: the twilight zone, five hundred metres.", "danger": 5,
+     "image_prompt": "The dim twilight zone of the ocean, faint blue light from far above, lanternfish with tiny warm glowing bioluminescent dots drifting through the dark"},
+    {"n": 6, "label": "Cold midnight zone", "vo": "Number six: the cold midnight zone.", "danger": 6,
+     "image_prompt": "The cold black midnight zone of the deep ocean, a few warm glowing bioluminescent jellyfish, marine snow drifting slowly downward"},
+    {"n": 7, "label": "Trench wall", "vo": "Number seven: the wall of a deep trench.", "danger": 7,
+     "image_prompt": "The steep rocky wall of a deep ocean trench vanishing into blackness, white sea anemones on ledges, a warm glow of a bioluminescent anglerfish lure"},
+    {"n": 8, "label": "Abyss", "vo": "Number eight: the abyss, still hiding today.", "danger": 8,
+     "image_prompt": "A vast abyssal plain in total darkness, soft grey sediment and a lonely sea cucumber, a warm orange glow of a hydrothermal vent on the far horizon"}
+   ],
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because the shark lived in warm coastal waters and probably could not survive the cold deep sea.",
+   "fact": {
+    "text": "Megalodon lived in warm coastal waters and probably could not survive in the cold and nutrient-poor deep sea environment.",
+    "wiki_title": "Otodus megalodon",
+    "wiki_revid": 1380888665,
+    "source_sentence": "The claims that megalodon could remain elusive in the depths, similar to the megamouth shark which was discovered in 1976, are unlikely as the shark lived in warm coastal waters and probably could not survive in the cold and nutrient-poor deep sea environment."
+   },
+   "description": "Some say megalodon could still be hiding in the deep ocean. Eight depths, from a warm lagoon to the abyss, and only one was really its home.",
+   "tags": ["megalodon", "sharks", "deep sea", "ocean", "how deep", "deep time"],
+   "related_topic_hint": "megalodon Miocene ocean giant shark"
+  },
+  {
+   "id": "how_deep-03",
+   "era": "Late Cretaceous",
+   "title": "How Deep Did Ammonites Live in the Prehistoric Sea? Pick One 🐚",
+   "banner": "How deep did ammonites live?",
+   "hook_vo": "Ammonites filled the dinosaur seas. But how deep?",
+   "art_direction": "The Late Cretaceous Western Interior Seaway at night, shimmering coiled shells drifting in layers of turquoise and indigo water.",
+   "options": [
+    {"n": 1, "label": "Tide pools", "vo": "Number one: shallow tide pools on the shore.", "danger": 1,
+     "image_prompt": "Rocky tide pools on a Cretaceous shore at night, small snails and seaweed in clear water, a warm golden glow of sunset reflected on the wet rocks"},
+    {"n": 2, "label": "Surface waves", "vo": "Number two: right under the surface waves.", "danger": 2,
+     "image_prompt": "Just under rolling moonlit surface waves, bubbles and light ripples, a single coiled ammonite drifting upward into a warm golden glow of dawn"},
+    {"n": 3, "label": "Sunlit shelf", "vo": "Number three: a sunlit shelf, thirty metres.", "danger": 3,
+     "image_prompt": "A sunlit sandy sea shelf with oysters and sea lilies, a few coiled ammonites drifting above, warm golden light rays slanting down through the turquoise water"},
+    {"n": 4, "label": "Mid-water", "vo": "Number four: drifting in mid-water, one hundred metres.", "danger": 4,
+     "image_prompt": "A drifting group of coiled ammonite shells drifting together in blue mid-water, tentacles trailing, warm amber light from the surface glowing on their ribbed shells"},
+    {"n": 5, "label": "Upper 250 metres", "vo": "Number five: anywhere in the upper 250 metres.", "danger": 5,
+     "image_prompt": "Layers of ocean water from bright turquoise above to deep indigo below, ammonites of many sizes scattered through it, a warm glow of sunset at the top"},
+    {"n": 6, "label": "Deep reef", "vo": "Number six: a dark reef far below.", "danger": 6,
+     "image_prompt": "A dark deep reef of sponges and stalked sea lilies in dim blue water, faint warm glowing bioluminescent sparks, a mosasaur shape far above"},
+    {"n": 7, "label": "Midnight zone", "vo": "Number seven: the midnight zone.", "danger": 7,
+     "image_prompt": "Pitch-dark deep ocean water with marine snow falling, a few warm glowing bioluminescent creatures and the faint outline of a coiled shell"},
+    {"n": 8, "label": "Sea floor ooze", "vo": "Number eight: the ooze of the deep sea floor.", "danger": 8,
+     "image_prompt": "The soft grey ooze of a deep sea floor in darkness, empty broken coiled shells half buried, a warm orange glow of a vent far away"}
+   ],
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because ammonites appear to have lived in the upper 250 metres of the water column.",
+   "fact": {
+    "text": "In general, they appear to have inhabited the upper 250 metres of the water column.",
+    "wiki_title": "Ammonoidea",
+    "wiki_revid": 1380225373,
+    "source_sentence": "In general, they appear to have inhabited the upper 250 metres (820 ft) of the water column."
+   },
+   "description": "Ammonites drifted through the seas of the dinosaurs for millions of years. Eight depths, from tide pools to the sea floor: where did they really live?",
+   "tags": ["ammonites", "Cretaceous", "prehistoric sea", "ocean", "how deep", "deep time"],
+   "related_topic_hint": "ammonites Western Interior Seaway Cretaceous sea"
+  },
+  {
+   "id": "how_deep-04",
+   "era": "End-Cretaceous",
+   "title": "How Deep Was the Asteroid Crater That Ended the Dinosaurs? 🌋",
+   "banner": "How deep did the asteroid dig?",
+   "hook_vo": "The asteroid hits. How deep is the hole?",
+   "art_direction": "The Chicxulub impact site seconds to hours after the strike, a vast glowing wound in the sea floor beneath a burning sky.",
+   "options": [
+    {"n": 1, "label": "100 metres", "vo": "Number one: a hundred metres, a big pond.", "danger": 1,
+     "image_prompt": "A shallow round crater filled with steaming water on a tropical coast at night, ferns scorched around the rim, a warm orange glow of fire in the sky"},
+    {"n": 2, "label": "500 metres", "vo": "Number two: five hundred metres deep.", "danger": 2,
+     "image_prompt": "A deep bowl-shaped crater in limestone at night, smoke rising from its sides, the rim lit by a warm orange glow of burning forest"},
+    {"n": 3, "label": "1 kilometre", "vo": "Number three: one kilometre deep.", "danger": 3,
+     "image_prompt": "Looking down into a huge crater a kilometre deep, molten rock glowing orange at the bottom, steam clouds rolling up the cliffs under a dark sky"},
+    {"n": 4, "label": "3 kilometres", "vo": "Number four: three kilometres, deeper than canyons.", "danger": 4,
+     "image_prompt": "A crater wall plunging kilometres down into darkness, layered rock exposed, a deep warm lava glow from far below and ash falling through the air"},
+    {"n": 5, "label": "10 kilometres", "vo": "Number five: ten kilometres down.", "danger": 5,
+     "image_prompt": "A colossal crater seen from high above at night, its depths glowing molten orange, the sea rushing in over the rim in white torrents"},
+    {"n": 6, "label": "20 kilometres", "vo": "Number six: twenty kilometres down.", "danger": 6,
+     "image_prompt": "A vast transient cavity in the crust seen from the edge, layers of glowing molten rock and vapour, the far rim lost in a burning orange haze"},
+    {"n": 7, "label": "30 kilometres", "vo": "Number seven: thirty kilometres, into the crust.", "danger": 7,
+     "image_prompt": "An unimaginably deep cavity punched into the crust of the Earth, walls of molten glowing rock collapsing inward, a sky of fire and debris above"},
+    {"n": 8, "label": "Earth's core", "vo": "Number eight: all the way to the core.", "danger": 8,
+     "image_prompt": "A cutaway view of the planet with a glowing molten orange core deep inside, a bright scar on the surface above, stars and a dark sky around the curve of the Earth"}
+   ],
+   "answer_n": 7,
+   "verdict_vo": "Real answer: number 7, because the impact produced a transient cavity 100 kilometers wide and 30 kilometers deep.",
+   "fact": {
+    "text": "The impact produced a transient cavity 100 kilometers wide and 30 kilometers deep that later collapsed.",
+    "wiki_title": "Chicxulub crater",
+    "wiki_revid": 1379989654,
+    "source_sentence": "Such amounts of energy generated winds in excess of 1,000 kilometers per hour (600 mph) near the blast's center, and produced a transient cavity 100 kilometers (60 mi) wide and 30 kilometers (20 mi) deep that later collapsed."
+   },
+   "description": "The asteroid that ended the age of dinosaurs struck with unimaginable force. Eight guesses at how deep it punched into the Earth, from a pond to the core.",
+   "tags": ["asteroid", "dinosaur extinction", "Chicxulub", "how deep", "deep time", "Earth history"],
+   "related_topic_hint": "Chicxulub asteroid impact crater last day of the dinosaurs"
+  }
+ ]
+}
