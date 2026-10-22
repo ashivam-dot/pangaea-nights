@@ -457,7 +457,10 @@ def supply_days(banks: dict, data: dict, at: date, per_day: int = len(ladder.SLO
         for _ in range(per_day):
             try:
                 planned.append(ladder.pick(banks, sim, d, planned))
-            except ladder.BankError:
+            except ladder.BankError as exc:
+                print(f"supply: ends on day {day} ({d.isoformat()}): {exc}; picked so far "
+                      f"{[x['premise'] for x in sim['shorts'] if x.get('video_id') == 'sim'][-6:]} + "
+                      f"{[x['id'] for x in planned]}", flush=True)
                 return day
         sim["shorts"] += [{"premise": p["id"], "series": p["series"], "era": p["era"], "video_id": "sim",
                            "publish_at": f"{d.isoformat()}T14:30:00Z"} for p in planned]
