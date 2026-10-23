@@ -520,7 +520,19 @@
    }
   ],
   "alerts": [],
-  "summaries": [],
+  "summaries": [
+   {
+    "at": "2026-10-23T06:27:21Z",
+    "day": "2026-10-23",
+    "checkpoints": [],
+    "decisions": [],
+    "comments": [],
+    "released_today": [],
+    "weights": {},
+    "queue": [],
+    "needs_bank": []
+   }
+  ],
   "tests": [],
   "proven": []
  },
