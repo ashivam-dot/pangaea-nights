@@ -339,8 +339,9 @@ def main(argv: list[str] | None = None) -> None:
     s = sub.add_parser("health")
     s.add_argument("--hours", type=float, default=30)
     s.set_defaults(fn=health)
-    from . import ladder_cli, topics
+    from . import branding, ladder_cli, topics
 
+    branding.register(sub)
     ladder_cli.register(sub)
     topics.register(sub)
     args = p.parse_args(argv)

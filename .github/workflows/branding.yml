@@ -1,0 +1,31 @@
+name: branding
+
+# The channel's About text and keywords from studio/branding.py. apply=false only prints what would change.
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "write the change (false = show it only)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  branding:
+    runs-on: ubuntu-24.04
+    environment: youtube
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements/publish.txt
+      - name: Branding
+        env:
+          YOUTUBE_OAUTH_JSON: ${{ secrets.YOUTUBE_OAUTH_JSON }}
+          APPLY: ${{ inputs.apply }}
+        run: |
+          if [ "$APPLY" = "true" ]; then python -m studio.cli branding --apply; else python -m studio.cli branding; fi
