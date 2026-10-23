@@ -75,6 +75,12 @@
      "views": 10,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 321.56,
+     "views": 10,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "views_at_72h": 8.0
@@ -130,6 +136,12 @@
      "views": 2,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 249.8,
+     "views": 2,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "views_at_72h": 1.0
@@ -179,6 +191,12 @@
      "views": 9,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 209.98,
+     "views": 10,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "views_at_72h": 8.0
@@ -222,6 +240,12 @@
      "views": 0,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 185.98,
+     "views": 0,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "views_at_72h": 0.0
@@ -259,6 +283,12 @@
      "views": 2,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 137.98,
+     "views": 2,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "views_at_72h": 1.576965185022991
@@ -289,9 +319,34 @@
      "views": 1,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 113.98,
+     "views": 1,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "views_at_72h": 0.9116056881941459
+  },
+  {
+   "id": "2026-10-23-last-day-dinosaurs",
+   "topic": "last-day-dinosaurs",
+   "series": "forests-of-the-dinosaurs",
+   "title": "The Last Day of the Dinosaurs: The Asteroid and the Long Dark | Documentary for Sleep",
+   "writer": "gemini",
+   "words": 12690,
+   "shape": "full",
+   "mode": "publish",
+   "created": "2026-10-23T15:34:26Z",
+   "qa_ok": true,
+   "duration": 7095.94,
+   "run": "39972312503",
+   "video_id": "Y_zpVf53Hwc",
+   "url": "https://www.youtube.com/watch?v=Y_zpVf53Hwc",
+   "publish_at": "2026-10-23T21:00:00Z",
+   "uploaded_at": "2026-10-23T18:28:45Z",
+   "shorts": []
   }
  ],
  "dry_runs": [
@@ -431,9 +486,9 @@
    ]
   }
  ],
- "last_upload": "2026-10-18T19:48:13Z",
+ "last_upload": "2026-10-23T18:28:45Z",
  "learned": {
-  "at": "2026-10-22T15:08:33+00:00",
+  "at": "2026-10-23T18:28:45+00:00",
   "scored": 6,
   "min_samples": 4,
   "lifts": {},
