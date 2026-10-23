@@ -22,10 +22,16 @@ KEYWORDS = ('"deep time" prehistoric "Earth history" paleontology dinosaurs "ice
             '"survive the night" "sleep documentary" "documentary for sleep" "calm documentary"')
 
 
+# Sent back unchanged, these made the 2026-10-23 update answer 400 failedPrecondition (it still saved the description
+# and keywords): the API sets neither the title nor the old unsubscribed-trailer field.
+READ_ONLY = ("title", "unsubscribedTrailer")
+
+
 def plan(current: dict) -> dict:
     """The brandingSettings.channel to write: the current one with the description and keywords replaced (update
     replaces the whole part, so every other field is carried over)."""
-    return current | {"description": DESCRIPTION, "keywords": KEYWORDS}
+    keep = {k: v for k, v in current.items() if k not in READ_ONLY}
+    return keep | {"description": DESCRIPTION, "keywords": KEYWORDS}
 
 
 def apply(api, write: bool) -> dict:
@@ -35,7 +41,7 @@ def apply(api, write: bool) -> dict:
     got = api.channels().list(part="brandingSettings", id=me["id"]).execute()["items"][0]
     current = got.get("brandingSettings", {}).get("channel", {})
     wanted = plan(current)
-    changed = sorted(k for k in wanted if wanted[k] != current.get(k))
+    changed = sorted(k for k in ("description", "keywords") if wanted[k] != current.get(k))
     out = {"channel": me["id"], "changed": changed, "write": write, "fields": sorted(current)}
     if write and changed:
         api.channels().update(part="brandingSettings",
