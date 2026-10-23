@@ -31,8 +31,6 @@ import time
 import unicodedata
 from datetime import date, datetime, timedelta, timezone
 
-import requests
-
 from . import config, gates, ladder, ledger, outliers
 
 WEEKLY_CAP = 7  # proven premises added in any 7 days
@@ -491,6 +489,8 @@ def run(data: dict, api, llm, fetch, banks: dict | None = None, backlog: list[di
     An outlier counts as tried (and is never looked at again) only once it was really processed: the model rejected
     it, or its idea was fetched and drafted. A model outage, a non-retried HTTP error or a malformed reply in the
     mapping step marks nothing; ideas left over at the weekly cap or the time budget wait for next week."""
+    import requests  # here, not at the top: health.yml runs the CLI on a bare Python
+
     at = at or datetime.now(timezone.utc)
     stamp = at.strftime("%Y-%m-%dT%H:%M:%SZ")
     banks = banks if banks is not None else ladder.load_banks(strict=False)
