@@ -36,7 +36,7 @@ def apply(api, write: bool) -> dict:
     current = got.get("brandingSettings", {}).get("channel", {})
     wanted = plan(current)
     changed = sorted(k for k in wanted if wanted[k] != current.get(k))
-    out = {"channel": me["id"], "changed": changed, "write": write}
+    out = {"channel": me["id"], "changed": changed, "write": write, "fields": sorted(current)}
     if write and changed:
         api.channels().update(part="brandingSettings",
                               body={"id": me["id"], "brandingSettings": {"channel": wanted}}).execute()
