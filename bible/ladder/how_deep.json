@@ -4,10 +4,10 @@
   {
    "id": "how_deep-01",
    "era": "Cryogenian",
-   "title": "The Ocean Froze Solid on Snowball Earth — How Deep Do You Go? 🧊",
+   "title": "Snowball Earth May Have Frozen Over — How Deep Do You Go? 🧊",
    "banner": "Frozen ocean: how deep do you go?",
-   "hook_vo": "The whole ocean froze over. Pick your depth.",
-   "art_direction": "Glacial blue-white palette, sunlight diffusing through thick ice overhead, ultra-wide 14mm lens, one warm amber glow from far below.",
+   "hook_vo": "Imagine the ocean frozen over. Pick your depth.",
+   "art_direction": "Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots.",
    "options": [
     {
      "n": 1,
@@ -56,25 +56,25 @@
      "label": "The frozen-world seafloor",
      "vo": "Seven: the seafloor, kilometres under the ice.",
      "danger": 7,
-     "image_prompt": "bleak volcanic seafloor kilometres beneath a frozen ocean, black basalt pillows dusted with grey sediment, deep indigo darkness, one warm orange ember glow from a fissure in the rock, photoreal painterly, vertical composition"
+     "image_prompt": "bleak abyssal seafloor kilometres deep, black basalt pillows dusted with grey sediment in dark indigo water, close low view of the rocks lit by a soft warm reflected amber accent, black water beyond, no visible ice ceiling or sunlight, no lava, photoreal painterly, vertical composition"
     },
     {
      "n": 8,
-     "label": "Sitting on a boiling vent",
-     "vo": "Eight: on top of a boiling vent.",
+     "label": "Beside a superheated vent",
+     "vo": "Eight: beside a superheated vent.",
      "danger": 8,
-     "image_prompt": "towering black hydrothermal chimney on a dark ancient seafloor, shimmering superheated water billowing from its top, orange mineral crusts, one fierce warm glow from molten rock at its base, photoreal painterly, vertical composition"
+     "image_prompt": "black hydrothermal mineral chimney on a dark abyssal seafloor, a dark mineral-rich plume mixing with shimmering hot water from its top, dull orange mineral crusts under a soft warm reflected amber accent, dark water above, no ice ceiling, no lava or glowing molten rock, photoreal painterly, vertical composition"
     }
    ],
    "answer_n": 2,
-   "verdict_vo": "Real answer: number 2, because photosynthesis can work under ice up to 20 metres thick. That's where the food is, probably you too.",
+   "verdict_vo": "Real answer: number 2, because photosynthesis can work under ice up to 20 metres thick. Life may have found a foothold there.",
    "fact": {
     "text": "Photosynthesis can work under ice up to about 20 metres thick, and models suggest equatorial ice on Snowball Earth stayed under about 10 metres.",
     "wiki_title": "Snowball Earth",
     "wiki_revid": 1380491304,
     "source_sentence": "Photosynthesis can occur under ice up to 20 m thick, and at the temperatures predicted by models, equatorial sublimation would prevent equatorial ice thickness from exceeding 10 m."
    },
-   "description": "The whole ocean froze over, and you get to pick how deep you sink. Some of Earth's early life seems to have hung on through this; the trick is knowing where.",
+   "description": "In the Snowball Earth hypothesis, ice covers most of the ocean. Pick a depth and explore where early photosynthetic life might have persisted.",
    "tags": [
     "snowball earth",
     "ice age",
