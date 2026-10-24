@@ -40,9 +40,18 @@ jobs:
           git worktree add -b batch-state state FETCH_HEAD
       - name: FFmpeg (bounded install)
         run: |
-          command -v ffmpeg && exit 0
-          timeout 240 sudo apt-get update -qq
-          timeout 240 sudo apt-get install -y -qq ffmpeg
+          command -v ffmpeg && command -v ffprobe && exit 0
+          apt_options=(-o Acquire::Retries=1 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20)
+          # Hosted runners normally have current package lists. A full refresh can stall on an unrelated feed.
+          if timeout 180 sudo apt-get "${apt_options[@]}" install -y --no-install-recommends ffmpeg; then
+            exit 0
+          fi
+          source_options=()
+          if [ -f /etc/apt/sources.list.d/ubuntu.sources ]; then
+            source_options=(-o Dir::Etc::sourcelist=/etc/apt/sources.list.d/ubuntu.sources -o Dir::Etc::sourceparts=-)
+          fi
+          timeout 180 sudo apt-get "${apt_options[@]}" "${source_options[@]}" update
+          timeout 180 sudo apt-get "${apt_options[@]}" install -y --no-install-recommends ffmpeg
       - run: pip install -q -r requirements/base.txt -r requirements/publish.txt
       - name: Build, review and reconcile exact media
         env:
