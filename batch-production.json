@@ -13,7 +13,7 @@
         "slot": "A",
         "premise": "how_deep-01"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 0,
       "obsolete_runs": [
         40121235398
@@ -21,7 +21,11 @@
       "repair_reason": "Abyssal image was incorrectly sunlit. Render again using corrected dark-water prompt; old clip is never releasable.",
       "run_id": 40124993101,
       "source_sha": "c8e824b5734e959bd0f0c6bff057c9875c316307",
-      "cloud_status": "in_progress"
+      "cloud_status": "in_progress",
+      "problems": [
+        "Direct review of Snowball o8 base and alternate: both show a bright shallow-water surface above an abyssal vent; glowing crust/top and a pipe-like chimney remain scientifically misleading. Hold this exact render. Shared glowing-focal-light style conflicts with the black-water repair."
+      ],
+      "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -451,8 +455,8 @@
       "attempts": 0
     }
   ],
-  "halted": null,
-  "updated_at": "2026-10-24T20:19:01+00:00",
+  "halted": "Repair held entry how_deep-01: Direct review of Snowball o8 base and alternate: both show a bright shallow-water surface above an abyssal vent; glowing crust/top and a pipe-like chimney remain scientifically misleading. Hold this exact render. Shared glowing-focal-light style conflicts with the black-water repair.",
+  "updated_at": "2026-10-24T20:26:36.275549+00:00",
   "complete": false,
   "health": {
     "public": 0,
