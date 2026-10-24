@@ -1,0 +1,411 @@
+{
+  "authorization": "Owner 2026-10-25: batch production, one now and the following ten days. Release only after complete review.",
+  "source": "8e04eb8",
+  "release_status": "planned only; no YouTube schedules created",
+  "jobs": [
+    {
+      "repo": "pangaea-nights",
+      "premise": "how_deep-01",
+      "slot": "A",
+      "target": "now-after-review",
+      "run_id": 40121235398,
+      "stage": "building",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "how_deep-01"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "level_1_8-01",
+      "series": "level_1_8",
+      "slot": "B",
+      "target": "2026-10-25T00:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "level_1_8-01"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "survive_night-01",
+      "series": "survive_night",
+      "slot": "A",
+      "target": "2026-10-25T14:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "survive_night-01"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "countdown-02",
+      "series": "countdown",
+      "slot": "C",
+      "target": "2026-10-25T19:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "countdown-02"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "how_deep-02",
+      "series": "how_deep",
+      "slot": "B",
+      "target": "2026-10-26T00:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "how_deep-02"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "level_1_8-02",
+      "series": "level_1_8",
+      "slot": "A",
+      "target": "2026-10-26T14:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "level_1_8-02"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "survive_night-02",
+      "series": "survive_night",
+      "slot": "C",
+      "target": "2026-10-26T19:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "survive_night-02"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "countdown-03",
+      "series": "countdown",
+      "slot": "B",
+      "target": "2026-10-27T00:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "countdown-03"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "how_deep-03",
+      "series": "how_deep",
+      "slot": "A",
+      "target": "2026-10-27T14:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "how_deep-03"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "level_1_8-03",
+      "series": "level_1_8",
+      "slot": "C",
+      "target": "2026-10-27T19:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "level_1_8-03"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "survive_night-03",
+      "series": "survive_night",
+      "slot": "B",
+      "target": "2026-10-28T00:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "survive_night-03"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "countdown-04",
+      "series": "countdown",
+      "slot": "A",
+      "target": "2026-10-28T14:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "countdown-04"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "how_deep-04",
+      "series": "how_deep",
+      "slot": "C",
+      "target": "2026-10-28T19:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "how_deep-04"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "level_1_8-04",
+      "series": "level_1_8",
+      "slot": "B",
+      "target": "2026-10-29T00:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "level_1_8-04"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "survive_night-04",
+      "series": "survive_night",
+      "slot": "A",
+      "target": "2026-10-29T14:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "survive_night-04"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "countdown-05",
+      "series": "countdown",
+      "slot": "C",
+      "target": "2026-10-29T19:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "countdown-05"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "how_deep-05",
+      "series": "how_deep",
+      "slot": "B",
+      "target": "2026-10-30T00:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "how_deep-05"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "level_1_8-05",
+      "series": "level_1_8",
+      "slot": "A",
+      "target": "2026-10-30T14:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "level_1_8-05"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "survive_night-05",
+      "series": "survive_night",
+      "slot": "C",
+      "target": "2026-10-30T19:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "survive_night-05"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "countdown-06",
+      "series": "countdown",
+      "slot": "B",
+      "target": "2026-10-31T00:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "countdown-06"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "how_deep-06",
+      "series": "how_deep",
+      "slot": "A",
+      "target": "2026-10-31T14:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "how_deep-06"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "level_1_8-06",
+      "series": "level_1_8",
+      "slot": "C",
+      "target": "2026-10-31T19:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "level_1_8-06"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "survive_night-06",
+      "series": "survive_night",
+      "slot": "B",
+      "target": "2026-11-01T00:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "survive_night-06"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "countdown-07",
+      "series": "countdown",
+      "slot": "A",
+      "target": "2026-11-01T14:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "countdown-07"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "how_deep-07",
+      "series": "how_deep",
+      "slot": "C",
+      "target": "2026-11-01T19:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "how_deep-07"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "level_1_8-07",
+      "series": "level_1_8",
+      "slot": "B",
+      "target": "2026-11-02T00:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "level_1_8-07"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "survive_night-07",
+      "series": "survive_night",
+      "slot": "A",
+      "target": "2026-11-02T14:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "survive_night-07"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "countdown-08",
+      "series": "countdown",
+      "slot": "C",
+      "target": "2026-11-02T19:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "countdown-08"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "how_deep-08",
+      "series": "how_deep",
+      "slot": "B",
+      "target": "2026-11-03T00:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "how_deep-08"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "level_1_8-08",
+      "series": "level_1_8",
+      "slot": "A",
+      "target": "2026-11-03T14:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "level_1_8-08"
+      }
+    },
+    {
+      "repo": "pangaea-nights",
+      "premise": "survive_night-08",
+      "series": "survive_night",
+      "slot": "C",
+      "target": "2026-11-03T19:30:00Z",
+      "stage": "planned",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "survive_night-08"
+      }
+    }
+  ],
+  "note": "Dry renders use A as a preview canvas. Targets are planned UTC releases, not booked YouTube schedules. Long documentaries retain Tuesday/Friday cadence."
+}
