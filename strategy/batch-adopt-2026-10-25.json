@@ -7,14 +7,5 @@
     "run_id": 40124993101,
     "stage": "building",
     "source_sha": "c8e824b5734e959bd0f0c6bff057c9875c316307"
-  },
-  "level_1_8-01": {
-    "run_id": 40128334178,
-    "stage": "building",
-    "source_sha": "3ad54b8cb1b520f3bee25dcf0952bb5f529ff479",
-    "obsolete_runs": [
-      40122729549
-    ],
-    "repair_reason": "Old base/alternate Opabinia and Anomalocaris drawings contradicted the script; Hallucigenia was upright. New whole-body directions and shared source-grounded anatomy requirements; replacement still requires original gates and full audiovisual approval."
   }
 }

@@ -17,7 +17,7 @@
     },
     {
       "repo": "pangaea-nights",
-      "premise": "level_1_8-01",
+      "premise": "level_1_8-16",
       "series": "level_1_8",
       "slot": "B",
       "target": "2026-10-25T00:30:00Z",
@@ -25,8 +25,9 @@
       "inputs": {
         "dry_run": "true",
         "slot": "A",
-        "premise": "level_1_8-01"
-      }
+        "premise": "level_1_8-16"
+      },
+      "editorial_replan": "Keep the same series and slot; Cambrian drafts are quarantined for inaccurate rare-animal body plans. Use the existing Ice Age animal premise with full original gates and full AV review."
     },
     {
       "repo": "pangaea-nights",
