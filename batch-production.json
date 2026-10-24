@@ -12,19 +12,20 @@
         "dry_run": "true",
         "slot": "A",
         "premise": "how_deep-01",
-        "replay": ".github/replay/snowball-foreground-repair.json"
+        "replay": ".github/replay/snowball-empty-ice-repair.json"
       },
-      "stage": "held",
-      "attempts": 4,
+      "stage": "dispatch_unresolved",
+      "attempts": 5,
       "obsolete_runs": [
         40121235398,
         40124993101,
         40131481179,
         40136652437,
-        40136822897
+        40136822897,
+        40138993804
       ],
-      "repair_reason": "Retain every exact inspected image and all generation history. Correct ASR orthographic comparison without equating wrong numbers, units or homophones. Add bounded constant midtone grading before overlays; actual vent-shot regression lifts minimum luma from 56 to 63.85 while black remains black. Existing brightness and voice thresholds, current picture checks and complete AV approval remain mandatory. No image regeneration expected.",
-      "source_sha": "603874bcb46b5539429047a4fe0cfa8e20e3aacb",
+      "repair_reason": "Exclude exact first-person leg/boot opening and closing; repaint only empty ice plates, retain seven valid underwater slots, enforce unchanged final gates and explicit timestamped no-human full AV review.",
+      "source_sha": "b6ffa7aa1efbc7887829c01bbe438154abb5f5cf",
       "cloud_status": "completed",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
@@ -82,9 +83,73 @@
             "replay": ".github/replay/snowball-foreground-repair.json"
           },
           "repair_reason": "Retain exact current o1-o4, o7-o8 and closing. Replace only failed o5/o6 with explicitly local existing-model images, raw-pixel-bound generation receipts, and unchanged current cloud QA. Narration text, title, fact, answer and release identity are preserved. Complete AV approval is still required."
+        },
+        {
+          "run_id": 40138993804,
+          "source_sha": "603874bcb46b5539429047a4fe0cfa8e20e3aacb",
+          "stage": "held",
+          "problems": [
+            "ValueError: missing rendered middle observation; missing rendered ending observation"
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "how_deep-01",
+            "replay": ".github/replay/snowball-foreground-repair.json"
+          },
+          "repair_reason": "Retain every exact inspected image and all generation history. Correct ASR orthographic comparison without equating wrong numbers, units or homophones. Add bounded constant midtone grading before overlays; actual vent-shot regression lifts minimum luma from 56 to 63.85 while black remains black. Existing brightness and voice thresholds, current picture checks and complete AV approval remain mandatory. No image regeneration expected.",
+          "review": {
+            "schema": 1,
+            "model": "gemini-3-flash-preview",
+            "duration": 42.305,
+            "video_sha256": "1a661ce8175dac5ea6437a11ae86525446224b4949df1e7153f279119cd45a92",
+            "brief_sha256": "6628786b2908d87387112252c4ae9f3ff58d4aeafa4c2b0bdf53863285bf11a6",
+            "review_video_sha256": "3f95d205b218a0d4a10392a40611a77220c1a02d7cf9a45e9fac289cdb7861dd",
+            "review_audio_sha256": "15eebf7771a80357395027bbec66b967331e5e8dd84d146f0bb028930df459fc",
+            "verdict": {
+              "decision": "pass",
+              "audio_listened": true,
+              "video_viewed": true,
+              "heard_opening": "Imagine the ocean frozen over.",
+              "heard_ending": "Comment your number.",
+              "checks": {
+                "speech_clear": true,
+                "pronunciation_ok": true,
+                "music_balance_ok": true,
+                "captions_readable": true,
+                "visuals_match": true,
+                "continuity_ok": true,
+                "opening_clear": true,
+                "complete_payoff": true,
+                "no_material_factual_contradiction": true
+              },
+              "segments": [
+                {
+                  "part": "opening",
+                  "seconds": 0,
+                  "seen": "A first-person view of a person's legs standing on a vast, cracked frozen ocean at sunset with the title 'FROZEN OCEAN: HOW DEEP DO YOU GO?'",
+                  "heard": "Imagine the ocean frozen over. Pick your depth."
+                },
+                {
+                  "part": "middle",
+                  "seconds": 3,
+                  "seen": "A sequence of eight depth scenarios: surface ice, under-ice algae, 10m ice keels, 50m dim water, 200m rock face, 1km basalt arch, abyssal seafloor pillows, and a hydrothermal vent.",
+                  "heard": "One: standing on endless ice, wind howling. Two: right under the ice, faint light leaking through. Three: ten metres down, freezing blue twilight. Four: fifty metres, the last light fades. Five: two hundred metres. Total black. Six: one kilometre. Crushing cold, no light. Seven: the seafloor, kilometres under the ice. Eight: beside a superheated vent."
+                },
+                {
+                  "part": "ending",
+                  "seconds": 31,
+                  "seen": "The under-ice scene from option two returns with text explaining the 20-metre photosynthesis limit, followed by the opening sunset ice scene.",
+                  "heard": "Real answer: number 2, because photosynthesis can work under ice up to 20 metres thick. Life may have found a foothold there. Comment your number."
+                }
+              ],
+              "issues": []
+            }
+          }
         }
       ],
       "before_ids": [
+        40138993804,
         40136822897,
         40136652437,
         40135503878,
@@ -103,60 +168,7 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-24T22:32:18+00:00",
-      "run_id": 40138993804,
-      "review": {
-        "schema": 1,
-        "model": "gemini-3-flash-preview",
-        "duration": 42.305,
-        "video_sha256": "1a661ce8175dac5ea6437a11ae86525446224b4949df1e7153f279119cd45a92",
-        "brief_sha256": "6628786b2908d87387112252c4ae9f3ff58d4aeafa4c2b0bdf53863285bf11a6",
-        "review_video_sha256": "3f95d205b218a0d4a10392a40611a77220c1a02d7cf9a45e9fac289cdb7861dd",
-        "review_audio_sha256": "15eebf7771a80357395027bbec66b967331e5e8dd84d146f0bb028930df459fc",
-        "verdict": {
-          "decision": "pass",
-          "audio_listened": true,
-          "video_viewed": true,
-          "heard_opening": "Imagine the ocean frozen over.",
-          "heard_ending": "Comment your number.",
-          "checks": {
-            "speech_clear": true,
-            "pronunciation_ok": true,
-            "music_balance_ok": true,
-            "captions_readable": true,
-            "visuals_match": true,
-            "continuity_ok": true,
-            "opening_clear": true,
-            "complete_payoff": true,
-            "no_material_factual_contradiction": true
-          },
-          "segments": [
-            {
-              "part": "opening",
-              "seconds": 0,
-              "seen": "A first-person view of a person's legs standing on a vast, cracked frozen ocean at sunset with the title 'FROZEN OCEAN: HOW DEEP DO YOU GO?'",
-              "heard": "Imagine the ocean frozen over. Pick your depth."
-            },
-            {
-              "part": "middle",
-              "seconds": 3,
-              "seen": "A sequence of eight depth scenarios: surface ice, under-ice algae, 10m ice keels, 50m dim water, 200m rock face, 1km basalt arch, abyssal seafloor pillows, and a hydrothermal vent.",
-              "heard": "One: standing on endless ice, wind howling. Two: right under the ice, faint light leaking through. Three: ten metres down, freezing blue twilight. Four: fifty metres, the last light fades. Five: two hundred metres. Total black. Six: one kilometre. Crushing cold, no light. Seven: the seafloor, kilometres under the ice. Eight: beside a superheated vent."
-            },
-            {
-              "part": "ending",
-              "seconds": 31,
-              "seen": "The under-ice scene from option two returns with text explaining the 20-metre photosynthesis limit, followed by the opening sunset ice scene.",
-              "heard": "Real answer: number 2, because photosynthesis can work under ice up to 20 metres thick. Life may have found a foothold there. Comment your number."
-            }
-          ],
-          "issues": []
-        }
-      },
-      "archive": "batch-reviewed-40138993804",
-      "problems": [
-        "ValueError: missing rendered middle observation; missing rendered ending observation"
-      ],
+      "submitted_at": "2026-10-24T22:48:47+00:00",
       "editorial_holds": [
         {
           "id": "direct-human-body-part-40138993804",
@@ -675,8 +687,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry how_deep-01: ValueError: missing rendered middle observation; missing rendered ending observation",
-  "updated_at": "2026-10-24T22:48:41+00:00",
+  "halted": "Repair held entry level_1_8-16: Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.; Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.; Actual o8 takes depict a substantial dark mane like a modern male lion. Paleolithic depictions support cave lions with absent or very small manes; use a clearly maneless female cave lion reconstruction, preserving narration. Retain other valid art.; Actual retained o2 shows an albino domestic-rabbit-like animal with pink/red eye and very long uniformly pink ears, without recognizable Arctic-hare black ear tips. Repair this shot to a white Arctic hare with black-tipped shorter ears, dark eyes and hare proportions. Preserve narration and usable other images.",
+  "updated_at": "2026-10-24T22:48:47+00:00",
   "complete": false,
   "health": {
     "public": 0,
