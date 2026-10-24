@@ -39,7 +39,7 @@ def prepared(tmp_path, monkeypatch):
     monkeypatch.setattr(youtube, "related_episode", lambda *a: None)
     monkeypatch.setattr(youtube, "ladder_description", lambda *a: "Sources and disclosure")
     monkeypatch.setattr(youtube, "ladder_tags", lambda *a: ["marker"])
-    def upload(*args):
+    def upload(*args, **kwargs):
         when = args[-1]
         if when:
             video["status"]["publishAt"] = when
@@ -83,3 +83,30 @@ def test_recovery_of_an_already_public_upload_preserves_its_id(prepared):
     video["status"]["privacyStatus"] = "public"
     result = release.publish(job, folder, None)
     assert writes == [] and result["video_id"] == video["id"]
+
+
+def test_processing_success_still_waits_for_the_processed_upload_status(prepared, monkeypatch):
+    job, folder, video, writes, data = prepared
+    video["status"]["uploadStatus"] = "uploaded"
+    video["processingDetails"] = {"processingStatus": "succeeded"}
+    waits = []
+    def pause(seconds):
+        waits.append(seconds)
+        if seconds == 15:
+            assert writes == []
+            video["status"]["uploadStatus"] = "processed"
+    monkeypatch.setattr(release.time, "sleep", pause)
+    result = release.publish(job, folder, None)
+    assert waits[0] == 15 and result["owner_readback"]["uploadStatus"] == "processed"
+
+
+def test_an_existing_unbound_ladder_upload_cannot_be_adopted_as_reviewed(tmp_path, monkeypatch):
+    import hashlib
+
+    mp4 = tmp_path / "short.mp4"
+    mp4.write_bytes(b"reviewed original")
+    monkeypatch.setattr(youtube, "find", lambda *a: {"id": "old-unreviewed", "snippet": {"tags": ["marker"]}})
+    monkeypatch.setattr(youtube, "_insert", lambda *a: pytest.fail("duplicate insertion"))
+    with pytest.raises(ValueError, match="old-unreviewed is not bound"):
+        youtube.upload_ladder(None, {}, mp4, {}, "", ["marker"], None,
+                              media_sha256=hashlib.sha256(mp4.read_bytes()).hexdigest())

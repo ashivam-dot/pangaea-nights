@@ -97,14 +97,16 @@ def publish(job, folder, when):
     episode = youtube.related_episode(data, p["related_topic_hint"])
     # Always upload privately first. No unverified metadata or processing failure can become an immediate release.
     result = youtube.upload_ladder(api, channel, next(folder.rglob("short.mp4")), p,
-                                   youtube.ladder_description(p, episode), tags, when)
+                                   youtube.ladder_description(p, episode), tags, when,
+                                   media_sha256=job["review"]["video_sha256"])
     video_id = result["video_id"]
     for _ in range(41):
         video = api.videos().list(part="snippet,status,processingDetails", id=video_id).execute()["items"][0]
         st = video["status"]
-        if st.get("uploadStatus") in ("failed", "rejected", "deleted"):
+        if st.get("uploadStatus") in ("failed", "rejected", "deleted") or \
+                video.get("processingDetails", {}).get("processingStatus") in ("failed", "terminated"):
             raise RuntimeError("YouTube rejected this upload; preserve its id and investigate")
-        if st.get("uploadStatus") == "processed" or video.get("processingDetails", {}).get("processingStatus") == "succeeded":
+        if st.get("uploadStatus") == "processed":
             break
         time.sleep(15)
     else:

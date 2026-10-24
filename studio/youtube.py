@@ -338,10 +338,17 @@ def _reason(st: dict) -> str:
     return f" ({why})" if why else ""
 
 
-def upload_ladder(api, channel: dict, path: Path, p: dict, desc: str, tag_list: list[str], when: str | None) -> dict:
+def upload_ladder(api, channel: dict, path: Path, p: dict, desc: str, tag_list: list[str], when: str | None,
+                  media_sha256: str | None = None) -> dict:
     """Upload (or find again, by marker tag) one ladder Short, then read its status back with videos.list."""
     marker = tag_list[-1]
     existing = find(api, channel, marker)
+    if media_sha256 is not None:
+        from ops import upload_identity
+
+        binding = upload_identity.media_tag(path, media_sha256)
+        upload_identity.check_existing(existing, binding)
+        tag_list = upload_identity.bound_tags(tag_list, binding)
     video_id = existing["id"] if existing else _insert(api, path, ladder_body(p, desc, tag_list, when))
     video = api.videos().list(part="snippet,status", id=video_id).execute()["items"][0]
     st = video["status"]
