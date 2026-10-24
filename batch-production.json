@@ -257,7 +257,38 @@
             "o5.png": "eaf0d3539f80ff38966c30c5f9274f4f80ee72e509a2d135ee7794c113efa24d",
             "o5-alt1.png": "e3a7ca608b790111cef79cab2c8dc190a9cbbb4f960051008d73e61819c24705"
           },
-          "primary_reference": "https://www.adfg.alaska.gov/index.cfm?adfg=muskox.main"
+          "primary_reference": "https://www.adfg.alaska.gov/index.cfm?adfg=muskox.main",
+          "resolved_at": "2026-10-24T23:47:48+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_replan_unbooked_option_and_recheck_exact_repair",
+            "source_sha": "a5254411bb11d1d0b94458e3d2d61635f48132f6",
+            "replay": ".github/replay/ice-age-anatomy-repair.json",
+            "replay_sha256": "c82f0fc0ddb7430424e9269d32f02aaa42c8fd2fc39e63c5a99b8bb0649551f3",
+            "replacement_image_hashes": [
+              "08a2073bdc89be1d8001f34d990137c417edee85623a8e086c73a507ce7bc011",
+              "13b1a8890828911e250ee7458d9f73eb33d8c09d7694033200dd0f7033386ce9",
+              "186c97e10cfd9a5f541951ba9850e9c5979ba98b3c4b9d8f23e99b8199d6e5c9",
+              "25b0a891ef060c1230de294048f866be2c00b772e63c7e6f869ce2eb65ad0b6d",
+              "50dce07dc3a3bb8dc3ba5b950590bbf4ce72ae68f07727c441a51163ace41874",
+              "5b50f67161d43f86bf86bf7dcffbf23ca2340128afc7ba17e74cb1f81da0a67d",
+              "6600c8c2886eda30e19b831740e589166433da7fd70158cef14df3c4017dd940",
+              "6a1e00e17243672c59b8ffbdebf061d0d0a32ce1eaed98d9b43b895f8022d834",
+              "87fefb51bbc33a8a42bd2f4cfc8dcbbb3cd9314692e8ca4b4585668ca5759c4b",
+              "989c3f5431f5ce004dc4799613eb2067b9dbc80a3c5feb9cc98d7df1bd997d45",
+              "997630ddf5b5a20ba749e015cf0222e3aa8973af9eabeeda4433fa44640c20c9",
+              "998e84f8bcfcc51139c9e32a9bb68acb9d7ba7e42af632e27c77456b902321b5",
+              "a87f74693ba95a9178be219f53f3a3f241c6dd8e3ef9ffd7a5f105f36508efb6",
+              "ab0e974ef404a8193462594645ddf2d7eb8e8b78f1fbaf18dc3c110c0200252f",
+              "c6ac14aeb06b15fe400bf54e110fdc89fecda78be191764e5049f8e3537a6c01",
+              "c7ad7041f82fabde890508d4d244509a3e58dbeeefa8fb26fd150e8707e0e3a1",
+              "d70f114534a56c36727b1a7013e9380b39bbbd2748055d36667884c2b13a34bf",
+              "dfd076559afa959880b7a45dcb02b33f027b20cb2d4725ddfdb9a79222349f8b",
+              "f473084d8f52841e457e54b5eb492f6613b11f786c3ed4df09f862db7e9a5c9d"
+            ],
+            "option_replan": "Unbooked option five changed to steppe bison, new narration and exact new stills; mammoth answer and other choices retained. Source revision1379957542. Original lemming art also excluded for new compact lemming stills.",
+            "release_approval": false,
+            "remaining": "Current cloud picture/voice/render and full exact audiovisual review; owner-API delivery"
+          }
         },
         {
           "id": "direct-fox-and-rhino-anatomy-40135503878",
@@ -269,6 +300,37 @@
             "ladder-img-A-2/o3-alt1.png": "8ac10d6f9691658bb64a950cc8c930ce280a36ffdba85646e25d0d39575f604f",
             "ladder-img-A-6/o7.png": "901d2bc4f6f2ae918e31aab3e0bac14e6f1a9ddf5ef058342613d40295186d8b",
             "ladder-img-A-6/o7-alt1.png": "8390cfa3e85bee3fb458d54ec19b699943b68d7bf48ad36e5ce0db9da962e7ce"
+          },
+          "resolved_at": "2026-10-24T23:47:48+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_replan_unbooked_option_and_recheck_exact_repair",
+            "source_sha": "a5254411bb11d1d0b94458e3d2d61635f48132f6",
+            "replay": ".github/replay/ice-age-anatomy-repair.json",
+            "replay_sha256": "c82f0fc0ddb7430424e9269d32f02aaa42c8fd2fc39e63c5a99b8bb0649551f3",
+            "replacement_image_hashes": [
+              "08a2073bdc89be1d8001f34d990137c417edee85623a8e086c73a507ce7bc011",
+              "13b1a8890828911e250ee7458d9f73eb33d8c09d7694033200dd0f7033386ce9",
+              "186c97e10cfd9a5f541951ba9850e9c5979ba98b3c4b9d8f23e99b8199d6e5c9",
+              "25b0a891ef060c1230de294048f866be2c00b772e63c7e6f869ce2eb65ad0b6d",
+              "50dce07dc3a3bb8dc3ba5b950590bbf4ce72ae68f07727c441a51163ace41874",
+              "5b50f67161d43f86bf86bf7dcffbf23ca2340128afc7ba17e74cb1f81da0a67d",
+              "6600c8c2886eda30e19b831740e589166433da7fd70158cef14df3c4017dd940",
+              "6a1e00e17243672c59b8ffbdebf061d0d0a32ce1eaed98d9b43b895f8022d834",
+              "87fefb51bbc33a8a42bd2f4cfc8dcbbb3cd9314692e8ca4b4585668ca5759c4b",
+              "989c3f5431f5ce004dc4799613eb2067b9dbc80a3c5feb9cc98d7df1bd997d45",
+              "997630ddf5b5a20ba749e015cf0222e3aa8973af9eabeeda4433fa44640c20c9",
+              "998e84f8bcfcc51139c9e32a9bb68acb9d7ba7e42af632e27c77456b902321b5",
+              "a87f74693ba95a9178be219f53f3a3f241c6dd8e3ef9ffd7a5f105f36508efb6",
+              "ab0e974ef404a8193462594645ddf2d7eb8e8b78f1fbaf18dc3c110c0200252f",
+              "c6ac14aeb06b15fe400bf54e110fdc89fecda78be191764e5049f8e3537a6c01",
+              "c7ad7041f82fabde890508d4d244509a3e58dbeeefa8fb26fd150e8707e0e3a1",
+              "d70f114534a56c36727b1a7013e9380b39bbbd2748055d36667884c2b13a34bf",
+              "dfd076559afa959880b7a45dcb02b33f027b20cb2d4725ddfdb9a79222349f8b",
+              "f473084d8f52841e457e54b5eb492f6613b11f786c3ed4df09f862db7e9a5c9d"
+            ],
+            "option_replan": "Unbooked option five changed to steppe bison, new narration and exact new stills; mammoth answer and other choices retained. Source revision1379957542. Original lemming art also excluded for new compact lemming stills.",
+            "release_approval": false,
+            "remaining": "Current cloud picture/voice/render and full exact audiovisual review; owner-API delivery"
           }
         },
         {
@@ -280,6 +342,37 @@
           "evidence": {
             "ladder-img-A-7/o8-alt1.png": "5ebea92f2e735a3abfb08d79203d6cf5f7aa1161cbe81decbed36b6d1f1d4dd5",
             "ladder-img-A-7/o8.png": "b0487739cb1d03d1384d6ff01a8f9e804adca384bdff473f027a685374953a77"
+          },
+          "resolved_at": "2026-10-24T23:47:48+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_replan_unbooked_option_and_recheck_exact_repair",
+            "source_sha": "a5254411bb11d1d0b94458e3d2d61635f48132f6",
+            "replay": ".github/replay/ice-age-anatomy-repair.json",
+            "replay_sha256": "c82f0fc0ddb7430424e9269d32f02aaa42c8fd2fc39e63c5a99b8bb0649551f3",
+            "replacement_image_hashes": [
+              "08a2073bdc89be1d8001f34d990137c417edee85623a8e086c73a507ce7bc011",
+              "13b1a8890828911e250ee7458d9f73eb33d8c09d7694033200dd0f7033386ce9",
+              "186c97e10cfd9a5f541951ba9850e9c5979ba98b3c4b9d8f23e99b8199d6e5c9",
+              "25b0a891ef060c1230de294048f866be2c00b772e63c7e6f869ce2eb65ad0b6d",
+              "50dce07dc3a3bb8dc3ba5b950590bbf4ce72ae68f07727c441a51163ace41874",
+              "5b50f67161d43f86bf86bf7dcffbf23ca2340128afc7ba17e74cb1f81da0a67d",
+              "6600c8c2886eda30e19b831740e589166433da7fd70158cef14df3c4017dd940",
+              "6a1e00e17243672c59b8ffbdebf061d0d0a32ce1eaed98d9b43b895f8022d834",
+              "87fefb51bbc33a8a42bd2f4cfc8dcbbb3cd9314692e8ca4b4585668ca5759c4b",
+              "989c3f5431f5ce004dc4799613eb2067b9dbc80a3c5feb9cc98d7df1bd997d45",
+              "997630ddf5b5a20ba749e015cf0222e3aa8973af9eabeeda4433fa44640c20c9",
+              "998e84f8bcfcc51139c9e32a9bb68acb9d7ba7e42af632e27c77456b902321b5",
+              "a87f74693ba95a9178be219f53f3a3f241c6dd8e3ef9ffd7a5f105f36508efb6",
+              "ab0e974ef404a8193462594645ddf2d7eb8e8b78f1fbaf18dc3c110c0200252f",
+              "c6ac14aeb06b15fe400bf54e110fdc89fecda78be191764e5049f8e3537a6c01",
+              "c7ad7041f82fabde890508d4d244509a3e58dbeeefa8fb26fd150e8707e0e3a1",
+              "d70f114534a56c36727b1a7013e9380b39bbbd2748055d36667884c2b13a34bf",
+              "dfd076559afa959880b7a45dcb02b33f027b20cb2d4725ddfdb9a79222349f8b",
+              "f473084d8f52841e457e54b5eb492f6613b11f786c3ed4df09f862db7e9a5c9d"
+            ],
+            "option_replan": "Unbooked option five changed to steppe bison, new narration and exact new stills; mammoth answer and other choices retained. Source revision1379957542. Original lemming art also excluded for new compact lemming stills.",
+            "release_approval": false,
+            "remaining": "Current cloud picture/voice/render and full exact audiovisual review; owner-API delivery"
           }
         },
         {
@@ -289,6 +382,37 @@
           "reason": "Actual retained o2 shows an albino domestic-rabbit-like animal with pink/red eye and very long uniformly pink ears, without recognizable Arctic-hare black ear tips. Repair this shot to a white Arctic hare with black-tipped shorter ears, dark eyes and hare proportions. Preserve narration and usable other images.",
           "evidence": {
             "ladder-img-A-1/o2.png": "216ddcaa24c0a2a4529ff2d3a17114f3b0b9d5f2799066be2d8dd49550d19545"
+          },
+          "resolved_at": "2026-10-24T23:47:48+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_replan_unbooked_option_and_recheck_exact_repair",
+            "source_sha": "a5254411bb11d1d0b94458e3d2d61635f48132f6",
+            "replay": ".github/replay/ice-age-anatomy-repair.json",
+            "replay_sha256": "c82f0fc0ddb7430424e9269d32f02aaa42c8fd2fc39e63c5a99b8bb0649551f3",
+            "replacement_image_hashes": [
+              "08a2073bdc89be1d8001f34d990137c417edee85623a8e086c73a507ce7bc011",
+              "13b1a8890828911e250ee7458d9f73eb33d8c09d7694033200dd0f7033386ce9",
+              "186c97e10cfd9a5f541951ba9850e9c5979ba98b3c4b9d8f23e99b8199d6e5c9",
+              "25b0a891ef060c1230de294048f866be2c00b772e63c7e6f869ce2eb65ad0b6d",
+              "50dce07dc3a3bb8dc3ba5b950590bbf4ce72ae68f07727c441a51163ace41874",
+              "5b50f67161d43f86bf86bf7dcffbf23ca2340128afc7ba17e74cb1f81da0a67d",
+              "6600c8c2886eda30e19b831740e589166433da7fd70158cef14df3c4017dd940",
+              "6a1e00e17243672c59b8ffbdebf061d0d0a32ce1eaed98d9b43b895f8022d834",
+              "87fefb51bbc33a8a42bd2f4cfc8dcbbb3cd9314692e8ca4b4585668ca5759c4b",
+              "989c3f5431f5ce004dc4799613eb2067b9dbc80a3c5feb9cc98d7df1bd997d45",
+              "997630ddf5b5a20ba749e015cf0222e3aa8973af9eabeeda4433fa44640c20c9",
+              "998e84f8bcfcc51139c9e32a9bb68acb9d7ba7e42af632e27c77456b902321b5",
+              "a87f74693ba95a9178be219f53f3a3f241c6dd8e3ef9ffd7a5f105f36508efb6",
+              "ab0e974ef404a8193462594645ddf2d7eb8e8b78f1fbaf18dc3c110c0200252f",
+              "c6ac14aeb06b15fe400bf54e110fdc89fecda78be191764e5049f8e3537a6c01",
+              "c7ad7041f82fabde890508d4d244509a3e58dbeeefa8fb26fd150e8707e0e3a1",
+              "d70f114534a56c36727b1a7013e9380b39bbbd2748055d36667884c2b13a34bf",
+              "dfd076559afa959880b7a45dcb02b33f027b20cb2d4725ddfdb9a79222349f8b",
+              "f473084d8f52841e457e54b5eb492f6613b11f786c3ed4df09f862db7e9a5c9d"
+            ],
+            "option_replan": "Unbooked option five changed to steppe bison, new narration and exact new stills; mammoth answer and other choices retained. Source revision1379957542. Original lemming art also excluded for new compact lemming stills.",
+            "release_approval": false,
+            "remaining": "Current cloud picture/voice/render and full exact audiovisual review; owner-API delivery"
           }
         }
       ],
@@ -732,7 +856,7 @@
     }
   ],
   "halted": "Repair held entry level_1_8-16: Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.; Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.; Actual o8 takes depict a substantial dark mane like a modern male lion. Paleolithic depictions support cave lions with absent or very small manes; use a clearly maneless female cave lion reconstruction, preserving narration. Retain other valid art.; Actual retained o2 shows an albino domestic-rabbit-like animal with pink/red eye and very long uniformly pink ears, without recognizable Arctic-hare black ear tips. Repair this shot to a white Arctic hare with black-tipped shorter ears, dark eyes and hare proportions. Preserve narration and usable other images.",
-  "updated_at": "2026-10-24T23:45:51+00:00",
+  "updated_at": "2026-10-24T23:47:48+00:00",
   "complete": false,
   "health": {
     "public": 0,
