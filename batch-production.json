@@ -20,7 +20,8 @@
       ],
       "repair_reason": "Abyssal image was incorrectly sunlit. Render again using corrected dark-water prompt; old clip is never releasable.",
       "run_id": 40124993101,
-      "source_sha": "c8e824b5734e959bd0f0c6bff057c9875c316307"
+      "source_sha": "c8e824b5734e959bd0f0c6bff057c9875c316307",
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -40,7 +41,8 @@
       "obsolete_runs": [
         40122729549
       ],
-      "repair_reason": "Old base/alternate Opabinia and Anomalocaris drawings contradicted the script; Hallucigenia was upright. New whole-body directions and shared source-grounded anatomy requirements; replacement still requires original gates and full audiovisual approval."
+      "repair_reason": "Old base/alternate Opabinia and Anomalocaris drawings contradicted the script; Hallucigenia was upright. New whole-body directions and shared source-grounded anatomy requirements; replacement still requires original gates and full audiovisual approval.",
+      "cloud_status": "pending"
     },
     {
       "repo": "pangaea-nights",
@@ -450,5 +452,12 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-24T20:11:36+00:00"
+  "updated_at": "2026-10-24T20:11:38+00:00",
+  "complete": false,
+  "health": {
+    "public": 0,
+    "scheduled": 0,
+    "held": 0,
+    "mode": "review"
+  }
 }
