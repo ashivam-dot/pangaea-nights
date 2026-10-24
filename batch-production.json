@@ -14,7 +14,7 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-dark-water-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 1,
       "obsolete_runs": [
         40121235398,
@@ -22,7 +22,7 @@
       ],
       "repair_reason": "Exact original o1–o4 are rechecked and reused; closing reprises o1 with honest provenance; only incorrect deep o5–o8 repaint. Original script/fact/title/answer preserved; complete review still required.",
       "source_sha": "25630790b68982fa3a705c1d30817d3e86bf02c2",
-      "cloud_status": "in_progress",
+      "cloud_status": "queued",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
         {
@@ -49,7 +49,8 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-24T20:49:02.825703+00:00"
+      "submitted_at": "2026-10-24T20:49:02.825703+00:00",
+      "run_id": 40131481179
     },
     {
       "repo": "pangaea-nights",
@@ -480,7 +481,7 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-24T20:49:02.826218+00:00",
+  "updated_at": "2026-10-24T20:49:06.921511+00:00",
   "complete": false,
   "health": {
     "public": 0,
