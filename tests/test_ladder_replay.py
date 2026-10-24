@@ -271,3 +271,22 @@ def test_local_exhaustion_checks_each_raw_and_seed_instead_of_trusting_a_summary
     (path.parent / 'raw.png').write_bytes(b'corrupt original')
     with pytest.raises(ValueError, match='corrupt'):
         replay.exhausted(data, job, 'test', 'original-key', 4)
+
+
+def test_cached_exhausted_soft_only_picture_keeps_the_existing_fallback_and_its_source(cached,tmp_path,monkeypatch):
+    _,job,data,_=cached
+    monkeypatch.setattr(replay,'exhausted',lambda *a:True)
+    def soft(*a):
+        v=verdict(['mushy 7.1'])
+        v.sharpness=7.1
+        return v
+    monkeypatch.setattr(qa,'review',soft)
+    monkeypatch.setattr(li.sdcpp,'Server',lambda *a:pytest.fail('exhausted soft picture was repainted'))
+    report=li.generate({'id':data['premise']},'original-key',tmp_path/'cached-soft',0,1,model='test',replay=data)
+    entry=report['images'][0]
+    assert entry['ok'] and len(entry['kept'])==1
+    assert entry['kept'][0]['fallback'] is True
+    assert entry['kept'][0]['cached_from']['source']['run_id']==123
+    monkeypatch.setattr(qa,'review',lambda *a:verdict(['mushy 7.1','text 0.9']))
+    refused=li.generate({'id':data['premise']},'original-key',tmp_path/'cached-unsafe',0,1,model='test',replay=data)
+    assert not refused['images'][0]['ok']

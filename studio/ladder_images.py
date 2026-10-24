@@ -132,6 +132,10 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                                        "figure": round(fig, 4), "cached_from": provenance, **verdict.as_dict()})
                 if not probs:
                     keep(img, verdict, fig, take, cached_from=provenance)
+                elif soft_only(probs, verdict.sharpness):
+                    # Reused raw pictures follow the same established mild-softness fallback as new
+                    # takes. Retain their exact source instead of repainting already exhausted seeds.
+                    soft.append((take_score(verdict, fig), take, img, verdict, fig, provenance))
                 if len(entry["kept"]) >= wanted:
                     break
             exhausted = ladder_replay.exhausted(replay, job, model, key, TAKES)
@@ -160,15 +164,15 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                     (out / "refused").mkdir(exist_ok=True)
                     img.resize((216, 384)).save(out / "refused" / f"{job['id']}-t{take + 1}.jpg", quality=80)
                     if soft_only(probs, verdict.sharpness):
-                        soft.append((take_score(verdict, fig), take, img, verdict, fig))
+                        soft.append((take_score(verdict, fig), take, img, verdict, fig, None))
                     continue
                 keep(img, verdict, fig, take)
                 if len(entry["kept"]) >= wanted:
                     break
             if not entry["kept"] and soft:
-                _, take, img, verdict, fig = max(soft, key=lambda c: c[0])
+                _, take, img, verdict, fig, provenance = max(soft, key=lambda c: c[0])
                 print(f"{job['id']}: keeping soft take {take + 1} (sharpness {verdict.sharpness:.1f})", flush=True)
-                keep(img, verdict, fig, take, fallback=True)
+                keep(img, verdict, fig, take, fallback=True, cached_from=provenance)
             entry["ok"] = bool(entry["kept"])
             report["images"].append(entry)
             (out / f"shard-{k:02d}.json").write_text(json.dumps(report, indent=1))
