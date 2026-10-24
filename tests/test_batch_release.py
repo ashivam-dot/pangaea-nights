@@ -186,3 +186,57 @@ def test_a_github_timeout_keeps_dispatch_ambiguity_retryable(monkeypatch):
     monkeypatch.setattr(batch.subprocess, "run", fail)
     with pytest.raises(batch.TransientOperation, match="reconcile"):
         batch.gh("api", "repos/owner/repo/actions/workflows/run.yml/dispatches", body={})
+
+
+@pytest.mark.parametrize("decision", ["pass", "hold"])
+def test_archive_outage_preserves_exact_verdict_on_a_fresh_runner(tmp_path, monkeypatch, decision):
+    real_review = review.review
+    job, data, adapter = setup_tick(monkeypatch)
+    mp4 = tmp_path / "short.mp4"
+    mp4.write_bytes(b"exact original media")
+    brief = {"script": "unchanged"}
+    v = verdict()
+    v["decision"] = decision
+    receipt = {"schema": 1, "model": "gemini-3-flash-preview", "duration": 40,
+               "video_sha256": review.digest(mp4), "brief_sha256": review.brief_digest(brief),
+               "review_video_sha256": "video", "review_audio_sha256": "soundtrack", "verdict": v}
+    adapter.validate = lambda *a: (mp4, brief)
+    monkeypatch.setattr(batch, "materialize", lambda *a: tmp_path)
+    monkeypatch.setattr(batch, "builds", lambda *a: [])
+    monkeypatch.setattr(review, "review", lambda *a: receipt)
+    checkpoints = []
+    def unavailable(*a):
+        assert checkpoints[-1]["jobs"][0]["review"] == receipt
+        raise batch.TransientOperation("archive unavailable")
+    monkeypatch.setattr(batch, "archive_review", unavailable)
+    save = lambda d: checkpoints.append(json.loads(json.dumps(d)))
+    batch.tick(adapter, "review", save=save)
+    assert job["stage"] == "building" and job["review"] == receipt
+    assert job["review_retry_after"]
+    # The next runner starts without the previous runner's local review file.
+    (tmp_path / "av-review.json").unlink(missing_ok=True)
+    job.pop("review_retry_after")
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.setattr(review, "review", real_review)
+    monkeypatch.setattr(batch, "archive_review", lambda *a: "private-review")
+    batch.tick(adapter, "review", save=save)
+    assert json.loads((tmp_path / "av-review.json").read_text()) == receipt
+    assert job["stage"] == ("reviewed" if decision == "pass" else "held")
+    assert bool(data["halted"]) == (decision == "hold")
+
+
+@pytest.mark.parametrize("changed", ["media", "brief"])
+def test_durable_review_cannot_be_restored_onto_changed_inputs(tmp_path, changed):
+    mp4 = tmp_path / "short.mp4"
+    mp4.write_bytes(b"original")
+    brief = {"script": "original"}
+    receipt = {"schema": 1, "model": "gemini-3-flash-preview", "duration": 40,
+               "video_sha256": review.digest(mp4), "brief_sha256": review.brief_digest(brief),
+               "review_video_sha256": "video", "review_audio_sha256": "soundtrack", "verdict": verdict()}
+    if changed == "media":
+        mp4.write_bytes(b"replacement")
+    else:
+        brief["script"] = "replacement"
+    with pytest.raises(ValueError, match="reconcile"):
+        batch.restore_review({"review": receipt}, mp4, brief, tmp_path)
+    assert not (tmp_path / "av-review.json").exists()

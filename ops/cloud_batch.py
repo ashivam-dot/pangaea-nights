@@ -202,6 +202,25 @@ def materialize(repo, adapter, job):
     return folder
 
 
+def restore_review(job, mp4, brief, folder):
+    """An archive outage must not erase an editorial verdict between runners."""
+    receipt = job.get("review") or {}
+    if not receipt:
+        return
+    target = Path(folder) / "av-review.json"
+    if receipt.get("schema") != 1:
+        # Older state stored a summary only; its complete archived receipt can still be used.
+        if receipt.get("verdict", {}).get("decision") == "hold" and not target.exists():
+            raise ValueError("restore the complete saved negative review before retrying this media")
+        return
+    if receipt.get("video_sha256") != media_review.digest(mp4) \
+            or receipt.get("brief_sha256") != media_review.brief_digest(brief):
+        raise ValueError("durable review differs from this media or brief; reconcile the repair first")
+    if not all(receipt.get(k) for k in ("model", "review_video_sha256", "review_audio_sha256")):
+        raise ValueError("durable review lacks complete media provenance")
+    target.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n")
+
+
 def tick(adapter, mode, save=persist):
     repo = adapter.REPO
     data = load()
@@ -249,10 +268,11 @@ def tick(adapter, mode, save=persist):
             had_intent = job["stage"] == "upload_intent"
             folder = materialize(repo, adapter, job)
             mp4, brief = adapter.validate(job, folder)
+            restore_review(job, mp4, brief, folder)
             receipt = media_review.review(mp4, brief, folder)
             problems = media_review.receipt_problems(receipt, mp4, brief)
-            job["review"] = {"model": receipt["model"], "video_sha256": receipt["video_sha256"],
-                             "verdict": receipt["verdict"], "duration": receipt["duration"]}
+            job["review"] = receipt
+            save(data)  # preserve the complete verdict before an archive upload can fail
             job["archive"] = archive_review(repo, job, folder)
             reviewed += 1
             if problems:

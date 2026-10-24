@@ -87,7 +87,8 @@ transcripts, captions, thumbnails and media are never downloaded, stored or sent
   retry with backoff, while a negative editorial verdict persists for unchanged media.
   A durable batch reservation prevents the ordinary Shorts producer from racing the same calendar. Sleep episodes
   are separate. `batch-release.yml` shares the existing publisher's lock and runs after completed builds and every
-  fifteen minutes when `BATCH_RELEASE_ENABLED=true`; manual runs default to review only. It uses the channel's
+  fifteen minutes when `BATCH_RELEASE_ENABLED=true`; manual runs default to review only. The complete media-bound
+  verdict is checkpointed before archiving, preserving refusals across archive outages and fresh runners. It uses the channel's
   existing environment credentials. Code and a green workflow are not proof of a public result.
 
 - **Batch production (owner, 25 October 2026).** `strategy/batch-2026-10-25.json` reserves thirty distinct Shorts
