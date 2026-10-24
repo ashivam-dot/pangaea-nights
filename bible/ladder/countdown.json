@@ -239,7 +239,7 @@
     }
    ],
    "answer_n": 4,
-   "verdict_vo": "Real answer: number 4, because freshwater animals had low extinction rates after the impact. A quiet pond was probably the safest home.",
+   "verdict_vo": "Real answer: number 4, because freshwater animals probably had relatively low extinction rates after the impact. Their survival record inspired our pond choice.",
    "fact": {
     "text": "Freshwater animals had low extinction rates in the K–Pg extinction.",
     "wiki_title": "Cretaceous–Paleogene extinction event",
@@ -325,7 +325,7 @@
     }
    ],
    "answer_n": 5,
-   "verdict_vo": "Real answer: number 5, because Lystrosaurus survived the Permian–Triassic extinction and thrived after it. Sticking with that tusked herd is probably your best bet.",
+   "verdict_vo": "Real answer: number 5, because Lystrosaurus survived the Permian–Triassic extinction and thrived afterward. Our pick follows that remarkable fossil survival record.",
    "fact": {
     "text": "Lystrosaurus survived the Permian–Triassic extinction and its fossils are the most common land-vertebrate fossils of the Early Triassic.",
     "wiki_title": "Lystrosaurus",
@@ -434,9 +434,9 @@
   {
    "id": "countdown-06",
    "era": "Precambrian",
-   "title": "The Ocean Freezes Solid on Snowball Earth — Where Does Life Hide? 🧊",
+   "title": "An Ice-Covered Ocean on Snowball Earth — Where Might Life Hide? 🧊",
    "banner": "Earth freezes over. Where does life hide?",
-   "hook_vo": "The whole planet is freezing. Where does life hide?",
+   "hook_vo": "Imagine an ice-covered ocean. Where might life persist?",
    "art_direction": "Glacial cyan and white under a pale dim sun, crystalline ice textures, macro-to-wide contrast, black abyss below.",
    "options": [
     {
@@ -465,7 +465,7 @@
      "label": "Deep hydrothermal vent",
      "vo": "Sink to a deep hydrothermal vent.",
      "danger": 4,
-     "image_prompt": "A deep-ocean hydrothermal vent chimney in total darkness, mineral smoke billowing, microbial mats glowing on the rock, photoreal painterly, vertical composition, one warm focal light from the vent's heat shimmer"
+     "image_prompt": "A deep-ocean hydrothermal vent chimney in dark liquid water, dark mineral-rich fluid rising into cold seawater, pale microbial mats visible on the surrounding rock, no boiling bubbles, no molten rock, no glowing chimney, photoreal painterly, vertical composition, one warm focal light from soft amber cinematic fill on the nearby pale minerals"
     },
     {
      "n": 5,
@@ -497,7 +497,7 @@
     }
    ],
    "answer_n": 4,
-   "verdict_vo": "Real answer: number 4, because scientists propose life survived around deep-ocean hydrothermal vents. The dark, hot deep is probably your best bet.",
+   "verdict_vo": "Real answer: number 4, because scientists propose some life survived using chemicals around deep-ocean hydrothermal vents. One possible refuge beneath the ice.",
    "fact": {
     "text": "One proposed refuge for life during Snowball Earth was deep-ocean hydrothermal vents powered by chemicals rather than sunlight.",
     "wiki_title": "Snowball Earth",

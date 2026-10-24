@@ -444,6 +444,10 @@ def learn(args) -> None:
         except Exception as exc:
             print(f"analytics client: {type(exc).__name__}")
     if args.dry:
+        if api is not None:
+            # A dry learner can audit delivery, but never changes a video, sends a comment or saves the ledger.
+            print(json.dumps({"authenticated_delivery": youtube.delivery_snapshot(
+                api, data.get("episodes", [])[-2:] + data.get("shorts", [])[-30:])}))
         api = None  # the learner posts pending first comments through the Data API: a dry run must not write
     sm = ladder_learn.run(data, ladder.with_proven(ladder.load_banks(strict=False), data), analytics, api,
                           datetime.now(timezone.utc))

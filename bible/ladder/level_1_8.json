@@ -6,7 +6,7 @@
    "era": "Cambrian",
    "title": "Level 1 to 8 Ocean Pets of the Cambrian — Who Guards Your Reef? 🌊",
    "banner": "Which Cambrian pet guards your reef?",
-   "hook_vo": "First night in the first ocean. Pick a guard.",
+   "hook_vo": "First night in the Cambrian ocean. Pick a guard.",
    "art_direction": "Cold turquoise shallows under a full moon, low wide-angle lens at seabed level, amber bioluminescent glow.",
    "options": [
     {
@@ -67,7 +67,7 @@
     }
    ],
    "answer_n": 8,
-   "verdict_vo": "Real answer: number 8, because Anomalocaris was one of the largest Cambrian animals and an early apex predator. Probably nothing bothers its reef.",
+   "verdict_vo": "Real answer: number 8, because Anomalocaris was among the largest Cambrian animals and may have been an early apex predator. A fearsome pick.",
    "fact": {
     "text": "Anomalocaris, an estimated 34.2–37.8 cm long without its frontal appendages and tail fan, is one of the largest animals of the Cambrian and thought to be one of the earliest apex predators.",
     "source_sentence": "Estimated to reach 34.2–37.8 cm (13.5–14.9 in) long excluding the frontal appendages and tail fan, Anomalocaris is one of the largest animals of the Cambrian, and thought to be one of the earliest examples of an apex predator, though others have been found in older Cambrian lagerstätten deposits.",
@@ -325,7 +325,7 @@
     }
    ],
    "answer_n": 4,
-   "verdict_vo": "Real answer: number 4, because Arthropleura's preserved gut contents were woody plant material. A giant millipede that probably ate plants, not you.",
+   "verdict_vo": "Real answer: number 4, because reported woody gut contents suggest Arthropleura may have eaten plants. Its diet is still uncertain.",
    "fact": {
     "text": "Fossil gut contents of Arthropleura were a mix of woody plant material, suggesting it was a herbivore.",
     "source_sentence": "A. moyseyi was suggested to preserve the original gut contents, a mix of woody plant material, suggesting it was an herbivore.",
@@ -583,7 +583,7 @@
     }
    ],
    "answer_n": 6,
-   "verdict_vo": "Real answer: number 6, because Brachiosaurus may have stood 12–13 metres tall. Probably the safest seat above every predator.",
+   "verdict_vo": "Real answer: number 6, because Brachiosaurus may have stood 12–13 metres tall overall. Our imaginary ride picks it for that towering size.",
    "fact": {
     "text": "The height of Brachiosaurus has been estimated at 9.4 m and at 12–13 m.",
     "source_sentence": "The length of Brachiosaurus has been estimated at 20–22 meters (66–72 ft) and 18 meters (59 ft), and its height at 9.4 meters (30+3⁄4 ft) and 12–13 meters (39–43 ft).",

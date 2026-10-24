@@ -2,6 +2,7 @@
 import copy
 import json
 from datetime import date, datetime, timedelta, timezone
+from types import SimpleNamespace
 
 import numpy as np
 import pytest
@@ -12,6 +13,23 @@ from studio import cli, config, fanout, ladder, ladder_cli, ledger, qa, shorts_l
 BANKS = ladder.load_banks(strict=True)
 ALL = [p for ps in BANKS.values() for p in ps]
 DAY = date(2026, 11, 10)
+
+
+def test_delivery_snapshot_preserves_unknown_owner_status_and_missing_video():
+    calls = []
+
+    def listed(**kwargs):
+        calls.append(kwargs)
+        return SimpleNamespace(execute=lambda: {"items": [
+            {"id": "seen", "snippet": {"channelId": config.CHANNEL_ID},
+             "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False}}]})
+
+    api = SimpleNamespace(videos=lambda: SimpleNamespace(list=listed))
+    rows = youtube.delivery_snapshot(api, [{"video_id": "seen"}, {"video_id": "missing"}, {"video_id": "seen"}])
+    assert calls == [{"part": "snippet,status", "id": "seen,missing"}]
+    assert rows[0]["privacy"] == "public" and rows[0]["self_declared_made_for_kids"] is False
+    assert rows[0]["made_for_kids"] is None and rows[0]["synthetic_declared"] is None
+    assert rows[1]["available"] is False and rows[1]["privacy"] is None
 
 
 @pytest.fixture

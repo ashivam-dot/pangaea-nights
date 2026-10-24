@@ -1,6 +1,5 @@
 {
   "authorization": "Owner 2026-10-25: batch production, one now and the following ten days. Release only after complete review.",
-  "source": "8e04eb8",
   "release_status": "planned only; no YouTube schedules created",
   "jobs": [
     {
@@ -407,5 +406,7 @@
       }
     }
   ],
-  "note": "Dry renders use A as a preview canvas. Targets are planned UTC releases, not booked YouTube schedules. Long documentaries retain Tuesday/Friday cadence."
+  "note": "Dry renders use A as a preview canvas. Targets are planned UTC releases, not booked YouTube schedules. Long documentaries retain Tuesday/Friday cadence.",
+  "plan_basis_sha": "8e04eb8",
+  "premise_review": "bible/ladder/REVIEW-2026-10-24.md; batch corrections are applied before new cloud dispatches"
 }

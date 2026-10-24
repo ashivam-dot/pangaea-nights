@@ -352,6 +352,28 @@ def upload_ladder(api, channel: dict, path: Path, p: dict, desc: str, tag_list: 
             "readback_problems": readback_problems(video, when)}
 
 
+def delivery_snapshot(api, entries: list[dict]) -> list[dict]:
+    """Read owner-visible delivery fields without updating an upload. Missing fields stay unknown."""
+    ids = list(dict.fromkeys(e["video_id"] for e in entries if e.get("video_id")))[-50:]
+    if not ids:
+        return []
+    videos = api.videos().list(part="snippet,status", id=",".join(ids)).execute().get("items", [])
+    by_id = {v["id"]: v for v in videos}
+    rows = []
+    for video_id in ids:
+        v = by_id.get(video_id, {})
+        st = v.get("status", {})
+        rows.append({"video_id": video_id, "available": bool(v),
+                     "channel_id": v.get("snippet", {}).get("channelId"),
+                     "published_at": v.get("snippet", {}).get("publishedAt"),
+                     "privacy": st.get("privacyStatus"), "publish_at": st.get("publishAt"),
+                     "made_for_kids": st.get("madeForKids"),
+                     "self_declared_made_for_kids": st.get("selfDeclaredMadeForKids"),
+                     "synthetic_declared": st.get("containsSyntheticMedia"),
+                     "upload_status": st.get("uploadStatus")})
+    return rows
+
+
 def first_comment(api, video_id: str, text: str) -> str:
     """Post the channel's own first comment once: 'posted', 'exists', or 'pending: <reason>' (comments may be
     refused while a video is private; the learner retries after release)."""

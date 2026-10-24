@@ -77,6 +77,12 @@ transcripts, captions, thumbnails and media are never downloaded, stored or sent
 
 ## Cadence and length
 
+- **Batch production (owner, 25 October 2026).** `strategy/batch-2026-10-25.json` reserves thirty distinct Shorts
+  for 25 October–3 November UTC, plus the corrected opening preview for an immediate release after review.
+  These are planned targets, not booked YouTube schedules. Dry previews retain the usual script, picture, voice
+  and render gates. The release check must also compare earlier batch videos, then use fresh live deduplication,
+  owner-visible metadata and complete audiovisual review. Sleep documentaries retain the stable cadence below.
+
 - **When.** `episode.yml` builds on Tuesday and Friday at 14:10 UTC (`10 14 * * 2,5`). A 2-hour build takes about
   3.5 hours and a 3-hour build about 4.5, and the episode is scheduled for the next 21:00 UTC
   (`config.EPISODE_SLOT_UTC`, `youtube.episode_slot()`). The build only overlaps the end of the 08:00 UTC Shorts

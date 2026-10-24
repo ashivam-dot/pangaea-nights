@@ -18,10 +18,10 @@
     },
     {
      "n": 2,
-     "label": "Across the river, upwind",
-     "vo": "Across the river, with the wind in your face.",
+     "label": "Across river, downwind",
+     "vo": "Across the river, wind blowing from the predator.",
      "danger": 2,
-     "image_prompt": "POV on a gravel bank across a wide moonlit river, wind rippling the water toward a distant dark conifer forest, river mist streaming past, ember glow on the far shore, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "POV on a gravel bank across a wide moonlit river, wind blowing from a distant dark conifer forest toward the foreground gravel bank, river mist streaming toward the foreground, ember glow on the far shore, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 3,
@@ -67,7 +67,7 @@
     }
    ],
    "answer_n": 2,
-   "verdict_vo": "Real answer: number 2, because T. rex had a highly developed sense of smell, so staying upwind is probably your best bet.",
+   "verdict_vo": "Real answer: number 2, because T. rex had a heightened sense of smell. Our imagined refuge keeps your scent blowing away from it.",
    "fact": {
     "text": "Tyrannosaurus had very large olfactory bulbs and nerves for its brain size, giving it a heightened sense of smell.",
     "wiki_title": "Tyrannosaurus",
