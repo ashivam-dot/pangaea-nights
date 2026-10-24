@@ -14,7 +14,7 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-foreground-repair.json"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 2,
       "obsolete_runs": [
         40121235398,
@@ -71,7 +71,10 @@
       "cancel_intent": {
         "at": "2026-10-24T22:01:26.435637+00:00",
         "reason": "Preflight found that the second replay did not carry the original four-attempt o1/o2 exhaustion reports. Retain those exact proofs before retrying so only o5/o6 change and no original scene repaints. Queued dry run has not produced or uploaded media."
-      }
+      },
+      "problems": [
+        "Queued dry replay canceled before production to retain original exhausted-take proofs; corrected manifest is staged."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -515,7 +518,7 @@
       "attempts": 0
     }
   ],
-  "halted": null,
+  "halted": "Repair held entry how_deep-01: Queued dry replay canceled before production to retain original exhausted-take proofs; corrected manifest is staged.",
   "updated_at": "2026-10-24T22:00:11+00:00",
   "complete": false,
   "health": {
