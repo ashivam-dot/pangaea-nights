@@ -86,7 +86,9 @@ transcripts, captions, thumbnails and media are never downloaded, stored or sent
   uploads remain held. Processed upload status must be confirmed before publication. Provider/network outages
   retry with backoff, while a negative editorial verdict persists for unchanged media.
   A durable batch reservation prevents the ordinary Shorts producer from racing the same calendar. Sleep episodes
-  are separate. Workflow activation still follows the owner's workflow-edit rule; code is not a public result.
+  are separate. `batch-release.yml` shares the existing publisher's lock and runs after completed builds and every
+  fifteen minutes when `BATCH_RELEASE_ENABLED=true`; manual runs default to review only. It uses the channel's
+  existing environment credentials. Code and a green workflow are not proof of a public result.
 
 - **Batch production (owner, 25 October 2026).** `strategy/batch-2026-10-25.json` reserves thirty distinct Shorts
   for 25 October–3 November UTC, plus the corrected opening preview for an immediate release after review.

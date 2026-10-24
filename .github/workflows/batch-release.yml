@@ -1,0 +1,64 @@
+name: reviewed-batch-release
+on:
+  schedule:
+    - cron: "3,18,33,48 * * * *"
+  workflow_run:
+    workflows: [shorts]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "review builds and reviews only; publish also releases approved media into its reserved slot"
+        type: choice
+        options: [review, publish]
+        default: review
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: shorts-publish
+  cancel-in-progress: false
+jobs:
+  batch:
+    if: >-
+      (github.event_name == 'workflow_dispatch' || vars.BATCH_RELEASE_ENABLED == 'true')
+      && vars.PAUSED == 'false' && vars.SHORTS_PAUSED != 'true'
+      && (github.event_name != 'workflow_run' || github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    environment: youtube
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: State branch
+        run: |
+          git fetch --depth 1 origin state
+          git worktree add -b batch-state state FETCH_HEAD
+      - name: FFmpeg (bounded install)
+        run: |
+          command -v ffmpeg && exit 0
+          timeout 240 sudo apt-get update -qq
+          timeout 240 sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q -r requirements/base.txt -r requirements/publish.txt
+      - name: Build, review and reconcile exact media
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_OAUTH_JSON: ${{ (github.event_name != 'workflow_dispatch' || inputs.mode == 'publish') && secrets.YOUTUBE_OAUTH_JSON || '' }}
+          PAUSED: ${{ vars.PAUSED }}
+          SHORTS_PAUSED: ${{ vars.SHORTS_PAUSED }}
+          RELEASE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'publish' }}
+        run: python -m ops.cloud_batch --adapter studio --mode "$RELEASE_MODE"
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: batch-review-${{ github.run_id }}
+          path: |
+            work/batch/**/av-review.json
+            state/batch-production.json
+          if-no-files-found: ignore
+          retention-days: 30
