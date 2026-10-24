@@ -56,7 +56,7 @@ HEDGE_SOURCE = re.compile(r"\b(may|might|could|likely|probably|possibly|thought|
 EXTRA_PROMPT_BANS = ["raft", "canoe", "paddle", "rope", "torch", "spear", "footprint of a", "sleeping bag", "backpack",
                      "flag", "house", "cabin", "road", "car ", "phone", "camera", "pov of a"]
 STYLE = ("photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, "
-         "luminous blue-hour twilight sky, one bright warm glowing focal light, clear readable midtones, "
+         "one bright warm glowing focal light, clear readable midtones, "
          "cinematic depth, rich fine detail")
 # The channel has no mascot: no named character (the old "Moss") and no mascot or chibi look in any line or prompt.
 # "moss" the plant is fine.
@@ -505,12 +505,23 @@ def image_jobs(p: dict) -> list[dict]:
     """Nine vertical stills: the eight options (option 1 is also frame 0, the thumbnail) and the end-card plate."""
     art = p["art_direction"].strip().rstrip(".")
     jobs = [{"id": f"o{o['n']}", "n": o["n"], "scene": o["image_prompt"],
-             "prompt": f"{o['image_prompt'].strip().rstrip('.')}.{anatomy(o['image_prompt'])} {art}. {STYLE}.",
+             "prompt": (f"{o['image_prompt'].strip().rstrip('.')}.{anatomy(o['image_prompt'])} {art}. {STYLE}."
+                        + dark_water_direction(o["image_prompt"])),
              "luma": (92.0, 168.0) if o["n"] == 1 else (62.0, 198.0)} for o in p["options"]]
     end = (f"A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open "
            f"calm sky in the upper half of the frame. {art}. {STYLE}.")
     jobs.append({"id": "end", "n": 0, "scene": end, "prompt": end, "luma": (62.0, 198.0)})
     return jobs
+
+
+def dark_water_direction(scene: str) -> str:
+    """Readability comes from cinematic foreground fill, not daylight kilometres below an ocean surface."""
+    if not re.search(r"abyss(?:al)?|hadal|trench|hydrothermal vent|hydrothermal mineral chimney|"
+                     r"pitch black deep water|near-total darkness of .*sea", scene, re.I):
+        return ""
+    return (" Keep only the nearby subject readable with soft warm amber cinematic fill. "
+            "The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface "
+            "or glowing ice ceiling. No self-luminous vent rocks.")
 
 
 def now_day() -> date:

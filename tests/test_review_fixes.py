@@ -32,6 +32,15 @@ def test_delivery_snapshot_preserves_unknown_owner_status_and_missing_video():
     assert rows[1]["available"] is False and rows[1]["privacy"] is None
 
 
+def test_abyssal_lighting_does_not_inherit_a_twilight_sky():
+    p = ladder.find(BANKS, "how_deep-01")
+    jobs = {j["id"]: j for j in ladder.image_jobs(p)}
+    assert "twilight sky" not in jobs["o7"]["prompt"]
+    assert "No sunlight" in jobs["o7"]["prompt"] and "water beyond is pitch black" in jobs["o7"]["prompt"]
+    assert "soft warm amber cinematic fill" in jobs["o8"]["prompt"]
+    assert "No sunlight" not in jobs["o2"]["prompt"]  # shallow ice still transmits light
+
+
 @pytest.fixture
 def dirs(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "WORK", tmp_path / "work")
