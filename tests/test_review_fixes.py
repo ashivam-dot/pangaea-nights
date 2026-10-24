@@ -35,10 +35,10 @@ def test_image_matrix_fits_one_wave():
         m = ladder_cli.image_matrix(slots, len(ladder.IMAGE_IDS))
         assert len(m) + len(slots) <= ladder_cli.PEAK_JOBS and {r["slot"] for r in m} == set(slots)
     m = ladder_cli.image_matrix(["A", "B"], 9)
-    assert [r["shard"] for r in m if r["slot"] == "B"][-1] == "7/8"
-    # three a day: 6/5/5 shards, so no runner draws more than two of a Short's nine images
+    assert [r["shard"] for r in m if r["slot"] == "B"][-1] == "6/7"
+    # three a day: 5/4/4 shards plus three voices fit the sixteen-runner budget.
     m = ladder_cli.image_matrix(["A", "B", "C"], 9)
-    assert [sum(r["slot"] == s for r in m) for s in "ABC"] == [6, 5, 5]
+    assert [sum(r["slot"] == s for r in m) for s in "ABC"] == [5, 4, 4]
 
 
 def test_slot_c_is_compared_with_slot_b(dirs):
