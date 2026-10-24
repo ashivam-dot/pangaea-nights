@@ -67,7 +67,11 @@
         39766129149
       ],
       "submitted_at": "2026-10-24T22:00:05+00:00",
-      "run_id": 40136652437
+      "run_id": 40136652437,
+      "cancel_intent": {
+        "at": "2026-10-24T22:01:26.435637+00:00",
+        "reason": "Preflight found that the second replay did not carry the original four-attempt o1/o2 exhaustion reports. Retain those exact proofs before retrying so only o5/o6 change and no original scene repaints. Queued dry run has not produced or uploaded media."
+      }
     },
     {
       "repo": "pangaea-nights",
