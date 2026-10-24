@@ -198,6 +198,39 @@ def frame_luma(frame: np.ndarray) -> float:
     return float((0.299 * s[..., 0] + 0.587 * s[..., 1] + 0.114 * s[..., 2]).mean())
 
 
+def exposure_lut(samples: list[np.ndarray], target: float = 90.0) -> tuple[np.ndarray, dict]:
+    """One bounded midtone grade per plate, before text overlays; never brighten black deep water.
+
+    Source-image QA precedes cropping, vignette and dark caption panels. Snowball o8 passed source QA
+    but ended at luma 56 after composition. Calibrate across the plate's planned camera positions once,
+    using one constant LUT throughout the shot and its reprise so there is no exposure pumping.
+    Final per-frame brightness/contrast gates still decide acceptance.
+    """
+    pixels = [s[::6, ::6] for s in samples]
+    def lut(gamma):
+        return np.rint(255 * (np.arange(256, dtype=np.float32) / 255) ** gamma).astype(np.uint8)
+    def lowest(table):
+        return min(float((table[p].astype(np.float32) * np.array([0.299, 0.587, 0.114])).sum(axis=2).mean())
+                   for p in pixels)
+    before = lowest(lut(1.0))
+    lo, hi = 0.80, 1.0
+    if before >= target:
+        gamma = 1.0
+    elif lowest(lut(lo)) < target:
+        gamma = lo  # a genuinely dark source stays held if this bounded grade is insufficient
+    else:
+        for _ in range(8):
+            mid = (lo + hi) / 2
+            if lowest(lut(mid)) >= target:
+                lo = mid
+            else:
+                hi = mid
+        gamma = lo
+    table = lut(gamma)
+    return table, {"gamma": round(gamma, 4), "before_min": round(before, 3),
+                   "after_min": round(lowest(table), 3), "target": target, "min_gamma": 0.8}
+
+
 def motion_sample(frame: np.ndarray) -> np.ndarray:
     """The camera's picture at 1/8 size, for the motion measure. Taken before the grade's film grain and the overlays,
     so it measures the camera move on the plate: a frozen picture scores 0, however much grain is laid on top."""
@@ -311,12 +344,21 @@ def render(p: dict, tl: dict, voice: dict, images: Path, files: dict[str, str], 
     fps = tl["fps"]
     out.mkdir(parents=True, exist_ok=True)
     cam, grade = rd.Camera(w, h), rd.Grade(w, h, seed=7, darken=1.0)
-    plates = {}
+    plates, exposures = {}, {}
 
     def plate(image_id: str):
         if image_id not in plates:
             stem = Path(files[image_id]).with_suffix("")
             plates[image_id] = rd.Plate(images / f"{stem.name}.jpg", images / f"{stem.name}.depth.png")
+            samples = []
+            for planned in tl["shots"]:
+                if planned["image"] != image_id:
+                    continue
+                for frac in (0.0, 0.25, 0.5, 0.75, 1.0):
+                    f = planned["f0"] + round(frac * max(0, planned["f1"] - planned["f0"] - 1))
+                    shot = cam.shoot(plates[image_id], shot_u(planned, f, fps), MOTIONS[planned["motion"]])
+                    samples.append(grade.apply(shot, f, 1.0))
+            exposures[image_id] = exposure_lut(samples)
         return plates[image_id]
 
     banner, geo = overlay.banner(p["banner"], w, h)
@@ -348,6 +390,9 @@ def render(p: dict, tl: dict, voice: dict, images: Path, files: dict[str, str], 
             diffs.append(float(np.abs(small - prev).mean()))
         prev = small
         frame = grade.apply(shot, f, 1.0)
+        # Apply the plate's fixed correction to the picture before drawing text or contrast panels.
+        import cv2
+        frame = cv2.LUT(frame, exposures[s["image"]][0])
         a = min(1.0, max(0.0, (t - s["overlay_from"]) / FADE)) if s["kind"] != "loop" else 0.0
         banner.draw(frame)
         mark.draw(frame)
@@ -381,7 +426,9 @@ def render(p: dict, tl: dict, voice: dict, images: Path, files: dict[str, str], 
     rep.update({"frame0_luma": lumas[0], "loop_match": float(np.abs(lumas[0] - lumas[-1])),
                 "banner_height_frac": geo["height_frac"], "banner_contrast": overlay.banner_contrast(frame0, geo),
                 "banner_ocr": banner_ocr(frame0, geo, p["banner"]),
-                "parallax": parallax, "depth_spread": spreads, "safe": all(overlay.inside(x.box, w, h) for x in layers)})
+                "parallax": parallax, "depth_spread": spreads,
+                "plate_exposure": {k: v[1] for k, v in exposures.items()},
+                "safe": all(overlay.inside(x.box, w, h) for x in layers)})
     return rep
 
 

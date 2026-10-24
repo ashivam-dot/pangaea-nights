@@ -29,7 +29,19 @@ def wer(expected: str, heard: str) -> float:
     """Word error rate: word-level edit distance over the expected length, on spoken forms ('3' = 'three')."""
     from .voice import _norm_words
 
-    ref, hyp = _norm_words(expected), _norm_words(heard)
+    # Whisper writes American unit spellings and sometimes hyphenates option/quantity pairs ("4-50").
+    # Those transcript characters are punctuation, not an extra spoken "to". Preserve scripted ranges by
+    # expanding the expected text first; never equate a wrong number, unit scale, negation, or homophone.
+    from .speech import speakable
+
+    def canonical(text):
+        text = re.sub(r"\bsuper[ -]heated\b", "superheated", text, flags=re.I)
+        units = {"metre": "meter", "metres": "meter", "meters": "meter",
+                 "kilometre": "kilometer", "kilometres": "kilometer", "kilometers": "kilometer"}
+        return [units.get(w, w) for w in _norm_words(text)]
+
+    ref = canonical(speakable(expected))
+    hyp = canonical(re.sub(r"(?<=\d)[-–—](?=\d)", " ", heard))
     if not ref:
         return 0.0
     prev = list(range(len(hyp) + 1))
