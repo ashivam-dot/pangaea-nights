@@ -218,7 +218,7 @@
       "premise": "level_1_8-16",
       "series": "level_1_8",
       "slot": "B",
-      "target": "2026-10-25T00:30:00Z",
+      "target": "2026-10-25T06:30:00Z",
       "stage": "building",
       "inputs": {
         "dry_run": "true",
@@ -445,7 +445,16 @@
         40135503878
       ],
       "repair_reason": "Exact cloud originals and locally generated anatomy repairs retain take/weight/raw-pixel provenance. Excludes all four held animal sets and wrong lemming trials. Deliberate sourced steppe-bison option-five replan; fresh voice and all current media/AV gates mandatory.",
-      "run_id": 40144187249
+      "run_id": 40144187249,
+      "calendar_history": [
+        {
+          "changed_at": "2026-10-24T23:55:09+00:00",
+          "from": "2026-10-25T00:30:00Z",
+          "to": "2026-10-25T06:30:00Z",
+          "reason": "Unbooked target deliberately replanned: serialized cached repair is still pending behind Snowball and free-runner contention. Preserve full gates and the twenty-minute upload margin. No existing YouTube schedule is changed."
+        }
+      ],
+      "calendar_source_sha": "a1618ba86554b9021390df62c479f0fb4e8b162f"
     },
     {
       "repo": "pangaea-nights",
@@ -895,7 +904,7 @@
     }
   ],
   "halted": "Repair held entry survive_night-01: Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.",
-  "updated_at": "2026-10-24T23:54:43+00:00",
+  "updated_at": "2026-10-24T23:55:09+00:00",
   "complete": false,
   "health": {
     "public": 0,
