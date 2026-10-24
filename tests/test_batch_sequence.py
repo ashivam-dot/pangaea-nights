@@ -86,3 +86,57 @@ def test_direct_editorial_observation_cannot_be_overruled_by_green_model_review(
 def test_resolved_direct_observation_is_retained_as_history():
     job = {"editorial_holds": [{"reason": "old wrong image", "resolved_at": "2026-10-25T01:00:00Z"}]}
     assert batch.editorial_problems(job) == []
+
+
+@pytest.mark.parametrize('blocked,mode,dispatch', [(1, 'true', True), (4, 'true', False),
+                                                 (1, 'false', False)])
+def test_known_editorial_hold_can_fill_only_a_bounded_dry_buffer(monkeypatch, blocked, mode, dispatch):
+    jobs = [{'premise': str(i), 'stage': 'held', 'problems': ['wrong image']} for i in range(blocked)]
+    jobs.append({'premise': 'next', 'stage': 'planned', 'inputs': {'dry_run': mode}})
+    data = {'jobs': jobs, 'halted': 'Repair held entry 0: wrong image'}
+    writes = []
+    monkeypatch.setattr(batch, 'load', lambda: data)
+    monkeypatch.setattr(batch, 'builds', lambda *a: [])
+    def gh(*args, **kw):
+        if kw.get('body'):
+            assert jobs[-1]['stage'] == 'dispatch_unresolved'
+            writes.append(kw['body'])
+            return None
+        return {'sha': 'pinned'}
+    monkeypatch.setattr(batch, 'gh', gh)
+    adapter = SimpleNamespace(REPO='owner/repo', WORKFLOW='run.yml', paused=lambda: False)
+    batch.tick(adapter, 'publish', save=lambda d: None)
+    assert bool(writes) is dispatch
+    assert all(j['stage'] == 'held' for j in jobs[:-1])
+
+
+def test_dispatch_behind_editorial_hold_is_reconciled_before_another_write(monkeypatch):
+    pending = {'premise': 'next', 'stage': 'dispatch_unresolved', 'submitted_at': batch.stamp()}
+    data = {'jobs': [{'premise': 'first', 'stage': 'held', 'problems': ['wrong image']}, pending],
+            'halted': 'Repair held entry first: wrong image'}
+    monkeypatch.setattr(batch, 'load', lambda: data)
+    seen = []
+    monkeypatch.setattr(batch, 'resolve', lambda r, w, j: seen.append(j['premise']) or False)
+    monkeypatch.setattr(batch, 'gh', lambda *a, **k: pytest.fail('new write before reconciliation'))
+    batch.tick(SimpleNamespace(REPO='owner/repo', WORKFLOW='run.yml', paused=lambda: False),
+               'publish', save=lambda d: None)
+    assert seen == ['next'] and pending['stage'] == 'dispatch_unresolved'
+
+
+def test_completed_future_preview_waits_for_predecessor_history(monkeypatch):
+    current = {'premise': 'first', 'stage': 'building', 'run_id': 1, 'source_sha': 'pinned'}
+    future = {'premise': 'next', 'stage': 'building', 'run_id': 2, 'source_sha': 'pinned'}
+    data = {'jobs': [current, future], 'halted': None}
+    monkeypatch.setattr(batch, 'load', lambda: data)
+    monkeypatch.setattr(batch, 'gh', lambda *a, **k: {'status': 'in_progress', 'head_sha': 'pinned'}
+                        if args_run(a) == '1' else
+                        {'status': 'completed', 'conclusion': 'success', 'head_sha': 'pinned'})
+    monkeypatch.setattr(batch, 'materialize', lambda *a: pytest.fail('premature rotation review'))
+    adapter = SimpleNamespace(REPO='owner/repo', WORKFLOW='run.yml', paused=lambda: False,
+                              review_ready=lambda d, j: j is current)
+    batch.tick(adapter, 'publish', save=lambda d: None)
+    assert future['stage'] == 'building' and not data['halted']
+
+
+def args_run(args):
+    return args[1].rsplit('/', 1)[-1]

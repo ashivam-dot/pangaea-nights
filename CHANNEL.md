@@ -90,6 +90,8 @@ transcripts, captions, thumbnails and media are never downloaded, stored or sent
   fifteen minutes when `BATCH_RELEASE_ENABLED=true`; manual runs default to review only. The complete media-bound
   verdict is checkpointed before archiving, preserving refusals across archive outages and fresh runners. It uses the channel's
   existing environment credentials. Code and a green workflow are not proof of a public result.
+A known editorial hold allows only bounded dry production ahead (four unconsumed previews maximum);
+review and release retain their predecessor checks. Every pending dispatch is reconciled before another is sent.
 
 - **Batch production (owner, 25 October 2026).** `strategy/batch-2026-10-25.json` reserves thirty distinct Shorts
   for 25 October–3 November UTC, plus the corrected opening preview for an immediate release after review.

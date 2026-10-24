@@ -81,6 +81,10 @@ def release_ready(data, job):
     return all(j["stage"] in ("public", "scheduled") for j in data["jobs"][:data["jobs"].index(job)])
 
 
+def review_ready(data, job):
+    return release_ready(data, job)
+
+
 def poll_delivery(job):
     from . import youtube
 
