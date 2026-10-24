@@ -253,7 +253,7 @@
         39772637874,
         39766129149
       ],
-      "cloud_status": "queued",
+      "cloud_status": "pending",
       "editorial_holds": [
         {
           "id": "direct-muskox-anatomy-40135503878",
@@ -484,7 +484,7 @@
       ],
       "submitted_at": "2026-10-24T23:35:04+00:00",
       "run_id": 40143333505,
-      "cloud_status": "queued"
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -880,12 +880,12 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-24T23:53:04+00:00",
+  "updated_at": "2026-10-24T23:53:07+00:00",
   "complete": false,
   "health": {
     "public": 0,
     "scheduled": 0,
-    "held": 2,
+    "held": 0,
     "mode": "publish"
   },
   "held_candidates": [
