@@ -458,7 +458,7 @@
         "slot": "A",
         "premise": "survive_night-01"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "80b5fb275f40b43928ae6ce722b92dc27c5370a7",
       "before_ids": [
@@ -484,7 +484,22 @@
       ],
       "submitted_at": "2026-10-24T23:35:04+00:00",
       "run_id": 40143333505,
-      "cloud_status": "in_progress"
+      "cloud_status": "in_progress",
+      "editorial_holds": [
+        {
+          "id": "direct-duckbill-anatomy-40143333505",
+          "run_id": 40143333505,
+          "observed_at": "2026-10-24T23:54:43+00:00",
+          "reason": "Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.",
+          "evidence": {
+            "ladder-img-A-4/o5-alt1.png": "aeac7d7d42774d82d141824c4ade1bbda7ae74050ebc30a2b86affae3a26b7a0",
+            "ladder-img-A-4/o5.png": "fe4d78f3af4e7f38953f2f05d524cdcec793a4c43d4ba115c7dc48a16f0887d5"
+          }
+        }
+      ],
+      "problems": [
+        "Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -879,8 +894,8 @@
       "attempts": 0
     }
   ],
-  "halted": null,
-  "updated_at": "2026-10-24T23:53:07+00:00",
+  "halted": "Repair held entry survive_night-01: Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.",
+  "updated_at": "2026-10-24T23:54:43+00:00",
   "complete": false,
   "health": {
     "public": 0,
