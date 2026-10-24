@@ -500,7 +500,25 @@
    }
   }
  },
- "shorts": [],
+ "shorts": [
+  {
+   "premise": "countdown-01",
+   "series": "countdown",
+   "era": "Cretaceous",
+   "slot": "A",
+   "video_id": "K421N56YFOY",
+   "url": "https://www.youtube.com/shorts/K421N56YFOY",
+   "title": "The Asteroid Hits in 60 Seconds — Which Hideout Saves You? ☄️",
+   "publish_at": "2026-10-23T14:30:00Z",
+   "uploaded_at": "2026-10-24T11:23:30Z",
+   "comment": "pending: HTTP 403",
+   "script": "The asteroid hits in sixty seconds. Pick your hideout. Curl up inside a giant hollow tree. Crouch behind a wall of Triceratops. Squeeze into a tiny mammal burrow. Climb the highest hill for a view. Hide inside a T. rex nest. Cling to a giant pterosaur and fly. Lie flat in the open ferns. Stand on the beach and watch it land. Real answer: number 3, because burrowing animals had extra protection from the impact's after-effects. Probably your best bet. Comment your number.",
+   "frame0": "gqOSoI6deySYLGUqCqm/KRwcmKVeJuipsSxbqk6fhBhPrM4jFh6DqHUodJ4JIDcoAptoqUinb6a+qnEV8KmjJwAgwabCoJUlp6LnJPEW0iwomvUg65y0HSgcFK8opzwgRB41KcSfECknJM6XIay8prer5ZcUoGooCKylI2ijJKn2n02mGquvJ/4krxWfqL0po6azKO4eYKVPoIKo/ySlIkylS6VApDolWZ/fIryrAKHvKuamwh81HTC5C63HoLcns6XBJPKtCbBDJtqQ3CjfI7Kl+ydbqpWlkCPUoLohnp7/HaungZ38oxyqCyYwKemYAqqwoLUsFCIWoUsULSh2IDmioiMEqBmiJKSLLdkmyCYdGz6u4iWhEXshwyb/qQag+SVVpbAgOx/OIAwlVKgYJgMkUKrap9mqkyuzJqyn7iFOqmWkQiL4oiis0iVkp6UpkqWoorQk0Z2aqy2oX6hrJjOu1SE6rcKqiynEpT8g6iWupmMo1CzwJg+hRKQSJKgn66lvlGWoDCHpKIOfnyhnH5iqT59rrC4ioxRfq6SdQZJrJ/qBla2qI7sqQKUUoQggRyYBKH6qYiW2JEQs4SFCqDkkaItCp2engicFqFukOalTIAgsECVzHQahWaZBHo6qTyUJKO0kiaisqumgyCy6o8Qi1JpxpmQVf6S2mnMhbyVUpuunnit2prKsm5xho6ee4STlpd6pUSC4BR2qkhJhEqYlBaJZogkgIKb/njUmPCdjK0ylhyDPJ3cmUKXwrA6Z+yI2JnooaaTtIbaoviTSpaUiVCMBIJ4kTCn0qbUeNJ1AosGnsamcJQIpfJvOJEErhi1Kqk+XPSr1mncnfKF2qsctxixto0qmCKOmIbUmQaW2GOcd9CLOpQQdNaAxooGedhauoZIq36dcpRsl7SWOKg4kFh6unokqLR6XpD6q0KYJqeskzCbWrSYrnqj1p/aluaeonLqm8SsTrBuksJyIpoKZ2CDxoGilup/HGVYfJqsSLNsiCSH6mq+YIKxwICmouZcJJMwk/KPjphAsIKN0JDUgzCWlpiWtYJijpzSqEqpKFe8kb6Z+pU0pNSjpGA8lAS2oIfCoiyScqkYYpaDSHpsjxSbRqESpVZlXqEAlVqyqpKsci5ldLA2tVI6Gq4UeC6iHpggg4ydapyQqYSYvmY4o2SP4I8ghriR0HjIlJ6UoITyrPSxEoJSk9quup42eSihHpFoPda4IpHWp5ydpmH0kdZgfpOIeupxkpCiSJyokojGqyCdqpjEjBSk5H/4rEqiaqNYcghsMKoUmQgh2Ip+ndqx1n1EaHCa8qWocbCKWKaUkXSTRH9se3aFnpOOgYyYsqOMf/x2DJlkiB6eZlA==",
+   "related": "https://www.youtube.com/watch?v=-Pcx1fPHJHI",
+   "run": "39924499144",
+   "checkpoints": {}
+  }
+ ],
  "ladder": {
   "weights": {},
   "streaks": {},
@@ -579,9 +597,9 @@
     "slot": "A",
     "premise": "countdown-01",
     "run": "39924499144",
-    "ok": false,
+    "ok": true,
     "failures": [],
-    "published": false,
+    "published": true,
     "refusals": null
    },
    {
@@ -596,7 +614,19 @@
     "refusals": null
    }
   ],
-  "alerts": [],
+  "alerts": [
+   {
+    "at": "2026-10-24T11:23:30Z",
+    "kind": "readback",
+    "premise": "countdown-01",
+    "run": "39924499144",
+    "slot": "A",
+    "video_id": "K421N56YFOY",
+    "problems": [
+     "madeForKids is None, not False"
+    ]
+   }
+  ],
   "summaries": [
    {
     "at": "2026-10-23T06:27:21Z",
