@@ -12,20 +12,21 @@
         "dry_run": "true",
         "slot": "A",
         "premise": "how_deep-01",
-        "replay": ".github/replay/snowball-empty-ice-repair.json"
+        "replay": ".github/replay/snowball-verified-ice-reprise.json"
       },
-      "stage": "held",
-      "attempts": 5,
+      "stage": "dispatch_unresolved",
+      "attempts": 6,
       "obsolete_runs": [
         40121235398,
         40124993101,
         40131481179,
         40136652437,
         40136822897,
-        40138993804
+        40138993804,
+        40140139736
       ],
-      "repair_reason": "Exclude exact first-person leg/boot opening and closing; repaint only empty ice plates, retain seven valid underwater slots, enforce unchanged final gates and explicit timestamped no-human full AV review.",
-      "source_sha": "b6ffa7aa1efbc7887829c01bbe438154abb5f5cf",
+      "repair_reason": "All eight option images retained under current QA; the genuinely empty passing opening is also the premise-declared closing reprise. Preserve original seeds and exhausted-take proofs. No classifier or numeric thresholds changed; full voice/render and exact-media AV approval remain mandatory.",
+      "source_sha": "d0f5d40fddc3148108ef38aa81c46f62255029d6",
       "cloud_status": "completed",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
@@ -146,9 +147,26 @@
               "issues": []
             }
           }
+        },
+        {
+          "run_id": 40140139736,
+          "source_sha": "b6ffa7aa1efbc7887829c01bbe438154abb5f5cf",
+          "stage": "held",
+          "problems": [
+            "production run failure"
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "how_deep-01",
+            "replay": ".github/replay/snowball-empty-ice-repair.json"
+          },
+          "repair_reason": "Exclude exact first-person leg/boot opening and closing; repaint only empty ice plates, retain seven valid underwater slots, enforce unchanged final gates and explicit timestamped no-human full AV review."
         }
       ],
       "before_ids": [
+        40143333505,
+        40140139736,
         40138993804,
         40136822897,
         40136652437,
@@ -168,7 +186,7 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-24T22:48:47+00:00",
+      "submitted_at": "2026-10-24T23:36:33+00:00",
       "editorial_holds": [
         {
           "id": "direct-human-body-part-40138993804",
@@ -192,10 +210,6 @@
             "release_approval": false
           }
         }
-      ],
-      "run_id": 40140139736,
-      "problems": [
-        "production run failure"
       ]
     },
     {
@@ -714,8 +728,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry how_deep-01: production run failure",
-  "updated_at": "2026-10-24T23:35:06+00:00",
+  "halted": "Repair held entry level_1_8-16: Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.; Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.; Actual o8 takes depict a substantial dark mane like a modern male lion. Paleolithic depictions support cave lions with absent or very small manes; use a clearly maneless female cave lion reconstruction, preserving narration. Retain other valid art.; Actual retained o2 shows an albino domestic-rabbit-like animal with pink/red eye and very long uniformly pink ears, without recognizable Arctic-hare black ear tips. Repair this shot to a white Arctic hare with black-tipped shorter ears, dark eyes and hare proportions. Preserve narration and usable other images.",
+  "updated_at": "2026-10-24T23:36:33+00:00",
   "complete": false,
   "health": {
     "public": 0,
