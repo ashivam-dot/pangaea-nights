@@ -14,7 +14,7 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-foreground-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 4,
       "obsolete_runs": [
         40121235398,
@@ -25,7 +25,7 @@
       ],
       "repair_reason": "Retain every exact inspected image and all generation history. Correct ASR orthographic comparison without equating wrong numbers, units or homophones. Add bounded constant midtone grading before overlays; actual vent-shot regression lifts minimum luma from 56 to 63.85 while black remains black. Existing brightness and voice thresholds, current picture checks and complete AV approval remain mandatory. No image regeneration expected.",
       "source_sha": "603874bcb46b5539429047a4fe0cfa8e20e3aacb",
-      "cloud_status": "completed",
+      "cloud_status": "queued",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
         {
@@ -103,7 +103,8 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-24T22:32:18+00:00"
+      "submitted_at": "2026-10-24T22:32:18+00:00",
+      "run_id": 40138993804
     },
     {
       "repo": "pangaea-nights",
@@ -589,7 +590,7 @@
     }
   ],
   "halted": "Repair held entry level_1_8-16: Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.; Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.; Actual o8 takes depict a substantial dark mane like a modern male lion. Paleolithic depictions support cave lions with absent or very small manes; use a clearly maneless female cave lion reconstruction, preserving narration. Retain other valid art.",
-  "updated_at": "2026-10-24T22:32:18+00:00",
+  "updated_at": "2026-10-24T22:32:23+00:00",
   "complete": false,
   "health": {
     "public": 0,
