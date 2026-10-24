@@ -86,12 +86,18 @@ def receipt_problems(receipt: dict, mp4: Path, brief: dict) -> list[str]:
 
 
 def _models(key: str) -> list[str]:
-    r = requests.get(API, headers={"x-goog-api-key": key}, params={"pageSize": 1000}, timeout=30)
+    try:
+        r = requests.get(API, headers={"x-goog-api-key": key}, params={"pageSize": 1000}, timeout=30)
+    except requests.RequestException as exc:
+        raise ReviewHold("review model discovery network unavailable") from exc
     if r.status_code != 200:
         raise ReviewHold(f"review model discovery unavailable (HTTP {r.status_code})")
-    found = [m["name"].split("/")[-1] for m in r.json().get("models", [])
-             if "generateContent" in m.get("supportedGenerationMethods", [])
-             and m["name"].split("/")[-1] in FREE_MODELS]
+    try:
+        found = [m["name"].split("/")[-1] for m in r.json().get("models", [])
+                 if "generateContent" in m.get("supportedGenerationMethods", [])
+                 and m["name"].split("/")[-1] in FREE_MODELS]
+    except (ValueError, TypeError, KeyError, AttributeError) as exc:
+        raise ReviewHold("review model discovery returned an unreadable response") from exc
     def rank(name):
         v = re.search(r"gemini-(\d+(?:\.\d+)?)", name)
         return ("lite" in name, "latest" in name, -float(v.group(1)) if v else 0, "preview" in name)

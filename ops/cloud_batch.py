@@ -41,12 +41,18 @@ def gh(*args, body=None, raw=False):
     command = ["gh", *args]
     if body is not None:
         command += ["--input", "-"]
-    p = subprocess.run(command, input=json.dumps(body).encode() if body is not None else None,
-                       capture_output=True, timeout=180)
+    try:
+        p = subprocess.run(command, input=json.dumps(body).encode() if body is not None else None,
+                           capture_output=True, timeout=180)
+    except subprocess.TimeoutExpired as exc:
+        raise TransientOperation(f"GitHub operation {args[0]} {args[1]} timed out; reconcile before retry") from exc
     if p.returncode:
         # No provider payloads or credential-bearing environment values enter the state/log.
         raise TransientOperation(f"GitHub operation {args[0]} {args[1]} failed (exit {p.returncode})")
-    return p.stdout if raw else json.loads(p.stdout) if p.stdout.strip() else None
+    try:
+        return p.stdout if raw else json.loads(p.stdout) if p.stdout.strip() else None
+    except ValueError as exc:
+        raise TransientOperation("GitHub returned an unreadable response; retry without changing the story") from exc
 
 
 def persist(data):
@@ -164,7 +170,11 @@ def resolve(repo, workflow, job):
 def archive_review(repo, job, folder):
     """A private, durable review receipt and exact MP4 survive Actions artifact expiry."""
     tag = f"batch-reviewed-{job['run_id']}"
-    exists = subprocess.run(["gh", "release", "view", tag, "-R", repo], capture_output=True).returncode == 0
+    try:
+        exists = subprocess.run(["gh", "release", "view", tag, "-R", repo], capture_output=True,
+                                timeout=60).returncode == 0
+    except subprocess.TimeoutExpired as exc:
+        raise TransientOperation("review archive lookup timed out; retry the same archive") from exc
     if not exists:
         gh("release", "create", tag, "--draft", "--title", f"Reviewed batch {job['premise']}", "--notes",
            "Exact rendered media and AI audiovisual review. Original channel gates and upload readback still apply.",

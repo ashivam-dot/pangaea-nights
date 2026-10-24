@@ -145,3 +145,20 @@ def test_rejected_unchanged_media_is_not_sent_back_for_a_different_verdict(tmp_p
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     assert review.review(mp4, brief, tmp_path) == receipt
     assert review.receipt_problems(receipt, mp4, brief)
+
+
+def test_model_discovery_outages_are_retryable_without_an_editorial_refusal(monkeypatch):
+    def fail(*a, **k):
+        raise review.requests.Timeout("provider unavailable")
+    monkeypatch.setattr(review.requests, "get", fail)
+    with pytest.raises(review.ReviewHold, match="network unavailable"):
+        review._models("not-a-real-key")
+
+
+def test_a_github_timeout_keeps_dispatch_ambiguity_retryable(monkeypatch):
+    def fail(*a, **k):
+        raise batch.subprocess.TimeoutExpired("gh", 180)
+    monkeypatch.setattr(batch.subprocess, "run", fail)
+    with pytest.raises(batch.TransientOperation, match="reconcile"):
+        batch.gh("api", "repos/owner/repo/actions/workflows/run.yml/dispatches", body={})
+
