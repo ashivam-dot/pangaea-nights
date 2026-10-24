@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "d0f5d40fddc3148108ef38aa81c46f62255029d6",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "Close-up wildlife photograph of one Norway lemming, Lemmus lemmus, nestled chest-deep in soft snow. A very compact round stocky rodent with a blunt broad muzzle and short whiskers, black bead eyes, very small rounded ears almost concealed in its thick soft fur. Dense tawny-orange fur around its cheeks, a dark brown cap and dark stripe down its back, pale cream chin and belly. Its tiny front paws rest on the snow directly below its face. The rear of its round body is buried in the snow. Three-quarter front view at animal eye level. Blue snowy tundra and green aurora softly blurred behind the animal, gentle warm amber side lighting. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 1954671187
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "ice-age-anatomy-repair/art/o1-full-t0-raw.png",
+    "sha256": "65a1368858550e53d784ed4b2f4df1a71dd8e6c90491ededcaee4808dfbb220d"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 50.9
+}

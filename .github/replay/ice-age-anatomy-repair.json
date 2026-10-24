@@ -1,0 +1,410 @@
+{
+  "schema": 1,
+  "premise": "level_1_8-16",
+  "source": {
+    "run_id": 40135503878,
+    "sha": "c93e9250e39d92b42e5caa53e804c12a854533e6",
+    "key": "2026-10-24-level_1_8-16"
+  },
+  "images": {
+    "o4": [
+      {
+        "file": "ice-age-anatomy-repair/art/o4.png",
+        "sha256": "ab0e974ef404a8193462594645ddf2d7eb8e8b78f1fbaf18dc3c110c0200252f",
+        "model": "klein4b-q8-768",
+        "prompt": "A reindeer lying down in deep snow, broad antlers frosted, steam from its breath, orange ember glow on its side, green aurora, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12578061778,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 117.8,
+          "raw_p99": 205.0,
+          "gamma": 0.873,
+          "spread": 117.0
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o4-alt1.png",
+        "sha256": "dfd076559afa959880b7a45dcb02b33f027b20cb2d4725ddfdb9a79222349f8b",
+        "model": "klein4b-q8-768",
+        "prompt": "A reindeer lying down in deep snow, broad antlers frosted, steam from its breath, orange ember glow on its side, green aurora, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12578061778,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 118.3,
+          "raw_p99": 214.0,
+          "gamma": 0.877,
+          "spread": 128.0
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "ice-age-anatomy-repair/art/o6.png",
+        "sha256": "08a2073bdc89be1d8001f34d990137c417edee85623a8e086c73a507ce7bc011",
+        "model": "klein4b-q8-768",
+        "prompt": "A woolly mammoth lying down in a snowy hollow, long shaggy guard hairs blowing, small ears, curved tusks, warm orange ember glow against its side, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12577282554,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 124.8,
+          "raw_p99": 229.0,
+          "gamma": 0.943,
+          "spread": 140.0
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o6-alt1.png",
+        "sha256": "6600c8c2886eda30e19b831740e589166433da7fd70158cef14df3c4017dd940",
+        "model": "klein4b-q8-768",
+        "prompt": "A woolly mammoth lying down in a snowy hollow, long shaggy guard hairs blowing, small ears, curved tusks, warm orange ember glow against its side, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12577282554,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 118.2,
+          "raw_p99": 218.0,
+          "gamma": 0.877,
+          "spread": 135.0
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "ice-age-anatomy-repair/art/end.png",
+        "sha256": "998e84f8bcfcc51139c9e32a9bb68acb9d7ba7e42af632e27c77456b902321b5",
+        "model": "klein4b-q8-768",
+        "prompt": "A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open calm sky in the upper half of the frame. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12577836217,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 85.3,
+          "raw_p99": 213.0,
+          "gamma": 0.615,
+          "spread": 133.0
+        }
+      }
+    ],
+    "o2": [
+      {
+        "file": "ice-age-anatomy-repair/art/o2-full-t0.png",
+        "sha256": "a87f74693ba95a9178be219f53f3a3f241c6dd8e3ef9ffd7a5f105f36508efb6",
+        "model": "klein4b-q8-768",
+        "prompt": "A winter white Arctic hare, Lepus arcticus, sitting in side profile in wind-carved snow. Its short upright ears have distinct black tips, its eyes are dark brown and its muzzle is compact. A hare-shaped athletic body with long powerful hind legs tucked underneath and broad furry paws. Dense crisp white winter fur with fine strands. Green aurora over blue Ice Age tundra, soft warm amber side light. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 132.8,
+          "raw_p99": 228.0,
+          "gamma": 1.032,
+          "spread": 121.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o2-full-t0-generation.json",
+          "sha256": "62e14b649333dc5078f9c0ebf00892156eb5013de14c735bf8ea320eeeb9d33d"
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o2-full-t1.png",
+        "sha256": "c6ac14aeb06b15fe400bf54e110fdc89fecda78be191764e5049f8e3537a6c01",
+        "model": "klein4b-q8-768",
+        "prompt": "A winter white Arctic hare, Lepus arcticus, sitting in side profile in wind-carved snow. Its short upright ears have distinct black tips, its eyes are dark brown and its muzzle is compact. A hare-shaped athletic body with long powerful hind legs tucked underneath and broad furry paws. Dense crisp white winter fur with fine strands. Green aurora over blue Ice Age tundra, soft warm amber side light. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 132.9,
+          "raw_p99": 219.0,
+          "gamma": 1.034,
+          "spread": 106.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o2-full-t1-generation.json",
+          "sha256": "17be542df22049affb18f501ca914e550be75fb14e84f989d64e80606d6fa8b2"
+        }
+      }
+    ],
+    "o3": [
+      {
+        "file": "ice-age-anatomy-repair/art/o3-full-t0.png",
+        "sha256": "25b0a891ef060c1230de294048f866be2c00b772e63c7e6f869ce2eb65ad0b6d",
+        "model": "klein4b-q8-768",
+        "prompt": "Side view of one small winter-coat Arctic fox, Vulpes lagopus, sleeping curled in the snow, its thick white bushy tail wrapped over its short muzzle. The compact fox is seen in full body profile with its small head turned sideways and eyes closed. Dense pure white fur, tiny rounded ears partly hidden by fur, sharply resolved fine individual hairs. The sleeping fox occupies the lower half of a broad rugged snowbank with textured wind-carved ridges. Arctic blue snow and green aurora in the distance, soft warm amber rim light. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 124.6,
+          "raw_p99": 239.0,
+          "gamma": 0.94,
+          "spread": 117.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o3-full-t0-generation.json",
+          "sha256": "2d8c3d27596a144f8cd7be5423fb6ad4511e1cf116be03cb8a6f384150706f46"
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o3-full-t1.png",
+        "sha256": "997630ddf5b5a20ba749e015cf0222e3aa8973af9eabeeda4433fa44640c20c9",
+        "model": "klein4b-q8-768",
+        "prompt": "Side view of one small winter-coat Arctic fox, Vulpes lagopus, sleeping curled in the snow, its thick white bushy tail wrapped over its short muzzle. The compact fox is seen in full body profile with its small head turned sideways and eyes closed. Dense pure white fur, tiny rounded ears partly hidden by fur, sharply resolved fine individual hairs. The sleeping fox occupies the lower half of a broad rugged snowbank with textured wind-carved ridges. Arctic blue snow and green aurora in the distance, soft warm amber rim light. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 114.7,
+          "raw_p99": 228.0,
+          "gamma": 0.843,
+          "spread": 108.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o3-full-t1-generation.json",
+          "sha256": "21fb8120fefc68e65542f88108a395f4d0a54e51fd535a78b713b9e7cf5dc9c0"
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o3-full-t2.png",
+        "sha256": "50dce07dc3a3bb8dc3ba5b950590bbf4ce72ae68f07727c441a51163ace41874",
+        "model": "klein4b-q8-768",
+        "prompt": "Side view of one small winter-coat Arctic fox, Vulpes lagopus, sleeping curled in the snow, its thick white bushy tail wrapped over its short muzzle. The compact fox is seen in full body profile with its small head turned sideways and eyes closed. Dense pure white fur, tiny rounded ears partly hidden by fur, sharply resolved fine individual hairs. The sleeping fox occupies the lower half of a broad rugged snowbank with textured wind-carved ridges. Arctic blue snow and green aurora in the distance, soft warm amber rim light. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 2,
+        "exposure": {
+          "raw_mean": 123.2,
+          "raw_p99": 238.0,
+          "gamma": 0.926,
+          "spread": 123.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o3-full-t2-generation.json",
+          "sha256": "103df174982644f6fb053bd6ba8267f584e8dc0688f52fb9a3301639d5c00c73"
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o3-full-t3.png",
+        "sha256": "6a1e00e17243672c59b8ffbdebf061d0d0a32ce1eaed98d9b43b895f8022d834",
+        "model": "klein4b-q8-768",
+        "prompt": "Side view of one small winter-coat Arctic fox, Vulpes lagopus, sleeping curled in the snow, its thick white bushy tail wrapped over its short muzzle. The compact fox is seen in full body profile with its small head turned sideways and eyes closed. Dense pure white fur, tiny rounded ears partly hidden by fur, sharply resolved fine individual hairs. The sleeping fox occupies the lower half of a broad rugged snowbank with textured wind-carved ridges. Arctic blue snow and green aurora in the distance, soft warm amber rim light. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 122.0,
+          "raw_p99": 225.0,
+          "gamma": 0.914,
+          "spread": 102.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o3-full-t3-generation.json",
+          "sha256": "34b4f806851c76ebb211315733fff36646f4c3520ba4f721038616e66ebf9d41"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "ice-age-anatomy-repair/art/o5-full-t0.png",
+        "sha256": "c7ad7041f82fabde890508d4d244509a3e58dbeeefa8fb26fd150e8707e0e3a1",
+        "model": "klein4b-q8-768",
+        "prompt": "One steppe bison, Bison priscus, resting in snow, full body side profile. A prominent shoulder hump rises immediately above its short front legs. Dense curly dark brown fur covers its heavy shoulders and broad lowered head, with a shaggy beard below a short broad muzzle. Its two horns project sideways from the upper head and curve upward at their tips. Its slimmer hindquarters and tucked hind legs remain visible. Blue-white Ice Age mammoth steppe, green aurora and soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 131.6,
+          "raw_p99": 228.0,
+          "gamma": 1.018,
+          "spread": 163.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o5-full-t0-generation.json",
+          "sha256": "b65cb81eda00385565245fb1d0119fe02b33a2577fcc5bad5603e7f7e4ce64f0"
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o5-full-t1.png",
+        "sha256": "87fefb51bbc33a8a42bd2f4cfc8dcbbb3cd9314692e8ca4b4585668ca5759c4b",
+        "model": "klein4b-q8-768",
+        "prompt": "One steppe bison, Bison priscus, resting in snow, full body side profile. A prominent shoulder hump rises immediately above its short front legs. Dense curly dark brown fur covers its heavy shoulders and broad lowered head, with a shaggy beard below a short broad muzzle. Its two horns project sideways from the upper head and curve upward at their tips. Its slimmer hindquarters and tucked hind legs remain visible. Blue-white Ice Age mammoth steppe, green aurora and soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 125.7,
+          "raw_p99": 237.0,
+          "gamma": 0.952,
+          "spread": 166.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o5-full-t1-generation.json",
+          "sha256": "316318e969a506596a4da7d6e20a3b3245c7e890596c2e139f81b1fd22e3f8b1"
+        }
+      }
+    ],
+    "o1": [
+      {
+        "file": "ice-age-anatomy-repair/art/o1-full-t0.png",
+        "sha256": "13b1a8890828911e250ee7458d9f73eb33d8c09d7694033200dd0f7033386ce9",
+        "model": "klein4b-q8-768",
+        "prompt": "Close-up wildlife photograph of one Norway lemming, Lemmus lemmus, nestled chest-deep in soft snow. A very compact round stocky rodent with a blunt broad muzzle and short whiskers, black bead eyes, very small rounded ears almost concealed in its thick soft fur. Dense tawny-orange fur around its cheeks, a dark brown cap and dark stripe down its back, pale cream chin and belly. Its tiny front paws rest on the snow directly below its face. The rear of its round body is buried in the snow. Three-quarter front view at animal eye level. Blue snowy tundra and green aurora softly blurred behind the animal, gentle warm amber side lighting. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 133.8,
+          "raw_p99": 224.0,
+          "gamma": 1.045,
+          "spread": 140.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o1-full-t0-generation.json",
+          "sha256": "a0e82ff37a6f6efde94134ec47269edce958147eb73fe2492c706e927fe56890"
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o1-full-t1.png",
+        "sha256": "d70f114534a56c36727b1a7013e9380b39bbbd2748055d36667884c2b13a34bf",
+        "model": "klein4b-q8-768",
+        "prompt": "Close-up wildlife photograph of one Norway lemming, Lemmus lemmus, nestled chest-deep in soft snow. A very compact round stocky rodent with a blunt broad muzzle and short whiskers, black bead eyes, very small rounded ears almost concealed in its thick soft fur. Dense tawny-orange fur around its cheeks, a dark brown cap and dark stripe down its back, pale cream chin and belly. Its tiny front paws rest on the snow directly below its face. The rear of its round body is buried in the snow. Three-quarter front view at animal eye level. Blue snowy tundra and green aurora softly blurred behind the animal, gentle warm amber side lighting. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 129.0,
+          "raw_p99": 212.0,
+          "gamma": 0.989,
+          "spread": 122.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o1-full-t1-generation.json",
+          "sha256": "783121c1eb40d1bc5a9e3d8246f73300ce7569b07a9e26c29d98a27956cb4669"
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "ice-age-anatomy-repair/art/o7-full-t0.png",
+        "sha256": "186c97e10cfd9a5f541951ba9850e9c5979ba98b3c4b9d8f23e99b8199d6e5c9",
+        "model": "klein4b-q8-768",
+        "prompt": "Full side profile of a woolly rhinoceros, Coelodonta antiquitatis, standing in blowing snow. Its entire broad barrel-shaped body is covered in thick shaggy brown fur. Exactly two horns sit in a single line on the nose: one very long curved horn at the front of the muzzle and a shorter horn immediately behind it. A pair of small rounded fur-covered ears stands at the back of the head above a broad low forehead. Short heavy legs, green aurora over blue-white Ice Age steppe, soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 122.6,
+          "raw_p99": 229.0,
+          "gamma": 0.92,
+          "spread": 144.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o7-full-t0-generation.json",
+          "sha256": "a750eb821a13059bd4407f9f1e9ea14af613bd1e772cb8d4a323c55eb6decfcc"
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o7-full-t1.png",
+        "sha256": "f473084d8f52841e457e54b5eb492f6613b11f786c3ed4df09f862db7e9a5c9d",
+        "model": "klein4b-q8-768",
+        "prompt": "Full side profile of a woolly rhinoceros, Coelodonta antiquitatis, standing in blowing snow. Its entire broad barrel-shaped body is covered in thick shaggy brown fur. Exactly two horns sit in a single line on the nose: one very long curved horn at the front of the muzzle and a shorter horn immediately behind it. A pair of small rounded fur-covered ears stands at the back of the head above a broad low forehead. Short heavy legs, green aurora over blue-white Ice Age steppe, soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 126.7,
+          "raw_p99": 227.0,
+          "gamma": 0.963,
+          "spread": 166.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o7-full-t1-generation.json",
+          "sha256": "8a117b6d2909b5340bdba5fc92fede59b28d25dfd5e11c24b6a1794eec693903"
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "ice-age-anatomy-repair/art/o8-full-t0.png",
+        "sha256": "989c3f5431f5ce004dc4799613eb2067b9dbc80a3c5feb9cc98d7df1bd997d45",
+        "model": "klein4b-q8-768",
+        "prompt": "An adult female cave lion, Panthera spelaea, padding through deep snow toward the lens. Smooth short dense yellowish-grey fur covers its broad head and neck without a mane. Small rounded ears, powerful broad feline muzzle, frosted whiskers and muscular shoulders, large natural paws planted in snow. Green aurora over the blue-white Ice Age mammoth steppe, soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 130.3,
+          "raw_p99": 208.0,
+          "gamma": 1.003,
+          "spread": 107.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o8-full-t0-generation.json",
+          "sha256": "beafffd32eff9656ddf97f188d53625f5bfcd8834eef4ff2bec0464a7af23065"
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o8-full-t1.png",
+        "sha256": "5b50f67161d43f86bf86bf7dcffbf23ca2340128afc7ba17e74cb1f81da0a67d",
+        "model": "klein4b-q8-768",
+        "prompt": "An adult female cave lion, Panthera spelaea, padding through deep snow toward the lens. Smooth short dense yellowish-grey fur covers its broad head and neck without a mane. Small rounded ears, powerful broad feline muzzle, frosted whiskers and muscular shoulders, large natural paws planted in snow. Green aurora over the blue-white Ice Age mammoth steppe, soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 138.6,
+          "raw_p99": 213.0,
+          "gamma": 1.105,
+          "spread": 120.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o8-full-t1-generation.json",
+          "sha256": "26216d3c2ca7dede0fa5ffe9a459fa54eeaa8894ca6e3375b57a78ad9c91454b"
+        }
+      }
+    ]
+  },
+  "completed_images": {},
+  "local_attempts": {
+    "o3": [
+      {
+        "file": "ice-age-anatomy-repair/art/o3-full-t0.png",
+        "sha256": "25b0a891ef060c1230de294048f866be2c00b772e63c7e6f869ce2eb65ad0b6d",
+        "model": "klein4b-q8-768",
+        "prompt": "Side view of one small winter-coat Arctic fox, Vulpes lagopus, sleeping curled in the snow, its thick white bushy tail wrapped over its short muzzle. The compact fox is seen in full body profile with its small head turned sideways and eyes closed. Dense pure white fur, tiny rounded ears partly hidden by fur, sharply resolved fine individual hairs. The sleeping fox occupies the lower half of a broad rugged snowbank with textured wind-carved ridges. Arctic blue snow and green aurora in the distance, soft warm amber rim light. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 124.6,
+          "raw_p99": 239.0,
+          "gamma": 0.94,
+          "spread": 117.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o3-full-t0-generation.json",
+          "sha256": "2d8c3d27596a144f8cd7be5423fb6ad4511e1cf116be03cb8a6f384150706f46"
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o3-full-t1.png",
+        "sha256": "997630ddf5b5a20ba749e015cf0222e3aa8973af9eabeeda4433fa44640c20c9",
+        "model": "klein4b-q8-768",
+        "prompt": "Side view of one small winter-coat Arctic fox, Vulpes lagopus, sleeping curled in the snow, its thick white bushy tail wrapped over its short muzzle. The compact fox is seen in full body profile with its small head turned sideways and eyes closed. Dense pure white fur, tiny rounded ears partly hidden by fur, sharply resolved fine individual hairs. The sleeping fox occupies the lower half of a broad rugged snowbank with textured wind-carved ridges. Arctic blue snow and green aurora in the distance, soft warm amber rim light. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 114.7,
+          "raw_p99": 228.0,
+          "gamma": 0.843,
+          "spread": 108.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o3-full-t1-generation.json",
+          "sha256": "21fb8120fefc68e65542f88108a395f4d0a54e51fd535a78b713b9e7cf5dc9c0"
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o3-full-t2.png",
+        "sha256": "50dce07dc3a3bb8dc3ba5b950590bbf4ce72ae68f07727c441a51163ace41874",
+        "model": "klein4b-q8-768",
+        "prompt": "Side view of one small winter-coat Arctic fox, Vulpes lagopus, sleeping curled in the snow, its thick white bushy tail wrapped over its short muzzle. The compact fox is seen in full body profile with its small head turned sideways and eyes closed. Dense pure white fur, tiny rounded ears partly hidden by fur, sharply resolved fine individual hairs. The sleeping fox occupies the lower half of a broad rugged snowbank with textured wind-carved ridges. Arctic blue snow and green aurora in the distance, soft warm amber rim light. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 2,
+        "exposure": {
+          "raw_mean": 123.2,
+          "raw_p99": 238.0,
+          "gamma": 0.926,
+          "spread": 123.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o3-full-t2-generation.json",
+          "sha256": "103df174982644f6fb053bd6ba8267f584e8dc0688f52fb9a3301639d5c00c73"
+        }
+      },
+      {
+        "file": "ice-age-anatomy-repair/art/o3-full-t3.png",
+        "sha256": "6a1e00e17243672c59b8ffbdebf061d0d0a32ce1eaed98d9b43b895f8022d834",
+        "model": "klein4b-q8-768",
+        "prompt": "Side view of one small winter-coat Arctic fox, Vulpes lagopus, sleeping curled in the snow, its thick white bushy tail wrapped over its short muzzle. The compact fox is seen in full body profile with its small head turned sideways and eyes closed. Dense pure white fur, tiny rounded ears partly hidden by fur, sharply resolved fine individual hairs. The sleeping fox occupies the lower half of a broad rugged snowbank with textured wind-carved ridges. Arctic blue snow and green aurora in the distance, soft warm amber rim light. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 122.0,
+          "raw_p99": 225.0,
+          "gamma": 0.914,
+          "spread": 102.0
+        },
+        "generation": {
+          "file": "ice-age-anatomy-repair/art/o3-full-t3-generation.json",
+          "sha256": "34b4f806851c76ebb211315733fff36646f4c3520ba4f721038616e66ebf9d41"
+        }
+      }
+    ]
+  }
+}

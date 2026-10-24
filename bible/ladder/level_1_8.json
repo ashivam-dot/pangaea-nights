@@ -1304,7 +1304,7 @@
      "label": "A lemming",
      "vo": "Level one: a lemming. Warm, but tiny.",
      "danger": 1,
-     "image_prompt": "A round lemming huddled in a snow hollow, fur frosted, a warm orange ember glow nearby, green aurora overhead, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "Close-up wildlife photograph of one Norway lemming, Lemmus lemmus, nestled chest-deep in soft snow. A very compact round stocky rodent with a blunt broad muzzle and short whiskers, black bead eyes, very small rounded ears almost concealed in its thick soft fur. Dense tawny-orange fur around its cheeks, a dark brown cap and dark stripe down its back, pale cream chin and belly. Its tiny front paws rest on the snow directly below its face. The rear of its round body is buried in the snow. Three-quarter front view at animal eye level. Blue snowy tundra and green aurora softly blurred behind the animal, gentle warm amber side lighting. Documentary wildlife portrait, photoreal painterly, vertical composition"
     },
     {
      "n": 2,
@@ -1329,10 +1329,10 @@
     },
     {
      "n": 5,
-     "label": "Musk ox",
-     "vo": "Level five: a musk ox in a hair skirt.",
+     "label": "Steppe bison",
+     "vo": "Level five: a steppe bison, shaggy and heavy.",
      "danger": 4,
-     "image_prompt": "Tight head-and-shoulders portrait of a muskox, Ovibos moschatus, resting in snow. A broad pale helmet of horn bases covers the forehead; thick horns sweep downward beside both cheeks then curl upward at their tips. Small dark eyes below the horn boss, tiny ears mostly buried in fur and a short broad blunt black muzzle. Very long dense dark brown shaggy guard hairs cover the shoulders and fill the entire lower frame. The body and legs are tucked behind the long coat outside this close crop. Blue snow, green aurora and warm amber rim light. Wildlife documentary portrait, photoreal painterly, vertical composition"
+     "image_prompt": "One steppe bison, Bison priscus, resting in snow, full body side profile. A prominent shoulder hump rises immediately above its short front legs. Dense curly dark brown fur covers its heavy shoulders and broad lowered head, with a shaggy beard below a short broad muzzle. Its two horns project sideways from the upper head and curve upward at their tips. Its slimmer hindquarters and tucked hind legs remain visible. Blue-white Ice Age mammoth steppe, green aurora and soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition"
     },
     {
      "n": 6,

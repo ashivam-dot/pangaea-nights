@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "10333d0f6f95d222740a74704600f311268e0f2d",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "A winter white Arctic hare, Lepus arcticus, sitting in side profile in wind-carved snow. Its short upright ears have distinct black tips, its eyes are dark brown and its muzzle is compact. A hare-shaped athletic body with long powerful hind legs tucked underneath and broad furry paws. Dense crisp white winter fur with fine strands. Green aurora over blue Ice Age tundra, soft warm amber side light. Documentary wildlife portrait, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 128020380
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "ice-age-anatomy-repair/art/o2-full-t0-raw.png",
+    "sha256": "d363f0e3890181c8fdbdcc580b11fedc8b41e948786f03ae8631681d74fe9a11"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 81.7
+}
