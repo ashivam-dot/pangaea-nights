@@ -14,7 +14,7 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-foreground-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 3,
       "obsolete_runs": [
         40121235398,
@@ -86,7 +86,8 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-24T22:02:18+00:00"
+      "submitted_at": "2026-10-24T22:02:18+00:00",
+      "run_id": 40136822897
     },
     {
       "repo": "pangaea-nights",
@@ -531,7 +532,7 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-24T22:02:18+00:00",
+  "updated_at": "2026-10-24T22:02:22+00:00",
   "complete": false,
   "health": {
     "public": 0,
