@@ -95,7 +95,7 @@
       "series": "level_1_8",
       "slot": "B",
       "target": "2026-10-25T00:30:00Z",
-      "stage": "building",
+      "stage": "held",
       "inputs": {
         "dry_run": "true",
         "slot": "A",
@@ -122,7 +122,23 @@
         39766129149
       ],
       "run_id": 40135503878,
-      "cloud_status": "queued"
+      "cloud_status": "queued",
+      "editorial_holds": [
+        {
+          "id": "direct-muskox-anatomy-40135503878",
+          "run_id": 40135503878,
+          "observed_at": "2026-10-24T22:04:12.994339+00:00",
+          "reason": "Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.",
+          "evidence": {
+            "o5.png": "eaf0d3539f80ff38966c30c5f9274f4f80ee72e509a2d135ee7794c113efa24d",
+            "o5-alt1.png": "e3a7ca608b790111cef79cab2c8dc190a9cbbb4f960051008d73e61819c24705"
+          },
+          "primary_reference": "https://www.adfg.alaska.gov/index.cfm?adfg=muskox.main"
+        }
+      ],
+      "problems": [
+        "Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -531,8 +547,8 @@
       "attempts": 0
     }
   ],
-  "halted": null,
-  "updated_at": "2026-10-24T22:02:22+00:00",
+  "halted": "Repair held entry level_1_8-16: Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.",
+  "updated_at": "2026-10-24T22:04:12.997079+00:00",
   "complete": false,
   "health": {
     "public": 0,
