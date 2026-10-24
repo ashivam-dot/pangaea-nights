@@ -493,7 +493,31 @@ IMAGE_IDS = [f"o{n}" for n in range(1, OPTIONS + 1)] + ["end"]
 # which a deep-time audience notices at once. Prompts naming one get the anatomy spelled out.
 ANATOMY = {("pterosaur", "quetzalcoatlus", "pteranodon", "nyctosaurus", "rhamphorhynchus"):
            "the pterosaur has bare leathery membrane wings stretched from one long finger, a long beak, no feathers, "
-           "not a bird"}
+           "not a bird",
+           ("opabinia",):
+           "scientific reconstruction: one elongated horizontal soft body with lateral swimming lobes, five "
+           "short-stalked eyes clustered above the head, and one flexible forward proboscis ending in a small claw; "
+           "dorsal three-quarter view showing the body and eyes, not a crab with jointed walking legs",
+           ("hallucigenia",):
+           "scientific reconstruction: a long slender horizontal cylindrical trunk, paired conical dorsal spines "
+           "pointing upward along its back and soft walking legs beneath it; show the entire animal sideways, "
+           "not an upright tower or a single giant spike",
+           ("wiwaxia",):
+           "scientific reconstruction: a low oval soft body covered in overlapping ribbed leaf-shaped sclerites, "
+           "with two rows of long dorsal spines; view from above and beside the animal so its armor and spines "
+           "are the focal features, not a fish face",
+           ("anomalocaris",):
+           "scientific reconstruction: an elongated horizontal radiodont with broad lateral swimming flaps, "
+           "large compound eyes on stalks and a pair of segmented frontal grasping appendages with inward spines; "
+           "show the entire animal in side profile, not a fish with scales, gill covers or a fish tail",
+           ("trilobite",):
+           "scientific reconstruction: a flattened oval segmented exoskeleton with a central axial lobe and "
+           "two side pleural lobes, a broad head shield and a tail shield; slightly elevated three-quarter view "
+           "makes the three longitudinal lobes readable",
+           ("arrow worm", "chaetognath"):
+           "scientific reconstruction: slender transparent unsegmented worm bodies with lateral fins and a tail "
+           "fin, short hooked grasping spines immediately beside each mouth; show a few complete horizontal "
+           "worms close enough to see their body plan, not shrimp with long radiating antennae"}
 
 
 def anatomy(prompt: str) -> str:

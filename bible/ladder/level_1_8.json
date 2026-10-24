@@ -21,7 +21,7 @@
      "label": "A tiny trilobite",
      "vo": "Level two: a trilobite, plodding in slow circles.",
      "danger": 2,
-     "image_prompt": "Close view of one small grey trilobite crawling across rippled sand at night, its segmented shell catching an amber glow, faint moonbeams cutting down through the water, cold turquoise moonlit shallows, wide-angle lens at seabed level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "A small grey trilobite seen from slightly above, its broad head shield and flattened oval segmented shell showing a central axial lobe and two side lobes, crawling over rippled shallow-sea sand; amber foreground fill and diffuse blue underwater light."
     },
     {
      "n": 3,
@@ -35,35 +35,35 @@
      "label": "Five-eyed Opabinia",
      "vo": "Level four: Opabinia. Five eyes and a claw nose.",
      "danger": 4,
-     "image_prompt": "Opabinia swimming over a muddy seabed, five stalked eyes on its head and a long clawed proboscis reaching forward, an amber glow under its body, moonlit water, cold turquoise moonlit shallows, wide-angle lens at seabed level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "One Opabinia swimming horizontally from left to right just above a muddy seabed. Dorsal three-quarter view of the whole elongated body with side swimming lobes, five short-stalked eyes clustered on the head, and one long flexible proboscis reaching forward to a small terminal claw; amber foreground fill in turquoise water."
     },
     {
      "n": 5,
      "label": "Spiny Hallucigenia",
      "vo": "Level five: Hallucigenia, spines up, legs down.",
      "danger": 5,
-     "image_prompt": "A small Hallucigenia walking on a sponge, tall paired spines along its back and slender legs below, macro framing, amber glow behind it, teal darkness, cold turquoise moonlit shallows, wide-angle lens at seabed level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "One small Hallucigenia viewed entirely from the side, its long slender cylindrical trunk held horizontally over a sponge, paired conical spines pointing upward along its back and soft legs walking beneath the body; small rounded head at the left, amber foreground fill in turquoise water."
     },
     {
      "n": 6,
      "label": "Scale-armored Wiwaxia",
      "vo": "Level six: Wiwaxia, a slug wearing blades.",
      "danger": 6,
-     "image_prompt": "Wiwaxia gliding over a stone, its oval body covered in overlapping scales and two rows of upright blades, an amber glow reflecting off the scales, moonlit seabed, cold turquoise moonlit shallows, wide-angle lens at seabed level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "One low oval Wiwaxia gliding over a stone, viewed from above and beside its overlapping ribbed leaf-shaped armor scales and two rows of long dorsal spines; the body stays low to the rock, amber foreground fill in turquoise water."
     },
     {
      "n": 7,
      "label": "Arrow worm swarm",
      "vo": "Level seven: a hunting swarm of arrow worms.",
      "danger": 7,
-     "image_prompt": "A dense swarm of transparent arrow worms flashing past the lens with grasping head spines, streaks of amber glow among them, deep teal water at night, cold turquoise moonlit shallows, wide-angle lens at seabed level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "A few complete transparent arrow worms swimming horizontally close to the lens, long unsegmented bodies with small lateral fins and tail fins, short hooked grasping spines clustered immediately around each mouth. A larger swarm recedes softly behind them; amber foreground fill in turquoise water."
     },
     {
      "n": 8,
      "label": "Anomalocaris",
      "vo": "Level eight: Anomalocaris. Spiked arms, huge eyes.",
      "danger": 8,
-     "image_prompt": "Anomalocaris gliding straight toward the lens over a reef, swimming flaps rippling, two spiny frontal appendages curled forward, large compound eyes catching an amber glow, cold turquoise moonlit shallows, wide-angle lens at seabed level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "One complete Anomalocaris swimming horizontally from left to right above a reef, seen in side profile, its elongated body bearing repeated broad lateral swimming flaps, two large stalked compound eyes and a pair of segmented frontal grasping appendages curled beneath the head with inward-facing spines; amber foreground fill in turquoise water."
     }
    ],
    "answer_n": 8,
@@ -74,7 +74,7 @@
     "wiki_title": "Anomalocaris",
     "wiki_revid": 1379615198
    },
-   "description": "Half a billion years ago the sea was the only place anything lived. Eight Cambrian creatures, ranked from harmless to the top of the food chain, and the one that would actually keep your reef safe. Comment your number.",
+   "description": "Half a billion years ago, these creatures shared Cambrian seas. Pick your imaginary reef guard from eight animals, from a sponge to Anomalocaris, and see the fossil-based reason for the final choice. Comment your number.",
    "tags": [
     "Cambrian",
     "ancient ocean",

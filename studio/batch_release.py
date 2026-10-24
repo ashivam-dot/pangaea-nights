@@ -62,6 +62,8 @@ def validate(job, folder):
         raise ValueError("no unique finished MP4")
     return videos[0], {"channel": "Pangaea Nights choice-ladder Shorts", "audience": "English general audience",
                        "premise": p, "spoken_script": ladder.script_text(p),
+                       "expected_visual_anatomy": [{"option": o["n"], "requirements": ladder.anatomy(o["image_prompt"]).strip()}
+                                                   for o in p["options"] if ladder.anatomy(o["image_prompt"])],
                        "look": "Earth deep time and oceans. No humans. Cinematic foreground lighting may illuminate "
                                "deep-sea animals, but kilometre-deep water has no sunlight or bright surface sky.",
                        "expected_narrator": "the channel's existing English narrator"}

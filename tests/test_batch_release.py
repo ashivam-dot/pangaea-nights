@@ -29,6 +29,31 @@ def test_a_pass_alone_is_not_an_audiovisual_review():
     assert "Wrong object" in " ".join(review.verdict_problems(v, 40))
 
 
+def test_science_release_rejects_old_directions_and_gives_the_editor_the_body_plan(tmp_path, monkeypatch):
+    import copy
+    from studio import batch_release as adapter, ladder
+
+    current = ladder.find(ladder.load_banks(strict=True), "level_1_8-01")
+    monkeypatch.setattr(adapter.ledger, "load", lambda: {"shorts": []})
+    monkeypatch.setattr(ladder, "plan_problems", lambda *a: {})
+    (tmp_path / "gates.json").write_text(json.dumps({"ok": True, "failures": [], "frame0": "fingerprint"}))
+    (tmp_path / "short.mp4").write_bytes(b"rendered")
+    plan = {"premise": current, "mode": "dry"}
+    (tmp_path / "plan.json").write_text(json.dumps(plan))
+    job = {"premise": current["id"], "target": "now-after-review", "run_id": 123}
+    _, brief = adapter.validate(job, tmp_path)
+    requirements = {r["option"]: r["requirements"] for r in brief["expected_visual_anatomy"]}
+    assert "five" in requirements[4] and "proboscis" in requirements[4]
+    assert "horizontal" in requirements[5] and "beneath" in requirements[5]
+    assert "swimming flaps" in requirements[8] and "segmented frontal" in requirements[8]
+    # A green render from the old frontal fish-like direction cannot be adopted after the visual repair.
+    stale = copy.deepcopy(current)
+    stale["options"][7]["image_prompt"] = "Anomalocaris gliding straight toward the lens over a reef"
+    (tmp_path / "plan.json").write_text(json.dumps({"premise": stale, "mode": "dry"}))
+    with pytest.raises(ValueError, match="premise changed"):
+        adapter.validate(job, tmp_path)
+
+
 def test_review_cannot_be_reused_for_different_video_or_script(tmp_path):
     mp4 = tmp_path / "short.mp4"
     mp4.write_bytes(b"original media")

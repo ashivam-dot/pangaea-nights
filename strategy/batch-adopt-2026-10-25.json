@@ -10,7 +10,10 @@
   },
   "level_1_8-01": {
     "run_id": 40122729549,
-    "stage": "building",
-    "source_sha": "7d3c1c887eabc13d637506d7d936c6836abecd7a"
+    "stage": "held",
+    "source_sha": "7d3c1c887eabc13d637506d7d936c6836abecd7a",
+    "problems": [
+      "Direct still review: both Opabinia takes are crab-like rather than five-eyed lobed swimmers; Hallucigenia is vertical instead of a horizontal worm with dorsal spines; both Anomalocaris takes are fish-like. These contradict the narration. Correct anatomical prompts and re-render before release."
+    ]
   }
 }
