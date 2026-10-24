@@ -19,3 +19,8 @@ The first option remains a lemming. Its painter direction now specifies a compac
 small rounded ears and a blunt muzzle nestled in snow. Both new exact stills pass direct review
 and unchanged numeric QA; the original hedgehog-like alternate and long-tailed mouse-like trials
 are excluded. Other retained and repaired animal slots keep their original provenance.
+
+The unbooked first target is explicitly moved from25October00:30UTC /06:00IST to
+25October06:30UTC /12:00IST because cached repairs are serialized behind Snowball and runner
+capacity is constrained. No upload ID or booked schedule is moved; the ten-day batch and ordering remain.
+The state ledger keeps the old target and reason in `calendar_history`.

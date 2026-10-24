@@ -20,14 +20,22 @@
       "premise": "level_1_8-16",
       "series": "level_1_8",
       "slot": "B",
-      "target": "2026-10-25T00:30:00Z",
+      "target": "2026-10-25T06:30:00Z",
       "stage": "planned",
       "inputs": {
         "dry_run": "true",
         "slot": "A",
         "premise": "level_1_8-16"
       },
-      "editorial_replan": "Keep the same series and slot; Cambrian drafts are quarantined for inaccurate rare-animal body plans. Use the existing Ice Age animal premise with full original gates and full AV review."
+      "editorial_replan": "Keep the same series and slot; Cambrian drafts are quarantined for inaccurate rare-animal body plans. Use the existing Ice Age animal premise with full original gates and full AV review.",
+      "calendar_history": [
+        {
+          "changed_at": "2026-10-24T23:55:09+00:00",
+          "from": "2026-10-25T00:30:00Z",
+          "to": "2026-10-25T06:30:00Z",
+          "reason": "Unbooked target deliberately replanned: serialized cached repair is still pending behind Snowball and free-runner contention. Preserve full gates and the twenty-minute upload margin. No existing YouTube schedule is changed."
+        }
+      ]
     },
     {
       "repo": "pangaea-nights",
