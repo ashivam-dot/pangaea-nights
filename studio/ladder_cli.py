@@ -25,12 +25,12 @@ from pathlib import Path
 from . import config, ladder, ledger
 
 MODES = ("publish", "test", "dry")
-PEAK_JOBS = 19  # image + voice runners at once, leaving one of the free plan's 20 for an episode plan job (fanout)
+PEAK_JOBS = 16  # image + voice runners; reserve four of the free plan's 20 for the other channel jobs
 IMAGE_JOBS = PEAK_JOBS - 2  # with two slots; image_budget() for any count
 
 
 def image_budget(slots: int) -> int:
-    """Image runner jobs a run may fan out to: the peak less one voice job per slot (three a day: 16)."""
+    """Image runners after reserving each slot's voice runner (three a day: 13 image + 3 voice)."""
     return PEAK_JOBS - max(slots, 1)
 PLAN_TRIES = 8  # premises tried per slot before the slot is given up
 # The one private test upload the launch checklist asks for happens while PAUSED is still true; it needs this

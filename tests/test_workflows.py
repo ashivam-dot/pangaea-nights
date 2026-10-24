@@ -101,7 +101,7 @@ def test_concurrency_stays_within_twenty():
     images = min(shorts["images"]["strategy"]["max-parallel"],
                  len(ladder_cli.image_matrix(list(ladder.SLOTS), len(ladder.IMAGE_IDS))))
     shorts_peak = images + n  # images + one voice per slot
-    assert shorts_peak <= fanout.LIMIT - 1  # room for an episode plan job
+    assert shorts_peak <= fanout.LIMIT - 4  # news, fiction and monitoring also share the account
     ep = config.shape("full")
     assert ep.image_shards + ep.voice_shards <= fanout.LIMIT
     for length in config.LENGTHS:
