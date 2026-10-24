@@ -634,6 +634,20 @@
     "failures": [],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-24T20:02:39Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "level_1_8-01",
+    "run": "40122729549",
+    "ok": false,
+    "failures": [
+     "wer: {\"value\": 0.103, \"floor\": 0.0, \"ceiling\": 0.08}",
+     "wer_line_max: {\"value\": 0.429, \"floor\": 0.0, \"ceiling\": 0.25, \"line\": \"o6\"}"
+    ],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [
