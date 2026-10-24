@@ -1318,7 +1318,7 @@
      "label": "Arctic fox",
      "vo": "Level three: an arctic fox, curled into its tail.",
      "danger": 2,
-     "image_prompt": "An arctic fox curled tightly with its bushy tail over its nose in the snow, warm orange glow, blowing snow, aurora, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "A winter-coat Arctic fox, Vulpes lagopus, curled tightly into a compact ball in the snow. Dense pure white fur covers its rounded body and very short muzzle. Tiny rounded ears are partly buried in thick white fur. Its thick white bushy tail curls over its nose. Soft warm amber rim light defines the white coat against Arctic blue snow, green aurora and blowing snow behind. Documentary wildlife portrait, photoreal painterly, vertical composition"
     },
     {
      "n": 4,
@@ -1332,7 +1332,7 @@
      "label": "Musk ox",
      "vo": "Level five: a musk ox in a hair skirt.",
      "danger": 4,
-     "image_prompt": "A musk ox standing against the wind with long hair hanging to the snow, curved horns, warm orange ember glow, aurora sky, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "An adult muskox, Ovibos moschatus, standing in side three-quarter view on the snowy Ice Age tundra. Compact barrel-shaped torso and short sturdy legs mostly hidden by a continuous shaggy dark brown coat reaching almost to the snow. Broad pale horn bases form a heavy helmet across the forehead; the horns descend beside the cheeks before their pointed tips curl upwards. A low level back, small ears buried in thick fur, and a short blunt muzzle. Arctic blue snow, green aurora and soft warm amber side light. Documentary wildlife portrait, photoreal painterly, vertical composition"
     },
     {
      "n": 6,
@@ -1346,14 +1346,14 @@
      "label": "Woolly rhinoceros",
      "vo": "Level seven: a woolly rhino. Grumpy and horned.",
      "danger": 7,
-     "image_prompt": "A woolly rhinoceros turning toward the lens in blowing snow, long front horn, thick shaggy coat, orange ember glow, aurora behind, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "Full side profile of a woolly rhinoceros, Coelodonta antiquitatis, standing in blowing snow. Its entire broad barrel-shaped body is covered in thick shaggy brown fur. Exactly two horns sit in a single line on the nose: one very long curved horn at the front of the muzzle and a shorter horn immediately behind it. A pair of small rounded fur-covered ears stands at the back of the head above a broad low forehead. Short heavy legs, green aurora over blue-white Ice Age steppe, soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition"
     },
     {
      "n": 8,
      "label": "Cave lion",
      "vo": "Level eight: a cave lion. Warm, and hungry.",
      "danger": 8,
-     "image_prompt": "A cave lion padding through deep snow straight toward the lens, frosted whiskers, eyes catching an orange ember glow, green aurora overhead, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "An adult female cave lion, Panthera spelaea, padding through deep snow toward the lens. Smooth short dense yellowish-grey fur covers its broad head and neck without a mane. Small rounded ears, powerful broad feline muzzle, frosted whiskers and muscular shoulders, large natural paws planted in snow. Green aurora over the blue-white Ice Age mammoth steppe, soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition"
     }
    ],
    "answer_n": 6,
