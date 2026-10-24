@@ -130,3 +130,18 @@ def test_a_booked_release_must_actually_become_public():
     video["status"]["privacyStatus"] = "public"
     batch.poll_due(data, adapter, datetime(2026, 10, 25, 8, tzinfo=timezone.utc))
     assert job["stage"] == "public" and job["delivery"]["owner_readback"]["channel_id"] == "UCa"
+
+
+def test_rejected_unchanged_media_is_not_sent_back_for_a_different_verdict(tmp_path, monkeypatch):
+    mp4 = tmp_path / "short.mp4"
+    mp4.write_bytes(b"rejected original media")
+    brief = {"script": "unchanged"}
+    v = verdict()
+    v["decision"] = "hold"
+    receipt = {"schema": 1, "model": "gemini-3-flash-preview", "duration": 40,
+               "video_sha256": review.digest(mp4), "brief_sha256": review.brief_digest(brief),
+               "review_video_sha256": "video", "review_audio_sha256": "soundtrack", "verdict": v}
+    (tmp_path / "av-review.json").write_text(json.dumps(receipt))
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    assert review.review(mp4, brief, tmp_path) == receipt
+    assert review.receipt_problems(receipt, mp4, brief)

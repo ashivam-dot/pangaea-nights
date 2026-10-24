@@ -103,7 +103,11 @@ def review(mp4: Path, brief: dict, folder: Path) -> dict:
     target = folder / "av-review.json"
     if target.exists():
         old = json.loads(target.read_text())
-        if not receipt_problems(old, mp4, brief):
+        if old.get("schema") == 1 and old.get("video_sha256") == digest(mp4) \
+                and old.get("brief_sha256") == brief_digest(brief) and old.get("model") \
+                and old.get("review_video_sha256") and old.get("review_audio_sha256"):
+            # Preserve a refusal for unchanged bytes too. The caller applies the verdict; repairing
+            # the actual video/brief is the only way to request a new editorial decision.
             return old
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
