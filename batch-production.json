@@ -174,12 +174,22 @@
             "ladder-img-A-7/o8-alt1.png": "5ebea92f2e735a3abfb08d79203d6cf5f7aa1161cbe81decbed36b6d1f1d4dd5",
             "ladder-img-A-7/o8.png": "b0487739cb1d03d1384d6ff01a8f9e804adca384bdff473f027a685374953a77"
           }
+        },
+        {
+          "id": "direct-hare-40135503878",
+          "run_id": 40135503878,
+          "observed_at": "2026-10-24T22:36:47+00:00",
+          "reason": "Actual retained o2 shows an albino domestic-rabbit-like animal with pink/red eye and very long uniformly pink ears, without recognizable Arctic-hare black ear tips. Repair this shot to a white Arctic hare with black-tipped shorter ears, dark eyes and hare proportions. Preserve narration and usable other images.",
+          "evidence": {
+            "ladder-img-A-1/o2.png": "216ddcaa24c0a2a4529ff2d3a17114f3b0b9d5f2799066be2d8dd49550d19545"
+          }
         }
       ],
       "problems": [
         "Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.",
         "Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.",
-        "Actual o8 takes depict a substantial dark mane like a modern male lion. Paleolithic depictions support cave lions with absent or very small manes; use a clearly maneless female cave lion reconstruction, preserving narration. Retain other valid art."
+        "Actual o8 takes depict a substantial dark mane like a modern male lion. Paleolithic depictions support cave lions with absent or very small manes; use a clearly maneless female cave lion reconstruction, preserving narration. Retain other valid art.",
+        "Actual retained o2 shows an albino domestic-rabbit-like animal with pink/red eye and very long uniformly pink ears, without recognizable Arctic-hare black ear tips. Repair this shot to a white Arctic hare with black-tipped shorter ears, dark eyes and hare proportions. Preserve narration and usable other images."
       ]
     },
     {
@@ -589,8 +599,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry level_1_8-16: Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.; Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.; Actual o8 takes depict a substantial dark mane like a modern male lion. Paleolithic depictions support cave lions with absent or very small manes; use a clearly maneless female cave lion reconstruction, preserving narration. Retain other valid art.",
-  "updated_at": "2026-10-24T22:35:07+00:00",
+  "halted": "Repair held entry level_1_8-16: Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.; Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.; Actual o8 takes depict a substantial dark mane like a modern male lion. Paleolithic depictions support cave lions with absent or very small manes; use a clearly maneless female cave lion reconstruction, preserving narration. Retain other valid art.; Actual retained o2 shows an albino domestic-rabbit-like animal with pink/red eye and very long uniformly pink ears, without recognizable Arctic-hare black ear tips. Repair this shot to a white Arctic hare with black-tipped shorter ears, dark eyes and hare proportions. Preserve narration and usable other images.",
+  "updated_at": "2026-10-24T22:36:47+00:00",
   "complete": false,
   "health": {
     "public": 0,
