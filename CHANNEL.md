@@ -97,6 +97,13 @@ transcripts, captions, thumbnails and media are never downloaded, stored or sent
   and render gates. The release check must also compare earlier batch videos, then use fresh live deduplication,
   owner-visible metadata and complete audiovisual review. Sleep documentaries retain the stable cadence below.
 
+- **Targeted image repairs.** A manual dry preview can use a manifest in `.github/replay` through `replay`.
+  Original source, exact prompt/model, image hash, dimensions and original take metadata must match; every retained
+  base/alternate receives current picture checks again. Changed prompts generate new art. Cached seeds are not
+  repainted and counted as separate takes. Repairs have their own serialized dry-run group, so they do not cancel
+  a pending ordinary preview. This input cannot directly publish. Deep-water scenes use neutral external fill
+  against black water, without the shallow scenes' glowing focal-light style; exposure and readability gates stay in force.
+
 - **When.** `episode.yml` builds on Tuesday and Friday at 14:10 UTC (`10 14 * * 2,5`). A 2-hour build takes about
   3.5 hours and a 3-hour build about 4.5, and the episode is scheduled for the next 21:00 UTC
   (`config.EPISODE_SLOT_UTC`, `youtube.episode_slot()`). The build only overlaps the end of the 08:00 UTC Shorts

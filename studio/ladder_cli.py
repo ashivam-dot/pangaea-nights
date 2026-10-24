@@ -134,6 +134,17 @@ def ramp(args) -> None:
 def plan(args) -> None:
     from ops.batch_state import production_hold
 
+    image_replay = None
+    if replay_path := getattr(args, "replay", ""):
+        from . import ladder_replay
+
+        if args.mode != "dry":
+            raise ValueError("image replays are dry-run only; release requires exact rendered-media approval")
+        replay = ladder_replay.load(replay_path)
+        if args.premise and args.premise != replay["premise"]:
+            raise ValueError("image replay and requested premise differ")
+        args.premise = replay["premise"]
+        image_replay = {"path": replay_path, "sha256": ladder_replay.digest(config.ROOT / replay_path)}
     data = ledger.load()
     banks = ladder.with_proven(ladder.load_banks(strict=False), data)
     today = ladder.now_day()
@@ -170,7 +181,8 @@ def plan(args) -> None:
         planned.append(p)
         _save(slot, "plan.json", {"slot": slot, "mode": args.mode, "day": today.isoformat(), "run": run,
                                   "key": f"{today.isoformat()}-{p['id']}", "premise": p, "gates": g,
-                                  "script": ladder.script_text(p), "created": ledger.now()})
+                                  "script": ladder.script_text(p), "created": ledger.now(),
+                                  "image_replay": image_replay})
         made.append(slot)
         print(json.dumps({"slot": slot, "premise": p["id"], "title": p["title"],
                           "gates": {k: v["ok"] for k, v in g.items()}}))
@@ -198,11 +210,13 @@ def image_matrix(slots: list[str], shards: int, budget: int | None = None) -> li
 
 
 def images(args) -> None:
-    from . import ladder_images
+    from . import ladder_images, ladder_replay
 
     k, n = (int(x) for x in args.shard.split("/"))
     pl = _load(args.slot, "plan.json")
-    rep = ladder_images.generate(pl["premise"], pl["key"], _dir(args.slot) / "images", k, n)
+    binding = pl.get("image_replay")
+    replay = ladder_replay.load(binding["path"], binding["sha256"]) if binding else None
+    rep = ladder_images.generate(pl["premise"], pl["key"], _dir(args.slot) / "images", k, n, replay=replay)
     print(json.dumps({k: rep.get(k) for k in ("shard", "of", "model", "load_s", "seconds")}))
     print(json.dumps({i["id"]: len(i["kept"]) for i in rep["images"]}))
 
@@ -473,6 +487,7 @@ def register(sub) -> None:
     s.add_argument("--mode", choices=MODES, default="dry")
     s.add_argument("--slot", choices=["", *ladder.SLOTS], default="", help="empty = every slot the ramp allows")
     s.add_argument("--premise", default="")
+    s.add_argument("--replay", default="", help="exact image manifest inside .github/replay; dry mode only")
     s.add_argument("--shards", type=int, default=len(ladder.IMAGE_IDS))
     s.set_defaults(fn=plan)
     s = sub.add_parser("ladder-images")

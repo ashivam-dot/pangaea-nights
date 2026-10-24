@@ -10,12 +10,13 @@ from __future__ import annotations
 import hashlib
 import json
 import time
+from contextlib import ExitStack
 from pathlib import Path
 
 import numpy as np
 from PIL import Image
 
-from . import ladder, plates, qa, sdcpp
+from . import ladder, ladder_replay, plates, qa, sdcpp
 
 TAKES = 4
 KEEP = 2
@@ -95,20 +96,23 @@ def soft_only(problems: list[str], sharpness: float) -> bool:
 
 
 def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DEFAULT,
-             budget_s: float = 110 * 60) -> dict:
+             budget_s: float = 110 * 60, replay: dict | None = None) -> dict:
     jobs = shard(ladder.image_jobs(p), k, n)
     out.mkdir(parents=True, exist_ok=True)
     report = {"shard": k, "of": n, "model": model, "premise": p["id"], "images": []}
     cand = sdcpp.CANDIDATES[model]
     w, h = cand.height, cand.width  # vertical
     start = time.monotonic()
-    with sdcpp.Server(cand) as server:
-        report["load_s"] = round(server.load_seconds, 1)
+    if replay and replay["premise"] != p["id"]:
+        raise ValueError("image replay belongs to a different premise")
+    with ExitStack() as stack:
+        server = None
+        report["load_s"] = 0.0
         for job in jobs:
             entry = {"id": job["id"], "takes": [], "kept": []}
             soft = []  # (score, take, img, verdict) of soft-only refusals
 
-            def keep(img, verdict, fig, take, fallback=False):
+            def keep(img, verdict, fig, take, fallback=False, cached_from=None):
                 stem = f"{job['id']}" if not entry["kept"] else f"{job['id']}-alt{len(entry['kept'])}"
                 img.save(out / f"{stem}.png")
                 files = plates.save_plate(img, out / stem, vertical=True)
@@ -116,9 +120,29 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                                       "similarity": round(verdict.similarity, 4),
                                       "luma": round(verdict.brightness, 1), "embedding": qa.pack(qa.embed(img)),
                                       "score": round(take_score(verdict, fig), 3), "fallback": fallback})
+                if cached_from:
+                    entry["kept"][-1]["cached_from"] = cached_from
+            for img, exposure, take, provenance in ladder_replay.candidates(replay, job, model, (w, h)):
+                verdict = qa.review(img, job["scene"])
+                fig = qa.figure(img)
+                probs = exposure_problems(exposure) + take_problems(verdict, job, fig)
+                entry["takes"].append({"seconds": 0, "problems": probs, "exposure": exposure,
+                                       "figure": round(fig, 4), "cached_from": provenance, **verdict.as_dict()})
+                if not probs:
+                    keep(img, verdict, fig, take, cached_from=provenance)
+                if len(entry["kept"]) >= KEEP:
+                    break
             for take in range(TAKES):
+                if len(entry["kept"]) >= KEEP:
+                    break
+                if replay and replay["source"]["key"] == key and any(
+                        r.get("cached_from", {}).get("take") == take for r in entry["takes"]):
+                    continue  # never count a cached seed and a deterministic repaint of that seed as two takes
                 if take and time.monotonic() - start > budget_s:
                     break
+                if server is None:
+                    server = stack.enter_context(sdcpp.Server(cand))
+                    report["load_s"] = round(server.load_seconds, 1)
                 t = time.monotonic()
                 raw = sdcpp.to_pil(server.generate(job["prompt"], _seed(key, job["id"], take), w, h))
                 img, exposure = expose(raw, sum(job["luma"]) / 2)

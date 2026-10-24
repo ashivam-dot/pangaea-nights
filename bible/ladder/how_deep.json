@@ -42,28 +42,28 @@
      "label": "Two hundred metres, black",
      "vo": "Five: two hundred metres. Total black.",
      "danger": 5,
-     "image_prompt": "near-total darkness of a frozen ancient sea at two hundred metres, faint suspended particles caught in a single warm amber glow from an unseen source, cold indigo gradient, photoreal painterly, vertical composition"
+     "image_prompt": "near-total darkness of a frozen ancient sea at two hundred metres, close foreground grey rock ledge and suspended particles visible in neutral external documentary fill, completely featureless black water filling the background and upper edge, photoreal painterly, vertical composition"
     },
     {
      "n": 6,
      "label": "One kilometre, crushing cold",
      "vo": "Six: one kilometre. Crushing cold, no light.",
      "danger": 6,
-     "image_prompt": "abyssal dark water one kilometre deep, tiny drifting marine snow, distant black basalt slope barely visible, a single faint warm orange glimmer far off in the gloom, photoreal painterly, vertical composition"
+     "image_prompt": "abyssal dark water one kilometre deep, close rough charcoal basalt slope across the lower foreground with tiny drifting marine snow visible in neutral external documentary fill, completely featureless black water beyond and at the upper edge, photoreal painterly, vertical composition"
     },
     {
      "n": 7,
      "label": "The frozen-world seafloor",
      "vo": "Seven: the seafloor, kilometres under the ice.",
      "danger": 7,
-     "image_prompt": "bleak abyssal seafloor kilometres deep, black basalt pillows dusted with grey sediment in dark indigo water, close low view of the rocks lit by a soft warm reflected amber accent, black water beyond, no visible ice ceiling or sunlight, no lava, photoreal painterly, vertical composition"
+     "image_prompt": "bleak abyssal seafloor kilometres deep, close low view of rough matte charcoal basalt pillows dusted with grey sediment occupying most of the foreground, neutral external documentary fill reveals their texture, completely featureless black water behind the rocks and at the upper edge, photoreal painterly, vertical composition"
     },
     {
      "n": 8,
      "label": "Beside a superheated vent",
      "vo": "Eight: beside a superheated vent.",
      "danger": 8,
-     "image_prompt": "black hydrothermal mineral chimney on a dark abyssal seafloor, a dark mineral-rich plume mixing with shimmering hot water from its top, dull orange mineral crusts under a soft warm reflected amber accent, dark water above, no ice ceiling, no lava or glowing molten rock, photoreal painterly, vertical composition"
+     "image_prompt": "close side view of an irregular jagged black hydrothermal mineral chimney on an abyssal seafloor, a dense opaque black mineral plume emerging from several small openings, rough matte grey crust and uneven boulder base occupy most of the foreground in soft neutral external documentary fill, completely featureless black water behind and along the upper edge, photoreal painterly, vertical composition"
     }
    ],
    "answer_n": 2,

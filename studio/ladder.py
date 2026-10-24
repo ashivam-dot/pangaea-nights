@@ -149,7 +149,8 @@ def prompt_problems(prompt: str) -> list[str]:
     low = " " + prompt.lower() + " "
     out += [f"mentions '{w.strip()}'" for w in EXTRA_PROMPT_BANS if re.search(r"\b" + re.escape(w.strip()) + r"\b",
                                                                                low)]
-    if not any(re.search(r"\b" + w + r"\b", low) for w in WARM):
+    external_fill = bool(dark_water_direction(prompt)) and bool(re.search(r"neutral external [\w -]*fill", low))
+    if not external_fill and not any(re.search(r"\b" + w + r"\b", low) for w in WARM):
         out.append("no warm focal light (glow, ember, lava, firelight, sunset, ...)")
     return out
 
@@ -239,8 +240,7 @@ def premise_problems(p: dict, series: str | None = None) -> list[str]:
 
 
 def composed_prompt_problems(prompt: str) -> list[str]:
-    """The people, text and prop bans on a composed image prompt (scene + art direction + house style). The warm-light
-    rule is checked on each scene alone: the house style always names a warm focal light."""
+    """People, text and prop bans on the complete prompt; scene lighting is checked before composition."""
     low = " " + prompt.lower() + " "
     out = gates.check_prompt(prompt)
     return out + [f"mentions '{w.strip()}'" for w in EXTRA_PROMPT_BANS
@@ -528,10 +528,18 @@ def anatomy(prompt: str) -> str:
 def image_jobs(p: dict) -> list[dict]:
     """Nine vertical stills: the eight options (option 1 is also frame 0, the thumbnail) and the end-card plate."""
     art = p["art_direction"].strip().rstrip(".")
-    jobs = [{"id": f"o{o['n']}", "n": o["n"], "scene": o["image_prompt"],
-             "prompt": (f"{o['image_prompt'].strip().rstrip('.')}.{anatomy(o['image_prompt'])} {art}. {STYLE}."
-                        + dark_water_direction(o["image_prompt"])),
-             "luma": (92.0, 168.0) if o["n"] == 1 else (62.0, 198.0)} for o in p["options"]]
+    jobs = []
+    for o in p["options"]:
+        scene = o["image_prompt"]
+        dark = dark_water_direction(scene)
+        # The old universal glowing focal light overrode even explicit black-water instructions.
+        scene_art = ("neutral charcoal and muted mineral tones, close documentary composition, "
+                     "soft external foreground fill and featureless black water on every edge") if dark else art
+        style = ("photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, "
+                 "matte non-luminous subjects, black background water") if dark else STYLE
+        jobs.append({"id": f"o{o['n']}", "n": o["n"], "scene": scene,
+                     "prompt": f"{scene.strip().rstrip('.')}.{anatomy(scene)} {scene_art}. {style}." + dark,
+                     "luma": (92.0, 168.0) if o["n"] == 1 else (62.0, 198.0)})
     end = (f"A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open "
            f"calm sky in the upper half of the frame. {art}. {STYLE}.")
     jobs.append({"id": "end", "n": 0, "scene": end, "prompt": end, "luma": (62.0, 198.0)})
@@ -543,7 +551,7 @@ def dark_water_direction(scene: str) -> str:
     if not re.search(r"abyss(?:al)?|hadal|trench|hydrothermal vent|hydrothermal mineral chimney|"
                      r"pitch black deep water|near-total darkness of .*sea", scene, re.I):
         return ""
-    return (" Keep only the nearby subject readable with soft warm amber cinematic fill. "
+    return (" Keep only the nearby subject readable with soft neutral external cinematic fill. "
             "The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface "
             "or glowing ice ceiling. No self-luminous vent rocks.")
 

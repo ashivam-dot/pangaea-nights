@@ -37,8 +37,20 @@ def test_abyssal_lighting_does_not_inherit_a_twilight_sky():
     jobs = {j["id"]: j for j in ladder.image_jobs(p)}
     assert "twilight sky" not in jobs["o7"]["prompt"]
     assert "No sunlight" in jobs["o7"]["prompt"] and "water beyond is pitch black" in jobs["o7"]["prompt"]
-    assert "soft warm amber cinematic fill" in jobs["o8"]["prompt"]
+    assert "soft neutral external cinematic fill" in jobs["o8"]["prompt"]
+    for n in range(5, 9):
+        prompt = jobs[f"o{n}"]["prompt"]
+        assert "one bright warm glowing focal light" not in prompt
+        assert "Glacial blue-white palette" not in prompt
+        assert "featureless black water" in prompt and "matte non-luminous" in prompt
+    for n in range(1, 5):
+        assert ladder.STYLE in jobs[f"o{n}"]["prompt"]
+    assert ladder.STYLE in jobs["end"]["prompt"]
     assert "No sunlight" not in jobs["o2"]["prompt"]  # shallow ice still transmits light
+    assert ladder.prompt_problems("abyssal seafloor with matte rocks and no illumination")
+    detailed = "rough matte rocks in neutral external documentary fill with fine sediment and suspended particles across the foreground"
+    assert not ladder.prompt_problems("abyssal seafloor with " + detailed)
+    assert ladder.prompt_problems("a shallow lagoon with " + detailed)
 
 
 @pytest.fixture

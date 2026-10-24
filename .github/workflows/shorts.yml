@@ -26,6 +26,10 @@ on:
         description: "premise id (optional)"
         type: string
         default: ""
+      replay:
+        description: "optional exact image-repair manifest inside .github/replay (dry runs only)"
+        type: string
+        default: ""
       allow_test_while_paused:
         description: "test mode only: make a private test upload even while PAUSED/SHORTS_PAUSED is set"
         type: boolean
@@ -33,7 +37,7 @@ on:
 
 concurrency:
   # one run per mode at a time: a manual dry run must not queue behind (or be dropped by) the daily publish run
-  group: shorts-${{ github.event_name == 'schedule' && 'publish' || (inputs.dry_run != false && 'dry' || inputs.mode) }}
+  group: shorts-${{ github.event_name == 'schedule' && 'publish' || (inputs.dry_run != false && (inputs.replay != '' && 'repair' || 'dry') || inputs.mode) }}
   cancel-in-progress: false
 
 permissions:
@@ -86,9 +90,10 @@ jobs:
         env:
           SLOT: ${{ inputs.slot != 'auto' && inputs.slot || '' }}
           PREMISE: ${{ inputs.premise }}
+          REPLAY: ${{ inputs.replay }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python -m studio.cli ladder-plan --mode "$MODE" --slot "$SLOT" --premise "$PREMISE"
+        run: python -m studio.cli ladder-plan --mode "$MODE" --slot "$SLOT" --premise "$PREMISE" --replay "$REPLAY"
       - uses: actions/upload-artifact@v5
         if: steps.plan.outputs.any == 'true'
         with:
