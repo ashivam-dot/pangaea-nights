@@ -1,0 +1,13 @@
+{
+  "reviewed_at": "2026-10-24T23:36:05.781216+00:00",
+  "release_approval": false,
+  "images": [
+    {
+      "file": "art/o1.png",
+      "image_sha256": "b9a547a888411ff794b2f1958458680f8fd3eb10a2e90eca357576bc13705a8c",
+      "decision": "pass",
+      "scope": "actual still pixels",
+      "reason": "Empty cracked blue sea ice, frost and sunset only. No boot, limb, person, text or unsupported object. Reuse these exact pixels as the premise's declared closing reprise; no classifier labels or thresholds changed. Current cloud picture/voice/render gates and complete AV remain mandatory."
+    }
+  ]
+}
