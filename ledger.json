@@ -713,6 +713,24 @@
      "dry run: nothing is uploaded",
      "gates failed: duration_s: {\"value\": null, \"floor\": 30.0, \"ceiling\": 45.0}; frames_counted: {\"value\": null, \"want\": 1269}; fps: {\"value\": null, \"floor\": 30, \"ceiling\": 30}; size: {\"value\": null}; parallax_min: {\"value\": null, \"floor\": 0.005, \"ceiling\": 0.04}; parallax_max: {\"value\": null, \"floor\": 0.005, \"ceiling\": 0.04}"
     ]
+   },
+   {
+    "at": "2026-10-24T22:25:45Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "how_deep-01",
+    "run": "40136822897",
+    "ok": false,
+    "failures": [
+     "luma_min: {\"value\": 56.0709, \"floor\": 60.0, \"ceiling\": 200.0}",
+     "wer: {\"value\": 0.148, \"floor\": 0.0, \"ceiling\": 0.08}",
+     "wer_line_max: {\"value\": 0.4, \"floor\": 0.0, \"ceiling\": 0.25, \"line\": \"o8\"}"
+    ],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded",
+     "gates failed: luma_min: {\"value\": 56.0709, \"floor\": 60.0, \"ceiling\": 200.0}; wer: {\"value\": 0.148, \"floor\": 0.0, \"ceiling\": 0.08}; wer_line_max: {\"value\": 0.4, \"floor\": 0.0, \"ceiling\": 0.25, \"line\": \"o8\"}"
+    ]
    }
   ],
   "alerts": [
