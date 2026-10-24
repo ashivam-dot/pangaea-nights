@@ -61,7 +61,7 @@
       "series": "level_1_8",
       "slot": "B",
       "target": "2026-10-25T00:30:00Z",
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "inputs": {
         "dry_run": "true",
         "slot": "A",
@@ -86,7 +86,9 @@
         39780512299,
         39772637874,
         39766129149
-      ]
+      ],
+      "run_id": 40135503878,
+      "cloud_status": "queued"
     },
     {
       "repo": "pangaea-nights",
@@ -496,7 +498,7 @@
     }
   ],
   "halted": "Repair held entry how_deep-01: production run failure",
-  "updated_at": "2026-10-24T21:43:53+00:00",
+  "updated_at": "2026-10-24T21:43:57+00:00",
   "complete": false,
   "health": {
     "public": 0,
