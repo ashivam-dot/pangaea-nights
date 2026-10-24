@@ -64,6 +64,24 @@ def test_cache_hashes_and_prompt_binding_cannot_be_ignored(cached):
     assert replay.candidates(data, job, "different model", (8, 8)) == []
 
 
+def test_direct_image_refusal_survives_a_clean_numeric_review(cached, tmp_path, monkeypatch):
+    _, job, data, _ = cached
+    row = data['images'][job['id']][1]
+    row['editorial_refusal'] = {'image_sha256': row['sha256'], 'reason': 'hedgehog spines on a lemming'}
+    monkeypatch.setattr(qa, 'review', lambda *a: verdict())
+    monkeypatch.setattr(replay, 'exhausted', lambda *a: True)
+    monkeypatch.setattr(li.sdcpp, 'Server', lambda *a: pytest.fail('exhausted inputs were repainted'))
+    report = li.generate({'id': data['premise']}, 'original-key', tmp_path / 'refused-alt',
+                         0, 1, model='test', replay=data)
+    entry = report['images'][0]
+    assert entry['ok'] and len(entry['kept']) == 1
+    assert entry['kept'][0]['cached_from']['take'] == 0
+    assert 'hedgehog' in entry['takes'][1]['problems'][0]
+    row['editorial_refusal']['image_sha256'] = '0' * 64
+    with pytest.raises(ValueError, match='stale image-bound'):
+        replay.candidates(data, job, 'test', (8, 8))
+
+
 def test_a_current_qa_refusal_repaints_without_repeating_cached_seeds(cached, tmp_path, monkeypatch):
     _, _, data, exposure = cached
     seeds = []

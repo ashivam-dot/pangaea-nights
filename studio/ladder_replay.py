@@ -104,6 +104,12 @@ def candidates(replay, job, model, size):
                 raise ValueError("replay image dimensions differ from the production model")
             img = src.convert("RGB")
         provenance = {k: row[k] for k in ("file", "sha256", "take")}
+        if "editorial_refusal" in row:
+            refusal = row["editorial_refusal"]
+            if not isinstance(refusal, dict) or not str(refusal.get("reason", "")).strip() \
+                    or refusal.get("image_sha256") != row["sha256"]:
+                raise ValueError("invalid or stale image-bound editorial refusal")
+            provenance["editorial_refusal"] = refusal
         if local:
             provenance["generation"] = row["generation"]
         else:

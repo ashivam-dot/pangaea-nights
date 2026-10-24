@@ -128,6 +128,8 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                 verdict = qa.review(img, job["scene"])
                 fig = qa.figure(img)
                 probs = exposure_problems(exposure) + take_problems(verdict, job, fig)
+                if provenance.get("editorial_refusal"):
+                    probs.append("direct editorial refusal: " + provenance["editorial_refusal"]["reason"])
                 entry["takes"].append({"seconds": 0, "problems": probs, "exposure": exposure,
                                        "figure": round(fig, 4), "cached_from": provenance, **verdict.as_dict()})
                 if not probs:
