@@ -25,6 +25,10 @@ FINAL = {"public", "scheduled"}
 MAX_ATTEMPTS = 2
 
 
+class TransientOperation(RuntimeError):
+    """An uncertain GitHub/network result is not an editorial rejection."""
+
+
 def now():
     return datetime.now(timezone.utc)
 
@@ -41,7 +45,7 @@ def gh(*args, body=None, raw=False):
                        capture_output=True, timeout=180)
     if p.returncode:
         # No provider payloads or credential-bearing environment values enter the state/log.
-        raise RuntimeError(f"GitHub operation {args[0]} {args[1]} failed (exit {p.returncode})")
+        raise TransientOperation(f"GitHub operation {args[0]} {args[1]} failed (exit {p.returncode})")
     return p.stdout if raw else json.loads(p.stdout) if p.stdout.strip() else None
 
 
@@ -218,7 +222,7 @@ def tick(adapter, mode, save=persist):
             result = adapter.publish(job, folder, when)
             job.update(delivery=result, stage="public" if result.get("privacy") == "public" else "scheduled")
             save(data)
-        except media_review.ReviewHold as exc:
+        except (media_review.ReviewHold, TransientOperation) as exc:
             job["retry_reason"] = str(exc)
             job["review_retry_after"] = (now() + timedelta(minutes=30)).isoformat()
             save(data)
