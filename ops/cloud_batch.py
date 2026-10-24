@@ -114,6 +114,40 @@ def release_time(job, taken, at):
     return target
 
 
+def poll_due(data, adapter, at):
+    """A booked schedule is verified again after its release time, without changing the channel."""
+    for job in data["jobs"]:
+        when = job.get("intended_publish_at")
+        if job["stage"] != "scheduled" or not when:
+            continue
+        due = datetime.fromisoformat(when.replace("Z", "+00:00"))
+        if due > at:
+            continue
+        video = adapter.poll_delivery(job)
+        st = video.get("status", {})
+        problems = []
+        if video.get("snippet", {}).get("channelId") != adapter.CHANNEL_ID:
+            problems.append("wrong or missing channel identity")
+        if st.get("madeForKids") is not False or st.get("selfDeclaredMadeForKids") is not False:
+            problems.append("audience status is not confirmed as general audience")
+        if st.get("uploadStatus") != "processed":
+            problems.append("upload is not confirmed processed")
+        if st.get("containsSyntheticMedia") is False:
+            problems.append("synthetic-media disclosure is explicitly false")
+        if st.get("privacyStatus") != "public" and at > due + timedelta(minutes=15):
+            problems.append("scheduled release is still not public fifteen minutes after its slot")
+        if problems:
+            data["halted"] = f"Delivery {job['delivery']['video_id']}: " + "; ".join(problems)
+            return
+        if st.get("privacyStatus") == "public":
+            job["stage"] = "public"
+            job["public_verified_at"] = at.isoformat()
+            job["delivery"].update(privacy="public", owner_readback={
+                "channel_id": video["snippet"]["channelId"], **{k: st.get(k) for k in (
+                    "privacyStatus", "publishAt", "madeForKids", "selfDeclaredMadeForKids",
+                    "containsSyntheticMedia", "uploadStatus")}})
+
+
 def builds(repo, workflow):
     return gh("api", f"repos/{repo}/actions/workflows/{workflow}/runs?per_page=60")["workflow_runs"]
 
@@ -168,6 +202,11 @@ def tick(adapter, mode, save=persist):
         print("batch held:", data["halted"])
         return data
     save(data)
+    if mode == "publish":
+        poll_due(data, adapter, now())
+        save(data)
+        if data.get("halted"):
+            return data
     reviewed = 0
     for job in data["jobs"]:
         if job["stage"] in FINAL or job["stage"] == "held":

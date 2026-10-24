@@ -3,7 +3,10 @@
     "obsolete_runs": [
       40121235398
     ],
-    "repair_reason": "Abyssal image was incorrectly sunlit. Render again using corrected dark-water prompt; old clip is never releasable."
+    "repair_reason": "Abyssal image was incorrectly sunlit. Render again using corrected dark-water prompt; old clip is never releasable.",
+    "run_id": 40124993101,
+    "stage": "building",
+    "source_sha": "c8e824b5734e959bd0f0c6bff057c9875c316307"
   },
   "level_1_8-01": {
     "run_id": 40122729549,

@@ -8,6 +8,7 @@ from . import config, ladder, ladder_cli, ledger
 
 REPO = "ashivam-dot/pangaea-nights"
 WORKFLOW = "shorts.yml"
+CHANNEL_ID = config.CHANNEL_ID
 
 
 def paused():
@@ -72,6 +73,15 @@ def taken():
 
 def release_ready(data, job):
     return all(j["stage"] in ("public", "scheduled") for j in data["jobs"][:data["jobs"].index(job)])
+
+
+def poll_delivery(job):
+    from . import youtube
+
+    api = youtube.client()
+    youtube.identity(api)
+    rows = api.videos().list(part="snippet,status", id=job["delivery"]["video_id"]).execute()["items"]
+    return rows[0] if len(rows) == 1 else {}
 
 
 def publish(job, folder, when):

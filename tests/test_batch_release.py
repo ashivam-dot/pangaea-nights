@@ -114,3 +114,19 @@ def test_ordinary_production_resumes_only_after_the_reserved_calendar(tmp_path):
                                 "jobs": [{"target": "2026-11-03T13:30:00Z"}]}))
     assert batch_state.production_hold(tmp_path, datetime(2026, 11, 2, tzinfo=timezone.utc))
     assert batch_state.production_hold(tmp_path, datetime(2026, 11, 4, tzinfo=timezone.utc)) is None
+
+
+def test_a_booked_release_must_actually_become_public():
+    job = {"stage": "scheduled", "intended_publish_at": "2026-10-25T07:30:00Z", "delivery": {"video_id": "v1"}}
+    data = {"jobs": [job], "halted": None}
+    video = {"snippet": {"channelId": "UCa"}, "status": {"privacyStatus": "private", "madeForKids": False,
+             "selfDeclaredMadeForKids": False, "uploadStatus": "processed"}}
+    adapter = SimpleNamespace(CHANNEL_ID="UCa", poll_delivery=lambda j: video)
+    batch.poll_due(data, adapter, datetime(2026, 10, 25, 7, 40, tzinfo=timezone.utc))
+    assert data["halted"] is None and job["stage"] == "scheduled"
+    batch.poll_due(data, adapter, datetime(2026, 10, 25, 7, 50, tzinfo=timezone.utc))
+    assert "not public" in data["halted"]
+    data["halted"] = None
+    video["status"]["privacyStatus"] = "public"
+    batch.poll_due(data, adapter, datetime(2026, 10, 25, 8, tzinfo=timezone.utc))
+    assert job["stage"] == "public" and job["delivery"]["owner_readback"]["channel_id"] == "UCa"
