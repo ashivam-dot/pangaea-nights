@@ -19,7 +19,7 @@ jobs:
           cache-dependency-path: requirements/*.txt
       - name: Install
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng > /dev/null
+          bash .github/scripts/install-media-tools.sh espeak-ng
           pip install -q -r requirements/base.txt -r requirements/ml.txt -r requirements/voice.txt torchaudio==2.8.0+cpu
       - name: Bake-off
         run: python bench/voices.py kokoro bench-voice

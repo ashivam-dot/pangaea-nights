@@ -60,6 +60,9 @@ def candidates(replay, job, model, size):
                 raise ValueError("replay image dimensions differ from the production model")
             img = src.convert("RGB")
         provenance = {k: row[k] for k in ("file", "sha256", "artifact_id", "take")}
+        provenance["source_image"] = row.get("source_image", job["id"])
+        if provenance["source_image"] not in ladder.IMAGE_IDS:
+            raise ValueError("replay input has an unknown original image slot")
         provenance["source"] = replay["source"]
         found.append((img, row["exposure"], row["take"], provenance))
     return found

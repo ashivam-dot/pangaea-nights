@@ -33,7 +33,7 @@ jobs:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: requirements/*.txt
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg tesseract-ocr
+      - run: bash .github/scripts/install-media-tools.sh ffmpeg tesseract-ocr
       - run: pip install -q -r requirements/base.txt
       - run: python tests/smoke.py smoke-out
       - uses: actions/upload-artifact@v5

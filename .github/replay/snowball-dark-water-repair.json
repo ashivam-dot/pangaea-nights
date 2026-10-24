@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "premise": "how_deep-01",
+  "source": {
+    "run_id": 40124993101,
+    "sha": "c8e824b5734e959bd0f0c6bff057c9875c316307",
+    "key": "2026-10-24-how_deep-01"
+  },
+  "images": {
+    "o2": [
+      {
+        "file": "snowball-dark-water-repair/art/o2.png",
+        "sha256": "174a4eb265d6f6518340662bea82fa6b48679d3c71ca910aa481509ed495efca",
+        "prompt": "looking up from just beneath a thin ceiling of translucent sea ice, pale green light seeping through cracks, drifting green algae mats under the ice, one warm golden beam piercing a crack, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "model": "klein4b-q8-768",
+        "artifact_id": 12574324553,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 145.7,
+          "raw_p99": 253.0,
+          "gamma": 1.204,
+          "spread": 203.0
+        }
+      }
+    ],
+    "o3": [
+      {
+        "file": "snowball-dark-water-repair/art/o3.png",
+        "sha256": "c4251fcd2b59735dcba23cd61bd7b3c1f8285c062decd732ea33cd636e96746f",
+        "prompt": "underwater view ten metres below a vast ice ceiling, deep cobalt water, ice keels hanging down in jagged columns, a lone warm amber shaft of light falling through a fissure, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "model": "klein4b-q8-768",
+        "artifact_id": 12574172466,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 70.6,
+          "raw_p99": 252.0,
+          "gamma": 0.525,
+          "spread": 176.0
+        }
+      },
+      {
+        "file": "snowball-dark-water-repair/art/o3-alt1.png",
+        "sha256": "ed98cf0a357ab7746df3927b252711fbf1fc7e3889239fe3588bb28d417703a5",
+        "prompt": "underwater view ten metres below a vast ice ceiling, deep cobalt water, ice keels hanging down in jagged columns, a lone warm amber shaft of light falling through a fissure, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "model": "klein4b-q8-768",
+        "artifact_id": 12574172466,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 61.3,
+          "raw_p99": 251.0,
+          "gamma": 0.473,
+          "spread": 160.0
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "snowball-dark-water-repair/art/o4.png",
+        "sha256": "63710770071ea6ae59245e7f9c44a96150211069372521e74374226895141ede",
+        "prompt": "dim underwater scene at fifty metres, the ice ceiling now a faint pale smear above, dark navy water full of drifting ice crystals, one warm soft glow fading overhead, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "model": "klein4b-q8-768",
+        "artifact_id": 12574193375,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 66.6,
+          "raw_p99": 253.0,
+          "gamma": 0.502,
+          "spread": 223.0
+        }
+      },
+      {
+        "file": "snowball-dark-water-repair/art/o4-alt1.png",
+        "sha256": "7345f6abc20e9ceb23df2e1c81a5bd71b0405d418493723bdd320e8073460908",
+        "prompt": "dim underwater scene at fifty metres, the ice ceiling now a faint pale smear above, dark navy water full of drifting ice crystals, one warm soft glow fading overhead, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "model": "klein4b-q8-768",
+        "artifact_id": 12574193375,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 71.7,
+          "raw_p99": 252.0,
+          "gamma": 0.531,
+          "spread": 208.0
+        }
+      }
+    ],
+    "o1": [
+      {
+        "file": "snowball-dark-water-repair/art/o1.png",
+        "sha256": "62d41c7cc448e682018e9057a87012163cbf431a4799b4f024acd192952300f7",
+        "prompt": "POV low over an endless flat sheet of frozen ocean at dusk, wind-blown snow streaming across cracked blue ice, a single warm amber sunset glow on the horizon, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "model": "klein4b-q8-768",
+        "artifact_id": 12575135688,
+        "take": 3,
+        "exposure": {
+          "raw_mean": 117.0,
+          "raw_p99": 237.0,
+          "gamma": 0.865,
+          "spread": 175.0
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "snowball-dark-water-repair/art/o1.png",
+        "sha256": "62d41c7cc448e682018e9057a87012163cbf431a4799b4f024acd192952300f7",
+        "prompt": "POV low over an endless flat sheet of frozen ocean at dusk, wind-blown snow streaming across cracked blue ice, a single warm amber sunset glow on the horizon, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "model": "klein4b-q8-768",
+        "artifact_id": 12575135688,
+        "take": 3,
+        "exposure": {
+          "raw_mean": 117.0,
+          "raw_p99": 237.0,
+          "gamma": 0.865,
+          "spread": 175.0
+        },
+        "source_image": "o1"
+      }
+    ]
+  },
+  "completed_images": {
+    "o2": {
+      "file": "snowball-dark-water-repair/art/shard-01.json",
+      "sha256": "559f6ac7826b677d13f9169a3c6fbf35afed0de8c6b6b359c90f04873956d018",
+      "artifact_id": 12574324553,
+      "model": "klein4b-q8-768",
+      "prompt": "looking up from just beneath a thin ceiling of translucent sea ice, pale green light seeping through cracks, drifting green algae mats under the ice, one warm golden beam piercing a crack, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+    },
+    "o1": {
+      "file": "snowball-dark-water-repair/art/shard-00.json",
+      "sha256": "0686503bb27eb69c5e3925c993a5e02e18093c2e2f001ed26811ffa11c7f1b92",
+      "artifact_id": 12575135688,
+      "model": "klein4b-q8-768",
+      "prompt": "POV low over an endless flat sheet of frozen ocean at dusk, wind-blown snow streaming across cracked blue ice, a single warm amber sunset glow on the horizon, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+    }
+  }
+}

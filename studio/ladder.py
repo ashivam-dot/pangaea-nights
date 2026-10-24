@@ -542,7 +542,12 @@ def image_jobs(p: dict) -> list[dict]:
                      "luma": (92.0, 168.0) if o["n"] == 1 else (62.0, 198.0)})
     end = (f"A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open "
            f"calm sky in the upper half of the frame. {art}. {STYLE}.")
-    jobs.append({"id": "end", "n": 0, "scene": end, "prompt": end, "luma": (62.0, 198.0)})
+    if p.get("end_image"):
+        if p["end_image"] != "o1":
+            raise ValueError("the end plate can reprise only the opening image")
+        jobs.append({**jobs[0], "id": "end", "n": 0, "luma": (62.0, 198.0)})
+    else:
+        jobs.append({"id": "end", "n": 0, "scene": end, "prompt": end, "luma": (62.0, 198.0)})
     return jobs
 
 

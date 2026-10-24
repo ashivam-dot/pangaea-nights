@@ -147,3 +147,30 @@ def test_duplicate_cached_takes_cannot_count_as_alternatives(cached):
     data['images'][job['id']][1]['take'] = data['images'][job['id']][0]['take']
     with pytest.raises(ValueError, match='distinct'):
         replay.candidates(data, job, 'test', (8, 8))
+
+
+def test_opening_reprise_is_an_exact_scene_and_does_not_change_narration():
+    from studio import ladder
+    p=ladder.find(ladder.load_banks(strict=False),'how_deep-01')
+    script=ladder.script_text(p)
+    jobs={j['id']:j for j in ladder.image_jobs(p)}
+    assert jobs['end']['prompt']==jobs['o1']['prompt']
+    assert jobs['end']['scene']==jobs['o1']['scene']
+    assert script==ladder.script_text({k:v for k,v in p.items() if k!='end_image'})
+    with pytest.raises(ValueError,match='only the opening'):
+        ladder.image_jobs({**p,'end_image':'o8'})
+
+
+def test_end_reprise_keeps_honest_original_slot_and_one_currently_reviewed_image(cached, tmp_path, monkeypatch):
+    _, original, data, _ = cached
+    job={**original,'id':'end'}
+    data['images']={'end':[{**data['images']['o3'][0],'source_image':'o3'}]}
+    monkeypatch.setattr(li.ladder,'image_jobs',lambda p:[job])
+    monkeypatch.setattr(qa,'review',lambda *a:verdict())
+    monkeypatch.setattr(li.sdcpp,'Server',lambda *a:pytest.fail('valid end reprise was repainted'))
+    report=li.generate({'id':data['premise']},'original-key',tmp_path/'end',0,1,model='test',replay=data)
+    kept=report['images'][0]['kept']
+    assert len(kept)==1 and kept[0]['cached_from']['source_image']=='o3'
+    data['images']['end'][0]['source_image']='unknown'
+    with pytest.raises(ValueError,match='original image slot'):
+        replay.candidates(data,job,'test',(8,8))

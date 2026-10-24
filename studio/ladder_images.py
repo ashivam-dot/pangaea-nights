@@ -110,6 +110,8 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
         report["load_s"] = 0.0
         for job in jobs:
             entry = {"id": job["id"], "takes": [], "kept": []}
+            # Only option images need alternatives for pairwise distinctness; the end is outside that gate.
+            wanted = 1 if job["id"] == "end" else KEEP
             soft = []  # (score, take, img, verdict) of soft-only refusals
 
             def keep(img, verdict, fig, take, fallback=False, cached_from=None):
@@ -130,14 +132,15 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                                        "figure": round(fig, 4), "cached_from": provenance, **verdict.as_dict()})
                 if not probs:
                     keep(img, verdict, fig, take, cached_from=provenance)
-                if len(entry["kept"]) >= KEEP:
+                if len(entry["kept"]) >= wanted:
                     break
             exhausted = ladder_replay.exhausted(replay, job, model, key, TAKES)
             for take in range(TAKES):
-                if len(entry["kept"]) >= KEEP or exhausted:
+                if len(entry["kept"]) >= wanted or exhausted:
                     break
                 if replay and replay["source"]["key"] == key and any(
-                        r.get("cached_from", {}).get("take") == take for r in entry["takes"]):
+                        r.get("cached_from", {}).get("take") == take
+                        and r["cached_from"].get("source_image") == job["id"] for r in entry["takes"]):
                     continue  # never count a cached seed and a deterministic repaint of that seed as two takes
                 if take and time.monotonic() - start > budget_s:
                     break
@@ -160,7 +163,7 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                         soft.append((take_score(verdict, fig), take, img, verdict, fig))
                     continue
                 keep(img, verdict, fig, take)
-                if len(entry["kept"]) >= KEEP:
+                if len(entry["kept"]) >= wanted:
                     break
             if not entry["kept"] and soft:
                 _, take, img, verdict, fig = max(soft, key=lambda c: c[0])
