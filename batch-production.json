@@ -134,10 +134,23 @@
             "o5-alt1.png": "e3a7ca608b790111cef79cab2c8dc190a9cbbb4f960051008d73e61819c24705"
           },
           "primary_reference": "https://www.adfg.alaska.gov/index.cfm?adfg=muskox.main"
+        },
+        {
+          "id": "direct-fox-and-rhino-anatomy-40135503878",
+          "run_id": 40135503878,
+          "observed_at": "2026-10-24T22:12:22.649449+00:00",
+          "reason": "Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.",
+          "evidence": {
+            "ladder-img-A-2/o3.png": "5806492497dfa46d1f77556252ba3f17e9fcea8c873df254a4b784ef50e6d07d",
+            "ladder-img-A-2/o3-alt1.png": "8ac10d6f9691658bb64a950cc8c930ce280a36ffdba85646e25d0d39575f604f",
+            "ladder-img-A-6/o7.png": "901d2bc4f6f2ae918e31aab3e0bac14e6f1a9ddf5ef058342613d40295186d8b",
+            "ladder-img-A-6/o7-alt1.png": "8390cfa3e85bee3fb458d54ec19b699943b68d7bf48ad36e5ce0db9da962e7ce"
+          }
         }
       ],
       "problems": [
-        "Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required."
+        "Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.",
+        "Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule."
       ]
     },
     {
@@ -547,8 +560,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry level_1_8-16: Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.",
-  "updated_at": "2026-10-24T22:09:32+00:00",
+  "halted": "Repair held entry level_1_8-16: Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.; Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.",
+  "updated_at": "2026-10-24T22:12:22.651821+00:00",
   "complete": false,
   "health": {
     "public": 0,
