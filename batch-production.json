@@ -14,7 +14,7 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-foreground-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 2,
       "obsolete_runs": [
         40121235398,
@@ -23,7 +23,7 @@
       ],
       "repair_reason": "Retain exact current o1-o4, o7-o8 and closing. Replace only failed o5/o6 with explicitly local existing-model images, raw-pixel-bound generation receipts, and unchanged current cloud QA. Narration text, title, fact, answer and release identity are preserved. Complete AV approval is still required.",
       "source_sha": "6ed06ad004acf4d229ebd47c049ef4bb21dda787",
-      "cloud_status": "completed",
+      "cloud_status": "queued",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
         {
@@ -66,7 +66,8 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-24T22:00:05+00:00"
+      "submitted_at": "2026-10-24T22:00:05+00:00",
+      "run_id": 40136652437
     },
     {
       "repo": "pangaea-nights",
@@ -511,7 +512,7 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-24T22:00:05+00:00",
+  "updated_at": "2026-10-24T22:00:11+00:00",
   "complete": false,
   "health": {
     "public": 0,
