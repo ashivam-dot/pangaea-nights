@@ -88,7 +88,8 @@ def _ep(i, shape, created="2026-10-27T14:20:00Z", video=True):
     return e
 
 
-def test_lengths_alternate_starting_with_2h():
+def test_lengths_alternate_starting_with_2h_when_pilot_is_released(monkeypatch):
+    monkeypatch.setattr(config, "STABLE_LONG_LENGTH", None)
     data = {"episodes": [_ep(0, "full", created="2026-10-18T16:20:00Z")]}  # before the experiment: ignored
     assert length.next_length(data) == "2h"
     data["episodes"].append(_ep(1, "full"))
@@ -106,9 +107,12 @@ def test_lengths_alternate_starting_with_2h():
 def test_length_main_writes_github_env(tmp_path, monkeypatch):
     env = tmp_path / "env"
     monkeypatch.setenv("GITHUB_ENV", str(env))
-    monkeypatch.setattr(length.ledger, "load", lambda: {"episodes": [_ep(1, "full")]})
-    assert length.main(["--choice", "auto"]) == "3h"
-    assert env.read_text() == "PANGAEA_LENGTH=3h\n"
+    # Publishing four episodes alone must not release the hold before their seven-day review.
+    data = {"episodes": [_ep(i, "full") for i in range(4)]}
+    monkeypatch.setattr(length.ledger, "load", lambda: data)
+    assert length.main(["--choice", "auto"]) == "2h"
+    assert env.read_text() == "PANGAEA_LENGTH=2h\n"
+    assert length.choose("3h", data) == "3h"  # explicit private previews remain possible
 
 
 # ------------------------------------------------------------------ thumbnail

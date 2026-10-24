@@ -2,7 +2,7 @@
 
 **Pangaea Nights** (`@PangaeaNights`, channel id `UCtVG78IUTqvP9rH-LLies0A`) publishes a long, calm sleep
 documentary twice a week (Tuesday and Friday, premiering at 21:00 UTC) about Earth's deep past and its ancient and
-deep oceans. Each episode is two or three hours (the length experiment below): slow narration over slowly moving
+deep oceans. Automatic episodes stay at two hours during the stable pilot below: slow narration over slowly moving
 images and quiet nature sound, then about ten minutes of ambience alone. The old calm per-episode trailer Shorts
 are switched off (`config.TRAILER_SHORTS = False`; the code in `studio/shorts.py` stays).
 
@@ -82,11 +82,15 @@ transcripts, captions, thumbnails and media are never downloaded, stored or sent
   (`config.EPISODE_SLOT_UTC`, `youtube.episode_slot()`). The build only overlaps the end of the 08:00 UTC Shorts
   window, which is done by about 16:00. `health.yml` alerts after 108 hours without an upload (the Friday to
   Tuesday gap is 96).
-- **Length experiment.** Published long episodes alternate 2 hours (`full`: 14 chapters of ~1,030 words) and
-  3 hours (`full3h`: 21 chapters, 17 image and 3 voice runners, at most 8 images each, ~80 s per image), starting
-  with 2 hours from 2026-10-27. The plan job runs `python -m studio.length` (the `length` input forces `2h` or
-  `3h`), the episode keeps its shape, the ledger records it, and `learn.lengths()` compares typical views at
-  72 hours by shape. Both lengths pass the same loudness and sleep gates.
+- **Stable long-form pilot.** Keep the two-hour `full` shape (14 chapters of ~1,030 words), cinema, voice,
+  sound rules and cadence steady for four familiar-topic episodes starting with the 23 October dinosaur episode.
+  Review actual 72–84-hour and 168–192-hour observations, impressions, CTR, average seconds and watch hours;
+  missing authenticated metrics remain unknown. Keep Shorts and older packaging separate. Review no earlier
+  than seven days after the fourth release; publishing four alone does not trigger a duration change.
+- **Deferred length experiment.** `config.STABLE_LONG_LENGTH = "2h"` holds `python -m studio.length --choice auto`
+  at two hours. Set it to `None` only after the pilot review to resume alternation. Explicit `2h` / `3h` inputs
+  remain available for private previews. The historical `learn.lengths()` output uses geometric means of
+  estimated 72-hour views; it is not a measured comparison of the new pilot. Both shapes keep the same gates.
 
 ## Packaging
 

@@ -71,8 +71,8 @@ def lifts(episodes: list[dict]) -> dict:
 
 
 def lengths(episodes: list[dict]) -> dict:
-    """The length experiment's scoreboard: scored episodes and their typical views at 72 h, per shape. Report only;
-    studio/length.py keeps alternating whatever it says, so both arms keep collecting samples."""
+    """Historical geometric-mean estimated 72 h views per shape; report only, not a measured pilot comparison.
+    The stable pilot length is chosen independently in studio/length.py."""
     out: dict[str, dict] = {}
     for e in episodes:
         if e.get("views_at_72h") is None or not e.get("shape"):

@@ -1,9 +1,10 @@
-"""The length experiment: published long episodes alternate 2 hours and 3 hours.
+"""Keep automatic long episodes at the stable pilot length; defer the 2 h / 3 h experiment.
 
 The plan job runs `python -m studio.length --choice auto` before it sizes the shards; the choice lands in
 PANGAEA_LENGTH, which config.shape("full") resolves to the "full" (2 h) or "full3h" (3 h) shape. The episode keeps
 that shape name, so every later stage builds the same size and the ledger records which length each episode was;
-learn.lengths() compares them. The loudness and sleep gates are the same for both.
+learn.lengths() reports historical estimates. Clear config.STABLE_LONG_LENGTH after reviewing four familiar-topic
+episodes at 7 days to resume alternation. The loudness and sleep gates are the same for both.
 """
 from __future__ import annotations
 
@@ -26,7 +27,11 @@ def experiment_episodes(data: dict) -> list[dict]:
 
 
 def next_length(data: dict) -> str:
-    """2 h first, then the other length from the last published experiment episode."""
+    """Stable pilot first; once released, alternate from the last published experiment episode."""
+    if config.STABLE_LONG_LENGTH is not None:
+        if config.STABLE_LONG_LENGTH not in config.LENGTHS:
+            raise ValueError("STABLE_LONG_LENGTH must be a configured length or None")
+        return config.STABLE_LONG_LENGTH
     done = experiment_episodes(data)
     if not done:
         return "2h"
@@ -43,7 +48,7 @@ def choose(choice: str, data: dict) -> str:
 
 def main(argv: list[str] | None = None) -> str:
     p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    p.add_argument("--choice", default="auto", help="auto (alternate), 2h or 3h")
+    p.add_argument("--choice", default="auto", help="auto (stable pilot, then deferred alternation), 2h or 3h")
     args = p.parse_args(argv)
     length = choose((args.choice or "auto").strip() or "auto", ledger.load())
     env = os.environ.get("GITHUB_ENV")

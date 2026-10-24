@@ -22,7 +22,7 @@ WPM = 120  # target narration pace including pauses
 @dataclass(frozen=True)
 class Shape:
     """How big an episode is. 'full' is the 2-hour sleep documentary and 'full3h' its 3-hour form (the length
-    experiment alternates them); 'short' proves the pipeline in ~10 minutes."""
+    experiment is held during the stable pilot); 'short' proves the pipeline in ~10 minutes."""
     name: str
     chapters: int
     words_per_chapter: int
@@ -46,10 +46,12 @@ SHAPES = {
     "full3h": Shape("full3h", 21, 1030, (6, 6), 10.0, 6, 2, 4, 17, 3, 20, 2),
     "short": Shape("short", 2, 560, (6, 6), 1.0, 1, 1, 4, 6, 2, 3, 1),
 }
-# The length experiment: published long episodes alternate 2 h and 3 h (studio/length.py picks; the ledger keeps
-# each episode's shape and the learner compares them). PANGAEA_LENGTH, set by the plan job, resolves "full".
+# Keep the familiar-topic relaunch at one length through four published episodes and their 7-day review.
+# Set STABLE_LONG_LENGTH to None only after that review to resume the deferred alternating-length experiment.
+# PANGAEA_LENGTH, set by the plan job, resolves "full"; explicit private length previews remain available.
 LENGTHS = {"2h": "full", "3h": "full3h"}
 LONG_SHAPES = tuple(LENGTHS.values())
+STABLE_LONG_LENGTH = "2h"
 LENGTH_EXPERIMENT_FROM = "2026-10-27"  # published long episodes created from this day on take part
 
 # The old calm per-episode trailer Shorts (studio/shorts.py). Off: the choice-ladder Shorts replace them. The code
