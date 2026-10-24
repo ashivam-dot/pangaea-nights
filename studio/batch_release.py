@@ -27,6 +27,10 @@ def _read(folder, name):
 
 
 def validate(job, folder):
+    from ops.cloud_batch import editorial_problems
+
+    if problems := editorial_problems(job):
+        raise ValueError("direct editorial hold: " + "; ".join(problems))
     plan, gates = _read(folder, "plan.json"), _read(folder, "gates.json")
     p = plan["premise"]
     if p["id"] != job["premise"] or plan.get("mode") != "dry":

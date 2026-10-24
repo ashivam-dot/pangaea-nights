@@ -221,24 +221,45 @@ def restore_review(job, mp4, brief, folder):
     target.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n")
 
 
+def entry_halt(data):
+    """Only a recognised sequence hold permits predecessors to make progress."""
+    first = next((j for j in data["jobs"] if j["stage"] == "held"), None)
+    return bool(first and str(data.get("halted") or "").startswith(
+        f"Repair held entry {first['premise']}: "))
+
+
+def editorial_problems(job):
+    return [h.get("reason") or "unresolved direct editorial review"
+            for h in job.get("editorial_holds", []) if not h.get("resolved_at")]
+
+
 def tick(adapter, mode, save=persist):
     repo = adapter.REPO
     data = load()
     if adapter.paused():
         print("batch held: channel pause switch is active")
         return data
-    if data.get("halted"):
+    if data.get("halted") and not entry_halt(data):
         print("batch held:", data["halted"])
         return data
     save(data)
     if mode == "publish":
         poll_due(data, adapter, now())
         save(data)
-        if data.get("halted"):
+        if data.get("halted") and not entry_halt(data):
             return data
     reviewed = 0
     for job in data["jobs"]:
-        if job["stage"] in FINAL or job["stage"] == "held":
+        if problems := editorial_problems(job):
+            if job["stage"] in FINAL or job["stage"] == "upload_intent":
+                data["halted"] = "Editorial hold with existing delivery intent: " + "; ".join(problems)
+                save(data)
+                return data
+            job.update(stage="held", problems=problems)
+        if job["stage"] == "held":
+            # A later refusal blocks itself and successors, never a legitimate predecessor.
+            break
+        if job["stage"] in FINAL:
             continue
         if job.get("review_retry_after") and now() < datetime.fromisoformat(job["review_retry_after"]):
             continue

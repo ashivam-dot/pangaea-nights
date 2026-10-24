@@ -240,3 +240,11 @@ def test_durable_review_cannot_be_restored_onto_changed_inputs(tmp_path, changed
     with pytest.raises(ValueError, match="reconcile"):
         batch.restore_review({"review": receipt}, mp4, brief, tmp_path)
     assert not (tmp_path / "av-review.json").exists()
+
+
+def test_direct_scientific_observation_blocks_validation_even_with_green_model_gates(tmp_path):
+    from studio import batch_release as adapter
+
+    job = {"editorial_holds": [{"reason": "The trilobite is a pillbug in both exact cloud takes"}]}
+    with pytest.raises(ValueError, match="direct editorial hold.*pillbug"):
+        adapter.validate(job, tmp_path)
