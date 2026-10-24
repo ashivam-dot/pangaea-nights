@@ -146,11 +146,23 @@
             "ladder-img-A-6/o7.png": "901d2bc4f6f2ae918e31aab3e0bac14e6f1a9ddf5ef058342613d40295186d8b",
             "ladder-img-A-6/o7-alt1.png": "8390cfa3e85bee3fb458d54ec19b699943b68d7bf48ad36e5ce0db9da962e7ce"
           }
+        },
+        {
+          "id": "direct-cave-lion-mane-40135503878",
+          "run_id": 40135503878,
+          "observed_at": "2026-10-24T22:20:06.583421+00:00",
+          "reason": "Actual o8 takes depict a substantial dark mane like a modern male lion. Paleolithic depictions support cave lions with absent or very small manes; use a clearly maneless female cave lion reconstruction, preserving narration. Retain other valid art.",
+          "reference": "https://en.wikipedia.org/wiki/Panthera_spelaea",
+          "evidence": {
+            "ladder-img-A-7/o8-alt1.png": "5ebea92f2e735a3abfb08d79203d6cf5f7aa1161cbe81decbed36b6d1f1d4dd5",
+            "ladder-img-A-7/o8.png": "b0487739cb1d03d1384d6ff01a8f9e804adca384bdff473f027a685374953a77"
+          }
         }
       ],
       "problems": [
         "Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.",
-        "Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule."
+        "Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.",
+        "Actual o8 takes depict a substantial dark mane like a modern male lion. Paleolithic depictions support cave lions with absent or very small manes; use a clearly maneless female cave lion reconstruction, preserving narration. Retain other valid art."
       ]
     },
     {
@@ -560,8 +572,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry level_1_8-16: Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.; Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.",
-  "updated_at": "2026-10-24T22:18:28+00:00",
+  "halted": "Repair held entry level_1_8-16: Direct inspection: o5 base has upright yak-like horns, no visible downturned muskox horn boss and a long bare muzzle. Alternate has a prominent bison-like shoulder hump and upright horns. Neither clearly depicts the named musk ox. Replace only o5 while preserving usable other animals and repairing the failed voice dependency. Full current image and complete AV gates remain required.; Actual o3 takes have red-fox-like long pointed ears and rusty fur instead of the intended winter Arctic fox. Actual o7 takes have paired upright horns beside the ears in addition to a nose horn, inconsistent with woolly rhinoceros anatomy (two horns in a line on the nose). Replace only o3/o5/o7; preserve all usable other paintings, script, answer and schedule.; Actual o8 takes depict a substantial dark mane like a modern male lion. Paleolithic depictions support cave lions with absent or very small manes; use a clearly maneless female cave lion reconstruction, preserving narration. Retain other valid art.",
+  "updated_at": "2026-10-24T22:20:06.583421+00:00",
   "complete": false,
   "health": {
     "public": 0,
