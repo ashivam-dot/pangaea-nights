@@ -63,7 +63,7 @@
         "slot": "A",
         "premise": "level_1_8-01"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 0,
       "run_id": 40128334178,
       "source_sha": "3ad54b8cb1b520f3bee25dcf0952bb5f529ff479",
@@ -71,7 +71,22 @@
         40122729549
       ],
       "repair_reason": "Old base/alternate Opabinia and Anomalocaris drawings contradicted the script; Hallucigenia was upright. New whole-body directions and shared source-grounded anatomy requirements; replacement still requires original gates and full audiovisual approval.",
-      "cloud_status": "in_progress"
+      "cloud_status": "in_progress",
+      "editorial_holds": [
+        {
+          "id": "actual-cloud-trilobite-40128334178",
+          "run_id": 40128334178,
+          "observed_at": "2026-10-24T21:26:41+00:00",
+          "reason": "Direct inspection of both actual cloud o2 takes: pillbug-like domed transverse plates and a rounded head, without the flattened three-lobed trilobite dorsal exoskeleton. Scientifically misleading; no release of this exact production. Keep other art for a targeted repair.",
+          "evidence": {
+            "ladder-img-A-1/o2.png": "f10a7f22e4469f0bab2e4233c22a3948e11c4b1169f518eecbdcda35c222ff29",
+            "ladder-img-A-1/o2-alt1.png": "1c7ad2b032ca07bfbfb907b64bc1189621d7329433880203ba6ac629c0b3e5d3"
+          }
+        }
+      ],
+      "problems": [
+        "Direct inspection of both actual cloud o2 takes: pillbug-like domed transverse plates and a rounded head, without the flattened three-lobed trilobite dorsal exoskeleton. Scientifically misleading; no release of this exact production. Keep other art for a targeted repair."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -480,8 +495,8 @@
       "attempts": 0
     }
   ],
-  "halted": null,
-  "updated_at": "2026-10-24T21:06:49+00:00",
+  "halted": "Repair held entry level_1_8-01: Direct inspection of both actual cloud o2 takes: pillbug-like domed transverse plates and a rounded head, without the flattened three-lobed trilobite dorsal exoskeleton. Scientifically misleading; no release of this exact production. Keep other art for a targeted repair.",
+  "updated_at": "2026-10-24T21:26:41+00:00",
   "complete": false,
   "health": {
     "public": 0,
