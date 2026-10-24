@@ -583,6 +583,17 @@
     "failures": [],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-24T09:08:20Z",
+    "mode": "publish",
+    "slot": "A",
+    "premise": "countdown-01",
+    "run": "40077496948",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [],
