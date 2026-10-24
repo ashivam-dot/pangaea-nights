@@ -14,15 +14,16 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-foreground-repair.json"
       },
-      "stage": "held",
-      "attempts": 2,
+      "stage": "dispatch_unresolved",
+      "attempts": 3,
       "obsolete_runs": [
         40121235398,
         40124993101,
-        40131481179
+        40131481179,
+        40136652437
       ],
       "repair_reason": "Retain exact current o1-o4, o7-o8 and closing. Replace only failed o5/o6 with explicitly local existing-model images, raw-pixel-bound generation receipts, and unchanged current cloud QA. Narration text, title, fact, answer and release identity are preserved. Complete AV approval is still required.",
-      "source_sha": "6ed06ad004acf4d229ebd47c049ef4bb21dda787",
+      "source_sha": "848941a459b99dcdc78e26c9e21c48e8987119bd",
       "cloud_status": "queued",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
@@ -47,9 +48,28 @@
             "replay": ".github/replay/snowball-dark-water-repair.json"
           },
           "repair_reason": "Exact original o1–o4 are rechecked and reused; closing reprises o1 with honest provenance; only incorrect deep o5–o8 repaint. Original script/fact/title/answer preserved; complete review still required."
+        },
+        {
+          "run_id": 40136652437,
+          "source_sha": "6ed06ad004acf4d229ebd47c049ef4bb21dda787",
+          "problems": [
+            "Queued dry replay canceled before production to retain original exhausted-take proofs; corrected manifest is staged."
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "how_deep-01",
+            "replay": ".github/replay/snowball-foreground-repair.json"
+          },
+          "repair_reason": "Retain exact current o1-o4, o7-o8 and closing. Replace only failed o5/o6 with explicitly local existing-model images, raw-pixel-bound generation receipts, and unchanged current cloud QA. Narration text, title, fact, answer and release identity are preserved. Complete AV approval is still required.",
+          "cancel_intent": {
+            "at": "2026-10-24T22:01:26.435637+00:00",
+            "reason": "Preflight found that the second replay did not carry the original four-attempt o1/o2 exhaustion reports. Retain those exact proofs before retrying so only o5/o6 change and no original scene repaints. Queued dry run has not produced or uploaded media."
+          }
         }
       ],
       "before_ids": [
+        40136652437,
         40135503878,
         40131481179,
         40128334178,
@@ -66,15 +86,7 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-24T22:00:05+00:00",
-      "run_id": 40136652437,
-      "cancel_intent": {
-        "at": "2026-10-24T22:01:26.435637+00:00",
-        "reason": "Preflight found that the second replay did not carry the original four-attempt o1/o2 exhaustion reports. Retain those exact proofs before retrying so only o5/o6 change and no original scene repaints. Queued dry run has not produced or uploaded media."
-      },
-      "problems": [
-        "Queued dry replay canceled before production to retain original exhausted-take proofs; corrected manifest is staged."
-      ]
+      "submitted_at": "2026-10-24T22:02:18+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -518,8 +530,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry how_deep-01: Queued dry replay canceled before production to retain original exhausted-take proofs; corrected manifest is staged.",
-  "updated_at": "2026-10-24T22:00:11+00:00",
+  "halted": null,
+  "updated_at": "2026-10-24T22:02:18+00:00",
   "complete": false,
   "health": {
     "public": 0,
