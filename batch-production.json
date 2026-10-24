@@ -156,6 +156,30 @@
       "archive": "batch-reviewed-40138993804",
       "problems": [
         "ValueError: missing rendered middle observation; missing rendered ending observation"
+      ],
+      "editorial_holds": [
+        {
+          "id": "direct-human-body-part-40138993804",
+          "run_id": 40138993804,
+          "observed_at": "2026-10-24T22:48:41+00:00",
+          "reason": "Actual opening and closing reprise contain a visible dark first-person leg and boot. This violates the no-humans rule; the full-video AI described the leg despite positive booleans. This exact video may not release.",
+          "evidence": {
+            "ladder-img-A-0/o1.png": "62d41c7cc448e682018e9057a87012163cbf431a4799b4f024acd192952300f7",
+            "ladder-img-A-8/end.png": "62d41c7cc448e682018e9057a87012163cbf431a4799b4f024acd192952300f7"
+          },
+          "resolved_at": "2026-10-24T22:48:41+00:00",
+          "resolution": {
+            "kind": "exclude_old_images_and_repaint_under_current_gates",
+            "source_sha": "b6ffa7aa1efbc7887829c01bbe438154abb5f5cf",
+            "replay": ".github/replay/snowball-empty-ice-repair.json",
+            "manifest_sha256": "f06322d0fd365377295e85f9df7a178761cac7c6110e91552f71ae502c4fab72",
+            "removed_slots": [
+              "o1",
+              "end"
+            ],
+            "release_approval": false
+          }
+        }
       ]
     },
     {
@@ -652,7 +676,7 @@
     }
   ],
   "halted": "Repair held entry how_deep-01: ValueError: missing rendered middle observation; missing rendered ending observation",
-  "updated_at": "2026-10-24T22:44:27+00:00",
+  "updated_at": "2026-10-24T22:48:41+00:00",
   "complete": false,
   "health": {
     "public": 0,
