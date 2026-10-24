@@ -132,8 +132,9 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                     keep(img, verdict, fig, take, cached_from=provenance)
                 if len(entry["kept"]) >= KEEP:
                     break
+            exhausted = ladder_replay.exhausted(replay, job, model, key, TAKES)
             for take in range(TAKES):
-                if len(entry["kept"]) >= KEEP:
+                if len(entry["kept"]) >= KEEP or exhausted:
                     break
                 if replay and replay["source"]["key"] == key and any(
                         r.get("cached_from", {}).get("take") == take for r in entry["takes"]):

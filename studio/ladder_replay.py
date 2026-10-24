@@ -39,6 +39,7 @@ def candidates(replay, job, model, size):
     from PIL import Image
 
     found = []
+    seen_takes, seen_hashes = set(), set()
     for row in replay["images"].get(job["id"], []):
         if row.get("prompt") != job["prompt"] or row.get("model") != model:
             continue
@@ -50,6 +51,10 @@ def candidates(replay, job, model, size):
                 or type(row.get("take")) is not int or not 0 <= row["take"] < 4 \
                 or not all(k in row.get("exposure", {}) for k in ("raw_p99", "spread")):
             raise ValueError("replay image lacks original take, artifact or exposure provenance")
+        if row["take"] in seen_takes or row["sha256"] in seen_hashes:
+            raise ValueError("replay inputs must be distinct original takes and images")
+        seen_takes.add(row["take"])
+        seen_hashes.add(row["sha256"])
         with Image.open(path) as src:
             if src.size != size:
                 raise ValueError("replay image dimensions differ from the production model")
@@ -58,3 +63,27 @@ def candidates(replay, job, model, size):
         provenance["source"] = replay["source"]
         found.append((img, row["exposure"], row["take"], provenance))
     return found
+
+
+def exhausted(replay, job, model, key, take_limit):
+    """A hashed original shard can prove all deterministic seeds were already attempted.
+
+    One passing picture is valid in the normal producer too. Recheck that picture, but do not
+    spend another runner repainting its three already-refused seeds. Current QA can still hold it.
+    """
+    if not replay or replay["source"]["key"] != key:
+        return False
+    row = replay.get("completed_images", {}).get(job["id"])
+    if not row or row.get("prompt") != job["prompt"] or row.get("model") != model:
+        return False
+    folder = replay["_folder"].resolve()
+    path = (folder / row["file"]).resolve()
+    if not path.is_relative_to(folder) or not path.is_file() or digest(path) != row.get("sha256"):
+        raise ValueError("corrupt or unsafe original shard report")
+    if type(row.get("artifact_id")) is not int or row["artifact_id"] <= 0:
+        raise ValueError("original shard report lacks artifact provenance")
+    report = json.loads(path.read_text())
+    entries = [e for e in report.get("images", []) if e.get("id") == job["id"]]
+    if report.get("premise") != replay["premise"] or report.get("model") != model or len(entries) != 1:
+        raise ValueError("original shard report differs from this image")
+    return len(entries[0].get("takes", [])) == take_limit

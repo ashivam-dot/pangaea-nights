@@ -118,3 +118,32 @@ def test_dry_plan_pins_the_manifest_and_selects_its_premise(tmp_path, monkeypatc
     plan = json.loads((config.WORK / "ladder/A/plan.json").read_text())
     assert plan["premise"]["id"] == "how_deep-01" and plan["mode"] == "dry"
     assert plan["image_replay"] == {"path": ".github/replay/repair.json", "sha256": replay.digest(path)}
+
+
+def test_original_exhausted_seeds_are_not_repainted_and_current_qa_still_binds(cached, tmp_path, monkeypatch):
+    path, job, data, _ = cached
+    data['images'][job['id']] = data['images'][job['id']][:1]
+    report = path.parent / 'original-shard.json'
+    report.write_text(json.dumps({'premise': data['premise'], 'model': 'test',
+                                  'images': [{'id': job['id'], 'takes': [{}] * li.TAKES}]}))
+    data['completed_images'] = {job['id']: {'file': report.name, 'sha256': replay.digest(report),
+                                           'artifact_id': 99, 'prompt': job['prompt'], 'model': 'test'}}
+    monkeypatch.setattr(li.sdcpp, 'Server', lambda *a: pytest.fail('exhausted deterministic seeds were repainted'))
+    monkeypatch.setattr(qa, 'review', lambda *a: verdict())
+    good = li.generate({'id': data['premise']}, 'original-key', tmp_path / 'good', 0, 1, model='test', replay=data)
+    assert good['images'][0]['ok'] and len(good['images'][0]['kept']) == 1
+    monkeypatch.setattr(qa, 'review', lambda *a: verdict(['text 0.9']))
+    bad = li.generate({'id': data['premise']}, 'original-key', tmp_path / 'bad', 0, 1, model='test', replay=data)
+    assert not bad['images'][0]['ok']
+    assert not replay.exhausted(data, {**job, 'prompt': 'new scene'}, 'test', 'original-key', li.TAKES)
+    assert not replay.exhausted(data, job, 'test', 'different-key', li.TAKES)
+    report.write_text(report.read_text() + ' ')
+    with pytest.raises(ValueError, match='original shard report'):
+        replay.exhausted(data, job, 'test', 'original-key', li.TAKES)
+
+
+def test_duplicate_cached_takes_cannot_count_as_alternatives(cached):
+    _, job, data, _ = cached
+    data['images'][job['id']][1]['take'] = data['images'][job['id']][0]['take']
+    with pytest.raises(ValueError, match='distinct'):
+        replay.candidates(data, job, 'test', (8, 8))
