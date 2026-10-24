@@ -345,8 +345,31 @@ def sibling_refusals(slot: str, gates: dict) -> list[str]:
     return [f"too close to slot A: {x}" for x in shorts_ladder.sibling_problems(gates, a)]
 
 
+def adopt_loose_downloads() -> None:
+    """download-artifact unpacks a pattern that matches a single artifact straight into work/dl, with no
+    ladder-out-<slot> or ladder-pub-<slot> folder, so shorts.yml's copy loop misses a one-slot day entirely."""
+    dl = config.WORK / "dl"
+    loose = [f for f in dl.iterdir() if f.is_file() and f.name != "short.mp4"] if dl.exists() else []
+    if not loose:
+        return
+    slots = _planned_slots()
+    pub = dl / "publish.json"
+    slot = json.loads(pub.read_text()).get("slot") if pub.exists() else None
+    if slot is None and len(slots) == 1:
+        slot = slots[0]
+    if slot not in slots:
+        print(f"work/dl: {len(loose)} loose files and no single slot to file them under; left unread")
+        return
+    out = _dir(slot) / "out"
+    out.mkdir(parents=True, exist_ok=True)
+    for f in loose:
+        if not (out / f.name).exists():
+            (out / f.name).write_bytes(f.read_bytes())
+
+
 def record(args) -> None:
     """Fold every planned slot's outcome into the ledger: a build entry always, a Short only when published."""
+    adopt_loose_downloads()
     data = ledger.load()
     mismatches = []
     for slot in _planned_slots():

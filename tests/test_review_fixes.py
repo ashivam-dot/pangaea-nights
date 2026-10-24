@@ -112,6 +112,22 @@ def test_record_is_idempotent_and_files_readback_alerts(dirs):
     assert "madeForKids" in text and "no premise" in text
 
 
+def test_record_reads_a_one_slot_day_unpacked_straight_into_dl(dirs):
+    p = ALL[0]
+    d = _plan("A", p)
+    (d / "out" / "gates.json").unlink()
+    dl = config.WORK / "dl"
+    dl.mkdir(parents=True)
+    (dl / "gates.json").write_text(json.dumps({"ok": True, "failures": []}))
+    (dl / "publish.json").write_text(json.dumps({
+        "published": True, "video_id": "v1", "url": "u1", "title": "t", "publish_at": "2026-11-10T14:30:00Z",
+        "slot": "A"}))
+    ladder_cli.record(None)
+    data = ledger.load()
+    assert data["ladder"]["builds"][0]["ok"] is True and data["ladder"]["builds"][0]["published"] is True
+    assert [s["video_id"] for s in data["shorts"]] == ["v1"]
+
+
 def test_ladder_log_unique_replaces_and_keeps_the_first_time():
     data = copy.deepcopy(ledger.EMPTY)
     ledger.ladder_log(data, "builds", {"run": "1", "slot": "A", "ok": False}, unique=("run", "slot"))
