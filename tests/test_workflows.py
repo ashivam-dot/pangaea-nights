@@ -103,10 +103,11 @@ def test_concurrency_stays_within_twenty():
     shorts_peak = images + n  # images + one voice per slot
     assert shorts_peak <= fanout.LIMIT - 4  # news, fiction and monitoring also share the account
     ep = config.shape("full")
-    assert ep.image_shards + ep.voice_shards <= fanout.LIMIT
+    assert ep.image_shards + ep.voice_shards <= fanout.LIMIT - 4
     for length in config.LENGTHS:
         s = config.shape("full", length)
-        assert s.image_shards + s.voice_shards <= fanout.LIMIT, length
+        assert s.image_shards + s.voice_shards <= fanout.LIMIT - 4, length
+        assert s.render_shards <= fanout.LIMIT - 4, length
     # each side waits for the other before fanning out, and only the Shorts look at the episode's fan-out
     ep_steps = load("episode.yml")["jobs"]["plan"]["steps"]
     assert "--wait-for shorts.yml" in ep_steps[-1]["run"]

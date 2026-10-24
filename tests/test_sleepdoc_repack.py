@@ -70,14 +70,16 @@ def test_full_resolves_to_2h_or_3h(monkeypatch):
         config.shape("full")
 
 
-def test_3h_shape_fits_20_runners_and_8_images_each():
+def test_3h_shape_reserves_four_fleet_runners_without_dropping_scenes():
     s = config.SHAPES["full3h"]
-    assert s.image_shards + s.voice_shards <= 20
+    assert s.image_shards + s.voice_shards <= 16 and s.render_shards <= 16
     n_images = s.chapters * writer.scene_count(s) + s.tail_scenes + 1 + config.trailer_count(s) * s.trailer_scenes
-    assert n_images <= 8 * s.image_shards
+    assert n_images <= 11 * s.image_shards
     hours = s.chapters * s.words_per_chapter / config.WPM / 60 + s.tail_minutes / 60
     assert 2.8 <= hours <= 3.3
     full = config.SHAPES["full"]
+    full_images = full.chapters * writer.scene_count(full) + full.tail_scenes + 1
+    assert full_images <= 10 * full.image_shards
     assert 1.9 <= full.chapters * full.words_per_chapter / config.WPM / 60 + full.tail_minutes / 60 <= 2.3
 
 

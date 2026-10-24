@@ -1,13 +1,13 @@
 """Keep the Shorts and the long episode inside the free plan's 20 concurrent jobs.
 
-Each workflow can fill the runner pool on its own (episode: 18 image + 2 voice jobs; Shorts: 17 image + 2 voice), so
+Each workflow reserves four account runners for the fleet (episode and three-slot Shorts: at most 16 jobs), so
 neither may fan out while the other is fanned out. The rule is asymmetric so the two can never wait on each other:
 
 - the episode's plan job, before it emits its matrix, waits for every other active shorts.yml run to finish;
 - the Shorts' plan job waits only for an episode run with matrix jobs (images, voice, render) active: a
   fanned-out episode.
 
-An episode still in its plan job is one runner, and the Shorts' peak is 19, so that overlap stays at 20.
+An episode still in its plan job is one runner, so that overlap stays below the account's 20-runner limit.
 
     python -m studio.fanout --wait-for shorts.yml --minutes 150
     python -m studio.fanout --wait-for episode.yml --fanned-out --minutes 60
@@ -36,7 +36,7 @@ FAN_OUT = ("images", "voice", "render")  # the matrix stages; audio, finish, pub
 def fanned_out(jobs: list[dict]) -> bool:
     """A run is fanned out while any of its matrix jobs (images, voice, render: named "images (3)" and so on) is
     active (gh run view --json jobs). A late run still in a single-runner stage such as finish holds one runner,
-    which the Shorts' peak of 19 leaves room for."""
+    which the Shorts' peak leaves room for."""
     return any(j.get("name", "").split(" ")[0] in FAN_OUT and j.get("status") in ACTIVE for j in jobs)
 
 

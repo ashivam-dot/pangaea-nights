@@ -91,6 +91,10 @@ transcripts, captions, thumbnails and media are never downloaded, stored or sent
   at two hours. Set it to `None` only after the pilot review to resume alternation. Explicit `2h` / `3h` inputs
   remain available for private previews. The historical `learn.lengths()` output uses geometric means of
   estimated 72-hour views; it is not a measured comparison of the new pilot. Both shapes keep the same gates.
+- **Shared compute.** Long-form image/voice and render stages use at most 16 runners, as does the three-slot
+  Shorts matrix. This reserves four of the account's 20 for news, fiction and monitoring. Long image shards keep
+  every planned scene (up to ten images per two-hour shard, eleven for a three-hour preview); the existing retry
+  budget, image checks and workflow timeouts stay in force. The next full build must verify elapsed time.
 
 ## Packaging
 

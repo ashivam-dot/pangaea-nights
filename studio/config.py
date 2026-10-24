@@ -38,12 +38,12 @@ class Shape:
 
 
 SHAPES = {
-    # 18 image + 2 voice runners = the 20 concurrent jobs of a free public repo; at most 8 images per image runner.
-    "full": Shape("full", 14, 1030, (8, 9), 10.0, 6, 2, 4, 18, 2, 15, 2),
-    # 3 hours: 21 chapters (14 chapters measured ~7,250 s, so ~10,700 s). 17 image + 3 voice runners stay inside
-    # the 20 concurrent jobs: 21 x 6 scenes + 6 tail + 1 thumbnail = 133 images, at most 8 per image runner; each
+    # 14 image + 2 voice runners reserve four of the account's 20 for the other channels; at most 10 images each.
+    "full": Shape("full", 14, 1030, (8, 9), 10.0, 6, 2, 4, 14, 2, 15, 2),
+    # 3 hours: 21 chapters (14 chapters measured ~7,250 s, so ~10,700 s). 13 image + 3 voice runners reserve four
+    # of the account's 20: 21 x 6 scenes + 6 tail + 1 thumbnail = 133 images, at most 11 per image runner; each
     # scene holds ~80 s instead of ~55 s. 3 voice runners keep 7 chapters each, as in the 2-hour shape.
-    "full3h": Shape("full3h", 21, 1030, (6, 6), 10.0, 6, 2, 4, 17, 3, 20, 2),
+    "full3h": Shape("full3h", 21, 1030, (6, 6), 10.0, 6, 2, 4, 13, 3, 16, 2),
     "short": Shape("short", 2, 560, (6, 6), 1.0, 1, 1, 4, 6, 2, 3, 1),
 }
 # Keep the familiar-topic relaunch at one length through four published episodes and their 7-day review.
