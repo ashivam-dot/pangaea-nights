@@ -31,11 +31,31 @@ def test_plan_accepts_the_empty_slot_the_workflow_passes(dirs, capsys):
 
 
 def test_image_matrix_fits_one_wave():
-    for slots in (["A"], ["A", "B"]):
+    for slots in (["A"], ["A", "B"], ["A", "B", "C"]):
         m = ladder_cli.image_matrix(slots, len(ladder.IMAGE_IDS))
-        assert len(m) <= ladder_cli.IMAGE_JOBS and {r["slot"] for r in m} == set(slots)
+        assert len(m) + len(slots) <= ladder_cli.PEAK_JOBS and {r["slot"] for r in m} == set(slots)
     m = ladder_cli.image_matrix(["A", "B"], 9)
     assert [r["shard"] for r in m if r["slot"] == "B"][-1] == "7/8"
+    # three a day: 6/5/5 shards, so no runner draws more than two of a Short's nine images
+    m = ladder_cli.image_matrix(["A", "B", "C"], 9)
+    assert [sum(r["slot"] == s for r in m) for s in "ABC"] == [6, 5, 5]
+
+
+def test_slot_c_is_compared_with_slot_b(dirs):
+    b = _gates_json([1, 0, 0], {"o1": [0, 1, 0]})
+    (config.WORK / "ladder" / "B" / "out").mkdir(parents=True)
+    (config.WORK / "ladder" / "B" / "out" / "gates.json").write_text(json.dumps(b))
+    same = _gates_json([1, 0, 0.01], {"o1": [0, 1, 0]})
+    assert any("slot B" in x for x in ladder_cli.sibling_refusals("C", same))
+    assert ladder_cli.sibling_refusals("A", same) == []
+
+
+def test_a_day_takes_three_different_series():
+    data = copy.deepcopy(ledger.EMPTY)
+    planned = []
+    for _ in range(3):
+        planned.append(ladder.pick(BANKS, data, DAY, planned))
+    assert len({p["series"] for p in planned}) == 3
 
 
 def test_choose_falls_through_to_the_next_premise(monkeypatch):

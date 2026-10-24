@@ -25,7 +25,13 @@ from pathlib import Path
 from . import config, ladder, ledger
 
 MODES = ("publish", "test", "dry")
-IMAGE_JOBS = 17  # image runner jobs per run, across slots: + 2 voice = 19 (studio/fanout.py)
+PEAK_JOBS = 19  # image + voice runners at once, leaving one of the free plan's 20 for an episode plan job (fanout)
+IMAGE_JOBS = PEAK_JOBS - 2  # with two slots; image_budget() for any count
+
+
+def image_budget(slots: int) -> int:
+    """Image runner jobs a run may fan out to: the peak less one voice job per slot (three a day: 16)."""
+    return PEAK_JOBS - max(slots, 1)
 PLAN_TRIES = 8  # premises tried per slot before the slot is given up
 # The one private test upload the launch checklist asks for happens while PAUSED is still true; it needs this
 # separately named switch (shorts.yml input allow_test_while_paused), so a plain test dispatch never uploads.
@@ -173,12 +179,12 @@ def plan(args) -> None:
         sys.exit("an allowed publish slot planned no premise")
 
 
-def image_matrix(slots: list[str], shards: int, budget: int = IMAGE_JOBS) -> list[dict]:
+def image_matrix(slots: list[str], shards: int, budget: int | None = None) -> list[dict]:
     """The image jobs: every slot gets its own shards, and all of them fit in one wave of `budget` runners, so slot
-    A's render never waits on a second wave for slot B (a later slot takes fewer shards, two images on some)."""
-    out, left = [], budget
+    A's render never waits on a second wave for a later slot (a later slot takes fewer shards, two images on some)."""
+    out, left = [], image_budget(len(slots)) if budget is None else budget
     for i, slot in enumerate(slots):
-        n = max(1, min(shards, left - (len(slots) - i - 1)))
+        n = max(1, min(shards, -(-left // (len(slots) - i))))
         out += [{"slot": slot, "shard": f"{k}/{n}"} for k in range(n)]
         left -= n
     return out
@@ -330,19 +336,21 @@ def publish(args) -> None:
 
 
 def sibling_refusals(slot: str, gates: dict) -> list[str]:
-    """Slot B against slot A of the same run (the ledger's history cannot see a Short made in this run). Only B is
-    refused, and only when A's own gates passed, so one of the two still goes out."""
-    if slot != "B":
-        return []
-    other = _dir("A") / "out" / "gates.json"
-    if not other.exists():
-        return []
-    a = json.loads(other.read_text())
-    if not a.get("ok"):
-        return []
+    """A slot against the earlier slots of the same run (ladder.SLOTS order; the ledger's history cannot see a Short
+    made in this run) whose gates are on disk: shorts.yml's publish job gives slot B slot A's, and slot C slot B's.
+    Only the later slot is refused, and only when the earlier one's own gates passed, so one of them still goes out."""
     from . import shorts_ladder
 
-    return [f"too close to slot A: {x}" for x in shorts_ladder.sibling_problems(gates, a)]
+    order = list(ladder.SLOTS)
+    out = []
+    for earlier in order[:order.index(slot)]:
+        other = _dir(earlier) / "out" / "gates.json"
+        if not other.exists():
+            continue
+        g = json.loads(other.read_text())
+        if g.get("ok"):
+            out += [f"too close to slot {earlier}: {x}" for x in shorts_ladder.sibling_problems(gates, g)]
+    return out
 
 
 def adopt_loose_downloads() -> None:

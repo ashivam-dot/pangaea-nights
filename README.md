@@ -44,11 +44,14 @@ rerun finds the earlier upload instead of creating a duplicate.
 `shorts.yml` (08:00 UTC daily) builds 30–45 s "pick a number 1–8" Shorts from the premise banks in `bible/ladder/`
 (four series, 16 premises each; every fact is one sentence of a pinned Wikipedia revision). The narrator speaks the
 verdict ("Real answer: number N.") with the sourced fact; there is no mascot. `studio/ladder_cli.py` runs one stage
-per job: `plan` → `images` (9 stills per slot, at most 17 jobs at once) and `voice` → `render` (every gate has a floor
-and a ceiling) → `publish` → `record`.
+per job: `plan` → `images` (9 stills per slot; image + voice jobs at most 19 at once, so 16 image jobs, 6/5/5, on a
+three-slot day) and `voice` → `render` (every gate has a floor and a ceiling) → `publish` → `record`.
 
-- Cadence: slot A releases 14:30 UTC. From launch day 8 (`SHORTS_LAUNCH`, YYYY-MM-DD) slot B (00:30 UTC next day)
-  is added, but only while the previous 7 publish builds passed every gate. No launch date means no publishing.
+- Cadence (owner, 2026-10-24: "3 short per day all the short should be awesome"): three Shorts a day from
+  `SHORTS_LAUNCH` (YYYY-MM-DD). Slot A releases 14:30 UTC, slot C 19:30 UTC, slot B 00:30 UTC the next day
+  (`ladder.SLOTS`). The day's three come from three different series when the banks allow. A Short that fails any
+  gate is never uploaded to fill its slot; that slot stays empty. Slot B is compared with slot A's frames and slot C
+  with slot B's before upload. No launch date means no publishing.
 - Pause: schedules need `PAUSED=false` and `SHORTS_PAUSED` not `true`. Dispatches default to `dry_run` (build and
   gate, upload nothing); with it off, `test` uploads private with no release and consumes no premise.
 - Novelty: 4-gram overlap ≤35% against the last 30 scripts, first frame CLIP ≤0.93 against the last 30, every
@@ -100,8 +103,8 @@ YouTube limits that still apply:
 
 - Until the Cloud project passes YouTube's API audit, uploads from unverified projects are locked to private.
 - Videos longer than 15 minutes and custom thumbnails need a phone-verified channel.
-- The default quota of 10,000 units a day covers one episode (1,600 for the upload, 50 for the thumbnail) and two
-  ladder Shorts (1,600 each, plus a first comment and the read-back).
+- The default quota of 10,000 units a day covers one episode (1,600 for the upload, 50 for the thumbnail) and three
+  ladder Shorts (1,600 each, plus a first comment and the read-back): about 6,700 on an episode day.
 
 ## Repository layout
 

@@ -463,6 +463,10 @@ def pick(banks: dict[str, list[dict]], data: dict, at: date, planned: list[dict]
         choices.append((last_used.get(series, -1), weight(data, series, best["era"]), best))
     if not choices:  # rotation cannot be met with what is left: say so rather than break the rule
         raise BankError("no premise satisfies the rotation rules: the banks need more premises")
+    # Three a day: the day's Shorts come from different series when the banks allow, so no two look alike (the
+    # publish job compares a slot only with one sibling's frames).
+    today = {q["series"] for q in planned}
+    choices = [c for c in choices if c[2]["series"] not in today] or choices
     # Among the two series that have rested longest, one holding a proven premise leads, then the better learned
     # weight (ties keep rest order).
     rested = sorted(choices, key=lambda c: c[0])[:2]
@@ -515,10 +519,11 @@ def now_day() -> date:
 
 # ---------------------------------------------------------------------------------------------------- cadence
 
-# Slot A goes out at 14:30 UTC the day it is built; slot B at 00:30 UTC the next morning.
-SLOTS = {"A": (14, 30), "B": (0, 30)}
-RAMP_DAYS = 7  # launch days with slot A only
-RAMP_CLEAN = 7  # slot B needs this many consecutive gate-clean Shorts before it
+# Three Shorts a day (owner, 2026-10-24: "3 short per day all the short should be awesome"). Slot A goes out at
+# 14:30 UTC the day it is built, slot C at 19:30 UTC, slot B at 00:30 UTC the next morning. A Short that fails a
+# gate is never published to fill its slot: that slot stays empty for the day.
+SLOTS = {"A": (14, 30), "B": (0, 30), "C": (19, 30)}
+NEXT_DAY = {"B"}  # released the morning after the build
 
 
 def launch_day(text: str | None) -> date | None:
@@ -533,21 +538,14 @@ def builds(data: dict) -> list[dict]:
 
 
 def slots_allowed(launch: date | None, today: date, past_builds: list[dict]) -> tuple[list[str], str]:
-    """Which slots may publish today, and why. Days 1-7 after SHORTS_LAUNCH: slot A only. From day 8, slot B too,
-    but only while the previous seven publish builds all passed every gate."""
+    """Which slots may publish today, and why: every slot from SHORTS_LAUNCH on. Quality is held per Short by the
+    gates (a refused Short leaves its slot empty), not by holding slots back."""
     if launch is None:
         return [], "SHORTS_LAUNCH is not set (YYYY-MM-DD): no Shorts publish before a launch date"
     day = (today - launch).days + 1
     if day < 1:
         return [], f"Shorts launch on {launch.isoformat()}"
-    if day <= RAMP_DAYS:
-        return ["A"], f"launch day {day}: slot A only for the first {RAMP_DAYS} days"
-    recent = [b for b in past_builds if b.get("mode") == "publish"][-RAMP_CLEAN:]
-    if len(recent) < RAMP_CLEAN or not all(b.get("ok") for b in recent):
-        bad = sum(1 for b in recent if not b.get("ok"))
-        return ["A"], (f"slot B waits for {RAMP_CLEAN} gate-clean Shorts in a row "
-                       f"(have {len(recent)}, {bad} failed)")
-    return ["A", "B"], f"launch day {day}: both slots"
+    return list(SLOTS), f"launch day {day}: {len(SLOTS)} slots"
 
 
 def stale(data: dict, launch: date | None, now: datetime, hours: float) -> str | None:

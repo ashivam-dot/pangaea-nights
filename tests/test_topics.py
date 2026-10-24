@@ -714,7 +714,8 @@ def test_two_proven_premises_of_one_series_never_dead_end_the_rotation():
         data["ladder"]["proven"].append(p)
     full = {s: list(ps) for s, ps in banks.items()}
     full["how_deep"] += data["ladder"]["proven"]
-    assert topics.supply_days(full, data, date(2026, 10, 23)) > 30
+    assert topics.supply_days(full, data, date(2026, 10, 23), per_day=2) > 30
+    assert topics.supply_days(full, data, date(2026, 10, 23), per_day=3) > 20
     sim, seq = {"shorts": [], "ladder": {"queue": []}}, []
     for day in range(8):
         at = date(2026, 10, 23) + timedelta(days=day)

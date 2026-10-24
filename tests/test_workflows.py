@@ -6,7 +6,7 @@ import pytest
 
 yaml = pytest.importorskip("yaml")
 
-from studio import config, fanout, ladder  # noqa: E402
+from studio import config, fanout, ladder, ladder_cli  # noqa: E402
 
 WF = Path(__file__).resolve().parent.parent / ".github" / "workflows"
 
@@ -97,7 +97,10 @@ def test_state_pushers_share_one_concurrency_group():
 
 def test_concurrency_stays_within_twenty():
     shorts = load("shorts.yml")["jobs"]
-    shorts_peak = shorts["images"]["strategy"]["max-parallel"] + len(ladder.SLOTS)  # images + one voice per slot
+    n = len(ladder.SLOTS)
+    images = min(shorts["images"]["strategy"]["max-parallel"],
+                 len(ladder_cli.image_matrix(list(ladder.SLOTS), len(ladder.IMAGE_IDS))))
+    shorts_peak = images + n  # images + one voice per slot
     assert shorts_peak <= fanout.LIMIT - 1  # room for an episode plan job
     ep = config.shape("full")
     assert ep.image_shards + ep.voice_shards <= fanout.LIMIT

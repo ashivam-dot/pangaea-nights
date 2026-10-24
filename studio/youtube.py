@@ -227,14 +227,14 @@ LADDER_DISCLOSURE = ("How this was made: the images are AI-generated artistic re
 
 
 def slot_publish_at(slot: str, build_day, now: datetime | None = None, late_ok: bool = False) -> str | None:
-    """The slot's release time for a build on build_day (slot A 14:30 UTC the same day, slot B 00:30 UTC the next),
+    """The slot's release time for a build on build_day (ladder.SLOTS; ladder.NEXT_DAY slots release the next day),
     or None when it is less than twenty minutes away: a late build skips its slot rather than drift into the next.
     late_ok: the time regardless (an upload that already exists keeps its slot)."""
     from . import ladder
 
     hour, minute = ladder.SLOTS[slot]
     at = datetime(build_day.year, build_day.month, build_day.day, hour, minute, tzinfo=timezone.utc)
-    if slot == "B":
+    if slot in ladder.NEXT_DAY:
         at += timedelta(days=1)
     if not late_ok and at < (now or datetime.now(timezone.utc)) + timedelta(minutes=20):
         return None

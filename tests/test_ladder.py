@@ -69,25 +69,17 @@ def test_ramp_needs_a_launch_date():
     assert ladder.slots_allowed(LAUNCH, LAUNCH - timedelta(days=1), [])[0] == []
 
 
-@pytest.mark.parametrize("day", range(1, 8))
-def test_first_seven_days_are_slot_a_only(day):
-    assert ladder.slots_allowed(LAUNCH, LAUNCH + timedelta(days=day - 1), clean(20))[0] == ["A"]
-
-
-def test_day_eight_adds_slot_b_only_after_seven_clean_publish_builds():
-    day8 = LAUNCH + timedelta(days=7)
-    assert ladder.slots_allowed(LAUNCH, day8, clean(7))[0] == ["A", "B"]
-    assert ladder.slots_allowed(LAUNCH, day8, clean(6))[0] == ["A"]
-    assert ladder.slots_allowed(LAUNCH, day8, clean(6) + clean(1, ok=False))[0] == ["A"]
-    assert ladder.slots_allowed(LAUNCH, day8, clean(1, ok=False) + clean(7))[0] == ["A", "B"]
-    # dry and test builds never count toward the streak
-    assert ladder.slots_allowed(LAUNCH, day8, clean(3) + clean(9, mode="dry") + clean(4, mode="test"))[0] == ["A"]
+@pytest.mark.parametrize("day", [1, 2, 8, 30])
+def test_three_slots_every_day_from_launch(day):
+    builds = clean(3) + clean(2, ok=False)  # a refused Short never holds the next day's slots back
+    assert ladder.slots_allowed(LAUNCH, LAUNCH + timedelta(days=day - 1), builds)[0] == ["A", "B", "C"]
 
 
 def test_slot_times():
     day = date(2026, 11, 3)
     early = datetime(2026, 11, 3, 8, 0, tzinfo=timezone.utc)
     assert youtube.slot_publish_at("A", day, early) == "2026-11-03T14:30:00Z"
+    assert youtube.slot_publish_at("C", day, early) == "2026-11-03T19:30:00Z"
     assert youtube.slot_publish_at("B", day, early) == "2026-11-04T00:30:00Z"
     assert youtube.slot_publish_at("A", day, datetime(2026, 11, 3, 14, 15, tzinfo=timezone.utc)) is None
 
