@@ -259,7 +259,32 @@
       }
     ]
   },
-  "completed_images": {},
+  "completed_images": {
+    "o1": {
+      "file": "snowball-foreground-repair/art/shard-00.json",
+      "sha256": "0686503bb27eb69c5e3925c993a5e02e18093c2e2f001ed26811ffa11c7f1b92",
+      "artifact_id": 12575135688,
+      "model": "klein4b-q8-768",
+      "prompt": "POV low over an endless flat sheet of frozen ocean at dusk, wind-blown snow streaming across cracked blue ice, a single warm amber sunset glow on the horizon, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+      "source": {
+        "run_id": 40124993101,
+        "sha": "c8e824b5734e959bd0f0c6bff057c9875c316307",
+        "key": "2026-10-24-how_deep-01"
+      }
+    },
+    "o2": {
+      "file": "snowball-foreground-repair/art/shard-01.json",
+      "sha256": "559f6ac7826b677d13f9169a3c6fbf35afed0de8c6b6b359c90f04873956d018",
+      "artifact_id": 12574324553,
+      "model": "klein4b-q8-768",
+      "prompt": "looking up from just beneath a thin ceiling of translucent sea ice, pale green light seeping through cracks, drifting green algae mats under the ice, one warm golden beam piercing a crack, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+      "source": {
+        "run_id": 40124993101,
+        "sha": "c8e824b5734e959bd0f0c6bff057c9875c316307",
+        "key": "2026-10-24-how_deep-01"
+      }
+    }
+  },
   "local_attempts": {
     "o5": [
       {
