@@ -135,6 +135,7 @@ def plan(args) -> None:
     from ops.batch_state import production_hold
 
     image_replay = None
+    replay_seed_key = None
     if replay_path := getattr(args, "replay", ""):
         from . import ladder_replay
 
@@ -145,6 +146,7 @@ def plan(args) -> None:
             raise ValueError("image replay and requested premise differ")
         args.premise = replay["premise"]
         image_replay = {"path": replay_path, "sha256": ladder_replay.digest(config.ROOT / replay_path)}
+        replay_seed_key = replay["source"]["key"]
     data = ledger.load()
     banks = ladder.with_proven(ladder.load_banks(strict=False), data)
     today = ladder.now_day()
@@ -180,7 +182,7 @@ def plan(args) -> None:
             continue
         planned.append(p)
         _save(slot, "plan.json", {"slot": slot, "mode": args.mode, "day": today.isoformat(), "run": run,
-                                  "key": f"{today.isoformat()}-{p['id']}", "premise": p, "gates": g,
+                                  "key": replay_seed_key or f"{today.isoformat()}-{p['id']}", "premise": p, "gates": g,
                                   "script": ladder.script_text(p), "created": ledger.now(),
                                   "image_replay": image_replay})
         made.append(slot)

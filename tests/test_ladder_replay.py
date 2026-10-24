@@ -1,6 +1,7 @@
 import io
 import json
 from argparse import Namespace
+from datetime import date
 from types import SimpleNamespace
 
 import numpy as np
@@ -127,6 +128,7 @@ def test_dry_plan_pins_the_manifest_and_selects_its_premise(tmp_path, monkeypatc
     monkeypatch.setattr(config, "ROOT", tmp_path)
     monkeypatch.setattr(config, "WORK", tmp_path / "work")
     monkeypatch.setattr(ledger, "load", lambda: json.loads(json.dumps(ledger.EMPTY)))
+    monkeypatch.setattr(li.ladder, "now_day", lambda: date(2030, 1, 2))
     monkeypatch.delenv("GITHUB_OUTPUT", raising=False)
     path = tmp_path / ".github/replay/repair.json"
     path.parent.mkdir(parents=True)
@@ -136,6 +138,8 @@ def test_dry_plan_pins_the_manifest_and_selects_its_premise(tmp_path, monkeypatc
     plan = json.loads((config.WORK / "ladder/A/plan.json").read_text())
     assert plan["premise"]["id"] == "how_deep-01" and plan["mode"] == "dry"
     assert plan["image_replay"] == {"path": ".github/replay/repair.json", "sha256": replay.digest(path)}
+    # A replay crossing midnight keeps its proven seed history while calendar/rotation checks stay current.
+    assert plan["key"] == "source-key" and plan["day"] == "2030-01-02"
 
 
 def test_original_exhausted_seeds_are_not_repainted_and_current_qa_still_binds(cached, tmp_path, monkeypatch):
