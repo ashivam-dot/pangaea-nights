@@ -77,6 +77,14 @@ transcripts, captions, thumbnails and media are never downloaded, stored or sent
 
 ## Cadence and length
 
+- **Reviewed batch release code (25 October 2026).** `ops/cloud_batch.py` and `studio/batch_release.py` can adopt
+  exact finished dry previews, require a full AI audiovisual review bound to the MP4 and pinned brief, and recheck
+  premise, novelty, rotation, opening-image similarity and the live upload marker before release. Original gates
+  remain mandatory. Uploads are private while processing; owner-visible channel, audience and schedule readback
+  must match before a result counts. Saved intent prevents uncertain requests from creating duplicate uploads.
+  A durable batch reservation prevents the ordinary Shorts producer from racing the same calendar. Sleep episodes
+  are separate. Workflow activation still follows the owner's workflow-edit rule; code is not a public result.
+
 - **Batch production (owner, 25 October 2026).** `strategy/batch-2026-10-25.json` reserves thirty distinct Shorts
   for 25 October–3 November UTC, plus the corrected opening preview for an immediate release after review.
   These are planned targets, not booked YouTube schedules. Dry previews retain the usual script, picture, voice

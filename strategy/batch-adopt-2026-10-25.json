@@ -1,0 +1,13 @@
+{
+  "how_deep-01": {
+    "obsolete_runs": [
+      40121235398
+    ],
+    "repair_reason": "Abyssal image was incorrectly sunlit. Render again using corrected dark-water prompt; old clip is never releasable."
+  },
+  "level_1_8-01": {
+    "run_id": 40122729549,
+    "stage": "building",
+    "source_sha": "7d3c1c887eabc13d637506d7d936c6836abecd7a"
+  }
+}

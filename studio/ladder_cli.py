@@ -132,10 +132,17 @@ def ramp(args) -> None:
 
 
 def plan(args) -> None:
+    from ops.batch_state import production_hold
+
     data = ledger.load()
     banks = ladder.with_proven(ladder.load_banks(strict=False), data)
     today = ladder.now_day()
     if args.mode == "publish":
+        if why := production_hold(config.STATE):
+            _plan_alerts([])
+            _output({"slots": [], "images": [], "any": False})
+            print(why)
+            return
         slots, why = ladder.slots_allowed(ladder.launch_day(os.environ.get("SHORTS_LAUNCH")), today,
                                           ladder.builds(data))
         if args.slot:
