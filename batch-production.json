@@ -219,7 +219,7 @@
       "series": "level_1_8",
       "slot": "B",
       "target": "2026-10-25T00:30:00Z",
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "inputs": {
         "dry_run": "true",
         "slot": "A",
@@ -444,7 +444,8 @@
       "obsolete_runs": [
         40135503878
       ],
-      "repair_reason": "Exact cloud originals and locally generated anatomy repairs retain take/weight/raw-pixel provenance. Excludes all four held animal sets and wrong lemming trials. Deliberate sourced steppe-bison option-five replan; fresh voice and all current media/AV gates mandatory."
+      "repair_reason": "Exact cloud originals and locally generated anatomy repairs retain take/weight/raw-pixel provenance. Excludes all four held animal sets and wrong lemming trials. Deliberate sourced steppe-bison option-five replan; fresh voice and all current media/AV gates mandatory.",
+      "run_id": 40144187249
     },
     {
       "repo": "pangaea-nights",
@@ -879,7 +880,7 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-24T23:47:54+00:00",
+  "updated_at": "2026-10-24T23:47:59+00:00",
   "complete": false,
   "health": {
     "public": 0,
