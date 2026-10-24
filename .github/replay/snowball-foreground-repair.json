@@ -1,0 +1,335 @@
+{
+  "schema": 1,
+  "premise": "how_deep-01",
+  "source": {
+    "run_id": 40131481179,
+    "sha": "25630790b68982fa3a705c1d30817d3e86bf02c2",
+    "key": "2026-10-24-how_deep-01"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "snowball-foreground-repair/art/o1.png",
+        "sha256": "62d41c7cc448e682018e9057a87012163cbf431a4799b4f024acd192952300f7",
+        "model": "klein4b-q8-768",
+        "prompt": "POV low over an endless flat sheet of frozen ocean at dusk, wind-blown snow streaming across cracked blue ice, a single warm amber sunset glow on the horizon, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12575267096,
+        "take": 3,
+        "exposure": {
+          "raw_mean": 117.0,
+          "raw_p99": 237.0,
+          "gamma": 0.865,
+          "spread": 175.0
+        },
+        "source_image": "o1"
+      }
+    ],
+    "o2": [
+      {
+        "file": "snowball-foreground-repair/art/o2.png",
+        "sha256": "174a4eb265d6f6518340662bea82fa6b48679d3c71ca910aa481509ed495efca",
+        "model": "klein4b-q8-768",
+        "prompt": "looking up from just beneath a thin ceiling of translucent sea ice, pale green light seeping through cracks, drifting green algae mats under the ice, one warm golden beam piercing a crack, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12575197001,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 145.7,
+          "raw_p99": 253.0,
+          "gamma": 1.204,
+          "spread": 203.0
+        },
+        "source_image": "o2"
+      }
+    ],
+    "o3": [
+      {
+        "file": "snowball-foreground-repair/art/o3.png",
+        "sha256": "c4251fcd2b59735dcba23cd61bd7b3c1f8285c062decd732ea33cd636e96746f",
+        "model": "klein4b-q8-768",
+        "prompt": "underwater view ten metres below a vast ice ceiling, deep cobalt water, ice keels hanging down in jagged columns, a lone warm amber shaft of light falling through a fissure, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12575446556,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 70.6,
+          "raw_p99": 252.0,
+          "gamma": 0.525,
+          "spread": 176.0
+        },
+        "source_image": "o3"
+      },
+      {
+        "file": "snowball-foreground-repair/art/o3-alt1.png",
+        "sha256": "ed98cf0a357ab7746df3927b252711fbf1fc7e3889239fe3588bb28d417703a5",
+        "model": "klein4b-q8-768",
+        "prompt": "underwater view ten metres below a vast ice ceiling, deep cobalt water, ice keels hanging down in jagged columns, a lone warm amber shaft of light falling through a fissure, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12575446556,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 61.3,
+          "raw_p99": 251.0,
+          "gamma": 0.473,
+          "spread": 160.0
+        },
+        "source_image": "o3"
+      }
+    ],
+    "o4": [
+      {
+        "file": "snowball-foreground-repair/art/o4.png",
+        "sha256": "63710770071ea6ae59245e7f9c44a96150211069372521e74374226895141ede",
+        "model": "klein4b-q8-768",
+        "prompt": "dim underwater scene at fifty metres, the ice ceiling now a faint pale smear above, dark navy water full of drifting ice crystals, one warm soft glow fading overhead, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12575096851,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 66.6,
+          "raw_p99": 253.0,
+          "gamma": 0.502,
+          "spread": 223.0
+        },
+        "source_image": "o4"
+      },
+      {
+        "file": "snowball-foreground-repair/art/o4-alt1.png",
+        "sha256": "7345f6abc20e9ceb23df2e1c81a5bd71b0405d418493723bdd320e8073460908",
+        "model": "klein4b-q8-768",
+        "prompt": "dim underwater scene at fifty metres, the ice ceiling now a faint pale smear above, dark navy water full of drifting ice crystals, one warm soft glow fading overhead, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12575096851,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 71.7,
+          "raw_p99": 252.0,
+          "gamma": 0.531,
+          "spread": 208.0
+        },
+        "source_image": "o4"
+      }
+    ],
+    "o7": [
+      {
+        "file": "snowball-foreground-repair/art/o7.png",
+        "sha256": "39bd813e4633a3957ffb802e1edfb82e01fa61a4331cc32bbfc2a6c52650a49e",
+        "model": "klein4b-q8-768",
+        "prompt": "bleak abyssal seafloor kilometres deep, close low view of rough matte charcoal basalt pillows dusted with grey sediment occupying most of the foreground, neutral external documentary fill reveals their texture, completely featureless black water behind the rocks and at the upper edge, photoreal painterly, vertical composition. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "artifact_id": 12575498301,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 38.1,
+          "raw_p99": 136.0,
+          "gamma": 0.355,
+          "spread": 181.0
+        },
+        "source_image": "o7"
+      },
+      {
+        "file": "snowball-foreground-repair/art/o7-alt1.png",
+        "sha256": "ac187d4b8dd887b932fa78d21700dfa12e4dd836687792fcd63addc1c84cdb78",
+        "model": "klein4b-q8-768",
+        "prompt": "bleak abyssal seafloor kilometres deep, close low view of rough matte charcoal basalt pillows dusted with grey sediment occupying most of the foreground, neutral external documentary fill reveals their texture, completely featureless black water behind the rocks and at the upper edge, photoreal painterly, vertical composition. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "artifact_id": 12575498301,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 44.9,
+          "raw_p99": 139.0,
+          "gamma": 0.388,
+          "spread": 188.0
+        },
+        "source_image": "o7"
+      }
+    ],
+    "o8": [
+      {
+        "file": "snowball-foreground-repair/art/o8.png",
+        "sha256": "d1d32ba4ed66f0245a97b47a9763c5f6ae9da95560260ec52193c7395534f0b2",
+        "model": "klein4b-q8-768",
+        "prompt": "close side view of an irregular jagged black hydrothermal mineral chimney on an abyssal seafloor, a dense opaque black mineral plume emerging from several small openings, rough matte grey crust and uneven boulder base occupy most of the foreground in soft neutral external documentary fill, completely featureless black water behind and along the upper edge, photoreal painterly, vertical composition. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "artifact_id": 12575388406,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 22.4,
+          "raw_p99": 129.0,
+          "gamma": 0.3,
+          "spread": 194.0
+        },
+        "source_image": "o8"
+      },
+      {
+        "file": "snowball-foreground-repair/art/o8-alt1.png",
+        "sha256": "4ba7f68e4ff7212f0dc3b63d5f7ee384f7bb4d15818b54d9393aade0687de29e",
+        "model": "klein4b-q8-768",
+        "prompt": "close side view of an irregular jagged black hydrothermal mineral chimney on an abyssal seafloor, a dense opaque black mineral plume emerging from several small openings, rough matte grey crust and uneven boulder base occupy most of the foreground in soft neutral external documentary fill, completely featureless black water behind and along the upper edge, photoreal painterly, vertical composition. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "artifact_id": 12575388406,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 24.1,
+          "raw_p99": 129.0,
+          "gamma": 0.3,
+          "spread": 190.0
+        },
+        "source_image": "o8"
+      }
+    ],
+    "end": [
+      {
+        "file": "snowball-foreground-repair/art/end.png",
+        "sha256": "62d41c7cc448e682018e9057a87012163cbf431a4799b4f024acd192952300f7",
+        "model": "klein4b-q8-768",
+        "prompt": "POV low over an endless flat sheet of frozen ocean at dusk, wind-blown snow streaming across cracked blue ice, a single warm amber sunset glow on the horizon, photoreal painterly, vertical composition. Glacial blue-white palette with depth-appropriate illumination, ultra-wide 14mm lens and one soft warm reflected amber accent, with surface light restricted to shallow scenes and no ice ceiling or incandescent rock in abyssal shots. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12575491449,
+        "take": 3,
+        "exposure": {
+          "raw_mean": 117.0,
+          "raw_p99": 237.0,
+          "gamma": 0.865,
+          "spread": 175.0
+        },
+        "source_image": "o1"
+      }
+    ],
+    "o5": [
+      {
+        "file": "snowball-foreground-repair/art/o5-full-t2.png",
+        "sha256": "5f1a2d71c3170a4e5eb7896eb4116a206e185103205427fd956a3d8d2b0fbfb9",
+        "model": "klein4b-q8-768",
+        "prompt": "Macro documentary view underwater at two hundred metres: a rough pale grey rock face covers the lower three quarters of the portrait frame, with sharp detailed crevices and suspended marine snow just in front of it. The nearby stone is clearly visible in broad neutral external documentary fill. A thin band of pitch black deep water remains only above the stone. Photoreal painterly rock texture, crisp detailed foreground. No ice, no sky, no underwater sun, no glowing stone. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "take": 2,
+        "exposure": {
+          "raw_mean": 77.8,
+          "raw_p99": 222.0,
+          "gamma": 0.568,
+          "spread": 218.0
+        },
+        "generation": {
+          "file": "snowball-foreground-repair/art/o5-t2-generation.json",
+          "sha256": "e26b69cd40df400a25416d11abe4aa397848efd0e59f51130cf01bd0f3a71a11"
+        }
+      },
+      {
+        "file": "snowball-foreground-repair/art/o5-full-t3.png",
+        "sha256": "a30cbb676f54b2237daa4137e1604056cd14856f8e1a2454b6d073d427a87b01",
+        "model": "klein4b-q8-768",
+        "prompt": "Macro documentary view underwater at two hundred metres: a rough pale grey rock face covers the lower three quarters of the portrait frame, with sharp detailed crevices and suspended marine snow just in front of it. The nearby stone is clearly visible in broad neutral external documentary fill. A thin band of pitch black deep water remains only above the stone. Photoreal painterly rock texture, crisp detailed foreground. No ice, no sky, no underwater sun, no glowing stone. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 71.0,
+          "raw_p99": 195.0,
+          "gamma": 0.527,
+          "spread": 211.0
+        },
+        "generation": {
+          "file": "snowball-foreground-repair/art/o5-t3-generation.json",
+          "sha256": "2668727cb35d857005797e0fc866943fc343e4120888cc985ed48140201fbf28"
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "snowball-foreground-repair/art/o6-full-t0.png",
+        "sha256": "c2860145248d2cda33877f415e5cc1048c33b8f6359e70c68ce8f47474294fc5",
+        "model": "klein4b-q8-768",
+        "prompt": "Deep underwater volcanic cavern one kilometre below an ancient ocean. A monumental rugged basalt arch curves across the upper left above a broad jagged rock ridge in the foreground. Layered charcoal stone with subtle rusty mineral veins and crisp fissures fills most of the tall composition. A small irregular opening reveals pitch black deep water. Soft neutral external documentary fill reveals the nearby textures. Suspended white marine snow, majestic geological scale, dramatic fine art geological photography, photoreal painterly, vertical composition. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 35.1,
+          "raw_p99": 138.0,
+          "gamma": 0.34,
+          "spread": 180.0
+        },
+        "generation": {
+          "file": "snowball-foreground-repair/art/o6-t0-generation.json",
+          "sha256": "729580383ade46444ba86bd46bd107e3efd5fa6fd0bdcc96ea3939eca0a0cd92"
+        }
+      },
+      {
+        "file": "snowball-foreground-repair/art/o6-full-t1.png",
+        "sha256": "113c320f7a93fca76b172b7dcb5f8b491dadebd74b35d9914aa4d224964cdc6a",
+        "model": "klein4b-q8-768",
+        "prompt": "Deep underwater volcanic cavern one kilometre below an ancient ocean. A monumental rugged basalt arch curves across the upper left above a broad jagged rock ridge in the foreground. Layered charcoal stone with subtle rusty mineral veins and crisp fissures fills most of the tall composition. A small irregular opening reveals pitch black deep water. Soft neutral external documentary fill reveals the nearby textures. Suspended white marine snow, majestic geological scale, dramatic fine art geological photography, photoreal painterly, vertical composition. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 29.0,
+          "raw_p99": 149.0,
+          "gamma": 0.31,
+          "spread": 148.0
+        },
+        "generation": {
+          "file": "snowball-foreground-repair/art/o6-t1-generation.json",
+          "sha256": "a00e3e6dd8fa559ebb087b040e7b6688cc47ee73e694a685ef628ca41e040529"
+        }
+      }
+    ]
+  },
+  "completed_images": {},
+  "local_attempts": {
+    "o5": [
+      {
+        "file": "snowball-foreground-repair/art/o5-full-t0.png",
+        "sha256": "c87877ea28f2da88d4f69bf6d22818632957e4062d2f135b211834602bd4b62b",
+        "model": "klein4b-q8-768",
+        "prompt": "Macro documentary view underwater at two hundred metres: a rough pale grey rock face covers the lower three quarters of the portrait frame, with sharp detailed crevices and suspended marine snow just in front of it. The nearby stone is clearly visible in broad neutral external documentary fill. A thin band of pitch black deep water remains only above the stone. Photoreal painterly rock texture, crisp detailed foreground. No ice, no sky, no underwater sun, no glowing stone. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 67.3,
+          "raw_p99": 222.0,
+          "gamma": 0.506,
+          "spread": 220.0
+        },
+        "generation": {
+          "file": "snowball-foreground-repair/art/o5-t0-generation.json",
+          "sha256": "3dba214e4ab8a8a9fb74ddb337f6e9589b605248c07ea042d3fae37737484de3"
+        }
+      },
+      {
+        "file": "snowball-foreground-repair/art/o5-full-t1.png",
+        "sha256": "04500bc67128300c846b443802d63b3e2d34366b2e676d0e29829b1ee7498ec0",
+        "model": "klein4b-q8-768",
+        "prompt": "Macro documentary view underwater at two hundred metres: a rough pale grey rock face covers the lower three quarters of the portrait frame, with sharp detailed crevices and suspended marine snow just in front of it. The nearby stone is clearly visible in broad neutral external documentary fill. A thin band of pitch black deep water remains only above the stone. Photoreal painterly rock texture, crisp detailed foreground. No ice, no sky, no underwater sun, no glowing stone. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 70.4,
+          "raw_p99": 208.0,
+          "gamma": 0.524,
+          "spread": 210.0
+        },
+        "generation": {
+          "file": "snowball-foreground-repair/art/o5-t1-generation.json",
+          "sha256": "20b23cb7707271cfffc7aa6fb5a6583af12239de8ab9eb3becd42914ca6dd2eb"
+        }
+      },
+      {
+        "file": "snowball-foreground-repair/art/o5-full-t2.png",
+        "sha256": "5f1a2d71c3170a4e5eb7896eb4116a206e185103205427fd956a3d8d2b0fbfb9",
+        "model": "klein4b-q8-768",
+        "prompt": "Macro documentary view underwater at two hundred metres: a rough pale grey rock face covers the lower three quarters of the portrait frame, with sharp detailed crevices and suspended marine snow just in front of it. The nearby stone is clearly visible in broad neutral external documentary fill. A thin band of pitch black deep water remains only above the stone. Photoreal painterly rock texture, crisp detailed foreground. No ice, no sky, no underwater sun, no glowing stone. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "take": 2,
+        "exposure": {
+          "raw_mean": 77.8,
+          "raw_p99": 222.0,
+          "gamma": 0.568,
+          "spread": 218.0
+        },
+        "generation": {
+          "file": "snowball-foreground-repair/art/o5-t2-generation.json",
+          "sha256": "e26b69cd40df400a25416d11abe4aa397848efd0e59f51130cf01bd0f3a71a11"
+        }
+      },
+      {
+        "file": "snowball-foreground-repair/art/o5-full-t3.png",
+        "sha256": "a30cbb676f54b2237daa4137e1604056cd14856f8e1a2454b6d073d427a87b01",
+        "model": "klein4b-q8-768",
+        "prompt": "Macro documentary view underwater at two hundred metres: a rough pale grey rock face covers the lower three quarters of the portrait frame, with sharp detailed crevices and suspended marine snow just in front of it. The nearby stone is clearly visible in broad neutral external documentary fill. A thin band of pitch black deep water remains only above the stone. Photoreal painterly rock texture, crisp detailed foreground. No ice, no sky, no underwater sun, no glowing stone. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 71.0,
+          "raw_p99": 195.0,
+          "gamma": 0.527,
+          "spread": 211.0
+        },
+        "generation": {
+          "file": "snowball-foreground-repair/art/o5-t3-generation.json",
+          "sha256": "2668727cb35d857005797e0fc866943fc343e4120888cc985ed48140201fbf28"
+        }
+      }
+    ]
+  }
+}

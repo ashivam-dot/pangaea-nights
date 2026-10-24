@@ -174,3 +174,100 @@ def test_end_reprise_keeps_honest_original_slot_and_one_currently_reviewed_image
     data['images']['end'][0]['source_image']='unknown'
     with pytest.raises(ValueError,match='original image slot'):
         replay.candidates(data,job,'test',(8,8))
+
+
+@pytest.fixture
+def local_cached(cached, monkeypatch):
+    path, job, data, _ = cached
+    cand = SimpleNamespace(width=8, height=8, steps=4, cfg=1.0, sampler='euler',
+                           weights=[SimpleNamespace(repo='model/repo', file='weights.gguf')])
+    monkeypatch.setitem(li.sdcpp.CANDIDATES, 'test', cand)
+    raw_path = path.parent / 'raw.png'
+    raw = Image.fromarray(np.arange(192, dtype=np.uint8).reshape((8, 8, 3)))
+    raw.save(raw_path)
+    graded, exposure = li.expose(raw, sum(job['luma']) / 2)
+    row = data['images']['o3'][0]
+    graded.save(path.parent / row['file'])
+    row.update(sha256=replay.digest(path.parent / row['file']), exposure=exposure)
+    row.pop('artifact_id')
+    proof = {'schema': 1, 'origin': 'local-stable-diffusion.cpp', 'source_sha': 'a' * 40,
+             'binary_tag': li.sdcpp.SD_TAG,
+             'settings': {'model': 'test', 'prompt': job['prompt'], 'width': 8, 'height': 8,
+                          'steps': 4, 'cfg': 1.0, 'sampler': 'euler',
+                          'seed': li._seed('original-key', 'o3', 0)},
+             'weights': [{'repo': 'model/repo', 'file': 'weights.gguf', 'sha256': 'b' * 64}],
+             'raw': {'file': raw_path.name, 'sha256': replay.digest(raw_path)}}
+    proof_path = path.parent / 'generation.json'
+    proof_path.write_text(json.dumps(proof))
+    row['generation'] = {'file': proof_path.name, 'sha256': replay.digest(proof_path)}
+    data['images']['o3'] = [row]
+    return path, job, data, row, proof, proof_path
+
+
+def test_local_generation_is_explicit_and_reproduces_the_original_raw_grade(local_cached):
+    _, job, data, _, _, _ = local_cached
+    found = replay.candidates(data, job, 'test', (8, 8))
+    source = found[0][3]['source']
+    assert source['kind'] == 'local-stable-diffusion.cpp'
+    assert 'artifact_id' not in found[0][3] and 'run_id' not in source
+
+
+@pytest.mark.parametrize('changed', ['seed', 'prompt', 'weights', 'binary', 'raw', 'grade', 'exposure'])
+def test_local_generation_cannot_adopt_changed_or_unproven_pixels(local_cached, changed):
+    path, job, data, row, proof, proof_path = local_cached
+    if changed in ('seed', 'prompt'):
+        proof['settings'][changed] = 123 if changed == 'seed' else 'different scene'
+    elif changed == 'weights':
+        proof['weights'][0]['sha256'] = ''
+    elif changed == 'binary':
+        proof['binary_tag'] = 'unbenchmarked-tool'
+    elif changed == 'raw':
+        (path.parent / 'raw.png').write_bytes(b'corrupt')
+    elif changed == 'grade':
+        Image.new('RGB', (8, 8), 'white').save(path.parent / row['file'])
+        row['sha256'] = replay.digest(path.parent / row['file'])
+    else:
+        row['exposure']['raw_p99'] += 1
+    proof_path.write_text(json.dumps(proof))
+    row['generation']['sha256'] = replay.digest(proof_path)
+    with pytest.raises(ValueError):
+        replay.candidates(data, job, 'test', (8, 8))
+
+
+def test_local_candidate_still_receives_current_qa_and_cannot_bypass_refusal(local_cached, tmp_path, monkeypatch):
+    _, job, data, _, _, _ = local_cached
+    seen = []
+    monkeypatch.setattr(qa, 'review', lambda image, scene: seen.append(scene) or verdict(['text 0.9']))
+    monkeypatch.setattr(replay, 'exhausted', lambda *a: True)
+    monkeypatch.setattr(li.sdcpp, 'Server', lambda *a: pytest.fail('a new painter was loaded'))
+    report = li.generate({'id': data['premise']}, 'original-key', tmp_path / 'rejected-local', 0, 1,
+                         model='test', replay=data)
+    assert seen == [job['scene']] and not report['images'][0]['ok']
+
+
+def test_a_single_local_candidate_does_not_claim_all_seeds_were_attempted(local_cached):
+    _, job, data, row, _, _ = local_cached
+    data['local_attempts'] = {job['id']: [row]}
+    with pytest.raises(ValueError, match='every allowed deterministic take'):
+        replay.exhausted(data, job, 'test', 'original-key', 4)
+
+
+def test_local_exhaustion_checks_each_raw_and_seed_instead_of_trusting_a_summary(local_cached):
+    path, job, data, row, proof, _ = local_cached
+    from copy import deepcopy
+
+    attempts = []
+    for take in range(4):
+        attempt = deepcopy(row)
+        attempt['take'] = take
+        receipt = deepcopy(proof)
+        receipt['settings']['seed'] = li._seed('original-key', job['id'], take)
+        proof_path = path.parent / f'proof-t{take}.json'
+        proof_path.write_text(json.dumps(receipt))
+        attempt['generation'] = {'file': proof_path.name, 'sha256': replay.digest(proof_path)}
+        attempts.append(attempt)
+    data['local_attempts'] = {job['id']: attempts}
+    assert replay.exhausted(data, job, 'test', 'original-key', 4)
+    (path.parent / 'raw.png').write_bytes(b'corrupt original')
+    with pytest.raises(ValueError, match='corrupt'):
+        replay.exhausted(data, job, 'test', 'original-key', 4)

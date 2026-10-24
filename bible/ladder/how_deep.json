@@ -42,14 +42,14 @@
      "label": "Two hundred metres, black",
      "vo": "Five: two hundred metres. Total black.",
      "danger": 5,
-     "image_prompt": "near-total darkness of a frozen ancient sea at two hundred metres, close foreground grey rock ledge and suspended particles visible in neutral external documentary fill, completely featureless black water filling the background and upper edge, photoreal painterly, vertical composition"
+     "image_prompt": "Macro documentary view underwater at two hundred metres: a rough pale grey rock face covers the lower three quarters of the portrait frame, with sharp detailed crevices and suspended marine snow just in front of it. The nearby stone is clearly visible in broad neutral external documentary fill. A thin band of pitch black deep water remains only above the stone. Photoreal painterly rock texture, crisp detailed foreground. No ice, no sky, no underwater sun, no glowing stone"
     },
     {
      "n": 6,
      "label": "One kilometre, crushing cold",
      "vo": "Six: one kilometre. Crushing cold, no light.",
      "danger": 6,
-     "image_prompt": "abyssal dark water one kilometre deep, close rough charcoal basalt slope across the lower foreground with tiny drifting marine snow visible in neutral external documentary fill, completely featureless black water beyond and at the upper edge, photoreal painterly, vertical composition"
+     "image_prompt": "Deep underwater volcanic cavern one kilometre below an ancient ocean. A monumental rugged basalt arch curves across the upper left above a broad jagged rock ridge in the foreground. Layered charcoal stone with subtle rusty mineral veins and crisp fissures fills most of the tall composition. A small irregular opening reveals pitch black deep water. Soft neutral external documentary fill reveals the nearby textures. Suspended white marine snow, majestic geological scale, dramatic fine art geological photography, photoreal painterly, vertical composition"
     },
     {
      "n": 7,

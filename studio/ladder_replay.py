@@ -32,6 +32,47 @@ def load(path, expected_sha=None):
     return data
 
 
+def local_generation(folder, row, job, model, size, key):
+    """Keep local GPU production honest: exact raw pixels, settings, weights and grade; current QA still runs."""
+    from PIL import Image
+    from . import ladder_images, sdcpp
+
+    binding = row["generation"]
+    def checked(spec):
+        path = (folder / spec["file"]).resolve()
+        if not path.is_relative_to(folder) or not path.is_file() or digest(path) != spec.get("sha256"):
+            raise ValueError("corrupt or unsafe local generation input")
+        return path
+    path = checked(binding)
+    if path.stat().st_size > 1_000_000:
+        raise ValueError("oversized local generation receipt")
+    proof = json.loads(path.read_text())
+    cand = sdcpp.CANDIDATES[model]
+    settings = {"model": model, "prompt": job["prompt"], "width": size[0], "height": size[1],
+                "steps": cand.steps, "cfg": cand.cfg, "sampler": cand.sampler,
+                "seed": ladder_images._seed(key, job["id"], row["take"])}
+    if proof.get("schema") != 1 or proof.get("origin") != "local-stable-diffusion.cpp" \
+            or proof.get("settings") != settings or proof.get("binary_tag") != sdcpp.SD_TAG \
+            or not re.fullmatch(r"[0-9a-f]{40}", proof.get("source_sha", "")):
+        raise ValueError("local generation settings or source differ from this production")
+    weights = proof.get("weights", [])
+    if len(weights) != len(cand.weights) or any(
+            w.get("repo") != expected.repo or w.get("file") != expected.file
+            or not re.fullmatch(r"[0-9a-f]{64}", w.get("sha256", ""))
+            for w, expected in zip(weights, cand.weights)):
+        raise ValueError("local generation lacks exact model weight provenance")
+    with Image.open(checked(proof["raw"])) as raw:
+        if raw.size != size:
+            raise ValueError("local raw image dimensions differ from production")
+        graded, exposure = ladder_images.expose(raw.convert("RGB"), sum(job["luma"]) / 2)
+    with Image.open(checked(row)) as actual:
+        if actual.convert("RGB").tobytes() != graded.tobytes() or exposure != row.get("exposure"):
+            raise ValueError("local image or exposure differs from its reproducible raw grade")
+    return {"kind": proof["origin"], "receipt_sha256": binding["sha256"],
+            "source_sha": proof["source_sha"], "settings": settings, "weights": weights,
+            "binary_tag": proof["binary_tag"], "raw_sha256": proof["raw"]["sha256"]}
+
+
 def candidates(replay, job, model, size):
     """A changed prompt/model invalidates reuse; missing/corrupt matching inputs stop the repair."""
     if not replay:
@@ -47,10 +88,13 @@ def candidates(replay, job, model, size):
         path = (folder / row["file"]).resolve()
         if not path.is_relative_to(folder) or not path.is_file() or digest(path) != row.get("sha256"):
             raise ValueError(f"corrupt or unsafe replay input for {job['id']}")
-        if type(row.get("artifact_id")) is not int or row["artifact_id"] <= 0 \
-                or type(row.get("take")) is not int or not 0 <= row["take"] < 4 \
+        if type(row.get("take")) is not int or not 0 <= row["take"] < 4 \
                 or not all(k in row.get("exposure", {}) for k in ("raw_p99", "spread")):
-            raise ValueError("replay image lacks original take, artifact or exposure provenance")
+            raise ValueError("replay image lacks original take or exposure provenance")
+        local = local_generation(folder, row, job, model, size, replay["source"]["key"]) \
+            if row.get("generation") else None
+        if not local and (type(row.get("artifact_id")) is not int or row["artifact_id"] <= 0):
+            raise ValueError("replay image lacks original artifact provenance")
         if row["take"] in seen_takes or row["sha256"] in seen_hashes:
             raise ValueError("replay inputs must be distinct original takes and images")
         seen_takes.add(row["take"])
@@ -59,11 +103,15 @@ def candidates(replay, job, model, size):
             if src.size != size:
                 raise ValueError("replay image dimensions differ from the production model")
             img = src.convert("RGB")
-        provenance = {k: row[k] for k in ("file", "sha256", "artifact_id", "take")}
+        provenance = {k: row[k] for k in ("file", "sha256", "take")}
+        if local:
+            provenance["generation"] = row["generation"]
+        else:
+            provenance["artifact_id"] = row["artifact_id"]
         provenance["source_image"] = row.get("source_image", job["id"])
         if provenance["source_image"] not in ladder.IMAGE_IDS:
             raise ValueError("replay input has an unknown original image slot")
-        provenance["source"] = replay["source"]
+        provenance["source"] = local or replay["source"]
         found.append((img, row["exposure"], row["take"], provenance))
     return found
 
@@ -76,6 +124,18 @@ def exhausted(replay, job, model, key, take_limit):
     """
     if not replay or replay["source"]["key"] != key:
         return False
+    local_rows = replay.get("local_attempts", {}).get(job["id"])
+    if local_rows:
+        from . import sdcpp
+
+        if len(local_rows) != take_limit or sorted(r.get("take", -1) for r in local_rows) != list(range(take_limit)):
+            raise ValueError("local attempt history does not prove every allowed deterministic take")
+        cand = sdcpp.CANDIDATES[model]
+        for attempt in local_rows:
+            if attempt.get("model") != model or attempt.get("prompt") != job["prompt"]:
+                raise ValueError("local attempt history differs from the current painter job")
+            local_generation(replay["_folder"].resolve(), attempt, job, model, (cand.height, cand.width), key)
+        return True
     row = replay.get("completed_images", {}).get(job["id"])
     if not row or row.get("prompt") != job["prompt"] or row.get("model") != model:
         return False
