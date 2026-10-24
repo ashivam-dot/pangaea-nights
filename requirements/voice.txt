@@ -1,4 +1,7 @@
 kokoro>=0.9.4,<1
 misaki[en]>=0.9.4,<1
+# preshed 3.0.14 makes spaCy's tokenizer deserialization overflow on Python 3.12.
+# Reproduced with the same model; 3.0.13 restores loading without changing narration.
+preshed==3.0.13
 faster-whisper>=1.1,<2
 librosa>=0.10,<1.1
