@@ -648,6 +648,17 @@
     ],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-24T20:47:01Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "how_deep-01",
+    "run": "40124993101",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [
