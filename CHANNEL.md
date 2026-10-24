@@ -82,6 +82,9 @@ transcripts, captions, thumbnails and media are never downloaded, stored or sent
   premise, novelty, rotation, opening-image similarity and the live upload marker before release. Original gates
   remain mandatory. Uploads are private while processing; owner-visible channel, audience and schedule readback
   must match before a result counts. Saved intent prevents uncertain requests from creating duplicate uploads.
+  Recovery also requires the reviewed MP4 SHA-256 binding alongside the existing premise marker; unbound older
+  uploads remain held. Processed upload status must be confirmed before publication. Provider/network outages
+  retry with backoff, while a negative editorial verdict persists for unchanged media.
   A durable batch reservation prevents the ordinary Shorts producer from racing the same calendar. Sleep episodes
   are separate. Workflow activation still follows the owner's workflow-edit rule; code is not a public result.
 

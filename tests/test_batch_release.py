@@ -161,4 +161,3 @@ def test_a_github_timeout_keeps_dispatch_ambiguity_retryable(monkeypatch):
     monkeypatch.setattr(batch.subprocess, "run", fail)
     with pytest.raises(batch.TransientOperation, match="reconcile"):
         batch.gh("api", "repos/owner/repo/actions/workflows/run.yml/dispatches", body={})
-
