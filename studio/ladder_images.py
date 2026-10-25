@@ -97,7 +97,10 @@ def soft_only(problems: list[str], sharpness: float) -> bool:
 
 def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DEFAULT,
              budget_s: float = 110 * 60, replay: dict | None = None) -> dict:
-    jobs = shard(ladder.image_jobs(p), k, n)
+    jobs = ladder.image_jobs(p)
+    if replay and "art_only" in replay:
+        jobs = [job for job in jobs if job["id"] in replay["art_only"]]
+    jobs = shard(jobs, k, n)
     out.mkdir(parents=True, exist_ok=True)
     report = {"shard": k, "of": n, "model": model, "premise": p["id"], "images": []}
     cand = sdcpp.CANDIDATES[model]

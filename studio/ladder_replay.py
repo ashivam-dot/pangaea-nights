@@ -31,6 +31,13 @@ def load(path, expected_sha=None):
         raise ValueError("image replay contains unknown image slots")
     if "cached_only" in data and type(data["cached_only"]) is not bool:
         raise ValueError("cached_only must be an explicit boolean")
+    if "art_only" in data:
+        slots = data["art_only"]
+        if not isinstance(slots, list) or not slots or any(type(i) is not str or i not in ladder.IMAGE_IDS
+                                                        for i in slots) or len(set(slots)) != len(slots):
+            raise ValueError("art_only must name distinct known image slots")
+        if data.get("cached_only"):
+            raise ValueError("art_only generation cannot also be cached_only")
     data["_folder"] = path.parent
     return data
 
@@ -166,7 +173,12 @@ def candidates(replay, job, model, size):
         else:
             provenance["artifact_id"] = row["artifact_id"]
         provenance["source_image"] = source_image
-        provenance["source"] = local or replay["source"]
+        origin = row.get("source", replay["source"])
+        if not isinstance(origin, dict) or type(origin.get("run_id")) is not int or origin["run_id"] <= 0 \
+                or not re.fullmatch(r"[0-9a-f]{40}", origin.get("sha", "")) \
+                or origin.get("key") != replay["source"]["key"]:
+            raise ValueError("cached image lacks its exact cloud source and seed key")
+        provenance["source"] = local or origin
         found.append((img, row["exposure"], row["take"], provenance))
     return found
 

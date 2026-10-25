@@ -40,6 +40,72 @@ def verdict(reasons=None):
     return qa.Verdict(not reasons, reasons or [], 0.0, 0.0, 0.0, 0.4, 6.0, 120.0, 50.0, 12.0)
 
 
+@pytest.mark.parametrize('slots', [[], ['o4', 'o4'], ['unknown'], [True], 'o4'])
+def test_art_only_slots_are_typed_and_bounded(cached, slots):
+    path, _, _, _ = cached
+    data = json.loads(path.read_text())
+    data['art_only'] = slots
+    path.write_text(json.dumps(data))
+    with pytest.raises(ValueError, match='distinct known'):
+        replay.load('.github/replay/repair.json')
+
+
+def test_art_only_paints_only_requested_slots(cached, tmp_path, monkeypatch):
+    _, job, data, _ = cached
+    data['art_only'] = ['o3']
+    monkeypatch.setattr(li.ladder, 'image_jobs', lambda p: [job, {**job, 'id': 'o4'}])
+    monkeypatch.setattr(qa, 'review', lambda *a: verdict())
+    monkeypatch.setattr(li.sdcpp, 'Server', lambda *a: pytest.fail('unrequested beat loaded a painter'))
+    report = li.generate({'id': data['premise']}, 'original-key', tmp_path/'art', 0, 1,
+                         model='test', replay=data)
+    assert [entry['id'] for entry in report['images']] == ['o3']
+
+
+def test_cloud_repair_keeps_actual_source_instead_of_original_run(cached):
+    _, job, data, _ = cached
+    origin = {'run_id': 456, 'sha': 'b' * 40, 'key': 'original-key'}
+    data['images']['o3'][0]['source'] = origin
+    assert replay.candidates(data, job, 'test', (8, 8))[0][3]['source'] == origin
+    for broken in ({**origin, 'run_id': True}, {**origin, 'sha': 'wrong'}, {**origin, 'key': 'other'}):
+        data['images']['o3'][0]['source'] = broken
+        with pytest.raises(ValueError, match='exact cloud source'):
+            replay.candidates(data, job, 'test', (8, 8))
+
+
+def test_art_only_collects_no_video_and_cannot_publish(cached, tmp_path, monkeypatch):
+    from studio import batch_release, shorts_ladder, youtube
+
+    path, _, data, _ = cached
+    raw = json.loads(path.read_text()); raw['art_only'] = ['o3']; path.write_text(json.dumps(raw))
+    monkeypatch.setattr(config, 'WORK', tmp_path/'work')
+    plan = {'mode': 'dry', 'premise': {'id': data['premise']},
+            'image_replay': {'path': '.github/replay/repair.json', 'sha256': replay.digest(path)}}
+    ladder_cli._save('A', 'plan.json', plan)
+    ladder_cli._save('A', 'images/shard-00.json', {'images': [{'id': 'o3', 'ok': True,
+                                                            'kept': [{'plate': 'o3.jpg'}]}]})
+    image = ladder_cli._dir('A')/'images/o3.png'
+    Image.new('RGB', (8, 8), 'red').save(image)
+    monkeypatch.setattr(shorts_ladder, 'render', lambda *a: pytest.fail('art-only rendered a video'))
+    monkeypatch.setattr(youtube, 'client', lambda *a: pytest.fail('art-only accessed YouTube'))
+    ladder_cli.render(Namespace(slot='A'))
+    gates = ladder_cli._load('A', 'out/gates.json')
+    assert gates['ok'] is False and gates['art_only'] == ['o3']
+    assert not list(config.WORK.rglob('*.mp4'))
+    ladder_cli.publish(Namespace(slot='A', mode='dry'))
+    assert ladder_cli._load('A', 'out/publish.json')['published'] is False
+    for mode in ('publish', 'test'):
+        with pytest.raises(SystemExit, match='cannot publish'):
+            ladder_cli.publish(Namespace(slot='A', mode=mode))
+    with pytest.raises(ValueError, match='failed original'):
+        batch_release.validate({'premise': data['premise']}, config.WORK)
+    image.unlink()
+    with pytest.raises(ValueError, match='lacks passing'):
+        ladder_cli.render(Namespace(slot='A'))
+    plan['mode'] = 'publish'; ladder_cli._save('A', 'plan.json', plan)
+    with pytest.raises(ValueError, match='dry-run only'):
+        ladder_cli.render(Namespace(slot='A'))
+
+
 def test_cached_alternates_are_reviewed_again_without_loading_a_painter(cached, tmp_path, monkeypatch):
     _, job, data, _ = cached
     seen = []
