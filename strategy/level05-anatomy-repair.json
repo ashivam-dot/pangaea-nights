@@ -1,0 +1,206 @@
+{
+  "at": "2026-10-25T15:40:28.864995+00:00",
+  "original": {
+    "id": "level_1_8-05",
+    "era": "Permian",
+    "title": "Level 1 to 8 Pangaea Guard Beast — Who Watches Your Night? 🌙",
+    "banner": "Which Permian beast guards your night?",
+    "hook_vo": "Pangaea, after dark. Pick something to stand guard.",
+    "art_direction": "Rust-red floodplain under a dusty violet sky, low 24mm lens in dry grass, one glowing ember of a lightning fire.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Burrowing Diictodon",
+        "vo": "Level one: a tiny grazer at its burrow.",
+        "danger": 1,
+        "image_prompt": "A small tusked Diictodon peeking from a spiral burrow in red mud, whiskered snout, glow of a distant ember lighting its face, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 2,
+        "label": "Tree-climbing Suminia",
+        "vo": "Level two: Suminia, clinging to a branch.",
+        "danger": 2,
+        "image_prompt": "A slender Suminia gripping a conifer branch with long toes and a curling tail, violet sky behind, an ember glow from below, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 3,
+        "label": "Tusked Dicynodon",
+        "vo": "Level three: a beak and two great tusks.",
+        "danger": 3,
+        "image_prompt": "A stout Dicynodon grazing horsetails at night, horny beak and two short tusks, ember light on its wrinkled hide, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 4,
+        "label": "Bumpy Scutosaurus",
+        "vo": "Level four: a walking tank of bony bumps.",
+        "danger": 4,
+        "image_prompt": "A heavy Scutosaurus standing in dry grass, broad body studded with bony knobs and a spiky cheek frill, warm ember glow along one flank, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 5,
+        "label": "Moschorhinus",
+        "vo": "Level five: short snout, with a big bite.",
+        "danger": 5,
+        "image_prompt": "A muscular Moschorhinus therocephalian prowling at the edge of a riverbank, blunt powerful snout, ember light in its eyes, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 6,
+        "label": "Rubidgea",
+        "vo": "Level six: a massive skull, built for biting.",
+        "danger": 6,
+        "image_prompt": "A Rubidgea gorgonopsian with a massive broad skull and long sabre canines standing on a red ridge, ember glow, violet dust in the air, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 7,
+        "label": "Young Inostrancevia",
+        "vo": "Level seven: a young hunter, still learning.",
+        "danger": 7,
+        "image_prompt": "A young Inostrancevia stalking through dry grass, lean body, long sabre canines showing, ember-lit from one side, low lens, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 8,
+        "label": "Adult Inostrancevia",
+        "vo": "Level eight: the adult hunter with huge canines.",
+        "danger": 8,
+        "image_prompt": "A full-grown Inostrancevia standing over the lens in the dark, huge sabre canines bared, ember glow under its jaw, rust-red dust swirling, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      }
+    ],
+    "answer_n": 8,
+    "verdict_vo": "Real answer: number 8, because this animal's longest canines could reach 15 centimetres. Probably your best bet for keeping everything else away.",
+    "fact": {
+      "text": "Inostrancevia, a gorgonopsian, had large canines, the longest of which could reach 15 cm.",
+      "source_sentence": "It also has very advanced dentition, possessing large canines, the longest of which can reach 15 cm (5.9 in) and which may have been used to shear the skin of prey.",
+      "wiki_title": "Inostrancevia",
+      "wiki_revid": 1381178944
+    },
+    "description": "Long before dinosaurs, the top predators on Pangaea were sabre-toothed relatives of mammals. Eight Permian animals, from a shy burrower to the biggest gorgonopsian of all, and which one would really keep the night quiet.",
+    "tags": [
+      "Pangaea",
+      "Permian",
+      "gorgonopsian",
+      "Inostrancevia",
+      "before the dinosaurs",
+      "prehistoric life",
+      "deep time",
+      "paleontology"
+    ],
+    "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent",
+    "series": "level_1_8"
+  },
+  "replacement": {
+    "id": "level_1_8-05",
+    "era": "Permian",
+    "title": "Level 1 to 8 Pangaea Guard Beast — Who Watches Your Night? 🌙",
+    "banner": "Which Permian beast guards your night?",
+    "hook_vo": "Pangaea, after dark. Pick something to stand guard.",
+    "art_direction": "Rust-red floodplain under a dusty violet sky, low 24mm lens in dry grass, one glowing ember of a lightning fire.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Burrowing Diictodon",
+        "vo": "Level one: a tiny grazer at its burrow.",
+        "danger": 1,
+        "image_prompt": "Close side profile of one small male Diictodon sitting at the entrance of a burrow in red earth. Its compact barrel-shaped body is supported by four short sturdy legs. The broad short head has a smooth pebbled leathery surface, small ear openings and a blunt curved horny beak. Two short pale canine teeth point downward from the upper jaw, one on each side behind the beak. The near cheek and near tusk are clearly visible in side profile. A short tapering tail rests on the earth behind its body. The animal looks out of the burrow, lit by soft moonlight; a single distant ember adds a restrained orange reflection. Rust-red Permian floodplain under a dusty violet night sky, neutral soft moon fill and a restrained warm ember accent, photoreal painterly natural-history reconstruction, vertical composition.",
+        "art_direction": "Close side profile of a small smooth-skinned beaked Diictodon with a downward upper-jaw tusk at a red-earth burrow under the violet Permian sky"
+      },
+      {
+        "n": 2,
+        "label": "Tree-climbing Suminia",
+        "vo": "Level two: Suminia, clinging to a branch.",
+        "danger": 2,
+        "image_prompt": "Complete side view of one small Suminia crouching horizontally on TOP of a thick conifer branch. Its entire compact slender body, elongated neck, broad short blunt head and long tapering curling tail are visible. All four slender legs bend naturally at their joints, and all four feet grip the upper bark with long clearly separated toes. Its belly rests just above the branch and its head faces left along the branch. The long tail curves along the branch behind it. Small rounded scales, natural muted grey-brown skin, a large dark eye, a clearly closed mouth. The branch crosses the lower middle of the frame, with open violet sky behind and a warm ember reflection on the bark. Rust-red Permian floodplain under a dusty violet night sky, neutral soft moon fill and a restrained warm ember accent, photoreal painterly natural-history reconstruction, vertical composition.",
+        "art_direction": "A small four-legged Suminia crouches horizontally on top of a conifer branch with every foot gripping the bark and its long tail visible against the violet sky"
+      },
+      {
+        "n": 3,
+        "label": "Tusked Dicynodon",
+        "vo": "Level three: a beak and two great tusks.",
+        "danger": 3,
+        "image_prompt": "One living Dicynodon in clear near-side profile, all four sturdy legs planted naturally on red earth. Its low broad barrel-shaped body has natural grey-brown wrinkled leathery skin and a very short tail. Its short broad head has a prominent smooth curved horny beak at the front. One long ivory canine tusk descends vertically from EACH SIDE of the upper jaw just behind the beak. The near cheek and downward tusk are fully visible. A smooth low rounded nasal ridge connects the beak to the forehead. It grazes sparse horsetail plants with its head held forward, lit by neutral moon fill and a restrained warm light on the near flank. Rust-red Permian floodplain under a dusty violet night sky, neutral soft moon fill and a restrained warm ember accent, photoreal painterly natural-history reconstruction, vertical composition.",
+        "art_direction": "A low quadrupedal Dicynodon in near-side profile shows its curved horny beak and downward upper-jaw canine tusk while grazing sparse horsetails"
+      },
+      {
+        "n": 4,
+        "label": "Bumpy Scutosaurus",
+        "vo": "Level four: a walking tank of bony bumps.",
+        "danger": 4,
+        "image_prompt": "One living Scutosaurus in a complete low side profile, standing on ALL FOUR short thick legs with its broad belly close to the ground. A heavy oval barrel-shaped torso, short neck, small broad blunt head and short stout tail form one continuous horizontal body silhouette. The head is much smaller than the torso. Low rounded bony knobs stud the skin of its broad back and flanks. Short blunt bony projections border the sides of the cheeks. Its small closed mouth has a blunt rounded muzzle. All four similarly sized weight-bearing feet are planted on the earth; the front legs and hind legs are equally sturdy. Natural grey-brown pebbled skin with a soft amber edge light. Rust-red Permian floodplain under a dusty violet night sky, neutral soft moon fill and a restrained warm ember accent, photoreal painterly natural-history reconstruction, vertical composition.",
+        "art_direction": "Complete side profile of a broad low Scutosaurus with a small blunt head, bony skin knobs, short tail and four sturdy weight-bearing legs"
+      },
+      {
+        "n": 5,
+        "label": "Moschorhinus",
+        "vo": "Level five: short snout, with a big bite.",
+        "danger": 5,
+        "image_prompt": "A muscular Moschorhinus therocephalian prowling at the edge of a riverbank, blunt powerful snout, ember light in its eyes, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 6,
+        "label": "Rubidgea",
+        "vo": "Level six: a massive skull, built for biting.",
+        "danger": 6,
+        "image_prompt": "A Rubidgea gorgonopsian with a massive broad skull and long sabre canines standing on a red ridge, ember glow, violet dust in the air, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 7,
+        "label": "Young Inostrancevia",
+        "vo": "Level seven: a young hunter, still learning.",
+        "danger": 7,
+        "image_prompt": "A young Inostrancevia stalking through dry grass, lean body, long sabre canines showing, ember-lit from one side, low lens, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 8,
+        "label": "Adult Inostrancevia",
+        "vo": "Level eight: the adult hunter with huge canines.",
+        "danger": 8,
+        "image_prompt": "A full-grown Inostrancevia standing over the lens in the dark, huge sabre canines bared, ember glow under its jaw, rust-red dust swirling, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      }
+    ],
+    "answer_n": 8,
+    "verdict_vo": "Real answer: number 8, because this animal's longest canines could reach 15 centimetres. Probably your best bet for keeping everything else away.",
+    "fact": {
+      "text": "Inostrancevia, a gorgonopsian, had large canines, the longest of which could reach 15 cm.",
+      "source_sentence": "It also has very advanced dentition, possessing large canines, the longest of which can reach 15 cm (5.9 in) and which may have been used to shear the skin of prey.",
+      "wiki_title": "Inostrancevia",
+      "wiki_revid": 1381178944
+    },
+    "description": "Long before dinosaurs, the top predators on Pangaea were sabre-toothed relatives of mammals. Eight Permian animals, from a shy burrower to the biggest gorgonopsian of all, and which one would really keep the night quiet.",
+    "tags": [
+      "Pangaea",
+      "Permian",
+      "gorgonopsian",
+      "Inostrancevia",
+      "before the dinosaurs",
+      "prehistoric life",
+      "deep time",
+      "paleontology"
+    ],
+    "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent",
+    "series": "level_1_8"
+  },
+  "fields_changed": "options1-4 image_prompt/art_direction only",
+  "basis": "Direct review refused rodent, humanoid, rhinoceros and theropod substitutions. Describe supported anatomy and complete side profiles explicitly. These remain illustrative reconstructions; soft-tissue colour remains illustrative.",
+  "sources": {
+    "Diictodon": {
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1378025201",
+      "revision": 1378025201
+    },
+    "Suminia": {
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381240814",
+      "revision": 1381240814
+    },
+    "Dicynodon": {
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1371074962",
+      "revision": 1371074962
+    },
+    "Scutosaurus": {
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381848314",
+      "revision": 1381848314
+    }
+  },
+  "speech_changed": false,
+  "accepted_siblings_changed": false,
+  "release_approval": false,
+  "remaining": "Every picture, pairwise, narration, render and audiovisual check; original refusals remain active.",
+  "image_reference_status": "CC0 downloads currently rate limited; no unverified image is a generation input."
+}
