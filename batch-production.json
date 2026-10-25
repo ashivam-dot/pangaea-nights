@@ -644,7 +644,7 @@
         "premise": "survive_night-01",
         "replay": ".github/replay/survive-night-exact-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 4,
       "source_sha": "a7b2287537edda0cab77564e45980a64fa2408d3",
       "before_ids": [
@@ -678,7 +678,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T01:09:16+00:00",
-      "cloud_status": "completed",
+      "cloud_status": "queued",
       "editorial_holds": [
         {
           "id": "direct-duckbill-anatomy-40143333505",
@@ -906,7 +906,8 @@
         40148319091,
         40148607387
       ],
-      "repair_reason": "Keep all exact reviewed image inputs and accepted ordering. Use ordinary spoken compounds tree line and mud flat after all four unchanged base.en beam1 voice trials scored zero WER; no answer, fact, voice identity, or gate changes."
+      "repair_reason": "Keep all exact reviewed image inputs and accepted ordering. Use ordinary spoken compounds tree line and mud flat after all four unchanged base.en beam1 voice trials scored zero WER; no answer, fact, voice identity, or gate changes.",
+      "run_id": 40149509321
     },
     {
       "repo": "pangaea-nights",
@@ -1355,5 +1356,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:09:16+00:00"
+  "updated_at": "2026-10-25T01:09:21+00:00"
 }
