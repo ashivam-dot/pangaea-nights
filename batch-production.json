@@ -5294,7 +5294,23 @@
       "run_id": 40207430412,
       "cloud_status": "completed",
       "problems": [
-        "production run failure"
+        "Native inspection refuses the spider-like small eurypterids, bright overhead light in the blind silt-floor choice, toothed mouthlike burrows and robotic upright Pterygotus. Replace only these visual inputs and failed unrendered depth scenes; preserve all narration, usable shoreline imagery, original refusals and all final gates."
+      ],
+      "editorial_holds": [
+        {
+          "id": "howdeep05-anatomy-and-dark-floor-held",
+          "run_id": 40207430412,
+          "observed_at": "2026-10-25T18:57:00+00:00",
+          "reason": "Native inspection refuses the spider-like small eurypterids, bright overhead light in the blind silt-floor choice, toothed mouthlike burrows and robotic upright Pterygotus. Replace only these visual inputs and failed unrendered depth scenes; preserve all narration, usable shoreline imagery, original refusals and all final gates.",
+          "evidence": {
+            "ladder-img-A-1/o2.png": "867ae17cc55f2fcf07fd84f3ce9b3fb63f0acfd37656ea354dce5162b2fb5cf1",
+            "ladder-img-A-1/o2-alt1.png": "76f613ef108b36b8e6131f122ad5ca1241ce35f9d6db9c8829253d0e8072cf4f",
+            "ladder-img-A-5/o6.png": "d42bca85352d180839b2b3cc21ce50b0f4313d4544acc8042455785baf0b2153",
+            "ladder-img-A-6/o7.png": "11ae3bfe276ba2d1b424b04f36586cb5951ed7b064736790bd61ee2d9dabe342",
+            "ladder-img-A-6/o7-alt1.png": "1829250bdb71aa53068bfb51e8e1a5e60e819c5ab8574edf7a101ffbb87718b6",
+            "ladder-img-A-7/o8.png": "3b0a5686c4bac38ae3e46e5c9be299623e2ff020daa3f271dd4264e7cbb1ef73"
+          }
+        }
       ]
     },
     {
@@ -5765,7 +5781,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry how_deep-05: production run failure",
+  "halted": "Repair held entry how_deep-05: Native inspection refuses the spider-like small eurypterids, bright overhead light in the blind silt-floor choice, toothed mouthlike burrows and robotic upright Pterygotus. Replace only these visual inputs and failed unrendered depth scenes; preserve all narration, usable shoreline imagery, original refusals and all final gates.",
   "complete": false,
   "health": {
     "public": 3,
@@ -5773,5 +5789,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T18:56:56+00:00"
+  "updated_at": "2026-10-25T18:57:00+00:00"
 }
