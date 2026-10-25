@@ -595,6 +595,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "countdown-02",
+   "series": "countdown",
+   "era": "Cretaceous",
+   "slot": "C",
+   "video_id": "Lk50ASUJOdc",
+   "url": "https://www.youtube.com/shorts/Lk50ASUJOdc",
+   "title": "Asteroid Tsunami Heading for the Coast — Where Do You Run? 🌊",
+   "publish_at": "2026-10-25T19:30:00Z",
+   "uploaded_at": "2026-10-25T02:14:50Z",
+   "script": "The asteroid just hit the sea. The wave is coming. Shelter inside a small coastal cave. Climb the tallest dune on the beach. Climb high into a swamp tree. Ride a giant sea turtle. Swim far out into the open sea. Run inland for the faraway hills. Sleep out on the wide tidal flats. Go toward the glowing impact cloud. Real answer: number 6, because waves exceeded 100 metres. High ground far inland probably offers a chance. Comment your number.",
+   "frame0": "DKTWJi0i8aLTpKwXGx1+JxMg0yGHKrycxCuspZkdnZGfqPUh1ilGqqekCSd+BfAfWyaTKL0qNCGzqccgN6R4KCynQ6klIfkdxqQDKiocQDCWjRIrb6IEpHugqKh3JpCg06OtKS0pXCS+KHCr9pm1qUSo0yKXKA8j1qhAJe2mxqLRqKyfCR7DLHYi5aFXqxwjOh08pSwiWayAJiOkiKdzp1yqK6QOJA8YMCs2otOq/yGVpnikeyVRmAa5iaeIqM8o5KQzKGekPLFaIGKpeqkBKZYmnik5IkcohqShpMcimKSHJFkdFKZkntqo8yWJIPQqriNPmJMo5qA6pVIhcyddGUqo648wnCaVX6aQLTCn1qVeoHiqJCgHpnsj5x/pCPGkViqTobWkUafPInYpfyTRH9yayp1EqWap6RnSpUSmfibinxuq8SDJJpkc4Kdep2osaaT0CYokt6IPoP6ZdKVbIHatS56grrYo8St4oyuqHSeZq+8oPSgyKNyo/6apJRarS6SKqmkhjCIMLK6iKyyLoAOpYajuIYulNiFmqjGVGBkQmj4qK6oqLcykPyD1m+0gpyMCLDYk4haRKbKlKaV5oF6hq5cgHtemnyYLJRGpRqYGHgco8icXrm8lIyECqIudC6atHtAmhSJOGOinAyqOoCEskCHmnIKdQKh9Jxyojih7iiUe/S7KqFWojCUAIpQqWiQ6q8AhoClRpEOgLZ79n10owalAop0ogiInmuYdIioCLHQnw6fbIvYpjZe2rbGp1xxrHwykBKD8KiigVq3xqP4dsSXVnR2laSj5mJaiIamTqMmk6KbnozMtrCQnpucjjC1gnmopfiA+nD8sFKTAFfsumS8+JDelsyIXI68ofidgJcGWtCRrqp4k96XFohOoGCjkoHkrKakeoC6oSB11JscbBZl3qxgpMaBXok6mF6QNpRas5SgZrPWN6Ku/nj2prCeMpmkrUCjLrLymriaYrD6oZYiyJuwfByi8opigwam1KiggYx90Kh0gc6WuIaepLSSbHw0nMqJUqAQsJSAzKbEfciw4pnWs+x3ZHZ6s8agBk+CmciRXqYKg1KrCl0qknin2ICUkZKWrIh+iXSXgnJQkMSFIp0Kcs6RvqF0oDKs5nM8iypVXLGOlpKB9j7giba0XHl6V9SP1pyOde6R3otwmSamMpToftSAXHOUomKGSmw+nWStElakhdCJTJi8nGCpGrmunEKp2JcSkUagqq6Mj8ihFJJIeE6R3qWwg0JgcqyymIyiQocWkQCbFqfmgt6h3rC0kWCX3pMwhaiOyqeAjzqn8I+OiXiQUnMMmBiMDJt4lw6U1qGwtc6RXHJCbdyIuqaufPCcCps8oGQgNmQ==",
+   "related": "https://www.youtube.com/watch?v=Y_zpVf53Hwc",
+   "run": "40152622139",
+   "checkpoints": {},
+   "av_review_sha256": "389cc197d2e9a09f1f03f2107e0aefb87ce5bce4ee064714cfdb3dce3f81f235",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-25T19:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
