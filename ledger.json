@@ -904,6 +904,24 @@
      "dry run: nothing is uploaded",
      "gates failed: wer_line_max: {\"value\": 0.4, \"floor\": 0.0, \"ceiling\": 0.25, \"line\": \"o7\"}"
     ]
+   },
+   {
+    "at": "2026-10-25T01:07:58Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "countdown-02",
+    "run": "40147415761",
+    "ok": false,
+    "failures": [
+     "timeline: {\"problems\": [\"total 45.45s is outside 30-45s\"]}",
+     "duration_s: {\"value\": 45.4667, \"floor\": 30.0, \"ceiling\": 45.0}",
+     "wer_line_max: {\"value\": 0.429, \"floor\": 0.0, \"ceiling\": 0.25, \"line\": \"o4\"}"
+    ],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded",
+     "gates failed: timeline: {\"problems\": [\"total 45.45s is outside 30-45s\"]}; duration_s: {\"value\": 45.4667, \"floor\": 30.0, \"ceiling\": 45.0}; wer_line_max: {\"value\": 0.429, \"floor\": 0.0, \"ceiling\": 0.25, \"line\": \"o4\"}"
+    ]
    }
   ],
   "alerts": [
