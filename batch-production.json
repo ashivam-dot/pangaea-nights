@@ -4845,7 +4845,7 @@
       ],
       "submitted_at": "2026-10-25T14:38:19+00:00",
       "run_id": 40203173904,
-      "cloud_status": "in_progress"
+      "cloud_status": "completed"
     },
     {
       "repo": "pangaea-nights",
@@ -4858,7 +4858,7 @@
         "slot": "A",
         "premise": "how_deep-05"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 1,
       "source_sha": "053dea9627a39590737d991ea13b3d5e12a18651",
       "before_ids": [
@@ -4942,7 +4942,9 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T14:58:53.346597+00:00"
+      "submitted_at": "2026-10-25T14:58:53.346597+00:00",
+      "run_id": 40204761241,
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -5147,7 +5149,7 @@
     "public": 3,
     "scheduled": 11,
     "held": 1,
-    "mode": "publish"
+    "mode": "review"
   },
-  "updated_at": "2026-10-25T15:00:20+00:00"
+  "updated_at": "2026-10-25T15:00:25+00:00"
 }
