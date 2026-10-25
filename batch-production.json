@@ -1302,7 +1302,7 @@
         "premise": "how_deep-02",
         "replay": ".github/replay/how-deep-charnia-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 3,
       "source_sha": "ec1005bf9841cf9c54a1e7b345cfb30a86f9a343",
       "before_ids": [
@@ -1343,7 +1343,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T03:03:54+00:00",
-      "cloud_status": "completed",
+      "cloud_status": "queued",
       "editorial_holds": [
         {
           "id": "direct-frond-morphology-40151287146",
@@ -1432,7 +1432,8 @@
         40151287146,
         40154442347
       ],
-      "repair_reason": "Repair only the storm scene after exact combined-image preflight found o2/o3 similarity 0.918 above 0.90. All nine exact cached inputs now pass current picture and pair selection (max 0.876); narration unchanged. Explicit cache-only production avoids unused spare generation, while full cloud image, voice, render and AV gates remain mandatory."
+      "repair_reason": "Repair only the storm scene after exact combined-image preflight found o2/o3 similarity 0.918 above 0.90. All nine exact cached inputs now pass current picture and pair selection (max 0.876); narration unchanged. Explicit cache-only production avoids unused spare generation, while full cloud image, voice, render and AV gates remain mandatory.",
+      "run_id": 40156818584
     },
     {
       "repo": "pangaea-nights",
@@ -1819,7 +1820,7 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:03:54+00:00",
+  "updated_at": "2026-10-25T03:03:59+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
