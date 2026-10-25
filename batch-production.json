@@ -5118,7 +5118,55 @@
       ],
       "submitted_at": "2026-10-25T14:38:19+00:00",
       "run_id": 40203173904,
-      "cloud_status": "completed"
+      "cloud_status": "completed",
+      "review": {
+        "schema": 1,
+        "model": "gemini-3-flash-preview",
+        "duration": 42.966667,
+        "video_sha256": "40113b56cc450d7004d9eb22122fbe94105717c83ef48f7543566d609ed177c7",
+        "brief_sha256": "74457f0c0a16cc4b6459a00569e5154d97cc1a37a44bbebaa1ab0ad881260292",
+        "review_video_sha256": "f46dab21bfcd86bd3e063d3d80dc7e2455ac0dd90493156efaa85420a65310bf",
+        "review_audio_sha256": "dc2a1cb28ef973ed198f89a459cae23a7efde9b3684b845cc18dd849480a232a",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "Pangaea's tropics are too hot to live in.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.5,
+              "seen": "Arid riverbank, conifers, red soil.",
+              "heard": "Rest on a shady tropical riverbank."
+            },
+            {
+              "part": "middle",
+              "seconds": 22.0,
+              "seen": "Steaming orange mineral spring.",
+              "heard": "Settle by a volcanic hot spring."
+            },
+            {
+              "part": "ending",
+              "seconds": 38.0,
+              "seen": "Red ridge, ferns, twilight.",
+              "heard": "Your best bet is far south."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -5540,5 +5588,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T16:06:12+00:00"
+  "updated_at": "2026-10-25T16:07:41+00:00"
 }
