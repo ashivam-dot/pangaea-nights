@@ -3965,11 +3965,22 @@
             "ladder-img-A-7/o8-alt1.png": "c42fd1d5a2b5a1152814c4b6bea328edefb9f9e0466d0a6122518efa25619658",
             "ladder-img-A-4/o5-alt1.png": "247e1e3e4c776acdaf24decd8e53aaa86dfe273ddcea3801bce083e8a74583e7"
           }
+        },
+        {
+          "id": "direct-level04-tail-pincer",
+          "run_id": 40177381015,
+          "observed_at": "2026-10-25T09:31:23+00:00",
+          "reason": "Both scorpion paintings have a large two-jawed claw at the end of the tail instead of a pointed terminal stinger. Preserve every spoken line and useful sibling; replace only this option with a clearly single-sting tail. The closing deliberately reprises the reviewed winning Arthropleura. All current picture, narration, render and audiovisual gates remain required.",
+          "evidence": {
+            "ladder-img-A-6/o7.png": "33a658c438546e0a4c1d7e45d3e4b8f27c335f9937dcbf37c618eddd8d3cf1a6",
+            "ladder-img-A-6/o7-alt1.png": "bd5906b7386ea899d574bacbf4343d29ed758ab28996073c0da62b6330d82956"
+          }
         }
       ],
       "problems": [
         "Both harvestman paintings show six main walking legs rather than eight. Preserve every spoken line and useful siblings; repair only this arachnid picture with eight separated legs on one compact body. The springtail alternate is also excluded in the reviewed cached repair. All current picture, narration, render and audiovisual gates remain required.",
-        "The Meganeura paintings depict broad-winged moth/butterfly forms with short abdomens, and the Eogyrinus paintings depict armored modern crocodiles rather than an elongated amphibian. Exclude these exact bytes and the ambiguous mayfly alternate; preserve all speech and useful siblings. Replace only options6/8, retaining every normal picture, narration, render and audiovisual gate."
+        "The Meganeura paintings depict broad-winged moth/butterfly forms with short abdomens, and the Eogyrinus paintings depict armored modern crocodiles rather than an elongated amphibian. Exclude these exact bytes and the ambiguous mayfly alternate; preserve all speech and useful siblings. Replace only options6/8, retaining every normal picture, narration, render and audiovisual gate.",
+        "Both scorpion paintings have a large two-jawed claw at the end of the tail instead of a pointed terminal stinger. Preserve every spoken line and useful sibling; replace only this option with a clearly single-sting tail. The closing deliberately reprises the reviewed winning Arthropleura. All current picture, narration, render and audiovisual gates remain required."
       ]
     },
     {
@@ -4219,5 +4230,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T09:31:19+00:00"
+  "updated_at": "2026-10-25T09:31:23+00:00"
 }
