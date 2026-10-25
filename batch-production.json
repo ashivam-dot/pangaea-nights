@@ -1428,7 +1428,7 @@
         "slot": "A",
         "premise": "level_1_8-02"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "0ce08977459f4166ab72b7567cf670374e6381ad",
       "before_ids": [
@@ -1469,7 +1469,22 @@
       ],
       "submitted_at": "2026-10-25T02:30:15+00:00",
       "run_id": 40154688202,
-      "cloud_status": "in_progress"
+      "cloud_status": "in_progress",
+      "editorial_holds": [
+        {
+          "id": "actual-cloud-sea-scorpion-40154688202",
+          "run_id": 40154688202,
+          "observed_at": "2026-10-25T02:51:55+00:00",
+          "reason": "Direct inspection of both actual cloud o8 takes: both place Jaekelopterus hovering above a marsh and open-air horizon instead of gliding over a submerged delta bottom. Both have a long narrow scorpion-like tail instead of a broad flattened eurypterid telson. Scientifically misleading habitat and anatomy; exclude these exact bytes before another render. Retain useful siblings and unchanged narration.",
+          "evidence": {
+            "ladder-img-A-7/o8.png": "d20e3fd593cc1a7199de0f36505701abbdf54fe2389bf6f7fecc36c07461697f",
+            "ladder-img-A-7/o8-alt1.png": "3b2e0cb25697ab056b3fe3a0a01a3487ebc04f5d23e029a83c03662c31e49379"
+          }
+        }
+      ],
+      "problems": [
+        "Direct inspection of both actual cloud o8 takes: both place Jaekelopterus hovering above a marsh and open-air horizon instead of gliding over a submerged delta bottom. Both have a long narrow scorpion-like tail instead of a broad flattened eurypterid telson. Scientifically misleading habitat and anatomy; exclude these exact bytes before another render. Retain useful siblings and unchanged narration."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -1822,7 +1837,7 @@
       "attempts": 0
     }
   ],
-  "halted": null,
+  "halted": "Repair held entry level_1_8-02: Direct inspection of both actual cloud o8 takes: both place Jaekelopterus hovering above a marsh and open-air horizon instead of gliding over a submerged delta bottom. Both have a long narrow scorpion-like tail instead of a broad flattened eurypterid telson. Scientifically misleading habitat and anatomy; exclude these exact bytes before another render. Retain useful siblings and unchanged narration.",
   "complete": false,
   "health": {
     "public": 1,
@@ -1830,5 +1845,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T02:49:51+00:00"
+  "updated_at": "2026-10-25T02:51:55+00:00"
 }
