@@ -106,6 +106,27 @@ def test_art_only_collects_no_video_and_cannot_publish(cached, tmp_path, monkeyp
         ladder_cli.render(Namespace(slot='A'))
 
 
+def test_art_only_neither_synthesizes_nor_approves_narration(cached, tmp_path, monkeypatch):
+    from studio import ladder_voice
+
+    path, _, _, _ = cached
+    raw = json.loads(path.read_text()); raw['art_only'] = ['o3']; path.write_text(json.dumps(raw))
+    monkeypatch.setattr(config, 'WORK', tmp_path/'work')
+    plan = {'mode': 'dry', 'premise': {},
+            'image_replay': {'path': '.github/replay/repair.json', 'sha256': replay.digest(path)}}
+    ladder_cli._save('A', 'plan.json', plan)
+    monkeypatch.setattr(ladder_voice, 'narrate', lambda *a: pytest.fail('art-only synthesized narration'))
+    ladder_cli.voice(Namespace(slot='A'))
+    assert ladder_cli._load('A', 'voice/preflight.json')['passed'] is False
+    assert not list(config.WORK.rglob('*.wav'))
+    ladder_cli._save('A', 'voice/voice.json', {'art_only': ['o4']})
+    with pytest.raises(ValueError, match='marker differs'):
+        ladder_cli.voice_check(Namespace(slot='A'))
+    plan['mode'] = 'publish'; ladder_cli._save('A', 'plan.json', plan)
+    with pytest.raises(ValueError, match='dry-run only'):
+        ladder_cli.voice(Namespace(slot='A'))
+
+
 def test_cached_alternates_are_reviewed_again_without_loading_a_painter(cached, tmp_path, monkeypatch):
     _, job, data, _ = cached
     seen = []

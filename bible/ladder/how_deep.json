@@ -308,7 +308,8 @@
           "label": "Below the shelf, dim",
           "vo": "Five: below the shelf, dim and cool.",
           "danger": 5,
-          "image_prompt": "dim cool water below a tropical shelf, the bright reef now a distant glow overhead, empty deep blue around, a few small drifting graptolite colonies, one warm faint orange glow above, photoreal painterly, vertical composition"
+          "image_prompt": "Fully submerged view just below a tropical carbonate shelf, in dim cool deep-blue water. A sharply detailed rough carbonate ledge occupies the near lower-left foreground, its cracks, tiny pits and pale sediment grains clearly resolved. Several delicate small graptolite colonies drift beyond the ledge in the cool water. The brighter reef is a small faint distant patch far overhead, outside the main frame. Empty deep-blue water opens away to the right. Quiet low-light underwater documentary scene, realistic fine foreground textures, subdued warm reflection only on the far upper reef, photoreal painterly, vertical composition.",
+          "art_direction": "Dim cobalt blue underwater palette, close foreground detail on a carbonate ledge, gentle neutral external fill, fine crisp mineral texture, soft distant reef glow only"
         },
         {
           "n": 6,
@@ -322,7 +323,7 @@
           "label": "The cold black basin",
           "vo": "Seven: the cold black basin floor.",
           "danger": 7,
-          "image_prompt": "cold black basin floor under deep water, fine dark mud, scattered empty shells half buried, a single warm faint orange glimmer from above, photoreal painterly, vertical composition"
+          "image_prompt": "Cold Ordovician basin floor in pitch black deep water. Close foreground view of sharply detailed fine dark mud with scattered pale empty shells half buried, crisp shell edges and natural sediment grains. Soft neutral external documentary fill reveals only the nearby mud and shells; featureless opaque black seawater fills the entire upper half and every distant edge. Fully submerged deep sea with no visible water surface, no sun, no sky, no sunlight or god-rays. Photoreal painterly, vertical composition."
         },
         {
           "n": 8,
@@ -351,7 +352,8 @@
         "prehistoric",
         "deep sea"
       ],
-      "related_topic_hint": "The Ocean Before the Dinosaurs"
+      "related_topic_hint": "The Ocean Before the Dinosaurs",
+      "end_image": "o1"
     },
     {
       "id": "how_deep-05",

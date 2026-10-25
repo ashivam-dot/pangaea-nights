@@ -231,10 +231,28 @@ def images(args) -> None:
     print(json.dumps({i["id"]: len(i["kept"]) for i in rep["images"]}))
 
 
+def _art_only(pl: dict) -> list[str]:
+    if binding := pl.get("image_replay"):
+        from . import ladder_replay
+
+        replay = ladder_replay.load(binding["path"], binding["sha256"])
+        if "art_only" in replay:
+            if pl.get("mode") != "dry":
+                raise ValueError("art-only collection is dry-run only")
+            return replay["art_only"]
+    return []
+
+
 def voice(args) -> None:
-    from . import ladder_voice
 
     pl = _load(args.slot, "plan.json")
+    if requested := _art_only(pl):
+        _save(args.slot, 'voice/voice.json', {'art_only': requested, 'narration_generated': False,
+                                             'release_approval': False})
+        voice_check(args)
+        return
+    from . import ladder_voice
+
     rep = ladder_voice.narrate(pl["premise"], _dir(args.slot) / "voice")
     print(json.dumps({k: rep[k] for k in ("voice", "speed", "wpm", "wer")}))
     voice_check(args)
@@ -245,6 +263,13 @@ def voice_check(args) -> None:
 
     pl = _load(args.slot, 'plan.json')
     report = _load(args.slot, 'voice/voice.json')
+    if requested := _art_only(pl):
+        if report != {'art_only': requested, 'narration_generated': False, 'release_approval': False}:
+            raise ValueError('art-only voice marker differs from the bound plan')
+        _save(args.slot, 'voice/preflight.json', {'passed': False, 'art_only': requested,
+              'skipped_for_art_collection': True, 'release_approval': False})
+        print('Image-only collection: no narration generated or approved')
+        return
     problems = ladder_voice.preflight_problems(pl['premise'], report)
     _save(args.slot, 'voice/preflight.json', {'passed': not problems, 'problems': problems,
                                              'release_approval': False})
