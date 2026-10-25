@@ -716,7 +716,7 @@
         "premise": "survive_night-01",
         "replay": ".github/replay/survive-night-exact-repair.json"
       },
-      "stage": "reviewed",
+      "stage": "upload_intent",
       "attempts": 4,
       "source_sha": "a7b2287537edda0cab77564e45980a64fa2408d3",
       "before_ids": [
@@ -1028,7 +1028,9 @@
           "issues": []
         }
       },
-      "archive": "batch-reviewed-40149509321"
+      "archive": "batch-reviewed-40149509321",
+      "intended_publish_at": "2026-10-25T14:30:00Z",
+      "upload_intent_at": "2026-10-25T01:24:39+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -1547,5 +1549,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:24:38+00:00"
+  "updated_at": "2026-10-25T01:24:39+00:00"
 }
