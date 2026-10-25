@@ -750,7 +750,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T01:09:16+00:00",
-      "cloud_status": "queued",
+      "cloud_status": "in_progress",
       "editorial_holds": [
         {
           "id": "direct-duckbill-anatomy-40143333505",
@@ -1428,5 +1428,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:19:59+00:00"
+  "updated_at": "2026-10-25T01:20:00+00:00"
 }
