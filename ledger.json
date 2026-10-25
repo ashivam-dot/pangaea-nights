@@ -2108,6 +2108,17 @@
     "refusals": [
      "Art-only collection cannot publish"
     ]
+   },
+   {
+    "at": "2026-10-25T17:14:29Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "how_deep-05",
+    "run": "40207430412",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [
