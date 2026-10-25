@@ -1963,6 +1963,19 @@
     "refusals": [
      "Art-only collection cannot publish"
     ]
+   },
+   {
+    "at": "2026-10-25T14:50:37Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "countdown-05",
+    "run": "40203173904",
+    "ok": true,
+    "failures": [],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded"
+    ]
    }
   ],
   "alerts": [
