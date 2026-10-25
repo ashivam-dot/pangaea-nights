@@ -1334,13 +1334,13 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry countdown-02: Direct still review: both option6 candidates show dinosaurs on a coastal shore instead of the promised far inland high ground. Both option8 candidates depict a small glowing lava bowl in the surf rather than a Chicxulub-scale impact rim. Replace these scenes, preserve all other accepted art, then require unchanged production and full AV gates.",
+  "halted": "Repair held entry survive_night-01: production run failure",
   "complete": false,
   "health": {
     "public": 1,
     "scheduled": 0,
-    "held": 1,
+    "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:06:40+00:00"
+  "updated_at": "2026-10-25T01:06:41+00:00"
 }
