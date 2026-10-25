@@ -1000,6 +1000,23 @@
     "refusals": [
      "dry run: nothing is uploaded"
     ]
+   },
+   {
+    "at": "2026-10-25T01:35:24Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "countdown-02",
+    "run": "40150491810",
+    "ok": false,
+    "failures": [
+     "wer: {\"value\": 0.354, \"floor\": 0.0, \"ceiling\": 0.08}",
+     "wer_line_max: {\"value\": 8.667, \"floor\": 0.0, \"ceiling\": 0.25, \"line\": \"cta\"}"
+    ],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded",
+     "gates failed: wer: {\"value\": 0.354, \"floor\": 0.0, \"ceiling\": 0.08}; wer_line_max: {\"value\": 8.667, \"floor\": 0.0, \"ceiling\": 0.25, \"line\": \"cta\"}"
+    ]
    }
   ],
   "alerts": [
