@@ -2067,6 +2067,17 @@
     "refusals": [
      "dry run: nothing is uploaded"
     ]
+   },
+   {
+    "at": "2026-10-25T16:10:26Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "level_1_8-05",
+    "run": "40205103515",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [
