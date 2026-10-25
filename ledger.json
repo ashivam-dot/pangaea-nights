@@ -1948,6 +1948,21 @@
     "refusals": [
      "Art-only collection cannot publish"
     ]
+   },
+   {
+    "at": "2026-10-25T14:37:36Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "survive_night-04",
+    "run": "40197477172",
+    "ok": false,
+    "failures": [
+     "Art collected only; no video or audiovisual release approval"
+    ],
+    "published": false,
+    "refusals": [
+     "Art-only collection cannot publish"
+    ]
    }
   ],
   "alerts": [
