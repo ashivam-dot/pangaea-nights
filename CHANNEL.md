@@ -170,3 +170,5 @@ review and release retain their predecessor checks. Every pending dispatch is re
   sudden loud events are rejected.
 
 Producer metadata is refreshed independently of ordered review, including behind an editorial hold. A completed later preview still occupies the bounded buffer but never an active producer slot. This cannot clear a hold or approve media.
+
+The batch preview image limits are shared across both channels: two Pangaea producers with four image jobs each plus two Kahaani producers with three painting jobs each use at most fourteen of twenty account runners. Six remain for news, release coordinators, narration, CI and monitoring. Earlier per-channel reservations did not account for the other channel and allowed the actual release coordinators to queue behind painting jobs. Existing producer, buffer and release-order limits stay in force.

@@ -115,7 +115,7 @@ def test_concurrency_stays_within_twenty():
     assert shorts_peak <= fanout.LIMIT - 4  # news, fiction and monitoring also share the account
     preview_images = min(shorts["images"]["strategy"]["max-parallel"],
                          len(ladder_cli.image_matrix(["A"], len(ladder.IMAGE_IDS))))
-    assert MAX_BUILDING * preview_images <= fanout.LIMIT - 4
+    assert MAX_BUILDING * preview_images + 2 * 3 <= fanout.LIMIT - 6  # Kahaani's two previews
     assert set(shorts["images"]["needs"]) == {"plan", "voice"}  # narration cannot add parallel runners
     ep = config.shape("full")
     assert ep.image_shards + ep.voice_shards <= fanout.LIMIT - 4
