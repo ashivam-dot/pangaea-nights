@@ -14,7 +14,7 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-verified-ice-reprise.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 8,
       "obsolete_runs": [
         40121235398,
@@ -29,7 +29,7 @@
       ],
       "repair_reason": "A timed natural clause pause preserves narrator and every spoken answer word. Twelve local exact-audio trials across three premises all retain literal number N under unchanged production ASR. Original run failed only verdict_number_heard; all exact cached images and final gates retained.",
       "source_sha": "a9cf2f673035b8f8f01babce1b06074261318bd7",
-      "cloud_status": "completed",
+      "cloud_status": "queued",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
         {
@@ -246,7 +246,8 @@
             "release_approval": false
           }
         }
-      ]
+      ],
+      "run_id": 40147925087
     },
     {
       "repo": "pangaea-nights",
@@ -994,7 +995,7 @@
     }
   ],
   "halted": "Repair held entry level_1_8-16: production run failure",
-  "updated_at": "2026-10-25T00:45:16+00:00",
+  "updated_at": "2026-10-25T00:45:21+00:00",
   "complete": false,
   "health": {
     "public": 0,
