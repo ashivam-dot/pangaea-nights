@@ -5060,7 +5060,7 @@
         "premise": "how_deep-05",
         "replay": ".github/replay/howdeep05-depth-wording-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 2,
       "repair_history": [
         {
@@ -5146,7 +5146,9 @@
         40147415761,
         40146406019
       ],
-      "submitted_at": "2026-10-25T15:32:29+00:00"
+      "submitted_at": "2026-10-25T15:32:29+00:00",
+      "run_id": 40207430412,
+      "cloud_status": "queued"
     },
     {
       "repo": "pangaea-nights",
@@ -5437,8 +5439,8 @@
   "health": {
     "public": 3,
     "scheduled": 11,
-    "held": 0,
+    "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T15:45:45+00:00"
+  "updated_at": "2026-10-25T15:45:49+00:00"
 }
