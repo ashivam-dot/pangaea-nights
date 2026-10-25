@@ -1976,6 +1976,21 @@
     "refusals": [
      "dry run: nothing is uploaded"
     ]
+   },
+   {
+    "at": "2026-10-25T15:01:59Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "survive_night-04",
+    "run": "40203571553",
+    "ok": false,
+    "failures": [
+     "Art collected only; no video or audiovisual release approval"
+    ],
+    "published": false,
+    "refusals": [
+     "Art-only collection cannot publish"
+    ]
    }
   ],
   "alerts": [
