@@ -1302,7 +1302,7 @@
         "premise": "how_deep-02",
         "replay": ".github/replay/how-deep-charnia-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 2,
       "source_sha": "1574ec5955ef7b871a7208d6f9e8b33be40e6ebf",
       "before_ids": [
@@ -1341,7 +1341,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T02:26:20+00:00",
-      "cloud_status": "in_progress",
+      "cloud_status": "queued",
       "editorial_holds": [
         {
           "id": "direct-frond-morphology-40151287146",
@@ -1414,7 +1414,8 @@
       "obsolete_runs": [
         40151287146
       ],
-      "repair_reason": "Exact reviewed frond/disc replacement with pinned morphology source and passing-opening reprise. Preserve every spoken fact and all passing siblings; current cloud image, narration, render and full audiovisual gates remain."
+      "repair_reason": "Exact reviewed frond/disc replacement with pinned morphology source and passing-opening reprise. Preserve every spoken fact and all passing siblings; current cloud image, narration, render and full audiovisual gates remain.",
+      "run_id": 40154442347
     },
     {
       "repo": "pangaea-nights",
@@ -1789,5 +1790,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T02:26:20+00:00"
+  "updated_at": "2026-10-25T02:26:25+00:00"
 }
