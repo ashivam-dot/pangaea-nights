@@ -316,7 +316,7 @@
      "label": "Giant scorpion",
      "vo": "Level seven: a giant scorpion under the moss.",
      "danger": 7,
-     "image_prompt": "A large Carboniferous scorpion emerging from under a moss mat, pincers open and tail raised, ember-orange highlights on its shell, close POV, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "A large Carboniferous scorpion emerging from moss inside a hollow coal-forest trunk, viewed from a low oblique side angle. Broad compact flattened body, EIGHT jointed walking legs beneath it, and exactly TWO forward pincers attached at the front beside the small mouthparts. A single long tail made of FIVE clear joined segments curves up and forward over the back. At the very tip of that tail is ONE SMALL SMOOTH OVAL venom bulb ending in a SINGLE slender curved NEEDLE-POINT STINGER, a closed pointed hook with no opposing jaw or claw. Keep the entire scorpion, both front pincers and the single terminal sting clearly visible. Fine natural shell texture, warm amber edge light, emerald swamp mist, sharp detailed nature-documentary view, photoreal painterly, vertical composition."
     },
     {
      "n": 8,
@@ -345,7 +345,8 @@
     "deep time",
     "paleontology"
    ],
-   "related_topic_hint": "Giant Insects of the Coal Forests"
+   "related_topic_hint": "Giant Insects of the Coal Forests",
+   "end_image": "o4"
   },
   {
    "id": "level_1_8-05",
