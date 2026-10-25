@@ -374,7 +374,7 @@
      "label": "Bare sandbar, stay dark",
      "vo": "A bare sandbar, and no fire at all.",
      "danger": 2,
-     "image_prompt": "POV on a bare pale sandbar in a slow river through a dark coal forest, no flame anywhere near, stars over the canopy gap, a faint orange glow far away, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view on a bare pale sandbar in a slow river through a dark coal forest, no flame anywhere near, stars over the canopy gap, a faint orange glow far away, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 3,
@@ -388,14 +388,14 @@
      "label": "Next to a millipede trail",
      "vo": "Next to a giant millipede trail.",
      "danger": 4,
-     "image_prompt": "Low POV beside a wide fresh Arthropleura trackway in the leaf litter, the segmented body of a very long giant millipede disappearing into ferns, orange glow, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Low natural-history documentary view beside a wide fresh Arthropleura trackway in the leaf litter, the segmented body of a very long giant millipede disappearing into ferns, orange glow, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 5,
      "label": "Catch a giant dragonfly",
      "vo": "Catch a giant dragonfly for dinner.",
      "danger": 5,
-     "image_prompt": "POV looking up at a Meganeura griffinfly with a seventy-centimetre wingspan hovering over swamp water, wings glittering, one orange glow behind it, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view looking up at a Meganeura griffinfly with a seventy-centimetre wingspan hovering over swamp water, wings glittering, one orange glow behind it, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 6,
@@ -453,7 +453,7 @@
      "label": "Pine ridge, far from water",
      "vo": "A pine ridge, far from the water.",
      "danger": 1,
-     "image_prompt": "POV on a dry sandy ridge among tall conifers well back from a foggy Cretaceous bayou, the water a distant silver line, amber glow of a burning snag, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view on a dry sandy ridge among tall conifers well back from a foggy Cretaceous bayou, the water a distant silver line, amber glow of a burning snag, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 2,
@@ -467,7 +467,7 @@
      "label": "Sandbank midstream",
      "vo": "A sandbank in the middle of the river.",
      "danger": 3,
-     "image_prompt": "POV on a narrow sandbank in the middle of a wide foggy estuary at night, dark water sliding past on both sides, amber glow on the shore, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view on a narrow sandbank in the middle of a wide foggy estuary at night, dark water sliding past on both sides, amber glow on the shore, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 4,
@@ -495,7 +495,7 @@
      "label": "Beside a drinking duckbill",
      "vo": "Next to a duckbill drinking at the edge.",
      "danger": 7,
-     "image_prompt": "Low POV at the waterline beside a hadrosaur lowering its head to drink at a foggy bayou, the water bulging as something huge rises below, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Low natural-history documentary view at the waterline beside a hadrosaur lowering its head to drink at a foggy bayou, the water bulging as something huge rises below, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 8,
@@ -560,7 +560,7 @@
      "label": "Downwind of the mammoths",
      "vo": "Downwind of a sleeping mammoth herd.",
      "danger": 4,
-     "image_prompt": "POV in frosted grass downwind of a herd of woolly mammoths sleeping in a tight group on the steppe, breath steaming, green aurora above, amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view in frosted grass downwind of a herd of woolly mammoths sleeping in a tight group on the steppe, breath steaming, green aurora above, amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 5,
@@ -574,21 +574,21 @@
      "label": "On the frozen lake",
      "vo": "Out in the middle of the frozen lake.",
      "danger": 6,
-     "image_prompt": "POV in the centre of a vast frozen lake on the Ice Age steppe, cracks in the ice glowing under green aurora, wind howling, amber glow far off, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view in the centre of a vast frozen lake on the Ice Age steppe, cracks in the ice glowing under green aurora, wind howling, amber glow far off, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 7,
      "label": "Hilltop in full wind",
      "vo": "On the hilltop, in full wind.",
      "danger": 7,
-     "image_prompt": "POV on a bare windswept hilltop above the mammoth steppe, frost crusting the grass, snow streaming sideways under a green aurora, amber glow below, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view on a bare windswept hilltop above the mammoth steppe, frost crusting the grass, snow streaming sideways under a green aurora, amber glow below, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 8,
      "label": "Beside a cave lion kill",
      "vo": "Next to a cave lion's fresh kill.",
      "danger": 8,
-     "image_prompt": "POV in frosted grass beside a fallen bison as a pride of cave lions looks up from it, eyes catching amber light, green aurora overhead, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view in frosted grass beside a fallen bison as a pride of cave lions looks up from it, eyes catching amber light, green aurora overhead, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
     }
    ],
    "answer_n": 3,
@@ -625,35 +625,35 @@
      "label": "Sheltered valley hollow",
      "vo": "A sheltered hollow in the valley.",
      "danger": 1,
-     "image_prompt": "POV in a still, sheltered valley hollow at dusk, a thin yellow haze lying low over the ground, dead seed ferns around, molten-orange glow on the horizon, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view in a still, sheltered valley hollow at dusk, a thin yellow haze lying low over the ground, dead seed ferns around, molten-orange glow on the horizon, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 2,
      "label": "Calm coastal lagoon",
      "vo": "Beside a calm coastal lagoon.",
      "danger": 2,
-     "image_prompt": "POV on the shore of a glassy coastal lagoon with purple-green water and bubbles rising, a sulphur haze over the surface, molten-orange glow far away, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view on the shore of a glassy coastal lagoon with purple-green water and bubbles rising, a sulphur haze over the surface, molten-orange glow far away, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 3,
      "label": "Windy bare ridge",
      "vo": "Up on a bare, windy ridge.",
      "danger": 3,
-     "image_prompt": "POV on a high bare rocky ridge with strong clean wind blowing, a yellow haze pooled in the valleys far below, molten-orange volcanic glow on the horizon, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view on a high bare rocky ridge with strong clean wind blowing, a yellow haze pooled in the valleys far below, molten-orange volcanic glow on the horizon, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 4,
      "label": "Inside a hollow tree",
      "vo": "Inside a hollow dead tree.",
      "danger": 4,
-     "image_prompt": "POV from inside a hollow dead glossopterid trunk, looking out at a hazy purple Permian dusk, ash drifting down, molten-orange glow in the distance, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view from inside a hollow dead glossopterid trunk, looking out at a hazy purple Permian dusk, ash drifting down, molten-orange glow in the distance, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 5,
      "label": "Next to a gorgonopsid den",
      "vo": "Next to a gorgonopsid's den.",
      "danger": 5,
-     "image_prompt": "Low POV at the mouth of a burrow where a sabre-toothed gorgonopsid stares out with glowing eyes, sulphur haze drifting past, molten-orange light, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Low natural-history documentary view at the mouth of a burrow where a sabre-toothed gorgonopsid stares out with glowing eyes, sulphur haze drifting past, molten-orange light, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 6,
@@ -667,14 +667,14 @@
      "label": "Low swamp, rotten-egg smell",
      "vo": "A low swamp that smells of rotten eggs.",
      "danger": 7,
-     "image_prompt": "POV in a low dead swamp with still black water and a thick yellow haze clinging to the surface, dead fish on the mud, molten-orange glow, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view in a low dead swamp with still black water and a thick yellow haze clinging to the surface, dead fish on the mud, molten-orange glow, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
     },
     {
      "n": 8,
      "label": "Bottom of a sinkhole",
      "vo": "At the bottom of a deep sinkhole.",
      "danger": 8,
-     "image_prompt": "POV at the bottom of a deep rock sinkhole filled with motionless yellow haze, a small circle of purple sky far above, molten-orange glow on the rim, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "natural-history documentary view at the bottom of a deep rock sinkhole filled with motionless yellow haze, a small circle of purple sky far above, molten-orange glow on the rim, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
     }
    ],
    "answer_n": 3,

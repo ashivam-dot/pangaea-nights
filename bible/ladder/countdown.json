@@ -484,7 +484,7 @@
      "label": "Glacier crevasse",
      "vo": "Drop into a glacier crevasse.",
      "danger": 6,
-     "image_prompt": "POV looking down into a deep blue glacier crevasse, walls of layered ice vanishing into darkness, photoreal painterly, vertical composition, one warm focal light from faint sunlight from above"
+     "image_prompt": "natural-history documentary view looking down into a deep blue glacier crevasse, walls of layered ice vanishing into darkness, photoreal painterly, vertical composition, one warm focal light from faint sunlight from above"
     },
     {
      "n": 7,
@@ -549,7 +549,7 @@
      "label": "Inside a sponge mound",
      "vo": "Hide inside a giant sponge mound.",
      "danger": 3,
-     "image_prompt": "POV from inside a cavity of a giant reef sponge mound, olive water outside thick with drifting particles, photoreal painterly, vertical composition, one warm focal light from a warm amber light"
+     "image_prompt": "natural-history documentary view from inside a cavity of a giant reef sponge mound, olive water outside thick with drifting particles, photoreal painterly, vertical composition, one warm focal light from a warm amber light"
     },
     {
      "n": 4,
@@ -670,7 +670,7 @@
      "label": "Under the polar ice",
      "vo": "Hide under the polar ice sheet.",
      "danger": 8,
-     "image_prompt": "POV looking up at the underside of a thick polar ice sheet over a black sea, cracks glowing faintly, photoreal painterly, vertical composition, one warm focal light from a thin warm glow through the ice"
+     "image_prompt": "natural-history documentary view looking up at the underside of a thick polar ice sheet over a black sea, cracks glowing faintly, photoreal painterly, vertical composition, one warm focal light from a thin warm glow through the ice"
     }
    ],
    "answer_n": 6,

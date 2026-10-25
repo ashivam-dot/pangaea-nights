@@ -1,0 +1,132 @@
+{
+  "at": "2026-10-25T13:38:34.354946+00:00",
+  "source_sha": "959b6a91000ffb8ac057eb111432c121edff804f",
+  "batch_state_sha": "306015707da4503512678043fb7978ea07ea9c0f",
+  "basis": "Directly reviewed first-person lagoon/log scenes generated human feet or hands, contrary to the channel no-human rule. Remove only the POV cue from reserved previews that have not started. Keep the same viewpoint, setting, animals, scientific details, style and every narrated word. This reduces a demonstrated prompt risk; it is not a guarantee of passing art.",
+  "changes": [
+    {
+      "premise": "survive_night-05",
+      "option": 2,
+      "original": "POV on a bare pale sandbar in a slow river through a dark coal forest, no flame anywhere near, stars over the canopy gap, a faint orange glow far away, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view on a bare pale sandbar in a slow river through a dark coal forest, no flame anywhere near, stars over the canopy gap, a faint orange glow far away, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-05",
+      "option": 4,
+      "original": "Low POV beside a wide fresh Arthropleura trackway in the leaf litter, the segmented body of a very long giant millipede disappearing into ferns, orange glow, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "Low natural-history documentary view beside a wide fresh Arthropleura trackway in the leaf litter, the segmented body of a very long giant millipede disappearing into ferns, orange glow, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-05",
+      "option": 5,
+      "original": "POV looking up at a Meganeura griffinfly with a seventy-centimetre wingspan hovering over swamp water, wings glittering, one orange glow behind it, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view looking up at a Meganeura griffinfly with a seventy-centimetre wingspan hovering over swamp water, wings glittering, one orange glow behind it, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-06",
+      "option": 1,
+      "original": "POV on a dry sandy ridge among tall conifers well back from a foggy Cretaceous bayou, the water a distant silver line, amber glow of a burning snag, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view on a dry sandy ridge among tall conifers well back from a foggy Cretaceous bayou, the water a distant silver line, amber glow of a burning snag, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-06",
+      "option": 3,
+      "original": "POV on a narrow sandbank in the middle of a wide foggy estuary at night, dark water sliding past on both sides, amber glow on the shore, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view on a narrow sandbank in the middle of a wide foggy estuary at night, dark water sliding past on both sides, amber glow on the shore, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-06",
+      "option": 7,
+      "original": "Low POV at the waterline beside a hadrosaur lowering its head to drink at a foggy bayou, the water bulging as something huge rises below, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "Low natural-history documentary view at the waterline beside a hadrosaur lowering its head to drink at a foggy bayou, the water bulging as something huge rises below, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-07",
+      "option": 4,
+      "original": "POV in frosted grass downwind of a herd of woolly mammoths sleeping in a tight group on the steppe, breath steaming, green aurora above, amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view in frosted grass downwind of a herd of woolly mammoths sleeping in a tight group on the steppe, breath steaming, green aurora above, amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-07",
+      "option": 6,
+      "original": "POV in the centre of a vast frozen lake on the Ice Age steppe, cracks in the ice glowing under green aurora, wind howling, amber glow far off, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view in the centre of a vast frozen lake on the Ice Age steppe, cracks in the ice glowing under green aurora, wind howling, amber glow far off, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-07",
+      "option": 7,
+      "original": "POV on a bare windswept hilltop above the mammoth steppe, frost crusting the grass, snow streaming sideways under a green aurora, amber glow below, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view on a bare windswept hilltop above the mammoth steppe, frost crusting the grass, snow streaming sideways under a green aurora, amber glow below, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-07",
+      "option": 8,
+      "original": "POV in frosted grass beside a fallen bison as a pride of cave lions looks up from it, eyes catching amber light, green aurora overhead, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view in frosted grass beside a fallen bison as a pride of cave lions looks up from it, eyes catching amber light, green aurora overhead, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-08",
+      "option": 1,
+      "original": "POV in a still, sheltered valley hollow at dusk, a thin yellow haze lying low over the ground, dead seed ferns around, molten-orange glow on the horizon, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view in a still, sheltered valley hollow at dusk, a thin yellow haze lying low over the ground, dead seed ferns around, molten-orange glow on the horizon, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-08",
+      "option": 2,
+      "original": "POV on the shore of a glassy coastal lagoon with purple-green water and bubbles rising, a sulphur haze over the surface, molten-orange glow far away, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view on the shore of a glassy coastal lagoon with purple-green water and bubbles rising, a sulphur haze over the surface, molten-orange glow far away, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-08",
+      "option": 3,
+      "original": "POV on a high bare rocky ridge with strong clean wind blowing, a yellow haze pooled in the valleys far below, molten-orange volcanic glow on the horizon, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view on a high bare rocky ridge with strong clean wind blowing, a yellow haze pooled in the valleys far below, molten-orange volcanic glow on the horizon, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-08",
+      "option": 4,
+      "original": "POV from inside a hollow dead glossopterid trunk, looking out at a hazy purple Permian dusk, ash drifting down, molten-orange glow in the distance, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view from inside a hollow dead glossopterid trunk, looking out at a hazy purple Permian dusk, ash drifting down, molten-orange glow in the distance, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-08",
+      "option": 5,
+      "original": "Low POV at the mouth of a burrow where a sabre-toothed gorgonopsid stares out with glowing eyes, sulphur haze drifting past, molten-orange light, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "Low natural-history documentary view at the mouth of a burrow where a sabre-toothed gorgonopsid stares out with glowing eyes, sulphur haze drifting past, molten-orange light, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-08",
+      "option": 7,
+      "original": "POV in a low dead swamp with still black water and a thick yellow haze clinging to the surface, dead fish on the mud, molten-orange glow, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view in a low dead swamp with still black water and a thick yellow haze clinging to the surface, dead fish on the mud, molten-orange glow, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "survive_night-08",
+      "option": 8,
+      "original": "POV at the bottom of a deep rock sinkhole filled with motionless yellow haze, a small circle of purple sky far above, molten-orange glow on the rim, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light",
+      "replacement": "natural-history documentary view at the bottom of a deep rock sinkhole filled with motionless yellow haze, a small circle of purple sky far above, molten-orange glow on the rim, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+    },
+    {
+      "premise": "countdown-06",
+      "option": 6,
+      "original": "POV looking down into a deep blue glacier crevasse, walls of layered ice vanishing into darkness, photoreal painterly, vertical composition, one warm focal light from faint sunlight from above",
+      "replacement": "natural-history documentary view looking down into a deep blue glacier crevasse, walls of layered ice vanishing into darkness, photoreal painterly, vertical composition, one warm focal light from faint sunlight from above"
+    },
+    {
+      "premise": "countdown-07",
+      "option": 3,
+      "original": "POV from inside a cavity of a giant reef sponge mound, olive water outside thick with drifting particles, photoreal painterly, vertical composition, one warm focal light from a warm amber light",
+      "replacement": "natural-history documentary view from inside a cavity of a giant reef sponge mound, olive water outside thick with drifting particles, photoreal painterly, vertical composition, one warm focal light from a warm amber light"
+    },
+    {
+      "premise": "countdown-08",
+      "option": 8,
+      "original": "POV looking up at the underside of a thick polar ice sheet over a black sea, cracks glowing faintly, photoreal painterly, vertical composition, one warm focal light from a thin warm glow through the ice",
+      "replacement": "natural-history documentary view looking up at the underside of a thick polar ice sheet over a black sea, cracks glowing faintly, photoreal painterly, vertical composition, one warm focal light from a thin warm glow through the ice"
+    }
+  ],
+  "speech_changed": false,
+  "accepted_or_active_art_changed": false,
+  "release_approval": false,
+  "remaining": "Every current picture, pairwise, voice, render and full audiovisual gate"
+}
