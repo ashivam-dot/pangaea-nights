@@ -990,12 +990,19 @@
       "inputs": {
         "dry_run": "true",
         "slot": "A",
-        "premise": "countdown-02"
+        "premise": "countdown-02",
+        "replay": ".github/replay/countdown-high-ground-repair.json"
       },
-      "stage": "held",
-      "attempts": 1,
-      "source_sha": "e6a49e9b13ab469143af9f1a3cf57247c7318f32",
+      "stage": "dispatch_unresolved",
+      "attempts": 2,
+      "source_sha": "35f1ea21425e8ec75b3ade3dfef7682611b8adb9",
       "before_ids": [
+        40149509321,
+        40148607387,
+        40148479040,
+        40148319091,
+        40147925087,
+        40147415761,
         40146406019,
         40144187249,
         40143437986,
@@ -1020,8 +1027,7 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T00:37:24+00:00",
-      "run_id": 40147415761,
+      "submitted_at": "2026-10-25T01:24:13+00:00",
       "cloud_status": "in_progress",
       "editorial_holds": [
         {
@@ -1084,9 +1090,25 @@
           }
         }
       ],
-      "problems": [
-        "Direct still review: both option6 candidates show dinosaurs on a coastal shore instead of the promised far inland high ground. Both option8 candidates depict a small glowing lava bowl in the surf rather than a Chicxulub-scale impact rim. Replace these scenes, preserve all other accepted art, then require unchanged production and full AV gates."
-      ]
+      "repair_history": [
+        {
+          "run_id": 40147415761,
+          "source_sha": "e6a49e9b13ab469143af9f1a3cf57247c7318f32",
+          "stage": "held",
+          "problems": [
+            "Direct still review: both option6 candidates show dinosaurs on a coastal shore instead of the promised far inland high ground. Both option8 candidates depict a small glowing lava bowl in the surf rather than a Chicxulub-scale impact rim. Replace these scenes, preserve all other accepted art, then require unchanged production and full AV gates."
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "countdown-02"
+          }
+        }
+      ],
+      "obsolete_runs": [
+        40147415761
+      ],
+      "repair_reason": "Replace only exact refused inland/impact scenes; preserve all seven original usable image slots. Adopt independently reviewed inland style and impact-cloud replan, common turtle wording, and source-faithful shorter verdict. Actual production preflight passes 43.197s, WER0.025, line max0.167, pair max0.87577. Final cloud and full AV checks still required."
     },
     {
       "repo": "pangaea-nights",
@@ -1467,7 +1489,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry countdown-02: Direct still review: both option6 candidates show dinosaurs on a coastal shore instead of the promised far inland high ground. Both option8 candidates depict a small glowing lava bowl in the surf rather than a Chicxulub-scale impact rim. Replace these scenes, preserve all other accepted art, then require unchanged production and full AV gates.",
+  "halted": null,
   "complete": false,
   "health": {
     "public": 1,
@@ -1475,5 +1497,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:23:55+00:00"
+  "updated_at": "2026-10-25T01:24:13+00:00"
 }
