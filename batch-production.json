@@ -5557,7 +5557,7 @@
         "slot": "A",
         "premise": "countdown-06"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "bbb5a37e495b25e7038374cace91805f05b31d43",
       "before_ids": [
@@ -5624,7 +5624,26 @@
       ],
       "submitted_at": "2026-10-25T17:46:28+00:00",
       "run_id": 40218080484,
-      "cloud_status": "in_progress"
+      "cloud_status": "in_progress",
+      "editorial_holds": [
+        {
+          "id": "countdown06-similar-crevasses-held",
+          "run_id": 40218080484,
+          "observed_at": "2026-10-25T19:12:01+00:00",
+          "reason": "The flat snowfield, drifting floe and frozen salt-flat pictures converge on the same foreground black crevasse; the ending fails to reprise the deep-vent payoff. The original producer also exhausted all four o8 takes at the person screen and the unchanged pair check failed at 0.9436. Preserve useful wave, boulder, vent and glacier scenes, all narration and every gate; replace only these visual inputs and the missing o8.",
+          "evidence": {
+            "ladder-img-A-2/o3.png": "e439da4fc928fbb554569488fbed4973fb7791dbe11e00f426de500e8ed89b7d",
+            "ladder-img-A-4/o5.png": "77d051a5c2615b1d02a9570856ae6422de18b7c5014465b83256c035a41e35d1",
+            "ladder-img-A-4/o5-alt1.png": "4892222ac274a92ce7c3fac1cee07a6ab30706ea300618a7ff1439592b690924",
+            "ladder-img-A-6/o7.png": "8cefdf4c166100be84642174bd4df334e135ca6d269428c7ead1e6023d3d1651",
+            "ladder-img-A-6/o7-alt1.png": "f462d2cfb520e1edfe639f0215703f26165f2ce5787ef19d9041a283689f229b",
+            "ladder-img-A-8/end.png": "788062310e74198fc5b4a8eb2d22c8ded15b1ad35b28bf7787831f8748e6cb30"
+          }
+        }
+      ],
+      "problems": [
+        "The flat snowfield, drifting floe and frozen salt-flat pictures converge on the same foreground black crevasse; the ending fails to reprise the deep-vent payoff. The original producer also exhausted all four o8 takes at the person screen and the unchanged pair check failed at 0.9436. Preserve useful wave, boulder, vent and glacier scenes, all narration and every gate; replace only these visual inputs and the missing o8."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -5789,5 +5808,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T18:57:00+00:00"
+  "updated_at": "2026-10-25T19:12:01+00:00"
 }
