@@ -886,7 +886,21 @@
       ],
       "submitted_at": "2026-10-25T00:37:24+00:00",
       "run_id": 40147415761,
-      "cloud_status": "in_progress"
+      "cloud_status": "in_progress",
+      "editorial_holds": [
+        {
+          "id": "direct-tsunami-high-ground-impact-scale-40147415761",
+          "run_id": 40147415761,
+          "observed_at": "2026-10-25T01:01:33+00:00",
+          "reason": "Direct still review: both option6 candidates show dinosaurs on a coastal shore instead of the promised far inland high ground. Both option8 candidates depict a small glowing lava bowl in the surf rather than a Chicxulub-scale impact rim. Replace these scenes, preserve all other accepted art, then require unchanged production and full AV gates.",
+          "evidence": {
+            "ladder-img-A-5/o6-alt1.png": "9bdbc8ea79de380e668132fd2241b54dd4179a9539c49187015eb6ed44374c5e",
+            "ladder-img-A-5/o6.png": "f3a5650b4d2d1679788ec8614ef2347dfe66a9e42f1964979cad1811009b06d8",
+            "ladder-img-A-7/o8.png": "be7651f9bb754fc4ea3cc9cebf4c199a52f1de4845d739c8ebb212fd54244a01",
+            "ladder-img-A-7/o8-alt1.png": "6e322435b1e47d8de6d23030454ff849488bfc806396f66b8f090027f8c448c8"
+          }
+        }
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -1268,7 +1282,7 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-25T01:00:35+00:00",
+  "updated_at": "2026-10-25T01:01:33+00:00",
   "complete": false,
   "health": {
     "public": 1,
