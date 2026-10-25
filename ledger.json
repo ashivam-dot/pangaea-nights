@@ -1587,6 +1587,21 @@
      "dry run: nothing is uploaded",
      "gates failed: duration_s: {\"value\": null, \"floor\": 30.0, \"ceiling\": 45.0}; frames_counted: {\"value\": null, \"want\": 1312}; fps: {\"value\": null, \"floor\": 30, \"ceiling\": 30}; size: {\"value\": null}; parallax_min: {\"value\": null, \"floor\": 0.005, \"ceiling\": 0.04}; parallax_max: {\"value\": null, \"floor\": 0.005, \"ceiling\": 0.04}"
     ]
+   },
+   {
+    "at": "2026-10-25T09:55:57Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "level_1_8-04",
+    "run": "40181031113",
+    "ok": false,
+    "failures": [
+     "Art collected only; no video or audiovisual release approval"
+    ],
+    "published": false,
+    "refusals": [
+     "Art-only collection cannot publish"
+    ]
    }
   ],
   "alerts": [
