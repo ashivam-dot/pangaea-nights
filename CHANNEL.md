@@ -174,3 +174,6 @@ Producer metadata is refreshed independently of ordered review, including behind
 The batch preview image limits are shared across both channels: two Pangaea producers with four image jobs each plus two Kahaani producers with three painting jobs each use at most fourteen of twenty account runners. Six remain for news, release coordinators, narration, CI and monitoring. Earlier per-channel reservations did not account for the other channel and allowed the actual release coordinators to queue behind painting jobs. Existing producer, buffer and release-order limits stay in force.
 
 A declared closing reprise may use the opening image or the winning-choice image. Its exact painter prompt and original image slot stay bound in the replay, and the closing slot receives the ordinary current picture and full audiovisual checks. Countdown03 uses the reviewed freshwater pond for its sourced payoff, retaining the title, answer and all speech except the deliberately replanned rock-crevice and open-sea choices.
+Local generated reprises retain the original slot's seed and must match that slot's exact image, prompt,
+take, exposure and generation receipt; they never claim a new ending take. The final ending still receives
+current picture and complete audiovisual checks.

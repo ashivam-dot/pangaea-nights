@@ -52,7 +52,7 @@ def local_generation(folder, row, job, model, size, key):
     cand = sdcpp.CANDIDATES[model]
     settings = {"model": model, "prompt": job["prompt"], "width": size[0], "height": size[1],
                 "steps": cand.steps, "cfg": cand.cfg, "sampler": cand.sampler,
-                "seed": ladder_images._seed(key, job["id"], row["take"])}
+                "seed": ladder_images._seed(key, row.get("source_image", job["id"]), row["take"])}
     if proof.get("schema") != 1 or proof.get("origin") != "local-stable-diffusion.cpp" \
             or proof.get("settings") != settings or proof.get("binary_tag") != sdcpp.SD_TAG \
             or not re.fullmatch(r"[0-9a-f]{40}", proof.get("source_sha", "")):
@@ -93,6 +93,15 @@ def candidates(replay, job, model, size):
         if type(row.get("take")) is not int or not 0 <= row["take"] < 4 \
                 or not all(k in row.get("exposure", {}) for k in ("raw_p99", "spread")):
             raise ValueError("replay image lacks original take or exposure provenance")
+        source_image = row.get("source_image", job["id"])
+        if source_image not in ladder.IMAGE_IDS:
+            raise ValueError("replay input has an unknown original image slot")
+        if row.get("generation") and source_image != job["id"]:
+            fields = ("file", "sha256", "prompt", "model", "take", "exposure", "generation")
+            originals = replay["images"].get(source_image, [])
+            if job["id"] != "end" or source_image == "end" or not any(
+                    all(original.get(k) == row.get(k) for k in fields) for original in originals):
+                raise ValueError("local closing reprise differs from its exact original image")
         local = local_generation(folder, row, job, model, size, replay["source"]["key"]) \
             if row.get("generation") else None
         if not local and (type(row.get("artifact_id")) is not int or row["artifact_id"] <= 0):
@@ -116,9 +125,7 @@ def candidates(replay, job, model, size):
             provenance["generation"] = row["generation"]
         else:
             provenance["artifact_id"] = row["artifact_id"]
-        provenance["source_image"] = row.get("source_image", job["id"])
-        if provenance["source_image"] not in ladder.IMAGE_IDS:
-            raise ValueError("replay input has an unknown original image slot")
+        provenance["source_image"] = source_image
         provenance["source"] = local or replay["source"]
         found.append((img, row["exposure"], row["take"], provenance))
     return found

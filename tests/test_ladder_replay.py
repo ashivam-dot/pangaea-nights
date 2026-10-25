@@ -284,6 +284,24 @@ def test_local_generation_is_explicit_and_reproduces_the_original_raw_grade(loca
     assert 'artifact_id' not in found[0][3] and 'run_id' not in source
 
 
+def test_local_closing_reprise_keeps_original_seed_and_receives_current_checks(local_cached, tmp_path, monkeypatch):
+    _, original, data, row, _, _ = local_cached
+    job = {**original, 'id': 'end'}
+    data['images']['end'] = [{**row, 'source_image': original['id']}]
+    monkeypatch.setattr(li.ladder, 'image_jobs', lambda p: [job])
+    seen = []
+    monkeypatch.setattr(qa, 'review', lambda image, scene: seen.append(scene) or verdict())
+    monkeypatch.setattr(li.sdcpp, 'Server', lambda *a: pytest.fail('exact local reprise was repainted'))
+    report = li.generate({'id': data['premise']}, 'original-key', tmp_path / 'local-end', 0, 1,
+                         model='test', replay=data)
+    kept = report['images'][0]['kept']
+    assert seen == [job['scene']] and len(kept) == 1
+    assert kept[0]['cached_from']['source_image'] == original['id']
+    data['images']['end'][0]['source_image'] = 'o4'
+    with pytest.raises(ValueError, match='exact original image'):
+        replay.candidates(data, job, 'test', (8, 8))
+
+
 @pytest.mark.parametrize('changed', ['seed', 'prompt', 'weights', 'binary', 'raw', 'grade', 'exposure'])
 def test_local_generation_cannot_adopt_changed_or_unproven_pixels(local_cached, changed):
     path, job, data, row, proof, proof_path = local_cached
