@@ -483,7 +483,7 @@
       "series": "level_1_8",
       "slot": "B",
       "target": "2026-10-25T06:30:00Z",
-      "stage": "scheduled",
+      "stage": "public",
       "inputs": {
         "dry_run": "true",
         "slot": "A",
@@ -796,7 +796,7 @@
         "url": "https://www.youtube.com/shorts/Q8HePTZ0Vg8",
         "existing": false,
         "title": "One Ice Age Night: Level 1 to 8 Tent-Mate — Who Keeps You Warm? 🧊",
-        "privacy": "private",
+        "privacy": "public",
         "publish_at": "2026-10-25T06:30:00Z",
         "made_for_kids": null,
         "self_declared_made_for_kids": false,
@@ -804,14 +804,15 @@
         "readback_problems": [],
         "owner_readback": {
           "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
-          "privacyStatus": "private",
-          "publishAt": "2026-10-25T06:30:00Z",
+          "privacyStatus": "public",
+          "publishAt": null,
           "madeForKids": false,
           "selfDeclaredMadeForKids": false,
           "containsSyntheticMedia": null,
           "uploadStatus": "processed"
         }
-      }
+      },
+      "public_verified_at": "2026-10-25T06:35:37.425131+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -3102,5 +3103,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T06:35:35+00:00"
+  "updated_at": "2026-10-25T06:35:38+00:00"
 }
