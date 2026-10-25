@@ -915,6 +915,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "countdown-05",
+   "series": "countdown",
+   "era": "Triassic",
+   "slot": "C",
+   "video_id": "Zo1llNKAkpM",
+   "url": "https://www.youtube.com/shorts/Zo1llNKAkpM",
+   "title": "Pangaea Is Overheating — Which Escape Plan Keeps You Alive? 🔥",
+   "publish_at": "2026-10-29T19:30:00Z",
+   "uploaded_at": "2026-10-25T16:08:25Z",
+   "script": "Pangaea's tropics are too hot to live in. Rest on a shady tropical riverbank. Float in a warm equator lagoon. Dig into a hollow between dunes. Hide in a cave in red cliffs. Chase the giant monsoon storms. Settle by a volcanic hot spring. Trek thousands of kilometres south. Cross the inland desert at noon. Real answer: number 7, because extreme heat may have left Pangaea's tropics empty of land vertebrates. Your best bet is far south. Comment your number.",
+   "frame0": "N6fiJDGodBk0Iagp3RlzJdokVCQ/LM6l+5/ZqG0q5haVqsAqjSgwH/cpTpitoqmpeKnFI/yqVKzwoMgoVCEXJsMisarGpSEgZST7KHOp0iw7qG8h/h/mlRuixqyEkroby6ARKLQo9SktKBeoixyTJTgLzaQgKt6k8a1IKGGg9CtgqDiW1aRzK7momqREoY+dOSl7IDEZ66gpKDqe56rmqOAlr6Qlqf+MNCkWqECkhaaeqPuYbKjLCTW5LSqrK7EstCMpKOSkc7AnH6GcRKXWKFyogKj3rrAkNCiWqhqr56T+pz2laaGeIGihLyjiJeCoIidEJLOZKyQEqFEe2CltpQGm8ShxnSQgjyOZLVwm3iq6pU0iK5+so/Qe3qZFqlmdqKP5paKjDCwFqOmihSHZpgsovqK4osWoBCXQqLMnwh5/qasR/ifoIZakeKeDqFsmyyHTKvQajSJiHlOlg6iAKLasrSYwrQumzyvqpL6mHavcJj0fXCcWpYasGJjJomsiR6k+nnOw+afBKiqmkqRlqTQmW6W6msEorqRdJmSnQqY4KBonLKwbqJGgb6SVIECU9x3aJmMlxSddJNYrjyWPpf4hfaDuqKmpISgVKDioE6h+pDgqRRoWrOoKYSKSnvuayKVqJrYipJuYpiWu2CDVJ6ElxRShrFsg+KdJJHOrDqFTqAmgJzHplD6of5XXqMwfN6QFHKOoYyUuJdIMZ6WdGiodhSQinMYhf6dMpBmb4KH0IhCjaCUjqHQo5h5PrDAltSgnqvsZaqDpmyaXSaZDoT4sGJp8JY2epyCTrK6ohZ8TLEKqE6QjpcandqPRooQoli1frAcktKEwKWcjrRmwrBGh7CqrqM6oeyCwmiMjHKRyHz8kUyjEIi0opaT7lA4ooigSJQ8oDCZNpDWiOyTrFtcn6pNwnriDZqQhKX+o8Sl2oEIoiChhqZGgl6sBnlKfLKALG9Wm6ix/n2om/ZipqLkMYw93JewgLii+qJ0lvKA/LN4ghihDJfAkWaV1qNCqFCj/K2sd+aRUqWotNKh3D9koCiEvq0KoXJQqnMWnUoicHoolfCL+pxSjHyWOqxeesSaQGSEj4STPqAckKSJYpjwpJJdsJoSfjh2ZJUIlXKR2qRwg6SFfo0utWCVOofookSVPIcoaBKenpUOj96O4GDQo7iSYI8OlNpwJKS0oqqamo+ykDKtUor8eS65npFmNNCytGIuoXqpVm2+mKSF6qtWYsBGxol8mJpq9m2WkpCjbHE6aXyTBpE2opCn7JJ4jZx05qQSbQSNWIayl3aoaor+cIqh6JI4heyiNpESjFSTeJzYeShihoH6pbyXNoIOgSCzypyKkj6amJ7ssWqX/EQ==",
+   "related": "https://www.youtube.com/watch?v=gZc5tTHJX_k",
+   "run": "40203173904",
+   "checkpoints": {},
+   "av_review_sha256": "40113b56cc450d7004d9eb22122fbe94105717c83ef48f7543566d609ed177c7",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-29T19:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
