@@ -889,6 +889,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "survive_night-04",
+   "series": "survive_night",
+   "era": "Jurassic",
+   "slot": "A",
+   "video_id": "suMH4nQUcsg",
+   "url": "https://www.youtube.com/shorts/suMH4nQUcsg",
+   "title": "Stranded on a Dinosaur Island — Where Do You Spend the Night? 🏝️",
+   "publish_at": "2026-10-29T14:30:00Z",
+   "uploaded_at": "2026-10-25T16:06:12Z",
+   "script": "Jurassic islands, a warm lagoon. Pick your bed. Soft sand, just above the tide. Under the scrubby conifers on the ridge. Out on the warm lagoon flats. Inside a pterosaur roost on the rocks. Drifting on a big driftwood log. Dead centre of the dried lagoon mud. Wading out to the sponge reef. Swimming to the next island at night. Real answer: number 2, because the drying lagoons left sticky mud that trapped insects and small dinosaurs. Stay on firm ground. Comment your number.",
+   "frame0": "0iH0H3UlwaFwoOGjiCfSJbWjlyKjKySet57TISUiQCShqS4otSsbozOqeyUxozGoRiQjK8YeEKACqh0HzaQ0KQiewZ6NpJgq/xzCJE4dEC5YJRYpaaZhGWWiJbCNG9gmRKSfKxorqClVJ76fYqcZJYSeQijMpBAfs664pQClYSInp5sf/py3J2SeqiKIqoyj9iPAqW2k6R8HpWWpyRizplmZJhEfoD+nzCVOJYmdkaXYouiiZqQIoDm5tpdiAlYlLaiPIKkYArNwIuekDKjiKS2eaKHKK+ugFiFApdwZGanqqF2mTiFXp7og/6ezpF8qrSFIKrMg66lWqdAeqxwmnVagJCF8q/8pzqRZLQCkCyUkJlGbTJyBqHcZgqcAKG4eTCKwpECnoil0qXeZhSGzGN0mTaY0qUarEiTAJCQbgJiPpWWpLyw6JvaiqiLXqTEtGqN5HrslK6ZXGYmooajymKCrh6c/rIIgvixto+ujyiM/qUMRLiGQqWSkIahapUao06h2oVafEKlyJ6afUilDoLUihKVFpWGl4yZQILYV3qCKJRUnwRJoJXmcJJnbqZag2yQzJskmJCJmLCKcMqcfqs4r4CgiqPOmWyQXH/SjoaUKJzIsUKB9ow0fCCFgJkwhy6gmJFCYzSSqEsys6iKyLn8cZSaIip0jQSUdoKGqmZ90p0MjazCXF6IUSCZyor4qjSL4qOSiCJ2opI0lISiBqKMrsSSQpqsbA5mZI3wkXiDrnfklGSZ4HLso2aOnrGWqfCCSnH2lGp61KBWoeKRmIHColqEZKFWdAI+hoSWkZaFiG/ugC6QBp8onpiKwqWosVS2HmPYiwaOBI50qN54uqMYs4TBjpCKoWKTjGx8MBBbkI0chqhe4pigpVakSIv2dFSgqoz0bMyqlqByb8RqpotsknZy1oLUoVpuIgp8gcSNOpp8YrxgvJkEr6Kl4qY+j4yx7oe0lASq9qCmlZhQIq5uo4yJpKtcpviq0n1wm8CR2KyqkwJjuJ10mmKXqHdCZ46GDpBumR5xQqMYV8ZynKFslaCfxoSijHqy8pamsDSQNKoKhGidfqlYhoiQ3qB+mSCkAqTgonKWXFFyf46USI8snYh2/pV0mliHtqGMpkK42oHQgCyUNJBissSCRGtEhoaWDJnyY9qaOqL+kRqkxKKYlpyXgnR4nkKPMIG4oB6e/JE2rd5DtGdAV7iPah8CkjSsPpAKl2alxHPmoX6TzpsYpsycRmnipYKgAk/6jPZy/HhqlniQIqr+XACYkkGofRahZq1cYqCiVqEAmaqTwJTKdyqY8JhmlBxsQqFijUabEoQeS8JomoTMne6jNpKWpejDmIVmomiiLIaIq0hvFGA==",
+   "related": "https://www.youtube.com/watch?v=-Pcx1fPHJHI",
+   "run": "40206168455",
+   "checkpoints": {},
+   "av_review_sha256": "78846aac9336a5f221981d4d4964846f32acfc3178fa074f0c1e3c57655dd51c",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-29T14:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
