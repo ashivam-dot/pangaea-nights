@@ -87,6 +87,7 @@ def narrate(p: dict, out: Path) -> dict:
     import soundfile as sf
 
     from .voice import SR
+    from .shorts_ladder import verdict_heard
 
     out.mkdir(parents=True, exist_ok=True)
     lines = [{"id": line_id(s), "text": s["text"]} for s in ladder.segments(p)]
@@ -109,6 +110,11 @@ def narrate(p: dict, out: Path) -> dict:
             s["heard"] = _transcribe(s["audio"], SR).strip()
             s["wer"] = round(wer(s["text"], s["heard"]), 3)
         bad = [k for k, s in segs.items() if s["wer"] > MAX_WER]
+        # A single missed answer word can fall below overall WER while failing the
+        # release gate. Retake that line within the same bounded budget as other
+        # transcription failures; the final answer gate retains its requirement.
+        if not verdict_heard({"segments": segs}, p["answer_n"]) and "verdict" not in bad:
+            bad.append("verdict")
         if not bad or attempt:
             break
         retake = _take([ln for ln in lines if ln["id"] in bad], speed * 0.96)
