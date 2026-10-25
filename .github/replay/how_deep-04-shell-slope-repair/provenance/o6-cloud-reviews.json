@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-25T11:41:14.989140+00:00",
+  "images": [
+    {
+      "file": "ladder-img-A-0/o6.png",
+      "image_sha256": "2ac3790b516770d68f3f388f2a70fe1dd54395efd4d00b9ba2daac0d278d3d3b",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: broad pale layered limestone slope descends diagonally into black surrounding water, with fine suspended particles and small shell chips. Bright near geological detail, diminishing dark background; no sky, sun, surface horizon, trees, river, human or dry canyon. Fits the unchanged descent-into-dark narration. Source art only; pair, cached-image, render and full audiovisual release checks remain required."
+    },
+    {
+      "file": "ladder-img-A-0/o6-alt1.png",
+      "image_sha256": "8df1e4dffb17e79422558416be4e283e555ccec9e17e030502fd5b6e0c294ec5",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: broad pale layered limestone slope descends diagonally into black surrounding water, with fine suspended particles and small shell chips. Bright near geological detail, diminishing dark background; no sky, sun, surface horizon, trees, river, human or dry canyon. Fits the unchanged descent-into-dark narration. Source art only; pair, cached-image, render and full audiovisual release checks remain required."
+    }
+  ],
+  "release_approval": false,
+  "scope": "Source paintings only"
+}

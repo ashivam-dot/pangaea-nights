@@ -1,0 +1,109 @@
+{
+ "shard": 0,
+ "of": 1,
+ "model": "klein4b-q8-768",
+ "premise": "how_deep-04",
+ "images": [
+  {
+   "id": "o3",
+   "takes": [
+    {
+     "seconds": 1036.3,
+     "problems": [],
+     "exposure": {
+      "raw_mean": 126.9,
+      "raw_p99": 246.0,
+      "gamma": 0.966,
+      "spread": 138.0
+     },
+     "figure": 0.3317,
+     "ok": true,
+     "reasons": [],
+     "person": 0.1846,
+     "text": 0.0123,
+     "broken": 0.0054,
+     "similarity": 0.2818,
+     "aesthetic": 4.6595,
+     "brightness": 128.8963,
+     "contrast": 49.2759,
+     "sharpness": 8.9527
+    },
+    {
+     "seconds": 989.9,
+     "problems": [],
+     "exposure": {
+      "raw_mean": 123.8,
+      "raw_p99": 235.0,
+      "gamma": 0.933,
+      "spread": 148.0
+     },
+     "figure": 0.382,
+     "ok": false,
+     "reasons": [
+      "person 0.31"
+     ],
+     "person": 0.3109,
+     "text": 0.0037,
+     "broken": 0.002,
+     "similarity": 0.3021,
+     "aesthetic": 5.058,
+     "brightness": 127.9563,
+     "contrast": 53.3032,
+     "sharpness": 9.115
+    }
+   ],
+   "kept": [
+    {
+     "plate": "o3.jpg",
+     "depth": "o3.depth.png",
+     "take": 0,
+     "similarity": 0.2818,
+     "luma": 128.9,
+     "embedding": "+CKHJIQhiiDxqmyaj5xmJXoruKPRpWQhxCt8kFcp+6UMJIct/SoEpW+udih3nL6pYyHAJaukQ6wapbicFiSjJcMoj5WIJUaiWZbsKtwidSytoO8PEiVKKdsgMKsJJDQmeh2MJB6k9yt0JGYhfak2Kb6p66FtJ0OgsCzHpzqnaqVHpp2kHSNXLQgdpy1fnQ6akR6aoj8m5qfkKA4krSl1qlGn7SM3p5qs2BvJKsUqT5lbpnEdtigaqAK54ChRqColzKDIn66rWaJ9HxKfZKuvKXcgLiV9sBkiqiYXI9clXh55nh4glCJdp7EnO6jsKPInFiQ4JUWeDR35EwEr1KJyKNYnsKR4KhQkbqgeLWkjxSmMm32priKNrMeknyXmpbsrBySkpDKo8B0qKUol3KXWpSkkZKrWmxuipirnpP2hOyejGCMgYpHXpv6mJal7puEoTyJpH8konCdRqGYsaygPGxCuT6SRn0SVCiyxpImi76joIieY6JicqLOo0ifipf6jmCK0oMoln6lMpUGlFqeSpQgcOauVngIpYygqo3UpGqnGINci65VeLESs7qgxHTgi/yihquutcqawJVcooypYmiQsLKfPkOGiNKlmKD4eKJlfKpQqq5/apsIpgKI/JfYqHqHGKLcjnB2Kn0msuCQ+Kroi3yUFKRIpkCriJBQYViaVIQWgGSUWJLOkYp+hKMgoeKZ5KYYffxS4qSqp2SUBonerDiB5HQKmSasep2WlGB6/JKikAiJgEhokBI/Dr7qqw56ApUwrAahyppQgoJo5qIkq+ygnJcAg/yKxqtmoRZ5RIn2htqqnKCMotKVzKdOdHC2tIfkiW6eWJkUpdqtqqbojZjAfq4CmkCHYIwIpe56noO+ksRgwp6egbKH+JOWmpaR4FTAjsSkwpB2tWpyvJO0ng6cyqushRKOtJNAo/iFaJw+dD6NQqCsm6aQnKv6nlyaTptEqjJ2UqK+X6iPhsAGooKLpIfEjlh3upkUptCYmLYWj1aqoH2mnHapzpSinUh3oJCWkLJwPq2KtC6ZipAQa06BYqcSpLaKDodCsIqeIo5wljajNq2wa5akLpggbsidqpMoqPqeHI8YRo6KkF1Mi/CgYJwUoyCZ+KHClcqq5KDAiNSmpqLatvqZHqXWlwShnpwIh2aczj3gniB6JJ/chmpRcpumn6pxYoogoSqwrqKaiuCJjKxgmJquWJUeaFStzqJAeKKl8J8EgEx1vnRcrTKqzIQEk4yGHqY0lJCLvJ2KkOKKYo+upsCOWpqcgp6VRqM2kgan9mfGaTaYVmE2rI5lGovgoSKTUpz6oC5+hIIMo6J0oJP6cg6JTpFghTqU2GTklN6HflhAm1Sg1pg==",
+     "score": 6.643,
+     "fallback": false
+    },
+    {
+     "plate": "o3-alt1.jpg",
+     "depth": "o3-alt1.depth.png",
+     "take": 1,
+     "similarity": 0.3021,
+     "luma": 128.0,
+     "embedding": "KSM7J14YM54RqTyiCaQMKD0pLyDdpSii4yxDoIMpY6c1G/AsyCUmIK2q+CnjICCrXRPEJYGjyKk7oyKdNSSQIP0lbSOtHJGi6ahgKO6nrS9FJJqZ5JjPJo+Zp6sxJ3+Unpm2Jcml3iogFb2c6aphJ82o5RxRJIqibyqQqKuePaWPpBenG5oJLGYlOSxEHV+m7p33pA6g+6kYJBscwiUsrMykzyLqn06roh/LKZ4o5J84qzUSHigCpCe5HSc8qpgp9KIsqQyt0KrKmxUZdq0WJxwr+yLLskoYhigAppgmmJq6IugjJSVwqMWcGKiqKDybyyY1HJsa3aC/nFoe1iMIKSIp6KhgJgCfAqgtLdEc6ydHoNASkiUrqTui9SKDpnknYCkLpOmkgR1gIpclWiMtqTuTOKlho5CbNShOqXyjQyqJEZWmuxjvoU0V/qaDn7spOCGjJP8m4yqypb8nQyT1I8qt96DppSud0yxtqnsevhgQgtYcqKF9qkmgJ46CnSSo4ZvYojIkf6U/IZabXR66pFCjEavJox0rHCtrnaknk6XPJyMY+6EFK0ip76S9Ki0e9SbhqCWqrqb2KikmpCcGpJ0sv6RJJgCgVKZbKOwltKOpKl4mESQGpeUmhqT0IGEqoKKcKagk2qeSpP2p3p2eJlwnsCQEKNIpKSYCJ/OhpSj2IKejrixIJSmoAKErJ8AqlqSiI2AlpieQp/CkSx6hp/KeoSLTJhCmpKuxFfmo7RoIpKeowJA2I78aMplBr/GoNqBaovIpqaU1oiwexZw4pBkmTilTKaYq7iJmqNOS7yRkIwEfyaTFK/QoZKFEI3+jKy0tKLEi/6gKKYYmmapPqIUoEzB+pgeleCRnIskllZ7bJUIavSTwqT8mnqgzIuWqvaQFn6ulNiakoOmq2yOeIIko96XCqswo0J3vIu8jVaIcKxWlyZ14qbkmsqd9KAymjIwvqHYs2R0fpI6gkSKLsCSouJ/7HAooGCSYlh8r0RV8LcKdaqiXKAOmm6d1pO+okB+mIoub0xrppoCsAaYCpCKk8R/5qzepxxVqJBOs+aUBp4UY3KXaqVug3agxp9klXipho5MsJqjCojGkKqKUJFolaiszohidwyMNjJkZgqvIJTkkcRodIkmw9qUXp12bqyGUo7icoaRdouWbuaD1oUKfx6J0Hfoia6VEoqQpmKwxplypnRzjJEsnzalOJm+mTSkEpBkoNKxYJWIk8iOOAPMq76hOJtIcViKyqUIcYqELnnWpuaesqqOllCMEoASiaKUWpAggyKHaHz4a6aE4ntOrAySJHx8qKCHGqeWlVKeJnOwpyqY3J3uhTaICp54n06MMpNkh/JK2Itoo1yStIw==",
+     "score": 7.132,
+     "fallback": false
+    }
+   ],
+   "reference_inputs": [
+    {
+     "file": "how_deep-04-shell-reference/straight-shell-crop.png",
+     "sha256": "439471f6a1e62a8b2e7fb7298367e23fca1b45dc3c65b89632e80ac35da33659",
+     "parent": {
+      "file": "how_deep-04-shell-reference/museum-endoceras-parent.png",
+      "sha256": "f0c13b8bd206795b4052ced63555f18612a02e5983ca690ce3889c9663405dad"
+     },
+     "license_evidence": {
+      "file": "how_deep-04-shell-reference/commons-license.json",
+      "sha256": "eb5edcbb668cc6ae9b053316799e89622e7bd97f835c0a03767b180e7f647d31"
+     },
+     "title": "File:Endoceras spp Svezia Museo Milano.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Endoceras_spp_Svezia_Museo_Milano.png",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Endoceras_spp_Svezia_Museo_Milano.png/960px-Endoceras_spp_Svezia_Museo_Milano.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+     "author": "Antonov",
+     "license": "CC0",
+     "crop_ltrb": [
+      455,
+      35,
+      958,
+      390
+     ],
+     "credit": "Straight-shell geometry reference: Endoceras fossils, Natural History Museum of Milan, photo Antonov, https://commons.wikimedia.org/wiki/File:Endoceras_spp_Svezia_Museo_Milano.png, CC0 (https://creativecommons.org/publicdomain/zero/1.0/), cropped CC0 reference used for AI adaptation of related endocerid shell geometry, setting and coloration are illustrative."
+    }
+   ],
+   "ok": true
+  }
+ ],
+ "cached_only": false,
+ "load_s": 2.0,
+ "seconds": 2066.5
+}

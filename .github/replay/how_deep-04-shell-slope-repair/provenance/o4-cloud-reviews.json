@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-25T12:13:22.032517+00:00",
+  "images": [
+    {
+      "file": "ladder-img-A-0/o4.png",
+      "image_sha256": "a489fc1eaece497ebf010e1b9d2a20b5a9faee24c24f0028e30ec707c4c2753e",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: upward underwater view beneath a large cream-grey limestone shelf overhang. Rough pitted underside fills the upper/right region and open cobalt-blue water fills the lower/left region, fading darker downward with suspended particles. A small warm reflected accent lies on the underside. No human, animal, land, sky, readable text or water-surface horizon; no lower seabed ledge. Fits the unchanged shelf-edge/fading-light line. Source art only; complete pairwise and independent release checks remain required."
+    },
+    {
+      "file": "ladder-img-A-0/o4-alt1.png",
+      "image_sha256": "70c7278011ea87ecda75f2061678af645877704bcef1625d654e76471a7ec8e7",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: upward underwater view beneath a large cream-grey limestone shelf overhang. Rough pitted underside fills the upper/right region and open cobalt-blue water fills the lower/left region, fading darker downward with suspended particles. A small warm reflected accent lies on the underside. No human, animal, land, sky, readable text or water-surface horizon; no lower seabed ledge. Fits the unchanged shelf-edge/fading-light line. Source art only; complete pairwise and independent release checks remain required."
+    }
+  ],
+  "scope": "Source paintings only; existing pair/picture/narration/render/full audiovisual gates still required",
+  "release_approval": false
+}

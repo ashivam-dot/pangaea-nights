@@ -1,0 +1,26 @@
+[
+  {
+    "file": "how_deep-04-shell-reference/straight-shell-crop.png",
+    "sha256": "439471f6a1e62a8b2e7fb7298367e23fca1b45dc3c65b89632e80ac35da33659",
+    "parent": {
+      "file": "how_deep-04-shell-reference/museum-endoceras-parent.png",
+      "sha256": "f0c13b8bd206795b4052ced63555f18612a02e5983ca690ce3889c9663405dad"
+    },
+    "license_evidence": {
+      "file": "how_deep-04-shell-reference/commons-license.json",
+      "sha256": "eb5edcbb668cc6ae9b053316799e89622e7bd97f835c0a03767b180e7f647d31"
+    },
+    "title": "File:Endoceras spp Svezia Museo Milano.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Endoceras_spp_Svezia_Museo_Milano.png",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Endoceras_spp_Svezia_Museo_Milano.png/960px-Endoceras_spp_Svezia_Museo_Milano.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "Antonov",
+    "license": "CC0",
+    "crop_ltrb": [
+      455,
+      35,
+      958,
+      390
+    ],
+    "credit": "Straight-shell geometry reference: Endoceras fossils, Natural History Museum of Milan, photo Antonov, https://commons.wikimedia.org/wiki/File:Endoceras_spp_Svezia_Museo_Milano.png, CC0 (https://creativecommons.org/publicdomain/zero/1.0/), cropped CC0 reference used for AI adaptation of related endocerid shell geometry, setting and coloration are illustrative."
+  }
+]

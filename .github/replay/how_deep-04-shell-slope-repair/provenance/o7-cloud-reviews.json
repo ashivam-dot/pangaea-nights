@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-25T11:13:17.456348+00:00",
+  "images": [
+    {
+      "file": "ladder-img-A-0/o7.png",
+      "image_sha256": "31c232f8257eb1fc64b1dccb1ffba94640a98cafbb821b89772d4e2a3193553b",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: submerged pale sediment and broken shell fragments are clearly lit in the foreground, with suspended particles and black surrounding deep water. No sky, sun, surface horizon, trees or human figure. Matches the unchanged cold black basin narration; shell fragments are illustrative and no exact species identification is claimed. Full current rendered audiovisual checks remain required."
+    },
+    {
+      "file": "ladder-img-A-0/o7-alt1.png",
+      "image_sha256": "d7cfee01fa7777a2ddf837b3d26581f26b3fae8ebe06ccd1d32aa277420f9fc4",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: submerged pale sediment and broken shell fragments are clearly lit in the foreground, with suspended particles and black surrounding deep water. No sky, sun, surface horizon, trees or human figure. Matches the unchanged cold black basin narration; shell fragments are illustrative and no exact species identification is claimed. Full current rendered audiovisual checks remain required."
+    }
+  ],
+  "release_approval": false,
+  "scope": "Source paintings only"
+}

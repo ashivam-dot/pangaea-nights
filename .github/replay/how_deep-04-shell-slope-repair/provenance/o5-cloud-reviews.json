@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-25T10:03:52+00:00",
+  "images": [
+    {
+      "file": "ladder-img-A-2/o5.png",
+      "image_sha256": "6a5f7bdfb274b51f2c445aeceafe3ba2f166392fbb86836a2cb81925e81009cf",
+      "decision": "pass",
+      "reason": "Direct native review: a sharply detailed carbonate ledge in the near foreground, small delicate drifting colonies and dim cobalt underwater space below the shelf. The distant upper reef remains a faint diffuse patch; no surface horizon or invented creature dominates the depth view. Current picture and final audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-0/o3.png",
+      "image_sha256": "38ef2db9434c99ad9c9430bf74304f99bc1c506ba21d27a7a480f0b7a8b4990d",
+      "decision": "hold",
+      "reason": "Direct native inspection: the cephalopods have sharply tapering shell-like protrusions at both ends. On the foreground animal the head emerges midway along a double-ended spindle; the arms do not emerge only from the broad open end of one long straight cone. This contradicts required straight-shelled cephalopod anatomy."
+    }
+  ],
+  "release_approval": false
+}

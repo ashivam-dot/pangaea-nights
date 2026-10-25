@@ -1,0 +1,79 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-1/o2-alt1.png",
+      "image_sha256": "68cbf073b2d214c58b3ebc1b5d8f14f3f08cd31aa81adb8a6f46aff1aefd8a31",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: a readable honeycomb-coral and lacy bryozoan garden is the main subject, matching the early-corals spoken choice. No people, captions or malformed focal subject. Tiny background swimmers are not identified to species by this visual-only review."
+    },
+    {
+      "file": "ladder-img-A-1/o2.png",
+      "image_sha256": "abb53c51100cc92ed691d7213c3021b6d82f4677ecbeab114ba9dc4346fc4584",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: a readable honeycomb-coral and lacy bryozoan garden is the main subject, matching the early-corals spoken choice. No people, captions or malformed focal subject. Tiny background swimmers are not identified to species by this visual-only review."
+    },
+    {
+      "file": "ladder-img-A-0/o1-alt1.png",
+      "image_sha256": "6c457b877b385ec0c9557818115d931c632e2cc5af306c27ba847ab1a558a7c3",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: clear sunlit aquamarine shallows over pale sand with small coral/bryozoan mounds, distinct sunset lighting and no people or text. Matches the shallow-water opening choice."
+    },
+    {
+      "file": "ladder-img-A-0/o1.png",
+      "image_sha256": "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: clear sunlit aquamarine shallows over pale sand with small coral/bryozoan mounds, distinct sunset lighting and no people or text. Matches the shallow-water opening choice."
+    },
+    {
+      "file": "ladder-img-A-3/o4.png",
+      "image_sha256": "203f32988e2f08555fde91cfab07f8375cec8c8a6cb9816db6a72822bf86f7b3",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: the focal animal has a short bulbous swept-back shell instead of the giant elongated straight conical shell required for this Cameroceras-era scene. Its tentacles do not establish the defining straight-shell anatomy. Preserve all speech and useful sibling art; replace only this visual."
+    },
+    {
+      "file": "ladder-img-A-5/o6.png",
+      "image_sha256": "8fff09307f312d1e067a78569b81d90675835c447479793e93d3de6b14792f75",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: this is a sunlit dry canyon with trees, open sky and a narrow stream. The scene requires a fully submerged dark marine slope. Preserve all speech; replace this image only."
+    },
+    {
+      "file": "ladder-img-A-5/o6-alt1.png",
+      "image_sha256": "6245fdae5c734dadaedbd935262093cfaef6505a33bf1b7c6c2edd4494a203f8",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: this is a sunlit dry canyon with trees, open sky and a narrow stream. The scene requires a fully submerged dark marine slope. Preserve all speech; replace this image only."
+    },
+    {
+      "file": "ladder-img-A-2/o3.png",
+      "image_sha256": "5728ab2e1499f4dbddd0b1e6b4fc18ca60f52e2a20c5ddace377ce38538e008d",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: the procession has short broad diamond/pyramidal shells instead of elongated straight tapering cones. Replace this picture with clearly elongated straight-shelled cephalopods; preserve every spoken line."
+    },
+    {
+      "file": "ladder-img-A-6/o7.png",
+      "image_sha256": "4e2f48c235037bdbdcdf56f088682044f8a2c1aebf129843331a074877963cd8",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: bright turquoise water, an overhead sun and strong sunbeams contradict the cold black deep-basin floor. Replace only this depth scene using soft external foreground fill and black surrounding water."
+    },
+    {
+      "file": "ladder-img-A-6/o7-alt1.png",
+      "image_sha256": "3ca0c635b67ae51a6d5f737696186de9a5080f7937815a9c0a671e5a6e19c044",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: bright turquoise water, an overhead sun and strong sunbeams contradict the cold black deep-basin floor. Replace only this depth scene using soft external foreground fill and black surrounding water."
+    },
+    {
+      "file": "ladder-img-A-7/o8.png",
+      "image_sha256": "e5a23078a8bb130b929b41ea68b725cf648200f4e5c6f6df0e94ab573f9ffd49",
+      "decision": "hold",
+      "reason": "Directly inspected native source painting shows a flat open-water horizon, a bright low sun and turquoise overhead light instead of fully submerged stagnant black bottom water. Hold these exact bytes; all narration and useful sibling art remain unchanged."
+    },
+    {
+      "file": "ladder-img-A-7/o8-alt1.png",
+      "image_sha256": "008548d082548ea8b4bc768ed99ef2c4ca4895a575f780ba26af113f634233af",
+      "decision": "hold",
+      "reason": "Directly inspected native source painting shows a flat open-water horizon, a bright low sun and turquoise overhead light instead of fully submerged stagnant black bottom water. Hold these exact bytes; all narration and useful sibling art remain unchanged."
+    }
+  ],
+  "at": "2026-10-25T09:46:22+00:00",
+  "scope": "Available source paintings only; current cloud and complete rendered audiovisual checks remain required.",
+  "release_approval": false
+}

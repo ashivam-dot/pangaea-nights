@@ -1,0 +1,120 @@
+{
+ "slot": "A",
+ "mode": "dry",
+ "day": "2026-10-25",
+ "run": "40180341727",
+ "key": "2026-10-25-how_deep-04",
+ "premise": {
+  "id": "how_deep-04",
+  "era": "Ordovician",
+  "title": "Ocean of Giant Shelled Hunters — How Deep Do You Dare Go? 🐚",
+  "banner": "Giant shell hunters: how deep?",
+  "hook_vo": "Two-metre shells with tentacles. How deep do you go?",
+  "art_direction": "Warm aquamarine tropical palette fading to ink, wide 24mm lens with heavy god-rays, one warm coral-orange glow per frame.",
+  "options": [
+   {
+    "n": 1,
+    "label": "Sunlit tropical shallows",
+    "vo": "One: bathtub-warm tropical shallows.",
+    "danger": 1,
+    "image_prompt": "crystal clear tropical shallows over pale carbonate sand, small corals and bryozoan mounds, bright aquamarine water, one warm coral-orange sunset glow on the surface, photoreal painterly, vertical composition"
+   },
+   {
+    "n": 2,
+    "label": "Coral and bryozoan garden",
+    "vo": "Two: a garden of early corals.",
+    "danger": 2,
+    "image_prompt": "underwater garden of honeycomb corals and lacy bryozoan fans in sunlit water, tiny cephalopods with straight shells drifting, one warm orange light pool on the reef, photoreal painterly, vertical composition"
+   },
+   {
+    "n": 3,
+    "label": "Among the long shells",
+    "vo": "Three: among drifting long cone shells.",
+    "danger": 3,
+    "image_prompt": "Fully submerged underwater nature-documentary view of three straight-shelled Ordovician cephalopods drifting diagonally through clear tropical seawater. Each animal has a very long slender rigid straight tapering CONICAL SHELL, narrow pointed apex far behind its small compact head, with a short cluster of arms projecting only from the wide open shell mouth. The shell is at least three times longer than the arms; smooth gently tapering elongated cone, realistic rounded cross-section. Side views clearly show the complete long shell silhouettes. Pale sandy seafloor below, blue water surrounding every edge, sunlight filtered through water above, one warm orange highlight. Photoreal painterly, vertical composition."
+   },
+   {
+    "n": 4,
+    "label": "Shelf edge, fading blue",
+    "vo": "Four: the shelf edge, light fading.",
+    "danger": 4,
+    "image_prompt": "Fully submerged side-view at the rim of a pale Ordovician carbonate shelf dropping into deep blue seawater. Exactly one straight-shelled cephalopod floats horizontally beside the shelf edge. Its rigid smooth shell is a very long slender straight tapering cone with a narrow pointed apex extending far behind a small compact head. The long cone is at least three times longer than the short arm cluster at its broad opening. Show the whole elongated straight shell in profile. A cool underwater depth gradient surrounds the animal; one warm orange reflection on the shelf. Photoreal painterly, vertical composition."
+   },
+   {
+    "n": 5,
+    "label": "Below the shelf, dim",
+    "vo": "Five: below the shelf, dim and cool.",
+    "danger": 5,
+    "image_prompt": "Fully submerged view just below a tropical carbonate shelf, in dim cool deep-blue water. A sharply detailed rough carbonate ledge occupies the near lower-left foreground, its cracks, tiny pits and pale sediment grains clearly resolved. Several delicate small graptolite colonies drift beyond the ledge in the cool water. The brighter reef is a small faint distant patch far overhead, outside the main frame. Empty deep-blue water opens away to the right. Quiet low-light underwater documentary scene, realistic fine foreground textures, subdued warm reflection only on the far upper reef, photoreal painterly, vertical composition.",
+    "art_direction": "Dim cobalt blue underwater palette, close foreground detail on a carbonate ledge, gentle neutral external fill, fine crisp mineral texture, soft distant reef glow only"
+   },
+   {
+    "n": 6,
+    "label": "Down the dark slope",
+    "vo": "Six: down the slope into the dark.",
+    "danger": 6,
+    "image_prompt": "Entire viewpoint and scene fully submerged hundreds of metres UNDER THE OCEAN, looking diagonally down a steep muddy SEAFLOOR SLOPE into dark indigo seawater. Unbroken dark water fills the upper half and surrounds every edge; the sea surface is far outside the frame. Soft suspended marine snow particles and fine dark mud establish the underwater environment. A dim neutral external documentary fill reveals the near slope, fading rapidly into blue-black water; a tiny warm orange distant underwater glimmer far up the slope. Bare marine sediment only, no plants, no trees, no river, no dry land, no open sky, no visible sun. Photoreal painterly, vertical composition."
+   },
+   {
+    "n": 7,
+    "label": "The cold black basin",
+    "vo": "Seven: the cold black basin floor.",
+    "danger": 7,
+    "image_prompt": "Cold Ordovician basin floor in pitch black deep water. Close foreground view of sharply detailed fine dark mud with scattered pale empty shells half buried, crisp shell edges and natural sediment grains. Soft neutral external documentary fill reveals only the nearby mud and shells; featureless opaque black seawater fills the entire upper half and every distant edge. Fully submerged deep sea with no visible water surface, no sun, no sky, no sunlight or god-rays. Photoreal painterly, vertical composition."
+   },
+   {
+    "n": 8,
+    "label": "Airless black water",
+    "vo": "Eight: the airless black bottom water.",
+    "danger": 8,
+    "image_prompt": "stagnant black bottom water over dark shale mud with no life, a faint sulphur haze, one warm sickly orange glow far off in the darkness, photoreal painterly, vertical composition"
+   }
+  ],
+  "answer_n": 5,
+  "verdict_vo": "Real answer: number 5, because Cameroceras thrived in shallow tropical seas. Just below the shelf is probably your best bet.",
+  "fact": {
+   "text": "The giant shelled cephalopod Cameroceras was abundant in the Late Ordovician, living in shallow tropical seas.",
+   "wiki_title": "Cameroceras",
+   "wiki_revid": 1353695863,
+   "source_sentence": "It was particularly abundant and widespread in the Late Ordovician, inhabiting the shallow tropical seas in and around Laurentia, Baltica and Siberia (equivalent to modern North America, Europe, and Asia)."
+  },
+  "description": "Giant straight-shelled cephalopods ruled these warm seas long before fish took over. Eight depths, and only one sweet spot between the hunters and the dark.",
+  "tags": [
+   "ordovician",
+   "ocean",
+   "cephalopod",
+   "prehistoric sea",
+   "how deep",
+   "survival",
+   "prehistoric",
+   "deep sea"
+  ],
+  "related_topic_hint": "The Ocean Before the Dinosaurs",
+  "end_image": "o1",
+  "series": "how_deep"
+ },
+ "gates": {
+  "premise": {
+   "ok": true,
+   "problems": []
+  },
+  "novelty_4gram": {
+   "value": 0.042,
+   "ceiling": 0.35,
+   "ok": true
+  },
+  "rotation": {
+   "ok": true,
+   "problems": []
+  },
+  "reuse": {
+   "ok": true
+  }
+ },
+ "script": "Two-metre shells with tentacles. How deep do you go? One: bathtub-warm tropical shallows. Two: a garden of early corals. Three: among drifting long cone shells. Four: the shelf edge, light fading. Five: below the shelf, dim and cool. Six: down the slope into the dark. Seven: the cold black basin floor. Eight: the airless black bottom water. Real answer: number 5, because Cameroceras thrived in shallow tropical seas. Just below the shelf is probably your best bet. Comment your number.",
+ "created": "2026-10-25T09:22:37Z",
+ "image_replay": {
+  "path": ".github/replay/how_deep-04-all-repair-art-only.json",
+  "sha256": "4418324f48a4cd7c3cb1a68e1a006f8d4339190c3f1cf0f45ad375fba68bc435"
+ }
+}

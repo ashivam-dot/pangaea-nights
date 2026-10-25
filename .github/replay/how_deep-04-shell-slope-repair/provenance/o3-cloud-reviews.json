@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-25T11:48:37.802923+00:00",
+  "images": [
+    {
+      "file": "ladder-img-A-0/o3.png",
+      "image_sha256": "45e1c4776af75dc1f6ab54fade2abc510cc955e4da6c1f66d6531337b2aadf4d",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: the visible shell ends in a broad blunt truncated tip instead of the requested narrow closed pointed apex. The broader form is not accepted for this shell-anatomy repair. Do not stage these bytes, despite the generic automated picture pass."
+    },
+    {
+      "file": "ladder-img-A-0/o3-alt1.png",
+      "image_sha256": "fec865f967d66340d14b8f4738da5627cf49fc848a6d7cb2c3450673af8e4ce9",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: one very elongated slim ivory cone with fine brown growth bands passes across clear blue water at a shallow diagonal and gradually narrows to a closed pointed apex. Its broad body end exits the left frame; head/arms are deliberately outside this close crop, matching the approved scene plan. Pale sand and reef fragments below, marine particles, no copied museum diagrams, writing, human parts or pendant setting. This is illustrative shell geometry informed by a related endocerid fossil, not an identified Cameroceras specimen. Complete reference credit is retained. Current pair, cached-image, render and full audiovisual checks remain required."
+    }
+  ],
+  "release_approval": false,
+  "scope": "Source paintings only"
+}

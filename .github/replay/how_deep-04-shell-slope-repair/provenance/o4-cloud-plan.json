@@ -1,0 +1,123 @@
+{
+ "slot": "A",
+ "mode": "dry",
+ "day": "2026-10-25",
+ "run": "40189193071",
+ "key": "2026-10-25-how_deep-04",
+ "premise": {
+  "id": "how_deep-04",
+  "era": "Ordovician",
+  "title": "Ocean of Giant Shelled Hunters — How Deep Do You Dare Go? 🐚",
+  "banner": "Giant shell hunters: how deep?",
+  "hook_vo": "Two-metre shells with tentacles. How deep do you go?",
+  "art_direction": "Warm aquamarine tropical palette fading to ink, wide 24mm lens with heavy god-rays, one warm coral-orange glow per frame.",
+  "options": [
+   {
+    "n": 1,
+    "label": "Sunlit tropical shallows",
+    "vo": "One: bathtub-warm tropical shallows.",
+    "danger": 1,
+    "image_prompt": "crystal clear tropical shallows over pale carbonate sand, small corals and bryozoan mounds, bright aquamarine water, one warm coral-orange sunset glow on the surface, photoreal painterly, vertical composition"
+   },
+   {
+    "n": 2,
+    "label": "Coral and bryozoan garden",
+    "vo": "Two: a garden of early corals.",
+    "danger": 2,
+    "image_prompt": "underwater garden of honeycomb corals and lacy bryozoan fans in sunlit water, tiny cephalopods with straight shells drifting, one warm orange light pool on the reef, photoreal painterly, vertical composition"
+   },
+   {
+    "n": 3,
+    "label": "Among the long shells",
+    "vo": "Three: among drifting long cone shells.",
+    "danger": 3,
+    "image_prompt": "Use the supplied fossil reference only for the long straight conical shell geometry and fine external texture. Underwater nature-documentary close side view as a living straight-shelled cephalopod swims horizontally past in clear blue Ordovician seawater. One very long rigid ivory shell crosses the middle of the frame at a shallow diagonal, parallel to the sandy seabed. Its broad left body end continues beyond the left edge of the frame; its head and arms are outside the picture. The visible shell tapers gradually to one narrow closed pointed apex at the right. Preserve the reference shell's slim proportions and natural fine growth rings, with muted brown mineral texture on ivory. The shell is free-swimming in open water. Fine current-borne marine particles pass around it; pale sand and small reef fragments lie below. Soft blue seawater and a subdued warm reflection on the nearby reef, photoreal painterly natural-history documentary, crisp foreground shell texture, vertical close composition.",
+    "art_direction": "Clear tropical blue seawater, pale textured sand and reef fragments, natural ivory and muted brown shell surface, close horizontal shell profile with a soft warm reflected accent"
+   },
+   {
+    "n": 4,
+    "label": "Shelf edge, fading blue",
+    "vo": "Four: the shelf edge, light fading.",
+    "danger": 4,
+    "image_prompt": "Fully submerged underwater nature-documentary view looking obliquely upward beneath the edge of an Ordovician limestone shelf. A broad massive cream-grey carbonate OVERHANG occupies the UPPER RIGHT half of the vertical frame, its underside and layered vertical face visible with rough mineral pits, crusts and hanging rounded rock projections. The shelf lip runs across the top and drops vertically down the right side. Open clear cobalt-blue seawater fills the LEFT and LOWER half, becoming darker downward as daylight fades with depth. Tiny suspended particles hang beneath the overhang. A restrained soft warm reflection picks out one small patch on the underside, while neutral external fill reveals crisp rock layers. Seen from under the shelf looking upward, with no seabed or horizontal lower ledge in view. Bare submerged geology, no focal animal, no land, no sky and no water surface. Photoreal painterly, detailed underwater overhang documentary composition.",
+    "art_direction": "Upward-looking underwater composition beneath a cream-grey limestone overhang at upper right, crisp layered underside and rough mineral texture, open blue water at lower left fading darker downward, subtle warm reflected accent"
+   },
+   {
+    "n": 5,
+    "label": "Below the shelf, dim",
+    "vo": "Five: below the shelf, dim and cool.",
+    "danger": 5,
+    "image_prompt": "Fully submerged view just below a tropical carbonate shelf, in dim cool deep-blue water. A sharply detailed rough carbonate ledge occupies the near lower-left foreground, its cracks, tiny pits and pale sediment grains clearly resolved. Several delicate small graptolite colonies drift beyond the ledge in the cool water. The brighter reef is a small faint distant patch far overhead, outside the main frame. Empty deep-blue water opens away to the right. Quiet low-light underwater documentary scene, realistic fine foreground textures, subdued warm reflection only on the far upper reef, photoreal painterly, vertical composition.",
+    "art_direction": "Dim cobalt blue underwater palette, close foreground detail on a carbonate ledge, gentle neutral external fill, fine crisp mineral texture, soft distant reef glow only"
+   },
+   {
+    "n": 6,
+    "label": "Down the dark slope",
+    "vo": "Six: down the slope into the dark.",
+    "danger": 6,
+    "image_prompt": "Fully submerged underwater nature-documentary close view of an Ordovician carbonate seafloor slope descending into pitch black deep water. A broad pale cream limestone slope fills the lower two thirds of the vertical frame, running diagonally from the near upper-left foreground toward the distant lower-right. Its sharply detailed layered rock has crisp angular edges, fine fractures, muted ochre mineral stains and individual pale sediment grains. Small empty shell chips lie between the near rock layers. Bright soft neutral external cinematic fill lights the entire close pale slope evenly, keeping the mineral colours and fine textures readable. The rock face recedes into dark blue shadow and then featureless black seawater. Fine suspended marine snow is visible above the slope; opaque black water occupies the upper third. The whole scene is underwater. No horizon, sky, sun, land, trees, river or water surface. Photoreal painterly, crisp foreground geological detail, natural documentary composition."
+   },
+   {
+    "n": 7,
+    "label": "The cold black basin",
+    "vo": "Seven: the cold black basin floor.",
+    "danger": 7,
+    "image_prompt": "Fully submerged underwater nature-documentary close view of the cold Ordovician basin floor in pitch black deep water. A broad near-field patch of pale grey silty mud fills the lower two thirds of the vertical frame, with crisp ripples, tiny sediment grains and sharply edged empty shell fragments. Three pale ivory shell fragments lie partly buried in the mud, their broken rims and fine growth lines distinctly resolved. Bright soft neutral external cinematic fill lights the entire nearby mud patch evenly, making its mineral texture and shell edges clear and readable. The illumination falls off rapidly beyond this foreground; featureless black seawater fills the upper third. Fine suspended marine snow is visible just above the bottom. No sky, sun, horizon, land, sunlight, water surface or god-rays. Photoreal painterly, detailed near-field documentary composition."
+   },
+   {
+    "n": 8,
+    "label": "Airless black water",
+    "vo": "Eight: the airless black bottom water.",
+    "danger": 8,
+    "image_prompt": "Fully submerged underwater nature-documentary close view of a stagnant Ordovician deep-basin bottom in pitch black deep water. Three broad pale cream limestone slabs lie flat and half buried in fine grey mud in the near foreground, with crisp layered mineral edges, fine powdery sediment, and narrow rippled channels between the slabs. The slabs and detailed mud fill the lower two thirds of the vertical picture. Bright soft neutral external documentary fill evenly illuminates the entire pale foreground, revealing sharp rock texture and sediment grains. The illumination falls off rapidly behind the slabs into featureless black surrounding seawater. Tiny suspended particles remain close above the mud. Empty still bottom with no animals. No sky, sun, horizon, land, trees, sunlight, water surface or god-rays. Photoreal painterly, crisp detailed near-field documentary composition.",
+    "art_direction": "Pale cream layered limestone slabs and finely textured grey sediment, bright neutral external foreground fill, featureless black surrounding deep seawater, still empty submerged bottom"
+   }
+  ],
+  "answer_n": 5,
+  "verdict_vo": "Real answer: number 5, because Cameroceras thrived in shallow tropical seas. Just below the shelf is probably your best bet.",
+  "fact": {
+   "text": "The giant shelled cephalopod Cameroceras was abundant in the Late Ordovician, living in shallow tropical seas.",
+   "wiki_title": "Cameroceras",
+   "wiki_revid": 1353695863,
+   "source_sentence": "It was particularly abundant and widespread in the Late Ordovician, inhabiting the shallow tropical seas in and around Laurentia, Baltica and Siberia (equivalent to modern North America, Europe, and Asia)."
+  },
+  "description": "Giant straight-shelled cephalopods ruled these warm seas long before fish took over. Eight depths, and only one sweet spot between the hunters and the dark.\n\nStraight-shell geometry reference: Endoceras fossils, Natural History Museum of Milan, photo Antonov, https://commons.wikimedia.org/wiki/File:Endoceras_spp_Svezia_Museo_Milano.png, CC0 (https://creativecommons.org/publicdomain/zero/1.0/), cropped CC0 reference used for AI adaptation of related endocerid shell geometry, setting and coloration are illustrative.",
+  "tags": [
+   "ordovician",
+   "ocean",
+   "cephalopod",
+   "prehistoric sea",
+   "how deep",
+   "survival",
+   "prehistoric",
+   "deep sea"
+  ],
+  "related_topic_hint": "The Ocean Before the Dinosaurs",
+  "end_image": "o1",
+  "series": "how_deep"
+ },
+ "gates": {
+  "premise": {
+   "ok": true,
+   "problems": []
+  },
+  "novelty_4gram": {
+   "value": 0.042,
+   "ceiling": 0.35,
+   "ok": true
+  },
+  "rotation": {
+   "ok": true,
+   "problems": []
+  },
+  "reuse": {
+   "ok": true
+  }
+ },
+ "script": "Two-metre shells with tentacles. How deep do you go? One: bathtub-warm tropical shallows. Two: a garden of early corals. Three: among drifting long cone shells. Four: the shelf edge, light fading. Five: below the shelf, dim and cool. Six: down the slope into the dark. Seven: the cold black basin floor. Eight: the airless black bottom water. Real answer: number 5, because Cameroceras thrived in shallow tropical seas. Just below the shelf is probably your best bet. Comment your number.",
+ "created": "2026-10-25T11:31:27Z",
+ "image_replay": {
+  "path": ".github/replay/how_deep-04-shelf-overhang-art-only.json",
+  "sha256": "542e1bceb481892dae5a50e95600380b65bf3116410d40a83245f373cd60a26a"
+ }
+}

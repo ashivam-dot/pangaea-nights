@@ -1,0 +1,114 @@
+{
+  "query": {
+    "pages": {
+      "147726996": {
+        "pageid": 147726996,
+        "ns": 6,
+        "title": "File:Endoceras spp Svezia Museo Milano.png",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Endoceras_spp_Svezia_Museo_Milano.png/960px-Endoceras_spp_Svezia_Museo_Milano.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 600,
+            "thumbheight": 338,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Endoceras_spp_Svezia_Museo_Milano.png/1280px-Endoceras_spp_Svezia_Museo_Milano.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Endoceras_spp_Svezia_Museo_Milano.png/960px-Endoceras_spp_Svezia_Museo_Milano.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 600,
+              "height": 338,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Endoceras_spp_Svezia_Museo_Milano.png/1280px-Endoceras_spp_Svezia_Museo_Milano.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Endoceras_spp_Svezia_Museo_Milano.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Endoceras_spp_Svezia_Museo_Milano.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=147726996",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-04-25 17:23:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Endoceras spp Svezia Museo Milano",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Nautiloidea fossils|Museo civico di storia naturale (Milan)|CC-Zero|Self-published work|Museo civico di storia naturale (Milan) - Fossils|Endoceras fossils|Endocerida fossils",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Fossil Endocerida (Ordovician) in the exibition halls of Natural History Museum of Milan. Image widht is about 50 cm.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-04-25",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Antonov\" title=\"User:Antonov\">Antonov</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "I declare that this image is a photograph taken by me in the public exhibition halls of the Natural History Museum in Milan on 25 April 2024, and I would like it to be included in Wikimedia Commons in Universal Public Domain Dedication.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

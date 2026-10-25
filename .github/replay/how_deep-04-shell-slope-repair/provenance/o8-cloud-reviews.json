@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-25T12:01:33.358091+00:00",
+  "images": [
+    {
+      "file": "ladder-img-A-0/o8.png",
+      "image_sha256": "73d2cad0d0e046103dc59118c712985c53503a86f8053e043ec8e2ad75b0e494",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: three pale layered limestone slabs lie flat in grey rippled mud, readable foreground mineral edges and sediment, suspended near particles and featureless black surrounding deep water. Empty still scene with no animals, human parts, dry land, surface horizon, sun or sunlight. Fits the unchanged black-bottom-water scene; anoxia itself is not visually proved. This native image uses the already-existing bounded sharpness-only fallback (7.9436), with source report ok=true; no acceptance threshold changed. Current pair/cached-image/render/full audiovisual gates remain required."
+    }
+  ],
+  "release_approval": false,
+  "scope": "Source painting only"
+}

@@ -1,0 +1,301 @@
+{
+  "schema": 1,
+  "premise": "how_deep-04",
+  "cached_only": true,
+  "source": {
+    "run_id": 40176094964,
+    "sha": "b058dbdb4ff53115e4fb443f4ba0e9755ba5cea6",
+    "key": "2026-10-25-how_deep-04"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o1.png",
+        "sha256": "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 132.1,
+          "raw_p99": 237.0,
+          "gamma": 1.024,
+          "spread": 152.0
+        },
+        "artifact_id": 12592753212,
+        "prompt": "crystal clear tropical shallows over pale carbonate sand, small corals and bryozoan mounds, bright aquamarine water, one warm coral-orange sunset glow on the surface, photoreal painterly, vertical composition. Warm aquamarine tropical palette fading to ink, wide 24mm lens with heavy god-rays, one warm coral-orange glow per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o1-alt1.png",
+        "sha256": "6c457b877b385ec0c9557818115d931c632e2cc5af306c27ba847ab1a558a7c3",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 162.9,
+          "raw_p99": 240.0,
+          "gamma": 1.503,
+          "spread": 155.0
+        },
+        "artifact_id": 12592753212,
+        "prompt": "crystal clear tropical shallows over pale carbonate sand, small corals and bryozoan mounds, bright aquamarine water, one warm coral-orange sunset glow on the surface, photoreal painterly, vertical composition. Warm aquamarine tropical palette fading to ink, wide 24mm lens with heavy god-rays, one warm coral-orange glow per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o2": [
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o2.png",
+        "sha256": "abb53c51100cc92ed691d7213c3021b6d82f4677ecbeab114ba9dc4346fc4584",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 89.8,
+          "raw_p99": 235.0,
+          "gamma": 0.646,
+          "spread": 175.0
+        },
+        "artifact_id": 12592496985,
+        "prompt": "underwater garden of honeycomb corals and lacy bryozoan fans in sunlit water, tiny cephalopods with straight shells drifting, one warm orange light pool on the reef, photoreal painterly, vertical composition. Warm aquamarine tropical palette fading to ink, wide 24mm lens with heavy god-rays, one warm coral-orange glow per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o2-alt1.png",
+        "sha256": "68cbf073b2d214c58b3ebc1b5d8f14f3f08cd31aa81adb8a6f46aff1aefd8a31",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 98.5,
+          "raw_p99": 239.0,
+          "gamma": 0.708,
+          "spread": 184.0
+        },
+        "artifact_id": 12592496985,
+        "prompt": "underwater garden of honeycomb corals and lacy bryozoan fans in sunlit water, tiny cephalopods with straight shells drifting, one warm orange light pool on the reef, photoreal painterly, vertical composition. Warm aquamarine tropical palette fading to ink, wide 24mm lens with heavy god-rays, one warm coral-orange glow per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o3": [
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o3-alt1.png",
+        "sha256": "fec865f967d66340d14b8f4738da5627cf49fc848a6d7cb2c3450673af8e4ce9",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 123.8,
+          "raw_p99": 235.0,
+          "gamma": 0.933,
+          "spread": 148.0
+        },
+        "artifact_id": 12597534987,
+        "prompt": "Use the supplied fossil reference only for the long straight conical shell geometry and fine external texture. Underwater nature-documentary close side view as a living straight-shelled cephalopod swims horizontally past in clear blue Ordovician seawater. One very long rigid ivory shell crosses the middle of the frame at a shallow diagonal, parallel to the sandy seabed. Its broad left body end continues beyond the left edge of the frame; its head and arms are outside the picture. The visible shell tapers gradually to one narrow closed pointed apex at the right. Preserve the reference shell's slim proportions and natural fine growth rings, with muted brown mineral texture on ivory. The shell is free-swimming in open water. Fine current-borne marine particles pass around it; pale sand and small reef fragments lie below. Soft blue seawater and a subdued warm reflection on the nearby reef, photoreal painterly natural-history documentary, crisp foreground shell texture, vertical close composition. Clear tropical blue seawater, pale textured sand and reef fragments, natural ivory and muted brown shell surface, close horizontal shell profile with a soft warm reflected accent. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40187567010,
+          "sha": "5ce3dfebcd87ced4e515f40afe4eb92007119fd6",
+          "key": "2026-10-25-how_deep-04",
+          "reference_inputs": [
+            {
+              "file": "how_deep-04-shell-reference/straight-shell-crop.png",
+              "sha256": "439471f6a1e62a8b2e7fb7298367e23fca1b45dc3c65b89632e80ac35da33659",
+              "parent": {
+                "file": "how_deep-04-shell-reference/museum-endoceras-parent.png",
+                "sha256": "f0c13b8bd206795b4052ced63555f18612a02e5983ca690ce3889c9663405dad"
+              },
+              "license_evidence": {
+                "file": "how_deep-04-shell-reference/commons-license.json",
+                "sha256": "eb5edcbb668cc6ae9b053316799e89622e7bd97f835c0a03767b180e7f647d31"
+              },
+              "title": "File:Endoceras spp Svezia Museo Milano.png",
+              "page": "https://commons.wikimedia.org/wiki/File:Endoceras_spp_Svezia_Museo_Milano.png",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Endoceras_spp_Svezia_Museo_Milano.png/960px-Endoceras_spp_Svezia_Museo_Milano.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "author": "Antonov",
+              "license": "CC0",
+              "crop_ltrb": [
+                455,
+                35,
+                958,
+                390
+              ],
+              "credit": "Straight-shell geometry reference: Endoceras fossils, Natural History Museum of Milan, photo Antonov, https://commons.wikimedia.org/wiki/File:Endoceras_spp_Svezia_Museo_Milano.png, CC0 (https://creativecommons.org/publicdomain/zero/1.0/), cropped CC0 reference used for AI adaptation of related endocerid shell geometry, setting and coloration are illustrative."
+            }
+          ],
+          "required_credits": [
+            "Straight-shell geometry reference: Endoceras fossils, Natural History Museum of Milan, photo Antonov, https://commons.wikimedia.org/wiki/File:Endoceras_spp_Svezia_Museo_Milano.png, CC0 (https://creativecommons.org/publicdomain/zero/1.0/), cropped CC0 reference used for AI adaptation of related endocerid shell geometry, setting and coloration are illustrative."
+          ]
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o4.png",
+        "sha256": "a489fc1eaece497ebf010e1b9d2a20b5a9faee24c24f0028e30ec707c4c2753e",
+        "model": "klein4b-q8-768",
+        "take": 2,
+        "exposure": {
+          "raw_mean": 101.7,
+          "raw_p99": 217.2,
+          "gamma": 0.733,
+          "spread": 136.0
+        },
+        "artifact_id": 12598198109,
+        "prompt": "Fully submerged underwater nature-documentary view looking obliquely upward beneath the edge of an Ordovician limestone shelf. A broad massive cream-grey carbonate OVERHANG occupies the UPPER RIGHT half of the vertical frame, its underside and layered vertical face visible with rough mineral pits, crusts and hanging rounded rock projections. The shelf lip runs across the top and drops vertically down the right side. Open clear cobalt-blue seawater fills the LEFT and LOWER half, becoming darker downward as daylight fades with depth. Tiny suspended particles hang beneath the overhang. A restrained soft warm reflection picks out one small patch on the underside, while neutral external fill reveals crisp rock layers. Seen from under the shelf looking upward, with no seabed or horizontal lower ledge in view. Bare submerged geology, no focal animal, no land, no sky and no water surface. Photoreal painterly, detailed underwater overhang documentary composition. Upward-looking underwater composition beneath a cream-grey limestone overhang at upper right, crisp layered underside and rough mineral texture, open blue water at lower left fading darker downward, subtle warm reflected accent. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40189193071,
+          "sha": "89284d8eca5e88cce39d926951c4c8961291db7b",
+          "key": "2026-10-25-how_deep-04"
+        }
+      },
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o4-alt1.png",
+        "sha256": "70c7278011ea87ecda75f2061678af645877704bcef1625d654e76471a7ec8e7",
+        "model": "klein4b-q8-768",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 101.3,
+          "raw_p99": 237.0,
+          "gamma": 0.73,
+          "spread": 161.0
+        },
+        "artifact_id": 12598198109,
+        "prompt": "Fully submerged underwater nature-documentary view looking obliquely upward beneath the edge of an Ordovician limestone shelf. A broad massive cream-grey carbonate OVERHANG occupies the UPPER RIGHT half of the vertical frame, its underside and layered vertical face visible with rough mineral pits, crusts and hanging rounded rock projections. The shelf lip runs across the top and drops vertically down the right side. Open clear cobalt-blue seawater fills the LEFT and LOWER half, becoming darker downward as daylight fades with depth. Tiny suspended particles hang beneath the overhang. A restrained soft warm reflection picks out one small patch on the underside, while neutral external fill reveals crisp rock layers. Seen from under the shelf looking upward, with no seabed or horizontal lower ledge in view. Bare submerged geology, no focal animal, no land, no sky and no water surface. Photoreal painterly, detailed underwater overhang documentary composition. Upward-looking underwater composition beneath a cream-grey limestone overhang at upper right, crisp layered underside and rough mineral texture, open blue water at lower left fading darker downward, subtle warm reflected accent. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40189193071,
+          "sha": "89284d8eca5e88cce39d926951c4c8961291db7b",
+          "key": "2026-10-25-how_deep-04"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o5.png",
+        "sha256": "6a5f7bdfb274b51f2c445aeceafe3ba2f166392fbb86836a2cb81925e81009cf",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 46.0,
+          "raw_p99": 154.0,
+          "gamma": 0.393,
+          "spread": 104.0
+        },
+        "artifact_id": 12594264306,
+        "prompt": "Fully submerged view just below a tropical carbonate shelf, in dim cool deep-blue water. A sharply detailed rough carbonate ledge occupies the near lower-left foreground, its cracks, tiny pits and pale sediment grains clearly resolved. Several delicate small graptolite colonies drift beyond the ledge in the cool water. The brighter reef is a small faint distant patch far overhead, outside the main frame. Empty deep-blue water opens away to the right. Quiet low-light underwater documentary scene, realistic fine foreground textures, subdued warm reflection only on the far upper reef, photoreal painterly, vertical composition. Dim cobalt blue underwater palette, close foreground detail on a carbonate ledge, gentle neutral external fill, fine crisp mineral texture, soft distant reef glow only. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40180341727,
+          "sha": "28d3bb8155a7f3f1c19c8737223720c1e52d07e4",
+          "key": "2026-10-25-how_deep-04"
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o6.png",
+        "sha256": "2ac3790b516770d68f3f388f2a70fe1dd54395efd4d00b9ba2daac0d278d3d3b",
+        "model": "klein4b-q8-768",
+        "take": 2,
+        "exposure": {
+          "raw_mean": 88.5,
+          "raw_p99": 229.0,
+          "gamma": 0.637,
+          "spread": 231.0
+        },
+        "artifact_id": 12596718624,
+        "prompt": "Fully submerged underwater nature-documentary close view of an Ordovician carbonate seafloor slope descending into pitch black deep water. A broad pale cream limestone slope fills the lower two thirds of the vertical frame, running diagonally from the near upper-left foreground toward the distant lower-right. Its sharply detailed layered rock has crisp angular edges, fine fractures, muted ochre mineral stains and individual pale sediment grains. Small empty shell chips lie between the near rock layers. Bright soft neutral external cinematic fill lights the entire close pale slope evenly, keeping the mineral colours and fine textures readable. The rock face recedes into dark blue shadow and then featureless black seawater. Fine suspended marine snow is visible above the slope; opaque black water occupies the upper third. The whole scene is underwater. No horizon, sky, sun, land, trees, river or water surface. Photoreal painterly, crisp foreground geological detail, natural documentary composition. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "source": {
+          "run_id": 40186882454,
+          "sha": "997ea3c1c118aeaccf1ec7f53697fa399fb3634e",
+          "key": "2026-10-25-how_deep-04"
+        }
+      },
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o6-alt1.png",
+        "sha256": "8df1e4dffb17e79422558416be4e283e555ccec9e17e030502fd5b6e0c294ec5",
+        "model": "klein4b-q8-768",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 86.8,
+          "raw_p99": 214.0,
+          "gamma": 0.625,
+          "spread": 222.0
+        },
+        "artifact_id": 12596718624,
+        "prompt": "Fully submerged underwater nature-documentary close view of an Ordovician carbonate seafloor slope descending into pitch black deep water. A broad pale cream limestone slope fills the lower two thirds of the vertical frame, running diagonally from the near upper-left foreground toward the distant lower-right. Its sharply detailed layered rock has crisp angular edges, fine fractures, muted ochre mineral stains and individual pale sediment grains. Small empty shell chips lie between the near rock layers. Bright soft neutral external cinematic fill lights the entire close pale slope evenly, keeping the mineral colours and fine textures readable. The rock face recedes into dark blue shadow and then featureless black seawater. Fine suspended marine snow is visible above the slope; opaque black water occupies the upper third. The whole scene is underwater. No horizon, sky, sun, land, trees, river or water surface. Photoreal painterly, crisp foreground geological detail, natural documentary composition. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "source": {
+          "run_id": 40186882454,
+          "sha": "997ea3c1c118aeaccf1ec7f53697fa399fb3634e",
+          "key": "2026-10-25-how_deep-04"
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o7.png",
+        "sha256": "31c232f8257eb1fc64b1dccb1ffba94640a98cafbb821b89772d4e2a3193553b",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 52.2,
+          "raw_p99": 219.0,
+          "gamma": 0.425,
+          "spread": 204.0
+        },
+        "artifact_id": 12597385761,
+        "prompt": "Fully submerged underwater nature-documentary close view of the cold Ordovician basin floor in pitch black deep water. A broad near-field patch of pale grey silty mud fills the lower two thirds of the vertical frame, with crisp ripples, tiny sediment grains and sharply edged empty shell fragments. Three pale ivory shell fragments lie partly buried in the mud, their broken rims and fine growth lines distinctly resolved. Bright soft neutral external cinematic fill lights the entire nearby mud patch evenly, making its mineral texture and shell edges clear and readable. The illumination falls off rapidly beyond this foreground; featureless black seawater fills the upper third. Fine suspended marine snow is visible just above the bottom. No sky, sun, horizon, land, sunlight, water surface or god-rays. Photoreal painterly, detailed near-field documentary composition. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "source": {
+          "run_id": 40185593083,
+          "sha": "3381d571a7560be35bdfcb18fb5d85d9dfabb2e5",
+          "key": "2026-10-25-how_deep-04"
+        }
+      },
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o7-alt1.png",
+        "sha256": "d7cfee01fa7777a2ddf837b3d26581f26b3fae8ebe06ccd1d32aa277420f9fc4",
+        "model": "klein4b-q8-768",
+        "take": 2,
+        "exposure": {
+          "raw_mean": 66.9,
+          "raw_p99": 206.0,
+          "gamma": 0.503,
+          "spread": 204.0
+        },
+        "artifact_id": 12597385761,
+        "prompt": "Fully submerged underwater nature-documentary close view of the cold Ordovician basin floor in pitch black deep water. A broad near-field patch of pale grey silty mud fills the lower two thirds of the vertical frame, with crisp ripples, tiny sediment grains and sharply edged empty shell fragments. Three pale ivory shell fragments lie partly buried in the mud, their broken rims and fine growth lines distinctly resolved. Bright soft neutral external cinematic fill lights the entire nearby mud patch evenly, making its mineral texture and shell edges clear and readable. The illumination falls off rapidly beyond this foreground; featureless black seawater fills the upper third. Fine suspended marine snow is visible just above the bottom. No sky, sun, horizon, land, sunlight, water surface or god-rays. Photoreal painterly, detailed near-field documentary composition. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "source": {
+          "run_id": 40185593083,
+          "sha": "3381d571a7560be35bdfcb18fb5d85d9dfabb2e5",
+          "key": "2026-10-25-how_deep-04"
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o8.png",
+        "sha256": "73d2cad0d0e046103dc59118c712985c53503a86f8053e043ec8e2ad75b0e494",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 69.6,
+          "raw_p99": 223.0,
+          "gamma": 0.519,
+          "spread": 225.0
+        },
+        "artifact_id": 12597717598,
+        "prompt": "Fully submerged underwater nature-documentary close view of a stagnant Ordovician deep-basin bottom in pitch black deep water. Three broad pale cream limestone slabs lie flat and half buried in fine grey mud in the near foreground, with crisp layered mineral edges, fine powdery sediment, and narrow rippled channels between the slabs. The slabs and detailed mud fill the lower two thirds of the vertical picture. Bright soft neutral external documentary fill evenly illuminates the entire pale foreground, revealing sharp rock texture and sediment grains. The illumination falls off rapidly behind the slabs into featureless black surrounding seawater. Tiny suspended particles remain close above the mud. Empty still bottom with no animals. No sky, sun, horizon, land, trees, sunlight, water surface or god-rays. Photoreal painterly, crisp detailed near-field documentary composition. neutral charcoal and muted mineral tones, close documentary composition, soft external foreground fill and featureless black water on every edge. photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, matte non-luminous subjects, black background water. Keep only the nearby subject readable with soft neutral external cinematic fill. The water beyond is pitch black. No sunlight, sunbeams, bright sky, bright water surface or glowing ice ceiling. No self-luminous vent rocks.",
+        "source": {
+          "run_id": 40188221914,
+          "sha": "f3544d6e89a739f795ae35db5d82f0c4c2217fa3",
+          "key": "2026-10-25-how_deep-04"
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "how_deep-04-shell-slope-repair/art/o1.png",
+        "sha256": "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 132.1,
+          "raw_p99": 237.0,
+          "gamma": 1.024,
+          "spread": 152.0
+        },
+        "artifact_id": 12592753212,
+        "prompt": "crystal clear tropical shallows over pale carbonate sand, small corals and bryozoan mounds, bright aquamarine water, one warm coral-orange sunset glow on the surface, photoreal painterly, vertical composition. Warm aquamarine tropical palette fading to ink, wide 24mm lens with heavy god-rays, one warm coral-orange glow per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source_image": "o1"
+      }
+    ]
+  }
+}
