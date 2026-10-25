@@ -4508,7 +4508,7 @@
       ],
       "submitted_at": "2026-10-25T12:15:12+00:00",
       "run_id": 40192297453,
-      "cloud_status": "in_progress"
+      "cloud_status": "queued"
     },
     {
       "repo": "pangaea-nights",
@@ -4726,8 +4726,8 @@
   "health": {
     "public": 2,
     "scheduled": 10,
-    "held": 0,
+    "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:28:41+00:00"
+  "updated_at": "2026-10-25T12:28:45+00:00"
 }
