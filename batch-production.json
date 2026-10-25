@@ -4775,6 +4775,51 @@
           "evidence": {
             "ladder-img-A-6/o7.png": "1af5a69fc5a2441b54cb345cda0f179e92f07d52c56db4d71341585b3fa6a663",
             "ladder-img-A-6/o7-alt1.png": "ab6dc8c86b0db1f65659f972c8000060344cee71ce0df04219996742fe6a1da7"
+          },
+          "resolved_at": "2026-10-25T13:45:00+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "9cacf681e29d501a8a90cee85ffbe8662348b629",
+            "replay": ".github/replay/countdown-05-reviewed-environment-repair.json",
+            "replay_sha256": "3efbef25debada783b48f378aa916c2d009f5c9e9fef7ac1ee3032cdc2742fdf",
+            "images": {
+              "o1": [
+                "fd1483d246033f07a5dae74b8b78fcb78ff38120c729b912762b85b36c8e7747",
+                "2bc6e95ca76874305cca73697a424c567baab079b66e5e83bac07754db27853b"
+              ],
+              "o2": [
+                "7671fbd8b222bafd0eb34b6b97d8c9860b663527114d5c28c04e557a9d5eb9ad",
+                "bc50a8c33d66ccc95b9a864a03524b8a0d6675d699b5c0af816a368e36b60c47"
+              ],
+              "o3": [
+                "4951219ae8612ffd18b967297dea49b46703c736c747221ceebc0b665bee11b9"
+              ],
+              "o4": [
+                "e8aca9e02c9cbc3b1d95370a833dc3b89ffbd923411b9a39c23f7ec76a25948f",
+                "375dc1b342fd4fe9c96346325a0ec1de020e5038993bc3488b7ac47800d84702"
+              ],
+              "o5": [
+                "add4a8c406d40692aeb9b8a3cc5f6970cce759ec232b75bd8c173dd3b9f7d04a",
+                "21bd3a3a5c292b0481019038b787a34702b5d5f2efead5f72c00b6cdfee44342"
+              ],
+              "o6": [
+                "ae6676e4bbc39ee5411434f06531a5f5908fdb6aa48c5606540989c49c5a646e",
+                "196e463dffee95ec8d5acfd44ac79efc2d7da2d71d7f3854c8a94d18848a8de3"
+              ],
+              "o7": [
+                "82cbe0118314e55e6e647a00dd649010773f55bb3bb293b914cee14dd9705426",
+                "ba5428ef825c5a09594dd8d197e56e185483201accb4b20724804982722dfa5d"
+              ],
+              "o8": [
+                "54f1f321be849783f8ab68f7939f69c04935c285362bac3c2f100503d5804ed3"
+              ],
+              "end": [
+                "cd39eb7c8dceafe08a7704ef3d4dc740ed197bef2faaab8ebb19b1cf8be31c12"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/countdown05-environment-repair/staged-input-repair.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -5001,5 +5046,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T13:39:53+00:00"
+  "updated_at": "2026-10-25T13:45:00+00:00"
 }
