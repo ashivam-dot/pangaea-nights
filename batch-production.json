@@ -2706,59 +2706,11 @@
       "inputs": {
         "dry_run": "true",
         "slot": "A",
-        "premise": "level_1_8-03"
+        "premise": "level_1_8-03",
+        "replay": ".github/replay/level-03-coherent-armor-repair.json"
       },
-      "stage": "held",
+      "stage": "planned",
       "attempts": 1,
-      "source_sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc",
-      "before_ids": [
-        40165952771,
-        40165862617,
-        40161421084,
-        40160715571,
-        40160283123,
-        40157815850,
-        40156875292,
-        40156818584,
-        40154688202,
-        40154442347,
-        40152622139,
-        40152163089,
-        40151287146,
-        40150491810,
-        40149509321,
-        40148607387,
-        40148479040,
-        40148319091,
-        40147925087,
-        40147415761,
-        40146406019,
-        40144187249,
-        40143437986,
-        40143333505,
-        40140139736,
-        40138993804,
-        40136822897,
-        40136652437,
-        40135503878,
-        40131481179,
-        40128334178,
-        40124993101,
-        40122729549,
-        40121235398,
-        40119101082,
-        40077496948,
-        39924499144,
-        39830179361,
-        39803824162,
-        39787991414,
-        39780512299,
-        39772637874,
-        39766129149
-      ],
-      "submitted_at": "2026-10-25T05:52:10+00:00",
-      "run_id": 40167081277,
-      "cloud_status": "queued",
       "editorial_holds": [
         {
           "id": "direct-trilobite-face-hold",
@@ -2869,10 +2821,28 @@
           }
         }
       ],
-      "problems": [
-        "Direct full-resolution inspection rejects both o3 paintings: the intended Devonian trilobite has a vertebrate fish-like face, lips and a frontal mouth instead of a trilobite cephalon with a ventral mouth. Preserve the spoken shield choice and other useful art; replace only this option with a scientifically coherent dorsal three-lobed segmented arthropod. Full current picture, pairwise-image, narrator, render and audiovisual checks remain mandatory.",
-        "Direct full-resolution inspection rejects both o7 paintings: the supposed Dunkleosteus armor is a crocodilian scaly head/back, and the alternate has a row of pointed teeth. Dunkleosteus was a placoderm with broad dermal head/trunk plates and bony cutting jaws, not a toothed crocodile. Replace only these false anatomical views with a coherent close study of broad armor plates; retain answer seven and the sourced qualified verdict. All current image, pair, narrator, render and audiovisual gates remain."
-      ]
+      "repair_history": [
+        {
+          "run_id": 40167081277,
+          "source_sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc",
+          "stage": "held",
+          "problems": [
+            "Direct full-resolution inspection rejects both o3 paintings: the intended Devonian trilobite has a vertebrate fish-like face, lips and a frontal mouth instead of a trilobite cephalon with a ventral mouth. Preserve the spoken shield choice and other useful art; replace only this option with a scientifically coherent dorsal three-lobed segmented arthropod. Full current picture, pairwise-image, narrator, render and audiovisual checks remain mandatory.",
+            "Direct full-resolution inspection rejects both o7 paintings: the supposed Dunkleosteus armor is a crocodilian scaly head/back, and the alternate has a row of pointed teeth. Dunkleosteus was a placoderm with broad dermal head/trunk plates and bony cutting jaws, not a toothed crocodile. Replace only these false anatomical views with a coherent close study of broad armor plates; retain answer seven and the sourced qualified verdict. All current image, pair, narrator, render and audiovisual gates remain."
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "level_1_8-03"
+          }
+        }
+      ],
+      "obsolete_runs": [
+        40167081277
+      ],
+      "repair_queued_at": "2026-10-25T07:13:58+00:00",
+      "repair_source_sha": "0d27a6bbdc0690630a7f087b01886a48148cf578",
+      "repair_reason": "Exact reviewed replacements exclude every refused trilobite/crocodilian image, retain useful shell originals and qualified answer7, correct the lightly armored shark speech and deliberately replace the unreliable jaws joke with a bubble coat. Voice-v8 passes unchanged narrator checks, cached-image/pair preflight passes0.88129<0.90 and380 local tests pass. Full cloud production, narration, render and complete audiovisual review remain mandatory."
     },
     {
       "repo": "pangaea-nights",
@@ -3317,7 +3287,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry level_1_8-03: Direct full-resolution inspection rejects both o3 paintings: the intended Devonian trilobite has a vertebrate fish-like face, lips and a frontal mouth instead of a trilobite cephalon with a ventral mouth. Preserve the spoken shield choice and other useful art; replace only this option with a scientifically coherent dorsal three-lobed segmented arthropod. Full current picture, pairwise-image, narrator, render and audiovisual checks remain mandatory.; Direct full-resolution inspection rejects both o7 paintings: the supposed Dunkleosteus armor is a crocodilian scaly head/back, and the alternate has a row of pointed teeth. Dunkleosteus was a placoderm with broad dermal head/trunk plates and bony cutting jaws, not a toothed crocodile. Replace only these false anatomical views with a coherent close study of broad armor plates; retain answer seven and the sourced qualified verdict. All current image, pair, narrator, render and audiovisual gates remain.",
+  "halted": "Repair held entry survive_night-03: Direct full-resolution inspection rejects both o3 paintings for narration mismatch: the scene shows upright standing spruces with a hollow in their bases, rather than shelter beneath the exposed upturned roots of a fallen spruce. Preserve all spoken lines and useful other art; repair only this fallen-root image direction. Full current picture, pairwise-image, narrator, render and audiovisual gates remain mandatory.; Direct full-resolution inspection rejects both o4 paintings: the base puts a living hairy animal inside the purported long-dead mammoth ribs, and the alternate reads as straight wooden A-frame beams rather than curved weathered mammoth rib bones. Preserve the skeleton shelter choice and narration; replace this image with a coherent naturally fallen empty ribcage, with no living animal. Keep all current picture, pairwise-image, narrator, render and audiovisual gates.; Direct full-resolution inspection excludes o6 alternate: two modern manufactured hanging lanterns appear inside the Ice Age bear-bone cave, although the planned wilderness scene has only an amber glow. The base o6 painting retains the usable animal-bone cave without these anachronistic fixtures. Preserve useful base art, all speech and every current release gate.; Direct full-resolution inspection rejects o5: modern lace-up shoes and trousered human legs enter the frozen-lake wilderness view, with a foreground campfire not requested by the scene. Preserve the spoken frozen-lake-shore choice and every other spoken line; replace only this visual with a clearly empty low shore-level view of natural ice and windblown snow. All current picture, pair, narrator, render and audiovisual checks remain mandatory.",
   "complete": false,
   "health": {
     "public": 2,
@@ -3325,5 +3295,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T07:13:38+00:00"
+  "updated_at": "2026-10-25T07:13:58+00:00"
 }
