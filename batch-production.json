@@ -3764,7 +3764,7 @@
         "slot": "A",
         "premise": "how_deep-04"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "b058dbdb4ff53115e4fb443f4ba0e9755ba5cea6",
       "before_ids": [
@@ -3822,7 +3822,21 @@
       ],
       "submitted_at": "2026-10-25T08:18:26+00:00",
       "run_id": 40176094964,
-      "cloud_status": "queued"
+      "cloud_status": "queued",
+      "editorial_holds": [
+        {
+          "id": "direct-howdeep04-bulbous-shell",
+          "run_id": 40176094964,
+          "observed_at": "2026-10-25T09:04:05+00:00",
+          "reason": "The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.",
+          "evidence": {
+            "ladder-img-A-3/o4.png": "203f32988e2f08555fde91cfab07f8375cec8c8a6cb9816db6a72822bf86f7b3"
+          }
+        }
+      ],
+      "problems": [
+        "The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -4135,7 +4149,7 @@
       "attempts": 0
     }
   ],
-  "halted": null,
+  "halted": "Repair held entry how_deep-04: The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.",
   "complete": false,
   "health": {
     "public": 2,
@@ -4143,5 +4157,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T09:02:10+00:00"
+  "updated_at": "2026-10-25T09:04:05+00:00"
 }
