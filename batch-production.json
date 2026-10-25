@@ -2110,7 +2110,7 @@
         "premise": "countdown-03",
         "replay": ".github/replay/countdown-03-shelters-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -2289,7 +2289,9 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T05:33:10+00:00"
+      "submitted_at": "2026-10-25T05:33:10+00:00",
+      "run_id": 40165952771,
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -2705,5 +2707,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T05:34:07+00:00"
+  "updated_at": "2026-10-25T05:34:12+00:00"
 }
