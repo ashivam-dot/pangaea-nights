@@ -507,7 +507,7 @@
         "premise": "survive_night-01",
         "replay": ".github/replay/survive-night-exact-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 2,
       "source_sha": "bb8685620813b5dc40f43f4d8c9ab26a8b4e754b",
       "before_ids": [
@@ -538,7 +538,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T00:51:22+00:00",
-      "cloud_status": "in_progress",
+      "cloud_status": "queued",
       "editorial_holds": [
         {
           "id": "direct-duckbill-anatomy-40143333505",
@@ -734,7 +734,8 @@
       "obsolete_runs": [
         40143333505
       ],
-      "repair_reason": "Exact reviewed replan replaces malformed skull, duckbills, tire-like footprint and human/carcass predator scene with roots, boulder, mudflat and a coherent tyrannosaur head. Every retained source and take preserved; current pair preflight 0.8753, full cloud and AV remain mandatory."
+      "repair_reason": "Exact reviewed replan replaces malformed skull, duckbills, tire-like footprint and human/carcass predator scene with roots, boulder, mudflat and a coherent tyrannosaur head. Every retained source and take preserved; current pair preflight 0.8753, full cloud and AV remain mandatory.",
+      "run_id": 40148319091
     },
     {
       "repo": "pangaea-nights",
@@ -1158,7 +1159,7 @@
     }
   ],
   "halted": "Repair held entry level_1_8-16: production run failure",
-  "updated_at": "2026-10-25T00:51:22+00:00",
+  "updated_at": "2026-10-25T00:51:27+00:00",
   "complete": false,
   "health": {
     "public": 0,
