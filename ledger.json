@@ -785,6 +785,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "survive_night-03",
+   "series": "survive_night",
+   "era": "Pleistocene",
+   "slot": "B",
+   "video_id": "6rhZNsuzAE8",
+   "url": "https://www.youtube.com/shorts/6rhZNsuzAE8",
+   "title": "One Ice Age Night — Which Cave Do You Sleep In? 🧊",
+   "publish_at": "2026-10-28T00:30:00Z",
+   "uploaded_at": "2026-10-25T08:14:00Z",
+   "script": "Ice Age Europe, a freezing night. Choose your shelter. A hollow dug into a snow drift. A shallow overhang, open to the valley. Under the roots of a fallen spruce. Under the ribs of an old mammoth. Right on the frozen lake shore. Deep in a cave littered with bones. A cave with fresh claw marks. The back of a cave bear's den. Real answer: number 2, because cave bears frequently hibernated in caves through winter. The open overhang is probably safer. Comment your number.",
+   "frame0": "JKaKKJMk3RwVqZIRjSsoJvOnpiDoJIypfikJqtonWBxkqwsqpCNoDXisA5RvppOsEqjKHAwAgZ6spkOa86VvJxsNB6zGIVAg1xxqKR2jBS19J+wnGabbqD4iNK2XoQ0oZiQYH6opSCn1KJUkQhZnntIhOybNIUwhKq3+H+Ml4KSPqDGnEhapqDgXYCBEpymkzqYrp5ai4iazJ4Gp6KSmqQaoZRwPKbyn5iZ8JiOe9RSMprSn9KAjJC256KEbqVMlS6kuKhsg7rFYlKCfd6USKMsisCZ0KdEoTR9FmGMX4qgfqlOl1BnKgK+nUCFRpnskS6MnLS0mvB1yoNkpP6Mwpu0n+BYenu8m86F1LdCIChXmo3WgCqkGpW6cAJ5BJpgifhyiqAihdih2ot2RpqEZqAydZqHRpRqr5Ri2qQmY/iYwJlYh3h9uFdEbUiVQHk8q2qaAIT4ldpwNpJGkpqUapQOvQ6QvIfUY3igMppqmopmmnVGmIp7eppioe6LGKN0ieqKCp3Oojyj5Ggwk4Cdtp+AZWKSrp5+m+iY6p5GWqZsTqHsi2KeLqZCjLSJyqAuqWqMzo9EmvSFULI8odB0RqoUnPiNnplKmfSCQI6sjaKIcJdMtgReqLIMnjZwYKrGfrCnuI5aUIqcRph6p66RIK70h6CT7JFoqNSZcpEOkaaUdrN6aWi9+nCSnNSPRHE8txSUgq9aoOydYJeWbsaVJp/0n1SiMnrqdMqQjoYqnjCJZKjUoVCmbnh8fqplDrMqhgSCKHXukTxiAKaimiadfHDyuCiT9GpUklqUjoaWoJCY0p4irQhUBKrIo/idGqecrcy2jqGygP5qiI3wohhzpp3UqojAppjmdGR9lJEYiwaPeJwydiSVbGiglb6SVplmX6CGIn30oeirYpZ2nw6UsIhOhvqLUISCbiiQvJ+UjZqreJYkkWyJYJ3IliK78qb6rKi2VqCakZyhQqSSo9JnpIxaa/iCzJcgqYyICIJglwCJ0LMOhSSwlJgwjTKgzqE6pDSDqIMqlApT8o7wYfqiRIiuhySZuq5SnzqSGpMqneqLZI5yoNCxcpRCg0iHcoS2ggiX6pkkoEaVnIvUgqKffLBYpPCSWoq+kS5tHrcwIIKwhGisphwLkJQiumKFHJO4lJq17J5mm5aN1qTci0KQiHJQlvhqQEs0kSJmrppsjk6q3GP+dFhy5J82olyjdnC2mES0/qMCmrqymqKscP6Sxny0qGSSloQek76YID1cl1SW8Hg2kdCmRqUwljCefIGmoSqo3qSGl9indpXqLXqElKsmhLKXaKzWj/KCtpwOYhajTKLcnuyWdpBskBahtq6moSzChI3ai+yI7JvcnW5zrIw==",
+   "related": "https://www.youtube.com/watch?v=IRsQO5L4rz8",
+   "run": "40174192962",
+   "checkpoints": {},
+   "av_review_sha256": "0773976b50ff97b3792496f5102db712de7a3208769171384279f255f7e9c931",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-28T00:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
