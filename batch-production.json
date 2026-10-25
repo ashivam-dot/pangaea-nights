@@ -4499,10 +4499,22 @@
             "ladder-img-A-3/o4.png": "3a0a7e04847698463c8c0365990cbd40497018013df9ae4a8c212fffa9c6b716",
             "ladder-img-A-3/o4-alt1.png": "dbf1c0c1b808c89c05c1834139df2fde6c567322cd44d20c3772f2db36fba7b3"
           }
+        },
+        {
+          "id": "survive04-body-prop-hold",
+          "run_id": 40189867657,
+          "observed_at": "2026-10-25T12:32:32+00:00",
+          "reason": "Lagoon-flat image includes human feet; driftwood images include human hands or a modern burning lamp. Replace only these two scenes with unoccupied documentary environment views. Preserve narration, accepted siblings and all current picture/pair/narrator/render/full audiovisual gates.",
+          "evidence": {
+            "ladder-img-A-2/o3.png": "6de1db045783901dfba770c40a52a13c85e346c4f2bd455cf25cc1a939e0ae4c",
+            "ladder-img-A-4/o5.png": "897e0d5eb9f8249f766b1b2fba6ae46ba6408af07eeffedf7f5af9cc7fa72448",
+            "ladder-img-A-4/o5-alt1.png": "0ca62a41715fd7966848205f7b8d00b33ef06ed26cffbc68c3ac226fd8f94a4c"
+          }
         }
       ],
       "problems": [
-        "The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required."
+        "The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required.",
+        "Lagoon-flat image includes human feet; driftwood images include human hands or a modern burning lamp. Replace only these two scenes with unoccupied documentary environment views. Preserve narration, accepted siblings and all current picture/pair/narrator/render/full audiovisual gates."
       ]
     },
     {
@@ -4796,7 +4808,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry survive_night-04: The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required.",
+  "halted": "Repair held entry survive_night-04: The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required.; Lagoon-flat image includes human feet; driftwood images include human hands or a modern burning lamp. Replace only these two scenes with unoccupied documentary environment views. Preserve narration, accepted siblings and all current picture/pair/narrator/render/full audiovisual gates.",
   "complete": false,
   "health": {
     "public": 2,
@@ -4804,5 +4816,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:31:35+00:00"
+  "updated_at": "2026-10-25T12:32:32+00:00"
 }
