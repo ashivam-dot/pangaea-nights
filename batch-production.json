@@ -1585,10 +1585,21 @@
             "ladder-img-A-4/o5.png": "9af2d12ea43e8be046f75cf1ede7bfc0a52b63c3b69ce79a3df05be954bb0e87",
             "ladder-img-A-4/o5-alt1.png": "2c08194ed69573e172b2e4169b93d50d307c80d19622a1eb2ef6165fb3d11a09"
           }
+        },
+        {
+          "id": "direct-shallow-sea-setting-40156875292",
+          "run_id": 40156875292,
+          "observed_at": "2026-10-25T03:36:19+00:00",
+          "reason": "Both original o8 paintings show a forest-bordered inland waterway, while the spoken ground-zero option requires the shallow Yucatan sea. Replace with an open shallow marine horizon and retain exact original refused pixels.",
+          "evidence": {
+            "ladder-img-A-7/o8-alt1.png": "6a29776621d7f0fc08ecfb71875a27495798fd9c4a37c6a03414296d4c4cc070",
+            "ladder-img-A-7/o8.png": "d983437ac287924dc64e4995f2c6f4c041dd13d647ff545a71b10d22dc060b9c"
+          }
         }
       ],
       "problems": [
-        "Both o5 herd takes have prominently upward-curled and multiplied horns around the head/frill rather than a clear Triceratops layout of two forward brow horns and one short nose horn. Repair only this animal scene with explicit body-plan directions; retain other useful landscape siblings and every spoken line."
+        "Both o5 herd takes have prominently upward-curled and multiplied horns around the head/frill rather than a clear Triceratops layout of two forward brow horns and one short nose horn. Repair only this animal scene with explicit body-plan directions; retain other useful landscape siblings and every spoken line.",
+        "Both original o8 paintings show a forest-bordered inland waterway, while the spoken ground-zero option requires the shallow Yucatan sea. Replace with an open shallow marine horizon and retain exact original refused pixels."
       ]
     },
     {
@@ -1983,7 +1994,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry level_1_8-13: Both o5 herd takes have prominently upward-curled and multiplied horns around the head/frill rather than a clear Triceratops layout of two forward brow horns and one short nose horn. Repair only this animal scene with explicit body-plan directions; retain other useful landscape siblings and every spoken line.",
+  "halted": "Repair held entry level_1_8-13: Both o5 herd takes have prominently upward-curled and multiplied horns around the head/frill rather than a clear Triceratops layout of two forward brow horns and one short nose horn. Repair only this animal scene with explicit body-plan directions; retain other useful landscape siblings and every spoken line.; Both original o8 paintings show a forest-bordered inland waterway, while the spoken ground-zero option requires the shallow Yucatan sea. Replace with an open shallow marine horizon and retain exact original refused pixels.",
   "complete": false,
   "health": {
     "public": 1,
@@ -1991,7 +2002,7 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:25:00+00:00",
+  "updated_at": "2026-10-25T03:36:19+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
