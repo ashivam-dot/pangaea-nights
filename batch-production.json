@@ -4510,11 +4510,24 @@
             "ladder-img-A-4/o5.png": "897e0d5eb9f8249f766b1b2fba6ae46ba6408af07eeffedf7f5af9cc7fa72448",
             "ladder-img-A-4/o5-alt1.png": "0ca62a41715fd7966848205f7b8d00b33ef06ed26cffbc68c3ac226fd8f94a4c"
           }
+        },
+        {
+          "id": "survive04-reef-track-hold",
+          "run_id": 40189867657,
+          "observed_at": "2026-10-25T12:32:38+00:00",
+          "reason": "Reef images contain airborne marine reptiles or ambiguous crocodile-like anatomy; dried-lagoon images invent leaf/sole-like prints. Replace only these two visuals with unoccupied reef water and cracked carbonate mud details. Preserve all speech, accepted siblings and existing picture/pair/narrator/render/full audiovisual gates.",
+          "evidence": {
+            "ladder-img-A-6/o7.png": "e2ead84f9aa972027b5bb3fb02f18dae55b8ebdefb316d1a8353372ff4a94a15",
+            "ladder-img-A-6/o7-alt1.png": "a9e4e77d2aa650ddef556ea96bfe5ecf2c66523ff8e54e033be27313ab56bc3e",
+            "ladder-img-A-5/o6.png": "7224a8447b83f4cca2193e65807242ea72930ffc15471f6ac8d4364b3f71b43c",
+            "ladder-img-A-5/o6-alt1.png": "55bf042004ce287394a4c19f545c39724fd0fbf68485edc3cd10fb1eb0d129bb"
+          }
         }
       ],
       "problems": [
         "The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required.",
-        "Lagoon-flat image includes human feet; driftwood images include human hands or a modern burning lamp. Replace only these two scenes with unoccupied documentary environment views. Preserve narration, accepted siblings and all current picture/pair/narrator/render/full audiovisual gates."
+        "Lagoon-flat image includes human feet; driftwood images include human hands or a modern burning lamp. Replace only these two scenes with unoccupied documentary environment views. Preserve narration, accepted siblings and all current picture/pair/narrator/render/full audiovisual gates.",
+        "Reef images contain airborne marine reptiles or ambiguous crocodile-like anatomy; dried-lagoon images invent leaf/sole-like prints. Replace only these two visuals with unoccupied reef water and cracked carbonate mud details. Preserve all speech, accepted siblings and existing picture/pair/narrator/render/full audiovisual gates."
       ]
     },
     {
@@ -4808,7 +4821,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry survive_night-04: The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required.; Lagoon-flat image includes human feet; driftwood images include human hands or a modern burning lamp. Replace only these two scenes with unoccupied documentary environment views. Preserve narration, accepted siblings and all current picture/pair/narrator/render/full audiovisual gates.",
+  "halted": "Repair held entry survive_night-04: The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required.; Lagoon-flat image includes human feet; driftwood images include human hands or a modern burning lamp. Replace only these two scenes with unoccupied documentary environment views. Preserve narration, accepted siblings and all current picture/pair/narrator/render/full audiovisual gates.; Reef images contain airborne marine reptiles or ambiguous crocodile-like anatomy; dried-lagoon images invent leaf/sole-like prints. Replace only these two visuals with unoccupied reef water and cracked carbonate mud details. Preserve all speech, accepted siblings and existing picture/pair/narrator/render/full audiovisual gates.",
   "complete": false,
   "health": {
     "public": 2,
@@ -4816,5 +4829,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:32:32+00:00"
+  "updated_at": "2026-10-25T12:32:38+00:00"
 }
