@@ -1710,6 +1710,19 @@
     "refusals": [
      "Art-only collection cannot publish"
     ]
+   },
+   {
+    "at": "2026-10-25T11:30:02Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "level_1_8-04",
+    "run": "40188193823",
+    "ok": true,
+    "failures": [],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded"
+    ]
    }
   ],
   "alerts": [
