@@ -1972,11 +1972,11 @@
   "complete": false,
   "health": {
     "public": 1,
-    "scheduled": 3,
+    "scheduled": 4,
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:20:01+00:00",
+  "updated_at": "2026-10-25T03:20:04+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
