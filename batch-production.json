@@ -1622,7 +1622,7 @@
       "series": "level_1_8",
       "slot": "A",
       "target": "2026-10-26T14:30:00Z",
-      "stage": "reviewed",
+      "stage": "upload_intent",
       "inputs": {
         "dry_run": "true",
         "slot": "A",
@@ -1873,7 +1873,9 @@
           "issues": []
         }
       },
-      "archive": "batch-reviewed-40160283123"
+      "archive": "batch-reviewed-40160283123",
+      "intended_publish_at": "2026-10-26T14:30:00Z",
+      "upload_intent_at": "2026-10-25T04:18:04+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -2348,5 +2350,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T04:18:02+00:00"
+  "updated_at": "2026-10-25T04:18:04+00:00"
 }
