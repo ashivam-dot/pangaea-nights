@@ -4138,7 +4138,55 @@
       ],
       "submitted_at": "2026-10-25T12:31:35+00:00",
       "run_id": 40193499654,
-      "cloud_status": "in_progress"
+      "cloud_status": "completed",
+      "review": {
+        "schema": 1,
+        "model": "gemini-3-flash-preview",
+        "duration": 43.736,
+        "video_sha256": "64b19a27e0dd566052e8525e5cc8e1b2e71d7842868b4bf9368737c1ec97e4fd",
+        "brief_sha256": "c310800e3d9d2b80219a4f5d79c0854d0f734f6f361296d7a071100172f81b81",
+        "review_video_sha256": "0d5db00272e33cbc0c2eeebf27a90899d6ee3db75733f17ead349d625b6f6387",
+        "review_audio_sha256": "a638aa47e0d3fb09705ee67bde607df02b996cdc69302e22444ae9e368600240",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "Two-metre shells with tentacles.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.0,
+              "seen": "A tropical sea at sunset with coral heads in the foreground and the title 'GIANT SHELL HUNTERS: HOW DEEP?'.",
+              "heard": "How deep do you go?"
+            },
+            {
+              "part": "middle",
+              "seconds": 25.0,
+              "seen": "Two white shell fragments on a dark silty seabed with the overlay '7 The cold black basin'.",
+              "heard": "Seven: the cold black basin floor."
+            },
+            {
+              "part": "ending",
+              "seconds": 42.0,
+              "seen": "The tropical shallows at sunset with the text 'COMMENT YOUR NUMBER'.",
+              "heard": "Comment your number."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -4842,5 +4890,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:44:56+00:00"
+  "updated_at": "2026-10-25T12:45:47+00:00"
 }
