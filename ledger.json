@@ -1116,6 +1116,19 @@
     "failures": [],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-25T03:17:19Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "how_deep-02",
+    "run": "40156818584",
+    "ok": true,
+    "failures": [],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded"
+    ]
    }
   ],
   "alerts": [
