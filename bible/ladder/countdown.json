@@ -360,7 +360,8 @@
      "label": "Shady tropical riverbank",
      "vo": "Rest on a shady tropical riverbank.",
      "danger": 1,
-     "image_prompt": "A sluggish tropical river through a bleached Triassic desert, a few scorched conifers casting thin shade, heat haze rising, photoreal painterly, vertical composition, one warm focal light from a copper setting sun"
+     "image_prompt": "Unoccupied natural-history view along a narrow muddy river in an arid Early Triassic landscape. A slow brown-green water channel curves diagonally from the lower left into the far right distance. The near riverbank is dry rust-red mineral earth with exposed brown roots and scattered stones. Two sparse drought-stressed conifers cast thin long shadows across a small patch of bare ground beside the water. Beyond them lies a pale dusty plain in heat haze. Copper sunlight enters from the upper right behind the conifers, with warm readable soil and dark green foliage. Only river, bare dry ground, rocks, roots, conifers and hazy sky occupy the picture. Photoreal painterly documentary landscape, vertical composition, one warm copper sun accent.",
+     "art_direction": "Unoccupied arid Early Triassic environment, rust-red mineral ground, subdued copper sunlight, nature-documentary landscape with readable soil texture."
     },
     {
      "n": 2,
@@ -374,7 +375,8 @@
      "label": "Hollow in the dunes",
      "vo": "Dig into a hollow between dunes.",
      "danger": 3,
-     "image_prompt": "A deep hollow between towering red Triassic sand dunes, ripples glowing in the heat, the air wobbling with haze, photoreal painterly, vertical composition, one warm focal light from the setting sun"
+     "image_prompt": "Unoccupied ground-focused natural-history view of a sheltered bowl-shaped depression between large smooth red sand dunes in an arid Early Triassic desert. Fine curved ripple lines cover the near sand. Rounded dune slopes enclose a small low hollow in the centre of the composition. The rim of the nearest dune creates a broad clean arc across the upper third. A little hazy copper sky is visible above that rim, with one restrained warm setting-sun glow at the right. Only loose red sand, subtle wind ripples, rounded dune slopes and a small strip of sky occupy the picture. Soft heat haze and long warm shadows reveal the hollow shape. Photoreal painterly documentary landscape, vertical composition.",
+     "art_direction": "Unoccupied arid Early Triassic environment, rust-red mineral ground, subdued copper sunlight, nature-documentary landscape with readable soil texture."
     },
     {
      "n": 4,
