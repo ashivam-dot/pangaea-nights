@@ -329,7 +329,8 @@
      "label": "Swim to the next island",
      "vo": "Swimming to the next island at night.",
      "danger": 8,
-     "image_prompt": "Low POV at water level in an open dark Jurassic sea far from any shore, a distant island on the horizon, a huge fin cutting the moonlit surface, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "An unoccupied natural-history landscape of open deep Jurassic sea at night, viewed close to the dark water surface. Long smooth navy and deep teal ocean swells occupy almost the entire vertical picture. Foreground wave crests catch thin cool silver highlights. A tiny low limestone island lies far away on the high horizon, reduced by distance to a narrow silhouette. A small coral-pink moon makes a restrained warm focal glow and broken reflection across the distant sea. The view contains only deep open water, remote island and sea-green night sky. The broad uninterrupted water surface has a clear deep-water character. Photoreal painterly documentary landscape, vertical composition, readable cool midtones with restrained warm moonlight.",
+     "art_direction": "Empty deep open water with rolling dark teal waves and one tiny distant island under a small coral-pink moon."
     }
    ],
    "answer_n": 2,
