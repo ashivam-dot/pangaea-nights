@@ -1,0 +1,81 @@
+{
+ "shard": 3,
+ "of": 5,
+ "model": "klein4b-q8-768",
+ "premise": "survive_night-04",
+ "images": [
+  {
+   "id": "o6",
+   "takes": [
+    {
+     "seconds": 579.2,
+     "problems": [],
+     "exposure": {
+      "raw_mean": 134.2,
+      "raw_p99": 214.0,
+      "gamma": 1.049,
+      "spread": 147.0
+     },
+     "figure": 0.2122,
+     "ok": true,
+     "reasons": [],
+     "person": 0.063,
+     "text": 0.021,
+     "broken": 0.028,
+     "similarity": 0.3048,
+     "aesthetic": 5.8484,
+     "brightness": 130.8248,
+     "contrast": 54.5264,
+     "sharpness": 20.9092
+    },
+    {
+     "seconds": 534.7,
+     "problems": [],
+     "exposure": {
+      "raw_mean": 132.7,
+      "raw_p99": 226.0,
+      "gamma": 1.032,
+      "spread": 178.0
+     },
+     "figure": 0.2367,
+     "ok": true,
+     "reasons": [],
+     "person": 0.0709,
+     "text": 0.0269,
+     "broken": 0.1088,
+     "similarity": 0.2912,
+     "aesthetic": 6.0265,
+     "brightness": 130.7165,
+     "contrast": 68.3962,
+     "sharpness": 22.5414
+    }
+   ],
+   "kept": [
+    {
+     "plate": "o6.jpg",
+     "depth": "o6.depth.png",
+     "take": 0,
+     "similarity": 0.3048,
+     "luma": 130.8,
+     "embedding": "T6RTJD0h8Jizpisc1yDUJAsbwyTFLN4LPyhhp8sj1iF1qhcohCDxob+kVCVZpvuouyJpKuAgxKSGp8OmBR1GnPKiLaRQI5snuR8gKkGMdi32G+6iL6WvnD2juazvJAklx6mvJg8s94uUK2EgrKdWJ2SovKQ/JuQeUK3snn2ntB7gqlMlGKTrKWijPY2eqRelYylsrFGi5aeSprmUdSWnniyaDRISn7ujqSpIJ1ErC6BtrJOnHho8IgG5UCCKoaMjVaRkJBSiSrJJJsqmNq0RLHapSh0RsPmbNyhvlwQsQaqeGUaor51CIBwmwyVlnpwoS6LxKTckAqrypAARRSmfokSUhCALoNInBqWMLR+d6yixFQ+l2KNcqscmXiGzo2oqgCV5niKp1SxRoyAAPaRFo3on86e/np2t/ChzpK4kwiRpqaydTCU3ICynuphDqkAr0ZiAm18kd5ropKSoa6hXp7uvPRbPq+kg4yqZqYoiUSherDIjpSTSkKOoZCKWqV2lAad9JfSkhqaYJy2nRCzpqN2nhaBtpOGcxCeenpYoLyLtKF8qfyVTGHMkSR7mqESgKik4H+al0qJNLJWj3ZvBn5mhuZq7J0qaC5+NKESetKhnHA0ohSh2rCEM+qQTKeMmbCHtJpAofCXCpQqs26RVKB0oWSRqosocb6hLpAqsDSRxmIOiFy39qDAd86c8lPssKSnApHKpRiVnp/0jISAUnoko1ieopzeGEKZ5KAspPiIIJ5UoKiUUGM0mcKRJsRYg0CKCoiKeoKGDGHShZqqSqiOnCiBIK2choSr9qjujZSTtKHulZCQAolUp3CH0qSIpiS1oqMyYjqdgJ0ApmZhMqFcrxTEqqZWpP5wVphGj+Cjxnnmg/KWAHVEgg6dio8whBSGGlHgq5iQWqKMhHSHWKRQnHJebodop16T+KJeoNyA/pNKj344JHcImwKtSqZCnIytQpL0rLCc5IYqmZCVmqlKWEC0ALNIb7yJGooMlcJ4cIWmY5SkdKLklbRVgFKOl6iALKQuTA5QwmwURTqnnJAacgyQZpqOs0h1PpWqqPBXxHbsnCyxhqsqlciVjqNalFiVaqbooQhw8FZ+kJ6ZoHJYq0aDkoDIptBy9qLGVKq0uo7gm0CcnJCasBCn9pl6k1ahlJD6mb6ssqRuoKqjCFOKfhCIMJAAfVpfUn8copKjgIr2lzB7WJFAbK6oOEyOliSqYowWkdKr3m08m/BzlqYoou5y6p32jYKAbopepT6PCIzeebqNJqBykJyWwpTkYKKekqAami6Icm2ETY6q8lbwiQ6HhpperVCULqPWlTSCAnxWQ/iBpqMIp+6ego8OpciqOF7ilsBxpnD4kPyR6pA==",
+     "score": 8.462,
+     "fallback": false
+    },
+    {
+     "plate": "o6-alt1.jpg",
+     "depth": "o6-alt1.depth.png",
+     "take": 1,
+     "similarity": 0.2912,
+     "luma": 130.7,
+     "embedding": "/Z2lIWAUZh4hmQ2jqCA9JxSg4A1pKgCnxp1Hp8EioSFRqccmJB8bpcurf5uGGWSpyCCQJj0jhp9Jpo6iMZJupcggmaDmIrknHZ98KQQd5S3VEB0cmKRJJFiaravjHdAj56lYJ84oliZnKvklo6kEG9OnQ6czIxGhm6njobujSybTrGQpAiXxKUSclZzNqW6lzydVqhel6p86pxWeiyR2JDQliJV4p5yrvCmXJOonHp8ZqniovyYBJR25vCTzJKYd/adxKlKrt7E3IQWmdKwVK5WqdiTOr+IWXCapJKwosaevmfeoV6ibEQskpiUTor0lvKXYJ18bOKlfp88hOBwEqA+iVCWfpRUomJqaLYUdqipIoqOllaZjpZkkNZ7ep4ArPR0EqEuoNCqtqSUk+6iXHdUlGh4joKCp6iNuI/ko/ihfrEihESjQmk6lwiT9q08s8x1DqDymoKG3nzOoY52forauHx/Nqz2kRioYqDYWjiTtqnwlyihgm4eJIifcooAg2aH6Kj+htqXpKMKpiylTpaWoBSRdpFglyRyFHT6M8SMsJ/gkCyftIK4hOCF4qemgqCVCl2KlN5JLIKckRCMyqLmnDCVQIT+k55IQJ6QdjakqodUoECdqpuUmkqiEKvUloiHQJXMlQR8BqCSpFKTiKXmjiSF7JnWki6QUFJOqmiQBoyGdoC1SpfgezqTvox8tqysgqaSmOijPonecF5oUn5cl7Sd7p8AeLacqJQgmGSW3H68mryXcoTklXajfsMqfLiARIggh7KHlnfCm/qkQrFaguaJSKm+iC4y3pueluSgOKWuj9KgFpQsqfSfEqDsnmC1eqUKfSRhoJ9spuKVvrLUtHjKuqRinLJkIpeqiCyvvovIdU6SXJqAo16hso1UmuSICnMUodCkIq7QfDSNGJTIooxkhHT0pciRUJeca56Rxn0ChvKJXnYgjnawyqNiMXBt+pCQpmSVmnhqkxCI8rEKdBi0NJ3olGCS4pP8gLiZgJ4yi8SE/H48bX6LxoyalvyDKJFaka6bColMTrqpQHRAnahm0qH+qQKFrpvSlUie6J/MpIihPpx2fNCSxqp8msCjhqGQnMKYYIXieTpcfGuQtnyLbpcEs/B29qZSkYawPpl8lBCiAKRWwcycvqhejpaCCKAOglqzmq9GnKZLaIkIjoyZaKRUbNaW1lJciFZs0IO+ikKEcIRwh+6popDik5CmBpEuZSalWmYAe+RvcqqArNaUdpb2gGqOMnqWjGiUbK2ajviLdqjYYmxAtqYkbGZ8fotqIVKGaJe6ip6koEPolk6UwHbuqgiW0rL2oiSSMHQga5yWmqNkkCKY1oIyooSqkngqmliEzHC4qB5UCqA==",
+     "score": 8.031,
+     "fallback": false
+    }
+   ],
+   "ok": true
+  }
+ ],
+ "cached_only": false,
+ "load_s": 2.0,
+ "seconds": 1173.0
+}

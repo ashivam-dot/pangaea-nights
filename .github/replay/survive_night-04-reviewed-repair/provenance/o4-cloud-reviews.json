@@ -1,0 +1,19 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-0/o4.png",
+      "image_sha256": "2887506fff5f5bc8d93c96ac2e7d37bd21c2501260a948c6347693c0bda52606",
+      "decision": "pass",
+      "reason": "Direct native review: an empty weathered limestone alcove frames a broad dry mineral ledge above turquoise water, a distant low limestone island and conifers, with one restrained coral-pink moon. No people, modern fixture, invented animal anatomy, writing or conspicuous duplicate scene is present. The image illustrates the roost habitat while the unchanged option supplies its context; it does not claim a documented fossil site. Source-art only; full pair, picture, narrator, render and audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-0/o4-alt1.png",
+      "image_sha256": "d4ccb186e52dcc772cc7c12f7bb68aa3d722eb66dd8bd2096c3ebca456805c01",
+      "decision": "hold",
+      "reason": "Direct native review: the alternate adds a second bright orb beside the pink moon and an unusually straight slab-like seam across the foreground. Select the cleaner first natural alcove image; preserve this unselected alternate and do not include it in the repaired cache."
+    }
+  ],
+  "at": "2026-10-25T15:00:51.389821+00:00",
+  "scope": "Source paintings only",
+  "release_approval": false
+}

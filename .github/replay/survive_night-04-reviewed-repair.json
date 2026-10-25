@@ -1,0 +1,290 @@
+{
+  "schema": 1,
+  "premise": "survive_night-04",
+  "cached_only": true,
+  "source": {
+    "run_id": 40189867657,
+    "sha": "89284d8eca5e88cce39d926951c4c8961291db7b",
+    "key": "2026-10-25-survive_night-04"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "survive_night-04-reviewed-repair/art/o1.png",
+        "sha256": "5c8fd18fee33d7e74be0157398577c146c772950b249f42307a4f2c541fd7ef8",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 89.6,
+          "raw_p99": 202.0,
+          "gamma": 0.644,
+          "spread": 135.0
+        },
+        "artifact_id": 12598396126,
+        "prompt": "POV on soft pale sand above the tideline of a Jurassic island beach at night, gentle surf, scrubby conifers behind, a coral-pink moon over the water, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light. Late Jurassic Solnhofen archipelago: pale turquoise brine lagoons, bleached limestone, sea-green night sky, coral-pink moon, 28mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "survive_night-04-reviewed-repair/art/o1-alt1.png",
+        "sha256": "4053a265ade5a007d34a3b51606f684e83e19c6e3bef5e27c1212c53172f56c7",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 90.6,
+          "raw_p99": 208.0,
+          "gamma": 0.651,
+          "spread": 116.0
+        },
+        "artifact_id": 12598396126,
+        "prompt": "POV on soft pale sand above the tideline of a Jurassic island beach at night, gentle surf, scrubby conifers behind, a coral-pink moon over the water, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light. Late Jurassic Solnhofen archipelago: pale turquoise brine lagoons, bleached limestone, sea-green night sky, coral-pink moon, 28mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o2": [
+      {
+        "file": "survive_night-04-reviewed-repair/art/o2.png",
+        "sha256": "8e6eda57527565f96233bb92592a295967f31a958a009b0b0895f8032f3deb1f",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 91.5,
+          "raw_p99": 212.0,
+          "gamma": 0.657,
+          "spread": 148.0
+        },
+        "artifact_id": 12598635746,
+        "prompt": "POV beneath low wind-bent scrubby conifers on a firm limestone ridge above a moonlit turquoise lagoon, dry needles underfoot, coral-pink moonlight, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light. Late Jurassic Solnhofen archipelago: pale turquoise brine lagoons, bleached limestone, sea-green night sky, coral-pink moon, 28mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "survive_night-04-reviewed-repair/art/o2-alt1.png",
+        "sha256": "bed14c539c0c222a698c5c5b91994d8e06b7ef1ad4385af049ec42d903bab53e",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 78.5,
+          "raw_p99": 207.0,
+          "gamma": 0.572,
+          "spread": 151.0
+        },
+        "artifact_id": 12598635746,
+        "prompt": "POV beneath low wind-bent scrubby conifers on a firm limestone ridge above a moonlit turquoise lagoon, dry needles underfoot, coral-pink moonlight, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light. Late Jurassic Solnhofen archipelago: pale turquoise brine lagoons, bleached limestone, sea-green night sky, coral-pink moon, 28mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o3": [
+      {
+        "file": "survive_night-04-reviewed-repair/art/o3.png",
+        "sha256": "75378be6a7cfd40c6f72ff93fd11c10923b61a033ca886e63f3e9cde5a463022",
+        "model": "klein4b-q8-768",
+        "take": 2,
+        "exposure": {
+          "raw_mean": 108.9,
+          "raw_p99": 196.0,
+          "gamma": 0.792,
+          "spread": 116.0
+        },
+        "artifact_id": 12600776046,
+        "prompt": "An unoccupied natural-history landscape of a Late Jurassic shallow brine lagoon at night. The near foreground is milky turquoise ankle-shallow water flowing over smooth pale carbonate mud, tiny ripple ridges clearly visible beneath the water. The empty flat extends toward a thin distant limestone island on the right horizon. A small coral-pink moon lights a narrow reflection across the open lagoon. The view looks down across the empty shoreline, with only water, mineral sediment, distant low conifers and sky in the picture. Sea-green night sky, pale limestone, cool water, soft warm moon accent, photoreal painterly documentary landscape, vertical composition. Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40194078923,
+          "sha": "d0c62c0e8dc4d5de6e05c84a678e99095b99cf36",
+          "key": "2026-10-25-survive_night-04"
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "survive_night-04-reviewed-repair/art/o4.png",
+        "sha256": "2887506fff5f5bc8d93c96ac2e7d37bd21c2501260a948c6347693c0bda52606",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 79.7,
+          "raw_p99": 223.0,
+          "gamma": 0.579,
+          "spread": 154.0
+        },
+        "artifact_id": 12603446230,
+        "prompt": "Natural-history documentary view from inside a low sheltered limestone alcove, looking outward over a Late Jurassic turquoise lagoon at night. A broad empty pale limestone roost ledge fills the lower foreground. An uneven weathered rock overhang crosses the upper left corner, with a narrow crack opening toward the water. The ledge has rough mineral texture and a dry flat resting surface. Through the opening lie softly rippling turquoise water and a distant low limestone island under a small coral-pink moon. The composition contains only limestone, quiet water, remote conifers and night sky. Neutral readable fill reveals the stone texture, with restrained warm moonlight on the ledge. Photoreal painterly natural-history landscape, vertical composition. Empty sheltered limestone roost ledge seen from within a rocky alcove above a turquoise lagoon under a sea-green sky and small coral-pink moon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40203571553,
+          "sha": "053dea9627a39590737d991ea13b3d5e12a18651",
+          "key": "2026-10-25-survive_night-04"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "survive_night-04-reviewed-repair/art/o5.png",
+        "sha256": "2599279c6c0cf39c0bf7aaffb9ca36ce9b16a8167e231de70c0553e3911eb47f",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 68.3,
+          "raw_p99": 202.0,
+          "gamma": 0.512,
+          "spread": 113.0
+        },
+        "artifact_id": 12599499497,
+        "prompt": "An unoccupied bleached tree trunk floating diagonally across a Late Jurassic lagoon at night, seen from the shore. The thick natural driftwood log fills the lower left foreground and points toward a small distant limestone island. Its barkless pale wood, broken natural branches and uneven waterline are clearly visible. Turquoise ripples lap around the empty log. A small coral-pink moon and thin conifer island lie high in the background. Only natural driftwood, water, remote island and night sky occupy the frame. A warm coral-pink moon glow lights the upper wooden surface. Photoreal painterly nature-documentary still, vertical composition. Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40194078923,
+          "sha": "d0c62c0e8dc4d5de6e05c84a678e99095b99cf36",
+          "key": "2026-10-25-survive_night-04"
+        }
+      },
+      {
+        "file": "survive_night-04-reviewed-repair/art/o5-alt1.png",
+        "sha256": "377eabeb82644fe6030dc2243909af1ea6cc0cb52e44385cb5d35fc2bfd63a0e",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 71.8,
+          "raw_p99": 221.0,
+          "gamma": 0.531,
+          "spread": 135.0
+        },
+        "artifact_id": 12599499497,
+        "prompt": "An unoccupied bleached tree trunk floating diagonally across a Late Jurassic lagoon at night, seen from the shore. The thick natural driftwood log fills the lower left foreground and points toward a small distant limestone island. Its barkless pale wood, broken natural branches and uneven waterline are clearly visible. Turquoise ripples lap around the empty log. A small coral-pink moon and thin conifer island lie high in the background. Only natural driftwood, water, remote island and night sky occupy the frame. A warm coral-pink moon glow lights the upper wooden surface. Photoreal painterly nature-documentary still, vertical composition. Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40194078923,
+          "sha": "d0c62c0e8dc4d5de6e05c84a678e99095b99cf36",
+          "key": "2026-10-25-survive_night-04"
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "survive_night-04-reviewed-repair/art/o6.png",
+        "sha256": "924c742ef02c1ae31e2a23222358d52f54ba718206178e1bfed0a24d28663c02",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 134.2,
+          "raw_p99": 214.0,
+          "gamma": 1.049,
+          "spread": 147.0
+        },
+        "artifact_id": 12600290463,
+        "prompt": "Ground-focused natural-history documentary detail of a half-dried Late Jurassic lagoon. Empty bleached carbonate mud forms irregular natural polygonal cracks across the near foreground, with dark wet turquoise clay visible inside a few narrow fissures. A shallow pool lies near the upper right edge, with a low limestone rim across the upper background. The mud surface is unmarked and undisturbed. The composition contains mineral ground, quiet water and a small strip of sea-green night sky only. One warm coral-pink moon glow accents the upper pool. Cool pale tones, neutral readable documentary fill, photoreal painterly vertical composition. Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40194078923,
+          "sha": "d0c62c0e8dc4d5de6e05c84a678e99095b99cf36",
+          "key": "2026-10-25-survive_night-04"
+        }
+      },
+      {
+        "file": "survive_night-04-reviewed-repair/art/o6-alt1.png",
+        "sha256": "e2e76d302ddc27168fd3fafae7c5d1b0a6546aa13aa2c5d0f8bab94b3cb834c0",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 132.7,
+          "raw_p99": 226.0,
+          "gamma": 1.032,
+          "spread": 178.0
+        },
+        "artifact_id": 12600290463,
+        "prompt": "Ground-focused natural-history documentary detail of a half-dried Late Jurassic lagoon. Empty bleached carbonate mud forms irregular natural polygonal cracks across the near foreground, with dark wet turquoise clay visible inside a few narrow fissures. A shallow pool lies near the upper right edge, with a low limestone rim across the upper background. The mud surface is unmarked and undisturbed. The composition contains mineral ground, quiet water and a small strip of sea-green night sky only. One warm coral-pink moon glow accents the upper pool. Cool pale tones, neutral readable documentary fill, photoreal painterly vertical composition. Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40194078923,
+          "sha": "d0c62c0e8dc4d5de6e05c84a678e99095b99cf36",
+          "key": "2026-10-25-survive_night-04"
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "survive_night-04-reviewed-repair/art/o7.png",
+        "sha256": "417b02a0d1023a3f95e72d2f1ec4e591373474fb7afdb687c6d863ff03577a04",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 78.1,
+          "raw_p99": 193.0,
+          "gamma": 0.569,
+          "spread": 106.0
+        },
+        "artifact_id": 12600182432,
+        "prompt": "Unoccupied water-level natural-history landscape looking across a Late Jurassic lagoon toward a low natural sponge reef. A few small rounded ochre sponge mounds emerge just above shallow turquoise water in the upper right midground, attached to pale limestone. Soft ripples fill the lower foreground, with gentle clear water revealing bare pale sediment underneath. The horizon is level, with distant low limestone islands and a small coral-pink moon. The scene contains only rippling water, attached simple sponges, mineral reef, distant island and sky. Sea-green night palette, restrained warm moon reflection, readable cool shadows, photoreal painterly documentary landscape, vertical composition. Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40194078923,
+          "sha": "d0c62c0e8dc4d5de6e05c84a678e99095b99cf36",
+          "key": "2026-10-25-survive_night-04"
+        }
+      },
+      {
+        "file": "survive_night-04-reviewed-repair/art/o7-alt1.png",
+        "sha256": "b7e3f69d31e6613719267b5e659c7d121dd226050c3c93fc3a623558ff418cbc",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 88.1,
+          "raw_p99": 197.0,
+          "gamma": 0.634,
+          "spread": 103.0
+        },
+        "artifact_id": 12600182432,
+        "prompt": "Unoccupied water-level natural-history landscape looking across a Late Jurassic lagoon toward a low natural sponge reef. A few small rounded ochre sponge mounds emerge just above shallow turquoise water in the upper right midground, attached to pale limestone. Soft ripples fill the lower foreground, with gentle clear water revealing bare pale sediment underneath. The horizon is level, with distant low limestone islands and a small coral-pink moon. The scene contains only rippling water, attached simple sponges, mineral reef, distant island and sky. Sea-green night palette, restrained warm moon reflection, readable cool shadows, photoreal painterly documentary landscape, vertical composition. Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40194078923,
+          "sha": "d0c62c0e8dc4d5de6e05c84a678e99095b99cf36",
+          "key": "2026-10-25-survive_night-04"
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "survive_night-04-reviewed-repair/art/o8.png",
+        "sha256": "285570d518a1bc00b83a2871ab33501d1536fc0c2db8f52d24a8d35a44a85841",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 40.6,
+          "raw_p99": 152.0,
+          "gamma": 0.367,
+          "spread": 91.0
+        },
+        "artifact_id": 12600671243,
+        "prompt": "An unoccupied natural-history landscape of open deep Jurassic sea at night, viewed close to the dark water surface. Long smooth navy and deep teal ocean swells occupy almost the entire vertical picture. Foreground wave crests catch thin cool silver highlights. A tiny low limestone island lies far away on the high horizon, reduced by distance to a narrow silhouette. A small coral-pink moon makes a restrained warm focal glow and broken reflection across the distant sea. The view contains only deep open water, remote island and sea-green night sky. The broad uninterrupted water surface has a clear deep-water character. Photoreal painterly documentary landscape, vertical composition, readable cool midtones with restrained warm moonlight. Empty deep open water with rolling dark teal waves and one tiny distant island under a small coral-pink moon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40194945171,
+          "sha": "8f7dbde38be3ce6451fcd677b0134fa4ffbbb43f",
+          "key": "2026-10-25-survive_night-04"
+        }
+      },
+      {
+        "file": "survive_night-04-reviewed-repair/art/o8-alt1.png",
+        "sha256": "6a317e23205bda49269dca2ee5b3a8c6dca1999be61328da23245699464d1589",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 39.8,
+          "raw_p99": 118.0,
+          "gamma": 0.363,
+          "spread": 87.0
+        },
+        "artifact_id": 12600671243,
+        "prompt": "An unoccupied natural-history landscape of open deep Jurassic sea at night, viewed close to the dark water surface. Long smooth navy and deep teal ocean swells occupy almost the entire vertical picture. Foreground wave crests catch thin cool silver highlights. A tiny low limestone island lies far away on the high horizon, reduced by distance to a narrow silhouette. A small coral-pink moon makes a restrained warm focal glow and broken reflection across the distant sea. The view contains only deep open water, remote island and sea-green night sky. The broad uninterrupted water surface has a clear deep-water character. Photoreal painterly documentary landscape, vertical composition, readable cool midtones with restrained warm moonlight. Empty deep open water with rolling dark teal waves and one tiny distant island under a small coral-pink moon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40194945171,
+          "sha": "8f7dbde38be3ce6451fcd677b0134fa4ffbbb43f",
+          "key": "2026-10-25-survive_night-04"
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "survive_night-04-reviewed-repair/art/end.png",
+        "sha256": "37fbf7fed0aefe37963fcf358ab8d62bdf89b52f7e505754b776bcc50343fdf6",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 82.8,
+          "raw_p99": 215.0,
+          "gamma": 0.599,
+          "spread": 144.0
+        },
+        "artifact_id": 12598698153,
+        "prompt": "A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open calm sky in the upper half of the frame. Late Jurassic Solnhofen archipelago: pale turquoise brine lagoons, bleached limestone, sea-green night sky, coral-pink moon, 28mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ]
+  }
+}

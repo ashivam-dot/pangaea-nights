@@ -1,0 +1,61 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-2/o5.png",
+      "image_sha256": "2599279c6c0cf39c0bf7aaffb9ca36ce9b16a8167e231de70c0553e3911eb47f",
+      "decision": "pass",
+      "reason": "Direct native inspection: an empty natural bleached driftwood trunk with broken branches in moonlit lagoon water, a small conifer-covered island beyond. No people, hands, lamps or fabricated props. Fits the floating-log choice and preserves the scene palette."
+    },
+    {
+      "file": "ladder-img-A-2/o5-alt1.png",
+      "image_sha256": "377eabeb82644fe6030dc2243909af1ea6cc0cb52e44385cb5d35fc2bfd63a0e",
+      "decision": "pass",
+      "reason": "Direct native inspection: an empty natural bleached driftwood trunk with broken branches in moonlit lagoon water, a small conifer-covered island beyond. No people, hands, lamps or fabricated props. Fits the floating-log choice and preserves the scene palette."
+    },
+    {
+      "file": "ladder-img-A-3/o6.png",
+      "image_sha256": "924c742ef02c1ae31e2a23222358d52f54ba718206178e1bfed0a24d28663c02",
+      "decision": "pass",
+      "reason": "Direct native inspection: empty pale carbonate mud with irregular polygonal drying cracks, dark turquoise wet fissures, a shallow pool and restrained coral moon. No footprints, body parts, tools or writing. Fits the drying-lagoon mud choice."
+    },
+    {
+      "file": "ladder-img-A-3/o6-alt1.png",
+      "image_sha256": "e2e76d302ddc27168fd3fafae7c5d1b0a6546aa13aa2c5d0f8bab94b3cb834c0",
+      "decision": "pass",
+      "reason": "Direct native inspection: empty pale carbonate mud with irregular polygonal drying cracks, dark turquoise wet fissures, a shallow pool and restrained coral moon. No footprints, body parts, tools or writing. Fits the drying-lagoon mud choice."
+    },
+    {
+      "file": "ladder-img-A-0/o3.png",
+      "image_sha256": "75378be6a7cfd40c6f72ff93fd11c10923b61a033ca886e63f3e9cde5a463022",
+      "decision": "pass",
+      "reason": "Direct native inspection: empty shallow lagoon flat with readable pale mineral sediment under clear turquoise water, distant low island and coral moon reflection. No feet, body parts, tools or writing. Fits the lagoon-flat choice."
+    },
+    {
+      "file": "ladder-img-A-4/o7.png",
+      "image_sha256": "417b02a0d1023a3f95e72d2f1ec4e591373474fb7afdb687c6d863ff03577a04",
+      "decision": "pass",
+      "reason": "Direct native inspection: rounded ochre porous sponge mounds attached to a low natural limestone reef beside shallow clear lagoon water, remote islands and coral moon. No airborne reptiles, ambiguous animal anatomy, people or text. Fits the sponge-reef choice."
+    },
+    {
+      "file": "ladder-img-A-4/o7-alt1.png",
+      "image_sha256": "b7e3f69d31e6613719267b5e659c7d121dd226050c3c93fc3a623558ff418cbc",
+      "decision": "pass",
+      "reason": "Direct native inspection: rounded ochre porous sponge mounds attached to a low natural limestone reef beside shallow clear lagoon water, remote islands and coral moon. No airborne reptiles, ambiguous animal anatomy, people or text. Fits the sponge-reef choice."
+    },
+    {
+      "file": "ladder-img-A-1/o4.png",
+      "image_sha256": "414cb0c3fb1ead1021f51a6586ab3c348bbc415b8b13d6b3c2e9f048e8e93388",
+      "decision": "hold",
+      "reason": "Direct native inspection: the full-body reconstruction has a short bird-like skull and raised triangular bat/dragon-like wing shapes instead of the planned long low toothed Rhamphorhynchus head and neatly folded wings. The required terminal tail membrane is not clearly resolved. Do not use either full-body image; preserve accepted environment siblings and repair only the roost detail."
+    },
+    {
+      "file": "ladder-img-A-1/o4-alt1.png",
+      "image_sha256": "d55803cba95c9d9e2f2cadee78355f4ff33fea373fdf5cff3dab0d5fb2b8d233",
+      "decision": "hold",
+      "reason": "Direct native inspection: the full-body reconstruction has a short bird-like skull and raised triangular bat/dragon-like wing shapes instead of the planned long low toothed Rhamphorhynchus head and neatly folded wings. The required terminal tail membrane is not clearly resolved. Do not use either full-body image; preserve accepted environment siblings and repair only the roost detail."
+    }
+  ],
+  "at": "2026-10-25T13:21:13.843576+00:00",
+  "scope": "Source paintings only",
+  "release_approval": false
+}

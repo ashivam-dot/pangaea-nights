@@ -1,0 +1,103 @@
+{
+  "at": "2026-10-25T12:43:00.152643+00:00",
+  "images": [
+    {
+      "file": "ladder-img-A-0/o1-alt1.png",
+      "image_sha256": "4053a265ade5a007d34a3b51606f684e83e19c6e3bef5e27c1212c53172f56c7",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: Pale sandy shore above turquoise lagoon surf, conifer island vegetation and coral-pink moon under sea-green night sky. No people, body parts or modern objects. Fits the soft-sand option. All current independent picture/pair/narration/render and full audiovisual checks remain required."
+    },
+    {
+      "file": "ladder-img-A-0/o1.png",
+      "image_sha256": "5c8fd18fee33d7e74be0157398577c146c772950b249f42307a4f2c541fd7ef8",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: Pale sandy shore above turquoise lagoon surf, conifer island vegetation and coral-pink moon under sea-green night sky. No people, body parts or modern objects. Fits the soft-sand option. All current independent picture/pair/narration/render and full audiovisual checks remain required."
+    },
+    {
+      "file": "ladder-img-A-1/o2-alt1.png",
+      "image_sha256": "bed14c539c0c222a698c5c5b91994d8e06b7ef1ad4385af049ec42d903bab53e",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: Firm pale limestone foreground with pine-needle mat and scrubby conifers, ridge overlook above the turquoise lagoon and pink moon. No people, body parts or modern objects. Fits the firm-ground conifer option. All current independent picture/pair/narration/render and full audiovisual checks remain required."
+    },
+    {
+      "file": "ladder-img-A-1/o2.png",
+      "image_sha256": "8e6eda57527565f96233bb92592a295967f31a958a009b0b0895f8032f3deb1f",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: Firm pale limestone foreground with pine-needle mat and scrubby conifers, ridge overlook above the turquoise lagoon and pink moon. No people, body parts or modern objects. Fits the firm-ground conifer option. All current independent picture/pair/narration/render and full audiovisual checks remain required."
+    },
+    {
+      "file": "ladder-img-A-3/o4-alt1.png",
+      "image_sha256": "dbf1c0c1b808c89c05c1834139df2fde6c567322cd44d20c3772f2db36fba7b3",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: The crowded pterosaur assembly contains conspicuous crested short-tail/dragon-like forms with ambiguous fused limbs and overlapping wing structures, rather than the planned long-tailed smooth-headed Rhamphorhynchus roost. The base and alternate are refused in full; preserve the other scenes and narration. All current independent picture/pair/narration/render and full audiovisual checks remain required."
+    },
+    {
+      "file": "ladder-img-A-3/o4.png",
+      "image_sha256": "3a0a7e04847698463c8c0365990cbd40497018013df9ae4a8c212fffa9c6b716",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: The crowded pterosaur assembly contains conspicuous crested short-tail/dragon-like forms with ambiguous fused limbs and overlapping wing structures, rather than the planned long-tailed smooth-headed Rhamphorhynchus roost. The base and alternate are refused in full; preserve the other scenes and narration. All current independent picture/pair/narration/render and full audiovisual checks remain required."
+    },
+    {
+      "file": "ladder-img-A-2/o3.png",
+      "image_sha256": "6de1db045783901dfba770c40a52a13c85e346c4f2bd455cf25cc1a939e0ae4c",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: lagoon-flat base includes visible human feet and legs; driftwood alternate includes human arms and hands; driftwood base includes a modern burning lamp on the log. These violate the channel no-humans/no-modern-props rules. Preserve narration and accepted siblings; replace only these visuals. All independent picture/pair/narrator/render/full audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-4/o5-alt1.png",
+      "image_sha256": "0ca62a41715fd7966848205f7b8d00b33ef06ed26cffbc68c3ac226fd8f94a4c",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: lagoon-flat base includes visible human feet and legs; driftwood alternate includes human arms and hands; driftwood base includes a modern burning lamp on the log. These violate the channel no-humans/no-modern-props rules. Preserve narration and accepted siblings; replace only these visuals. All independent picture/pair/narrator/render/full audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-4/o5.png",
+      "image_sha256": "897e0d5eb9f8249f766b1b2fba6ae46ba6408af07eeffedf7f5af9cc7fa72448",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: lagoon-flat base includes visible human feet and legs; driftwood alternate includes human arms and hands; driftwood base includes a modern burning lamp on the log. These violate the channel no-humans/no-modern-props rules. Preserve narration and accepted siblings; replace only these visuals. All independent picture/pair/narrator/render/full audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-6/o7.png",
+      "image_sha256": "e2ead84f9aa972027b5bb3fb02f18dae55b8ebdefb316d1a8353372ff4a94a15",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: reef base has poorly resolved crocodile-like limb forms and ambiguous body/surface intersection; alternate places several marine reptile forms visibly flying above the horizon. These are not credible underwater Jurassic marine reptiles. Replace only the reef visual, retaining the narration and other accepted scenes. Current independent picture/pair/narrator/render/full audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-6/o7-alt1.png",
+      "image_sha256": "a9e4e77d2aa650ddef556ea96bfe5ecf2c66523ff8e54e033be27313ab56bc3e",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: reef base has poorly resolved crocodile-like limb forms and ambiguous body/surface intersection; alternate places several marine reptile forms visibly flying above the horizon. These are not credible underwater Jurassic marine reptiles. Replace only the reef visual, retaining the narration and other accepted scenes. Current independent picture/pair/narrator/render/full audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-5/o6.png",
+      "image_sha256": "7224a8447b83f4cca2193e65807242ea72930ffc15471f6ac8d4364b3f71b43c",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: cracked-lagoon mud is suitable, but the foreground repeated prints are broad leaf/sole-like multiribbed impressions rather than clear small dinosaur tracks. Avoid an unsupported track reconstruction: repair this visual as empty cracked carbonate mud with wet margins. Preserve all spoken facts and other scenes. Independent picture/pair/narrator/render/full audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-5/o6-alt1.png",
+      "image_sha256": "55bf042004ce287394a4c19f545c39724fd0fbf68485edc3cd10fb1eb0d129bb",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: cracked-lagoon mud is suitable, but the foreground repeated prints are broad leaf/sole-like multiribbed impressions rather than clear small dinosaur tracks. Avoid an unsupported track reconstruction: repair this visual as empty cracked carbonate mud with wet margins. Preserve all spoken facts and other scenes. Independent picture/pair/narrator/render/full audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-8/end.png",
+      "image_sha256": "37fbf7fed0aefe37963fcf358ab8d62bdf89b52f7e505754b776bcc50343fdf6",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: natural pale cracked carbonate mud and shallow turquoise pools under a sea-green night sky and pink moon, no people, text, modern props or reconstructed animals. This environmental detail illustrates the unchanged drying-lagoon verdict. Every independent picture/pair/narrator/render/full audiovisual check remains mandatory."
+    },
+    {
+      "file": "ladder-img-A-7/o8.png",
+      "image_sha256": "1a31eca9faa69ab9cb6a1d6cfd64f4d09df2a41bda72cd52f9d06f432b0440e4",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: the open-sea swim option instead shows shallow carbonate pools and lagoon flats, with the base adding separate large fins in isolated shallow pockets and the alternate a forked fin silhouette. Neither gives the planned open deep water far from shore. Replace only this visual with unoccupied open water and a distant island; no animal is needed by the unchanged narration. Existing picture/pair/narrator/render/full audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-7/o8-alt1.png",
+      "image_sha256": "4dd8c420f6f152608355753a4e48ef104a282ba82fcdcc41972515a9de7c8109",
+      "decision": "hold",
+      "reason": "Direct native-resolution review: the open-sea swim option instead shows shallow carbonate pools and lagoon flats, with the base adding separate large fins in isolated shallow pockets and the alternate a forked fin silhouette. Neither gives the planned open deep water far from shore. Replace only this visual with unoccupied open water and a distant island; no animal is needed by the unchanged narration. Existing picture/pair/narrator/render/full audiovisual gates remain required."
+    }
+  ],
+  "scope": "Source paintings only",
+  "release_approval": false
+}

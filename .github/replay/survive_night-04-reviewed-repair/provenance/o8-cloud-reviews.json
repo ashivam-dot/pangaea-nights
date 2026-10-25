@@ -1,0 +1,19 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-0/o8.png",
+      "image_sha256": "285570d518a1bc00b83a2871ab33501d1536fc0c2db8f52d24a8d35a44a85841",
+      "decision": "pass",
+      "reason": "Direct native inspection: uninterrupted deep teal sea with rolling foreground waves, a remote low island at the horizon and a small coral moon/reflection. No isolated fins, animals, pools, shore props, people or text. Clearly supports the open-water swim choice."
+    },
+    {
+      "file": "ladder-img-A-0/o8-alt1.png",
+      "image_sha256": "6a317e23205bda49269dca2ee5b3a8c6dca1999be61328da23245699464d1589",
+      "decision": "pass",
+      "reason": "Direct native inspection: uninterrupted deep teal sea with rolling foreground waves, a remote low island at the horizon and a small coral moon/reflection. No isolated fins, animals, pools, shore props, people or text. Clearly supports the open-water swim choice."
+    }
+  ],
+  "at": "2026-10-25T13:17:09.188105+00:00",
+  "scope": "Source paintings only",
+  "release_approval": false
+}

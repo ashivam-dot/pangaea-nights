@@ -1,0 +1,123 @@
+{
+ "slot": "A",
+ "mode": "dry",
+ "day": "2026-10-25",
+ "run": "40194078923",
+ "key": "2026-10-25-survive_night-04",
+ "premise": {
+  "id": "survive_night-04",
+  "era": "Jurassic",
+  "title": "Stranded on a Dinosaur Island — Where Do You Spend the Night? 🏝️",
+  "banner": "Pick your spot on the island",
+  "hook_vo": "Jurassic islands, a warm lagoon. Pick your bed.",
+  "art_direction": "Late Jurassic Solnhofen archipelago: pale turquoise brine lagoons, bleached limestone, sea-green night sky, coral-pink moon, 28mm.",
+  "options": [
+   {
+    "n": 1,
+    "label": "Soft sand above the tide",
+    "vo": "Soft sand, just above the tide.",
+    "danger": 1,
+    "image_prompt": "POV on soft pale sand above the tideline of a Jurassic island beach at night, gentle surf, scrubby conifers behind, a coral-pink moon over the water, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+   },
+   {
+    "n": 2,
+    "label": "Under scrubby conifers",
+    "vo": "Under the scrubby conifers on the ridge.",
+    "danger": 2,
+    "image_prompt": "POV beneath low wind-bent scrubby conifers on a firm limestone ridge above a moonlit turquoise lagoon, dry needles underfoot, coral-pink moonlight, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+   },
+   {
+    "n": 3,
+    "label": "On the warm lagoon flats",
+    "vo": "Out on the warm lagoon flats.",
+    "danger": 3,
+    "image_prompt": "An unoccupied natural-history landscape of a Late Jurassic shallow brine lagoon at night. The near foreground is milky turquoise ankle-shallow water flowing over smooth pale carbonate mud, tiny ripple ridges clearly visible beneath the water. The empty flat extends toward a thin distant limestone island on the right horizon. A small coral-pink moon lights a narrow reflection across the open lagoon. The view looks down across the empty shoreline, with only water, mineral sediment, distant low conifers and sky in the picture. Sea-green night sky, pale limestone, cool water, soft warm moon accent, photoreal painterly documentary landscape, vertical composition.",
+    "art_direction": "Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow."
+   },
+   {
+    "n": 4,
+    "label": "In a pterosaur roost",
+    "vo": "Inside a pterosaur roost on the rocks.",
+    "danger": 4,
+    "image_prompt": "Use the supplied fossil head reference only for the long low uncrested Rhamphorhynchus skull geometry. A natural-history documentary close side view of ONE small living Rhamphorhynchus perched quietly on a pale weathered limestone roost rock above a Late Jurassic lagoon at night. Its compact body has soft grey-brown hairlike fibres. Its long low narrow toothed beak and smooth rounded crown follow the fossil reference. Both thin leathery wings are folded neatly along its body, with two small feet resting naturally on the rock. A long thin straight tail extends horizontally behind the body and ends in a small diamond-shaped membrane, clearly separated from the folded wings. The entire animal and tail are visible in side profile. Soft brown and grey natural animal colours. Pale limestone occupies the near lower third, softly defocused turquoise lagoon, sea-green night sky and a small coral-pink moon lie behind. Neutral documentary fill reveals the beak, folded wings, feet and tail, a subtle warm moon reflection touches the stone. One solitary living animal with folded wings and intact skin, photoreal painterly natural-history reconstruction, vertical composition.",
+    "art_direction": "Quiet limestone roost, one small grey-brown long-tailed pterosaur in complete perched side profile with folded wings, narrow low uncrested skull, turquoise lagoon and restrained coral-pink moon accent"
+   },
+   {
+    "n": 5,
+    "label": "On a driftwood log",
+    "vo": "Drifting on a big driftwood log.",
+    "danger": 5,
+    "image_prompt": "An unoccupied bleached tree trunk floating diagonally across a Late Jurassic lagoon at night, seen from the shore. The thick natural driftwood log fills the lower left foreground and points toward a small distant limestone island. Its barkless pale wood, broken natural branches and uneven waterline are clearly visible. Turquoise ripples lap around the empty log. A small coral-pink moon and thin conifer island lie high in the background. Only natural driftwood, water, remote island and night sky occupy the frame. A warm coral-pink moon glow lights the upper wooden surface. Photoreal painterly nature-documentary still, vertical composition.",
+    "art_direction": "Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow."
+   },
+   {
+    "n": 6,
+    "label": "Dried lagoon mud",
+    "vo": "Dead centre of the dried lagoon mud.",
+    "danger": 6,
+    "image_prompt": "Ground-focused natural-history documentary detail of a half-dried Late Jurassic lagoon. Empty bleached carbonate mud forms irregular natural polygonal cracks across the near foreground, with dark wet turquoise clay visible inside a few narrow fissures. A shallow pool lies near the upper right edge, with a low limestone rim across the upper background. The mud surface is unmarked and undisturbed. The composition contains mineral ground, quiet water and a small strip of sea-green night sky only. One warm coral-pink moon glow accents the upper pool. Cool pale tones, neutral readable documentary fill, photoreal painterly vertical composition.",
+    "art_direction": "Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow."
+   },
+   {
+    "n": 7,
+    "label": "Wading out to the reef",
+    "vo": "Wading out to the sponge reef.",
+    "danger": 7,
+    "image_prompt": "Unoccupied water-level natural-history landscape looking across a Late Jurassic lagoon toward a low natural sponge reef. A few small rounded ochre sponge mounds emerge just above shallow turquoise water in the upper right midground, attached to pale limestone. Soft ripples fill the lower foreground, with gentle clear water revealing bare pale sediment underneath. The horizon is level, with distant low limestone islands and a small coral-pink moon. The scene contains only rippling water, attached simple sponges, mineral reef, distant island and sky. Sea-green night palette, restrained warm moon reflection, readable cool shadows, photoreal painterly documentary landscape, vertical composition.",
+    "art_direction": "Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow."
+   },
+   {
+    "n": 8,
+    "label": "Swim to the next island",
+    "vo": "Swimming to the next island at night.",
+    "danger": 8,
+    "image_prompt": "Low POV at water level in an open dark Jurassic sea far from any shore, a distant island on the horizon, a huge fin cutting the moonlit surface, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+   }
+  ],
+  "answer_n": 2,
+  "verdict_vo": "Real answer: number 2, because the drying lagoons left sticky mud that trapped insects and small dinosaurs. Stay on firm ground.",
+  "fact": {
+   "text": "The Solnhofen lagoons at times almost dried out, exposing sticky carbonate mud that trapped insects and a few small dinosaurs.",
+   "wiki_title": "Solnhofen Limestone",
+   "wiki_revid": 1376454427,
+   "source_sentence": "At times, the lagoons almost dried out, exposing sticky carbonate muds that trapped insects and a few small dinosaurs."
+  },
+  "description": "A Late Jurassic island chain in what is now Germany, with warm lagoons that look perfect for the night. Eight choices, from a conifer ridge to a swim in open water.\n\nHead geometry reference: Rhamphorhynchus specimen from Solnhofen, photo Dean Falk Schnabel, https://commons.wikimedia.org/wiki/File:Rhamphorhynchus_muensteri_fossil.jpg, CC0 (https://creativecommons.org/publicdomain/zero/1.0/), cropped fossil reference used for AI adaptation, living animal, colour and setting are illustrative.",
+  "tags": [
+   "dinosaurs",
+   "Jurassic",
+   "pterosaurs",
+   "prehistoric",
+   "survival",
+   "deep time",
+   "fossils",
+   "would you rather"
+  ],
+  "related_topic_hint": "The Ocean Before the Dinosaurs / Jurassic seas",
+  "series": "survive_night"
+ },
+ "gates": {
+  "premise": {
+   "ok": true,
+   "problems": []
+  },
+  "novelty_4gram": {
+   "value": 0.0,
+   "ceiling": 0.35,
+   "ok": true
+  },
+  "rotation": {
+   "ok": true,
+   "problems": []
+  },
+  "reuse": {
+   "ok": true
+  }
+ },
+ "script": "Jurassic islands, a warm lagoon. Pick your bed. Soft sand, just above the tide. Under the scrubby conifers on the ridge. Out on the warm lagoon flats. Inside a pterosaur roost on the rocks. Drifting on a big driftwood log. Dead centre of the dried lagoon mud. Wading out to the sponge reef. Swimming to the next island at night. Real answer: number 2, because the drying lagoons left sticky mud that trapped insects and small dinosaurs. Stay on firm ground. Comment your number.",
+ "created": "2026-10-25T12:40:06Z",
+ "image_replay": {
+  "path": ".github/replay/survive04-reviewed-visual-repairs-art-only.json",
+  "sha256": "e2ba4769490ba38a6b8f6b49221f164c77f2e45eea50b9d90bbad74684049a01"
+ }
+}
