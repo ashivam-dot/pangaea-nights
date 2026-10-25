@@ -27,6 +27,28 @@ def test_an_explicitly_spoken_range_still_passes():
  assert wer('Depths from 2-10 metres.','Depths from two to ten meters.')==0
 
 
+def test_answer_clause_pause_keeps_voice_script_and_actual_caption_times(monkeypatch):
+ from studio import ladder_voice, voice
+ import numpy as np
+
+ calls = []
+ def sentence(text, narrator, speed):
+  calls.append((text, narrator, speed))
+  return voice.Take(np.ones(2400, dtype=np.float32), [{'text': text, 'start': 0.01, 'end': 0.09}])
+ monkeypatch.setattr(voice, '_sentence', sentence)
+ text = 'Real answer: number 2, because life may survive there.'
+ report = ladder_voice._take([{'id': 'verdict', 'text': text}, {'id': 'o2', 'text': 'Two: right under the ice.'}], 1.096)
+ assert calls == [('Real answer.', ladder_voice.VOICE, 1.096),
+                  ('number 2, because life may survive there.', ladder_voice.VOICE, 1.096),
+                  ('Two: right under the ice.', ladder_voice.VOICE, 1.096)]
+ verdict = report['verdict']
+ assert verdict['text'] == text and verdict['duration'] == 0.34
+ assert np.all(verdict['audio'][2400:5760] == 0)
+ assert verdict['words'][1]['start'] == pytest.approx(0.25)
+ assert verdict['words'][1]['end'] == pytest.approx(0.33)
+ assert report['o2']['duration'] == 0.1
+
+
 @pytest.mark.parametrize('recovered', [True, False])
 def test_missing_answer_word_retries_only_verdict_even_below_wer_limit(tmp_path, monkeypatch, recovered):
  from studio import ladder_voice, shorts_ladder

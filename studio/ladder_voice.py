@@ -18,6 +18,7 @@ PACE_TOLERANCE = 3.0  # wpm: corrections continue until the pace is this close t
 PACE_TAKES = 3
 SPEED = (0.85, 1.30)
 MAX_WER = 0.08
+ANSWER_PAUSE = 0.14
 
 
 def line_id(segment: dict) -> str:
@@ -71,11 +72,21 @@ def _transcribe(audio: np.ndarray, sr: int) -> str:
 
 
 def _take(lines: list[dict], speed: float) -> dict:
-    from .voice import SR, _sentence
+    from .voice import SR, Take, _sentence, join
 
     out = {}
     for line in lines:
-        take = _sentence(line["text"], VOICE, speed)
+        # Kokoro can blur the word "number" after the answer label. Give the
+        # label its own short clause, keeping every spoken word and narrator.
+        # Token times are shifted by the actual audio and pause, so captions
+        # remain aligned. The original script and final answer gate are intact.
+        answer = re.fullmatch(r"(Real answer):\s*(number\b.+)", line["text"]) if line["id"] == "verdict" else None
+        if answer:
+            parts = [_sentence(text, VOICE, speed) for text in (answer[1] + ".", answer[2])]
+            audio, words = join([(part.audio, part.words, 1.0) for part in parts], ANSWER_PAUSE)
+            take = Take(audio, words)
+        else:
+            take = _sentence(line["text"], VOICE, speed)
         out[line["id"]] = {"text": line["text"], "audio": take.audio, "words": take.words,
                            "duration": round(len(take.audio) / SR, 3)}
     return out
