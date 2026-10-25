@@ -673,6 +673,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "survive_night-02",
+   "series": "survive_night",
+   "era": "Permian",
+   "slot": "C",
+   "video_id": "v3kLvoRl_ec",
+   "url": "https://www.youtube.com/shorts/v3kLvoRl_ec",
+   "title": "One Night on Pangaea — Which Campsite Do You Pick? 🌙",
+   "publish_at": "2026-10-26T19:30:00Z",
+   "uploaded_at": "2026-10-25T05:52:05Z",
+   "script": "One supercontinent. One night. Where do you stop? A damp fern gully near the sea. A dry river bed, far inland. Right in the middle of the dunes. The middle of a huge salt flat. Beneath an overhang of warm red sandstone. Dug into a burrow in the dunes. On top of a lone mesa, storm coming. The exact heart of the supercontinent. Real answer: number 1, because the interior was drier, with extreme temperatures. The coast probably gives you better odds. Comment your number.",
+   "frame0": "fiWVJfsZPiCrniinfRmaKVkqwycwK30fChu+qTMcEiHsq1IsYSyyqe0Zjw1TpxGl26A2ByqnqaM+qSQdU5GPKEKkOan2p2qfzqBDKBSSJBFZoesp2qAXGyOnkyYnoakkSKh+KG8rQilqJmqjXadYppKo8x7pD/QgBa19IzWM5KAOoOuiqqPgKo8myJ19qVAR9aSIpMyklKgMpayk6qY7o+epcKg+jLWgex9toc+sxR9cpCmpnqEMpYu5FqHVqEspxJe6JFEpU7EjGEIdaST7IwAYsin+KbEntCaypuYhnppVqK2kPCTRpxugPSgfJSEp5x9xpGYjvqgjpHUef5j/HpIkmyc+pYAeZaaILQ8jYCgblGsgHBvhqE4cDqhOJLOp+iGpoVenaabQIn8jjiNZJvAecahJmZurSCXCICGmbBn2JWyoEClVI0YkEyPApegqxqkXJO4kNql5qQGml5qWKaiuyJqOrRuXYC8VqKmNOarvpWAl3ScJGkKpIKdfJIOYISd7qmQRCp16J0Wg7iF/Gf6lUKQKJNQoOiu5lekR4SMQpTcrNBmcJ72lWKRopTiihikDI8UnASgcKamnraaHpDybjSjNo8iXw6IaqDWjsSAemIgrVYzqqF4lHihnJDel3xytIPwjHyF1GkGsFiPVISYsvSP2pVycy6S7JS2hGCjYopMewysqJaulHaSTnWakdKWYp9KnPyvaHRkNe6bHIPKemZzEpUIkfqXfk/8dxJYhKZYjWKDmG6AqcafKqY+kPiVdqA4l6RU1IVIkoKprpfwl1aFZn+AYGSc+qHKkGqowIH+l66ntJuMokRjwot0ohS1LHNQg7KnlJpYsBiIfpXEoLTLUqGqhJSFSoRMmaCL2GP0lZieopSKmcSFsnwIYxCYZpRUmfSavB52pxai6JCKguZx1ErYnKKR9JN+oESCPIFqjcZ4wrHklDqf0JyifaaoJoqAlvitGr7ka0B+1p/KlwyIWJ5UYGyhup08kQaobJ5KiCZwuoM0o9ai6k3ylMSm5pNmZBxhYqIIuzalcJNMhISfTG36quag7JhCt96nuGlqmTSjFrPAhdx/3pwOlqye5p68ljqL0JZMYSxzfJF6d+KFLqEQke51xpzsfGq4DJhebQabdIO+lQ59dolMi06qcoB2iPCV/qGAiDaNAKB6n4h2zqU8b9JqkqD4pvh16oGSkUR3RJAcWsiMxmFKYYiwDqHOizqqIpQGsSakwpbQluCbiou0fdKIkncooXCgJE16qKyaOqIqjkiVuHKwfxJaBrMCoxynXmBMmp6TzJcunM6VlKgadRyWoo7YkM6ObKTojo6J5HWsqTiSHIpqk/icqnf+lOibWKOwpsKdMHA==",
+   "related": "https://www.youtube.com/watch?v=gZc5tTHJX_k",
+   "run": "40165862617",
+   "checkpoints": {},
+   "av_review_sha256": "758856bb0d067bc7f4b7cd42f4031bbdb013a417b2cae62ee52962e1a0119307",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-26T19:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
