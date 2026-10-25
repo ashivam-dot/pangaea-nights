@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "34a87a170f45cde92bbc7b948cbb57e737cececc",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "Underwater scientific reconstruction of a small colony of Charnia, an Ediacaran frond organism. Soft matte brown living fronds rise naturally from silt on slender flexible stalks. The broad tapered fronds have densely packed filled quilted segments: many short side branches subdivide into tiny repeating branchlets, alternating left and right along the central axis. These feathery soft-bodied organisms look like finely branched sea pens, with every segment joined to its neighbor. Gentle current bends the fronds slightly. Natural textured flesh, fine branching detail, soft sediment-covered attachment disks partly buried in the seabed. Close underwater documentary photograph, dim neutral external lighting with one faint warm rose glow in the sediment, black deep ocean background, vertical composition. No cutout slots, no metal, no sculptures, no potted plants. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 200551652
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "how-deep-charnia-repair/art/o7-full-t0-raw.png",
+    "sha256": "2fa59c15cf6e5360e45481d38bdfca91efaeb1050b5d07baa413aabe5612982e"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 50.7
+}

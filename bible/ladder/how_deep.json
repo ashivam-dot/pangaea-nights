@@ -122,7 +122,7 @@
      "label": "Fifty metres, silent gloom",
      "vo": "Four: fifty metres, quiet and dim.",
      "danger": 4,
-     "image_prompt": "dim teal water at fifty metres over a smooth muddy seafloor, scattered disc-shaped soft organisms, nothing moving, one warm faint glow above in the haze, photoreal painterly, vertical composition"
+     "image_prompt": "Close underwater documentary view of several soft round Ediacaran disk organisms lying flat on a dark gray muddy sea floor fifty metres below the surface. Each low disk has subtle radial quilted ridges, surrounded by crisp fine sediment grains and small ripples in the silt. Foreground disks and nearby gritty mud are sharply resolved, with the bottom receding into dim slate-blue water behind them. Quiet still water, faint suspended particles, one small warm rose glow reflected on a foreground disk. Soft neutral documentary fill, photoreal painterly, vertical composition."
     },
     {
      "n": 5,
@@ -143,7 +143,7 @@
      "label": "Deep frond meadow",
      "vo": "Seven: a deep, still meadow of feathery fronds.",
      "danger": 7,
-     "image_prompt": "still deep seafloor meadow of tall feathery fronds anchored by round holdfasts, all leaning the same way in a slow current, deep blue darkness, one warm rose-gold glow among them, photoreal painterly, vertical composition"
+     "image_prompt": "Underwater scientific reconstruction of a small colony of Charnia, an Ediacaran frond organism. Soft matte brown living fronds rise naturally from silt on slender flexible stalks. The broad tapered fronds have densely packed filled quilted segments: many short side branches subdivide into tiny repeating branchlets, alternating left and right along the central axis. These feathery soft-bodied organisms look like finely branched sea pens, with every segment joined to its neighbor. Gentle current bends the fronds slightly. Natural textured flesh, fine branching detail, soft sediment-covered attachment disks partly buried in the seabed. Close underwater documentary photograph, dim neutral external lighting with one faint warm rose glow in the sediment, black deep ocean background, vertical composition. No cutout slots, no metal, no sculptures, no potted plants."
     },
     {
      "n": 8,
@@ -172,7 +172,8 @@
     "earth history",
     "survival"
    ],
-   "related_topic_hint": "The Ocean Before the Dinosaurs"
+   "related_topic_hint": "The Ocean Before the Dinosaurs",
+   "end_image": "o1"
   },
   {
    "id": "how_deep-03",

@@ -1,0 +1,244 @@
+{
+  "schema": 1,
+  "premise": "how_deep-02",
+  "source": {
+    "run_id": 40151287146,
+    "sha": "35f1ea21425e8ec75b3ade3dfef7682611b8adb9",
+    "key": "2026-10-25-how_deep-02"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "how-deep-charnia-repair/art/o1.png",
+        "sha256": "9d29a24307de852e8b6ea764cb8dd585a269cb732a5b731d5bcb51d9b3575230",
+        "model": "klein4b-q8-768",
+        "prompt": "ankle-deep tidal shallows over wrinkled green and bronze microbial mats on a barren ancient coast, no plants on land, one warm rose-gold sunset reflecting on the water, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12582827690,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 117.4,
+          "raw_p99": 235.0,
+          "gamma": 0.868,
+          "spread": 164.0
+        }
+      },
+      {
+        "file": "how-deep-charnia-repair/art/o1-alt1.png",
+        "sha256": "c84006b61a5c719627c3c2a8f4b4ef9989310140db2147194b9bb6baebd168a5",
+        "model": "klein4b-q8-768",
+        "prompt": "ankle-deep tidal shallows over wrinkled green and bronze microbial mats on a barren ancient coast, no plants on land, one warm rose-gold sunset reflecting on the water, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12582827690,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 115.1,
+          "raw_p99": 231.0,
+          "gamma": 0.847,
+          "spread": 174.0
+        }
+      }
+    ],
+    "o2": [
+      {
+        "file": "how-deep-charnia-repair/art/o2.png",
+        "sha256": "b611888894c8c5dfc43ed4514cd7283f31aac11eb17278df4ded95ad2e080d23",
+        "model": "klein4b-q8-768",
+        "prompt": "underwater view in clear shallow water over rippled sand, flat oval quilted soft-bodied creatures lying on the bottom, gentle light ripples, one warm rose-gold sun disc above, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584075403,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 127.0,
+          "raw_p99": 230.0,
+          "gamma": 0.967,
+          "spread": 102.0
+        }
+      },
+      {
+        "file": "how-deep-charnia-repair/art/o2-alt1.png",
+        "sha256": "15ad962fdc9d46ba770ce203a9c182d0ad88015f75029bc9d539ebe25542d73c",
+        "model": "klein4b-q8-768",
+        "prompt": "underwater view in clear shallow water over rippled sand, flat oval quilted soft-bodied creatures lying on the bottom, gentle light ripples, one warm rose-gold sun disc above, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584075403,
+        "take": 3,
+        "exposure": {
+          "raw_mean": 139.9,
+          "raw_p99": 233.0,
+          "gamma": 1.122,
+          "spread": 111.0
+        }
+      }
+    ],
+    "o3": [
+      {
+        "file": "how-deep-charnia-repair/art/o3.png",
+        "sha256": "3989f07ab5f556881a1e462164ab908e330a592864ac3ef0f72bda34c8b50f59",
+        "model": "klein4b-q8-768",
+        "prompt": "murky underwater scene at ten metres with storm surge churning clouds of sand, soft flat organisms half buried, swirling sediment, one warm amber glow filtering from the surface, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584210431,
+        "take": 3,
+        "exposure": {
+          "raw_mean": 100.7,
+          "raw_p99": 229.0,
+          "gamma": 0.725,
+          "spread": 95.0
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "how-deep-charnia-repair/art/o5.png",
+        "sha256": "d4bddafa16db6729f8306f52d165bbc6bd7fdcec1b4d98965ee71f5649dd9a5e",
+        "model": "klein4b-q8-768",
+        "prompt": "dramatic drop-off edge of a muddy continental slope disappearing into dark blue depths, fine sediment drifting over the brink, one warm rose glow catching the rim, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584150220,
+        "take": 3,
+        "exposure": {
+          "raw_mean": 78.1,
+          "raw_p99": 188.0,
+          "gamma": 0.57,
+          "spread": 169.0
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "how-deep-charnia-repair/art/o6.png",
+        "sha256": "00a01d13b136bae449cc2fe28f5965ca469cff8551083b2891886017b51d70c5",
+        "model": "klein4b-q8-768",
+        "prompt": "steep grey sediment slope at two hundred metres in deep indigo water, faint marine snow falling, scattered spindle-shaped soft organisms, one warm dim glow in the distance, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12583189909,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 55.1,
+          "raw_p99": 137.0,
+          "gamma": 0.44,
+          "spread": 101.0
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "how-deep-charnia-repair/art/o8.png",
+        "sha256": "7d091438cec1e032f231df2c15338ca673dea7d5e5773d18504fd160018ec6a9",
+        "model": "klein4b-q8-768",
+        "prompt": "thick grey volcanic ash raining down through deep dark water onto a seafloor of feathery fronds, the bottom vanishing under a soft blanket, one warm orange volcanic glow far above, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12582689723,
+        "take": 3,
+        "exposure": {
+          "raw_mean": 67.4,
+          "raw_p99": 183.0,
+          "gamma": 0.507,
+          "spread": 81.0
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "how-deep-charnia-repair/art/o4-full-t0.png",
+        "sha256": "7976c42252720dd65d537deb0ea60a386cabc70f523e6e06ebcbd5b248818bd9",
+        "model": "klein4b-q8-768",
+        "prompt": "Close underwater documentary view of several soft round Ediacaran disk organisms lying flat on a dark gray muddy sea floor fifty metres below the surface. Each low disk has subtle radial quilted ridges, surrounded by crisp fine sediment grains and small ripples in the silt. Foreground disks and nearby gritty mud are sharply resolved, with the bottom receding into dim slate-blue water behind them. Quiet still water, faint suspended particles, one small warm rose glow reflected on a foreground disk. Soft neutral documentary fill, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 78.2,
+          "raw_p99": 183.0,
+          "gamma": 0.57,
+          "spread": 93.0
+        },
+        "generation": {
+          "file": "how-deep-charnia-repair/art/o4-full-t0-generation.json",
+          "sha256": "434a90b1542b8a2651ff27b0485502ef92e79104f1e82c866e1a42d6791f057f"
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "how-deep-charnia-repair/art/o7-full-t0.png",
+        "sha256": "8fab7d997556bd07743fc553985e3231c65ed6516c2a293d4e966dfb1b76938f",
+        "model": "klein4b-q8-768",
+        "prompt": "Underwater scientific reconstruction of a small colony of Charnia, an Ediacaran frond organism. Soft matte brown living fronds rise naturally from silt on slender flexible stalks. The broad tapered fronds have densely packed filled quilted segments: many short side branches subdivide into tiny repeating branchlets, alternating left and right along the central axis. These feathery soft-bodied organisms look like finely branched sea pens, with every segment joined to its neighbor. Gentle current bends the fronds slightly. Natural textured flesh, fine branching detail, soft sediment-covered attachment disks partly buried in the seabed. Close underwater documentary photograph, dim neutral external lighting with one faint warm rose glow in the sediment, black deep ocean background, vertical composition. No cutout slots, no metal, no sculptures, no potted plants. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 40.3,
+          "raw_p99": 157.0,
+          "gamma": 0.365,
+          "spread": 151.0
+        },
+        "generation": {
+          "file": "how-deep-charnia-repair/art/o7-full-t0-generation.json",
+          "sha256": "89f8887b9f9f4e7f2be57d99817e26694cae5b891122a8d586ca5ccd761af3dc"
+        }
+      },
+      {
+        "file": "how-deep-charnia-repair/art/o7-full-t1.png",
+        "sha256": "c2735edd036bee92527411ffb5293bf9291d3480a89ec84868bba63af0b45f44",
+        "model": "klein4b-q8-768",
+        "prompt": "Underwater scientific reconstruction of a small colony of Charnia, an Ediacaran frond organism. Soft matte brown living fronds rise naturally from silt on slender flexible stalks. The broad tapered fronds have densely packed filled quilted segments: many short side branches subdivide into tiny repeating branchlets, alternating left and right along the central axis. These feathery soft-bodied organisms look like finely branched sea pens, with every segment joined to its neighbor. Gentle current bends the fronds slightly. Natural textured flesh, fine branching detail, soft sediment-covered attachment disks partly buried in the seabed. Close underwater documentary photograph, dim neutral external lighting with one faint warm rose glow in the sediment, black deep ocean background, vertical composition. No cutout slots, no metal, no sculptures, no potted plants. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 36.4,
+          "raw_p99": 143.0,
+          "gamma": 0.346,
+          "spread": 158.0
+        },
+        "generation": {
+          "file": "how-deep-charnia-repair/art/o7-full-t1-generation.json",
+          "sha256": "f3d9aa19759ad9e1c199deabd6fb0dac09d66e73ddfe0f4ac2ab1c69a8719858"
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "how-deep-charnia-repair/art/o1.png",
+        "sha256": "9d29a24307de852e8b6ea764cb8dd585a269cb732a5b731d5bcb51d9b3575230",
+        "model": "klein4b-q8-768",
+        "prompt": "ankle-deep tidal shallows over wrinkled green and bronze microbial mats on a barren ancient coast, no plants on land, one warm rose-gold sunset reflecting on the water, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12582827690,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 117.4,
+          "raw_p99": 235.0,
+          "gamma": 0.868,
+          "spread": 164.0
+        },
+        "source_image": "o1"
+      }
+    ]
+  },
+  "completed_images": {
+    "o2": {
+      "file": "how-deep-charnia-repair/art/shard-01.json",
+      "sha256": "a496118c5bb0e2b837aca127496cf3588abbad4824ed0c26cff53f1bc7cc2f38",
+      "artifact_id": 12584075403,
+      "model": "klein4b-q8-768",
+      "prompt": "underwater view in clear shallow water over rippled sand, flat oval quilted soft-bodied creatures lying on the bottom, gentle light ripples, one warm rose-gold sun disc above, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+    },
+    "o3": {
+      "file": "how-deep-charnia-repair/art/shard-02.json",
+      "sha256": "5675d536a11db88f139a9432fcf355a9c805e25f78b8aab97cfc5b8a067078e6",
+      "artifact_id": 12584210431,
+      "model": "klein4b-q8-768",
+      "prompt": "murky underwater scene at ten metres with storm surge churning clouds of sand, soft flat organisms half buried, swirling sediment, one warm amber glow filtering from the surface, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+    },
+    "o5": {
+      "file": "how-deep-charnia-repair/art/shard-04.json",
+      "sha256": "ceea62ea7ebc07d3b8a910e110b94e3771da7a844c6481a2de4887bdd09d5d0d",
+      "artifact_id": 12584150220,
+      "model": "klein4b-q8-768",
+      "prompt": "dramatic drop-off edge of a muddy continental slope disappearing into dark blue depths, fine sediment drifting over the brink, one warm rose glow catching the rim, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+    },
+    "o6": {
+      "file": "how-deep-charnia-repair/art/shard-05.json",
+      "sha256": "4249f3a4f1ae99b463f077e35ce61ddd90dfa18807d71926da7787764bc1aa0c",
+      "artifact_id": 12583189909,
+      "model": "klein4b-q8-768",
+      "prompt": "steep grey sediment slope at two hundred metres in deep indigo water, faint marine snow falling, scattered spindle-shaped soft organisms, one warm dim glow in the distance, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+    },
+    "o8": {
+      "file": "how-deep-charnia-repair/art/shard-07.json",
+      "sha256": "47cdca35f894585c85e33eb2e093a66bbc573e31dcd24bc28c4ba93327238921",
+      "artifact_id": 12582689723,
+      "model": "klein4b-q8-768",
+      "prompt": "thick grey volcanic ash raining down through deep dark water onto a seafloor of feathery fronds, the bottom vanishing under a soft blanket, one warm orange volcanic glow far above, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "34a87a170f45cde92bbc7b948cbb57e737cececc",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "Close underwater documentary view of several soft round Ediacaran disk organisms lying flat on a dark gray muddy sea floor fifty metres below the surface. Each low disk has subtle radial quilted ridges, surrounded by crisp fine sediment grains and small ripples in the silt. Foreground disks and nearby gritty mud are sharply resolved, with the bottom receding into dim slate-blue water behind them. Quiet still water, faint suspended particles, one small warm rose glow reflected on a foreground disk. Soft neutral documentary fill, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 89969317
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "how-deep-charnia-repair/art/o4-full-t0-raw.png",
+    "sha256": "ecc04d9abfc3a5bfa7e86fcac8b134888c0eb76e2b1f8ae8c5526a0538c185ac"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 76.5
+}

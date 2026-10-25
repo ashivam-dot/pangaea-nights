@@ -1,0 +1,128 @@
+{
+ "shard": 7,
+ "of": 9,
+ "model": "klein4b-q8-768",
+ "premise": "how_deep-02",
+ "images": [
+  {
+   "id": "o8",
+   "takes": [
+    {
+     "seconds": 436.7,
+     "problems": [
+      "mushy 7.6"
+     ],
+     "exposure": {
+      "raw_mean": 63.5,
+      "raw_p99": 173.0,
+      "gamma": 0.485,
+      "spread": 73.0
+     },
+     "figure": 0.3132,
+     "ok": false,
+     "reasons": [
+      "mushy 7.6"
+     ],
+     "person": 0.0324,
+     "text": 0.0005,
+     "broken": 0.0015,
+     "similarity": 0.2767,
+     "aesthetic": 5.2056,
+     "brightness": 125.2097,
+     "contrast": 30.7481,
+     "sharpness": 7.5656
+    },
+    {
+     "seconds": 390.1,
+     "problems": [
+      "mushy 5.7"
+     ],
+     "exposure": {
+      "raw_mean": 83.3,
+      "raw_p99": 193.0,
+      "gamma": 0.602,
+      "spread": 133.0
+     },
+     "figure": 0.1794,
+     "ok": false,
+     "reasons": [
+      "mushy 5.7"
+     ],
+     "person": 0.2012,
+     "text": 0.0044,
+     "broken": 0.0094,
+     "similarity": 0.2974,
+     "aesthetic": 5.231,
+     "brightness": 123.5624,
+     "contrast": 47.8225,
+     "sharpness": 5.6722
+    },
+    {
+     "seconds": 395.3,
+     "problems": [
+      "mushy 6.8"
+     ],
+     "exposure": {
+      "raw_mean": 80.3,
+      "raw_p99": 180.0,
+      "gamma": 0.583,
+      "spread": 137.0
+     },
+     "figure": 0.3138,
+     "ok": false,
+     "reasons": [
+      "mushy 6.8"
+     ],
+     "person": 0.133,
+     "text": 0.0006,
+     "broken": 0.0041,
+     "similarity": 0.2824,
+     "aesthetic": 5.5516,
+     "brightness": 121.8039,
+     "contrast": 51.4488,
+     "sharpness": 6.8009
+    },
+    {
+     "seconds": 392.1,
+     "problems": [
+      "mushy 6.5"
+     ],
+     "exposure": {
+      "raw_mean": 67.4,
+      "raw_p99": 183.0,
+      "gamma": 0.507,
+      "spread": 81.0
+     },
+     "figure": 0.3083,
+     "ok": false,
+     "reasons": [
+      "mushy 6.5"
+     ],
+     "person": 0.0227,
+     "text": 0.0064,
+     "broken": 0.01,
+     "similarity": 0.2959,
+     "aesthetic": 6.0409,
+     "brightness": 125.5326,
+     "contrast": 32.9603,
+     "sharpness": 6.5104
+    }
+   ],
+   "kept": [
+    {
+     "plate": "o8.jpg",
+     "depth": "o8.depth.png",
+     "take": 3,
+     "similarity": 0.2959,
+     "luma": 125.5,
+     "embedding": "SB1cHGSpdCCNIhKrX6SJKxwmKiYmJr2rDqinpdYQzB9JrigobigCppEkRycMKBYhJyWNoVoicqjTqMUjeqXbKuYeR5mgpE0kiqdsjYObzKjKIYUng6aVKBGiixzIJQSiNiXFm4ogPR41Kq+l/KkiJaanhSXRKRalV6ecKScmIxzQpPGlrpx3p8QbgqAvp4KeqqQdJ/Ghn6qqKhykDSR5Hs0hBCP1GvadSCyHKESgr5w+ojmgdSQZKaO5gRwmpQsmayG9mo4jt7CGov2kjKVeEY6pPx+/rzwh/aVVKXykVZ6HpvwYzCDAHrepf5/AGbsnsChDqLgYqpcrlaKlCCVDokiQViwIJC0YFqXaLWKkTSQJKD2riyWUIO8j06G1pykaCaP0q0cXxiwKJ6wfHiQfJh2oE5mcpP2r7yWuKDMdCyakJvSdjyU3JeAg1SkApA4fLKA3o6Aoz5kTosGpjJUYJJ6tziP1rgghfS7ooDoouh4Bo6OaTCILJS6fxaU3KfYkHqhdolipQqSBKXqoTiAJGuQoxB4iIlgo6yBApOwjwSSOElAhpptSLvqr8CG7o3ifDSNRJREfoaSHoJsYX6OypPIk5KX1oXyjbKGzpoKnfps+J7YkcShsKzAdYiZyKWaiUyaQoAeh1ZAJmmys9xdtoYAmPJcEp6iq8500Kd+JTyh8qNUgFqRMGQqWOqb2qC+qt528KbUmeCK3IdCiSib0jDAgnyYXoHcf66enKVwnmqgRINAlWJsUoUeg5ZXHJG+ms6VCI3EkdahKHwKpf6iqo+Ci2R2BHBOk1RXRoiCoYpxQIRClzak6IUUo2APKpnMp2C0toeKdW5iRJEsk/KTMqdoqjDJ2hZSiV6AhnMgmnyIZqCkk/iNpEzykAyFVpMId0SgJFA0prSOHozUkHyFkI4yjpqFeIG8ivx04IdGg6yW4JuwlCZ1SrQQkyJ5IouQgmKqUqFQlNSiIn2+okqgnpb8bRaoUJrAijh0UpPUpgiSuHWKmCaSFIJgmoqZ6nhSorSqco/sYXiQDp/Mra6mXqBMiz557pimqjKozJ3uqA6TznA2g6g2tqDQl/hptqBqeBiYcpTMj5iJHqDcfHKMSqFMn8SX8pfQoIhcEqqal/KwSF6cmTqLbIBQk1h5knqEiba5epU+IdBHTqFSdk5ucpBeo6SZ/IHYiOKdlnAokfaXJngsj6yl5KM6aaKTHKIIj/iqoqYmlZ6jandalkKUuphspwpV6KySiyabwpr4k4CQ2IISqJilEqqAjryfPHpkkQR+XpuEWFSnfJvSP9Kltn5WoAagKLW8luCkFooWkEiHlHZglth45qNuaJKOyqKuoJS6iGmWpxacnK9glzKICqQ==",
+     "score": 8.293,
+     "fallback": true
+    }
+   ],
+   "ok": true
+  }
+ ],
+ "load_s": 2.0,
+ "seconds": 1663.0
+}
