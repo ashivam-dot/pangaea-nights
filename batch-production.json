@@ -2118,6 +2118,50 @@
           "evidence": {
             "ladder-img-A-4/o5.png": "08c204217d13446e089319dbdc2a5c5ad992a717a29fa0ffd5271a3fd974fd32",
             "ladder-img-A-4/o5-alt1.png": "a13be02ff72591bfad90ce1b8ac33d946c14291524d3faae2a19c234a28136f3"
+          },
+          "resolved_at": "2026-10-25T05:30:38+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "36e0cb6506b18096f21158658fdea5377f2a3bed",
+            "replay": ".github/replay/countdown-03-shelters-repair.json",
+            "replay_sha256": "00951e9b5b0b907470244cb7d19eb3f8ddb4fea1583c0efbc46ab00420566255",
+            "images": {
+              "o1": [
+                "77b085d3fdd6ec5dfdd07a1f419d79988d3425faa0bc8851200ff2ed55235d57",
+                "e2050f3cb39ac4552cb3c5de74070a2c5d65ba0b307dd69e5d21a878a978e613"
+              ],
+              "o2": [
+                "e676653089da10d15987884c4bc194136f3393ff08a19e9cbebc985bd25459d1",
+                "3af0a1d9d97e9a08f8a47348c7170a412eb55ea163aefad88ac987ffee469eeb"
+              ],
+              "o3": [
+                "f821ee445e2bff416ab57b5a7666d34edacbc13283fdc4f25ee1e9f339473119"
+              ],
+              "o4": [
+                "1f053b76af38106b2030097bfc0cb213793bf97265b66234de3635496f5cb22a"
+              ],
+              "o5": [
+                "bb1c9ebab4733b2449a68dbb24c58c59e39838d77b4b5dd3d457e25c2faed989",
+                "df9fb94c4db32ff4e5dc6812757f7a1a20f01d387fc1ebbc051e0f93986e220c"
+              ],
+              "o6": [
+                "278c5facc24877046f9bbda9575824cb975d69b40b36c63922ff646e06e29d06",
+                "8f9a50506c67881507079051ad03031e9fb2ad4cc57e71b6710d6586f31174c0"
+              ],
+              "o7": [
+                "c19de738eef8a4bb2b9913e143da9241c6842f3eb431446d7541b0ddbe36c23d"
+              ],
+              "o8": [
+                "709024f97ce0398d0dd1f2c7216d7c410acae139fdd6ea1bd40e3b4a0eeaf169",
+                "5d95874cad58b8cd99c8e2e9c6c1f8b30f5cf2877c02f0aeb81d4aec88f6c9f6"
+              ],
+              "end": [
+                "1f053b76af38106b2030097bfc0cb213793bf97265b66234de3635496f5cb22a"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/countdown-03-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -2128,6 +2172,50 @@
           "evidence": {
             "ladder-img-A-5/o6.png": "1906a5eaf9e34ecd0cbad641cc0c6c63edc00506419dc91e6c67ec72262e4361",
             "ladder-img-A-5/o6-alt1.png": "289725b487bb87c742990acb2a3db81261b5475275c435b6c149b57a8993a99b"
+          },
+          "resolved_at": "2026-10-25T05:30:38+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "36e0cb6506b18096f21158658fdea5377f2a3bed",
+            "replay": ".github/replay/countdown-03-shelters-repair.json",
+            "replay_sha256": "00951e9b5b0b907470244cb7d19eb3f8ddb4fea1583c0efbc46ab00420566255",
+            "images": {
+              "o1": [
+                "77b085d3fdd6ec5dfdd07a1f419d79988d3425faa0bc8851200ff2ed55235d57",
+                "e2050f3cb39ac4552cb3c5de74070a2c5d65ba0b307dd69e5d21a878a978e613"
+              ],
+              "o2": [
+                "e676653089da10d15987884c4bc194136f3393ff08a19e9cbebc985bd25459d1",
+                "3af0a1d9d97e9a08f8a47348c7170a412eb55ea163aefad88ac987ffee469eeb"
+              ],
+              "o3": [
+                "f821ee445e2bff416ab57b5a7666d34edacbc13283fdc4f25ee1e9f339473119"
+              ],
+              "o4": [
+                "1f053b76af38106b2030097bfc0cb213793bf97265b66234de3635496f5cb22a"
+              ],
+              "o5": [
+                "bb1c9ebab4733b2449a68dbb24c58c59e39838d77b4b5dd3d457e25c2faed989",
+                "df9fb94c4db32ff4e5dc6812757f7a1a20f01d387fc1ebbc051e0f93986e220c"
+              ],
+              "o6": [
+                "278c5facc24877046f9bbda9575824cb975d69b40b36c63922ff646e06e29d06",
+                "8f9a50506c67881507079051ad03031e9fb2ad4cc57e71b6710d6586f31174c0"
+              ],
+              "o7": [
+                "c19de738eef8a4bb2b9913e143da9241c6842f3eb431446d7541b0ddbe36c23d"
+              ],
+              "o8": [
+                "709024f97ce0398d0dd1f2c7216d7c410acae139fdd6ea1bd40e3b4a0eeaf169",
+                "5d95874cad58b8cd99c8e2e9c6c1f8b30f5cf2877c02f0aeb81d4aec88f6c9f6"
+              ],
+              "end": [
+                "1f053b76af38106b2030097bfc0cb213793bf97265b66234de3635496f5cb22a"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/countdown-03-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -2550,5 +2638,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T05:19:17+00:00"
+  "updated_at": "2026-10-25T05:30:38+00:00"
 }
