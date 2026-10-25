@@ -1065,7 +1065,7 @@
         "premise": "countdown-02",
         "replay": ".github/replay/countdown-high-ground-repair.json"
       },
-      "stage": "reviewed",
+      "stage": "upload_intent",
       "attempts": 4,
       "source_sha": "34a87a170f45cde92bbc7b948cbb57e737cececc",
       "before_ids": [
@@ -1265,7 +1265,9 @@
           "issues": []
         }
       },
-      "archive": "batch-reviewed-40152622139"
+      "archive": "batch-reviewed-40152622139",
+      "intended_publish_at": "2026-10-25T19:30:00Z",
+      "upload_intent_at": "2026-10-25T02:14:12+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -1705,5 +1707,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T02:14:11+00:00"
+  "updated_at": "2026-10-25T02:14:12+00:00"
 }
