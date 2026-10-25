@@ -410,8 +410,9 @@
           "label": "Cold silt bottom",
           "vo": "Six: the cold silt floor, blind.",
           "danger": 6,
-          "image_prompt": "A cold silty seafloor in pitch black deep water. Fine grey mud grains, shallow meandering animal tracks and small natural sediment ripples cover the near foreground floor. Soft neutral external documentary fill makes only these nearby grains and track edges readable. The flat floor fades rapidly into featureless black background water. Empty natural-history ground detail, matte grey silt and restrained neutral highlights, without any visible animal.",
-          "art_direction": "Cold matte grey silt under soft external documentary fill, with featureless black water beyond the foreground."
+          "image_prompt": "Straight downward close view of a cold silty seafloor in pitch black deep water. Continuous fine matte grey mud fills the complete frame from corner to corner. Two shallow winding animal trackways and small low sediment ripple ridges cross the near silt diagonally. Crisp tiny mineral grains and small scattered mud clumps remain natural and uneven. Soft neutral external documentary fill reveals only this close patch of sediment. The open dark water lies outside this tight downward view. Only undisturbed mineral sediment and tracks are visible.",
+          "art_direction": "Downward close-up of continuous cold grey silt and shallow winding trackways filling the complete frame under soft external documentary fill.",
+          "framing": "seafloor_macro"
         },
         {
           "n": 7,

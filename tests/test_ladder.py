@@ -92,6 +92,28 @@ def test_lighting_override_cannot_bypass_scene_or_content_gates(lighting, scene)
     assert ladder.premise_problems(p)
 
 
+def test_downward_dark_seafloor_fills_frame_without_changing_sibling_prompts_or_gates():
+    p = copy.deepcopy(ladder.find(BANKS, "how_deep-05"))
+    p['options'][5].pop('framing', None)
+    before = ladder.image_jobs(p)
+    p['options'][5].update(framing='seafloor_macro', image_prompt=
+        'Straight downward close view of cold grey silt on the seafloor in pitch black deep water, '
+        'fine natural sediment and shallow winding animal tracks filling the complete frame under soft neutral external documentary fill.')
+    assert not ladder.premise_problems(p)
+    after = ladder.image_jobs(p)
+    assert all(a == b for i, (a, b) in enumerate(zip(before, after)) if i != 5)
+    assert after[5]['luma'] == before[5]['luma']
+    assert 'No sunlight' in after[5]['prompt'] and 'external documentary fill' in after[5]['prompt']
+    assert 'black water on every edge' not in after[5]['prompt']
+    assert 'glowing focal light' not in after[5]['prompt']
+    for framing, scene in [('unknown', p['options'][5]['image_prompt']),
+                           ('seafloor_macro', 'Sunlit downward view of sand'),
+                           ('seafloor_macro', 'A person standing on silt in pitch black deep water')]:
+        bad = copy.deepcopy(p)
+        bad['options'][5].update(framing=framing, image_prompt=scene)
+        assert ladder.premise_problems(bad)
+
+
 def test_overlap_measures_shared_4grams():
     a = "Number one: a deep burrow under the roots of the old forest at night."
     assert ladder.overlap(a, [a]) == 1.0

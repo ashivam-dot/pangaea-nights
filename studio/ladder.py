@@ -186,6 +186,11 @@ def premise_problems(p: dict, series: str | None = None) -> list[str]:
         elif danger[-1] <= danger[0]:
             out.append("danger must climb")
         for o in opts:
+            if "framing" in o and (o["framing"] != "seafloor_macro"
+                    or not dark_water_direction(o.get("image_prompt", ""))
+                    or not re.search(r"downward|straight down", o.get("image_prompt", ""), re.I)
+                    or not re.search(r"seafloor|seabed|silt", o.get("image_prompt", ""), re.I)):
+                out.append(f"option {o['n']} seafloor_macro needs a downward dark-water sediment view")
             if "lighting" in o:
                 if o["lighting"] != "moonlight":
                     out.append(f"option {o['n']} lighting must be moonlight when specified")
@@ -561,6 +566,13 @@ def image_jobs(p: dict) -> list[dict]:
                      "soft external foreground fill and featureless black water on every edge") if dark else option_art
         style = ("photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, "
                  "matte non-luminous subjects, black background water") if dark else STYLE
+        if dark and o.get("framing") == "seafloor_macro":
+            # A downward close-up has no visible background. Requiring black on
+            # every edge made the painter draw a rectangular backdrop above it.
+            scene_art = ("neutral charcoal and muted mineral tones, downward macro composition, "
+                         "soft external documentary fill, continuous natural sediment filling the frame")
+            style = ("photoreal painterly deep-time scene, tall vertical composition, "
+                     "crisp matte mineral texture across the complete frame, no visible horizon")
         if o.get("lighting") == "moonlight" and not dark:
             # A literal glowing focal source contradicts an unlit refuge. Keep
             # this opt-in local to the repaired shot; cached siblings stay exact.
