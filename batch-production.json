@@ -2062,7 +2062,7 @@
         "slot": "A",
         "premise": "countdown-03"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "397d84810469e9af23a10f1915df2b44888a5fb5",
       "before_ids": [
@@ -2108,7 +2108,22 @@
       ],
       "submitted_at": "2026-10-25T04:07:12+00:00",
       "run_id": 40160715571,
-      "cloud_status": "queued"
+      "cloud_status": "queued",
+      "editorial_holds": [
+        {
+          "id": "actual-countdown-03-triceratops-anatomy-40160715571",
+          "run_id": 40160715571,
+          "observed_at": "2026-10-25T04:50:00+00:00",
+          "reason": "Direct full-resolution inspection rejects both o5 Triceratops takes: the base displaces the horn arrangement around the temple/frill and the alternate has two strongly curved brow horns but no recognisable nasal horn. These are materially inaccurate species depictions. Deliberately replace this single unbooked carcass-shelter choice with a narrow natural rock crevice; preserve the title, fact, answer4, freshwater-extinction explanation and every other spoken line. Both exact images remain excluded.",
+          "evidence": {
+            "ladder-img-A-4/o5.png": "08c204217d13446e089319dbdc2a5c5ad992a717a29fa0ffd5271a3fd974fd32",
+            "ladder-img-A-4/o5-alt1.png": "a13be02ff72591bfad90ce1b8ac33d946c14291524d3faae2a19c234a28136f3"
+          }
+        }
+      ],
+      "problems": [
+        "Direct full-resolution inspection rejects both o5 Triceratops takes: the base displaces the horn arrangement around the temple/frill and the alternate has two strongly curved brow horns but no recognisable nasal horn. These are materially inaccurate species depictions. Deliberately replace this single unbooked carcass-shelter choice with a narrow natural rock crevice; preserve the title, fact, answer4, freshwater-extinction explanation and every other spoken line. Both exact images remain excluded."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -2479,7 +2494,7 @@
       "attempts": 0
     }
   ],
-  "halted": null,
+  "halted": "Repair held entry countdown-03: Direct full-resolution inspection rejects both o5 Triceratops takes: the base displaces the horn arrangement around the temple/frill and the alternate has two strongly curved brow horns but no recognisable nasal horn. These are materially inaccurate species depictions. Deliberately replace this single unbooked carcass-shelter choice with a narrow natural rock crevice; preserve the title, fact, answer4, freshwater-extinction explanation and every other spoken line. Both exact images remain excluded.",
   "complete": false,
   "health": {
     "public": 1,
@@ -2487,5 +2502,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T04:28:24+00:00"
+  "updated_at": "2026-10-25T04:50:00+00:00"
 }
