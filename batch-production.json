@@ -4973,7 +4973,7 @@
         "premise": "countdown-05",
         "replay": ".github/replay/countdown-05-reviewed-environment-repair.json"
       },
-      "stage": "reviewed",
+      "stage": "upload_intent",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -5167,7 +5167,9 @@
           "issues": []
         }
       },
-      "archive": "batch-reviewed-40203173904"
+      "archive": "batch-reviewed-40203173904",
+      "intended_publish_at": "2026-10-29T19:30:00Z",
+      "upload_intent_at": "2026-10-25T16:07:48+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -5589,5 +5591,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T16:07:46+00:00"
+  "updated_at": "2026-10-25T16:07:48+00:00"
 }
