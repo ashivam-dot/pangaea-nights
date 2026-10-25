@@ -1,5 +1,4 @@
 {
-  "created_at": "2026-10-24T20:11:36+00:00",
   "held_candidates": [
     {
       "repo": "pangaea-nights",
@@ -47,6 +46,7 @@
       "quarantined_at": "2026-10-24T21:43:51+00:00"
     }
   ],
+  "created_at": "2026-10-24T20:11:36+00:00",
   "schema": 1,
   "quarantined_jobs": [
     {
@@ -2695,7 +2695,55 @@
       ],
       "submitted_at": "2026-10-25T07:00:48+00:00",
       "run_id": 40171182599,
-      "cloud_status": "in_progress"
+      "cloud_status": "completed",
+      "review": {
+        "schema": 1,
+        "model": "gemini-3.8-flash",
+        "duration": 42.9,
+        "video_sha256": "e67a23aa5ccb39167f2b06cbe3aa4521b2f7d92f84ccb3bf90e3f1d250059c28",
+        "brief_sha256": "1d57df9ec17f2eae91d9c385cc7ec51d170949ea81b74460620d2ce99f71b207",
+        "review_video_sha256": "5b14cc3acc369ed274224fd8fffd6dffc6a63e9bdcf1aef8b30eee697f69dc07",
+        "review_audio_sha256": "c1dd5647150431e4b70db2eaa49ff893784c1483b87faf5b7b6ca6f652c18b1f",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "A spike-claw hunter owns this ocean.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.5,
+              "seen": "Turbulent green sea surface with sunlight glint and opening title card",
+              "heard": "Pick a depth."
+            },
+            {
+              "part": "middle",
+              "seconds": 22.0,
+              "seen": "Low angle view of rippled seafloor sediment under turquoise water with option 6 card",
+              "heard": "Six: lying flat on the seafloor mud."
+            },
+            {
+              "part": "ending",
+              "seconds": 38.0,
+              "seen": "Seafloor mud scene with real answer verdict overlay card",
+              "heard": "claw damage."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -3437,8 +3485,8 @@
   "health": {
     "public": 2,
     "scheduled": 6,
-    "held": 1,
+    "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T07:25:13+00:00"
+  "updated_at": "2026-10-25T07:25:50+00:00"
 }
