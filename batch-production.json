@@ -2822,9 +2822,9 @@
   "complete": false,
   "health": {
     "public": 1,
-    "scheduled": 5,
+    "scheduled": 6,
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T05:52:10+00:00"
+  "updated_at": "2026-10-25T05:52:12+00:00"
 }
