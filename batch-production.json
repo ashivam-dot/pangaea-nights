@@ -2967,7 +2967,55 @@
       ],
       "submitted_at": "2026-10-25T07:26:54+00:00",
       "run_id": 40172801247,
-      "cloud_status": "queued"
+      "cloud_status": "completed",
+      "review": {
+        "schema": 1,
+        "model": "gemini-3-flash-preview",
+        "duration": 42.4,
+        "video_sha256": "c4c139f03f757e0aa5b0268ea7be644e08f74894700902bfbd18b6f4cf6c743d",
+        "brief_sha256": "218a2a133caf72fdb1d525eaf78834561292073e70899dfa10829a19ff6b2e05",
+        "review_video_sha256": "147c630827a154c25aa89485dacde9d16f670125b51299b1bf1e91e5e0384ebc",
+        "review_audio_sha256": "b1c16a7eb5400ca5d78be9ee04c66dfacb9f78de6a7b467184ef0c83ecbbe20b",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "The Devonian sea at night.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.0,
+              "seen": "A yellow sponge with many pores resting on a grey stone shelf under a gold light shaft.",
+              "heard": "Choose your armor."
+            },
+            {
+              "part": "middle",
+              "seconds": 21.0,
+              "seen": "A streamlined grey shark swimming horizontally in navy water.",
+              "heard": "Level six: shark skin, without heavy armor."
+            },
+            {
+              "part": "ending",
+              "seconds": 36.0,
+              "seen": "A side view of the armored Dunkleosteus swimming with visible head plates.",
+              "heard": "...across its skull and front half."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -3590,5 +3638,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T07:47:06+00:00"
+  "updated_at": "2026-10-25T07:47:42+00:00"
 }
