@@ -40,7 +40,7 @@
     {
      "n": 5,
      "label": "Behind a mossy boulder",
-     "vo": "Behind a mossy boulder at the treeline.",
+     "vo": "Behind a mossy boulder at the tree line.",
      "danger": 5,
      "image_prompt": "Low ground-level view of one enormous rounded grey sandstone boulder at the edge of a moonlit Cretaceous conifer forest. The broad natural rock fills the middle of the frame, its rough weathered surface covered with green moss and small ferns. A sheltered hollow of soft fern fronds lies behind the boulder in the near foreground. Tall ancient conifer trunks recede through cold teal river mist. A distant lightning-struck stump glows amber beside the river. Gibbous moon above the treetops, low 24mm wide lens, natural wilderness, photoreal painterly deep-time scene, vertical composition"
     },
@@ -54,7 +54,7 @@
     {
      "n": 7,
      "label": "On the open mudflat",
-     "vo": "Exposed on the open mudflat.",
+     "vo": "Exposed on the open mud flat.",
      "danger": 7,
      "image_prompt": "A broad moonlit mudflat beside a Cretaceous river, wet cracked brown mud and shallow puddles filling the foreground. Bare exposed ground, scattered pebbles, distant conifer forest, low teal mist and an amber-glowing smouldering stump on the far bank. Natural wilderness landscape, photoreal painterly, vertical composition"
     },
