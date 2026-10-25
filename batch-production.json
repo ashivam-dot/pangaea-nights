@@ -1102,7 +1102,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T01:50:12+00:00",
-      "cloud_status": "queued",
+      "cloud_status": "in_progress",
       "editorial_holds": [
         {
           "id": "direct-tsunami-high-ground-impact-scale-40147415761",
@@ -1212,7 +1212,7 @@
         "slot": "A",
         "premise": "how_deep-02"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 1,
       "source_sha": "35f1ea21425e8ec75b3ade3dfef7682611b8adb9",
       "before_ids": [
@@ -1247,7 +1247,9 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T01:36:19+00:00"
+      "submitted_at": "2026-10-25T01:36:19+00:00",
+      "run_id": 40151287146,
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -1619,8 +1621,8 @@
   "health": {
     "public": 1,
     "scheduled": 2,
-    "held": 1,
+    "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:51:18+00:00"
+  "updated_at": "2026-10-25T01:51:22+00:00"
 }
