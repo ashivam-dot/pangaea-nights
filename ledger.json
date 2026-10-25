@@ -1560,6 +1560,33 @@
     "refusals": [
      "Art-only collection cannot publish"
     ]
+   },
+   {
+    "at": "2026-10-25T09:47:14Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "how_deep-04",
+    "run": "40176094964",
+    "ok": false,
+    "failures": [
+     "duration_s: {\"value\": null, \"floor\": 30.0, \"ceiling\": 45.0}",
+     "frames_counted: {\"value\": null, \"want\": 1312}",
+     "fps: {\"value\": null, \"floor\": 30, \"ceiling\": 30}",
+     "size: {\"value\": null}",
+     "parallax_min: {\"value\": null, \"floor\": 0.005, \"ceiling\": 0.04}",
+     "parallax_max: {\"value\": null, \"floor\": 0.005, \"ceiling\": 0.04}",
+     "banner_height_frac: {\"value\": null, \"floor\": 0.1, \"ceiling\": 0.28}",
+     "banner_contrast: {\"value\": null, \"floor\": 4.5, \"ceiling\": 18.0}",
+     "banner_ocr: {\"value\": null, \"floor\": 0.75, \"ceiling\": 1.0}",
+     "safe_zones: {}",
+     "frame0_luma: {\"value\": null, \"floor\": 90.0, \"ceiling\": 170.0}",
+     "luma_min: {\"value\": null, \"floor\": 60.0, \"ceiling\": 200.0}"
+    ],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded",
+     "gates failed: duration_s: {\"value\": null, \"floor\": 30.0, \"ceiling\": 45.0}; frames_counted: {\"value\": null, \"want\": 1312}; fps: {\"value\": null, \"floor\": 30, \"ceiling\": 30}; size: {\"value\": null}; parallax_min: {\"value\": null, \"floor\": 0.005, \"ceiling\": 0.04}; parallax_max: {\"value\": null, \"floor\": 0.005, \"ceiling\": 0.04}"
+    ]
    }
   ],
   "alerts": [
