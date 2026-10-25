@@ -2205,10 +2205,21 @@
             "ladder-img-A-5/o6.png": "0822ed0a78f886c0b73a59b40ee0cd79ad52f9a7712c5cd6b06b54711937266c",
             "ladder-img-A-5/o6-alt1.png": "326bfdfed7d9274cfa02dfd85411ba277dbb777d56a2904a86aa33b74039b377"
           }
+        },
+        {
+          "id": "actual-how-deep-03-trilobite-field-40161421084",
+          "run_id": 40161421084,
+          "observed_at": "2026-10-25T05:09:12+00:00",
+          "reason": "Direct full-resolution inspection rejects both o5 takes. The supposed Cambrian hunter has a modern fish face, tail and paired fins rather than radiodont swimming lobes and frontal grasping appendages. The seabed animals read as domed woodlice with undifferentiated transverse plates rather than a flattened three-lobed trilobite exoskeleton. Exclude both exact images. Deliberately replan this single unbooked hovering-over-trilobites choice to hovering above a rippled sandbank; keep title, answer6, sourced seafloor-claw-risk explanation and the other spoken lines.",
+          "evidence": {
+            "ladder-img-A-4/o5.png": "411233bc27698d87a74646ca5163242b09bd22519acfc353b41010c0ea0f52f6",
+            "ladder-img-A-4/o5-alt1.png": "b5fe617a6011f4dff9ebff09008d0685c33036951f203a8658e0760bd428283a"
+          }
         }
       ],
       "problems": [
-        "Direct full-resolution inspection rejects both o6 takes: the supposed Cambrian flap-finned hunter is shown as a fish/shark-like vertebrate with a large tail and paired fins, without the lateral swimming lobes and grasping frontal appendages of Anomalocaris. Foreground armoured forms also lack a clear trilobite body plan. Exclude both exact images. Preserve the spoken flat-on-seafloor option, answer6 and qualified source; deliberately simplify this image to an empty muddy seafloor viewed at substrate height, with the hunter remaining off screen."
+        "Direct full-resolution inspection rejects both o6 takes: the supposed Cambrian flap-finned hunter is shown as a fish/shark-like vertebrate with a large tail and paired fins, without the lateral swimming lobes and grasping frontal appendages of Anomalocaris. Foreground armoured forms also lack a clear trilobite body plan. Exclude both exact images. Preserve the spoken flat-on-seafloor option, answer6 and qualified source; deliberately simplify this image to an empty muddy seafloor viewed at substrate height, with the hunter remaining off screen.",
+        "Direct full-resolution inspection rejects both o5 takes. The supposed Cambrian hunter has a modern fish face, tail and paired fins rather than radiodont swimming lobes and frontal grasping appendages. The seabed animals read as domed woodlice with undifferentiated transverse plates rather than a flattened three-lobed trilobite exoskeleton. Exclude both exact images. Deliberately replan this single unbooked hovering-over-trilobites choice to hovering above a rippled sandbank; keep title, answer6, sourced seafloor-claw-risk explanation and the other spoken lines."
       ]
     },
     {
@@ -2528,5 +2539,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T05:06:01+00:00"
+  "updated_at": "2026-10-25T05:09:12+00:00"
 }
