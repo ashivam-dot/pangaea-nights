@@ -1824,7 +1824,55 @@
       ],
       "submitted_at": "2026-10-25T04:00:20+00:00",
       "run_id": 40160283123,
-      "cloud_status": "queued"
+      "cloud_status": "completed",
+      "review": {
+        "schema": 1,
+        "model": "gemini-3-flash-preview",
+        "duration": 43.875,
+        "video_sha256": "881420ada1f206ec447f0d9d558422ac61a2d101298fa6e40f2d55a72d6c6820",
+        "brief_sha256": "2b9f3d0ff7ea9612c06e9aef6878c8884ca5633fdc6fc30872573112219e1cf9",
+        "review_video_sha256": "35f21711cfaa41eceda460b1579d21800b80f4c48941e3eb0fa1984f3b29b3f7",
+        "review_audio_sha256": "f3b48cf0e8b2e8f6dcd587e56f1e28a824f13837287dd6144d68cea86b700a66",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "The asteroid hits tonight.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 3.0,
+              "seen": "A view from inside a hollow log looking out at a river and forest under a glowing orange sky with a vertical light streak.",
+              "heard": "Level one: inside a hollow log."
+            },
+            {
+              "part": "middle",
+              "seconds": 20.0,
+              "seen": "An empty beach with waves lapping the shore under a bright orange sky with a fireball streak.",
+              "heard": "Level six: on an open beach."
+            },
+            {
+              "part": "ending",
+              "seconds": 42.0,
+              "seen": "A hollow log framing a river and forest with the text 'COMMENT YOUR NUMBER' overlaid.",
+              "heard": "Comment your number."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -1920,7 +1968,7 @@
         "slot": "A",
         "premise": "countdown-03"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 1,
       "source_sha": "397d84810469e9af23a10f1915df2b44888a5fb5",
       "before_ids": [
@@ -1964,7 +2012,9 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T04:07:12+00:00"
+      "submitted_at": "2026-10-25T04:07:12+00:00",
+      "run_id": 40160715571,
+      "cloud_status": "queued"
     },
     {
       "repo": "pangaea-nights",
@@ -2297,5 +2347,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T04:17:18+00:00"
+  "updated_at": "2026-10-25T04:17:57+00:00"
 }
