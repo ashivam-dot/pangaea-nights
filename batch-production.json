@@ -2818,11 +2818,21 @@
             "ladder-img-A-3/o4.png": "d05a6cd67cde550aeb9af8e9048bc1c65511cc31f6c5f6c101dd8fd232a3aaf3",
             "ladder-img-A-3/o4-alt1.png": "ba92652b3412142865c6a95f328baf3a65791757742f6adf3ace3e2c7a4c4e39"
           }
+        },
+        {
+          "id": "direct-modern-cave-lantern-hold",
+          "run_id": 40167406784,
+          "observed_at": "2026-10-25T06:53:33+00:00",
+          "reason": "Direct full-resolution inspection excludes o6 alternate: two modern manufactured hanging lanterns appear inside the Ice Age bear-bone cave, although the planned wilderness scene has only an amber glow. The base o6 painting retains the usable animal-bone cave without these anachronistic fixtures. Preserve useful base art, all speech and every current release gate.",
+          "evidence": {
+            "ladder-img-A-5/o6-alt1.png": "55e9aa70412c0ceea9693921aa65142baa17526ea1e088e5515128bd7724a02b"
+          }
         }
       ],
       "problems": [
         "Direct full-resolution inspection rejects both o3 paintings for narration mismatch: the scene shows upright standing spruces with a hollow in their bases, rather than shelter beneath the exposed upturned roots of a fallen spruce. Preserve all spoken lines and useful other art; repair only this fallen-root image direction. Full current picture, pairwise-image, narrator, render and audiovisual gates remain mandatory.",
-        "Direct full-resolution inspection rejects both o4 paintings: the base puts a living hairy animal inside the purported long-dead mammoth ribs, and the alternate reads as straight wooden A-frame beams rather than curved weathered mammoth rib bones. Preserve the skeleton shelter choice and narration; replace this image with a coherent naturally fallen empty ribcage, with no living animal. Keep all current picture, pairwise-image, narrator, render and audiovisual gates."
+        "Direct full-resolution inspection rejects both o4 paintings: the base puts a living hairy animal inside the purported long-dead mammoth ribs, and the alternate reads as straight wooden A-frame beams rather than curved weathered mammoth rib bones. Preserve the skeleton shelter choice and narration; replace this image with a coherent naturally fallen empty ribcage, with no living animal. Keep all current picture, pairwise-image, narrator, render and audiovisual gates.",
+        "Direct full-resolution inspection excludes o6 alternate: two modern manufactured hanging lanterns appear inside the Ice Age bear-bone cave, although the planned wilderness scene has only an amber glow. The base o6 painting retains the usable animal-bone cave without these anachronistic fixtures. Preserve useful base art, all speech and every current release gate."
       ]
     },
     {
@@ -3114,5 +3124,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T06:46:11+00:00"
+  "updated_at": "2026-10-25T06:53:33+00:00"
 }
