@@ -3851,12 +3851,23 @@
           "evidence": {
             "ladder-img-A-2/o3.png": "5728ab2e1499f4dbddd0b1e6b4fc18ca60f52e2a20c5ddace377ce38538e008d"
           }
+        },
+        {
+          "id": "direct-howdeep04-sunlit-basin",
+          "run_id": 40176094964,
+          "observed_at": "2026-10-25T09:20:47+00:00",
+          "reason": "Both basin-floor images show bright turquoise surface light and strong sunbeams instead of the specified cold black deep-basin environment. Preserve all speech; replace only this depth scene with black surrounding water and external foreground fill. All current picture, narration, render and audiovisual gates remain required.",
+          "evidence": {
+            "ladder-img-A-6/o7.png": "4e2f48c235037bdbdcdf56f088682044f8a2c1aebf129843331a074877963cd8",
+            "ladder-img-A-6/o7-alt1.png": "3ca0c635b67ae51a6d5f737696186de9a5080f7937815a9c0a671e5a6e19c044"
+          }
         }
       ],
       "problems": [
         "The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.",
         "Both slope paintings depict a dry sunlit canyon with trees and a stream instead of a fully submerged dark marine slope. Preserve every spoken line and useful sibling; replace only the affected paintings. All current picture, narration, render and audiovisual gates remain required.",
-        "The long-shell procession has broad short pyramidal shells rather than elongated straight tapering cones. Preserve every spoken line and useful siblings; replace only this painting with clearly elongated straight-shell anatomy. All current picture, narration, render and audiovisual gates remain required."
+        "The long-shell procession has broad short pyramidal shells rather than elongated straight tapering cones. Preserve every spoken line and useful siblings; replace only this painting with clearly elongated straight-shell anatomy. All current picture, narration, render and audiovisual gates remain required.",
+        "Both basin-floor images show bright turquoise surface light and strong sunbeams instead of the specified cold black deep-basin environment. Preserve all speech; replace only this depth scene with black surrounding water and external foreground fill. All current picture, narration, render and audiovisual gates remain required."
       ]
     },
     {
@@ -4186,7 +4197,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry how_deep-04: The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.; Both slope paintings depict a dry sunlit canyon with trees and a stream instead of a fully submerged dark marine slope. Preserve every spoken line and useful sibling; replace only the affected paintings. All current picture, narration, render and audiovisual gates remain required.; The long-shell procession has broad short pyramidal shells rather than elongated straight tapering cones. Preserve every spoken line and useful siblings; replace only this painting with clearly elongated straight-shell anatomy. All current picture, narration, render and audiovisual gates remain required.",
+  "halted": "Repair held entry how_deep-04: The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.; Both slope paintings depict a dry sunlit canyon with trees and a stream instead of a fully submerged dark marine slope. Preserve every spoken line and useful sibling; replace only the affected paintings. All current picture, narration, render and audiovisual gates remain required.; The long-shell procession has broad short pyramidal shells rather than elongated straight tapering cones. Preserve every spoken line and useful siblings; replace only this painting with clearly elongated straight-shell anatomy. All current picture, narration, render and audiovisual gates remain required.; Both basin-floor images show bright turquoise surface light and strong sunbeams instead of the specified cold black deep-basin environment. Preserve all speech; replace only this depth scene with black surrounding water and external foreground fill. All current picture, narration, render and audiovisual gates remain required.",
   "complete": false,
   "health": {
     "public": 2,
@@ -4194,5 +4205,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T09:20:43+00:00"
+  "updated_at": "2026-10-25T09:20:47+00:00"
 }
