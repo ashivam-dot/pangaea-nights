@@ -14,7 +14,7 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-verified-ice-reprise.json"
       },
-      "stage": "building",
+      "stage": "reviewed",
       "attempts": 8,
       "obsolete_runs": [
         40121235398,
@@ -295,7 +295,8 @@
           ],
           "issues": []
         }
-      }
+      },
+      "archive": "batch-reviewed-40147925087"
     },
     {
       "repo": "pangaea-nights",
@@ -1243,7 +1244,7 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-25T00:59:48+00:00",
+  "updated_at": "2026-10-25T00:59:53+00:00",
   "complete": false,
   "health": {
     "public": 0,
