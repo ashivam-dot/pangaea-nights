@@ -647,6 +647,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "level_1_8-13",
+   "series": "level_1_8",
+   "era": "Cretaceous",
+   "slot": "A",
+   "video_id": "fPrV4z_Yf_E",
+   "url": "https://www.youtube.com/shorts/fPrV4z_Yf_E",
+   "title": "Asteroid Hits Tonight — Level 1 to 8 Hideout: Where Do You Hide? ☄️",
+   "publish_at": "2026-10-26T14:30:00Z",
+   "uploaded_at": "2026-10-25T04:18:40Z",
+   "script": "The asteroid hits tonight. You get one hideout. Level one: inside a hollow log. Level two: a burrow in a muddy riverbank. Level three: a deep cave in the hills. Level four: the top of the tallest tree. Level five: crouched among fallen boulders. Level six: on an open beach. Level seven: a cliff top, facing the impact. Level eight: ground zero, the shallow Yucatán sea. Real answer: number 2, because crocodile relatives probably survived the impact thanks to life in water and burrowing. Dig in by the river. Comment your number.",
+   "frame0": "baEbno+UsxmTGLGjHhizKU2XbSb1KdKkFCtnqxMlKicqqZspDyeJJMcfgh/VoC0cqIIHpP+aDqd+qOucLKa6K7acwag+IHooUikqIxemDxDnm0ElIKX7oXamLKsyJEImgCKoJ6wnWikmJ5ydQ6R5oBGm3SFFI90pLK2lIKYfZiE6n4inCaiSIiyeyyPPptClY6lhHf+OqZGbmPKoC6S9qPEY9JbKIk2jRSL7I96dZqaPIBKZUyU1I8W5lCVGn+IlKx7yJM6oQrMZIAelHJ6MJjinNhnhqI0huh5DIRemm6PZpXek5yZVqCqolqW0IZUkVClZLCwcDpW6nlURQiQmD20ihCsWpaEl/J+LLawnehFAjOKntSCepnAgeSNbHyKeGJunppKlviyAIMGhDKTMpKMqzKlioROmTCbwpvimCZg4oQ0icyCCDcwc+6EJpZAqPKQopSQoOJ07nLmlyahAJUitPx0srBuZXivDpWCfwSFNoyAgHyatJvOkZqJboiQq5aRSqeKsdBzLIK2H/SspqG8edaCoIGakrybEpf8Z6qgSIMYmLKmIo6EVSqSVqY+p0CXkoHgr7h9fJKkgrKZ9qJsoCx77oOyepSCAm0AajqfkIVUskx6AJdAfxCaXJvOhfBAJKZqkHKWOnx+rSCUXn6QnuSc1IlmgFx6spdaduR2UqB6c7SxZINCpIg0hpneodCS5pv2qjyoJGRiMkAFWJPejNyUfoxsp5KMalNaduaRCJpsOXKD6D5Ak/yO+r+scNCN+JVmk2B2XJ8WkLamIIJykMyYIpMqYICQbqAKrPZVGojaonBgdKHMnp6ICo2UpiS1MqTwaq6V8KU8qlh+DqcYlRzCSqS8iBKWnJJMgppARIE0lkyW9G34kzqiypFqkNSiFKEMlyCf0nlalgpo5KXqhcB2PEVcjphjFKVmrWaUDnY4jgxnFHg8ox6kDpr+nOSPdHyCXRSnLqigcKZ+OJ3KjT5l+KRoqaCSKog8mzRq+JdOmMSk8IyIml6r6mwKtFSmgmtWZ0qDHqJYrVKbVnsOmtCfhnA+oJaICp7GlKqrapOIk0CpLqCYojyYLqIcdsyhipHIfFxmUDaQlf6S2HkMiMqR7JOqkuiESrJ8k0qvkn9slHJ7SHkWuFaT7pwwk+q3jICKUgqE6nYeYfadwnwscailPHDkjjyCTpD0kaKhqIw+mFSjsKQCoUqrEI60dCSx7or6h6aj0qT2kbBZ5qacpbCS3nIAejpSgH2sp9R5GlgqlriFxjkWjqSd/I/mkvqY1qKYVLilJJSolLaRGKeOjTqo8LKghQCh9p5Eg0KPqJXAluZ9NqcwoBKL8oXqkNC7YIlmeThmlIuEjkKDYIg==",
+   "related": "https://www.youtube.com/watch?v=Y_zpVf53Hwc",
+   "run": "40160283123",
+   "checkpoints": {},
+   "av_review_sha256": "881420ada1f206ec447f0d9d558422ac61a2d101298fa6e40f2d55a72d6c6820",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-26T14:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
