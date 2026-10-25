@@ -3053,7 +3053,7 @@
         "premise": "survive_night-03",
         "replay": ".github/replay/survive-night-03-root-rib-lake-bear-repair-v2.json"
       },
-      "stage": "building",
+      "stage": "reviewed",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -3396,7 +3396,8 @@
           ],
           "issues": []
         }
-      }
+      },
+      "archive": "batch-reviewed-40174192962"
     },
     {
       "repo": "pangaea-nights",
@@ -3877,5 +3878,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T08:13:17+00:00"
+  "updated_at": "2026-10-25T08:13:22+00:00"
 }
