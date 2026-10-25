@@ -569,7 +569,7 @@
         "slot": "A",
         "premise": "countdown-02"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 1,
       "source_sha": "e6a49e9b13ab469143af9f1a3cf57247c7318f32",
       "before_ids": [
@@ -597,7 +597,8 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T00:37:24+00:00"
+      "submitted_at": "2026-10-25T00:37:24+00:00",
+      "run_id": 40147415761
     },
     {
       "repo": "pangaea-nights",
@@ -979,7 +980,7 @@
     }
   ],
   "halted": "Repair held entry how_deep-01: production run failure",
-  "updated_at": "2026-10-25T00:38:03+00:00",
+  "updated_at": "2026-10-25T00:38:05+00:00",
   "complete": false,
   "health": {
     "public": 0,
