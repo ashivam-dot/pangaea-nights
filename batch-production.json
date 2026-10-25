@@ -3765,7 +3765,7 @@
         "premise": "how_deep-04",
         "replay": ".github/replay/how_deep-04-shell-slope-repair.json"
       },
-      "stage": "reviewed",
+      "stage": "upload_intent",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -4187,7 +4187,9 @@
           "issues": []
         }
       },
-      "archive": "batch-reviewed-40193499654"
+      "archive": "batch-reviewed-40193499654",
+      "intended_publish_at": "2026-10-28T19:30:00Z",
+      "upload_intent_at": "2026-10-25T12:45:53+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -4891,5 +4893,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:45:52+00:00"
+  "updated_at": "2026-10-25T12:45:53+00:00"
 }
