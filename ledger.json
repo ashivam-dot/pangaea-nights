@@ -1891,6 +1891,21 @@
     "refusals": [
      "Art-only collection cannot publish"
     ]
+   },
+   {
+    "at": "2026-10-25T13:39:14Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "countdown-05",
+    "run": "40196862089",
+    "ok": false,
+    "failures": [
+     "Art collected only; no video or audiovisual release approval"
+    ],
+    "published": false,
+    "refusals": [
+     "Art-only collection cannot publish"
+    ]
    }
   ],
   "alerts": [
