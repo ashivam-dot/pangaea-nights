@@ -255,7 +255,7 @@
       "series": "level_1_8",
       "slot": "B",
       "target": "2026-10-25T06:30:00Z",
-      "stage": "held",
+      "stage": "dispatch_unresolved",
       "inputs": {
         "dry_run": "true",
         "slot": "A",
@@ -263,10 +263,15 @@
         "replay": ".github/replay/ice-age-anatomy-repair.json"
       },
       "editorial_replan": "Keep the same series and slot; Cambrian drafts are quarantined for inaccurate rare-animal body plans. Use the existing Ice Age animal premise with full original gates and full AV review.",
-      "attempts": 2,
-      "source_sha": "a5254411bb11d1d0b94458e3d2d61635f48132f6",
-      "submitted_at": "2026-10-24T23:47:54+00:00",
+      "attempts": 3,
+      "source_sha": "3034d906ca6c0d98a3c7f55bcb4d43c203e78b83",
+      "submitted_at": "2026-10-25T00:53:51+00:00",
       "before_ids": [
+        40148319091,
+        40147925087,
+        40147415761,
+        40146406019,
+        40144187249,
         40143437986,
         40143333505,
         40140139736,
@@ -475,13 +480,28 @@
             "slot": "A",
             "premise": "level_1_8-16"
           }
+        },
+        {
+          "run_id": 40144187249,
+          "source_sha": "a5254411bb11d1d0b94458e3d2d61635f48132f6",
+          "stage": "held",
+          "problems": [
+            "production run failure"
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "level_1_8-16",
+            "replay": ".github/replay/ice-age-anatomy-repair.json"
+          },
+          "repair_reason": "Exact cloud originals and locally generated anatomy repairs retain take/weight/raw-pixel provenance. Excludes all four held animal sets and wrong lemming trials. Deliberate sourced steppe-bison option-five replan; fresh voice and all current media/AV gates mandatory."
         }
       ],
       "obsolete_runs": [
-        40135503878
+        40135503878,
+        40144187249
       ],
-      "repair_reason": "Exact cloud originals and locally generated anatomy repairs retain take/weight/raw-pixel provenance. Excludes all four held animal sets and wrong lemming trials. Deliberate sourced steppe-bison option-five replan; fresh voice and all current media/AV gates mandatory.",
-      "run_id": 40144187249,
+      "repair_reason": "Replace only bison composition with an exact reviewed frontal long-horn portrait; production cached-image checks pass at pair_max0.8963 with the unchanged fox fallback. Five natural wording repairs benchmarked at normal and retake speed preserve animal choices, scientific fact, answer, narrator and all final gates.",
       "calendar_history": [
         {
           "changed_at": "2026-10-24T23:55:09+00:00",
@@ -490,10 +510,7 @@
           "reason": "Unbooked target deliberately replanned: serialized cached repair is still pending behind Snowball and free-runner contention. Preserve full gates and the twenty-minute upload margin. No existing YouTube schedule is changed."
         }
       ],
-      "calendar_source_sha": "a1618ba86554b9021390df62c479f0fb4e8b162f",
-      "problems": [
-        "production run failure"
-      ]
+      "calendar_source_sha": "a1618ba86554b9021390df62c479f0fb4e8b162f"
     },
     {
       "repo": "pangaea-nights",
@@ -1158,8 +1175,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry level_1_8-16: production run failure",
-  "updated_at": "2026-10-25T00:51:27+00:00",
+  "halted": null,
+  "updated_at": "2026-10-25T00:53:51+00:00",
   "complete": false,
   "health": {
     "public": 0,
