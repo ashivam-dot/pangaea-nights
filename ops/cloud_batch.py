@@ -24,6 +24,7 @@ PLAN_FILE = "strategy/batch-2026-10-25.json"
 FINAL = {"public", "scheduled"}
 MAX_ATTEMPTS = 2
 MAX_PREVIEW_AHEAD = 4  # held and completed dry previews share a bounded buffer
+MAX_BUILDING = 2  # at most eighteen independent image shards; release stays ordered
 
 
 class TransientOperation(RuntimeError):
@@ -375,15 +376,17 @@ def tick(adapter, mode, save=persist):
         data["halted"] = f"Repair held entry {held[0]['premise']}: " + "; ".join(held[0].get("problems", []))
     pending = next((j for j in data["jobs"] if j["stage"] == "planned"), None)
     buffered = sum(j["stage"] not in FINAL | {"planned"} for j in data["jobs"])
-    in_flight = any(j["stage"] in ("building", "dispatch_unresolved") for j in data["jobs"])
-    # Editorial holds stop review/release above, while a bounded dry buffer can keep filling.
-    # Unknown dispatch/delivery halts still stop all work, and production stays serialized.
+    in_flight = [j for j in data["jobs"] if j["stage"] in ("building", "dispatch_unresolved")]
+    # Independent reserved dry previews may overlap within a small bounded buffer.
+    # Editorial holds still stop review/release, and uncertain dispatch/delivery stops all work.
     safe_halt = not data.get("halted") or entry_halt(data)
     dry_inputs = pending and pending.get("inputs", {}).get("dry_run") == "true"
-    if safe_halt and dry_inputs and not in_flight and buffered < MAX_PREVIEW_AHEAD:
-        # Avoid competing with an inherited manual or scheduled production run.
+    if (safe_halt and dry_inputs and len(in_flight) < MAX_BUILDING
+            and buffered < MAX_PREVIEW_AHEAD):
+        # An inherited manual or scheduled production run must still hold new dispatches.
         active = [r for r in builds(repo, adapter.WORKFLOW) if r["status"] != "completed"]
-        if pending and not active:
+        owned = {j.get("run_id") for j in in_flight if j.get("run_id")}
+        if all(r["id"] in owned for r in active):
             head = gh("api", f"repos/{repo}/commits/main")["sha"]
             pending.update(stage="dispatch_unresolved", source_sha=head,
                            before_ids=[r["id"] for r in builds(repo, adapter.WORKFLOW)], submitted_at=stamp(),

@@ -90,6 +90,8 @@ transcripts, captions, thumbnails and media are never downloaded, stored or sent
   fifteen minutes when `BATCH_RELEASE_ENABLED=true`; manual runs default to review only. The complete media-bound
   verdict is checkpointed before archiving, preserving refusals across archive outages and fresh runners. It uses the channel's
   existing environment credentials. Code and a green workflow are not proof of a public result.
+At most two already reserved dry previews may produce concurrently (up to eighteen image shards),
+with no overlap against an inherited manual/scheduled producer. Release and review remain in order.
 A known editorial hold allows only bounded dry production ahead (four unconsumed previews maximum);
 review and release retain their predecessor checks. Every pending dispatch is reconciled before another is sent.
 

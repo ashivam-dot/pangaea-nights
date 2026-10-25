@@ -140,3 +140,36 @@ def test_completed_future_preview_waits_for_predecessor_history(monkeypatch):
 
 def args_run(args):
     return args[1].rsplit('/', 1)[-1]
+
+
+@pytest.mark.parametrize('active_ids,expected', [([11], True), ([11, 99], False)])
+def test_bounded_lookahead_overlaps_only_owned_dry_previews(monkeypatch, active_ids, expected):
+    data = {'jobs': [{'premise': 'current', 'stage': 'building', 'run_id': 11, 'source_sha': 'abc'},
+                     {'premise': 'next', 'stage': 'planned', 'inputs': {'dry_run': 'true'}, 'attempts': 0}],
+            'halted': None}
+    monkeypatch.setattr(batch, 'load', lambda: data)
+    monkeypatch.setattr(batch, 'builds', lambda *a: [{'id': i, 'status': 'in_progress'} for i in active_ids])
+    writes = []
+    def gh(*args, **kw):
+        if kw.get('body'):
+            assert data['jobs'][1]['stage'] == 'dispatch_unresolved'
+            writes.append(kw['body'])
+            return None
+        return {'sha': 'abc'} if args[1].endswith('/commits/main') else {
+            'status': 'in_progress', 'head_sha': 'abc'}
+    monkeypatch.setattr(batch, 'gh', gh)
+    adapter = SimpleNamespace(REPO='owner/repo', WORKFLOW='run.yml', paused=lambda: False)
+    batch.tick(adapter, 'publish', save=lambda d: None)
+    assert bool(writes) is expected
+    assert data['jobs'][1]['stage'] == ('dispatch_unresolved' if expected else 'planned')
+
+
+def test_two_reserved_previews_never_dispatch_a_third(monkeypatch):
+    data = {'jobs': [{'premise': str(i), 'stage': 'building', 'run_id': i, 'source_sha': 'abc'}
+                     for i in (11, 12)] + [{'premise': 'later', 'stage': 'planned', 'inputs': {'dry_run': 'true'}}], 'halted': None}
+    monkeypatch.setattr(batch, 'load', lambda: data)
+    monkeypatch.setattr(batch, 'gh', lambda *a, **k: {'status': 'in_progress', 'head_sha': 'abc'})
+    monkeypatch.setattr(batch, 'builds', lambda *a: pytest.fail('unbounded third production dispatch'))
+    batch.tick(SimpleNamespace(REPO='owner/repo', WORKFLOW='run.yml', paused=lambda: False),
+               'publish', save=lambda d: None)
+    assert data['jobs'][2]['stage'] == 'planned'
