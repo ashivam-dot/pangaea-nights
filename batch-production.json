@@ -1910,8 +1910,8 @@
         "premise": "survive_night-02",
         "replay": ".github/replay/survive-night-02-shelter-repair.json"
       },
-      "stage": "planned",
-      "attempts": 1,
+      "stage": "dispatch_unresolved",
+      "attempts": 2,
       "editorial_holds": [
         {
           "id": "actual-cloud-modern-shoes-40157815850",
@@ -2049,7 +2049,52 @@
       ],
       "repair_queued_at": "2026-10-25T04:20:28+00:00",
       "repair_source_sha": "744991933557b158e997cb1d7bdd23b12a358645",
-      "repair_reason": "Exact reviewed salt-flat landscape and natural sandstone overhang replace modern shoes and distorted Dimetrodon; other original pixels and sourced coast/interior verdict stay. Actual narrator preflight WER0 and cached-image/pair gates pass; normal bounded producer capacity and full cloud/AV checks remain mandatory."
+      "repair_reason": "Exact reviewed salt-flat landscape and natural sandstone overhang replace modern shoes and distorted Dimetrodon; other original pixels and sourced coast/interior verdict stay. Actual narrator preflight WER0 and cached-image/pair gates pass; normal bounded producer capacity and full cloud/AV checks remain mandatory.",
+      "source_sha": "36e0cb6506b18096f21158658fdea5377f2a3bed",
+      "before_ids": [
+        40161421084,
+        40160715571,
+        40160283123,
+        40157815850,
+        40156875292,
+        40156818584,
+        40154688202,
+        40154442347,
+        40152622139,
+        40152163089,
+        40151287146,
+        40150491810,
+        40149509321,
+        40148607387,
+        40148479040,
+        40148319091,
+        40147925087,
+        40147415761,
+        40146406019,
+        40144187249,
+        40143437986,
+        40143333505,
+        40140139736,
+        40138993804,
+        40136822897,
+        40136652437,
+        40135503878,
+        40131481179,
+        40128334178,
+        40124993101,
+        40122729549,
+        40121235398,
+        40119101082,
+        40077496948,
+        39924499144,
+        39830179361,
+        39803824162,
+        39787991414,
+        39780512299,
+        39772637874,
+        39766129149
+      ],
+      "submitted_at": "2026-10-25T05:31:43+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -2612,5 +2657,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T05:31:39+00:00"
+  "updated_at": "2026-10-25T05:31:43+00:00"
 }
