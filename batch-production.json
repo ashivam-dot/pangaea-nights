@@ -1341,7 +1341,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T02:26:20+00:00",
-      "cloud_status": "queued",
+      "cloud_status": "in_progress",
       "editorial_holds": [
         {
           "id": "direct-frond-morphology-40151287146",
@@ -1787,8 +1787,8 @@
   "health": {
     "public": 1,
     "scheduled": 3,
-    "held": 1,
+    "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T02:27:18+00:00"
+  "updated_at": "2026-10-25T02:27:19+00:00"
 }
