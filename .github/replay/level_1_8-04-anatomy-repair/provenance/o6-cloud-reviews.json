@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-25T09:56:01+00:00",
+  "images": [
+    {
+      "file": "ladder-img-A-0/o6.png",
+      "image_sha256": "f38a811e8972f85adff0516ce1e5fad3b8c84b211dcc629ef0c04a96b152bf34",
+      "decision": "pass",
+      "reason": "Direct native review: Four separated narrow transparent venous wings, a long slender segmented abdomen and six small thoracic legs read as a griffinfly/dragonfly-like insect, with no moth/butterfly silhouette. Readable coal-swamp setting. Current picture and full audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-0/o6-alt1.png",
+      "image_sha256": "b25811b4594dac8421926c45bc4871c64dcdb2c0f7adf80581833c5f83d5597c",
+      "decision": "pass",
+      "reason": "Direct native review: Four separated narrow transparent venous wings, a long slender segmented abdomen and six small thoracic legs read as a griffinfly/dragonfly-like insect, with no moth/butterfly silhouette. Readable coal-swamp setting. Current picture and full audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-1/o8.png",
+      "image_sha256": "294ced34955bc4210e59b2d1dca02210f7148a4606eb115c5147e8313bd0728a",
+      "decision": "pass",
+      "reason": "Direct native review: One elongated moist-skinned amphibian with a long tapering tail and four short splayed limbs, with no crocodile armor/scutes or duplicate animal. Readable coal-swamp setting. Current picture and full audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-1/o8-alt1.png",
+      "image_sha256": "b40fb58d3d4f15eff44de2b89eebf7f698ab292084618c35cf752d9b82491d5f",
+      "decision": "pass",
+      "reason": "Direct native review: One elongated moist-skinned amphibian with a long tapering tail and four short splayed limbs, with no crocodile armor/scutes or duplicate animal. Readable coal-swamp setting. Current picture and full audiovisual gates remain required."
+    }
+  ],
+  "release_approval": false
+}

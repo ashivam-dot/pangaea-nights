@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-25T09:43:02+00:00",
+  "images": [
+    {
+      "file": "ladder-img-A-0/o3.png",
+      "image_sha256": "139aa8653e4bb1b8c101db27490f60d403cb266c01f3140faca2b24f6b184251",
+      "decision": "pass",
+      "reason": "Directly inspected native painting: one compact harvestman-like body with four long jointed walking legs on each side, including the receding rear pair; eight main legs in total. Small central mouth appendages are distinct from the legs. No separate narrow-waisted abdomen, duplicate creature or written text. Readable macro fern setting. This input-art decision does not override current automated picture checks or final audiovisual review."
+    },
+    {
+      "file": "ladder-img-A-0/o3-alt1.png",
+      "image_sha256": "47395f8b79eca6d1ee0c680fbf992365c2fc74b7b716b8ceb67d2df4463ad624",
+      "decision": "pass",
+      "reason": "Directly inspected native painting: one compact harvestman-like body with four long jointed walking legs on each side, including the receding rear pair; eight main legs in total. Small central mouth appendages are distinct from the legs. No separate narrow-waisted abdomen, duplicate creature or written text. Readable macro fern setting. This input-art decision does not override current automated picture checks or final audiovisual review."
+    }
+  ],
+  "release_approval": false
+}

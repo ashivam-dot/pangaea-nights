@@ -1,0 +1,103 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-0/o1.png",
+      "image_sha256": "34df96697915af324be3b113c39463eddc290444384ce71ccc88c4cb4cec5a66",
+      "decision": "pass",
+      "reason": "Directly viewed: tiny elongate segmented springtail-like arthropod on wet moss; short walking legs, no enlarged leaping hindlegs. Clear macro composition, no people or text."
+    },
+    {
+      "file": "ladder-img-A-0/o1-alt1.png",
+      "image_sha256": "6edca234a3140d7f049ca2a7e28296d5d1a44e76b3104c82bdcc9d580bbb08c8",
+      "decision": "hold",
+      "reason": "Directly viewed: enlarged angular hindlegs give this animal a grasshopper-like silhouette rather than the specified tiny springtail. Retain the passing base only."
+    },
+    {
+      "file": "ladder-img-A-1/o2.png",
+      "image_sha256": "8c79e0c6ba40b0af2c6e8d4e47ae5108cf2da7ac8d52317d2b54122596c081cf",
+      "decision": "pass",
+      "reason": "Directly viewed: brown winged roach-like insect with long antennae on damp bark in a hollow trunk, coherent with the early-cockroach choice."
+    },
+    {
+      "file": "ladder-img-A-1/o2-alt1.png",
+      "image_sha256": "e7e75b6e59dac4d7e60f0508e45e838aa86707c4b4c5e25f622721d2eed6ebcd",
+      "decision": "pass",
+      "reason": "Directly viewed: brown winged roach-like insect on bark, long antennae and veined wings; readable hollow-trunk setting, no people or text."
+    },
+    {
+      "file": "ladder-img-A-2/o3.png",
+      "image_sha256": "34357fe9d7d75aa95eb89cb073305bc0bc43432f690b146ec80be8073c19be72",
+      "decision": "hold",
+      "reason": "Directly viewed: the focal harvestman has six main walking legs arranged in three pairs rather than eight; replace this image with a clearly eight-legged single-bodied harvestman."
+    },
+    {
+      "file": "ladder-img-A-2/o3-alt1.png",
+      "image_sha256": "f5fb87f7077cb0f327c5096d217c6471b98029febf4c7c841cd555efc095fd15",
+      "decision": "hold",
+      "reason": "Directly viewed: the focal harvestman has six main walking legs arranged in three pairs rather than eight; replace this image with a clearly eight-legged single-bodied harvestman."
+    },
+    {
+      "file": "ladder-img-A-3/o4.png",
+      "image_sha256": "e969405a6a9b2f102ddd80d96e9e1eea21f82e8a51d4af9df60cd7305c3fb501",
+      "decision": "pass",
+      "reason": "Directly viewed: large curled broad plated millipede with many short walking legs and paired antennae, readable Arthropleura-like anatomy within the mossy hollow. No people or text."
+    },
+    {
+      "file": "ladder-img-A-3/o4-alt1.png",
+      "image_sha256": "0197efdd8593355ea11638a0652cc802df70b5e730ff15036137dbfb7553058e",
+      "decision": "pass",
+      "reason": "Directly viewed: curled broad plated millipede with many short walking legs and paired antennae; complete body forms one coil with coherent segment/leg direction. No people or text."
+    },
+    {
+      "file": "ladder-img-A-4/o5.png",
+      "image_sha256": "fc6b48088aad4ee550654b16974ea9835645b598a3af6d5dfdd6ae78e33a9105",
+      "decision": "pass",
+      "reason": "Directly viewed: winged insect clings at the hollow opening, with large veined forewings, smaller hindwings and long fine abdominal filaments. It is coherent with the broad giant-mayfly choice; this visual-only review does not identify a fossil species."
+    },
+    {
+      "file": "ladder-img-A-4/o5-alt1.png",
+      "image_sha256": "247e1e3e4c776acdaf24decd8e53aaa86dfe273ddcea3801bce083e8a74583e7",
+      "decision": "hold",
+      "reason": "Directly viewed: four similarly broad spread wings and a single prominent tail extension read as a dragonfly-like insect rather than the planned mayfly with distinct tail filaments. Retain the clearer passing base for this choice."
+    },
+    {
+      "file": "ladder-img-A-5/o6.png",
+      "image_sha256": "1abb2add8c9cb7cc688abfaa3a60870dd1720f95bf213d66d2138dc861c17617",
+      "decision": "hold",
+      "reason": "Directly viewed: broad rounded butterfly/moth-like wings and a very short abdomen contradict the long narrow dragonfly-like body and elongated transparent wings of Meganeura."
+    },
+    {
+      "file": "ladder-img-A-5/o6-alt1.png",
+      "image_sha256": "8df5274dee63357d4f647c88f30b0062f03f746c32bdafb2147199fe15a726e4",
+      "decision": "hold",
+      "reason": "Directly viewed: broad rounded butterfly/moth-like wings and a short abdomen contradict the long narrow dragonfly-like body and elongated transparent wings of Meganeura."
+    },
+    {
+      "file": "ladder-img-A-7/o8.png",
+      "image_sha256": "82afce8a4ce1181b5926c3a563370efd94b9e40a05a99a2c0d464bfeed35f93d",
+      "decision": "hold",
+      "reason": "Directly viewed: modern crocodile-like armored dorsal scutes, coarse reptilian scales and crocodile skull replace the intended Carboniferous amphibian. Repair with an elongated smooth-skinned amphibian body and broad low head."
+    },
+    {
+      "file": "ladder-img-A-7/o8-alt1.png",
+      "image_sha256": "c42fd1d5a2b5a1152814c4b6bea328edefb9f9e0466d0a6122518efa25619658",
+      "decision": "hold",
+      "reason": "Directly viewed: modern crocodile-like armored dorsal scutes, coarse reptilian scales and crocodile skull replace the intended Carboniferous amphibian. Repair with an elongated smooth-skinned amphibian body and broad low head."
+    },
+    {
+      "file": "ladder-img-A-6/o7.png",
+      "image_sha256": "33a658c438546e0a4c1d7e45d3e4b8f27c335f9937dcbf37c618eddd8d3cf1a6",
+      "decision": "hold",
+      "reason": "Directly viewed: the end of the raised scorpion tail is a large two-jawed claw/pincer instead of a single pointed stinger. Replace only this option with a normal five-segmented tail and one terminal sting; retain the two front pincers."
+    },
+    {
+      "file": "ladder-img-A-6/o7-alt1.png",
+      "image_sha256": "bd5906b7386ea899d574bacbf4343d29ed758ab28996073c0da62b6330d82956",
+      "decision": "hold",
+      "reason": "Directly viewed: the end of the raised scorpion tail is a large two-jawed claw/pincer instead of a single pointed stinger. Replace only this option with a normal five-segmented tail and one terminal sting; retain the two front pincers."
+    }
+  ],
+  "release_approval": false,
+  "scope": "Direct source paintings only; current picture, narration, render and audiovisual gates remain required.",
+  "at": "2026-10-25T09:31:21.290307+00:00"
+}

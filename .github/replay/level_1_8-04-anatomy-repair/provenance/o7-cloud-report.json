@@ -1,0 +1,81 @@
+{
+ "shard": 0,
+ "of": 1,
+ "model": "klein4b-q8-768",
+ "premise": "level_1_8-04",
+ "images": [
+  {
+   "id": "o7",
+   "takes": [
+    {
+     "seconds": 514.8,
+     "problems": [],
+     "exposure": {
+      "raw_mean": 47.8,
+      "raw_p99": 195.0,
+      "gamma": 0.402,
+      "spread": 140.0
+     },
+     "figure": 0.3967,
+     "ok": true,
+     "reasons": [],
+     "person": 0.126,
+     "text": 0.0068,
+     "broken": 0.0547,
+     "similarity": 0.3046,
+     "aesthetic": 6.6057,
+     "brightness": 109.5713,
+     "contrast": 51.4762,
+     "sharpness": 19.21
+    },
+    {
+     "seconds": 441.9,
+     "problems": [],
+     "exposure": {
+      "raw_mean": 56.0,
+      "raw_p99": 187.0,
+      "gamma": 0.444,
+      "spread": 148.0
+     },
+     "figure": 0.2741,
+     "ok": true,
+     "reasons": [],
+     "person": 0.1088,
+     "text": 0.0054,
+     "broken": 0.0949,
+     "similarity": 0.3176,
+     "aesthetic": 6.4909,
+     "brightness": 113.1398,
+     "contrast": 53.5264,
+     "sharpness": 17.7848
+    }
+   ],
+   "kept": [
+    {
+     "plate": "o7.jpg",
+     "depth": "o7.depth.png",
+     "take": 0,
+     "similarity": 0.3046,
+     "luma": 109.6,
+     "embedding": "rR3YonSmLagQpW+n1ylSKK4gtiShH0Ug6inBpP8oxpvJFqgruSi8JVCq86UmIm2m2KONpoepuqd/pisUBKUfIduilaZdJHkZBSG2JJ8gESqzKLidUBkDqC8QFaweHr8keqfUK+woSCQDKcgdKCPlqGupHyX4JHsn8wjHmnSiKydvIqGlN53dJPKeICjIrP2p5Kkuq5ChYKu3GEGqIaLtqK4ouyUpopCn8yTmKMSi+BWko4AkRCldnw+5ZycJmmAkdRiNo2itBaqOowUYJSXIKMkjRCdRsRMgX6GsqF0h8iG+qjGeRprmpw4iWKUnJkupuio1HGyko56rICcovSJ2oaejhCXsKXmkiKp7LS+fmSLUJuqoZij8o6UoHKFenVMmQ6NHrAaf5SuLlNwfdybEKDequKkoJjafdiM9p86ltiKgpD4hQaSUpEecXCQMqSMcGCQwosQgc6XXpmkiX4qSK0ywpR4ErAKlgSoyoVKoVqFyqIkl3SRUjsmh1KNpI1wo55FgrRamfxbMGBKkWx48peagZKSiHIspEiocqU+oR6gRmR8r3SO7KcIfkyCPJFqoLinhossluScNKWwuRJB3qlAr7CzwEvamNhwYKGKdxA2OFGAgRSnAKnQjACNCKHop+BMqKJ+jKKkgHFqor6MSqJykyCKAIZkiwilqHpKaGymrpUCjTKwbGGWspSGfob2tn6OsKM4idSmuoxyUIRQHJCKlZyXboMMfQKnpoN2pYCkVo3mbko8vKeoq8qjKrlqpGaKrJbsotZ01JFAnkyW2qV4rX6LcHagmORXkq2+pu6PhnOCixKmVK90smSTFqUKkeS3mpr4edac1KIMrpaqNqcMoLS+yo0SlFilyqgAe3KGWKAqgQCTCqCclb52kpnelYSZJpDYpySb4ncyqGqB8KlAeVJefH24otSCJLPiptaIXKimlQ6fqqLMnw6arGMerlCbkJeEpACSTqgqmr4/erHSmyqQqIU0ndiVjq10nyyBDLBSoGZc5HKElTKwDqN6qgCpYIKMiaiXRpfAkY6l6qxOgyZ42qNOnkaqfJk2n863Uq78ssKweq1maziQRn20iy6ljn5IL1CHxqJqax6c8knsqsZR4GLyqhiPRKoErMKwoJX8mIp0TJGCrT6OSqLqko6nRoI6TriLGpesZ1Zu3oRcYBCrDoP0jx6EUpEelI6ofoQQbRp6pKPkp7KaLICaoXyvxqM6mL6vCp/6kFxtQpKYo/ifjpqoZ75sCl4Qoohpmp9SsbCqhm32kUid9KR+jvyNPrNyqGaYSHCAq+aR2J2en6iFGJQYphSPsqpoexqgbJO6cVaXbpuMpZKN1pBgo2ynoKNoi3ZwrKeAiOSnKHQ==",
+     "score": 8.428,
+     "fallback": false
+    },
+    {
+     "plate": "o7-alt1.jpg",
+     "depth": "o7-alt1.depth.png",
+     "take": 1,
+     "similarity": 0.3176,
+     "luma": 113.1,
+     "embedding": "OB4zoqSkGqj+jrCY1SkXJ30mhSZgI40lgCf5kFUoI6XgBeAsQCShKDKqD6CMH86ioqWMqA6m5qWmpCyjCaNRHmCjz6OrJS8geCESJtchN6FnJDmgKiSdp78ha69ZIiEknKczLEkqfifOJugicSTTqpCntCgdGTcmNCZxplym1ik8oOCjRKfMIQmlkSXlq7ypVKpurL4cNagjHI2nQZ2LqW0mpiTfpCOnVaHWJjooLh5gn1wgbCmjnuC4WCMyJNohVCWemaaucKjnpUiaKyOjKNMbRSezsb0k1BgVqCkgKyWFqXKgeh4Np64k86ENJ2io2yrWDHOlhJjsHY8iWSRQHHuk8BvuKvemIKlKLQGlKSDMJpmqOCdSp0YjWovEIo8kmJ94qgGPuintFRmiSSa5Iwapaax+KQihGiAZqJipyg5BoSwkUJnyHJSl2CeeqF+hRygOqfQjhaXwolOhhh1CKGqvciiTrPsdbSrHokWoZaFaqDAkAyC7FU+kZpzuJvshbxjlrSioBaBAngwf+6ALpqmhIaVVFrMo7ik2qBepZKjyJkYsviahKlwinIyVI8ipbilsoBcqwiALK/stpaJhqVMpTSz2l7elA45FKF2azaAmJyYfKyf4K04g5yV1JLoo+B2YJzalMqo/Iiql1aGJqLCkwB6XIY0oyiXro8Od+in2p+egRK6DoA6sMZ0nIwqt0JTdJTwniyqVnPQkIp3GJ/Kiwh2PJw4chKmIIH6mFCpCmw6WMaKMJ+gqrKS3sNGmjqOcKT8mcZoZHgwlmSY0qDUsqhjTIXkoCxyyqQqqCqQZo9amGKcUK5csPCi8qaKkSC1Fp3Eg1qeFKWEs46mSqlgoWy9aoyuk3ikWqZINmJhqKYykhyTepAAdQiA5oS+knSbVl78lTigcoUeqUp11KfMUS6I7EJMoYaMPLZusdKBtK1imv6OpqFeczqMbm+Srnih6Jlsnbpm3qX+kppIkrOelHqQpGCgpPCJGq2YjwyMjLkanK6Hvn0EnKKxvqASsEipimzYcTinlomQkGqxVqzKaxZ2IpLKk2KgZJH2q/K7SrGotp6xFrEAkuBg3p2EaeKXIpACmhyK0qDyU6aj7oj8pI6DJHQes5A4UKC0sS6xplzgkdpxoJLmnvJ+wpIygw6l4pu2luhVBp6aklZ3GptQYyywjIgWitaG3oXybeKnKkQ4k4ZpNKUQqPaeBId2kNCzTqZ6nQKrapAWkHSWemLsj6yPvqoEdNqBNnx0oD5sfpjusASypH/yhTSQdJh2lcCGJrI+qYKa6JuwqL6buJNamwSgjKI8kUCZTqEIc6ahkITue96SBqEEp1KEKpdIoViqVIFcaMZX/J8IVxChTJQ==",
+     "score": 8.804,
+     "fallback": false
+    }
+   ],
+   "ok": true
+  }
+ ],
+ "cached_only": false,
+ "load_s": 2.0,
+ "seconds": 1783.3
+}

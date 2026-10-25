@@ -1,0 +1,83 @@
+{
+ "shard": 0,
+ "of": 1,
+ "model": "klein4b-q8-768",
+ "premise": "level_1_8-04",
+ "images": [
+  {
+   "id": "o3",
+   "takes": [
+    {
+     "seconds": 674.1,
+     "problems": [],
+     "exposure": {
+      "raw_mean": 82.6,
+      "raw_p99": 207.0,
+      "gamma": 0.597,
+      "spread": 151.0
+     },
+     "figure": 0.3537,
+     "ok": false,
+     "reasons": [
+      "person 0.31"
+     ],
+     "person": 0.309,
+     "text": 0.0018,
+     "broken": 0.0292,
+     "similarity": 0.3205,
+     "aesthetic": 6.2074,
+     "brightness": 119.7573,
+     "contrast": 54.6124,
+     "sharpness": 11.5339
+    },
+    {
+     "seconds": 624.5,
+     "problems": [],
+     "exposure": {
+      "raw_mean": 77.6,
+      "raw_p99": 201.0,
+      "gamma": 0.566,
+      "spread": 155.0
+     },
+     "figure": 0.2357,
+     "ok": true,
+     "reasons": [],
+     "person": 0.1821,
+     "text": 0.0048,
+     "broken": 0.0768,
+     "similarity": 0.3243,
+     "aesthetic": 6.2781,
+     "brightness": 118.6764,
+     "contrast": 54.8352,
+     "sharpness": 12.407
+    }
+   ],
+   "kept": [
+    {
+     "plate": "o3.jpg",
+     "depth": "o3.depth.png",
+     "take": 0,
+     "similarity": 0.3205,
+     "luma": 119.8,
+     "embedding": "HZNppxgkMp9Bo3oZPizdJlaYZB3uIIWftB8QpNomXaiYHQ8nHijxJl6lS6IrHcmk26iNmvGkOaaUGmObzqUeIneoyaBKKEGmsB+xG1EhSygTo2MZfJd9p0InBanRDHKbsaatLAMlsSRRJ86ey6BDqFuZhCMxIt0nzSjRISCpOCX7pfKhjBnyLLKawyh7qu6l+Jckq7Kgvqn6IVei+6QQqoKiBp0qnwumDSaAKM8qFak4IKamXSvNHFa5QCRAo0sX/hUBp16wkajKpTEZ646bKBkrViY3sKciOyDvqkUoXqP3mlGfPJ6blfgTbaVfKqmpzyrVIdefVKbJH6im0ibkHBGi2CRkJK6hOqlmLcYg8SdjKGSrJCgrqSKl5SU5Ebgo9J5mqSqoHiTGoOWgExibHP6dHqzZKVifQJU/q9KnsKQ7o60ivKCHn0Wo4SEon/wjwCaanqCcOZ45qJep8aRLINuv0qArqjgmJys3GlGiQaI1q+iZFhj8qJmhUSHEIlgp8J66q9eqSJ6eJNilvp2JpqUcQqRinyUsrCCeqGOoN6gYpK0pZSQrJhyhkCgGpJOoSSlGIYcoMZmfKgwtVKJdIPcolyywoSkS0ZsIKsulVynhKG8XyShkI4YcI6cbJlEotRwxKjKoPKkVpMOlFaKUqBcPcSSFJ6opnB9iJFKowRuCkGWlY5Q4JXaq4CXHIKUjEh7kJJ8hPiTIHcScNhiDKJ+aSyW9pG2ln51lnZehUSjMJcIiU6Zio0QlpKD+rhyoiJ2jm2WfVhn1olyefaIJqKgqzSU1JUCaRiAaqKqpzqIuILYenahgKRwspykerEklYy0pqQueW6VVJxMq3Kk2picrkzEro4acvCXop3ghNyeTKkYXiSLTpG6m1iYepvGWeyaMmikplCBIqUOlS6X8JUOoRx0CJM6gqKRnLKCqxKC1LFak46gWqQAlhKJqH9eqhSraKasnByYpIcuojqfUq0CpMh+iIV8QpRkSq0meVJ6kL5al0KSYpqsjJawsHaen2SnDJOui7SpKqB4pY6goqlCk4RhipralpR4CnTiuRKoJqEcrxqFKqrcmfyf2pCmlIaQcmoAn1yXNowycEKu7GPIotp/eIausUpziJuAs9akSKDUePKYyKDGrqR4lqHskQKg+qY6lQqRFpPye1aihqXokvytOJAaV6p1zH1kVwKlEIvmmFZp9JQAnLadCI16jySoLq1chpRkHotSb8yJbJiUoMyFfpb8hzx98pOMrPCTqoC+rqCprqFKmjSk+KrSp/SATqFmrHBgtGhcl16QPIBqnVCS0H7El2iS+qhQozaOKJzOk+Z6zn0Qpg6Kepl8kiSyLHvmfoyITKXYlKyhQoA==",
+     "score": 8.515,
+     "fallback": false
+    },
+    {
+     "plate": "o3-alt1.jpg",
+     "depth": "o3-alt1.depth.png",
+     "take": 1,
+     "similarity": 0.3243,
+     "luma": 118.7,
+     "embedding": "syZSp92csqQAo7+hzixPKvoVOJoUHvEUoiNWp4Ql7qTGG5wlTiejJk+iTpqkHeCnAqhJpQqhZKe3GD8kJqlLJ6SnH59WKEyhAyiQmzckUiSypeaQb5mFqaQn0Kq9lMgivqD1Kv0p1iF9Kn6UnZpOqOSk0Rs0JQMleCJ6peioyCFvmnueMqSmKukixSWsqkSpBKg+rDai2KlbIVajEJWSpy6eKZgXojqktSWYI2ApUapUm6WkSCh1o0+5iZFbqC0YiCJpqBiwGKyzpD+aDiHyJyEstSavsBcilZgxqaknyCX3pHOfv6J2o7KkeaDdKA2o0CmiIISgCqk6H2+hCyduo96luh4LHoUcTamALcehQR0SJNurHSjEp+QDixadImkn7iEpqS2k2Cd7oL6maCZfJRmmPqydKZGhgSMWqEeopJzynAkmmKNtD+ebviWZpMYW+iZFppOn/x5GpY6lD5zuFC2wNJbOqGUkBCplolKiUY7xqT8iMBz+nSicOx9nJecpXR3hqOWoUaMGKWGmjSIipdUZ26XMnnIoeCRNorapfKguoPsluiWjE04iXScBHsOocCwpGqUoXCJBKhAskRmhnbol5C0dpD0cCaHFKDil1ym0KMQizSgJKUwdAKU7J4QpEx6WKh2jWKLnpAimnKWzpxGmeiIvKForeRo9JEKjBCjHoAegRqk1ImysIiVqJISgjyXYJRUgFydPpIoT8CMYKBWlmSGdpd+k8iBqoxej5SjaGlgdPqXrmZAoo6A2sGqmnBC5FxIgzo3nmFSUmCKXpyomOh/jIymi1yPLqA2o6aV0nBqLgKngKgcpOCWNqU8jfS0jqlQePqgrKsEoBqY4nxos2TFopVWkOiYhq/2AvCDCKU4f7I2+pxKiYBkPqQ2lESl4pCAoVh5hqIqnkRycKSyovKDrJXMghBphLLmrMRJ1K2amB6rCpToiM6hUnferPyUtJJkpxB9YGeml4KBBqSascCKPF3EjrR57rJokUh/yLtekExpBnjEmNq19lXmouiu0mkaSwik4poEmM6lqqX2lCRQfqAuhRaD9pimrX6mTqokrTaizqSYmRCDCH9yiVqgEqBAdvCUnojIefKnfnxwqWqRWHQyrXhyWI4Eqn6xLJCQljqfIKT6v96K8pWGdQ6tmqkGmKKMjoBChE6uNqIUhkiwmJGUj+qabH+2cn6e0GJqeoSDhJRonkKhTIL+jNSzcq+Ck4aZdoyGjIRwnJbco6SRRoeEYxxhXoGgrzyQBH3yrfCyQpsCkSSgtKSqlbyQmqZaqgZ9kGuUhbqDiI0OgICXIGgMa/CO/qcwkcZ8WKOmiOZ+GpV4ofZ0/pQcmJSyqJN+UFSU+KrgjYye1og==",
+     "score": 8.901,
+     "fallback": false
+    }
+   ],
+   "ok": true
+  }
+ ],
+ "cached_only": false,
+ "load_s": 2.0,
+ "seconds": 1361.7
+}

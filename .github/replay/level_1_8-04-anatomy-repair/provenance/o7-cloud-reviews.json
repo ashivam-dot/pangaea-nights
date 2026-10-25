@@ -1,0 +1,19 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-0/o7.png",
+      "image_sha256": "e1a9d8fd03003196e2a6db6bf8116f3298f3534fb2e5bb5719742162aff69f67",
+      "decision": "hold",
+      "reason": "Direct native image and enlarged tail detail: the tail rises into a long beaded arch with too many visible segments and ends in a blunt rounded bulb without a pointed sting. This repeats visible scorpion anatomy errors and is excluded."
+    },
+    {
+      "file": "ladder-img-A-0/o7-alt1.png",
+      "image_sha256": "e25cd1e60bbd46b93817eb5fe6ca66af728ddb172094d2d10b3a0da418cbac8a",
+      "decision": "pass",
+      "reason": "Direct native review: one low scorpion shelters on damp moss in a hollow forest trunk, with two distinct grasping front pincers, coherent jointed walking legs and segmented natural chitin. The rear tail curves out behind the right trunk wall and is naturally occluded; this view does not establish total tail-segment count or show its terminal sting, and no claim of either is made. No visibly false exposed tail anatomy, text, human or duplicate focal animal. Fits the spoken giant scorpion under moss scene. Current picture, pairwise and full AV checks remain mandatory."
+    }
+  ],
+  "at": "2026-10-25T10:33:30+00:00",
+  "release_approval": false,
+  "scope": "Source stills only; no full-video approval."
+}
