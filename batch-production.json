@@ -5550,10 +5550,21 @@
             "ladder-img-A-5/o6.png": "93a92a0588944d5450481d86e70fb7ee1f459ab8ea94e7462f2e959ab1777042",
             "ladder-img-A-8/end.png": "88f445a89729da20ed722d8d55a3fb02e5de6155165027eba7accba9d93b29ef"
           }
+        },
+        {
+          "id": "survive05-small-fire-daylight-held",
+          "run_id": 40211267149,
+          "observed_at": "2026-10-25T19:35:13+00:00",
+          "reason": "Direct retained-input review refuses both option7 images because the bright white-green sky and fern canopy depict daytime during nighttime narration. Repair only the small-fire scene lighting and preserve all narration, original no-fire refusals, accepted option8 and every final gate.",
+          "evidence": {
+            "ladder-img-A-6/o7.png": "345cb25757c133b72499fb9041b67be072206da934775c0d80f17368a879a670",
+            "ladder-img-A-6/o7-alt1.png": "03724b9ab30f54d34b37ad7deffe740901f4a61ea91a248c7e20cfddea24a560"
+          }
         }
       ],
       "problems": [
-        "Direct inspection finds literal flames in the unlit choices1-6, including the no-fire sandbar; the dry peat hollow is also filled with water. The shared flame cue contradicted the spoken choices. Exclude these exact inputs, preserve every spoken line and accepted fire choices7/8, repair only visual directions, and require every final gate."
+        "Direct inspection finds literal flames in the unlit choices1-6, including the no-fire sandbar; the dry peat hollow is also filled with water. The shared flame cue contradicted the spoken choices. Exclude these exact inputs, preserve every spoken line and accepted fire choices7/8, repair only visual directions, and require every final gate.",
+        "Direct retained-input review refuses both option7 images because the bright white-green sky and fern canopy depict daytime during nighttime narration. Repair only the small-fire scene lighting and preserve all narration, original no-fire refusals, accepted option8 and every final gate."
       ]
     },
     {
@@ -5818,5 +5829,5 @@
     "held": 4,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T19:34:46+00:00"
+  "updated_at": "2026-10-25T19:35:13+00:00"
 }
