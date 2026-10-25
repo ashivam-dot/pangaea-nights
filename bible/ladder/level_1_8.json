@@ -393,28 +393,32 @@
      "label": "Moschorhinus",
      "vo": "Level five: short snout, with a big bite.",
      "danger": 5,
-     "image_prompt": "A muscular Moschorhinus therocephalian prowling at the edge of a riverbank, blunt powerful snout, ember light in its eyes, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "Tight near-side portrait of the head and upper neck of one living Moschorhinus. Its broad low skull ends in a very short blunt snout with large nostrils near the tip. A long straight upper canine descends just behind the small front teeth. The near cheek and complete closed jaw are clearly visible. Small natural ear openings lie flush with the skin behind the eye. The head has muted brown leathery skin with subtle texture. The head faces left, with a softly blurred ancient riverbank behind it. Rust-red Permian floodplain under a dusty violet night sky. Neutral soft moonlight makes anatomy readable, with a restrained warm amber reflection from a distant ember. Painterly photoreal natural-history reconstruction. Only prehistoric nature fills the view.",
+     "art_direction": "Near-side head portrait shows the broad blunt short snout and straight canine of Moschorhinus"
     },
     {
      "n": 6,
      "label": "Rubidgea",
      "vo": "Level six: a massive skull, built for biting.",
      "danger": 6,
-     "image_prompt": "A Rubidgea gorgonopsian with a massive broad skull and long sabre canines standing on a red ridge, ember glow, violet dust in the air, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "Close near-side portrait of one living Rubidgea head and upper neck against a red ridge. A massive broad deep skull and strong lower jaw fill the upper half of the scene. Two long curved saber canines descend from the upper jaw, with the near canine clearly visible outside the almost closed mouth. A thick bony brow overhangs the small dark eye. The top of the broad snout is a continuous low surface. The skin is grey-brown with subtle natural texture. The head faces right and the shoulders remain low beneath it. Rust-red Permian floodplain under a dusty violet night sky. Neutral soft moonlight makes anatomy readable, with a restrained warm amber reflection from a distant ember. Painterly photoreal natural-history reconstruction. Only prehistoric nature fills the view.",
+     "art_direction": "Near-side portrait of the massive broad Rubidgea skull and its upper-jaw saber canine"
     },
     {
      "n": 7,
      "label": "Young Inostrancevia",
      "vo": "Level seven: a young hunter, still learning.",
      "danger": 7,
-     "image_prompt": "A young Inostrancevia stalking through dry grass, lean body, long sabre canines showing, ember-lit from one side, low lens, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "Use the supplied Inostrancevia skeletal reference for fossil-informed skull, torso and four-limb proportions. Reconstruct one smaller young Inostrancevia as a living animal in a complete side view stalking left beside sparse dry grass. All four clawed feet touch the red earth, and its front elbows turn slightly outward while its belly is held above the ground. The broad elongated skull has small natural ear openings and upper-jaw saber canines descending beside the closed lower jaw. Its horizontal back continues into a tapering tail. Natural grey-brown illustrative skin, slim rather than cute proportions. Replace the supplied background with the ancient floodplain. Rust-red Permian floodplain under a dusty violet night sky. Neutral soft moonlight makes anatomy readable, with a restrained warm amber reflection from a distant ember. Painterly photoreal natural-history reconstruction. Only prehistoric nature fills the view.",
+     "art_direction": "Complete side view of a smaller quadrupedal Inostrancevia stalking through sparse grass"
     },
     {
      "n": 8,
      "label": "Adult Inostrancevia",
      "vo": "Level eight: the adult hunter with huge canines.",
      "danger": 8,
-     "image_prompt": "A full-grown Inostrancevia standing over the lens in the dark, huge sabre canines bared, ember glow under its jaw, rust-red dust swirling, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "Use the supplied Inostrancevia skeletal reference to preserve the large broad elongated skull, robust shoulders, low horizontal torso and all four weight-bearing limbs. Reconstruct one large living adult in a full three-quarter side view, facing right on a low natural ridge. All four clawed feet are planted on bare red earth. The near upper-jaw saber canine points downward beside the slightly open lower jaw. Its small natural ear opening sits behind the eye, and the back continues into a tapering tail. Muted dark grey-brown illustrative skin and readable neutral moon fill. Replace the supplied background with an entirely prehistoric natural landscape. Rust-red Permian floodplain under a dusty violet night sky. Neutral soft moonlight makes anatomy readable, with a restrained warm amber reflection from a distant ember. Painterly photoreal natural-history reconstruction. Only prehistoric nature fills the view.",
+     "art_direction": "Large adult Inostrancevia stands on four planted feet in a complete three-quarter view"
     }
    ],
    "answer_n": 8,
@@ -425,7 +429,7 @@
     "wiki_title": "Inostrancevia",
     "wiki_revid": 1381178944
    },
-   "description": "Long before dinosaurs, the top predators on Pangaea were sabre-toothed relatives of mammals. Eight Permian animals, from a shy burrower to the biggest gorgonopsian of all, and which one would really keep the night quiet.",
+   "description": "Long before dinosaurs, the top predators on Pangaea were sabre-toothed relatives of mammals. Eight Permian animals, from a shy burrower to the biggest gorgonopsian of all, and which one would really keep the night quiet.\n\nInostrancevia anatomical reference: Paleocolour, Inostrancevia skeletal mount.jpg, https://commons.wikimedia.org/wiki/File:Inostrancevia_skeletal_mount.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), AI reconstruction replaces the exhibit setting, with illustrative soft tissue, colour and young-animal proportions.",
    "tags": [
     "Pangaea",
     "Permian",

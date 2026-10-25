@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "premise": "level_1_8-05",
+  "source": {
+    "run_id": 40205103515,
+    "sha": "2d9d52a5aa76e667b9600b97986cbe14b2e25752",
+    "key": "2026-10-25-level_1_8-05"
+  },
+  "art_only": [
+    "o5",
+    "o6"
+  ],
+  "images": {}
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "premise": "level_1_8-05",
+  "source": {
+    "run_id": 40205103515,
+    "sha": "2d9d52a5aa76e667b9600b97986cbe14b2e25752",
+    "key": "2026-10-25-level_1_8-05"
+  },
+  "art_only": [
+    "o7",
+    "o8"
+  ],
+  "images": {},
+  "references": {
+    "o7": [
+      {
+        "file": "level05-inostrancevia-reference/body.png",
+        "sha256": "f2eb018df5daab68743c4de16d18596608ca3533f5ae52f23e25d9d78428df28",
+        "parent": {
+          "file": "level05-inostrancevia-reference/parent.jpg",
+          "sha256": "5fb24674661506b29a19e70cc9d265c045935fce2c474b057beeaa4719c29c28"
+        },
+        "license_evidence": {
+          "file": "level05-inostrancevia-reference/commons.json",
+          "sha256": "ebbb311f28bfa243a170cf6ad21b97f532a13a00c7eca9817c80a71ffdfac6c4"
+        },
+        "crop_ltrb": [
+          0,
+          0,
+          1280,
+          897
+        ],
+        "title": "File:Inostrancevia skeletal mount.jpg",
+        "author": "Paleocolour",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Inostrancevia_skeletal_mount.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Inostrancevia_skeletal_mount.jpg/1280px-Inostrancevia_skeletal_mount.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Inostrancevia anatomical reference: Paleocolour, Inostrancevia skeletal mount.jpg, https://commons.wikimedia.org/wiki/File:Inostrancevia_skeletal_mount.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), AI reconstruction replaces the exhibit setting, with illustrative soft tissue, colour and young-animal proportions."
+      }
+    ],
+    "o8": [
+      {
+        "file": "level05-inostrancevia-reference/body.png",
+        "sha256": "f2eb018df5daab68743c4de16d18596608ca3533f5ae52f23e25d9d78428df28",
+        "parent": {
+          "file": "level05-inostrancevia-reference/parent.jpg",
+          "sha256": "5fb24674661506b29a19e70cc9d265c045935fce2c474b057beeaa4719c29c28"
+        },
+        "license_evidence": {
+          "file": "level05-inostrancevia-reference/commons.json",
+          "sha256": "ebbb311f28bfa243a170cf6ad21b97f532a13a00c7eca9817c80a71ffdfac6c4"
+        },
+        "crop_ltrb": [
+          0,
+          0,
+          1280,
+          897
+        ],
+        "title": "File:Inostrancevia skeletal mount.jpg",
+        "author": "Paleocolour",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Inostrancevia_skeletal_mount.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Inostrancevia_skeletal_mount.jpg/1280px-Inostrancevia_skeletal_mount.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Inostrancevia anatomical reference: Paleocolour, Inostrancevia skeletal mount.jpg, https://commons.wikimedia.org/wiki/File:Inostrancevia_skeletal_mount.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), AI reconstruction replaces the exhibit setting, with illustrative soft tissue, colour and young-animal proportions."
+      }
+    ]
+  }
+}
