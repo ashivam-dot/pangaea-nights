@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "premise": "how_deep-04",
+  "source": {
+    "run_id": 40176094964,
+    "sha": "b058dbdb4ff53115e4fb443f4ba0e9755ba5cea6",
+    "key": "2026-10-25-how_deep-04"
+  },
+  "art_only": [
+    "o8"
+  ],
+  "images": {}
+}
