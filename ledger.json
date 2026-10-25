@@ -1796,6 +1796,19 @@
     "refusals": [
      "dry run: nothing is uploaded"
     ]
+   },
+   {
+    "at": "2026-10-25T12:46:03Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "survive_night-04",
+    "run": "40189867657",
+    "ok": true,
+    "failures": [],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded"
+    ]
    }
   ],
   "alerts": [
