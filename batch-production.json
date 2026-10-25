@@ -2827,12 +2827,22 @@
           "evidence": {
             "ladder-img-A-5/o6-alt1.png": "55e9aa70412c0ceea9693921aa65142baa17526ea1e088e5515128bd7724a02b"
           }
+        },
+        {
+          "id": "direct-frozen-lake-modern-shoes-hold",
+          "run_id": 40167406784,
+          "observed_at": "2026-10-25T07:00:13+00:00",
+          "reason": "Direct full-resolution inspection rejects o5: modern lace-up shoes and trousered human legs enter the frozen-lake wilderness view, with a foreground campfire not requested by the scene. Preserve the spoken frozen-lake-shore choice and every other spoken line; replace only this visual with a clearly empty low shore-level view of natural ice and windblown snow. All current picture, pair, narrator, render and audiovisual checks remain mandatory.",
+          "evidence": {
+            "ladder-img-A-4/o5.png": "3055bbb6266fe2e8f66b025b35341e86a362b6cfbc9199649e603d1b82986347"
+          }
         }
       ],
       "problems": [
         "Direct full-resolution inspection rejects both o3 paintings for narration mismatch: the scene shows upright standing spruces with a hollow in their bases, rather than shelter beneath the exposed upturned roots of a fallen spruce. Preserve all spoken lines and useful other art; repair only this fallen-root image direction. Full current picture, pairwise-image, narrator, render and audiovisual gates remain mandatory.",
         "Direct full-resolution inspection rejects both o4 paintings: the base puts a living hairy animal inside the purported long-dead mammoth ribs, and the alternate reads as straight wooden A-frame beams rather than curved weathered mammoth rib bones. Preserve the skeleton shelter choice and narration; replace this image with a coherent naturally fallen empty ribcage, with no living animal. Keep all current picture, pairwise-image, narrator, render and audiovisual gates.",
-        "Direct full-resolution inspection excludes o6 alternate: two modern manufactured hanging lanterns appear inside the Ice Age bear-bone cave, although the planned wilderness scene has only an amber glow. The base o6 painting retains the usable animal-bone cave without these anachronistic fixtures. Preserve useful base art, all speech and every current release gate."
+        "Direct full-resolution inspection excludes o6 alternate: two modern manufactured hanging lanterns appear inside the Ice Age bear-bone cave, although the planned wilderness scene has only an amber glow. The base o6 painting retains the usable animal-bone cave without these anachronistic fixtures. Preserve useful base art, all speech and every current release gate.",
+        "Direct full-resolution inspection rejects o5: modern lace-up shoes and trousered human legs enter the frozen-lake wilderness view, with a foreground campfire not requested by the scene. Preserve the spoken frozen-lake-shore choice and every other spoken line; replace only this visual with a clearly empty low shore-level view of natural ice and windblown snow. All current picture, pair, narrator, render and audiovisual checks remain mandatory."
       ]
     },
     {
@@ -3124,5 +3134,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T06:54:18+00:00"
+  "updated_at": "2026-10-25T07:00:13+00:00"
 }
