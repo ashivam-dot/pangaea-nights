@@ -2363,7 +2363,55 @@
       ],
       "submitted_at": "2026-10-25T05:33:10+00:00",
       "run_id": 40165952771,
-      "cloud_status": "in_progress"
+      "cloud_status": "completed",
+      "review": {
+        "schema": 1,
+        "model": "gemini-3.1-flash-lite",
+        "duration": 44.033333,
+        "video_sha256": "d625aec82727e02804c52f1913e4983ac79ac199f16fafb1579374e47ace3ba5",
+        "brief_sha256": "15a4f3ca0d845d480cef14cc8883be16ff6f02053fb2eb72cf6e86b8ae0f18c2",
+        "review_video_sha256": "31056f945e2667afea1a50b890c1c4ea889d65c433e72a41fdb3e06c3c75233a",
+        "review_audio_sha256": "8bf55ee53a9615239124278ee99b773bdfa9a1ec55113dfffe6971a0c0195b19",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "The sun is gone for months.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 1.5,
+              "seen": "A nest made of twigs sits on the ground in a misty, ash-covered forest.",
+              "heard": "The sun is gone for months."
+            },
+            {
+              "part": "middle",
+              "seconds": 20.5,
+              "seen": "A wide, grey ocean under a hazy sky with soot falling.",
+              "heard": "Drift far offshore in the open sea."
+            },
+            {
+              "part": "ending",
+              "seconds": 42.5,
+              "seen": "A turtle resting on a log in a pond with lily pads.",
+              "heard": "Comment your number."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -2473,7 +2521,7 @@
         "slot": "A",
         "premise": "level_1_8-03"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 1,
       "source_sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc",
       "before_ids": [
@@ -2521,7 +2569,9 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T05:52:10+00:00"
+      "submitted_at": "2026-10-25T05:52:10+00:00",
+      "run_id": 40167081277,
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -2826,5 +2876,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T05:54:00+00:00"
+  "updated_at": "2026-10-25T05:57:06+00:00"
 }
