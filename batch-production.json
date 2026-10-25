@@ -1739,10 +1739,21 @@
             "ladder-img-A-3/o4.png": "8522940edabea2d2e73e781ff902ae50b016b0f2f0a5dd2eae1a6d5846a2cbe1",
             "ladder-img-A-3/o4-alt1.png": "5f27431de35d336465453b3dd0b82da013318d5a241853d99494d37c62f3ddea"
           }
+        },
+        {
+          "id": "actual-cloud-dimetrodon-anatomy-40157815850",
+          "run_id": 40157815850,
+          "observed_at": "2026-10-25T03:59:57+00:00",
+          "reason": "Direct full-resolution inspection of both o5 images shows a very narrow pointed triangular sail towering several body heights over an extremely squat armoured body, with stray dorsal spikes. UC Berkeley Museum of Paleontology describes a long low body, four short thick legs and skin-covered sail supports nearly one metre high on an animal about 3.5 metres long. These depictions materially distort the recognisable body plan. Exclude both exact images and deliberately replan this unbooked shelter option; preserve the fact-backed coast/interior verdict and useful siblings. Reference: https://ucmp.berkeley.edu/synapsids/pelycosaurs.html",
+          "evidence": {
+            "ladder-img-A-4/o5.png": "22caf7bb8047dd26dcaa2fa9775660082a35ddf5cb32a185f3fc23910eb6c5cd",
+            "ladder-img-A-4/o5-alt1.png": "401ce7aca73f00187325ce7268b6d98954e5928ab951c136051e162159c1456f"
+          }
         }
       ],
       "problems": [
-        "Direct inspection of both actual o4 salt-flat images shows human legs in modern trousers and shoes in the foreground. CHANNEL.md forbids humans on screen. Exclude both exact images; replace only the failed landscape inputs while preserving useful siblings and narration. Full video release remains held."
+        "Direct inspection of both actual o4 salt-flat images shows human legs in modern trousers and shoes in the foreground. CHANNEL.md forbids humans on screen. Exclude both exact images; replace only the failed landscape inputs while preserving useful siblings and narration. Full video release remains held.",
+        "Direct full-resolution inspection of both o5 images shows a very narrow pointed triangular sail towering several body heights over an extremely squat armoured body, with stray dorsal spikes. UC Berkeley Museum of Paleontology describes a long low body, four short thick legs and skin-covered sail supports nearly one metre high on an animal about 3.5 metres long. These depictions materially distort the recognisable body plan. Exclude both exact images and deliberately replan this unbooked shelter option; preserve the fact-backed coast/interior verdict and useful siblings. Reference: https://ucmp.berkeley.edu/synapsids/pelycosaurs.html"
       ]
     },
     {
@@ -2082,7 +2093,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry survive_night-02: Direct inspection of both actual o4 salt-flat images shows human legs in modern trousers and shoes in the foreground. CHANNEL.md forbids humans on screen. Exclude both exact images; replace only the failed landscape inputs while preserving useful siblings and narration. Full video release remains held.",
+  "halted": "Repair held entry survive_night-02: Direct inspection of both actual o4 salt-flat images shows human legs in modern trousers and shoes in the foreground. CHANNEL.md forbids humans on screen. Exclude both exact images; replace only the failed landscape inputs while preserving useful siblings and narration. Full video release remains held.; Direct full-resolution inspection of both o5 images shows a very narrow pointed triangular sail towering several body heights over an extremely squat armoured body, with stray dorsal spikes. UC Berkeley Museum of Paleontology describes a long low body, four short thick legs and skin-covered sail supports nearly one metre high on an animal about 3.5 metres long. These depictions materially distort the recognisable body plan. Exclude both exact images and deliberately replan this unbooked shelter option; preserve the fact-backed coast/interior verdict and useful siblings. Reference: https://ucmp.berkeley.edu/synapsids/pelycosaurs.html",
   "complete": false,
   "health": {
     "public": 1,
@@ -2090,7 +2101,7 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:59:38+00:00",
+  "updated_at": "2026-10-25T03:59:57+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
