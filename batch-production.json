@@ -3434,7 +3434,7 @@
         "premise": "countdown-04",
         "replay": ".github/replay/countdown-04-gorgonopsian-lystrosaurus-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -3677,7 +3677,9 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T08:14:04+00:00"
+      "submitted_at": "2026-10-25T08:14:04+00:00",
+      "run_id": 40175814446,
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -3954,5 +3956,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T08:16:44+00:00"
+  "updated_at": "2026-10-25T08:16:49+00:00"
 }
