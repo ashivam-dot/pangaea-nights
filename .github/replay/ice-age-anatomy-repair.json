@@ -192,36 +192,36 @@
     "o5": [
       {
         "file": "ice-age-anatomy-repair/art/o5-full-t0.png",
-        "sha256": "c7ad7041f82fabde890508d4d244509a3e58dbeeefa8fb26fd150e8707e0e3a1",
+        "sha256": "9bf95d4921d7cfa16c299dd94402d02b3243499397351d8304196b8a24680b22",
         "model": "klein4b-q8-768",
-        "prompt": "One steppe bison, Bison priscus, resting in snow, full body side profile. A prominent shoulder hump rises immediately above its short front legs. Dense curly dark brown fur covers its heavy shoulders and broad lowered head, with a shaggy beard below a short broad muzzle. Its two horns project sideways from the upper head and curve upward at their tips. Its slimmer hindquarters and tucked hind legs remain visible. Blue-white Ice Age mammoth steppe, green aurora and soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "prompt": "Frontal close wildlife portrait of one ancient steppe bison, Bison priscus, looking directly toward the viewer. Its broad symmetrical pair of very long horns extends horizontally to both edges of the portrait and turns upward at both tips. The wide horn span is several times broader than the head. A dark shaggy forehead and small round eyes sit between the horn bases, above a broad wet black muzzle and long hanging beard. Only the head and upper chest appear in this tight crop. Rich dark chocolate curly fur against softly blurred pale snow-covered grassland, subtle green aurora far above, warm amber rim light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
         "take": 0,
         "exposure": {
-          "raw_mean": 131.6,
+          "raw_mean": 102.1,
           "raw_p99": 228.0,
-          "gamma": 1.018,
-          "spread": 163.0
+          "gamma": 0.736,
+          "spread": 183.0
         },
         "generation": {
           "file": "ice-age-anatomy-repair/art/o5-full-t0-generation.json",
-          "sha256": "b65cb81eda00385565245fb1d0119fe02b33a2577fcc5bad5603e7f7e4ce64f0"
+          "sha256": "9a09ca6087e5aa9e3ef1fe8d7c0500d9b77bba4f476705a47f9aad6b46ce0b09"
         }
       },
       {
         "file": "ice-age-anatomy-repair/art/o5-full-t1.png",
-        "sha256": "87fefb51bbc33a8a42bd2f4cfc8dcbbb3cd9314692e8ca4b4585668ca5759c4b",
+        "sha256": "efca2b587c84d5596b7d6bc405958618eaee4a37f3bb7e7abfd5fe603e27a1be",
         "model": "klein4b-q8-768",
-        "prompt": "One steppe bison, Bison priscus, resting in snow, full body side profile. A prominent shoulder hump rises immediately above its short front legs. Dense curly dark brown fur covers its heavy shoulders and broad lowered head, with a shaggy beard below a short broad muzzle. Its two horns project sideways from the upper head and curve upward at their tips. Its slimmer hindquarters and tucked hind legs remain visible. Blue-white Ice Age mammoth steppe, green aurora and soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "prompt": "Frontal close wildlife portrait of one ancient steppe bison, Bison priscus, looking directly toward the viewer. Its broad symmetrical pair of very long horns extends horizontally to both edges of the portrait and turns upward at both tips. The wide horn span is several times broader than the head. A dark shaggy forehead and small round eyes sit between the horn bases, above a broad wet black muzzle and long hanging beard. Only the head and upper chest appear in this tight crop. Rich dark chocolate curly fur against softly blurred pale snow-covered grassland, subtle green aurora far above, warm amber rim light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
         "take": 1,
         "exposure": {
-          "raw_mean": 125.7,
-          "raw_p99": 237.0,
-          "gamma": 0.952,
-          "spread": 166.0
+          "raw_mean": 103.3,
+          "raw_p99": 232.0,
+          "gamma": 0.746,
+          "spread": 179.0
         },
         "generation": {
           "file": "ice-age-anatomy-repair/art/o5-full-t1-generation.json",
-          "sha256": "316318e969a506596a4da7d6e20a3b3245c7e890596c2e139f81b1fd22e3f8b1"
+          "sha256": "5532364c4e49b21ba87299a28dc54f785be54e38580d6fc7393f6a3e0fc9988d"
         }
       }
     ],

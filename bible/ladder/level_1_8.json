@@ -1296,20 +1296,20 @@
    "era": "Pleistocene",
    "title": "One Ice Age Night: Level 1 to 8 Tent-Mate — Who Keeps You Warm? 🧊",
    "banner": "Who keeps you warm tonight?",
-   "hook_vo": "Minus forty on the Ice Age steppe. Pick a bunkmate.",
+   "hook_vo": "Minus forty in the Ice Age. Choose your bunkmate.",
    "art_direction": "Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow.",
    "options": [
     {
      "n": 1,
      "label": "A lemming",
-     "vo": "Level one: a lemming. Warm, but tiny.",
+     "vo": "Level one. A tiny Arctic lemming.",
      "danger": 1,
      "image_prompt": "Close-up wildlife photograph of one Norway lemming, Lemmus lemmus, nestled chest-deep in soft snow. A very compact round stocky rodent with a blunt broad muzzle and short whiskers, black bead eyes, very small rounded ears almost concealed in its thick soft fur. Dense tawny-orange fur around its cheeks, a dark brown cap and dark stripe down its back, pale cream chin and belly. Its tiny front paws rest on the snow directly below its face. The rear of its round body is buried in the snow. Three-quarter front view at animal eye level. Blue snowy tundra and green aurora softly blurred behind the animal, gentle warm amber side lighting. Documentary wildlife portrait, photoreal painterly, vertical composition"
     },
     {
      "n": 2,
      "label": "Arctic hare",
-     "vo": "Level two: an arctic hare, all fluff.",
+     "vo": "Level two. An Arctic hare with warm fur.",
      "danger": 1,
      "image_prompt": "A winter white Arctic hare, Lepus arcticus, sitting in side profile in wind-carved snow. Its short upright ears have distinct black tips, its eyes are dark brown and its muzzle is compact. A hare-shaped athletic body with long powerful hind legs tucked underneath and broad furry paws. Dense crisp white winter fur with fine strands. Green aurora over blue Ice Age tundra, soft warm amber side light. Documentary wildlife portrait, photoreal painterly, vertical composition"
     },
@@ -1323,16 +1323,16 @@
     {
      "n": 4,
      "label": "Reindeer",
-     "vo": "Level four: a reindeer, if it stays put.",
+     "vo": "Level four. One reindeer, if it stays put.",
      "danger": 3,
      "image_prompt": "A reindeer lying down in deep snow, broad antlers frosted, steam from its breath, orange ember glow on its side, green aurora, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 5,
      "label": "Steppe bison",
-     "vo": "Level five: a steppe bison, shaggy and heavy.",
+     "vo": "Level five. A bison, shaggy and heavy.",
      "danger": 4,
-     "image_prompt": "One steppe bison, Bison priscus, resting in snow, full body side profile. A prominent shoulder hump rises immediately above its short front legs. Dense curly dark brown fur covers its heavy shoulders and broad lowered head, with a shaggy beard below a short broad muzzle. Its two horns project sideways from the upper head and curve upward at their tips. Its slimmer hindquarters and tucked hind legs remain visible. Blue-white Ice Age mammoth steppe, green aurora and soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition"
+     "image_prompt": "Frontal close wildlife portrait of one ancient steppe bison, Bison priscus, looking directly toward the viewer. Its broad symmetrical pair of very long horns extends horizontally to both edges of the portrait and turns upward at both tips. The wide horn span is several times broader than the head. A dark shaggy forehead and small round eyes sit between the horn bases, above a broad wet black muzzle and long hanging beard. Only the head and upper chest appear in this tight crop. Rich dark chocolate curly fur against softly blurred pale snow-covered grassland, subtle green aurora far above, warm amber rim light. Documentary wildlife reconstruction, photoreal painterly, vertical composition"
     },
     {
      "n": 6,

@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "origin": "local-stable-diffusion.cpp",
-  "source_sha": "80b5fb275f40b43928ae6ce722b92dc27c5370a7",
+  "source_sha": "a9cf2f673035b8f8f01babce1b06074261318bd7",
   "binary_tag": "master-950-f2f168f",
   "settings": {
     "model": "klein4b-q8-768",
-    "prompt": "One steppe bison, Bison priscus, resting in snow, full body side profile. A prominent shoulder hump rises immediately above its short front legs. Dense curly dark brown fur covers its heavy shoulders and broad lowered head, with a shaggy beard below a short broad muzzle. Its two horns project sideways from the upper head and curve upward at their tips. Its slimmer hindquarters and tucked hind legs remain visible. Blue-white Ice Age mammoth steppe, green aurora and soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "prompt": "Frontal close wildlife portrait of one ancient steppe bison, Bison priscus, looking directly toward the viewer. Its broad symmetrical pair of very long horns extends horizontally to both edges of the portrait and turns upward at both tips. The wide horn span is several times broader than the head. A dark shaggy forehead and small round eyes sit between the horn bases, above a broad wet black muzzle and long hanging beard. Only the head and upper chest appear in this tight crop. Rich dark chocolate curly fur against softly blurred pale snow-covered grassland, subtle green aurora far above, warm amber rim light. Documentary wildlife reconstruction, photoreal painterly, vertical composition. Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
     "width": 432,
     "height": 768,
     "steps": 4,
@@ -32,8 +32,8 @@
   ],
   "raw": {
     "file": "ice-age-anatomy-repair/art/o5-full-t0-raw.png",
-    "sha256": "05dbad703e273c10999cb91e5576521c8194a6ba7d904ac0a93bbd0dbe974b6c"
+    "sha256": "376b6085e3bd4f6d29c88c97b0df0eb07e3cbb7beffe1412f4c6f04732cae911"
   },
   "backend": "Darwin arm64 Metal",
-  "seconds": 79.2
+  "seconds": 89.5
 }
