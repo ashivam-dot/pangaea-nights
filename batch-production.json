@@ -3890,68 +3890,11 @@
       "inputs": {
         "dry_run": "true",
         "slot": "A",
-        "premise": "level_1_8-04"
+        "premise": "level_1_8-04",
+        "replay": ".github/replay/level_1_8-04-anatomy-repair.json"
       },
-      "stage": "held",
+      "stage": "planned",
       "attempts": 1,
-      "source_sha": "f50f3c21d92f256dc235049d002d1ae18a9a7a57",
-      "before_ids": [
-        40176094964,
-        40175959669,
-        40175814446,
-        40174192962,
-        40172801247,
-        40171289495,
-        40171182599,
-        40167406784,
-        40167081277,
-        40165952771,
-        40165862617,
-        40161421084,
-        40160715571,
-        40160283123,
-        40157815850,
-        40156875292,
-        40156818584,
-        40154688202,
-        40154442347,
-        40152622139,
-        40152163089,
-        40151287146,
-        40150491810,
-        40149509321,
-        40148607387,
-        40148479040,
-        40148319091,
-        40147925087,
-        40147415761,
-        40146406019,
-        40144187249,
-        40143437986,
-        40143333505,
-        40140139736,
-        40138993804,
-        40136822897,
-        40136652437,
-        40135503878,
-        40131481179,
-        40128334178,
-        40124993101,
-        40122729549,
-        40121235398,
-        40119101082,
-        40077496948,
-        39924499144,
-        39830179361,
-        39803824162,
-        39787991414,
-        39780512299,
-        39772637874,
-        39766129149
-      ],
-      "submitted_at": "2026-10-25T08:37:50+00:00",
-      "run_id": 40177381015,
-      "cloud_status": "queued",
       "editorial_holds": [
         {
           "id": "direct-level04-six-legged-harvestman",
@@ -4120,11 +4063,29 @@
           }
         }
       ],
-      "problems": [
-        "Both harvestman paintings show six main walking legs rather than eight. Preserve every spoken line and useful siblings; repair only this arachnid picture with eight separated legs on one compact body. The springtail alternate is also excluded in the reviewed cached repair. All current picture, narration, render and audiovisual gates remain required.",
-        "The Meganeura paintings depict broad-winged moth/butterfly forms with short abdomens, and the Eogyrinus paintings depict armored modern crocodiles rather than an elongated amphibian. Exclude these exact bytes and the ambiguous mayfly alternate; preserve all speech and useful siblings. Replace only options6/8, retaining every normal picture, narration, render and audiovisual gate.",
-        "Both scorpion paintings have a large two-jawed claw at the end of the tail instead of a pointed terminal stinger. Preserve every spoken line and useful sibling; replace only this option with a clearly single-sting tail. The closing deliberately reprises the reviewed winning Arthropleura. All current picture, narration, render and audiovisual gates remain required."
-      ]
+      "repair_history": [
+        {
+          "run_id": 40177381015,
+          "source_sha": "f50f3c21d92f256dc235049d002d1ae18a9a7a57",
+          "stage": "held",
+          "problems": [
+            "Both harvestman paintings show six main walking legs rather than eight. Preserve every spoken line and useful siblings; repair only this arachnid picture with eight separated legs on one compact body. The springtail alternate is also excluded in the reviewed cached repair. All current picture, narration, render and audiovisual gates remain required.",
+            "The Meganeura paintings depict broad-winged moth/butterfly forms with short abdomens, and the Eogyrinus paintings depict armored modern crocodiles rather than an elongated amphibian. Exclude these exact bytes and the ambiguous mayfly alternate; preserve all speech and useful siblings. Replace only options6/8, retaining every normal picture, narration, render and audiovisual gate.",
+            "Both scorpion paintings have a large two-jawed claw at the end of the tail instead of a pointed terminal stinger. Preserve every spoken line and useful sibling; replace only this option with a clearly single-sting tail. The closing deliberately reprises the reviewed winning Arthropleura. All current picture, narration, render and audiovisual gates remain required."
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "level_1_8-04"
+          }
+        }
+      ],
+      "obsolete_runs": [
+        40177381015
+      ],
+      "repair_queued_at": "2026-10-25T10:36:04+00:00",
+      "repair_source_sha": "96a326c91517fce9adaa2532d5356f0a96c9f496",
+      "repair_reason": "Exact reviewed anatomy repair preserves narration and all accepted original art, excludes refused takes, selects the directly reviewed naturally occluded scorpion alternate, and reprises the accepted opening animal. All current cloud picture, voice, render, rotation, audiovisual and owner delivery checks remain mandatory."
     },
     {
       "repo": "pangaea-nights",
@@ -4373,5 +4334,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T10:35:56+00:00"
+  "updated_at": "2026-10-25T10:36:04+00:00"
 }
