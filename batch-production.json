@@ -504,10 +504,23 @@
             "ladder-img-A-4/o5-alt1.png": "aeac7d7d42774d82d141824c4ade1bbda7ae74050ebc30a2b86affae3a26b7a0",
             "ladder-img-A-4/o5.png": "fe4d78f3af4e7f38953f2f05d524cdcec793a4c43d4ba115c7dc48a16f0887d5"
           }
+        },
+        {
+          "id": "direct-skull-and-human-40143333505",
+          "run_id": 40143333505,
+          "observed_at": "2026-10-25T00:01:41+00:00",
+          "reason": "Direct inspection of actual o4 base/alternate: skull has multiple paired/upcurved brow horns rather than a coherent three-horn Triceratops skull. Actual o8 base also contains a small grey-clad human figure hiding behind the carcass, despite the no-humans rule; its predator/carcass anatomy is unreliable. Replace only o4 and o8, preserve usable other slots, source fact, answer and publishing order. This is an exact-media hold, not a numeric threshold change.",
+          "evidence": {
+            "ladder-img-A-3/o4-alt1.png": "40d096c8e6396dd53a61435ca021dd9216a4f5b86d970da753cd654eeb20d9b0",
+            "ladder-img-A-3/o4.png": "931e7d91638667466833fc35882b16309bf80d652d0642059d721f1ce21aac52",
+            "ladder-img-A-7/o8-alt1.png": "0dd49e8b78d03c2679430e352d7546e86de7d8cbe4935d09e8d08dd678bfef01",
+            "ladder-img-A-7/o8.png": "a2523945f8c1e840a4dc67dee9853622c4ec300af5bbf4b8243d45c05f1911e4"
+          }
         }
       ],
       "problems": [
-        "Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory."
+        "Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.",
+        "Direct inspection of actual o4 base/alternate: skull has multiple paired/upcurved brow horns rather than a coherent three-horn Triceratops skull. Actual o8 base also contains a small grey-clad human figure hiding behind the carcass, despite the no-humans rule; its predator/carcass anatomy is unreliable. Replace only o4 and o8, preserve usable other slots, source fact, answer and publishing order. This is an exact-media hold, not a numeric threshold change."
       ]
     },
     {
@@ -903,8 +916,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry survive_night-01: Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.",
-  "updated_at": "2026-10-24T23:55:09+00:00",
+  "halted": "Repair held entry survive_night-01: Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.; Direct inspection of actual o4 base/alternate: skull has multiple paired/upcurved brow horns rather than a coherent three-horn Triceratops skull. Actual o8 base also contains a small grey-clad human figure hiding behind the carcass, despite the no-humans rule; its predator/carcass anatomy is unreliable. Replace only o4 and o8, preserve usable other slots, source fact, answer and publishing order. This is an exact-media hold, not a numeric threshold change.",
+  "updated_at": "2026-10-25T00:01:41+00:00",
   "complete": false,
   "health": {
     "public": 0,
