@@ -2656,7 +2656,7 @@
         "slot": "A",
         "premise": "level_1_8-03"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc",
       "before_ids": [
@@ -2706,7 +2706,22 @@
       ],
       "submitted_at": "2026-10-25T05:52:10+00:00",
       "run_id": 40167081277,
-      "cloud_status": "queued"
+      "cloud_status": "queued",
+      "editorial_holds": [
+        {
+          "id": "direct-trilobite-face-hold",
+          "run_id": 40167081277,
+          "observed_at": "2026-10-25T06:24:14+00:00",
+          "reason": "Direct full-resolution inspection rejects both o3 paintings: the intended Devonian trilobite has a vertebrate fish-like face, lips and a frontal mouth instead of a trilobite cephalon with a ventral mouth. Preserve the spoken shield choice and other useful art; replace only this option with a scientifically coherent dorsal three-lobed segmented arthropod. Full current picture, pairwise-image, narrator, render and audiovisual checks remain mandatory.",
+          "evidence": {
+            "ladder-img-A-2/o3.png": "06f7d58850c4eb2ab93685545fbf00987624bd473eb883694b2516a624c39505",
+            "ladder-img-A-2/o3-alt1.png": "af953be131c368798f3b68ece515bde6ba4b7e01e6576e7795c127232c7b5d3b"
+          }
+        }
+      ],
+      "problems": [
+        "Direct full-resolution inspection rejects both o3 paintings: the intended Devonian trilobite has a vertebrate fish-like face, lips and a frontal mouth instead of a trilobite cephalon with a ventral mouth. Preserve the spoken shield choice and other useful art; replace only this option with a scientifically coherent dorsal three-lobed segmented arthropod. Full current picture, pairwise-image, narrator, render and audiovisual checks remain mandatory."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -3053,7 +3068,7 @@
       "attempts": 0
     }
   ],
-  "halted": null,
+  "halted": "Repair held entry level_1_8-03: Direct full-resolution inspection rejects both o3 paintings: the intended Devonian trilobite has a vertebrate fish-like face, lips and a frontal mouth instead of a trilobite cephalon with a ventral mouth. Preserve the spoken shield choice and other useful art; replace only this option with a scientifically coherent dorsal three-lobed segmented arthropod. Full current picture, pairwise-image, narrator, render and audiovisual checks remain mandatory.",
   "complete": false,
   "health": {
     "public": 1,
@@ -3061,5 +3076,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T06:07:46+00:00"
+  "updated_at": "2026-10-25T06:24:14+00:00"
 }
