@@ -374,7 +374,7 @@
       "series": "level_1_8",
       "slot": "B",
       "target": "2026-10-25T06:30:00Z",
-      "stage": "building",
+      "stage": "reviewed",
       "inputs": {
         "dry_run": "true",
         "slot": "A",
@@ -678,7 +678,8 @@
           ],
           "issues": []
         }
-      }
+      },
+      "archive": "batch-reviewed-40148479040"
     },
     {
       "repo": "pangaea-nights",
@@ -1404,5 +1405,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:10:48+00:00"
+  "updated_at": "2026-10-25T01:10:53+00:00"
 }
