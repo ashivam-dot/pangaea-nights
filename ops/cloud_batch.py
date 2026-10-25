@@ -70,9 +70,46 @@ def persist(data):
     if git("diff", "--cached", "--quiet", check=False).returncode == 0:
         return
     git("commit", "-q", "-m", "batch: checkpoint reviewed production and delivery")
-    # A conflict must stop before the next external write. The next tick can recover upload markers.
-    git("pull", "-q", "--rebase", "origin", "state")
-    git("push", "-q", "origin", "HEAD:state")
+    # A later job's manual repair can arrive while an earlier upload is being processed.
+    # Merge only independent jobs, preserving both the exact delivery and the new hold.
+    # A change to the same job, order, global halt or another state file stops all writes.
+    from . import batch_checkpoint as batch_state
+    for attempt in range(3):
+        try:
+            git("fetch", "-q", "origin", "state")
+            upstream = git("rev-parse", "FETCH_HEAD").stdout.strip()
+            ancestor = git("merge-base", "HEAD", upstream).stdout.strip()
+            local = json.loads(git("show", f"HEAD:{STATE_FILE}").stdout)
+            before = git("show", f"{ancestor}:{STATE_FILE}", check=False)
+            incoming = git("show", f"{upstream}:{STATE_FILE}", check=False)
+            if before.returncode and incoming.returncode:
+                merged = local  # first initialization, with no competing initializer
+            elif before.returncode or incoming.returncode:
+                raise batch_state.StateConflict('batch initialization changed during checkpoint')
+            else:
+                base, remote = json.loads(before.stdout), json.loads(incoming.stdout)
+                merged = local if remote == base else batch_state.merge(base, local, remote)
+            rebased = git("rebase", upstream, check=False)
+            if rebased.returncode:
+                conflicts = git("diff", "--name-only", "--diff-filter=U").stdout.splitlines()
+                if conflicts != [STATE_FILE]:
+                    raise batch_state.StateConflict('state changed outside the batch checkpoint')
+                (STATE / STATE_FILE).write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n")
+                git("add", STATE_FILE)
+                git("-c", "core.editor=true", "rebase", "--continue")
+            # Even Git's automatic line merge must refresh the in-memory ledger, or
+            # the next checkpoint would overwrite an independent repair with stale data.
+            (STATE / STATE_FILE).write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n")
+            git("add", STATE_FILE)
+            if git("diff", "--cached", "--quiet", check=False).returncode:
+                git("commit", "-q", "-m", "batch: retain concurrent independent job repair")
+            batch_state.refresh_in_place(data, merged)
+        except Exception as exc:
+            git("rebase", "--abort", check=False)
+            raise TransientOperation('concurrent state edit requires reconciliation before another write') from exc
+        if git("push", "-q", "origin", "HEAD:state", check=False).returncode == 0:
+            return
+    raise TransientOperation('state checkpoint push unavailable; reconcile before another write')
 
 
 def unpack(blob: bytes, folder: Path):
