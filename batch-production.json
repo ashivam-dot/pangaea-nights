@@ -4224,7 +4224,7 @@
         "premise": "level_1_8-04",
         "replay": ".github/replay/level_1_8-04-anatomy-repair.json"
       },
-      "stage": "upload_intent",
+      "stage": "scheduled",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -4533,7 +4533,28 @@
       },
       "archive": "batch-reviewed-40188193823",
       "intended_publish_at": "2026-10-29T00:30:00Z",
-      "upload_intent_at": "2026-10-25T12:48:20+00:00"
+      "upload_intent_at": "2026-10-25T12:48:20+00:00",
+      "delivery": {
+        "video_id": "epOcLfhxA2w",
+        "url": "https://www.youtube.com/shorts/epOcLfhxA2w",
+        "existing": false,
+        "title": "Giant Bug Tent-Mate, Level 1 to 8 — Who Shares Your Swamp? 🪲",
+        "privacy": "private",
+        "publish_at": "2026-10-29T00:30:00Z",
+        "made_for_kids": false,
+        "self_declared_made_for_kids": false,
+        "upload_status": "uploaded",
+        "readback_problems": [],
+        "owner_readback": {
+          "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+          "privacyStatus": "private",
+          "publishAt": "2026-10-29T00:30:00Z",
+          "madeForKids": false,
+          "selfDeclaredMadeForKids": false,
+          "containsSyntheticMedia": null,
+          "uploadStatus": "processed"
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -4965,5 +4986,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:48:20+00:00"
+  "updated_at": "2026-10-25T12:48:58+00:00"
 }

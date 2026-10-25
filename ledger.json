@@ -863,6 +863,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "level_1_8-04",
+   "series": "level_1_8",
+   "era": "Carboniferous",
+   "slot": "B",
+   "video_id": "epOcLfhxA2w",
+   "url": "https://www.youtube.com/shorts/epOcLfhxA2w",
+   "title": "Giant Bug Tent-Mate, Level 1 to 8 — Who Shares Your Swamp? 🪲",
+   "publish_at": "2026-10-29T00:30:00Z",
+   "uploaded_at": "2026-10-25T12:48:58Z",
+   "script": "One humid night in the coal forest. Pick a bunkmate. Level one: a springtail. Barely there. Level two: an early cockroach, very at home. Level three: a harvestman, all legs. Level four: a huge millipede. Calm and quiet. Level five: a giant mayfly at the opening. Level six: Meganeura, a dragonfly wide as a hawk. Level seven: a giant scorpion under the moss. Level eight: a swamp predator, mouth first. Real answer: number 4, because reported woody gut contents suggest Arthropleura may have eaten plants. Its diet is still uncertain. Comment your number.",
+   "frame0": "/KE+nGSiUSXRnMibNCbuKSSovR/7JJmNPyILpGMopB41p08qLSmPJFunjxwKpoulkB6pmlSlhaWAqlCgaiGwKN2kGKg3JGwmiCFcJxedVR2vJ64meB1goACSlqpbJ4qgLKS7JW0nDyswKp4l5CX8p5Wn/ibbJ9YkCyWyIHWmTyrZpCmcGyJRJzKhqyBWqm6ZgKUQqeCNYqbeI0mgjaX/qVwbZBwDqUGq2CWHIxcm76D7jWGeEStEpKy5mKa5oWUngSlaIOeujq4pJd6gE6rImSMbsCiNroIaHSjuIkolhpygFxeaLSOJJYAZPyHvItqkxiQRpneZG6IOk2mjlCDbIoQkex/pJFMeH6q7LeYXoSPTp5ausSj3qKoUeCluo2kjBaT+piYaEyeLFs+TSqEZoHSnsqsBImmmqCubqFejLSXAoyClZSmSoTMgAaX6q3MqNygoGjcdtx4+pkQoKBCRKXGwbx55rDCp6igboiqox6CJpqElYCdwJGmaRpzFJoUbnpKopAmsdaDWGOeloCSZqUSjAqIrqbInTynBId8UL56jDmAoHaUFKJ+cFx7NIkShXiGmqBSoPxP5KWMfpZ4nqoIppIsxJ5eooqa4nFylW6OPICEoyBspLeccGaTOJWCc5KbWJ9MoQKhipw2swyecIS4aW6VFpwOikSjxmumiLag4qoqi8yXUpwOpdZ5woB6lqCFjo1OoE6CcpAwqcyTrJV4kPicHHdSiCqhPF6umXyB/J4oZBR4bJ+gj3ahZrs+oJR58JP0iOKZQnckZJqpXo1qodiDPKLQcPJ4SqY2sIabDpkKja6ieHxAsNSmcJjYcuC0eobKkE5gDIo8mQaZ3qT4oDjB0FxulOad1npShriBVIrIoJaLQquQoVRugn2yewijUIoecmBP1pGypLiZeJTyfUqdjjicnaIyXKcKpeJd0KU0eSaNBrowoqagWKbqjQ6ehp+crgB+GHpwdWCEzGxMlo6rqJdUqPiRuHMsnqxwFLU+oNqCZF72dmq0qonmtbydzHuYitiVcqDosXaFWqUQYtKj0owOrXablIrWm1aGdoy8moJR2q4kkUqWzmzioDyXvJrgl+KIHqHYlHKWmpOwPoSM0oawdZKeeoPEo0a7cp24pZJrLpausPpsVpxGcFqndpHGiUJ+7pAAeVyC8p9+iBCJWKB+dT57EKJonWqj4ofOhqCcmKXAkq6bOorqfyCrApsQgoKHRj00dNyePpNMoIBdanximoKZ5l8onByX8oCCrLyr7pHOokSjtKS2ol6V+JOUbnCETnuMojqEYGr2mUh+aKWudyyAmpxCn+yXZoXck9p7xG+iaQpYMqFwl5S7EIvyd/CWUKKUpaCSdmw==",
+   "related": "https://www.youtube.com/watch?v=em8BG_VIE_s",
+   "run": "40188193823",
+   "checkpoints": {},
+   "av_review_sha256": "8434efc5b4b3b3e7b0ce4c27b97fd131f18a154f195268f6c696667f76215be5",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-29T00:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
