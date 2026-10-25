@@ -3952,10 +3952,24 @@
             "ladder-img-A-2/o3-alt1.png": "f5fb87f7077cb0f327c5096d217c6471b98029febf4c7c841cd555efc095fd15",
             "ladder-img-A-0/o1-alt1.png": "6edca234a3140d7f049ca2a7e28296d5d1a44e76b3104c82bdcc9d580bbb08c8"
           }
+        },
+        {
+          "id": "direct-level04-moth-crocodile",
+          "run_id": 40177381015,
+          "observed_at": "2026-10-25T09:28:55+00:00",
+          "reason": "The Meganeura paintings depict broad-winged moth/butterfly forms with short abdomens, and the Eogyrinus paintings depict armored modern crocodiles rather than an elongated amphibian. Exclude these exact bytes and the ambiguous mayfly alternate; preserve all speech and useful siblings. Replace only options6/8, retaining every normal picture, narration, render and audiovisual gate.",
+          "evidence": {
+            "ladder-img-A-5/o6.png": "1abb2add8c9cb7cc688abfaa3a60870dd1720f95bf213d66d2138dc861c17617",
+            "ladder-img-A-5/o6-alt1.png": "8df5274dee63357d4f647c88f30b0062f03f746c32bdafb2147199fe15a726e4",
+            "ladder-img-A-7/o8.png": "82afce8a4ce1181b5926c3a563370efd94b9e40a05a99a2c0d464bfeed35f93d",
+            "ladder-img-A-7/o8-alt1.png": "c42fd1d5a2b5a1152814c4b6bea328edefb9f9e0466d0a6122518efa25619658",
+            "ladder-img-A-4/o5-alt1.png": "247e1e3e4c776acdaf24decd8e53aaa86dfe273ddcea3801bce083e8a74583e7"
+          }
         }
       ],
       "problems": [
-        "Both harvestman paintings show six main walking legs rather than eight. Preserve every spoken line and useful siblings; repair only this arachnid picture with eight separated legs on one compact body. The springtail alternate is also excluded in the reviewed cached repair. All current picture, narration, render and audiovisual gates remain required."
+        "Both harvestman paintings show six main walking legs rather than eight. Preserve every spoken line and useful siblings; repair only this arachnid picture with eight separated legs on one compact body. The springtail alternate is also excluded in the reviewed cached repair. All current picture, narration, render and audiovisual gates remain required.",
+        "The Meganeura paintings depict broad-winged moth/butterfly forms with short abdomens, and the Eogyrinus paintings depict armored modern crocodiles rather than an elongated amphibian. Exclude these exact bytes and the ambiguous mayfly alternate; preserve all speech and useful siblings. Replace only options6/8, retaining every normal picture, narration, render and audiovisual gate."
       ]
     },
     {
@@ -4205,5 +4219,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T09:20:48+00:00"
+  "updated_at": "2026-10-25T09:28:55+00:00"
 }
