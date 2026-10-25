@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "premise": "survive_night-05",
+  "source": {
+    "run_id": 40211267149,
+    "sha": "bbb5a37e495b25e7038374cace91805f05b31d43",
+    "key": "2026-10-25-survive_night-05"
+  },
+  "art_only": [
+    "o4",
+    "o5",
+    "o6",
+    "o7"
+  ],
+  "images": {}
+}

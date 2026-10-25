@@ -421,7 +421,9 @@
      "label": "Small fire for dinner",
      "vo": "A small cooking fire under the ferns.",
      "danger": 7,
-     "image_prompt": "Close low view of a small crackling orange fire on the forest floor beneath low dry tree-fern fronds, sparks drifting upward into the dense green canopy, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "A small controlled fire of a few short sticks sits on a damp bare mud patch at the edge of a Carboniferous fern swamp at night. Modest low orange flames and a few sparks are restricted to the small fire. Dark still water and towering tree-fern trunks recede into cool emerald-black moonlit shade. A narrow gap above the fronds reveals a dark indigo starry sky and a pale moon, with subdued neutral reflected moonlight on the nearby mud and bark. Only the small fire, prehistoric plants, natural ground and swamp water fill this night scene.",
+     "art_direction": "Small controlled fire on damp mud beside dark swamp water, under a starry moonlit fern canopy with cool readable shadows.",
+     "lighting": "moonlight"
     },
     {
      "n": 8,
