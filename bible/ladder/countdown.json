@@ -98,7 +98,7 @@
     {
      "n": 1,
      "label": "Cosy sea cave",
-     "vo": "Shelter in a cosy sea cave.",
+     "vo": "Shelter inside a small coastal cave.",
      "danger": 1,
      "image_prompt": "POV from inside a dry limestone sea cave looking out at a calm Cretaceous bay at night, violet sky, distant red glow on the horizon, photoreal painterly, vertical composition, one warm focal light from the distant glow"
     },
@@ -126,7 +126,7 @@
     {
      "n": 5,
      "label": "Swim past the breakers",
-     "vo": "Swim out beyond the breaking waves.",
+     "vo": "Swim far out into the open sea.",
      "danger": 5,
      "image_prompt": "Low POV at the waterline of a wild surf zone at night, foaming breakers rolling in under a violet sky lit by distant fire, photoreal painterly, vertical composition, one warm focal light from the distant fire"
     },
