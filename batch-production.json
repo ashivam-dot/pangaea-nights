@@ -2768,6 +2768,50 @@
           "evidence": {
             "ladder-img-A-2/o3.png": "06f7d58850c4eb2ab93685545fbf00987624bd473eb883694b2516a624c39505",
             "ladder-img-A-2/o3-alt1.png": "af953be131c368798f3b68ece515bde6ba4b7e01e6576e7795c127232c7b5d3b"
+          },
+          "resolved_at": "2026-10-25T07:13:38+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "0d27a6bbdc0690630a7f087b01886a48148cf578",
+            "replay": ".github/replay/level-03-coherent-armor-repair.json",
+            "replay_sha256": "0ddbdbf68f8b0e1971d4accce2044b3dd7a62ff81a04594595e0d4b837426c34",
+            "images": {
+              "o1": [
+                "0e8ca3498a15b1da63d1daab4255354ec7e266b14f6e8112a1a02b0cb3a824ba",
+                "5188a1314bf773caf9b502cbcb8addf72de2d32838bab43e4b78374b32f24115"
+              ],
+              "o2": [
+                "71a2c3fa93b5827fab33deba5258c67ae3d462ea7b5074749510d236096a404e",
+                "0f0d71860eeeed6c5ee447fc53ed94fa4d653e8f9029909784c9fd7993527dd1"
+              ],
+              "o3": [
+                "df113ddce6c759c572ccaf2566b07e532cea70792a2a7048ef395be9b62685b1",
+                "71a92d2c9b20ffc10fd6894ef8b86c45c5ca33a65f0b13ae6ef6d3442e89dc48"
+              ],
+              "o4": [
+                "ac3d515df81e4572b50439ff5b6a918398a0590580320cf739183fdebe4443a4",
+                "43a57d0bc26e5b6eb03a0951904392453c7d1d83b65cf5cb4256f4b53b1a92fe"
+              ],
+              "o5": [
+                "fdb285cb4995dee553608183ddeb67782c30c520b49f7ae281a922d1d352bb92"
+              ],
+              "o6": [
+                "6ddc240b39cd98193d204d61882e195d254cf737004e07b184fb903428497e60",
+                "51263ce929a88b78deafcaedfe1cc579895f6adb8d01e10d78c2754cfa8317e1"
+              ],
+              "o7": [
+                "10c9e0f3ced8c62946c7ec20c449a86c31bcd549ce1da84c4d43813a057fec73"
+              ],
+              "o8": [
+                "384e02e4a87c71f40e037835e683604e0f41c65a3051729616f116a8414c21d2"
+              ],
+              "end": [
+                "10c9e0f3ced8c62946c7ec20c449a86c31bcd549ce1da84c4d43813a057fec73"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/level-03-armor-repair/staging-receipt.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -2778,6 +2822,50 @@
           "evidence": {
             "ladder-img-A-6/o7.png": "86858b1deaaf91da8026a193d1f0b9df8f719c54efbab7ec041a81de65e7f49a",
             "ladder-img-A-6/o7-alt1.png": "f310ee2f8b235555294335daca96cce13757c1e620501390fb24d280dd55870f"
+          },
+          "resolved_at": "2026-10-25T07:13:38+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "0d27a6bbdc0690630a7f087b01886a48148cf578",
+            "replay": ".github/replay/level-03-coherent-armor-repair.json",
+            "replay_sha256": "0ddbdbf68f8b0e1971d4accce2044b3dd7a62ff81a04594595e0d4b837426c34",
+            "images": {
+              "o1": [
+                "0e8ca3498a15b1da63d1daab4255354ec7e266b14f6e8112a1a02b0cb3a824ba",
+                "5188a1314bf773caf9b502cbcb8addf72de2d32838bab43e4b78374b32f24115"
+              ],
+              "o2": [
+                "71a2c3fa93b5827fab33deba5258c67ae3d462ea7b5074749510d236096a404e",
+                "0f0d71860eeeed6c5ee447fc53ed94fa4d653e8f9029909784c9fd7993527dd1"
+              ],
+              "o3": [
+                "df113ddce6c759c572ccaf2566b07e532cea70792a2a7048ef395be9b62685b1",
+                "71a92d2c9b20ffc10fd6894ef8b86c45c5ca33a65f0b13ae6ef6d3442e89dc48"
+              ],
+              "o4": [
+                "ac3d515df81e4572b50439ff5b6a918398a0590580320cf739183fdebe4443a4",
+                "43a57d0bc26e5b6eb03a0951904392453c7d1d83b65cf5cb4256f4b53b1a92fe"
+              ],
+              "o5": [
+                "fdb285cb4995dee553608183ddeb67782c30c520b49f7ae281a922d1d352bb92"
+              ],
+              "o6": [
+                "6ddc240b39cd98193d204d61882e195d254cf737004e07b184fb903428497e60",
+                "51263ce929a88b78deafcaedfe1cc579895f6adb8d01e10d78c2754cfa8317e1"
+              ],
+              "o7": [
+                "10c9e0f3ced8c62946c7ec20c449a86c31bcd549ce1da84c4d43813a057fec73"
+              ],
+              "o8": [
+                "384e02e4a87c71f40e037835e683604e0f41c65a3051729616f116a8414c21d2"
+              ],
+              "end": [
+                "10c9e0f3ced8c62946c7ec20c449a86c31bcd549ce1da84c4d43813a057fec73"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/level-03-armor-repair/staging-receipt.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -3237,5 +3325,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T07:04:43+00:00"
+  "updated_at": "2026-10-25T07:13:38+00:00"
 }
