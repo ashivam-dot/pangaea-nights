@@ -397,7 +397,15 @@ def tick(adapter, mode, save=persist):
         # An inherited manual or scheduled production run must still hold new dispatches.
         active = [r for r in builds(repo, adapter.WORKFLOW) if r["status"] != "completed"]
         owned = {j.get("run_id") for j in in_flight if j.get("run_id")}
-        if all(r["id"] in owned for r in active):
+        # A direct image hold can arrive while its reserved dry producer is still
+        # running. Count that actual run against capacity without granting review
+        # or release permission; a completed held preview uses buffer space only.
+        active_held = {j["run_id"] for j in held if j.get("run_id") and j.get("source_sha")
+                       and any(r["id"] == j["run_id"] and r.get("head_sha") == j["source_sha"]
+                               for r in active)}
+        occupied = len(in_flight) + len(active_held - owned)
+        owned |= active_held
+        if occupied < MAX_BUILDING and all(r["id"] in owned for r in active):
             head = gh("api", f"repos/{repo}/commits/main")["sha"]
             pending.update(stage="dispatch_unresolved", source_sha=head,
                            before_ids=[r["id"] for r in builds(repo, adapter.WORKFLOW)], submitted_at=stamp(),

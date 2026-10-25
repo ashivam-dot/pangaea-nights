@@ -211,3 +211,45 @@ def test_two_reserved_previews_never_dispatch_a_third(monkeypatch):
     batch.tick(SimpleNamespace(REPO='owner/repo', WORKFLOW='run.yml', paused=lambda: False),
                'publish', save=lambda d: None)
     assert data['jobs'][2]['stage'] == 'planned'
+
+
+@pytest.mark.parametrize('held_ids,active_ids,building,source,expected', [
+    ([11], [11], False, 'abc', True),
+    ([11, 12], [11, 12], False, 'abc', False),
+    ([11], [11, 12], True, 'abc', False),
+    ([11], [11, 99], False, 'abc', False),
+    ([11, 12], [11], False, 'abc', True),
+    ([11], [11], False, 'different-source', False),
+    ([11], [11], False, None, False),
+])
+def test_active_held_owned_preview_consumes_a_slot_without_blocking_the_other(
+        monkeypatch, held_ids, active_ids, building, source, expected):
+    held = [{'premise': f'held-{i}', 'stage': 'held', 'run_id': i,
+             'source_sha': source, 'problems': ['wrong image'],
+             'editorial_holds': [{'reason': 'wrong image'}]} for i in held_ids]
+    pending = {'premise': 'next', 'stage': 'planned',
+               'inputs': {'dry_run': 'true', 'mode': 'dry-run'}}
+    jobs = held + ([{'premise': 'running', 'stage': 'building',
+                     'run_id': 12, 'source_sha': 'abc'}] if building else []) + [pending]
+    data = {'jobs': jobs, 'halted': 'Repair held entry held-11: wrong image'}
+    monkeypatch.setattr(batch, 'load', lambda: data)
+    monkeypatch.setattr(batch, 'builds', lambda *a: [
+        {'id': i, 'status': 'in_progress', 'head_sha': 'abc'} for i in active_ids])
+    monkeypatch.setattr(batch, 'materialize', lambda *a: pytest.fail('held media reviewed'))
+    writes, checkpoints = [], []
+    def gh(*args, **kw):
+        if kw.get('body'):
+            assert checkpoints[-1]['jobs'][-1]['stage'] == 'dispatch_unresolved'
+            writes.append(kw['body'])
+            return None
+        if args[1].endswith('/commits/main'):
+            return {'sha': 'abc'}
+        assert building and args_run(args) == '12'
+        return {'status': 'in_progress', 'head_sha': 'abc'}
+    monkeypatch.setattr(batch, 'gh', gh)
+    adapter = SimpleNamespace(REPO='owner/repo', WORKFLOW='run.yml', paused=lambda: False)
+    batch.tick(adapter, 'publish', save=lambda d: checkpoints.append(deepcopy(d)))
+    assert bool(writes) is expected
+    assert all(j['stage'] == 'held' and not j.get('review') and not j.get('delivery') for j in held)
+    assert pending['stage'] == ('dispatch_unresolved' if expected else 'planned')
+    assert data['halted'] == 'Repair held entry held-11: wrong image'
