@@ -516,11 +516,22 @@
             "ladder-img-A-7/o8-alt1.png": "0dd49e8b78d03c2679430e352d7546e86de7d8cbe4935d09e8d08dd678bfef01",
             "ladder-img-A-7/o8.png": "a2523945f8c1e840a4dc67dee9853622c4ec300af5bbf4b8243d45c05f1911e4"
           }
+        },
+        {
+          "id": "direct-circular-track-hold-40143333505",
+          "run_id": 40143333505,
+          "observed_at": "2026-10-25T00:16:58.558860+00:00",
+          "reason": "Direct actual-pixel inspection of o7 base and alternate: a circular repeated tread/ribbed trench, not a natural three-toed T. rex footprint. Replace this exact option with a deliberately documented exposed-mudflat refuge; retain sourced smell fact, answer 2, other usable media and current cloud/AV gates.",
+          "evidence": {
+            "ladder-img-A-6/o7.png": "ddf897dc884b44d3d9f8e9ed12603d63f9015da50fb4b0644f5c03a5918b5e38",
+            "ladder-img-A-6/o7-alt1.png": "684cdf68d3c383dbc29115e73811b20a6aa04381123eee7c06a227e2a3188a96"
+          }
         }
       ],
       "problems": [
         "Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.",
-        "Direct inspection of actual o4 base/alternate: skull has multiple paired/upcurved brow horns rather than a coherent three-horn Triceratops skull. Actual o8 base also contains a small grey-clad human figure hiding behind the carcass, despite the no-humans rule; its predator/carcass anatomy is unreliable. Replace only o4 and o8, preserve usable other slots, source fact, answer and publishing order. This is an exact-media hold, not a numeric threshold change."
+        "Direct inspection of actual o4 base/alternate: skull has multiple paired/upcurved brow horns rather than a coherent three-horn Triceratops skull. Actual o8 base also contains a small grey-clad human figure hiding behind the carcass, despite the no-humans rule; its predator/carcass anatomy is unreliable. Replace only o4 and o8, preserve usable other slots, source fact, answer and publishing order. This is an exact-media hold, not a numeric threshold change.",
+        "Direct actual-pixel inspection of o7 base and alternate: a circular repeated tread/ribbed trench, not a natural three-toed T. rex footprint. Replace this exact option with a deliberately documented exposed-mudflat refuge; retain sourced smell fact, answer 2, other usable media and current cloud/AV gates."
       ]
     },
     {
@@ -916,8 +927,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry survive_night-01: Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.; Direct inspection of actual o4 base/alternate: skull has multiple paired/upcurved brow horns rather than a coherent three-horn Triceratops skull. Actual o8 base also contains a small grey-clad human figure hiding behind the carcass, despite the no-humans rule; its predator/carcass anatomy is unreliable. Replace only o4 and o8, preserve usable other slots, source fact, answer and publishing order. This is an exact-media hold, not a numeric threshold change.",
-  "updated_at": "2026-10-25T00:03:55+00:00",
+  "halted": "Repair held entry survive_night-01: Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.; Direct inspection of actual o4 base/alternate: skull has multiple paired/upcurved brow horns rather than a coherent three-horn Triceratops skull. Actual o8 base also contains a small grey-clad human figure hiding behind the carcass, despite the no-humans rule; its predator/carcass anatomy is unreliable. Replace only o4 and o8, preserve usable other slots, source fact, answer and publishing order. This is an exact-media hold, not a numeric threshold change.; Direct actual-pixel inspection of o7 base and alternate: a circular repeated tread/ribbed trench, not a natural three-toed T. rex footprint. Replace this exact option with a deliberately documented exposed-mudflat refuge; retain sourced smell fact, answer 2, other usable media and current cloud/AV gates.",
+  "updated_at": "2026-10-25T00:16:58.558860+00:00",
   "complete": false,
   "health": {
     "public": 0,
