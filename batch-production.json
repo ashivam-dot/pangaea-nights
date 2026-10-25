@@ -5159,7 +5159,7 @@
         "slot": "A",
         "premise": "level_1_8-05"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "2d9d52a5aa76e667b9600b97986cbe14b2e25752",
       "before_ids": [
@@ -5226,7 +5226,28 @@
       ],
       "submitted_at": "2026-10-25T15:03:10+00:00",
       "run_id": 40205103515,
-      "cloud_status": "queued"
+      "cloud_status": "queued",
+      "editorial_holds": [
+        {
+          "id": "level05-first-four-anatomy-hold",
+          "run_id": 40205103515,
+          "observed_at": "2026-10-25T15:36:23+00:00",
+          "reason": "Direct native-resolution review refuses options1-4: the Diictodon is mouse-like and lacks its beak/tusks; Suminia has unreliable hanging humanoid-like anatomy; Dicynodon is shown as a horned rhinoceros; Scutosaurus as a bipedal theropod. Replace only refused visual inputs using verified anatomy, preserving all speech, accepted siblings and every release gate.",
+          "evidence": {
+            "ladder-img-A-0/o1.png": "d1f971cdcd990454800fc4068f4f3b51cf66e30c3e51439ba925fd75b7347120",
+            "ladder-img-A-0/o1-alt1.png": "268809febe29e1730f24f62b0a6436f2ff663645d4e0ae7ac744dff4e112bad9",
+            "ladder-img-A-1/o2.png": "a822038965899deede8007aeae37df8a3a9cb309e37cabc4738471053a2c880d",
+            "ladder-img-A-1/o2-alt1.png": "9d2c8e7017aa9dae8f422d202f2789605dd9b5483367a1b3abef3cd7959c5ed4",
+            "ladder-img-A-2/o3.png": "7ed29bc51155e958374b55c93ef8f23e4ba6dc76233ba2c466226f84fbb587e7",
+            "ladder-img-A-2/o3-alt1.png": "b9f1c569ba189938f967b2ad41be8cf5a775871008f38c1c52387b94da5e1fc9",
+            "ladder-img-A-3/o4.png": "681f97d993b1476e9ac69882d4713dd0610842a1d7a79027b5606de7117ea17d",
+            "ladder-img-A-3/o4-alt1.png": "32c04a74687f848187a467b51a0b49194f89b94e6a6269631757890576bf3e83"
+          }
+        }
+      ],
+      "problems": [
+        "Direct native-resolution review refuses options1-4: the Diictodon is mouse-like and lacks its beak/tusks; Suminia has unreliable hanging humanoid-like anatomy; Dicynodon is shown as a horned rhinoceros; Scutosaurus as a bipedal theropod. Replace only refused visual inputs using verified anatomy, preserving all speech, accepted siblings and every release gate."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -5411,7 +5432,7 @@
       "attempts": 0
     }
   ],
-  "halted": null,
+  "halted": "Repair held entry level_1_8-05: Direct native-resolution review refuses options1-4: the Diictodon is mouse-like and lacks its beak/tusks; Suminia has unreliable hanging humanoid-like anatomy; Dicynodon is shown as a horned rhinoceros; Scutosaurus as a bipedal theropod. Replace only refused visual inputs using verified anatomy, preserving all speech, accepted siblings and every release gate.",
   "complete": false,
   "health": {
     "public": 3,
@@ -5419,5 +5440,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T15:32:32+00:00"
+  "updated_at": "2026-10-25T15:36:23+00:00"
 }
