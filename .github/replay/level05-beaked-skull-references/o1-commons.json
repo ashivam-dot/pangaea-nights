@@ -1,0 +1,2701 @@
+{
+  "batchcomplete": "",
+  "continue": {
+    "gsroffset": 25,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": {
+      "200079648": {
+        "pageid": 200079648,
+        "ns": 6,
+        "title": "File:Cuddling Diictodon.jpg",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Cuddling_Diictodon.jpg/960px-Cuddling_Diictodon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 461,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Cuddling_Diictodon.jpg/1920px-Cuddling_Diictodon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Cuddling_Diictodon.jpg/960px-Cuddling_Diictodon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 461,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Cuddling_Diictodon.jpg/1920px-Cuddling_Diictodon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Cuddling_Diictodon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cuddling_Diictodon.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=200079648",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-09-30 01:53:29",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Cuddling Diictodon",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Dicynodontia|Diictodon|Paleoart|Self-published work|Creative Commons Attribution 4.0 missing SDC copyright license|Creative Commons Attribution missing SDC copyright status|Self-published work missing SDC copyright license|Dicynodontia life restorations",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Life reconstruction of two male Diictodon in a burrow",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2026-09-23 01:58:59",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:LiterallyMiguel\" title=\"User:LiterallyMiguel\">LiterallyMiguel</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "5247334": {
+        "pageid": 5247334,
+        "ns": 6,
+        "title": "File:Dicynodon and Diictodon skulls.jpg",
+        "index": 13,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Dicynodon_and_Diictodon_skulls.jpg/960px-Dicynodon_and_Diictodon_skulls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 765,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Dicynodon_and_Diictodon_skulls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Dicynodon_and_Diictodon_skulls.jpg/960px-Dicynodon_and_Diictodon_skulls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 765,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Dicynodon_and_Diictodon_skulls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Dicynodon_and_Diictodon_skulls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Dicynodon_and_Diictodon_skulls.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=5247334",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2008-11-21 17:57:37",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Dicynodon and Diictodon skulls",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Odontocyclops|PD US|PD-US missing SDC copyright status|Bidentalia skulls|Diictodon skulls|Pylaecephalidae skulls",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<i>Odontocyclops</i> (formerly Dicynodon whaitsi) and Diictodon galeops (small, below) skulls, specimens 5566 and 5308.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1915",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://digitallibrary.amnh.org/dspace/handle/2246/1446\">http://digitallibrary.amnh.org/dspace/handle/2246/1446</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Broom, Robert, 1866-1951.",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "16337338": {
+        "pageid": 16337338,
+        "ns": 6,
+        "title": "File:Dicynodon grimbecki.jpg",
+        "index": 23,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Dicynodon_grimbecki.jpg/960px-Dicynodon_grimbecki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 576,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/2/21/Dicynodon_grimbecki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Dicynodon_grimbecki.jpg/960px-Dicynodon_grimbecki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 576,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/2/21/Dicynodon_grimbecki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Dicynodon_grimbecki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Dicynodon_grimbecki.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=16337338",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-09-04 20:11:54",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Dicynodon grimbecki",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Olympus FE-340 / X-855 / C-560|Self-published work|Fossils in Naturalis Leiden|Diictodon skulls",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Fossil of <i>Diictodon feliceps</i> (syn. <i>Dicynodon grimbeeki</i>), an extinct therapsid - Took the photo at Naturalis museum, Leiden",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-08-13",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ghedoghedo\" title=\"User:Ghedoghedo\">Ghedoghedo</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "32905193": {
+        "pageid": 32905193,
+        "ns": 6,
+        "title": "File:Dicynodon grimbecki Naturalis.JPG",
+        "index": 22,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Dicynodon_grimbecki_Naturalis.JPG/960px-Dicynodon_grimbecki_Naturalis.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 564,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Dicynodon_grimbecki_Naturalis.JPG/1920px-Dicynodon_grimbecki_Naturalis.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Dicynodon_grimbecki_Naturalis.JPG/960px-Dicynodon_grimbecki_Naturalis.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 564,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Dicynodon_grimbecki_Naturalis.JPG/1920px-Dicynodon_grimbecki_Naturalis.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Dicynodon_grimbecki_Naturalis.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Dicynodon_grimbecki_Naturalis.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=32905193",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-05-21 23:46:47",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Dicynodon grimbecki Naturalis",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon PowerShot SX240 HS|Self-published work|Diictodon skulls",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Fossil of <i>Diictodon feliceps</i> (syn. <i>Dicynodon grimbeeki</i>), an extinct therapsid- Took the picture at Naturalis, Leiden",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2013-08-26 14:20:24",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ghedoghedo\" title=\"User:Ghedoghedo\">Ghedoghedo</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48942785": {
+        "pageid": 48942785,
+        "ns": 6,
+        "title": "File:Diictodon-A72-01.jpg",
+        "index": 11,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Diictodon-A72-01.jpg/960px-Diictodon-A72-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 512,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Diictodon-A72-01.jpg/1920px-Diictodon-A72-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Diictodon-A72-01.jpg/960px-Diictodon-A72-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 512,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Diictodon-A72-01.jpg/1920px-Diictodon-A72-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Diictodon-A72-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon-A72-01.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48942785",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-05-22 08:47:42",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon-A72-01",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Collections of Staatliches Museum für Naturkunde Karlsruhe|Files with coordinates missing SDC location of creation (49° N, 8° E)|Diictodon models",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "49.007011",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "8.400764",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Diictodon, Diictodontidae; Perm, Model in life size; Staatliches Museum für Naturkunde Karlsruhe, Germany.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-02-20 14:21:24",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Viliam_Simko&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Viliam Simko (page does not exist)\">Viliam Simko</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48942786": {
+        "pageid": 48942786,
+        "ns": 6,
+        "title": "File:Diictodon-A72-02.jpg",
+        "index": 20,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Diictodon-A72-02.jpg/960px-Diictodon-A72-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 512,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Diictodon-A72-02.jpg/1920px-Diictodon-A72-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Diictodon-A72-02.jpg/960px-Diictodon-A72-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 512,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Diictodon-A72-02.jpg/1920px-Diictodon-A72-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Diictodon-A72-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon-A72-02.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48942786",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-05-22 08:47:42",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon-A72-02",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Collections of Staatliches Museum für Naturkunde Karlsruhe|Files with coordinates missing SDC location of creation (49° N, 8° E)|Diictodon models",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "49.007011",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "8.400764",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Diictodon, Diictodontidae; Perm, Model in life size; Staatliches Museum für Naturkunde Karlsruhe, Germany.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-02-20 14:22:43",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Viliam_Simko&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Viliam Simko (page does not exist)\">Viliam Simko</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48942784": {
+        "pageid": 48942784,
+        "ns": 6,
+        "title": "File:Diictodon-A72-03.jpg",
+        "index": 16,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Diictodon-A72-03.jpg/960px-Diictodon-A72-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 454,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Diictodon-A72-03.jpg/1920px-Diictodon-A72-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Diictodon-A72-03.jpg/960px-Diictodon-A72-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 454,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Diictodon-A72-03.jpg/1920px-Diictodon-A72-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Diictodon-A72-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon-A72-03.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48942784",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-05-22 08:47:42",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon-A72-03",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Collections of Staatliches Museum für Naturkunde Karlsruhe|Files with coordinates missing SDC location of creation (49° N, 8° E)|Diictodon models",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "49.007011",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "8.400764",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Diictodon, Diictodontidae; Perm, Model in life size; Staatliches Museum für Naturkunde Karlsruhe, Germany.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2015-10-27 17:40:54",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Viliam_Simko?action=edit&amp;redlink=1\" title=\"User:Viliam Simko (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Viliam Simko\"]}}'>Viliam Simko</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "46340896": {
+        "pageid": 46340896,
+        "ns": 6,
+        "title": "File:Diictodon-Nachbildung Korbach.jpg",
+        "index": 21,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Diictodon-Nachbildung_Korbach.jpg/960px-Diictodon-Nachbildung_Korbach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 576,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Diictodon-Nachbildung_Korbach.jpg/1920px-Diictodon-Nachbildung_Korbach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Diictodon-Nachbildung_Korbach.jpg/960px-Diictodon-Nachbildung_Korbach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 576,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Diictodon-Nachbildung_Korbach.jpg/1920px-Diictodon-Nachbildung_Korbach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Diictodon-Nachbildung_Korbach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon-Nachbildung_Korbach.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=46340896",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-01-12 20:19:22",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon-Nachbildung Korbach",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Wolfgang-Bonhage-Museum, Korbach|License migration not eligible",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Nachbildung von <a href=\"https://de.wikipedia.org/wiki/Diictodon\" class=\"extiw\" title=\"de:Diictodon\">Diictodon</a> im Wolfgang-Bonhage-Museum Korbach",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-10-14",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span><br><span lang=\"en\" dir=\"ltr\"><b>Original text</b></span>: <i>selbst fotografiert</i>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Stefan Frerichs (<a href=\"https://de.wikipedia.org/wiki/Benutzer:SteFre\" class=\"extiw\" title=\"de:Benutzer:SteFre\">Stefan</a> (<a href=\"https://de.wikipedia.org/wiki/Benutzer_Diskussion:SteFre\" class=\"extiw\" title=\"de:Benutzer Diskussion:SteFre\">Diskussion</a>) 17:40, 9. Jan. 2016 (CET))",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0 de",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0 de",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0-de",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "2354665": {
+        "pageid": 2354665,
+        "ns": 6,
+        "title": "File:Diictodon.jpg",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Diictodon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 768,
+            "thumbheight": 653,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Diictodon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 653
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Diictodon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=2354665",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-12-25 00:07:09",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|User-created GFDL images|Karoo National Park|License migration completed|Self-published work|Scanned with Kodak Pakon F12 Plus|Diictodon fossils|Fossils of the Karoo",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<i>Diictodon</i> fossil at the Karoo National Park",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "28 January 2003 (original upload date)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Deze afbeelding is mijn eigen werk. Originally from <a class=\"external text\" data-mw-original-href=\"http://nl.wikipedia.org\" href=\"https://nl.wikipedia.org\">nl.wikipedia</a>; description page is/was <a class=\"external text\" data-mw-original-href=\"http://nl.wikipedia.org/w/index.php?title=Image%3ADiictodon.jpg\" href=\"https://nl.wikipedia.org/w/index.php?title=Image%3ADiictodon.jpg\">here</a>.",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"https://nl.wikipedia.org/wiki/Gebruiker:Jcwf\" class=\"extiw\" title=\"nl:Gebruiker:Jcwf\">Jcwf</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "GNU/FDL. Released under the <a href=\"//commons.wikimedia.org/wiki/GNU_Free_Documentation_License\" class=\"mw-redirect\" title=\"GNU Free Documentation License\">GNU Free Documentation License</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<a href=\"https://nl.wikipedia.org/wiki/User:Jcwf\" class=\"extiw\" title=\"nl:User:Jcwf\">Jcwf</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "8887796": {
+        "pageid": 8887796,
+        "ns": 6,
+        "title": "File:Diictodon 01.jpg",
+        "index": 19,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Diictodon_01.jpg/960px-Diictodon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 576,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Diictodon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Diictodon_01.jpg/960px-Diictodon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 576,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Diictodon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Diictodon_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon_01.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=8887796",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-01-02 07:44:02",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon 01",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with Panasonic Lumix DMC-LZ1|License migration redundant|Self-published work|Collections of Staatliches Museum für Naturkunde Karlsruhe|Files with coordinates missing SDC location of creation (49° N, 8° E)|Diictodon models",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "49.007011",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "8.400764",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<i>Diictodon</i>, Diictodontidae; Perm, Model in life size; Staatliches Museum für Naturkunde Karlsruhe, Germany.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-12-29",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Llez\" title=\"User:Llez\">H. Zell</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "15105098": {
+        "pageid": 15105098,
+        "ns": 6,
+        "title": "File:Diictodon EF.jpg",
+        "index": 9,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Diictodon_EF.jpg/960px-Diictodon_EF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 432,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Diictodon_EF.jpg/1920px-Diictodon_EF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Diictodon_EF.jpg/960px-Diictodon_EF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 432,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Diictodon_EF.jpg/1920px-Diictodon_EF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Diictodon_EF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon_EF.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=15105098",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-11-25 19:27:47",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon EF",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|License migration redundant|Self-published work|Diictodon life restorations|Scanned with HP Photosmart 5520",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Life restoration of a male <i>Diictodon feliceps</i>, a dicynodont which lived in South Africa 255-250 million years ago",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-04-23",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>; <a rel=\"nofollow\" class=\"external text\" href=\"https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-4983.00292\">1</a>, <a href=\"//commons.wikimedia.org/wiki/File:Iziko_Diictodon_Hibernating_Pair.JPG\" title=\"File:Iziko Diictodon Hibernating Pair.JPG\">2</a>, <a rel=\"nofollow\" class=\"external text\" href=\"http://rstb.royalsocietypublishing.org/content/291/1050/243\">3</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:El_fosilman%C3%ADaco\" title=\"User:El fosilmaníaco\">El fosilmaníaco</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "122039836": {
+        "pageid": 122039836,
+        "ns": 6,
+        "title": "File:Diictodon Oxford Natural History.jpg",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Diictodon_Oxford_Natural_History.jpg/960px-Diictodon_Oxford_Natural_History.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 576,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Diictodon_Oxford_Natural_History.jpg/1920px-Diictodon_Oxford_Natural_History.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Diictodon_Oxford_Natural_History.jpg/960px-Diictodon_Oxford_Natural_History.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 576,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Diictodon_Oxford_Natural_History.jpg/1920px-Diictodon_Oxford_Natural_History.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Diictodon_Oxford_Natural_History.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon_Oxford_Natural_History.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=122039836",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-08-19 16:47:42",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon Oxford Natural History",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Permian period, diictodon, reptile,",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Model of a Diictodon an early mammal-like reptile from the Permian period (225 million years ago). Fossils have been found in Africa and Asia.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-10-20",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:BVBurton\" title=\"User:BVBurton\">BVBurton</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "56064593": {
+        "pageid": 56064593,
+        "ns": 6,
+        "title": "File:Diictodon Skeleton (32659626041).jpg",
+        "index": 18,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Diictodon_Skeleton_%2832659626041%29.jpg/960px-Diictodon_Skeleton_%2832659626041%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 483,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Diictodon_Skeleton_%2832659626041%29.jpg/1920px-Diictodon_Skeleton_%2832659626041%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Diictodon_Skeleton_%2832659626041%29.jpg/960px-Diictodon_Skeleton_%2832659626041%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 483,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Diictodon_Skeleton_%2832659626041%29.jpg/1920px-Diictodon_Skeleton_%2832659626041%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Diictodon_Skeleton_%2832659626041%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon_Skeleton_(32659626041).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=56064593",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-02-09 01:23:57",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon Skeleton (32659626041)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Karoo National Park|Flickr images reviewed by FlickreviewR|Photographs by Bernard Dupont|Files with coordinates missing SDC location of creation|South Africa photographs taken on 2016-10-06|Diictodon fossils|Fossils of the Karoo",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-32.333366",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "22.497199",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Fossil Trail, Rest Camp, Karoo NP, Western Cape, SOUTH AFRICA",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-10-06 05:07",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/berniedup/32659626041/\">Diictodon Skeleton</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/65695019@N07\">Bernard DUPONT</a> from FRANCE",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "90342965": {
+        "pageid": 90342965,
+        "ns": 6,
+        "title": "File:Diictodon feliceps 78.jpg",
+        "index": 8,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Diictodon_feliceps_78.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 768,
+            "thumbheight": 457,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/8/85/Diictodon_feliceps_78.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 457
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Diictodon_feliceps_78.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon_feliceps_78.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=90342965",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-17 07:41:55",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon feliceps 78",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Diictodon skulls",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Diictodon feliceps 78",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-02-23 14:57:29",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.si.edu/object/diictodon-feliceps-owen-1876:nmnhpaleobiology_3450113\">https://www.si.edu/object/diictodon-feliceps-owen-1876:nmnhpaleobiology_3450113</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.si.edu/object/diictodon-feliceps-owen-1876:nmnhpaleobiology_3450113\">https://www.si.edu/object/diictodon-feliceps-owen-1876:nmnhpaleobiology_3450113</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "49634711": {
+        "pageid": 49634711,
+        "ns": 6,
+        "title": "File:Diictodon galeops and Procynosuchus delaharpae models.jpg",
+        "index": 17,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Diictodon_galeops_and_Procynosuchus_delaharpae_models.jpg/960px-Diictodon_galeops_and_Procynosuchus_delaharpae_models.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 291,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Diictodon_galeops_and_Procynosuchus_delaharpae_models.jpg/1920px-Diictodon_galeops_and_Procynosuchus_delaharpae_models.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Diictodon_galeops_and_Procynosuchus_delaharpae_models.jpg/960px-Diictodon_galeops_and_Procynosuchus_delaharpae_models.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 291,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Diictodon_galeops_and_Procynosuchus_delaharpae_models.jpg/1920px-Diictodon_galeops_and_Procynosuchus_delaharpae_models.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Diictodon_galeops_and_Procynosuchus_delaharpae_models.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon_galeops_and_Procynosuchus_delaharpae_models.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=49634711",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-06-22 00:56:29",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon galeops and Procynosuchus delaharpae models",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Procynosuchus|Self-published work|Diictodon models|Cynodontia models",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Models of therapsids - Took the picture at Museum am Lowentor, Stuttgard",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2015-08-19 13:40:30",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ghedoghedo\" title=\"User:Ghedoghedo\">Ghedoghedo</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "111477210": {
+        "pageid": 111477210,
+        "ns": 6,
+        "title": "File:Diictodon galeops model.jpg",
+        "index": 6,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Diictodon_galeops_model.jpg/960px-Diictodon_galeops_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 432,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/d/de/Diictodon_galeops_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Diictodon_galeops_model.jpg/960px-Diictodon_galeops_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 432,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/d/de/Diictodon_galeops_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Diictodon_galeops_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon_galeops_model.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=111477210",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-10-22 11:57:31",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon galeops model",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Diictodon models",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Model Diictodon galeops - Took the picture at Museum am Lowentor, Stuttgard",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2015-08-19 13:40:30",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ghedoghedo\" title=\"User:Ghedoghedo\">Ghedoghedo</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "120406939": {
+        "pageid": 120406939,
+        "ns": 6,
+        "title": "File:Diictodon skull taphonomy.png",
+        "index": 7,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Diictodon_skull_taphonomy.png/960px-Diictodon_skull_taphonomy.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 768,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Diictodon_skull_taphonomy.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Diictodon_skull_taphonomy.png/960px-Diictodon_skull_taphonomy.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 768,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Diictodon_skull_taphonomy.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Diictodon_skull_taphonomy.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon_skull_taphonomy.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=120406939",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-07-13 14:31:56",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon skull taphonomy",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images with extracted images|Diictodon skulls",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Typical styles of preservation in Diictodon feliceps (A) Dorsal and (B) right lateral (mirrored for comparison) views of an undistorted skull (USNM 22949). (C) Dorsal and (D) left lateral views of a laterally compressed skull (USNM 171064). (E) Dorsal and (F) left lateral views of a dorsoventrally compressed skull (SAM-PK-K11558). Scale bars equal 1 cm. Photos: Christian Kammerer.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Effects of taphonomic deformation on geometric morphometric analysis of fossils: a study using the dicynodont Diictodon feliceps (Therapsida, Anomodontia) <a rel=\"nofollow\" class=\"external free\" href=\"https://peerj.com/articles/9925/\">https://peerj.com/articles/9925/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Christian F. Kammerer​, Michol Deutsch, Jacqueline K. Lungmus, Kenneth D. Angielczyk",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "120407068": {
+        "pageid": 120407068,
+        "ns": 6,
+        "title": "File:Diictodon skull taphonomy (cropped).png",
+        "index": 12,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Diictodon_skull_taphonomy_%28cropped%29.png/960px-Diictodon_skull_taphonomy_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 273,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Diictodon_skull_taphonomy_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Diictodon_skull_taphonomy_%28cropped%29.png/960px-Diictodon_skull_taphonomy_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 273,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Diictodon_skull_taphonomy_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Diictodon_skull_taphonomy_%28cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Diictodon_skull_taphonomy_(cropped).png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=120407068",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-07-13 14:37:03",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Diictodon skull taphonomy (cropped)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Extracted images|Diictodon skulls",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Typical styles of preservation in Diictodon feliceps (A) Dorsal and (B) right lateral (mirrored for comparison) views of an undistorted skull (USNM 22949). (C) Dorsal and (D) left lateral views of a laterally compressed skull (USNM 171064). (E) Dorsal and (F) left lateral views of a dorsoventrally compressed skull (SAM-PK-K11558). Scale bars equal 1 cm. Photos: Christian Kammerer.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Effects of taphonomic deformation on geometric morphometric analysis of fossils: a study using the dicynodont Diictodon feliceps (Therapsida, Anomodontia) <a rel=\"nofollow\" class=\"external free\" href=\"https://peerj.com/articles/9925/\">https://peerj.com/articles/9925/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Christian F. Kammerer​, Michol Deutsch, Jacqueline K. Lungmus, Kenneth D. Angielczyk",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "6949891": {
+        "pageid": 6949891,
+        "ns": 6,
+        "title": "File:Fossil tetrapod.jpg",
+        "index": 5,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Fossil_tetrapod.jpg/960px-Fossil_tetrapod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 576,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Fossil_tetrapod.jpg/1920px-Fossil_tetrapod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Fossil_tetrapod.jpg/960px-Fossil_tetrapod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 576,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Fossil_tetrapod.jpg/1920px-Fossil_tetrapod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Fossil_tetrapod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fossil_tetrapod.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=6949891",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2009-06-05 20:21:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Fossil tetrapod",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Sony DSC-P100|Fossils of South Africa|Beaufort West|Flickr images reviewed by File Upload Bot (Magnus Manske)|Diictodon fossils",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Diictodon. Le circuit des fossiles",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2004-08-29 08:35",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/41282011@N00/3323528055/\">Dans le Karoo</a>\n</p>\n<ul><li>Uploaded by <a href=\"//commons.wikimedia.org/wiki/User:FunkMonk\" title=\"User:FunkMonk\">FunkMonk</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/41282011@N00\">Julien Carnot</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "33981031": {
+        "pageid": 33981031,
+        "ns": 6,
+        "title": "File:Iziko Diictodon Corkscrew.JPG",
+        "index": 14,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Iziko_Diictodon_Corkscrew.JPG/960px-Iziko_Diictodon_Corkscrew.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 576,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Iziko_Diictodon_Corkscrew.JPG/1920px-Iziko_Diictodon_Corkscrew.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Iziko_Diictodon_Corkscrew.JPG/960px-Iziko_Diictodon_Corkscrew.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 576,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Iziko_Diictodon_Corkscrew.JPG/1920px-Iziko_Diictodon_Corkscrew.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Iziko_Diictodon_Corkscrew.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Iziko_Diictodon_Corkscrew.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=33981031",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-07-14 13:29:56",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Iziko Diictodon Corkscrew",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Burrow fossils|Self-published work|Files with coordinates missing SDC location of creation|Diictodon fossils|Fossils in the Iziko South African Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-33.931236",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "18.417043",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A natural cast of an underground burrow probably made by Diictodon. Several of these unusual spiral burrows are found together in what was formerly a community or 'township'. Very rarely curled-up skeletons of dicynodonts, like this one, have been found in the terinal chamber. \nScratch marks on the outside of the burrow cast match up with Diictodon's claws and tusks. They tunnelled into the dry floodplain soils and deliberately used their left leg more than their right leg so that the tunnel spiralled down ina clockwise direction. After two complete turns they were usually deep enough to excavate a terminal chamber that was just big enough to turn around in.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-07-14 11:08:04",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nkansahrexford\" title=\"User:Nkansahrexford\">Nkansahrexford</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "33981032": {
+        "pageid": 33981032,
+        "ns": 6,
+        "title": "File:Iziko Diictodon Hibernating Pair.JPG",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Iziko_Diictodon_Hibernating_Pair.JPG/960px-Iziko_Diictodon_Hibernating_Pair.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 670,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Iziko_Diictodon_Hibernating_Pair.JPG/1920px-Iziko_Diictodon_Hibernating_Pair.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Iziko_Diictodon_Hibernating_Pair.JPG/960px-Iziko_Diictodon_Hibernating_Pair.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 670,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Iziko_Diictodon_Hibernating_Pair.JPG/1920px-Iziko_Diictodon_Hibernating_Pair.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Iziko_Diictodon_Hibernating_Pair.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Iziko_Diictodon_Hibernating_Pair.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=33981032",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-07-14 13:29:56",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Iziko Diictodon Hibernating Pair",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Files with coordinates missing SDC location of creation|Diictodon fossils|Vertebrata fossils (male)|Fossils in the Iziko South African Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-33.931236",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "18.417043",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Fossilized skeletons of two adult male Diictodon that crawled into an underground burrow and curled-up together, probably to conserve heat during winter hibernation. \nIt has been proven that in this species only mature males grow tusks as a sexual signal. In this instance a sudden flood event or possible a roof collapse killed and buried them before they could be roused from their cold-induced slumber.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-07-14 14:56:29",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nkansahrexford\" title=\"User:Nkansahrexford\">Nkansahrexford</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "33981029": {
+        "pageid": 33981029,
+        "ns": 6,
+        "title": "File:Iziko Diictodon Tusks Fossil.JPG",
+        "index": 15,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Iziko_Diictodon_Tusks_Fossil.JPG/960px-Iziko_Diictodon_Tusks_Fossil.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 638,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Iziko_Diictodon_Tusks_Fossil.JPG/1920px-Iziko_Diictodon_Tusks_Fossil.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Iziko_Diictodon_Tusks_Fossil.JPG/960px-Iziko_Diictodon_Tusks_Fossil.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 638,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Iziko_Diictodon_Tusks_Fossil.JPG/1920px-Iziko_Diictodon_Tusks_Fossil.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Iziko_Diictodon_Tusks_Fossil.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Iziko_Diictodon_Tusks_Fossil.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=33981029",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-07-14 13:29:54",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Iziko Diictodon Tusks Fossil",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Files with coordinates missing SDC location of creation|Diictodon fossils|Fossils in the Iziko South African Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-33.929644",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "18.416315",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "As Diictodon infants grew up, their skulls not only got larger but also changed shape depending on their gender. Up to 5cm skull length, none of the Diictodon skull shows tusks. From 5-15 cm skull length, roughly half of the Diictodon specimens have visible canine tusks the others just have a bony projection called caniniform process\nThe tusks were therefore mainly used as visible display of the male Diictodon's prowess and fitness when competing for mates within the community",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-07-14 14:56:09",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nkansahrexford\" title=\"User:Nkansahrexford\">Nkansahrexford</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "33981026": {
+        "pageid": 33981026,
+        "ns": 6,
+        "title": "File:Iziko Diictodon brood.JPG",
+        "index": 10,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Iziko_Diictodon_brood.JPG/960px-Iziko_Diictodon_brood.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 524,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Iziko_Diictodon_brood.JPG/1920px-Iziko_Diictodon_brood.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Iziko_Diictodon_brood.JPG/960px-Iziko_Diictodon_brood.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 524,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Iziko_Diictodon_brood.JPG/1920px-Iziko_Diictodon_brood.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Iziko_Diictodon_brood.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Iziko_Diictodon_brood.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=33981026",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-07-14 13:29:53",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Iziko Diictodon brood",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Files with coordinates missing SDC location of creation|Diictodon fossils|Fossils in the Iziko South African Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-33.929644",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "18.416315",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Fossil of Diictodon brood",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-07-14 14:55:49",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nkansahrexford\" title=\"User:Nkansahrexford\">Nkansahrexford</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "43433827": {
+        "pageid": 43433827,
+        "ns": 6,
+        "title": "File:The American Museum journal (c1900-(1918)) (17974026849).jpg",
+        "index": 24,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/The_American_Museum_journal_%28c1900-%281918%29%29_%2817974026849%29.jpg/960px-The_American_Museum_journal_%28c1900-%281918%29%29_%2817974026849%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 321,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/The_American_Museum_journal_%28c1900-%281918%29%29_%2817974026849%29.jpg/1920px-The_American_Museum_journal_%28c1900-%281918%29%29_%2817974026849%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/The_American_Museum_journal_%28c1900-%281918%29%29_%2817974026849%29.jpg/960px-The_American_Museum_journal_%28c1900-%281918%29%29_%2817974026849%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 321,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/The_American_Museum_journal_%28c1900-%281918%29%29_%2817974026849%29.jpg/1920px-The_American_Museum_journal_%28c1900-%281918%29%29_%2817974026849%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/The_American_Museum_journal_%28c1900-%281918%29%29_%2817974026849%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_American_Museum_journal_(c1900-(1918))_(17974026849).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=43433827",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-09-20 13:10:36",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "The American Museum journal (c1900-(1918)) (17974026849)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Photos uploaded from Flickr by Fæ using a script|Flickr images reviewed by FlickreviewR|Files from Internet Archive Book Images Flickr stream|Files from Flickr's 'The Commons'|Diictodon fossils|The American Museum Journal (1914)|The American Museum Journal - zoology",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<i>Diictodon feliceps</i>, syn. <i>Dicynodon psittacops</i><br>\n<p><b>Title</b>: The American Museum journal<br>\n<b>Identifier</b>: americanmuseumjo14amer (<a class=\"external text\" href=\"https://commons.wikimedia.org/w/index.php?title=Special%3ASearch&amp;profile=default&amp;fulltext=Search&amp;search=insource%3A%2Famericanmuseumjo14amer%2F\">find matches</a>)<br>\n<b>Year</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookyearc1900-(1918)\">c1900-(1918)</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookdecadec190\">c190s</a>)<br>\n<b>Authors</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookauthorAmerican_Museum_of_Natural_History\">American Museum of Natural History</a><br>\n<b>Subjects</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=booksubjectNatural_history\">Natural history</a><br>\n<b>Publisher</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookpublisherNew_York_American_Museum_of_Natural_History\">New York : American Museum of Natural History</a><br>\n<b>Contributing Library</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookcontributorAmerican_Museum_of_Natural_History_Library\">American Museum of Natural History Library</a><br>\n<b>Digitizing Sponsor</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=booksponsorBiodiversity_Heritage_Library\">Biodiversity Heritage Library</a><br>\n<br>\n<b>View Book Page</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/americanmuseumjo14amer/#page/n170/mode/1up\">Book Viewer</a><br>\n<b>About This Book</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/details/americanmuseumjo14amer\">Catalog Entry</a><br>\n<b>View All Images</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookidamericanmuseumjo14amer\">All Images From Book</a><br>\nClick here to <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/americanmuseumjo14amer/#page/n170/mode/1up\"><b>view book online</b></a> to see this illustration in context in a browseable online version of this book.<br>\n<br>\n<b>Text Appearing Before Image: </b><br>\n<i>Perfect skull Broom, with the the lack of a tusk of a broad-headed Dicynodon, Dicynodon moschops lower jaw restored. This is a female as is shown by third not figured show very well the pro- portions of this remarkable reptilian type and are the first skeletons of Dicynodon that have ever been mounted. At New Bethesda in Cape Colony we have representatives of a fauna that lived still another quarter or half million years later. The large Endothiodons are now extinct, and their place is taken by moderately large Dicynodons. A few small Pareiasaurians still survive which dift'er from the earlier larger types in having the back and sides completely</i><br>\n<b>Text Appearing After Image: </b><br>\n<i>Nearly complete skeleton of a small species of Dicynodon, Dicynodon psittacops Broom, from Beau- fort West. The bones of the limbs and girdles are as found (About one-third natural size) 141</i><br>\n<br>\n<b>Note About Images</b><br>\n</p>\n<i>Please note that these images are extracted from scanned page images that may have been digitally enhanced for readability - coloration and appearance of these illustrations may not perfectly resemble the original work.</i>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1914",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/internetarchivebookimages/17974026849/\">https://www.flickr.com/photos/internetarchivebookimages/17974026849/</a>\n</p>\n<ul><li>Source book page: <a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/stream/americanmuseumjo14amer/#page/n170/mode/1up\">https://archive.org/stream/americanmuseumjo14amer/#page/n170/mode/1up</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/126377022@N07\">Internet Archive Book Images</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "At the time of upload, the image license was automatically confirmed using the Flickr <a href=\"https://en.wikipedia.org/wiki/API\" class=\"extiw\" title=\"en:API\">API</a>. For more information see <a href=\"//commons.wikimedia.org/wiki/User:F%C3%A6/Flickr_API_detail\" title=\"User:Fæ/Flickr API detail\">Flickr API detail</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "No restrictions",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "No known copyright restrictions",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://www.flickr.com/commons/usage/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "43431951": {
+        "pageid": 43431951,
+        "ns": 6,
+        "title": "File:The American Museum journal (c1900-(1918)) (18157211232).jpg",
+        "index": 25,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/The_American_Museum_journal_%28c1900-%281918%29%29_%2818157211232%29.jpg/960px-The_American_Museum_journal_%28c1900-%281918%29%29_%2818157211232%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 768,
+            "thumbheight": 781,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/The_American_Museum_journal_%28c1900-%281918%29%29_%2818157211232%29.jpg/1920px-The_American_Museum_journal_%28c1900-%281918%29%29_%2818157211232%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/The_American_Museum_journal_%28c1900-%281918%29%29_%2818157211232%29.jpg/960px-The_American_Museum_journal_%28c1900-%281918%29%29_%2818157211232%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 768,
+              "height": 781,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/The_American_Museum_journal_%28c1900-%281918%29%29_%2818157211232%29.jpg/1920px-The_American_Museum_journal_%28c1900-%281918%29%29_%2818157211232%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/The_American_Museum_journal_%28c1900-%281918%29%29_%2818157211232%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_American_Museum_journal_(c1900-(1918))_(18157211232).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=43431951",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-09-20 11:57:43",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "The American Museum journal (c1900-(1918)) (18157211232)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Odontocyclops|Photos uploaded from Flickr by Fæ using a script|Flickr images reviewed by FlickreviewR|Files from Internet Archive Book Images Flickr stream|Files from Flickr's 'The Commons'|Bidentalia skulls|Diictodon skulls|Pylaecephalidae skulls|The American Museum Journal (1913)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Skulls of <i>Odontocyclops whaitsi</i> (syn. <i>Dicynodon whaitsi</i>) and <i>Diictodon feliceps</i> (syn. <i>Diictodon galeops</i>)<br>\n<p><b>Title</b>: The American Museum journal<br>\n<b>Identifier</b>: americanmuseumjo13amer (<a class=\"external text\" href=\"https://commons.wikimedia.org/w/index.php?title=Special%3ASearch&amp;profile=default&amp;fulltext=Search&amp;search=insource%3A%2Famericanmuseumjo13amer%2F\">find matches</a>)<br>\n<b>Year</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookyearc1900-(1918)\">c1900-(1918)</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookdecadec190\">c190s</a>)<br>\n<b>Authors</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookauthorAmerican_Museum_of_Natural_History\">American Museum of Natural History</a><br>\n<b>Subjects</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=booksubjectNatural_history\">Natural history</a><br>\n<b>Publisher</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookpublisherNew_York_American_Museum_of_Natural_History\">New York : American Museum of Natural History</a><br>\n<b>Contributing Library</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookcontributorAmerican_Museum_of_Natural_History_Library\">American Museum of Natural History Library</a><br>\n<b>Digitizing Sponsor</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=booksponsorBiodiversity_Heritage_Library\">Biodiversity Heritage Library</a><br>\n<br>\n<b>View Book Page</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/americanmuseumjo13amer/#page/n364/mode/1up\">Book Viewer</a><br>\n<b>About This Book</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/details/americanmuseumjo13amer\">Catalog Entry</a><br>\n<b>View All Images</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/search/?tags=bookidamericanmuseumjo13amer\">All Images From Book</a><br>\nClick here to <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/americanmuseumjo13amer/#page/n364/mode/1up\"><b>view book online</b></a> to see this illustration in context in a browseable online version of this book.<br>\n<br>\n<b>Text Appearing Before Image: </b><br>\n'<b><br></b>\n<b>Text Appearing After Image: </b><br>\n<i>RELATIVE SIZE OF ALLIED SOUTH AFRICAN REPTILES Dicynodon whaitsi Broom and Diictodon galeops Broom. The skull of one of the largest forms of Dicynodon and of one of the smallest allied forms. This specimen of Dicynodon whaitsi is a female in which the tusk does not project but it is present in the specimen deeply embedded in the bone Formerly all those specimens of dicynodont reptiles in which there was no manifest tusk were placed in the genus Oudenodon. Oudenodon was also placed by Owen in a distinct family. For years the question was debated by all workers on South African reptiles whether Oudenodon might not be tne female of Dicynodon and all have concluded that the evidence seemed rather to favor their being dis- tinct forms No known specimen of Oudenodon sufficiently resembled any known specimen of Dicynodon to be manifestly the female of that species. Within recent years however it has become quite certain that Oudenodon is the female of the tusked Dicynodon. In at least three species of Dicy- nodon we have a manifest series of tusked and tuskless specimens and the same also occurs in other closely allied genera. In some species there is a rudimentary tusk, in others apparently no trace ot tusk, while just possibly in some of the larger forms, such as Dicynodon (Kannemeyena), most proba- bly the female is also tusked . • Exactly what the function of the tusk may have been is unknown. Many suggestions have been made which are manifestly incorrect. Pretty certainly the tusks have nothing to &lt;^with the pro- curing of food as the females in which they are absent doubtless got on as satisfactory Probably they were in Dicynodon at least, secondary sexual characters like the spur in the duck-billed platypus 343</i><br>\n<br>\n<b>Note About Images</b><br>\n</p>\n<i>Please note that these images are extracted from scanned page images that may have been digitally enhanced for readability - coloration and appearance of these illustrations may not perfectly resemble the original work.</i>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1913",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/internetarchivebookimages/18157211232/\">https://www.flickr.com/photos/internetarchivebookimages/18157211232/</a>\n</p>\n<ul><li>Source book page: <a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/stream/americanmuseumjo13amer/#page/n364/mode/1up\">https://archive.org/stream/americanmuseumjo13amer/#page/n364/mode/1up</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/126377022@N07\">Internet Archive Book Images</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "At the time of upload, the image license was automatically confirmed using the Flickr <a href=\"https://en.wikipedia.org/wiki/API\" class=\"extiw\" title=\"en:API\">API</a>. For more information see <a href=\"//commons.wikimedia.org/wiki/User:F%C3%A6/Flickr_API_detail\" title=\"User:Fæ/Flickr API detail\">Flickr API detail</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "No restrictions",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "No known copyright restrictions",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://www.flickr.com/commons/usage/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
