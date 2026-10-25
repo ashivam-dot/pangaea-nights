@@ -3950,9 +3950,9 @@
   "complete": false,
   "health": {
     "public": 2,
-    "scheduled": 8,
-    "held": 1,
+    "scheduled": 9,
+    "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T08:14:04+00:00"
+  "updated_at": "2026-10-25T08:14:07+00:00"
 }
