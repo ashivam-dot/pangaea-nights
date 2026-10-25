@@ -1,1385 +1,1385 @@
 {
-  "series": "level_1_8",
-  "premises": [
+ "series": "level_1_8",
+ "premises": [
+  {
+   "id": "level_1_8-01",
+   "era": "Cambrian",
+   "title": "Level 1 to 8 Ocean Pets of the Cambrian — Who Guards Your Reef? 🌊",
+   "banner": "Which Cambrian pet guards your reef?",
+   "hook_vo": "First night in the Cambrian ocean. Pick a guard.",
+   "art_direction": "Cold turquoise shallows under a full moon, low wide-angle lens at seabed level, amber bioluminescent glow.",
+   "options": [
     {
-      "id": "level_1_8-01",
-      "era": "Cambrian",
-      "title": "Level 1 to 8 Ocean Pets of the Cambrian — Who Guards Your Reef? 🌊",
-      "banner": "Which Cambrian pet guards your reef?",
-      "hook_vo": "First night in the Cambrian ocean. Pick a guard.",
-      "art_direction": "Cold turquoise shallows under a full moon, low wide-angle lens at seabed level, amber bioluminescent glow.",
-      "options": [
-        {
-          "n": 1,
-          "label": "A sponge on a rock",
-          "vo": "Level one: a sponge. It just sits there.",
-          "danger": 1,
-          "image_prompt": "POV on the floor of a shallow Cambrian sea at night, a single pale barrel sponge on a rounded stone, drifting particles, an amber glow seeping from the sand beside it, cold turquoise moonlit shallows, wide-angle lens at seabed level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "A tiny trilobite",
-          "vo": "Level two: a trilobite, plodding in slow circles.",
-          "danger": 2,
-          "image_prompt": "A small grey trilobite seen from slightly above, its broad head shield and flattened oval segmented shell showing a central axial lobe and two side lobes, crawling over rippled shallow-sea sand; amber foreground fill and diffuse blue underwater light."
-        },
-        {
-          "n": 3,
-          "label": "A drifting jelly",
-          "vo": "Level three: a jelly, floating right past you.",
-          "danger": 3,
-          "image_prompt": "A translucent bell jellyfish drifting at eye level above a Cambrian seabed, trailing thin tentacles, lit from inside by a soft amber glow, silver moonlight above, cold turquoise moonlit shallows, wide-angle lens at seabed level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Five-eyed Opabinia",
-          "vo": "Level four: Opabinia. Five eyes and a claw nose.",
-          "danger": 4,
-          "image_prompt": "One Opabinia swimming horizontally from left to right just above a muddy seabed. Dorsal three-quarter view of the whole elongated body with side swimming lobes, five short-stalked eyes clustered on the head, and one long flexible proboscis reaching forward to a small terminal claw; amber foreground fill in turquoise water."
-        },
-        {
-          "n": 5,
-          "label": "Spiny Hallucigenia",
-          "vo": "Level five: Hallucigenia, spines up, legs down.",
-          "danger": 5,
-          "image_prompt": "One small Hallucigenia viewed entirely from the side, its long slender cylindrical trunk held horizontally over a sponge, paired conical spines pointing upward along its back and soft legs walking beneath the body; small rounded head at the left, amber foreground fill in turquoise water."
-        },
-        {
-          "n": 6,
-          "label": "Scale-armored Wiwaxia",
-          "vo": "Level six: Wiwaxia, a slug wearing blades.",
-          "danger": 6,
-          "image_prompt": "One low oval Wiwaxia gliding over a stone, viewed from above and beside its overlapping ribbed leaf-shaped armor scales and two rows of long dorsal spines; the body stays low to the rock, amber foreground fill in turquoise water."
-        },
-        {
-          "n": 7,
-          "label": "Arrow worm swarm",
-          "vo": "Level seven: a hunting swarm of arrow worms.",
-          "danger": 7,
-          "image_prompt": "A few complete transparent arrow worms swimming horizontally close to the lens, long unsegmented bodies with small lateral fins and tail fins, short hooked grasping spines clustered immediately around each mouth. A larger swarm recedes softly behind them; amber foreground fill in turquoise water."
-        },
-        {
-          "n": 8,
-          "label": "Anomalocaris",
-          "vo": "Level eight: Anomalocaris. Spiked arms, huge eyes.",
-          "danger": 8,
-          "image_prompt": "One complete Anomalocaris swimming horizontally from left to right above a reef, seen in side profile, its elongated body bearing repeated broad lateral swimming flaps, two large stalked compound eyes and a pair of segmented frontal grasping appendages curled beneath the head with inward-facing spines; amber foreground fill in turquoise water."
-        }
-      ],
-      "answer_n": 8,
-      "verdict_vo": "Real answer: number 8, because Anomalocaris was among the largest Cambrian animals and may have been an early apex predator. A fearsome pick.",
-      "fact": {
-        "text": "Anomalocaris, an estimated 34.2–37.8 cm long without its frontal appendages and tail fan, is one of the largest animals of the Cambrian and thought to be one of the earliest apex predators.",
-        "source_sentence": "Estimated to reach 34.2–37.8 cm (13.5–14.9 in) long excluding the frontal appendages and tail fan, Anomalocaris is one of the largest animals of the Cambrian, and thought to be one of the earliest examples of an apex predator, though others have been found in older Cambrian lagerstätten deposits.",
-        "wiki_title": "Anomalocaris",
-        "wiki_revid": 1379615198
-      },
-      "description": "Half a billion years ago, these creatures shared Cambrian seas. Pick your imaginary reef guard from eight animals, from a sponge to Anomalocaris, and see the fossil-based reason for the final choice. Comment your number.",
-      "tags": [
-        "Cambrian",
-        "ancient ocean",
-        "Anomalocaris",
-        "deep time",
-        "prehistoric life",
-        "evolution",
-        "paleontology",
-        "Burgess Shale"
-      ],
-      "related_topic_hint": "The Ocean Before the Dinosaurs"
+     "n": 1,
+     "label": "A sponge on a rock",
+     "vo": "Level one: a sponge. It just sits there.",
+     "danger": 1,
+     "image_prompt": "POV on the floor of a shallow Cambrian sea at night, a single pale barrel sponge on a rounded stone, drifting particles, an amber glow seeping from the sand beside it, cold turquoise moonlit shallows, wide-angle lens at seabed level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
-      "id": "level_1_8-02",
-      "era": "Devonian",
-      "title": "Giant Bug Ladder: Level 1 to 8 Sea Scorpions — Which Is Biggest? 🦂",
-      "banner": "Which giant sea scorpion is biggest?",
-      "hook_vo": "Eight sea scorpions. Only one holds the record.",
-      "art_direction": "Murky olive-green river delta at dusk, telephoto compression through silt, a single copper sunset shaft.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Fingertip hatchling",
-          "vo": "Level one: a hatchling, smaller than a fingertip.",
-          "danger": 1,
-          "image_prompt": "A tiny newly moulted sea scorpion resting on a pebble in a shallow brackish channel, translucent shell, a copper shaft of low sun striking it, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Paddle-legged swimmer",
-          "vo": "Level two: a swimmer with paddle legs.",
-          "danger": 2,
-          "image_prompt": "A small eurypterid sculling through green water with broad flat oar-shaped rear legs, silt glittering in a copper sunbeam, reeds of early plants above, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Spiny-legged ambusher",
-          "vo": "Level three: an ambusher with spiked legs.",
-          "danger": 3,
-          "image_prompt": "A eurypterid half buried in mud with long spiny front legs raised to trap prey, copper light grazing its carapace, olive murk around it, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Broad mud sifter",
-          "vo": "Level four: a broad sifter, raking the mud.",
-          "danger": 4,
-          "image_prompt": "A wide flat-bodied eurypterid raking a muddy bottom with comb-edged legs, clouds of silt rising, one copper sunbeam piercing the water, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Clawed Pterygotus",
-          "vo": "Level five: Pterygotus, with long pincer claws.",
-          "danger": 5,
-          "image_prompt": "Pterygotus cruising mid-water with two long serrated pincer claws held forward and a flattened tail fin, copper backlight outlining it, olive haze, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Acutiramus on patrol",
-          "vo": "Level six: a huge sea scorpion patrols below.",
-          "danger": 6,
-          "image_prompt": "A large Acutiramus sea scorpion gliding over a submerged log, segmented body and slim pincers, copper dusk light from the surface, telephoto haze, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Ambush beside you",
-          "vo": "Level seven: one just surfaced next to you.",
-          "danger": 7,
-          "image_prompt": "Low POV at the waterline of a dusky delta as a big eurypterid head and pincers break the surface right in front of the lens, copper ripples, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Jaekelopterus",
-          "vo": "Level eight: the biggest, longer than a sofa.",
-          "danger": 8,
-          "image_prompt": "Jaekelopterus filling the whole vertical frame, an enormous sea scorpion with huge spiked pincers and long segmented body, gliding over a delta bottom, copper sunset shaft above, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 8,
-      "verdict_vo": "Real answer: number 8, because Jaekelopterus, the largest sea scorpion, reached about 2.5 metres long. No arthropod since has topped it.",
-      "fact": {
-        "text": "The largest eurypterid (sea scorpion), Jaekelopterus, reached about 2.5 m in length.",
-        "source_sentence": "The largest, Jaekelopterus, reached 2.5 meters (8.2 ft) in length.",
-        "wiki_title": "Eurypterid",
-        "wiki_revid": 1359707789
-      },
-      "description": "Before fish ruled the rivers, sea scorpions did, and some grew longer than the animals that hunt in rivers today. Eight of them, smallest to biggest, and the one that set the record for any arthropod.",
-      "tags": [
-        "sea scorpion",
-        "eurypterid",
-        "Devonian",
-        "giant bugs",
-        "prehistoric life",
-        "deep time",
-        "paleontology",
-        "arthropods"
-      ],
-      "related_topic_hint": "The Ocean Before the Dinosaurs",
-      "production_hold": "Scientific habitat and anatomy failed direct review in exact cloud images; four bounded local repairs produced fish-crustacean hybrids. Quarantined until an accurate reconstruction stack is validated. See strategy/sea-scorpion-quarantine.json."
+     "n": 2,
+     "label": "A tiny trilobite",
+     "vo": "Level two: a trilobite, plodding in slow circles.",
+     "danger": 2,
+     "image_prompt": "A small grey trilobite seen from slightly above, its broad head shield and flattened oval segmented shell showing a central axial lobe and two side lobes, crawling over rippled shallow-sea sand; amber foreground fill and diffuse blue underwater light."
     },
     {
-      "id": "level_1_8-03",
-      "era": "Devonian",
-      "title": "Level 1 to 8 Ocean Armor in the Devonian — What Do You Wear? 🛡️",
-      "banner": "Pick your armor for the Devonian sea",
-      "hook_vo": "The Devonian sea at night. Choose your armor.",
-      "art_direction": "Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Soft sponge wrap",
-          "vo": "Level one: a soft sponge. Cosy, useless.",
-          "danger": 1,
-          "image_prompt": "A broad irregular ochre-yellow marine sponge spreads over a small grey stone shelf on the seafloor, a low asymmetrical mound with thousands of natural small pores and soft uneven folds. The sponge occupies the central half of the frame. A wide soft amber shaft illuminates its textured surface and nearby pale sediment clearly. Navy Devonian seawater fills the upper background with tiny suspended particles. Macro natural-history photograph of a simple primitive porous marine animal, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Brachiopod shell",
-          "vo": "Level two: a shell with two neat halves.",
-          "danger": 2,
-          "image_prompt": "A ribbed brachiopod shell lying open on dark sediment, gold light catching its ridges, tiny particles drifting through the navy water, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Trilobite shield",
-          "vo": "Level three: a spiky trilobite shield.",
-          "danger": 3,
-          "image_prompt": "An oblique overhead view of a spiny Devonian trilobite resting flat on a dark stone ledge. Its wide crescent cephalon shield, narrow raised axial lobe, two broad pleural lobes and many curved transverse thoracic segments are clearly visible from above. Paired tiny lateral compound eyes sit on the head shield. Short defensive spines fringe the shell. The mouth and walking limbs are hidden underneath its body. An anatomically coherent fossil arthropod, detailed natural shell texture, warm gold rim light from one shaft, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Coiled ammonoid shell",
-          "vo": "Level four: a coiled ammonoid shell.",
-          "danger": 4,
-          "image_prompt": "A single empty Devonian ammonoid shell resting on dark pebbles, close side view with the whole tightly coiled flat spiral clearly visible. Its round disk-shaped cream shell has a natural central spiral and a few subtle brown bands around the whorls, with one small empty opening at the lower right edge. Warm gold side light reveals the entire shell and nearby sediment clearly. Tiny suspended particles in inky navy open Devonian seawater at night, macro natural-history view, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Straight nautiloid cone",
-          "vo": "Level five: a nautiloid cone, long as a spear.",
-          "danger": 5,
-          "image_prompt": "A single long empty straight nautiloid shell rests diagonally across dark pale pebbles on a Devonian seafloor. The shell is one narrow smooth gently tapered ivory cone, thick at the open lower-left end and pointed at the upper-right tip. Fine natural growth rings cross its surface. The large opening is hollow and empty. Warm gold side light reveals the entire straight shell clearly against inky navy water, macro natural-history illustration, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Shark skin",
-          "vo": "Level six: shark skin, without heavy armor.",
-          "danger": 6,
-          "image_prompt": "A side view of the early shark Cladoselache swimming horizontally above a Devonian seafloor, streamlined dark slate body with mostly smooth skin, broad pectoral fins and a deeply forked tail. Its head is a simple natural shark profile without bony armor plates. A wide soft amber shaft reveals the flank and fin clearly, navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Dunkleosteus head plates",
-          "vo": "Level seven: solid bone plates across the head.",
-          "danger": 7,
-          "image_prompt": "A single ancient Devonian placoderm fish swimming horizontally from right to left above pale seafloor sediment, clear side profile of the complete fish. Its wide blunt head and front trunk are enclosed in only a few large smooth grey dermal bone plates with long seams. A narrow dark grey unarmored hindbody tapers back into a vertical fish tail fin, with small pectoral fins projecting at the sides. The closed mouth forms a short blunt bony beak beneath the rounded head shield. Warm gold side light clearly reveals the head plates and solid fish body, inky navy water, macro natural-history reconstruction, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Bubble coat",
-          "vo": "Level eight: just bubbles. No armor at all.",
-          "danger": 8,
-          "image_prompt": "A loose cluster of large transparent air bubbles rises slowly above a dark rocky Devonian seafloor. Each round bubble has a clear empty interior and a thin silver-gold reflective rim. The bubbles overlap naturally but remain separate spheres, with navy water visible through them. Warm gold side light illuminates the bubbles and pale sediment below clearly, macro natural-history photograph, inky navy open water at night, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
-        }
-      ],
-      "answer_n": 7,
-      "verdict_vo": "Real answer: number 7, because this fish wore bony armor plates across its skull and front half. Probably your toughest coat.",
-      "fact": {
-        "text": "Dunkleosteus was covered in dermal bone forming armor plates across its skull and the front half of its trunk.",
-        "source_sentence": "Dunkleosteus was covered in dermal bone forming armor plates across its skull and front half of its trunk.",
-        "wiki_title": "Dunkleosteus",
-        "wiki_revid": 1374991596
-      },
-      "description": "The Devonian ocean was the age of armored fish, and the heaviest suit belonged to a predator. Eight kinds of protection, from a sponge to solid bone, and the one worth borrowing.",
-      "tags": [
-        "Devonian",
-        "Dunkleosteus",
-        "armored fish",
-        "placoderm",
-        "ancient ocean",
-        "prehistoric life",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "The Ocean Before the Dinosaurs",
-      "end_image": "o7"
+     "n": 3,
+     "label": "A drifting jelly",
+     "vo": "Level three: a jelly, floating right past you.",
+     "danger": 3,
+     "image_prompt": "A translucent bell jellyfish drifting at eye level above a Cambrian seabed, trailing thin tentacles, lit from inside by a soft amber glow, silver moonlight above, cold turquoise moonlit shallows, wide-angle lens at seabed level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
-      "id": "level_1_8-04",
-      "era": "Carboniferous",
-      "title": "Giant Bug Tent-Mate, Level 1 to 8 — Who Shares Your Swamp? 🪲",
-      "banner": "Which giant bug shares your shelter?",
-      "hook_vo": "One humid night in the coal forest. Pick a bunkmate.",
-      "art_direction": "Steamy emerald coal swamp, green fog, close macro POV from a mossy hollow, one ember-orange glow.",
-      "options": [
-        {
-          "n": 1,
-          "label": "A tiny springtail",
-          "vo": "Level one: a springtail. Barely there.",
-          "danger": 1,
-          "image_prompt": "Macro view of a single tiny springtail on a wet moss cushion inside a hollow log, dew beads, an ember-orange glow behind it, green fog, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "A roach ancestor",
-          "vo": "Level two: an early cockroach, very at home.",
-          "danger": 2,
-          "image_prompt": "A glossy brown early cockroach crawling along a damp bark ledge in a giant hollow lycopod trunk, ember-orange light on its wings, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "A long-legged harvestman",
-          "vo": "Level three: a harvestman, all legs.",
-          "danger": 3,
-          "image_prompt": "A single harvestman arachnid seen from a slightly elevated oblique side view, standing on a wet fern frond in a mossy hollow. One compact rounded oval body, no narrow waist. Exactly EIGHT very long slender jointed walking legs: FOUR legs emerge separately from each side of the compact body, each complete leg clearly visible from body attachment through joints to its tip on the fern. Spread all eight legs apart so none overlap or hide behind the body. Tiny central eye turret, small mouthparts, realistic delicate harvestman anatomy. Soft emerald coal-swamp mist in the background, warm amber rim light, sharp readable macro nature-documentary composition, photoreal painterly, vertical composition."
-        },
-        {
-          "n": 4,
-          "label": "Arthropleura",
-          "vo": "Level four: a huge millipede. Calm and quiet.",
-          "danger": 4,
-          "image_prompt": "A giant Arthropleura millipede curled along the floor of a vast hollow lycopod trunk, broad armored segments and many legs, ember-orange glow on its plates, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Giant mayfly",
-          "vo": "Level five: a giant mayfly at the opening.",
-          "danger": 5,
-          "image_prompt": "A big Carboniferous mayfly clinging at the mouth of a hollow trunk, long tail filaments, wide veined wings lit ember-orange, swamp fog outside, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Meganeura",
-          "vo": "Level six: Meganeura, a dragonfly wide as a hawk.",
-          "danger": 6,
-          "image_prompt": "Meganeura griffinfly hovering at the opening of a mossy hollow, huge veined wings spread, ember-orange light through the membranes, green fog, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Giant scorpion",
-          "vo": "Level seven: a giant scorpion under the moss.",
-          "danger": 7,
-          "image_prompt": "A large Carboniferous scorpion emerging from under a moss mat, pincers open and tail raised, ember-orange highlights on its shell, close POV, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Hungry swamp amphibian",
-          "vo": "Level eight: a swamp predator, mouth first.",
-          "danger": 8,
-          "image_prompt": "A large crocodile-shaped Carboniferous amphibian, Eogyrinus, sliding out of black swamp water toward the lens, wide jaws parting, ember-orange reflections, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 4,
-      "verdict_vo": "Real answer: number 4, because reported woody gut contents suggest Arthropleura may have eaten plants. Its diet is still uncertain.",
-      "fact": {
-        "text": "Fossil gut contents of Arthropleura were a mix of woody plant material, suggesting it was a herbivore.",
-        "source_sentence": "A. moyseyi was suggested to preserve the original gut contents, a mix of woody plant material, suggesting it was an herbivore.",
-        "wiki_title": "Arthropleura",
-        "wiki_revid": 1373001873
-      },
-      "description": "Three hundred million years ago the coal swamps were full of giant arthropods. Eight possible roommates for one night, from a speck to a swamp predator, and the giant that was probably safest to sleep beside.",
-      "tags": [
-        "Carboniferous",
-        "giant insects",
-        "Arthropleura",
-        "Meganeura",
-        "coal forest",
-        "prehistoric life",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "Giant Insects of the Coal Forests"
+     "n": 4,
+     "label": "Five-eyed Opabinia",
+     "vo": "Level four: Opabinia. Five eyes and a claw nose.",
+     "danger": 4,
+     "image_prompt": "One Opabinia swimming horizontally from left to right just above a muddy seabed. Dorsal three-quarter view of the whole elongated body with side swimming lobes, five short-stalked eyes clustered on the head, and one long flexible proboscis reaching forward to a small terminal claw; amber foreground fill in turquoise water."
     },
     {
-      "id": "level_1_8-05",
-      "era": "Permian",
-      "title": "Level 1 to 8 Pangaea Guard Beast — Who Watches Your Night? 🌙",
-      "banner": "Which Permian beast guards your night?",
-      "hook_vo": "Pangaea, after dark. Pick something to stand guard.",
-      "art_direction": "Rust-red floodplain under a dusty violet sky, low 24mm lens in dry grass, one glowing ember of a lightning fire.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Burrowing Diictodon",
-          "vo": "Level one: a tiny grazer at its burrow.",
-          "danger": 1,
-          "image_prompt": "A small tusked Diictodon peeking from a spiral burrow in red mud, whiskered snout, glow of a distant ember lighting its face, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Tree-climbing Suminia",
-          "vo": "Level two: Suminia, clinging to a branch.",
-          "danger": 2,
-          "image_prompt": "A slender Suminia gripping a conifer branch with long toes and a curling tail, violet sky behind, an ember glow from below, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Tusked Dicynodon",
-          "vo": "Level three: a beak and two great tusks.",
-          "danger": 3,
-          "image_prompt": "A stout Dicynodon grazing horsetails at night, horny beak and two short tusks, ember light on its wrinkled hide, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Bumpy Scutosaurus",
-          "vo": "Level four: a walking tank of bony bumps.",
-          "danger": 4,
-          "image_prompt": "A heavy Scutosaurus standing in dry grass, broad body studded with bony knobs and a spiky cheek frill, warm ember glow along one flank, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Moschorhinus",
-          "vo": "Level five: short snout, with a big bite.",
-          "danger": 5,
-          "image_prompt": "A muscular Moschorhinus therocephalian prowling at the edge of a riverbank, blunt powerful snout, ember light in its eyes, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Rubidgea",
-          "vo": "Level six: a massive skull, built for biting.",
-          "danger": 6,
-          "image_prompt": "A Rubidgea gorgonopsian with a massive broad skull and long sabre canines standing on a red ridge, ember glow, violet dust in the air, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Young Inostrancevia",
-          "vo": "Level seven: a young hunter, still learning.",
-          "danger": 7,
-          "image_prompt": "A young Inostrancevia stalking through dry grass, lean body, long sabre canines showing, ember-lit from one side, low lens, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Adult Inostrancevia",
-          "vo": "Level eight: the adult hunter with huge canines.",
-          "danger": 8,
-          "image_prompt": "A full-grown Inostrancevia standing over the lens in the dark, huge sabre canines bared, ember glow under its jaw, rust-red dust swirling, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 8,
-      "verdict_vo": "Real answer: number 8, because this animal's longest canines could reach 15 centimetres. Probably your best bet for keeping everything else away.",
-      "fact": {
-        "text": "Inostrancevia, a gorgonopsian, had large canines, the longest of which could reach 15 cm.",
-        "source_sentence": "It also has very advanced dentition, possessing large canines, the longest of which can reach 15 cm (5.9 in) and which may have been used to shear the skin of prey.",
-        "wiki_title": "Inostrancevia",
-        "wiki_revid": 1381178944
-      },
-      "description": "Long before dinosaurs, the top predators on Pangaea were sabre-toothed relatives of mammals. Eight Permian animals, from a shy burrower to the biggest gorgonopsian of all, and which one would really keep the night quiet.",
-      "tags": [
-        "Pangaea",
-        "Permian",
-        "gorgonopsian",
-        "Inostrancevia",
-        "before the dinosaurs",
-        "prehistoric life",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
+     "n": 5,
+     "label": "Spiny Hallucigenia",
+     "vo": "Level five: Hallucigenia, spines up, legs down.",
+     "danger": 5,
+     "image_prompt": "One small Hallucigenia viewed entirely from the side, its long slender cylindrical trunk held horizontally over a sponge, paired conical spines pointing upward along its back and soft legs walking beneath the body; small rounded head at the left, amber foreground fill in turquoise water."
     },
     {
-      "id": "level_1_8-06",
-      "era": "Triassic",
-      "title": "Pangaea After the Great Dying — Level 1 to 8 Pet: Who Survives? 🌋",
-      "banner": "Which pet survives the Great Dying?",
-      "hook_vo": "The worst extinction ever. Pick the pet that lives.",
-      "art_direction": "Ash-grey hothouse badlands, hazy amber sun disc low on the horizon, 35mm documentary lens, heat shimmer.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Little Procolophon",
-          "vo": "Level one: a small animal with spiky cheeks.",
-          "danger": 1,
-          "image_prompt": "A small stocky Procolophon reptile sitting on cracked grey mud, spiky cheek horns, the low amber sun glowing behind it, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Tusked Lystrosaurus",
-          "vo": "Level two: a grazing animal with two tusks.",
-          "danger": 2,
-          "image_prompt": "A stocky Lystrosaurus with a horny beak and two short tusks chewing horsetail stems by a shrinking pool, amber sun disc behind, heat shimmer, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Burrowing Thrinaxodon",
-          "vo": "Level three: a little hunter in a burrow.",
-          "danger": 3,
-          "image_prompt": "A furry Thrinaxodon curled asleep at the end of a dirt burrow, cross-section view, amber light spilling in from the entrance, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Quick Prolacerta",
-          "vo": "Level four: a quick, twitchy little reptile.",
-          "danger": 4,
-          "image_prompt": "A slim long-necked Prolacerta darting over grey stones, mouth open, amber sunlight catching its scales through the haze, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Moschorhinus",
-          "vo": "Level five: a hungry survivor, with sharp teeth.",
-          "danger": 5,
-          "image_prompt": "A heavy-jawed Moschorhinus pacing along a dry riverbed in hazy amber light, ribs showing, ash drifting in the air, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Proterosuchus",
-          "vo": "Level six: a hooked snout in the shallows.",
-          "danger": 6,
-          "image_prompt": "A sprawling Proterosuchus lying in a muddy shallow with its hooked upper jaw and rows of teeth, amber sun reflected in the water, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Erythrosuchus",
-          "vo": "Level seven: a brute with a massive head.",
-          "danger": 7,
-          "image_prompt": "A huge big-headed Erythrosuchus striding across the badlands toward the lens, deep skull and curved teeth, amber backlight and dust, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "A last gorgonopsian",
-          "vo": "Level eight: the last gorgonopsian. It won't make it.",
-          "danger": 8,
-          "image_prompt": "A gaunt gorgonopsian silhouetted on a ridge of grey ash beneath a red sun, sabre canines, smoke rising from distant volcanic fissures, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 2,
-      "verdict_vo": "Real answer: number 2, because Lystrosaurus survived Earth's worst extinction and left the most common land fossils of the Early Triassic.",
-      "fact": {
-        "text": "Lystrosaurus survived the Permian–Triassic extinction, Earth's most severe, and its fossils are by far the most common land vertebrate fossils in Early Triassic beds worldwide.",
-        "source_sentence": "Lystrosaurus survived the Permian-Triassic extinction event (Earth's most severe) 252 million years ago and thrived in the immediate aftermath; its fossils are, by far, the most common terrestrial vertebrate fossils in Early Triassic beds around the world, such as in the Lystrosaurus Assemblage Zone in South Africa.",
-        "wiki_title": "Lystrosaurus",
-        "wiki_revid": 1369641214
-      },
-      "description": "About 252 million years ago most life on Earth disappeared. Eight animals from the world right after, ranked from harmless to hungry, and the unlikely survivor that ended up almost everywhere on Pangaea.",
-      "tags": [
-        "Great Dying",
-        "mass extinction",
-        "Lystrosaurus",
-        "Pangaea",
-        "Triassic",
-        "prehistoric life",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
+     "n": 6,
+     "label": "Scale-armored Wiwaxia",
+     "vo": "Level six: Wiwaxia, a slug wearing blades.",
+     "danger": 6,
+     "image_prompt": "One low oval Wiwaxia gliding over a stone, viewed from above and beside its overlapping ribbed leaf-shaped armor scales and two rows of long dorsal spines; the body stays low to the rock, amber foreground fill in turquoise water."
     },
     {
-      "id": "level_1_8-07",
-      "era": "Jurassic",
-      "title": "Level 1 to 8 Dinosaur Ride Home — Which Back Do You Climb? 🦕",
-      "banner": "Which Jurassic dinosaur do you ride home?",
-      "hook_vo": "The Jurassic, miles from shelter. Pick a ride.",
-      "art_direction": "Silver-blue moonlit conifer plains, long telephoto from ground level, one lantern-yellow glow of a distant wildfire.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Tiny Fruitadens",
-          "vo": "Level one: a tiny dinosaur, quick and nimble.",
-          "danger": 1,
-          "image_prompt": "A tiny Fruitadens dinosaur standing on a fallen conifer branch, long tail and small beak, a lantern-yellow wildfire glow far behind it, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Speedy Dryosaurus",
-          "vo": "Level two: Dryosaurus, fast and nervous.",
-          "danger": 2,
-          "image_prompt": "A slender Dryosaurus mid-stride across moonlit ferns, long legs and stiff tail, yellow glow from a distant fire on the horizon, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Camptosaurus",
-          "vo": "Level three: a slow and sturdy plant eater.",
-          "danger": 3,
-          "image_prompt": "A sturdy Camptosaurus grazing on low cycads in silver moonlight, heavy hindquarters, warm yellow fire glow far off, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Stegosaurus",
-          "vo": "Level four: Stegosaurus. Mind the plates and spikes.",
-          "danger": 4,
-          "image_prompt": "Rear three-quarter view of a Stegosaurus walking away across the plain, tall back plates and four tail spikes against the moon, distant yellow fire glow, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Diplodocus",
-          "vo": "Level five: Diplodocus, with a whip of a tail.",
-          "danger": 5,
-          "image_prompt": "A Diplodocus stretching its long horizontal neck over a river, its whip-thin tail curling behind, silver moonlight, warm glow on the water, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Brachiosaurus",
-          "vo": "Level six: Brachiosaurus. Tall as a building.",
-          "danger": 5,
-          "image_prompt": "Looking straight up the towering front legs and raised neck of a Brachiosaurus, its small head among conifer tops, moon behind, a yellow fire glow on its chest, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Ceratosaurus",
-          "vo": "Level seven: a horn and a bad mood.",
-          "danger": 7,
-          "image_prompt": "A Ceratosaurus with a nose horn and bony ridges stalking through ferns toward the lens, moonlit, yellow fire glow on its teeth, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Allosaurus",
-          "vo": "Level eight: Allosaurus. You are the snack.",
-          "danger": 8,
-          "image_prompt": "An Allosaurus lunging at low angle straight toward the lens, jaws open, eyebrow crests catching yellow wildfire light, silver moon behind, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 6,
-      "verdict_vo": "Real answer: number 6, because Brachiosaurus may have stood 12–13 metres tall overall. Our imaginary ride picks it for that towering size.",
-      "fact": {
-        "text": "The height of Brachiosaurus has been estimated at 9.4 m and at 12–13 m.",
-        "source_sentence": "The length of Brachiosaurus has been estimated at 20–22 meters (66–72 ft) and 18 meters (59 ft), and its height at 9.4 meters (30+3⁄4 ft) and 12–13 meters (39–43 ft).",
-        "wiki_title": "Brachiosaurus",
-        "wiki_revid": 1376541751
-      },
-      "description": "The Late Jurassic plains held some of the tallest animals that ever walked. Eight dinosaurs you could try to ride home after dark, from tiny to carnivore, and which back would actually keep you out of reach.",
-      "tags": [
-        "Jurassic",
-        "dinosaurs",
-        "Brachiosaurus",
-        "sauropod",
-        "Allosaurus",
-        "prehistoric life",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "What If Dinosaurs Never Went Extinct?"
+     "n": 7,
+     "label": "Arrow worm swarm",
+     "vo": "Level seven: a hunting swarm of arrow worms.",
+     "danger": 7,
+     "image_prompt": "A few complete transparent arrow worms swimming horizontally close to the lens, long unsegmented bodies with small lateral fins and tail fins, short hooked grasping spines clustered immediately around each mouth. A larger swarm recedes softly behind them; amber foreground fill in turquoise water."
     },
     {
-      "id": "level_1_8-08",
-      "era": "Jurassic",
-      "title": "Jurassic Ocean Night Ride: Level 1 to 8 — Who Sees in the Dark? 🌊",
-      "banner": "Which sea reptile sees in the dark?",
-      "hook_vo": "Midnight in a Jurassic sea. Pick a ride.",
-      "art_direction": "Deep cobalt water with green moonbeam shafts, fisheye lens close to the creature, one warm glow of drifting bioluminescent plankton.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Ammonite shell",
-          "vo": "Level one: an ammonite. Slow, but it floats.",
-          "danger": 1,
-          "image_prompt": "A large ribbed ammonite hovering in cobalt water, tentacles trailing, warm glowing plankton clustered around its shell opening, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Belemnite school",
-          "vo": "Level two: a school of small darting swimmers.",
-          "danger": 2,
-          "image_prompt": "A tight school of torpedo-shaped belemnites streaking past the lens, ink-dark eyes, warm plankton glow sparkling between them, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Leedsichthys",
-          "vo": "Level three: a giant, gentle filter feeder.",
-          "danger": 3,
-          "image_prompt": "A colossal Leedsichthys fish gliding with its huge mouth open to filter plankton, warm glowing plankton streaming into it, green moon shafts above, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Long-necked Cryptoclidus",
-          "vo": "Level four: a long neck and four flippers.",
-          "danger": 4,
-          "image_prompt": "A Cryptoclidus plesiosaur rowing with four flippers, long neck stretched ahead, interlocking needle teeth, warm plankton glow along its body, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Ophthalmosaurus",
-          "vo": "Level five: eyes the size of dinner plates.",
-          "danger": 5,
-          "image_prompt": "Close fisheye view of an Ophthalmosaurus ichthyosaur gliding through dark water, its enormous eye ringed by a bony scleral ring, warm plankton glow reflected in the pupil, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Metriorhynchus",
-          "vo": "Level six: a crocodile with a tail fin.",
-          "danger": 6,
-          "image_prompt": "A sleek Metriorhynchus sea crocodile with flippers and a fish tail fin twisting through cobalt water, narrow jaws, plankton glow, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Simolestes",
-          "vo": "Level seven: a powerful hunter with short neck.",
-          "danger": 7,
-          "image_prompt": "A Simolestes pliosaur with a deep broad skull cruising out of green moon shafts, flippers spread, warm plankton glow on its teeth, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Liopleurodon",
-          "vo": "Level eight: huge jaws. Keep well away.",
-          "danger": 8,
-          "image_prompt": "A Liopleurodon rising from the deep straight toward the lens, massive jaws parted, four powerful flippers, warm plankton glow flaring around its snout, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 5,
-      "verdict_vo": "Real answer: number 5, because this animal had eyes about 22 centimetres across. Your best bet for a ride in dark water.",
-      "fact": {
-        "text": "The eyes of Ophthalmosaurus measured 22–23 cm in diameter at the outer margin of the bony scleral ring.",
-        "source_sentence": "The proportionally large eyes of Ophthalmosaurus measured 22–23 centimetres (8.7–9.1 in) in diameter at the outer margin of the bony scleral ring, while the scleral aperture itself measured 10 centimetres (3.9 in) in diameter.",
-        "wiki_title": "Ophthalmosaurus",
-        "wiki_revid": 1376972610
-      },
-      "description": "In the Jurassic seas, reptiles had taken over the oceans. Eight swimmers you could hitch a midnight ride on, from an ammonite to a pliosaur, and the one with eyes built for the dark.",
-      "tags": [
-        "Jurassic",
-        "sea reptiles",
-        "ichthyosaur",
-        "Ophthalmosaurus",
-        "Liopleurodon",
-        "ancient ocean",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "Sea Monsters of the Jurassic"
-    },
-    {
-      "id": "level_1_8-09",
-      "era": "Cretaceous",
-      "title": "Level 1 to 8 Dinosaur Pet — Which One Fits Your Cabin? 🪶",
-      "banner": "Which feathered dinosaur do you keep?",
-      "hook_vo": "A feathered forest at dusk. Pick a pet.",
-      "art_direction": "Misty lakeside forest in soft lilac dusk, 85mm portrait lens with shallow depth of field, one honey-gold lamp glow.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Microraptor",
-          "vo": "Level one: Microraptor, four wings, lighter than a cat.",
-          "danger": 1,
-          "image_prompt": "A Microraptor perched on a ginkgo branch with four feathered wings half spread, glossy black iridescent plumage, a honey-gold glow on its feathers, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Sinosauropteryx",
-          "vo": "Level two: Sinosauropteryx, fuzzy, with a striped tail.",
-          "danger": 2,
-          "image_prompt": "A small fuzzy Sinosauropteryx with a ginger and white banded tail sniffing at the ground by a lake, honey-gold glow, lilac mist, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Psittacosaurus",
-          "vo": "Level three: Psittacosaurus, parrot beak and tail bristles.",
-          "danger": 3,
-          "image_prompt": "A Psittacosaurus sitting upright near ferns, parrot beak, bristles on its tail, honey-gold light catching its scales, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Beipiaosaurus",
-          "vo": "Level four: Beipiaosaurus, a shaggy plant-eater with claws.",
-          "danger": 4,
-          "image_prompt": "A shaggy pot-bellied Beipiaosaurus stripping leaves with long curved claws, coat of long filaments, honey-gold rim light, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Sinornithosaurus",
-          "vo": "Level five: Sinornithosaurus, a feathered raptor.",
-          "danger": 5,
-          "image_prompt": "A feathered Sinornithosaurus crouched on a mossy log, sickle claw raised, honey-gold glow, lake mist behind, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Dilong",
-          "vo": "Level six: Dilong, a small feathered tyrant.",
-          "danger": 6,
-          "image_prompt": "A fluffy Dilong tyrannosauroid stalking along the lakeshore, long jaws, honey-gold light from the side, soft lilac mist, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Young Yutyrannus",
-          "vo": "Level seven: a young Yutyrannus, already heavy.",
-          "danger": 7,
-          "image_prompt": "A juvenile Yutyrannus with shaggy feathers pushing through ferns, head crest, honey-gold light on its eyes, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Adult Yutyrannus",
-          "vo": "Level eight: adult Yutyrannus. Feathers do not mean friendly.",
-          "danger": 8,
-          "image_prompt": "A huge adult Yutyrannus covered in long shaggy feathers looming over the lens among conifers, jaws open, honey-gold glow, lilac fog, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 1,
-      "verdict_vo": "Real answer: number 1, because Microraptor was among the smallest known dinosaurs, weighing about 0.5 to 1.4 kilos. Easiest keeper.",
-      "fact": {
-        "text": "Microraptor was among the smallest known non-avian dinosaurs, weighing about 0.5–1.4 kg.",
-        "source_sentence": "Microraptor was among the smallest-known non-avian dinosaurs, with the holotype of M. gui measuring 77 centimetres (2.53 ft) in length, 88–94 centimetres (2.89–3.08 ft) in wingspan and weighing 0.5–1.4 kilograms (1.1–3.1 lb).",
-        "wiki_title": "Microraptor",
-        "wiki_revid": 1380973408
-      },
-      "description": "The forests of Early Cretaceous China were full of feathered dinosaurs, from glider-sized to giant. Eight you might try to keep, ranked by how much trouble they would be, and the one small enough to manage.",
-      "tags": [
-        "feathered dinosaurs",
-        "Cretaceous",
-        "Microraptor",
-        "Yutyrannus",
-        "dinosaurs",
-        "prehistoric life",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "What If Dinosaurs Never Went Extinct?"
-    },
-    {
-      "id": "level_1_8-10",
-      "era": "Cretaceous",
-      "title": "Dinosaur-Era Sky Ride, Level 1 to 8 — Who Can Carry You Home? 🪽",
-      "banner": "Which flier could carry you home?",
-      "hook_vo": "Stuck on a Cretaceous coast. Pick a flying ride.",
-      "art_direction": "Vast peach-and-slate storm sky over a coastal floodplain, ultra-wide lens from cliff height, one molten orange sun break.",
-      "options": [
-        {
-          "n": 1,
-          "label": "A dragonfly",
-          "vo": "Level one: a dragonfly. Ambitious.",
-          "danger": 1,
-          "image_prompt": "A single dragonfly hovering over a reed bed at the edge of a vast floodplain, a molten orange break in the storm clouds behind it, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Ichthyornis seabird",
-          "vo": "Level two: Ichthyornis, a toothed seabird.",
-          "danger": 1,
-          "image_prompt": "An Ichthyornis seabird with a toothed beak skimming over waves, wings angled, molten orange sun break lighting its feathers, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Nyctosaurus",
-          "vo": "Level three: Nyctosaurus, a tall-crested glider.",
-          "danger": 2,
-          "image_prompt": "A Nyctosaurus pterosaur gliding along a cliff with a tall antler-shaped head crest, thin wing membranes glowing orange in the sun break, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Pteranodon",
-          "vo": "Level four: Pteranodon, a long beak and swept crest.",
-          "danger": 3,
-          "image_prompt": "A Pteranodon soaring over the sea with a long toothless beak and swept-back crest, wing membranes backlit molten orange, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Quetzalcoatlus",
-          "vo": "Level five: Quetzalcoatlus, the giant of the sky.",
-          "danger": 5,
-          "image_prompt": "A giant Quetzalcoatlus taking off from a floodplain, enormous wings fully unfurled across the frame, long stiff neck, molten orange sun break behind, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Updraft in a storm",
-          "vo": "Level six: riding it straight into a thunderhead.",
-          "danger": 6,
-          "image_prompt": "A lone giant pterosaur climbing into a towering anvil thunderhead, lightning forking in slate clouds, a molten orange light inside the storm, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Hatzegopteryx",
-          "vo": "Level seven: Hatzegopteryx, the island heavyweight.",
-          "danger": 7,
-          "image_prompt": "A massive Hatzegopteryx standing on an island ridge with a broad heavy skull and thick neck, wings folded, molten orange sky behind, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Hungry Hatzegopteryx",
-          "vo": "Level eight: Hatzegopteryx, and it is dinner time.",
-          "danger": 8,
-          "image_prompt": "Low POV as a Hatzegopteryx strides toward the lens with its huge beak lowered, wings folded like walking crutches, molten orange storm light, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 5,
-      "verdict_vo": "Real answer: number 5, because Quetzalcoatlus had a wingspan of about 10 to 11 metres. Probably the only one big enough.",
-      "fact": {
-        "text": "Recent estimates put the wingspan of Quetzalcoatlus at 10–11 m.",
-        "source_sentence": "More recent estimates based on greater knowledge of azhdarchid proportions place its wingspan at 10–11 m (33–36 ft).",
-        "wiki_title": "Quetzalcoatlus",
-        "wiki_revid": 1374704497
-      },
-      "description": "In the last age of the dinosaurs, the biggest fliers in Earth's history crossed the skies. Eight things you might try to fly home on, from a dragonfly to an island giant, and the one with wings wide enough.",
-      "tags": [
-        "pterosaur",
-        "Quetzalcoatlus",
-        "Cretaceous",
-        "flying reptiles",
-        "dinosaur era",
-        "prehistoric life",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
-    },
-    {
-      "id": "level_1_8-11",
-      "era": "Cretaceous",
-      "title": "Level 1 to 8 Dinosaur Armor — What Do You Wear Past a T. rex? 🦖",
-      "banner": "Pick armor before T. rex wakes",
-      "hook_vo": "A T. rex is asleep nearby. Pick your armor.",
-      "art_direction": "Smoky bronze floodplain at sunrise, gritty 50mm handheld look, one low gold sun flare.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Fern-leaf cloak",
-          "vo": "Level one: a cloak of fern leaves. Hopeful.",
-          "danger": 1,
-          "image_prompt": "A heap of broad fern fronds lying on a riverbank at dawn, dew on the leaves, a low gold sun flare through smoke, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Turtle shell",
-          "vo": "Level two: a turtle shell. Snug fit.",
-          "danger": 2,
-          "image_prompt": "An empty domed turtle shell resting on wet sand by a slow river, a low gold sunrise flare catching its scutes, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Crocodile scutes",
-          "vo": "Level three: crocodile scutes, bumpy and tough.",
-          "danger": 3,
-          "image_prompt": "Close detail of the ridged back scutes of a crocodilian basking at the river edge, bronze haze, gold sun flare, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Pachycephalosaurus dome",
-          "vo": "Level four: a Pachycephalosaurus dome, a thick bone helmet.",
-          "danger": 4,
-          "image_prompt": "A Pachycephalosaurus lowering its thick bony domed skull ringed with knobs, gold sunrise flare behind it, smoky floodplain, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Triceratops frill",
-          "vo": "Level five: a Triceratops frill, a shield with horns.",
-          "danger": 5,
-          "image_prompt": "Front view of a Triceratops with its wide bony frill and three horns, standing in mist, low gold sun flare at its shoulder, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Edmontosaurus herd",
-          "vo": "Level six: hide inside an Edmontosaurus herd.",
-          "danger": 6,
-          "image_prompt": "A herd of duck-billed Edmontosaurus moving through smoky reeds at dawn, gold sun flare between their legs, low POV, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Ankylosaurus plates",
-          "vo": "Level seven: Ankylosaurus. Bone plates and a tail club.",
-          "danger": 7,
-          "image_prompt": "Close detail of an Ankylosaurus back covered in rows of bony osteoderm plates, its heavy tail club resting on the ground, gold sunrise flare, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Smell of fresh meat",
-          "vo": "Level eight: smelling like breakfast. Wrong choice.",
-          "danger": 8,
-          "image_prompt": "A Tyrannosaurus rex waking in smoky reeds and turning its huge head toward the lens, nostrils flared, gold sun flare across its teeth, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 7,
-      "verdict_vo": "Real answer: number 7, because Ankylosaurus was covered in bony osteoderm plates and carried a large tail club. Best suit around.",
-      "fact": {
-        "text": "Ankylosaurus was covered in armor plates, or osteoderms, and had a large club on the end of its tail.",
-        "source_sentence": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
-        "wiki_title": "Ankylosaurus",
-        "wiki_revid": 1369993132
-      },
-      "description": "At the end of the Cretaceous, the most armored dinosaur shared its floodplain with T. rex. Eight ways to protect yourself before the predator wakes up, and the one that actually evolved for the job.",
-      "tags": [
-        "T. rex",
-        "Ankylosaurus",
-        "dinosaur armor",
-        "Cretaceous",
-        "dinosaurs",
-        "Hell Creek",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
-    },
-    {
-      "id": "level_1_8-12",
-      "era": "Cretaceous",
-      "title": "Level 1 to 8 Dinosaur Nest Sitter — Who Keeps Your Egg Warm? 🥚",
-      "banner": "Who should sit on your egg?",
-      "hook_vo": "One dinosaur egg. One cold desert night. Pick a sitter.",
-      "art_direction": "Pale apricot Gobi dunes under a star-filled sky, high-angle 28mm lens, one warm sandstone glow from below.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Warm dune sand",
-          "vo": "Level one: bury it in warm sand.",
-          "danger": 1,
-          "image_prompt": "A single long oval dinosaur egg half buried in a ripple of apricot sand, starfield above, a warm sandstone glow rising from the dune, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Tiny Shuvuuia",
-          "vo": "Level two: Shuvuuia, small and big-eyed.",
-          "danger": 2,
-          "image_prompt": "A tiny feathered Shuvuuia with big night eyes and short stubby forelimbs standing beside an egg on the sand, warm glow, starlight, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Protoceratops parent",
-          "vo": "Level three: a Protoceratops, beaked and frilled.",
-          "danger": 3,
-          "image_prompt": "A Protoceratops with a short frill and parrot beak lying next to a nest scrape in the sand, warm sandstone glow, stars above, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Citipati",
-          "vo": "Level four: Citipati, a feathered nest sitter.",
-          "danger": 4,
-          "image_prompt": "A feathered Citipati crouched over a ring-shaped nest of elongated eggs, feathered forelimbs spread around the edge, warm glow, starry sky, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Pinacosaurus",
-          "vo": "Level five: Pinacosaurus, armored and grumpy.",
-          "danger": 5,
-          "image_prompt": "A Pinacosaurus ankylosaur resting in a sandy hollow, back studded with bony plates, tail club lying beside an egg, warm glow, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Velociraptor",
-          "vo": "Level six: Velociraptor. It wants the egg.",
-          "danger": 6,
-          "image_prompt": "A feathered Velociraptor creeping over a dune crest toward a nest, sickle claw raised, eyes catching a warm glow, starfield, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Young Tarbosaurus",
-          "vo": "Level seven: a young Tarbosaurus, curious and hungry.",
-          "danger": 7,
-          "image_prompt": "A lanky juvenile Tarbosaurus sniffing at a nest among sand dunes at night, warm sandstone glow on its snout, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Adult Tarbosaurus",
-          "vo": "Level eight: adult Tarbosaurus. Goodbye, egg.",
-          "danger": 8,
-          "image_prompt": "A massive Tarbosaurus standing over a crushed nest, head lowered toward the lens, warm glow under its jaw, starfield behind, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 4,
-      "verdict_vo": "Real answer: number 4, because Citipati adults brooded their eggs, sitting over the nest with arms around its edge. A proven nest sitter.",
-      "fact": {
-        "text": "Citipati laid eggs in circular, mound-shaped nests, where adults brooded them by sitting over the nest and extending their arms around its perimeter.",
-        "source_sentence": "Citipati laid elongatoolithid eggs in circular, mound-shaped nests, where adults brooded them by sitting over the nest and extending their arms around its perimeter.",
-        "wiki_title": "Citipati",
-        "wiki_revid": 1375352513
-      },
-      "description": "Fossils from the Gobi Desert caught dinosaurs in the act of guarding their nests. Eight candidates to keep one egg warm through a cold desert night, and the one we know actually did it.",
-      "tags": [
-        "dinosaur eggs",
-        "Citipati",
-        "oviraptor",
-        "Gobi Desert",
-        "Cretaceous",
-        "dinosaurs",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "What If Dinosaurs Never Went Extinct?"
-    },
-    {
-      "id": "level_1_8-13",
-      "era": "Cretaceous",
-      "title": "Asteroid Hits Tonight — Level 1 to 8 Hideout: Where Do You Hide? ☄️",
-      "banner": "Asteroid tonight. Where do you hide?",
-      "hook_vo": "The asteroid hits tonight. You get one hideout.",
-      "art_direction": "Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Hollow log",
-          "vo": "Level one: inside a hollow log.",
-          "danger": 1,
-          "image_prompt": "Looking out from inside a hollow fallen log at a forest floor, an orange sky glowing through the opening, one bright streak overhead, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Riverbank burrow",
-          "vo": "Level two: a burrow in a muddy riverbank.",
-          "danger": 1,
-          "image_prompt": "A dark burrow entrance dug into a muddy riverbank just above the waterline, roots hanging, the river reflecting a bright streak in an orange sky, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "A deep cave",
-          "vo": "Level three: a deep cave in the hills.",
-          "danger": 2,
-          "image_prompt": "Deep inside a vast natural limestone cavern, rough rounded grey rock walls surround a winding passage descending into darkness. Jagged stalactites hang from the ceiling and uneven stalagmites rise from the wet stony floor. A small distant curved cave opening admits a diffuse warm amber glow that reflects in shallow pools. Photoreal painterly deep-time scene, vertical composition, wide-angle view of the natural underground chamber.",
-          "art_direction": "Subterranean limestone chamber with irregular mineral formations, wet dark rock and diffuse warm amber light from a distant natural opening."
-        },
-        {
-          "n": 4,
-          "label": "Top of a tall tree",
-          "vo": "Level four: the top of the tallest tree.",
-          "danger": 3,
-          "image_prompt": "View from the crown of a towering conifer above a dark forest canopy, a huge bright fireball streak crossing the orange sky, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "A boulder field",
-          "vo": "Level five: crouched among fallen boulders.",
-          "danger": 4,
-          "image_prompt": "A jumbled field of huge fallen limestone boulders at the foot of a bare cliff, deep narrow gaps between angular rocks in the foreground, sparse low ferns growing in crevices, distant Cretaceous conifers, a blood-orange sky with one thin bright meteor streak overhead, warm orange glow along the rock edges, low ground-level view, photoreal painterly deep-time scene, vertical composition"
-        },
-        {
-          "n": 6,
-          "label": "An open beach",
-          "vo": "Level six: on an open beach.",
-          "danger": 6,
-          "image_prompt": "An empty Cretaceous beach with the sea pulling far back from the shore, wet sand reflecting a bright orange fireball overhead, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "A cliff facing the sky",
-          "vo": "Level seven: a cliff top, facing the impact.",
-          "danger": 7,
-          "image_prompt": "A bare cliff top above a forest with the horizon flaring white and orange as a fireball descends, dust and wind rising, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Ground zero, Yucatán",
-          "vo": "Level eight: ground zero, the shallow Yucatán sea.",
-          "danger": 8,
-          "image_prompt": "An immense open shallow tropical sea above a submerged pale limestone platform, turquoise water and sand visible through the foreground ripples, water extending unbroken to a flat empty ocean horizon, a gigantic blinding orange-white asteroid descending above the far horizon and lighting the entire sea with a warm glow, photoreal painterly deep-time scene, vertical composition, open marine water in every direction"
-        }
-      ],
-      "answer_n": 2,
-      "verdict_vo": "Real answer: number 2, because crocodile relatives probably survived the impact thanks to life in water and burrowing. Dig in by the river.",
-      "fact": {
-        "text": "Crocodyliform survival across the K–Pg boundary may have resulted from their aquatic niche and ability to burrow, which reduced their exposure to the worst environmental effects.",
-        "source_sentence": "Crocodyliform survivability across the boundary may have resulted from their aquatic niche and ability to burrow, which reduced susceptibility to negative environmental effects at the boundary.",
-        "wiki_title": "Cretaceous–Paleogene extinction event",
-        "wiki_revid": 1379830492
-      },
-      "description": "Sixty-six million years ago an asteroid ended the age of dinosaurs in a single day. Eight places you might hide, from a log to ground zero, and the shelter that the survivors probably used.",
-      "tags": [
-        "asteroid",
-        "dinosaur extinction",
-        "Chicxulub",
-        "Cretaceous",
-        "mass extinction",
-        "dinosaurs",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?",
-      "end_image": "o1"
-    },
-    {
-      "id": "level_1_8-14",
-      "era": "Oligocene",
-      "title": "After the Dinosaurs: Level 1 to 8 Giant Mammal Ride 🦏",
-      "banner": "Which giant mammal carries you home?",
-      "hook_vo": "The dinosaurs are gone. Mammals got big. Pick a ride.",
-      "art_direction": "Dry golden Oligocene woodland at late afternoon, long shadows, 70mm lens with warm haze, one sun-bright gap in the canopy.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Early hare",
-          "vo": "Level one: an early hare. Comfortable, briefly.",
-          "danger": 1,
-          "image_prompt": "An early hare sitting upright in dry golden grass, long ears lit by a bright gap in the canopy, long shadows behind, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Three-toed horse",
-          "vo": "Level two: a small three-toed horse.",
-          "danger": 2,
-          "image_prompt": "A small three-toed horse with a short mane grazing in a golden woodland clearing, warm sunlight through the trees, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Hornless rhino",
-          "vo": "Level three: a hornless rhino, slow and steady.",
-          "danger": 3,
-          "image_prompt": "A stocky hornless early rhinoceros wading through a shallow stream in golden afternoon light, long shadows, warm haze, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Chalicothere",
-          "vo": "Level four: a chalicothere, walking on its knuckles.",
-          "danger": 4,
-          "image_prompt": "A chalicothere with long clawed forelimbs walking on its knuckles past a tree, pulling a branch down, warm golden light, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Paraceratherium calf",
-          "vo": "Level five: a Paraceratherium calf. Already huge.",
-          "danger": 5,
-          "image_prompt": "A Paraceratherium calf standing beside a woodland pool, long neck and sturdy legs, warm sun gap lighting its back, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Adult Paraceratherium",
-          "vo": "Level six: adult Paraceratherium, a giant hornless rhino.",
-          "danger": 5,
-          "image_prompt": "Looking up at an adult Paraceratherium browsing from treetops, its long neck stretched high, sun blazing through a canopy gap behind its head, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Entelodont",
-          "vo": "Level seven: an entelodont. A pig with a temper.",
-          "danger": 7,
-          "image_prompt": "A hulking entelodont with a massive bony jaw charging through dry grass toward the lens, dust kicking up, warm low sun, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Hyaenodon",
-          "vo": "Level eight: Hyaenodon, and it has noticed you.",
-          "danger": 8,
-          "image_prompt": "A Hyaenodon carnivore with a long heavy skull stepping out of shadow toward the lens, teeth bared, warm sun glint in its eye, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 6,
-      "verdict_vo": "Real answer: number 6, because Paraceratherium stood about 4.8 metres at the shoulder. Probably too tall for anything to reach you.",
-      "fact": {
-        "text": "Paraceratherium had a shoulder height of about 4.8 m and a length of about 7.4 m.",
-        "source_sentence": "The shoulder height was about 4.8 metres (15.7 feet), and the length about 7.4 metres (24.3 feet).",
-        "wiki_title": "Paraceratherium",
-        "wiki_revid": 1380422879
-      },
-      "description": "After the dinosaurs vanished, mammals grew into giants, and one hornless rhino became one of the largest land mammals ever. Eight rides through an Oligocene woodland, from a hare to a predator, and the one that stands above the rest.",
-      "tags": [
-        "Paraceratherium",
-        "ice age giants",
-        "prehistoric mammals",
-        "Oligocene",
-        "megafauna",
-        "after the dinosaurs",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "After the Dinosaurs: The Age of Giant Mammals"
-    },
-    {
-      "id": "level_1_8-15",
-      "era": "Miocene",
-      "title": "Megalodon's Menu, Level 1 to 8 — What Does It Hunt First? 🦈",
-      "banner": "What does megalodon hunt first?",
-      "hook_vo": "Megalodon is hungry. Rank the menu.",
-      "art_direction": "Sun-dappled aquamarine open ocean seen from below, wide lens looking up at the surface, one dazzling sun disc through the waves.",
-      "options": [
-        {
-          "n": 1,
-          "label": "Sardine shoal",
-          "vo": "Level one: a shoal of sardines. A snack.",
-          "danger": 1,
-          "image_prompt": "A silver shoal of small fish twisting into a ball beneath the surface, a dazzling sun disc through the waves above, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 2,
-          "label": "Squid",
-          "vo": "Level two: a squid. Too small to bother.",
-          "danger": 2,
-          "image_prompt": "A single squid jetting through bright aquamarine water, fins rippling, sunbeams streaming around it, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 3,
-          "label": "Sea turtle",
-          "vo": "Level three: a sea turtle, gliding at the surface.",
-          "danger": 3,
-          "image_prompt": "A sea turtle gliding just under the bright surface, flippers wide, a dazzling sun disc behind it, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 4,
-          "label": "Seal",
-          "vo": "Level four: a seal, quick and twisting.",
-          "danger": 4,
-          "image_prompt": "A sleek seal spiralling through sunbeams near the surface, bubbles trailing, aquamarine water, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Dolphin pod",
-          "vo": "Level five: a dolphin pod, fast and noisy.",
-          "danger": 5,
-          "image_prompt": "A pod of early dolphins racing in a line beneath the waves, sunlight dappling their backs, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 6,
-          "label": "Baleen whale",
-          "vo": "Level six: a baleen whale. The big meal.",
-          "danger": 6,
-          "image_prompt": "A small baleen whale swimming slowly near the surface, throat grooves visible, sun disc glowing through the waves above, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Another megalodon",
-          "vo": "Level seven: another megalodon. Rivals, not lunch.",
-          "danger": 7,
-          "image_prompt": "A huge megalodon shark circling in aquamarine water, mouth slightly open showing rows of broad serrated teeth, sunbeams on its back, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 8,
-          "label": "Livyatan",
-          "vo": "Level eight: Livyatan, a toothed whale rival.",
-          "danger": 8,
-          "image_prompt": "A Livyatan sperm whale with enormous teeth in both jaws charging through bright water toward the lens, sun dazzle behind, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        }
-      ],
-      "answer_n": 6,
-      "verdict_vo": "Real answer: number 6, because megalodon probably targeted large prey such as whales, seals and sea turtles. The whale is the biggest meal here.",
-      "fact": {
-        "text": "Megalodon probably targeted large prey, such as whales, seals and sea turtles.",
-        "source_sentence": "It probably targeted large prey, such as whales, seals and sea turtles.",
-        "wiki_title": "Megalodon",
-        "wiki_revid": 1380888665
-      },
-      "description": "The largest predatory shark ever lived in warm Miocene seas. Eight things on its menu, from small fish to a toothed whale rival, and the meal it most likely went for first.",
-      "tags": [
-        "megalodon",
-        "prehistoric shark",
-        "Miocene",
-        "ancient ocean",
-        "whales",
-        "sharks",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "Megalodon Waters: The Ocean of Giant Sharks"
-    },
-    {
-      "id": "level_1_8-16",
-      "era": "Pleistocene",
-      "title": "One Ice Age Night: Level 1 to 8 Tent-Mate — Who Keeps You Warm? 🧊",
-      "banner": "Who keeps you warm tonight?",
-      "hook_vo": "Minus forty in the Ice Age. Choose your bunkmate.",
-      "art_direction": "Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow.",
-      "options": [
-        {
-          "n": 1,
-          "label": "A lemming",
-          "vo": "Level one. A tiny Arctic lemming.",
-          "danger": 1,
-          "image_prompt": "Close-up wildlife photograph of one Norway lemming, Lemmus lemmus, nestled chest-deep in soft snow. A very compact round stocky rodent with a blunt broad muzzle and short whiskers, black bead eyes, very small rounded ears almost concealed in its thick soft fur. Dense tawny-orange fur around its cheeks, a dark brown cap and dark stripe down its back, pale cream chin and belly. Its tiny front paws rest on the snow directly below its face. The rear of its round body is buried in the snow. Three-quarter front view at animal eye level. Blue snowy tundra and green aurora softly blurred behind the animal, gentle warm amber side lighting. Documentary wildlife portrait, photoreal painterly, vertical composition"
-        },
-        {
-          "n": 2,
-          "label": "Arctic hare",
-          "vo": "Level two. An Arctic hare with warm fur.",
-          "danger": 1,
-          "image_prompt": "A winter white Arctic hare, Lepus arcticus, sitting in side profile in wind-carved snow. Its short upright ears have distinct black tips, its eyes are dark brown and its muzzle is compact. A hare-shaped athletic body with long powerful hind legs tucked underneath and broad furry paws. Dense crisp white winter fur with fine strands. Green aurora over blue Ice Age tundra, soft warm amber side light. Documentary wildlife portrait, photoreal painterly, vertical composition"
-        },
-        {
-          "n": 3,
-          "label": "Arctic fox",
-          "vo": "Level three: an arctic fox, curled into its tail.",
-          "danger": 2,
-          "image_prompt": "Side view of one small winter-coat Arctic fox, Vulpes lagopus, sleeping curled in the snow, its thick white bushy tail wrapped over its short muzzle. The compact fox is seen in full body profile with its small head turned sideways and eyes closed. Dense pure white fur, tiny rounded ears partly hidden by fur, sharply resolved fine individual hairs. The sleeping fox occupies the lower half of a broad rugged snowbank with textured wind-carved ridges. Arctic blue snow and green aurora in the distance, soft warm amber rim light. Documentary wildlife portrait, photoreal painterly, vertical composition"
-        },
-        {
-          "n": 4,
-          "label": "Reindeer",
-          "vo": "Level four. One reindeer, if it stays put.",
-          "danger": 3,
-          "image_prompt": "A reindeer lying down in deep snow, broad antlers frosted, steam from its breath, orange ember glow on its side, green aurora, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 5,
-          "label": "Steppe bison",
-          "vo": "Level five. A bison, shaggy and heavy.",
-          "danger": 4,
-          "image_prompt": "Frontal close wildlife portrait of one ancient steppe bison, Bison priscus, looking directly toward the viewer. Its broad symmetrical pair of very long horns extends horizontally to both edges of the portrait and turns upward at both tips. The wide horn span is several times broader than the head. A dark shaggy forehead and small round eyes sit between the horn bases, above a broad wet black muzzle and long hanging beard. Only the head and upper chest appear in this tight crop. Rich dark chocolate curly fur against softly blurred pale snow-covered grassland, subtle green aurora far above, warm amber rim light. Documentary wildlife reconstruction, photoreal painterly, vertical composition"
-        },
-        {
-          "n": 6,
-          "label": "Woolly mammoth",
-          "vo": "Level six: a woolly mammoth. Huge, warm, sleepy.",
-          "danger": 5,
-          "image_prompt": "A woolly mammoth lying down in a snowy hollow, long shaggy guard hairs blowing, small ears, curved tusks, warm orange ember glow against its side, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
-        },
-        {
-          "n": 7,
-          "label": "Woolly rhinoceros",
-          "vo": "Level seven: a woolly rhino. Grumpy and horned.",
-          "danger": 7,
-          "image_prompt": "Full side profile of a woolly rhinoceros, Coelodonta antiquitatis, standing in blowing snow. Its entire broad barrel-shaped body is covered in thick shaggy brown fur. Exactly two horns sit in a single line on the nose: one very long curved horn at the front of the muzzle and a shorter horn immediately behind it. A pair of small rounded fur-covered ears stands at the back of the head above a broad low forehead. Short heavy legs, green aurora over blue-white Ice Age steppe, soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition"
-        },
-        {
-          "n": 8,
-          "label": "Cave lion",
-          "vo": "Level eight: a cave lion. Warm, and hungry.",
-          "danger": 8,
-          "image_prompt": "An adult female cave lion, Panthera spelaea, padding through deep snow toward the lens. Smooth short dense yellowish-grey fur covers its broad head and neck without a mane. Small rounded ears, powerful broad feline muzzle, frosted whiskers and muscular shoulders, large natural paws planted in snow. Green aurora over the blue-white Ice Age mammoth steppe, soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition"
-        }
-      ],
-      "answer_n": 6,
-      "verdict_vo": "Real answer: number 6, because the woolly mammoth was covered in long guard hairs over a shorter undercoat. Mind the rollover.",
-      "fact": {
-        "text": "The woolly mammoth was covered in fur, with an outer covering of long guard hairs and a shorter undercoat.",
-        "source_sentence": "It was covered in fur, with an outer covering of long guard hairs and a shorter undercoat.",
-        "wiki_title": "Woolly mammoth",
-        "wiki_revid": 1380409560
-      },
-      "description": "The Ice Age steppe was one of the coldest places animals ever lived. Eight possible bunkmates for one freezing night, from a lemming to a cave lion, and the one built for exactly this weather.",
-      "tags": [
-        "Ice Age",
-        "woolly mammoth",
-        "Pleistocene",
-        "megafauna",
-        "mammoth steppe",
-        "prehistoric animals",
-        "deep time",
-        "paleontology"
-      ],
-      "related_topic_hint": "One Night in the Ice Age"
+     "n": 8,
+     "label": "Anomalocaris",
+     "vo": "Level eight: Anomalocaris. Spiked arms, huge eyes.",
+     "danger": 8,
+     "image_prompt": "One complete Anomalocaris swimming horizontally from left to right above a reef, seen in side profile, its elongated body bearing repeated broad lateral swimming flaps, two large stalked compound eyes and a pair of segmented frontal grasping appendages curled beneath the head with inward-facing spines; amber foreground fill in turquoise water."
     }
-  ]
+   ],
+   "answer_n": 8,
+   "verdict_vo": "Real answer: number 8, because Anomalocaris was among the largest Cambrian animals and may have been an early apex predator. A fearsome pick.",
+   "fact": {
+    "text": "Anomalocaris, an estimated 34.2–37.8 cm long without its frontal appendages and tail fan, is one of the largest animals of the Cambrian and thought to be one of the earliest apex predators.",
+    "source_sentence": "Estimated to reach 34.2–37.8 cm (13.5–14.9 in) long excluding the frontal appendages and tail fan, Anomalocaris is one of the largest animals of the Cambrian, and thought to be one of the earliest examples of an apex predator, though others have been found in older Cambrian lagerstätten deposits.",
+    "wiki_title": "Anomalocaris",
+    "wiki_revid": 1379615198
+   },
+   "description": "Half a billion years ago, these creatures shared Cambrian seas. Pick your imaginary reef guard from eight animals, from a sponge to Anomalocaris, and see the fossil-based reason for the final choice. Comment your number.",
+   "tags": [
+    "Cambrian",
+    "ancient ocean",
+    "Anomalocaris",
+    "deep time",
+    "prehistoric life",
+    "evolution",
+    "paleontology",
+    "Burgess Shale"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  {
+   "id": "level_1_8-02",
+   "era": "Devonian",
+   "title": "Giant Bug Ladder: Level 1 to 8 Sea Scorpions — Which Is Biggest? 🦂",
+   "banner": "Which giant sea scorpion is biggest?",
+   "hook_vo": "Eight sea scorpions. Only one holds the record.",
+   "art_direction": "Murky olive-green river delta at dusk, telephoto compression through silt, a single copper sunset shaft.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Fingertip hatchling",
+     "vo": "Level one: a hatchling, smaller than a fingertip.",
+     "danger": 1,
+     "image_prompt": "A tiny newly moulted sea scorpion resting on a pebble in a shallow brackish channel, translucent shell, a copper shaft of low sun striking it, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Paddle-legged swimmer",
+     "vo": "Level two: a swimmer with paddle legs.",
+     "danger": 2,
+     "image_prompt": "A small eurypterid sculling through green water with broad flat oar-shaped rear legs, silt glittering in a copper sunbeam, reeds of early plants above, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Spiny-legged ambusher",
+     "vo": "Level three: an ambusher with spiked legs.",
+     "danger": 3,
+     "image_prompt": "A eurypterid half buried in mud with long spiny front legs raised to trap prey, copper light grazing its carapace, olive murk around it, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Broad mud sifter",
+     "vo": "Level four: a broad sifter, raking the mud.",
+     "danger": 4,
+     "image_prompt": "A wide flat-bodied eurypterid raking a muddy bottom with comb-edged legs, clouds of silt rising, one copper sunbeam piercing the water, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Clawed Pterygotus",
+     "vo": "Level five: Pterygotus, with long pincer claws.",
+     "danger": 5,
+     "image_prompt": "Pterygotus cruising mid-water with two long serrated pincer claws held forward and a flattened tail fin, copper backlight outlining it, olive haze, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Acutiramus on patrol",
+     "vo": "Level six: a huge sea scorpion patrols below.",
+     "danger": 6,
+     "image_prompt": "A large Acutiramus sea scorpion gliding over a submerged log, segmented body and slim pincers, copper dusk light from the surface, telephoto haze, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Ambush beside you",
+     "vo": "Level seven: one just surfaced next to you.",
+     "danger": 7,
+     "image_prompt": "Low POV at the waterline of a dusky delta as a big eurypterid head and pincers break the surface right in front of the lens, copper ripples, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Jaekelopterus",
+     "vo": "Level eight: the biggest, longer than a sofa.",
+     "danger": 8,
+     "image_prompt": "Jaekelopterus filling the whole vertical frame, an enormous sea scorpion with huge spiked pincers and long segmented body, gliding over a delta bottom, copper sunset shaft above, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 8,
+   "verdict_vo": "Real answer: number 8, because Jaekelopterus, the largest sea scorpion, reached about 2.5 metres long. No arthropod since has topped it.",
+   "fact": {
+    "text": "The largest eurypterid (sea scorpion), Jaekelopterus, reached about 2.5 m in length.",
+    "source_sentence": "The largest, Jaekelopterus, reached 2.5 meters (8.2 ft) in length.",
+    "wiki_title": "Eurypterid",
+    "wiki_revid": 1359707789
+   },
+   "description": "Before fish ruled the rivers, sea scorpions did, and some grew longer than the animals that hunt in rivers today. Eight of them, smallest to biggest, and the one that set the record for any arthropod.",
+   "tags": [
+    "sea scorpion",
+    "eurypterid",
+    "Devonian",
+    "giant bugs",
+    "prehistoric life",
+    "deep time",
+    "paleontology",
+    "arthropods"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs",
+   "production_hold": "Scientific habitat and anatomy failed direct review in exact cloud images; four bounded local repairs produced fish-crustacean hybrids. Quarantined until an accurate reconstruction stack is validated. See strategy/sea-scorpion-quarantine.json."
+  },
+  {
+   "id": "level_1_8-03",
+   "era": "Devonian",
+   "title": "Level 1 to 8 Ocean Armor in the Devonian — What Do You Wear? 🛡️",
+   "banner": "Pick your armor for the Devonian sea",
+   "hook_vo": "The Devonian sea at night. Choose your armor.",
+   "art_direction": "Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Soft sponge wrap",
+     "vo": "Level one: a soft sponge. Cosy, useless.",
+     "danger": 1,
+     "image_prompt": "A broad irregular ochre-yellow marine sponge spreads over a small grey stone shelf on the seafloor, a low asymmetrical mound with thousands of natural small pores and soft uneven folds. The sponge occupies the central half of the frame. A wide soft amber shaft illuminates its textured surface and nearby pale sediment clearly. Navy Devonian seawater fills the upper background with tiny suspended particles. Macro natural-history photograph of a simple primitive porous marine animal, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Brachiopod shell",
+     "vo": "Level two: a shell with two neat halves.",
+     "danger": 2,
+     "image_prompt": "A ribbed brachiopod shell lying open on dark sediment, gold light catching its ridges, tiny particles drifting through the navy water, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Trilobite shield",
+     "vo": "Level three: a spiky trilobite shield.",
+     "danger": 3,
+     "image_prompt": "An oblique overhead view of a spiny Devonian trilobite resting flat on a dark stone ledge. Its wide crescent cephalon shield, narrow raised axial lobe, two broad pleural lobes and many curved transverse thoracic segments are clearly visible from above. Paired tiny lateral compound eyes sit on the head shield. Short defensive spines fringe the shell. The mouth and walking limbs are hidden underneath its body. An anatomically coherent fossil arthropod, detailed natural shell texture, warm gold rim light from one shaft, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Coiled ammonoid shell",
+     "vo": "Level four: a coiled ammonoid shell.",
+     "danger": 4,
+     "image_prompt": "A single empty Devonian ammonoid shell resting on dark pebbles, close side view with the whole tightly coiled flat spiral clearly visible. Its round disk-shaped cream shell has a natural central spiral and a few subtle brown bands around the whorls, with one small empty opening at the lower right edge. Warm gold side light reveals the entire shell and nearby sediment clearly. Tiny suspended particles in inky navy open Devonian seawater at night, macro natural-history view, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Straight nautiloid cone",
+     "vo": "Level five: a nautiloid cone, long as a spear.",
+     "danger": 5,
+     "image_prompt": "A single long empty straight nautiloid shell rests diagonally across dark pale pebbles on a Devonian seafloor. The shell is one narrow smooth gently tapered ivory cone, thick at the open lower-left end and pointed at the upper-right tip. Fine natural growth rings cross its surface. The large opening is hollow and empty. Warm gold side light reveals the entire straight shell clearly against inky navy water, macro natural-history illustration, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Shark skin",
+     "vo": "Level six: shark skin, without heavy armor.",
+     "danger": 6,
+     "image_prompt": "A side view of the early shark Cladoselache swimming horizontally above a Devonian seafloor, streamlined dark slate body with mostly smooth skin, broad pectoral fins and a deeply forked tail. Its head is a simple natural shark profile without bony armor plates. A wide soft amber shaft reveals the flank and fin clearly, navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Dunkleosteus head plates",
+     "vo": "Level seven: solid bone plates across the head.",
+     "danger": 7,
+     "image_prompt": "A single ancient Devonian placoderm fish swimming horizontally from right to left above pale seafloor sediment, clear side profile of the complete fish. Its wide blunt head and front trunk are enclosed in only a few large smooth grey dermal bone plates with long seams. A narrow dark grey unarmored hindbody tapers back into a vertical fish tail fin, with small pectoral fins projecting at the sides. The closed mouth forms a short blunt bony beak beneath the rounded head shield. Warm gold side light clearly reveals the head plates and solid fish body, inky navy water, macro natural-history reconstruction, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Bubble coat",
+     "vo": "Level eight: just bubbles. No armor at all.",
+     "danger": 8,
+     "image_prompt": "A loose cluster of large transparent air bubbles rises slowly above a dark rocky Devonian seafloor. Each round bubble has a clear empty interior and a thin silver-gold reflective rim. The bubbles overlap naturally but remain separate spheres, with navy water visible through them. Warm gold side light illuminates the bubbles and pale sediment below clearly, macro natural-history photograph, inky navy open water at night, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+    }
+   ],
+   "answer_n": 7,
+   "verdict_vo": "Real answer: number 7, because this fish wore bony armor plates across its skull and front half. Probably your toughest coat.",
+   "fact": {
+    "text": "Dunkleosteus was covered in dermal bone forming armor plates across its skull and the front half of its trunk.",
+    "source_sentence": "Dunkleosteus was covered in dermal bone forming armor plates across its skull and front half of its trunk.",
+    "wiki_title": "Dunkleosteus",
+    "wiki_revid": 1374991596
+   },
+   "description": "The Devonian ocean was the age of armored fish, and the heaviest suit belonged to a predator. Eight kinds of protection, from a sponge to solid bone, and the one worth borrowing.",
+   "tags": [
+    "Devonian",
+    "Dunkleosteus",
+    "armored fish",
+    "placoderm",
+    "ancient ocean",
+    "prehistoric life",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "The Ocean Before the Dinosaurs",
+   "end_image": "o7"
+  },
+  {
+   "id": "level_1_8-04",
+   "era": "Carboniferous",
+   "title": "Giant Bug Tent-Mate, Level 1 to 8 — Who Shares Your Swamp? 🪲",
+   "banner": "Which giant bug shares your shelter?",
+   "hook_vo": "One humid night in the coal forest. Pick a bunkmate.",
+   "art_direction": "Steamy emerald coal swamp, green fog, close macro POV from a mossy hollow, one ember-orange glow.",
+   "options": [
+    {
+     "n": 1,
+     "label": "A tiny springtail",
+     "vo": "Level one: a springtail. Barely there.",
+     "danger": 1,
+     "image_prompt": "Macro view of a single tiny springtail on a wet moss cushion inside a hollow log, dew beads, an ember-orange glow behind it, green fog, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "A roach ancestor",
+     "vo": "Level two: an early cockroach, very at home.",
+     "danger": 2,
+     "image_prompt": "A glossy brown early cockroach crawling along a damp bark ledge in a giant hollow lycopod trunk, ember-orange light on its wings, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "A long-legged harvestman",
+     "vo": "Level three: a harvestman, all legs.",
+     "danger": 3,
+     "image_prompt": "A single harvestman arachnid seen from a slightly elevated oblique side view, standing on a wet fern frond in a mossy hollow. One compact rounded oval body, no narrow waist. Exactly EIGHT very long slender jointed walking legs: FOUR legs emerge separately from each side of the compact body, each complete leg clearly visible from body attachment through joints to its tip on the fern. Spread all eight legs apart so none overlap or hide behind the body. Tiny central eye turret, small mouthparts, realistic delicate harvestman anatomy. Soft emerald coal-swamp mist in the background, warm amber rim light, sharp readable macro nature-documentary composition, photoreal painterly, vertical composition."
+    },
+    {
+     "n": 4,
+     "label": "Arthropleura",
+     "vo": "Level four: a huge millipede. Calm and quiet.",
+     "danger": 4,
+     "image_prompt": "A giant Arthropleura millipede curled along the floor of a vast hollow lycopod trunk, broad armored segments and many legs, ember-orange glow on its plates, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Giant mayfly",
+     "vo": "Level five: a giant mayfly at the opening.",
+     "danger": 5,
+     "image_prompt": "A big Carboniferous mayfly clinging at the mouth of a hollow trunk, long tail filaments, wide veined wings lit ember-orange, swamp fog outside, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Meganeura",
+     "vo": "Level six: Meganeura, a dragonfly wide as a hawk.",
+     "danger": 6,
+     "image_prompt": "Meganeura griffinfly hovering at the opening of a mossy hollow, huge veined wings spread, ember-orange light through the membranes, green fog, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Giant scorpion",
+     "vo": "Level seven: a giant scorpion under the moss.",
+     "danger": 7,
+     "image_prompt": "A large Carboniferous scorpion emerging from under a moss mat, pincers open and tail raised, ember-orange highlights on its shell, close POV, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Hungry swamp amphibian",
+     "vo": "Level eight: a swamp predator, mouth first.",
+     "danger": 8,
+     "image_prompt": "A large crocodile-shaped Carboniferous amphibian, Eogyrinus, sliding out of black swamp water toward the lens, wide jaws parting, ember-orange reflections, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 4,
+   "verdict_vo": "Real answer: number 4, because reported woody gut contents suggest Arthropleura may have eaten plants. Its diet is still uncertain.",
+   "fact": {
+    "text": "Fossil gut contents of Arthropleura were a mix of woody plant material, suggesting it was a herbivore.",
+    "source_sentence": "A. moyseyi was suggested to preserve the original gut contents, a mix of woody plant material, suggesting it was an herbivore.",
+    "wiki_title": "Arthropleura",
+    "wiki_revid": 1373001873
+   },
+   "description": "Three hundred million years ago the coal swamps were full of giant arthropods. Eight possible roommates for one night, from a speck to a swamp predator, and the giant that was probably safest to sleep beside.",
+   "tags": [
+    "Carboniferous",
+    "giant insects",
+    "Arthropleura",
+    "Meganeura",
+    "coal forest",
+    "prehistoric life",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "Giant Insects of the Coal Forests"
+  },
+  {
+   "id": "level_1_8-05",
+   "era": "Permian",
+   "title": "Level 1 to 8 Pangaea Guard Beast — Who Watches Your Night? 🌙",
+   "banner": "Which Permian beast guards your night?",
+   "hook_vo": "Pangaea, after dark. Pick something to stand guard.",
+   "art_direction": "Rust-red floodplain under a dusty violet sky, low 24mm lens in dry grass, one glowing ember of a lightning fire.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Burrowing Diictodon",
+     "vo": "Level one: a tiny grazer at its burrow.",
+     "danger": 1,
+     "image_prompt": "A small tusked Diictodon peeking from a spiral burrow in red mud, whiskered snout, glow of a distant ember lighting its face, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Tree-climbing Suminia",
+     "vo": "Level two: Suminia, clinging to a branch.",
+     "danger": 2,
+     "image_prompt": "A slender Suminia gripping a conifer branch with long toes and a curling tail, violet sky behind, an ember glow from below, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Tusked Dicynodon",
+     "vo": "Level three: a beak and two great tusks.",
+     "danger": 3,
+     "image_prompt": "A stout Dicynodon grazing horsetails at night, horny beak and two short tusks, ember light on its wrinkled hide, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Bumpy Scutosaurus",
+     "vo": "Level four: a walking tank of bony bumps.",
+     "danger": 4,
+     "image_prompt": "A heavy Scutosaurus standing in dry grass, broad body studded with bony knobs and a spiky cheek frill, warm ember glow along one flank, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Moschorhinus",
+     "vo": "Level five: short snout, with a big bite.",
+     "danger": 5,
+     "image_prompt": "A muscular Moschorhinus therocephalian prowling at the edge of a riverbank, blunt powerful snout, ember light in its eyes, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Rubidgea",
+     "vo": "Level six: a massive skull, built for biting.",
+     "danger": 6,
+     "image_prompt": "A Rubidgea gorgonopsian with a massive broad skull and long sabre canines standing on a red ridge, ember glow, violet dust in the air, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Young Inostrancevia",
+     "vo": "Level seven: a young hunter, still learning.",
+     "danger": 7,
+     "image_prompt": "A young Inostrancevia stalking through dry grass, lean body, long sabre canines showing, ember-lit from one side, low lens, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Adult Inostrancevia",
+     "vo": "Level eight: the adult hunter with huge canines.",
+     "danger": 8,
+     "image_prompt": "A full-grown Inostrancevia standing over the lens in the dark, huge sabre canines bared, ember glow under its jaw, rust-red dust swirling, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 8,
+   "verdict_vo": "Real answer: number 8, because this animal's longest canines could reach 15 centimetres. Probably your best bet for keeping everything else away.",
+   "fact": {
+    "text": "Inostrancevia, a gorgonopsian, had large canines, the longest of which could reach 15 cm.",
+    "source_sentence": "It also has very advanced dentition, possessing large canines, the longest of which can reach 15 cm (5.9 in) and which may have been used to shear the skin of prey.",
+    "wiki_title": "Inostrancevia",
+    "wiki_revid": 1381178944
+   },
+   "description": "Long before dinosaurs, the top predators on Pangaea were sabre-toothed relatives of mammals. Eight Permian animals, from a shy burrower to the biggest gorgonopsian of all, and which one would really keep the night quiet.",
+   "tags": [
+    "Pangaea",
+    "Permian",
+    "gorgonopsian",
+    "Inostrancevia",
+    "before the dinosaurs",
+    "prehistoric life",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
+  },
+  {
+   "id": "level_1_8-06",
+   "era": "Triassic",
+   "title": "Pangaea After the Great Dying — Level 1 to 8 Pet: Who Survives? 🌋",
+   "banner": "Which pet survives the Great Dying?",
+   "hook_vo": "The worst extinction ever. Pick the pet that lives.",
+   "art_direction": "Ash-grey hothouse badlands, hazy amber sun disc low on the horizon, 35mm documentary lens, heat shimmer.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Little Procolophon",
+     "vo": "Level one: a small animal with spiky cheeks.",
+     "danger": 1,
+     "image_prompt": "A small stocky Procolophon reptile sitting on cracked grey mud, spiky cheek horns, the low amber sun glowing behind it, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Tusked Lystrosaurus",
+     "vo": "Level two: a grazing animal with two tusks.",
+     "danger": 2,
+     "image_prompt": "A stocky Lystrosaurus with a horny beak and two short tusks chewing horsetail stems by a shrinking pool, amber sun disc behind, heat shimmer, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Burrowing Thrinaxodon",
+     "vo": "Level three: a little hunter in a burrow.",
+     "danger": 3,
+     "image_prompt": "A furry Thrinaxodon curled asleep at the end of a dirt burrow, cross-section view, amber light spilling in from the entrance, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Quick Prolacerta",
+     "vo": "Level four: a quick, twitchy little reptile.",
+     "danger": 4,
+     "image_prompt": "A slim long-necked Prolacerta darting over grey stones, mouth open, amber sunlight catching its scales through the haze, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Moschorhinus",
+     "vo": "Level five: a hungry survivor, with sharp teeth.",
+     "danger": 5,
+     "image_prompt": "A heavy-jawed Moschorhinus pacing along a dry riverbed in hazy amber light, ribs showing, ash drifting in the air, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Proterosuchus",
+     "vo": "Level six: a hooked snout in the shallows.",
+     "danger": 6,
+     "image_prompt": "A sprawling Proterosuchus lying in a muddy shallow with its hooked upper jaw and rows of teeth, amber sun reflected in the water, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Erythrosuchus",
+     "vo": "Level seven: a brute with a massive head.",
+     "danger": 7,
+     "image_prompt": "A huge big-headed Erythrosuchus striding across the badlands toward the lens, deep skull and curved teeth, amber backlight and dust, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "A last gorgonopsian",
+     "vo": "Level eight: the last gorgonopsian. It won't make it.",
+     "danger": 8,
+     "image_prompt": "A gaunt gorgonopsian silhouetted on a ridge of grey ash beneath a red sun, sabre canines, smoke rising from distant volcanic fissures, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because Lystrosaurus survived Earth's worst extinction and left the most common land fossils of the Early Triassic.",
+   "fact": {
+    "text": "Lystrosaurus survived the Permian–Triassic extinction, Earth's most severe, and its fossils are by far the most common land vertebrate fossils in Early Triassic beds worldwide.",
+    "source_sentence": "Lystrosaurus survived the Permian-Triassic extinction event (Earth's most severe) 252 million years ago and thrived in the immediate aftermath; its fossils are, by far, the most common terrestrial vertebrate fossils in Early Triassic beds around the world, such as in the Lystrosaurus Assemblage Zone in South Africa.",
+    "wiki_title": "Lystrosaurus",
+    "wiki_revid": 1369641214
+   },
+   "description": "About 252 million years ago most life on Earth disappeared. Eight animals from the world right after, ranked from harmless to hungry, and the unlikely survivor that ended up almost everywhere on Pangaea.",
+   "tags": [
+    "Great Dying",
+    "mass extinction",
+    "Lystrosaurus",
+    "Pangaea",
+    "Triassic",
+    "prehistoric life",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
+  },
+  {
+   "id": "level_1_8-07",
+   "era": "Jurassic",
+   "title": "Level 1 to 8 Dinosaur Ride Home — Which Back Do You Climb? 🦕",
+   "banner": "Which Jurassic dinosaur do you ride home?",
+   "hook_vo": "The Jurassic, miles from shelter. Pick a ride.",
+   "art_direction": "Silver-blue moonlit conifer plains, long telephoto from ground level, one lantern-yellow glow of a distant wildfire.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Tiny Fruitadens",
+     "vo": "Level one: a tiny dinosaur, quick and nimble.",
+     "danger": 1,
+     "image_prompt": "A tiny Fruitadens dinosaur standing on a fallen conifer branch, long tail and small beak, a lantern-yellow wildfire glow far behind it, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Speedy Dryosaurus",
+     "vo": "Level two: Dryosaurus, fast and nervous.",
+     "danger": 2,
+     "image_prompt": "A slender Dryosaurus mid-stride across moonlit ferns, long legs and stiff tail, yellow glow from a distant fire on the horizon, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Camptosaurus",
+     "vo": "Level three: a slow and sturdy plant eater.",
+     "danger": 3,
+     "image_prompt": "A sturdy Camptosaurus grazing on low cycads in silver moonlight, heavy hindquarters, warm yellow fire glow far off, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Stegosaurus",
+     "vo": "Level four: Stegosaurus. Mind the plates and spikes.",
+     "danger": 4,
+     "image_prompt": "Rear three-quarter view of a Stegosaurus walking away across the plain, tall back plates and four tail spikes against the moon, distant yellow fire glow, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Diplodocus",
+     "vo": "Level five: Diplodocus, with a whip of a tail.",
+     "danger": 5,
+     "image_prompt": "A Diplodocus stretching its long horizontal neck over a river, its whip-thin tail curling behind, silver moonlight, warm glow on the water, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Brachiosaurus",
+     "vo": "Level six: Brachiosaurus. Tall as a building.",
+     "danger": 5,
+     "image_prompt": "Looking straight up the towering front legs and raised neck of a Brachiosaurus, its small head among conifer tops, moon behind, a yellow fire glow on its chest, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Ceratosaurus",
+     "vo": "Level seven: a horn and a bad mood.",
+     "danger": 7,
+     "image_prompt": "A Ceratosaurus with a nose horn and bony ridges stalking through ferns toward the lens, moonlit, yellow fire glow on its teeth, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Allosaurus",
+     "vo": "Level eight: Allosaurus. You are the snack.",
+     "danger": 8,
+     "image_prompt": "An Allosaurus lunging at low angle straight toward the lens, jaws open, eyebrow crests catching yellow wildfire light, silver moon behind, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 6,
+   "verdict_vo": "Real answer: number 6, because Brachiosaurus may have stood 12–13 metres tall overall. Our imaginary ride picks it for that towering size.",
+   "fact": {
+    "text": "The height of Brachiosaurus has been estimated at 9.4 m and at 12–13 m.",
+    "source_sentence": "The length of Brachiosaurus has been estimated at 20–22 meters (66–72 ft) and 18 meters (59 ft), and its height at 9.4 meters (30+3⁄4 ft) and 12–13 meters (39–43 ft).",
+    "wiki_title": "Brachiosaurus",
+    "wiki_revid": 1376541751
+   },
+   "description": "The Late Jurassic plains held some of the tallest animals that ever walked. Eight dinosaurs you could try to ride home after dark, from tiny to carnivore, and which back would actually keep you out of reach.",
+   "tags": [
+    "Jurassic",
+    "dinosaurs",
+    "Brachiosaurus",
+    "sauropod",
+    "Allosaurus",
+    "prehistoric life",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "What If Dinosaurs Never Went Extinct?"
+  },
+  {
+   "id": "level_1_8-08",
+   "era": "Jurassic",
+   "title": "Jurassic Ocean Night Ride: Level 1 to 8 — Who Sees in the Dark? 🌊",
+   "banner": "Which sea reptile sees in the dark?",
+   "hook_vo": "Midnight in a Jurassic sea. Pick a ride.",
+   "art_direction": "Deep cobalt water with green moonbeam shafts, fisheye lens close to the creature, one warm glow of drifting bioluminescent plankton.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Ammonite shell",
+     "vo": "Level one: an ammonite. Slow, but it floats.",
+     "danger": 1,
+     "image_prompt": "A large ribbed ammonite hovering in cobalt water, tentacles trailing, warm glowing plankton clustered around its shell opening, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Belemnite school",
+     "vo": "Level two: a school of small darting swimmers.",
+     "danger": 2,
+     "image_prompt": "A tight school of torpedo-shaped belemnites streaking past the lens, ink-dark eyes, warm plankton glow sparkling between them, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Leedsichthys",
+     "vo": "Level three: a giant, gentle filter feeder.",
+     "danger": 3,
+     "image_prompt": "A colossal Leedsichthys fish gliding with its huge mouth open to filter plankton, warm glowing plankton streaming into it, green moon shafts above, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Long-necked Cryptoclidus",
+     "vo": "Level four: a long neck and four flippers.",
+     "danger": 4,
+     "image_prompt": "A Cryptoclidus plesiosaur rowing with four flippers, long neck stretched ahead, interlocking needle teeth, warm plankton glow along its body, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Ophthalmosaurus",
+     "vo": "Level five: eyes the size of dinner plates.",
+     "danger": 5,
+     "image_prompt": "Close fisheye view of an Ophthalmosaurus ichthyosaur gliding through dark water, its enormous eye ringed by a bony scleral ring, warm plankton glow reflected in the pupil, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Metriorhynchus",
+     "vo": "Level six: a crocodile with a tail fin.",
+     "danger": 6,
+     "image_prompt": "A sleek Metriorhynchus sea crocodile with flippers and a fish tail fin twisting through cobalt water, narrow jaws, plankton glow, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Simolestes",
+     "vo": "Level seven: a powerful hunter with short neck.",
+     "danger": 7,
+     "image_prompt": "A Simolestes pliosaur with a deep broad skull cruising out of green moon shafts, flippers spread, warm plankton glow on its teeth, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Liopleurodon",
+     "vo": "Level eight: huge jaws. Keep well away.",
+     "danger": 8,
+     "image_prompt": "A Liopleurodon rising from the deep straight toward the lens, massive jaws parted, four powerful flippers, warm plankton glow flaring around its snout, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because this animal had eyes about 22 centimetres across. Your best bet for a ride in dark water.",
+   "fact": {
+    "text": "The eyes of Ophthalmosaurus measured 22–23 cm in diameter at the outer margin of the bony scleral ring.",
+    "source_sentence": "The proportionally large eyes of Ophthalmosaurus measured 22–23 centimetres (8.7–9.1 in) in diameter at the outer margin of the bony scleral ring, while the scleral aperture itself measured 10 centimetres (3.9 in) in diameter.",
+    "wiki_title": "Ophthalmosaurus",
+    "wiki_revid": 1376972610
+   },
+   "description": "In the Jurassic seas, reptiles had taken over the oceans. Eight swimmers you could hitch a midnight ride on, from an ammonite to a pliosaur, and the one with eyes built for the dark.",
+   "tags": [
+    "Jurassic",
+    "sea reptiles",
+    "ichthyosaur",
+    "Ophthalmosaurus",
+    "Liopleurodon",
+    "ancient ocean",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "Sea Monsters of the Jurassic"
+  },
+  {
+   "id": "level_1_8-09",
+   "era": "Cretaceous",
+   "title": "Level 1 to 8 Dinosaur Pet — Which One Fits Your Cabin? 🪶",
+   "banner": "Which feathered dinosaur do you keep?",
+   "hook_vo": "A feathered forest at dusk. Pick a pet.",
+   "art_direction": "Misty lakeside forest in soft lilac dusk, 85mm portrait lens with shallow depth of field, one honey-gold lamp glow.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Microraptor",
+     "vo": "Level one: Microraptor, four wings, lighter than a cat.",
+     "danger": 1,
+     "image_prompt": "A Microraptor perched on a ginkgo branch with four feathered wings half spread, glossy black iridescent plumage, a honey-gold glow on its feathers, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Sinosauropteryx",
+     "vo": "Level two: Sinosauropteryx, fuzzy, with a striped tail.",
+     "danger": 2,
+     "image_prompt": "A small fuzzy Sinosauropteryx with a ginger and white banded tail sniffing at the ground by a lake, honey-gold glow, lilac mist, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Psittacosaurus",
+     "vo": "Level three: Psittacosaurus, parrot beak and tail bristles.",
+     "danger": 3,
+     "image_prompt": "A Psittacosaurus sitting upright near ferns, parrot beak, bristles on its tail, honey-gold light catching its scales, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Beipiaosaurus",
+     "vo": "Level four: Beipiaosaurus, a shaggy plant-eater with claws.",
+     "danger": 4,
+     "image_prompt": "A shaggy pot-bellied Beipiaosaurus stripping leaves with long curved claws, coat of long filaments, honey-gold rim light, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Sinornithosaurus",
+     "vo": "Level five: Sinornithosaurus, a feathered raptor.",
+     "danger": 5,
+     "image_prompt": "A feathered Sinornithosaurus crouched on a mossy log, sickle claw raised, honey-gold glow, lake mist behind, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Dilong",
+     "vo": "Level six: Dilong, a small feathered tyrant.",
+     "danger": 6,
+     "image_prompt": "A fluffy Dilong tyrannosauroid stalking along the lakeshore, long jaws, honey-gold light from the side, soft lilac mist, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Young Yutyrannus",
+     "vo": "Level seven: a young Yutyrannus, already heavy.",
+     "danger": 7,
+     "image_prompt": "A juvenile Yutyrannus with shaggy feathers pushing through ferns, head crest, honey-gold light on its eyes, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Adult Yutyrannus",
+     "vo": "Level eight: adult Yutyrannus. Feathers do not mean friendly.",
+     "danger": 8,
+     "image_prompt": "A huge adult Yutyrannus covered in long shaggy feathers looming over the lens among conifers, jaws open, honey-gold glow, lilac fog, misty Early Cretaceous lakeside forest in lilac dusk, 85mm portrait lens with shallow depth of field, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 1,
+   "verdict_vo": "Real answer: number 1, because Microraptor was among the smallest known dinosaurs, weighing about 0.5 to 1.4 kilos. Easiest keeper.",
+   "fact": {
+    "text": "Microraptor was among the smallest known non-avian dinosaurs, weighing about 0.5–1.4 kg.",
+    "source_sentence": "Microraptor was among the smallest-known non-avian dinosaurs, with the holotype of M. gui measuring 77 centimetres (2.53 ft) in length, 88–94 centimetres (2.89–3.08 ft) in wingspan and weighing 0.5–1.4 kilograms (1.1–3.1 lb).",
+    "wiki_title": "Microraptor",
+    "wiki_revid": 1380973408
+   },
+   "description": "The forests of Early Cretaceous China were full of feathered dinosaurs, from glider-sized to giant. Eight you might try to keep, ranked by how much trouble they would be, and the one small enough to manage.",
+   "tags": [
+    "feathered dinosaurs",
+    "Cretaceous",
+    "Microraptor",
+    "Yutyrannus",
+    "dinosaurs",
+    "prehistoric life",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "What If Dinosaurs Never Went Extinct?"
+  },
+  {
+   "id": "level_1_8-10",
+   "era": "Cretaceous",
+   "title": "Dinosaur-Era Sky Ride, Level 1 to 8 — Who Can Carry You Home? 🪽",
+   "banner": "Which flier could carry you home?",
+   "hook_vo": "Stuck on a Cretaceous coast. Pick a flying ride.",
+   "art_direction": "Vast peach-and-slate storm sky over a coastal floodplain, ultra-wide lens from cliff height, one molten orange sun break.",
+   "options": [
+    {
+     "n": 1,
+     "label": "A dragonfly",
+     "vo": "Level one: a dragonfly. Ambitious.",
+     "danger": 1,
+     "image_prompt": "A single dragonfly hovering over a reed bed at the edge of a vast floodplain, a molten orange break in the storm clouds behind it, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Ichthyornis seabird",
+     "vo": "Level two: Ichthyornis, a toothed seabird.",
+     "danger": 1,
+     "image_prompt": "An Ichthyornis seabird with a toothed beak skimming over waves, wings angled, molten orange sun break lighting its feathers, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Nyctosaurus",
+     "vo": "Level three: Nyctosaurus, a tall-crested glider.",
+     "danger": 2,
+     "image_prompt": "A Nyctosaurus pterosaur gliding along a cliff with a tall antler-shaped head crest, thin wing membranes glowing orange in the sun break, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Pteranodon",
+     "vo": "Level four: Pteranodon, a long beak and swept crest.",
+     "danger": 3,
+     "image_prompt": "A Pteranodon soaring over the sea with a long toothless beak and swept-back crest, wing membranes backlit molten orange, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Quetzalcoatlus",
+     "vo": "Level five: Quetzalcoatlus, the giant of the sky.",
+     "danger": 5,
+     "image_prompt": "A giant Quetzalcoatlus taking off from a floodplain, enormous wings fully unfurled across the frame, long stiff neck, molten orange sun break behind, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Updraft in a storm",
+     "vo": "Level six: riding it straight into a thunderhead.",
+     "danger": 6,
+     "image_prompt": "A lone giant pterosaur climbing into a towering anvil thunderhead, lightning forking in slate clouds, a molten orange light inside the storm, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Hatzegopteryx",
+     "vo": "Level seven: Hatzegopteryx, the island heavyweight.",
+     "danger": 7,
+     "image_prompt": "A massive Hatzegopteryx standing on an island ridge with a broad heavy skull and thick neck, wings folded, molten orange sky behind, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Hungry Hatzegopteryx",
+     "vo": "Level eight: Hatzegopteryx, and it is dinner time.",
+     "danger": 8,
+     "image_prompt": "Low POV as a Hatzegopteryx strides toward the lens with its huge beak lowered, wings folded like walking crutches, molten orange storm light, vast peach-and-slate storm sky over a Late Cretaceous coastal floodplain, ultra-wide lens from cliff height, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 5,
+   "verdict_vo": "Real answer: number 5, because Quetzalcoatlus had a wingspan of about 10 to 11 metres. Probably the only one big enough.",
+   "fact": {
+    "text": "Recent estimates put the wingspan of Quetzalcoatlus at 10–11 m.",
+    "source_sentence": "More recent estimates based on greater knowledge of azhdarchid proportions place its wingspan at 10–11 m (33–36 ft).",
+    "wiki_title": "Quetzalcoatlus",
+    "wiki_revid": 1374704497
+   },
+   "description": "In the last age of the dinosaurs, the biggest fliers in Earth's history crossed the skies. Eight things you might try to fly home on, from a dragonfly to an island giant, and the one with wings wide enough.",
+   "tags": [
+    "pterosaur",
+    "Quetzalcoatlus",
+    "Cretaceous",
+    "flying reptiles",
+    "dinosaur era",
+    "prehistoric life",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
+  },
+  {
+   "id": "level_1_8-11",
+   "era": "Cretaceous",
+   "title": "Level 1 to 8 Dinosaur Armor — What Do You Wear Past a T. rex? 🦖",
+   "banner": "Pick armor before T. rex wakes",
+   "hook_vo": "A T. rex is asleep nearby. Pick your armor.",
+   "art_direction": "Smoky bronze floodplain at sunrise, gritty 50mm handheld look, one low gold sun flare.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Fern-leaf cloak",
+     "vo": "Level one: a cloak of fern leaves. Hopeful.",
+     "danger": 1,
+     "image_prompt": "A heap of broad fern fronds lying on a riverbank at dawn, dew on the leaves, a low gold sun flare through smoke, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Turtle shell",
+     "vo": "Level two: a turtle shell. Snug fit.",
+     "danger": 2,
+     "image_prompt": "An empty domed turtle shell resting on wet sand by a slow river, a low gold sunrise flare catching its scutes, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Crocodile scutes",
+     "vo": "Level three: crocodile scutes, bumpy and tough.",
+     "danger": 3,
+     "image_prompt": "Close detail of the ridged back scutes of a crocodilian basking at the river edge, bronze haze, gold sun flare, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Pachycephalosaurus dome",
+     "vo": "Level four: a Pachycephalosaurus dome, a thick bone helmet.",
+     "danger": 4,
+     "image_prompt": "A Pachycephalosaurus lowering its thick bony domed skull ringed with knobs, gold sunrise flare behind it, smoky floodplain, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Triceratops frill",
+     "vo": "Level five: a Triceratops frill, a shield with horns.",
+     "danger": 5,
+     "image_prompt": "Front view of a Triceratops with its wide bony frill and three horns, standing in mist, low gold sun flare at its shoulder, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Edmontosaurus herd",
+     "vo": "Level six: hide inside an Edmontosaurus herd.",
+     "danger": 6,
+     "image_prompt": "A herd of duck-billed Edmontosaurus moving through smoky reeds at dawn, gold sun flare between their legs, low POV, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Ankylosaurus plates",
+     "vo": "Level seven: Ankylosaurus. Bone plates and a tail club.",
+     "danger": 7,
+     "image_prompt": "Close detail of an Ankylosaurus back covered in rows of bony osteoderm plates, its heavy tail club resting on the ground, gold sunrise flare, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Smell of fresh meat",
+     "vo": "Level eight: smelling like breakfast. Wrong choice.",
+     "danger": 8,
+     "image_prompt": "A Tyrannosaurus rex waking in smoky reeds and turning its huge head toward the lens, nostrils flared, gold sun flare across its teeth, smoky bronze Hell Creek floodplain at sunrise, gritty 50mm handheld look, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 7,
+   "verdict_vo": "Real answer: number 7, because Ankylosaurus was covered in bony osteoderm plates and carried a large tail club. Best suit around.",
+   "fact": {
+    "text": "Ankylosaurus was covered in armor plates, or osteoderms, and had a large club on the end of its tail.",
+    "source_sentence": "It was covered in armor plates, or osteoderms, with bony half-rings covering the neck, and had a large club on the end of its tail.",
+    "wiki_title": "Ankylosaurus",
+    "wiki_revid": 1369993132
+   },
+   "description": "At the end of the Cretaceous, the most armored dinosaur shared its floodplain with T. rex. Eight ways to protect yourself before the predator wakes up, and the one that actually evolved for the job.",
+   "tags": [
+    "T. rex",
+    "Ankylosaurus",
+    "dinosaur armor",
+    "Cretaceous",
+    "dinosaurs",
+    "Hell Creek",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
+  },
+  {
+   "id": "level_1_8-12",
+   "era": "Cretaceous",
+   "title": "Level 1 to 8 Dinosaur Nest Sitter — Who Keeps Your Egg Warm? 🥚",
+   "banner": "Who should sit on your egg?",
+   "hook_vo": "One dinosaur egg. One cold desert night. Pick a sitter.",
+   "art_direction": "Pale apricot Gobi dunes under a star-filled sky, high-angle 28mm lens, one warm sandstone glow from below.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Warm dune sand",
+     "vo": "Level one: bury it in warm sand.",
+     "danger": 1,
+     "image_prompt": "A single long oval dinosaur egg half buried in a ripple of apricot sand, starfield above, a warm sandstone glow rising from the dune, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Tiny Shuvuuia",
+     "vo": "Level two: Shuvuuia, small and big-eyed.",
+     "danger": 2,
+     "image_prompt": "A tiny feathered Shuvuuia with big night eyes and short stubby forelimbs standing beside an egg on the sand, warm glow, starlight, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Protoceratops parent",
+     "vo": "Level three: a Protoceratops, beaked and frilled.",
+     "danger": 3,
+     "image_prompt": "A Protoceratops with a short frill and parrot beak lying next to a nest scrape in the sand, warm sandstone glow, stars above, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Citipati",
+     "vo": "Level four: Citipati, a feathered nest sitter.",
+     "danger": 4,
+     "image_prompt": "A feathered Citipati crouched over a ring-shaped nest of elongated eggs, feathered forelimbs spread around the edge, warm glow, starry sky, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Pinacosaurus",
+     "vo": "Level five: Pinacosaurus, armored and grumpy.",
+     "danger": 5,
+     "image_prompt": "A Pinacosaurus ankylosaur resting in a sandy hollow, back studded with bony plates, tail club lying beside an egg, warm glow, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Velociraptor",
+     "vo": "Level six: Velociraptor. It wants the egg.",
+     "danger": 6,
+     "image_prompt": "A feathered Velociraptor creeping over a dune crest toward a nest, sickle claw raised, eyes catching a warm glow, starfield, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Young Tarbosaurus",
+     "vo": "Level seven: a young Tarbosaurus, curious and hungry.",
+     "danger": 7,
+     "image_prompt": "A lanky juvenile Tarbosaurus sniffing at a nest among sand dunes at night, warm sandstone glow on its snout, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Adult Tarbosaurus",
+     "vo": "Level eight: adult Tarbosaurus. Goodbye, egg.",
+     "danger": 8,
+     "image_prompt": "A massive Tarbosaurus standing over a crushed nest, head lowered toward the lens, warm glow under its jaw, starfield behind, pale apricot Gobi dunes under a dense starfield, high-angle 28mm lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 4,
+   "verdict_vo": "Real answer: number 4, because Citipati adults brooded their eggs, sitting over the nest with arms around its edge. A proven nest sitter.",
+   "fact": {
+    "text": "Citipati laid eggs in circular, mound-shaped nests, where adults brooded them by sitting over the nest and extending their arms around its perimeter.",
+    "source_sentence": "Citipati laid elongatoolithid eggs in circular, mound-shaped nests, where adults brooded them by sitting over the nest and extending their arms around its perimeter.",
+    "wiki_title": "Citipati",
+    "wiki_revid": 1375352513
+   },
+   "description": "Fossils from the Gobi Desert caught dinosaurs in the act of guarding their nests. Eight candidates to keep one egg warm through a cold desert night, and the one we know actually did it.",
+   "tags": [
+    "dinosaur eggs",
+    "Citipati",
+    "oviraptor",
+    "Gobi Desert",
+    "Cretaceous",
+    "dinosaurs",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "What If Dinosaurs Never Went Extinct?"
+  },
+  {
+   "id": "level_1_8-13",
+   "era": "Cretaceous",
+   "title": "Asteroid Hits Tonight — Level 1 to 8 Hideout: Where Do You Hide? ☄️",
+   "banner": "Asteroid tonight. Where do you hide?",
+   "hook_vo": "The asteroid hits tonight. You get one hideout.",
+   "art_direction": "Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Hollow log",
+     "vo": "Level one: inside a hollow log.",
+     "danger": 1,
+     "image_prompt": "Looking out from inside a hollow fallen log at a forest floor, an orange sky glowing through the opening, one bright streak overhead, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Riverbank burrow",
+     "vo": "Level two: a burrow in a muddy riverbank.",
+     "danger": 1,
+     "image_prompt": "A dark burrow entrance dug into a muddy riverbank just above the waterline, roots hanging, the river reflecting a bright streak in an orange sky, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "A deep cave",
+     "vo": "Level three: a deep cave in the hills.",
+     "danger": 2,
+     "image_prompt": "Deep inside a vast natural limestone cavern, rough rounded grey rock walls surround a winding passage descending into darkness. Jagged stalactites hang from the ceiling and uneven stalagmites rise from the wet stony floor. A small distant curved cave opening admits a diffuse warm amber glow that reflects in shallow pools. Photoreal painterly deep-time scene, vertical composition, wide-angle view of the natural underground chamber.",
+     "art_direction": "Subterranean limestone chamber with irregular mineral formations, wet dark rock and diffuse warm amber light from a distant natural opening."
+    },
+    {
+     "n": 4,
+     "label": "Top of a tall tree",
+     "vo": "Level four: the top of the tallest tree.",
+     "danger": 3,
+     "image_prompt": "View from the crown of a towering conifer above a dark forest canopy, a huge bright fireball streak crossing the orange sky, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "A boulder field",
+     "vo": "Level five: crouched among fallen boulders.",
+     "danger": 4,
+     "image_prompt": "A jumbled field of huge fallen limestone boulders at the foot of a bare cliff, deep narrow gaps between angular rocks in the foreground, sparse low ferns growing in crevices, distant Cretaceous conifers, a blood-orange sky with one thin bright meteor streak overhead, warm orange glow along the rock edges, low ground-level view, photoreal painterly deep-time scene, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "An open beach",
+     "vo": "Level six: on an open beach.",
+     "danger": 6,
+     "image_prompt": "An empty Cretaceous beach with the sea pulling far back from the shore, wet sand reflecting a bright orange fireball overhead, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "A cliff facing the sky",
+     "vo": "Level seven: a cliff top, facing the impact.",
+     "danger": 7,
+     "image_prompt": "A bare cliff top above a forest with the horizon flaring white and orange as a fireball descends, dust and wind rising, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Ground zero, Yucatán",
+     "vo": "Level eight: ground zero, the shallow Yucatán sea.",
+     "danger": 8,
+     "image_prompt": "An immense open shallow tropical sea above a submerged pale limestone platform, turquoise water and sand visible through the foreground ripples, water extending unbroken to a flat empty ocean horizon, a gigantic blinding orange-white asteroid descending above the far horizon and lighting the entire sea with a warm glow, photoreal painterly deep-time scene, vertical composition, open marine water in every direction"
+    }
+   ],
+   "answer_n": 2,
+   "verdict_vo": "Real answer: number 2, because crocodile relatives probably survived the impact thanks to life in water and burrowing. Dig in by the river.",
+   "fact": {
+    "text": "Crocodyliform survival across the K–Pg boundary may have resulted from their aquatic niche and ability to burrow, which reduced their exposure to the worst environmental effects.",
+    "source_sentence": "Crocodyliform survivability across the boundary may have resulted from their aquatic niche and ability to burrow, which reduced susceptibility to negative environmental effects at the boundary.",
+    "wiki_title": "Cretaceous–Paleogene extinction event",
+    "wiki_revid": 1379830492
+   },
+   "description": "Sixty-six million years ago an asteroid ended the age of dinosaurs in a single day. Eight places you might hide, from a log to ground zero, and the shelter that the survivors probably used.",
+   "tags": [
+    "asteroid",
+    "dinosaur extinction",
+    "Chicxulub",
+    "Cretaceous",
+    "mass extinction",
+    "dinosaurs",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?",
+   "end_image": "o1"
+  },
+  {
+   "id": "level_1_8-14",
+   "era": "Oligocene",
+   "title": "After the Dinosaurs: Level 1 to 8 Giant Mammal Ride 🦏",
+   "banner": "Which giant mammal carries you home?",
+   "hook_vo": "The dinosaurs are gone. Mammals got big. Pick a ride.",
+   "art_direction": "Dry golden Oligocene woodland at late afternoon, long shadows, 70mm lens with warm haze, one sun-bright gap in the canopy.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Early hare",
+     "vo": "Level one: an early hare. Comfortable, briefly.",
+     "danger": 1,
+     "image_prompt": "An early hare sitting upright in dry golden grass, long ears lit by a bright gap in the canopy, long shadows behind, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Three-toed horse",
+     "vo": "Level two: a small three-toed horse.",
+     "danger": 2,
+     "image_prompt": "A small three-toed horse with a short mane grazing in a golden woodland clearing, warm sunlight through the trees, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Hornless rhino",
+     "vo": "Level three: a hornless rhino, slow and steady.",
+     "danger": 3,
+     "image_prompt": "A stocky hornless early rhinoceros wading through a shallow stream in golden afternoon light, long shadows, warm haze, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Chalicothere",
+     "vo": "Level four: a chalicothere, walking on its knuckles.",
+     "danger": 4,
+     "image_prompt": "A chalicothere with long clawed forelimbs walking on its knuckles past a tree, pulling a branch down, warm golden light, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Paraceratherium calf",
+     "vo": "Level five: a Paraceratherium calf. Already huge.",
+     "danger": 5,
+     "image_prompt": "A Paraceratherium calf standing beside a woodland pool, long neck and sturdy legs, warm sun gap lighting its back, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Adult Paraceratherium",
+     "vo": "Level six: adult Paraceratherium, a giant hornless rhino.",
+     "danger": 5,
+     "image_prompt": "Looking up at an adult Paraceratherium browsing from treetops, its long neck stretched high, sun blazing through a canopy gap behind its head, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Entelodont",
+     "vo": "Level seven: an entelodont. A pig with a temper.",
+     "danger": 7,
+     "image_prompt": "A hulking entelodont with a massive bony jaw charging through dry grass toward the lens, dust kicking up, warm low sun, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Hyaenodon",
+     "vo": "Level eight: Hyaenodon, and it has noticed you.",
+     "danger": 8,
+     "image_prompt": "A Hyaenodon carnivore with a long heavy skull stepping out of shadow toward the lens, teeth bared, warm sun glint in its eye, dry golden Oligocene woodland of Asia in late afternoon with long shadows, 70mm lens with warm haze, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 6,
+   "verdict_vo": "Real answer: number 6, because Paraceratherium stood about 4.8 metres at the shoulder. Probably too tall for anything to reach you.",
+   "fact": {
+    "text": "Paraceratherium had a shoulder height of about 4.8 m and a length of about 7.4 m.",
+    "source_sentence": "The shoulder height was about 4.8 metres (15.7 feet), and the length about 7.4 metres (24.3 feet).",
+    "wiki_title": "Paraceratherium",
+    "wiki_revid": 1380422879
+   },
+   "description": "After the dinosaurs vanished, mammals grew into giants, and one hornless rhino became one of the largest land mammals ever. Eight rides through an Oligocene woodland, from a hare to a predator, and the one that stands above the rest.",
+   "tags": [
+    "Paraceratherium",
+    "ice age giants",
+    "prehistoric mammals",
+    "Oligocene",
+    "megafauna",
+    "after the dinosaurs",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "After the Dinosaurs: The Age of Giant Mammals"
+  },
+  {
+   "id": "level_1_8-15",
+   "era": "Miocene",
+   "title": "Megalodon's Menu, Level 1 to 8 — What Does It Hunt First? 🦈",
+   "banner": "What does megalodon hunt first?",
+   "hook_vo": "Megalodon is hungry. Rank the menu.",
+   "art_direction": "Sun-dappled aquamarine open ocean seen from below, wide lens looking up at the surface, one dazzling sun disc through the waves.",
+   "options": [
+    {
+     "n": 1,
+     "label": "Sardine shoal",
+     "vo": "Level one: a shoal of sardines. A snack.",
+     "danger": 1,
+     "image_prompt": "A silver shoal of small fish twisting into a ball beneath the surface, a dazzling sun disc through the waves above, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 2,
+     "label": "Squid",
+     "vo": "Level two: a squid. Too small to bother.",
+     "danger": 2,
+     "image_prompt": "A single squid jetting through bright aquamarine water, fins rippling, sunbeams streaming around it, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 3,
+     "label": "Sea turtle",
+     "vo": "Level three: a sea turtle, gliding at the surface.",
+     "danger": 3,
+     "image_prompt": "A sea turtle gliding just under the bright surface, flippers wide, a dazzling sun disc behind it, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 4,
+     "label": "Seal",
+     "vo": "Level four: a seal, quick and twisting.",
+     "danger": 4,
+     "image_prompt": "A sleek seal spiralling through sunbeams near the surface, bubbles trailing, aquamarine water, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Dolphin pod",
+     "vo": "Level five: a dolphin pod, fast and noisy.",
+     "danger": 5,
+     "image_prompt": "A pod of early dolphins racing in a line beneath the waves, sunlight dappling their backs, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 6,
+     "label": "Baleen whale",
+     "vo": "Level six: a baleen whale. The big meal.",
+     "danger": 6,
+     "image_prompt": "A small baleen whale swimming slowly near the surface, throat grooves visible, sun disc glowing through the waves above, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Another megalodon",
+     "vo": "Level seven: another megalodon. Rivals, not lunch.",
+     "danger": 7,
+     "image_prompt": "A huge megalodon shark circling in aquamarine water, mouth slightly open showing rows of broad serrated teeth, sunbeams on its back, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 8,
+     "label": "Livyatan",
+     "vo": "Level eight: Livyatan, a toothed whale rival.",
+     "danger": 8,
+     "image_prompt": "A Livyatan sperm whale with enormous teeth in both jaws charging through bright water toward the lens, sun dazzle behind, sun-dappled aquamarine Miocene open ocean seen from below, wide lens looking up at the surface, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    }
+   ],
+   "answer_n": 6,
+   "verdict_vo": "Real answer: number 6, because megalodon probably targeted large prey such as whales, seals and sea turtles. The whale is the biggest meal here.",
+   "fact": {
+    "text": "Megalodon probably targeted large prey, such as whales, seals and sea turtles.",
+    "source_sentence": "It probably targeted large prey, such as whales, seals and sea turtles.",
+    "wiki_title": "Megalodon",
+    "wiki_revid": 1380888665
+   },
+   "description": "The largest predatory shark ever lived in warm Miocene seas. Eight things on its menu, from small fish to a toothed whale rival, and the meal it most likely went for first.",
+   "tags": [
+    "megalodon",
+    "prehistoric shark",
+    "Miocene",
+    "ancient ocean",
+    "whales",
+    "sharks",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "Megalodon Waters: The Ocean of Giant Sharks"
+  },
+  {
+   "id": "level_1_8-16",
+   "era": "Pleistocene",
+   "title": "One Ice Age Night: Level 1 to 8 Tent-Mate — Who Keeps You Warm? 🧊",
+   "banner": "Who keeps you warm tonight?",
+   "hook_vo": "Minus forty in the Ice Age. Choose your bunkmate.",
+   "art_direction": "Frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, one warm orange ember glow.",
+   "options": [
+    {
+     "n": 1,
+     "label": "A lemming",
+     "vo": "Level one. A tiny Arctic lemming.",
+     "danger": 1,
+     "image_prompt": "Close-up wildlife photograph of one Norway lemming, Lemmus lemmus, nestled chest-deep in soft snow. A very compact round stocky rodent with a blunt broad muzzle and short whiskers, black bead eyes, very small rounded ears almost concealed in its thick soft fur. Dense tawny-orange fur around its cheeks, a dark brown cap and dark stripe down its back, pale cream chin and belly. Its tiny front paws rest on the snow directly below its face. The rear of its round body is buried in the snow. Three-quarter front view at animal eye level. Blue snowy tundra and green aurora softly blurred behind the animal, gentle warm amber side lighting. Documentary wildlife portrait, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 2,
+     "label": "Arctic hare",
+     "vo": "Level two. An Arctic hare with warm fur.",
+     "danger": 1,
+     "image_prompt": "A winter white Arctic hare, Lepus arcticus, sitting in side profile in wind-carved snow. Its short upright ears have distinct black tips, its eyes are dark brown and its muzzle is compact. A hare-shaped athletic body with long powerful hind legs tucked underneath and broad furry paws. Dense crisp white winter fur with fine strands. Green aurora over blue Ice Age tundra, soft warm amber side light. Documentary wildlife portrait, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 3,
+     "label": "Arctic fox",
+     "vo": "Level three: an arctic fox, curled into its tail.",
+     "danger": 2,
+     "image_prompt": "Side view of one small winter-coat Arctic fox, Vulpes lagopus, sleeping curled in the snow, its thick white bushy tail wrapped over its short muzzle. The compact fox is seen in full body profile with its small head turned sideways and eyes closed. Dense pure white fur, tiny rounded ears partly hidden by fur, sharply resolved fine individual hairs. The sleeping fox occupies the lower half of a broad rugged snowbank with textured wind-carved ridges. Arctic blue snow and green aurora in the distance, soft warm amber rim light. Documentary wildlife portrait, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 4,
+     "label": "Reindeer",
+     "vo": "Level four. One reindeer, if it stays put.",
+     "danger": 3,
+     "image_prompt": "A reindeer lying down in deep snow, broad antlers frosted, steam from its breath, orange ember glow on its side, green aurora, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 5,
+     "label": "Steppe bison",
+     "vo": "Level five. A bison, shaggy and heavy.",
+     "danger": 4,
+     "image_prompt": "Frontal close wildlife portrait of one ancient steppe bison, Bison priscus, looking directly toward the viewer. Its broad symmetrical pair of very long horns extends horizontally to both edges of the portrait and turns upward at both tips. The wide horn span is several times broader than the head. A dark shaggy forehead and small round eyes sit between the horn bases, above a broad wet black muzzle and long hanging beard. Only the head and upper chest appear in this tight crop. Rich dark chocolate curly fur against softly blurred pale snow-covered grassland, subtle green aurora far above, warm amber rim light. Documentary wildlife reconstruction, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 6,
+     "label": "Woolly mammoth",
+     "vo": "Level six: a woolly mammoth. Huge, warm, sleepy.",
+     "danger": 5,
+     "image_prompt": "A woolly mammoth lying down in a snowy hollow, long shaggy guard hairs blowing, small ears, curved tusks, warm orange ember glow against its side, frozen blue-white mammoth steppe under green aurora, 35mm lens through blowing snow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+    },
+    {
+     "n": 7,
+     "label": "Woolly rhinoceros",
+     "vo": "Level seven: a woolly rhino. Grumpy and horned.",
+     "danger": 7,
+     "image_prompt": "Full side profile of a woolly rhinoceros, Coelodonta antiquitatis, standing in blowing snow. Its entire broad barrel-shaped body is covered in thick shaggy brown fur. Exactly two horns sit in a single line on the nose: one very long curved horn at the front of the muzzle and a shorter horn immediately behind it. A pair of small rounded fur-covered ears stands at the back of the head above a broad low forehead. Short heavy legs, green aurora over blue-white Ice Age steppe, soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition"
+    },
+    {
+     "n": 8,
+     "label": "Cave lion",
+     "vo": "Level eight: a cave lion. Warm, and hungry.",
+     "danger": 8,
+     "image_prompt": "An adult female cave lion, Panthera spelaea, padding through deep snow toward the lens. Smooth short dense yellowish-grey fur covers its broad head and neck without a mane. Small rounded ears, powerful broad feline muzzle, frosted whiskers and muscular shoulders, large natural paws planted in snow. Green aurora over the blue-white Ice Age mammoth steppe, soft warm amber side light. Documentary wildlife reconstruction, photoreal painterly, vertical composition"
+    }
+   ],
+   "answer_n": 6,
+   "verdict_vo": "Real answer: number 6, because the woolly mammoth was covered in long guard hairs over a shorter undercoat. Mind the rollover.",
+   "fact": {
+    "text": "The woolly mammoth was covered in fur, with an outer covering of long guard hairs and a shorter undercoat.",
+    "source_sentence": "It was covered in fur, with an outer covering of long guard hairs and a shorter undercoat.",
+    "wiki_title": "Woolly mammoth",
+    "wiki_revid": 1380409560
+   },
+   "description": "The Ice Age steppe was one of the coldest places animals ever lived. Eight possible bunkmates for one freezing night, from a lemming to a cave lion, and the one built for exactly this weather.",
+   "tags": [
+    "Ice Age",
+    "woolly mammoth",
+    "Pleistocene",
+    "megafauna",
+    "mammoth steppe",
+    "prehistoric animals",
+    "deep time",
+    "paleontology"
+   ],
+   "related_topic_hint": "One Night in the Ice Age"
+  }
+ ]
 }
