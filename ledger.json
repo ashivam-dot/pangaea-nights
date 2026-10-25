@@ -1991,6 +1991,17 @@
     "refusals": [
      "Art-only collection cannot publish"
     ]
+   },
+   {
+    "at": "2026-10-25T15:11:07Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "how_deep-05",
+    "run": "40204761241",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [
