@@ -1103,7 +1103,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T01:57:38+00:00",
-      "cloud_status": "queued",
+      "cloud_status": "in_progress",
       "editorial_holds": [
         {
           "id": "direct-tsunami-high-ground-impact-scale-40147415761",
@@ -1656,5 +1656,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T02:07:00+00:00"
+  "updated_at": "2026-10-25T02:07:01+00:00"
 }
