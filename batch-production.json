@@ -3348,7 +3348,55 @@
       ],
       "submitted_at": "2026-10-25T07:48:47+00:00",
       "run_id": 40174192962,
-      "cloud_status": "in_progress"
+      "cloud_status": "completed",
+      "review": {
+        "schema": 1,
+        "model": "gemini-3-flash-preview",
+        "duration": 44.276,
+        "video_sha256": "0773976b50ff97b3792496f5102db712de7a3208769171384279f255f7e9c931",
+        "brief_sha256": "6fb314febd42890ca52a5c7dc6d4776c1dfa3cf4a9db24cd7026165641210219",
+        "review_video_sha256": "40c6384c4abc14ba4de242df97a3952fb821e85c450ee08acc71b4109f4706bd",
+        "review_audio_sha256": "91ab7e624393e7e670aba74a0f79fc4e1a565c454a00a77595fee01a82e7956d",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "Ice Age Europe, a freezing night.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.5,
+              "seen": "Snowy valley with pine trees and a distant fire",
+              "heard": "Ice Age Europe, a freezing night."
+            },
+            {
+              "part": "middle",
+              "seconds": 20.0,
+              "seen": "Frozen lake shore with ice and snow",
+              "heard": "Right on the frozen lake shore."
+            },
+            {
+              "part": "ending",
+              "seconds": 40.0,
+              "seen": "Shallow rock overhang with a small fire",
+              "heard": "The open overhang is probably safer."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -3829,5 +3877,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T08:12:31+00:00"
+  "updated_at": "2026-10-25T08:13:17+00:00"
 }
