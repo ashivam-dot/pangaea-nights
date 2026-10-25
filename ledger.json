@@ -2119,6 +2119,17 @@
     "failures": [],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-25T17:25:10Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "survive_night-05",
+    "run": "40211267149",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [
