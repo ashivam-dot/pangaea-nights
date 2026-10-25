@@ -837,6 +837,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "how_deep-04",
+   "series": "how_deep",
+   "era": "Ordovician",
+   "slot": "C",
+   "video_id": "UsJ7eUlITT4",
+   "url": "https://www.youtube.com/shorts/UsJ7eUlITT4",
+   "title": "Ocean of Giant Shelled Hunters — How Deep Do You Dare Go? 🐚",
+   "publish_at": "2026-10-28T19:30:00Z",
+   "uploaded_at": "2026-10-25T12:46:31Z",
+   "script": "Two-metre shells with tentacles. How deep do you go? One: bathtub-warm tropical shallows. Two: a garden of early corals. Three: among drifting long cone shells. Four: the shelf edge, light fading. Five: below the shelf, dim and cool. Six: down the slope into the dark. Seven: the cold black basin floor. Eight: the airless black bottom water. Real answer: number 5, because Cameroceras thrived in shallow tropical seas. Just below the shelf is probably your best bet. Comment your number.",
+   "frame0": "mSZypu6h6aiIpEWl55/kJHwqFqBDLKmHjSQEnaoiDZgQpj4t/Sc0oL+reJv+Jlal7aRNKwqjuqGtp9YgraK9FJqgXaQ0omuiNBe6J7UkeS+BKIkpV6WrGk2f2K3LliEpoaMCLWwknCo3IZSotqxvJrSqsSMEJ44i9ahAEOOoUREFpAmQgKgYLfch2yKmq2Oq7qbtqhglk5gyqPKncaB6qM0gy6XpodqpMyjNJ/qeNKWHqguaUyLEqSa54CNGqM8ohxwno/Wjx7AXoL4c7Kc6JwEndZe7KAYpTSZeoZoiDBkbKbGeQCCJqZUiHaUwpkso2yHEKvgVpam6qXMdDijvoAYgcSYqqVooOak5LTMpBimcpkyooZ59p6ekFqjNlr2m6h9aqa+lwiGKIu0k36NVIrSjGhjnpeqlHyZzpBOjwChLoUGoHR5ZKEClHqMtqCEqfKWomiAlkCXiqP2if6IcK7awjSWBrGSfii1vorWYfqByEtogIih4qcKi2JwVo0amD5SuojQk7xyEKRSdRSbtqK2iNKjpkPgq6Sl0nI8riaK9JKUptqXSKwSaMQltn68oSCqCKJWoPhykKw2kJZy+qCMtByOuJAKkZqTHoqkjfqjtIxMnxJ78qhsa5qTxJ6WdOqVwJg8hmiTmJGOnZKRiJvAgzSH3pfYm0h6wpbGogBxipVCifTEgpeUnKBcpF28tbRqAmJkh3SI/pzco2SL/mvaOVylinY0fcaluHvuhjimDKJEl7CWLIP0hYqUKoaSguxyeqgKfCob4GtklOaaEp0YmwCQjKXeiPKjfppioKyfqnLMkN6ZnKB0pNSkUph8qNy1vBlsh+ad7KF0pr6nKqTQq/TDIqCSpQCg2qCaHuSa6IH2ZdhoLHBUpK6dwpwalQSeBpYcchic5qCCosZd1JdsXUyOBnxCdSCm3JicfvyHHnAYjE6ETqiQloqQoKPCoByCujgAnBimorniiZKCFqmeVpielJFMm2x9BpgcpWaaxKB4csyOYImImoaV0pxKqIiVsouicUpytqvAvIaQWoP+hbycepOKqXI1dJPuqq6lPJdYoMSO6q1skQqLDprqkFCmZoigsCylRJFqmgiEUJC0saCSdlyqbu6b0opslQ6yUKIcnECifKDGvt6RGqbmm36eMGJMWLau0qD2i/SNeIBSiQ6tNqHQoLqFgIcso+6mGngOl26ClIhYYvaZuIeCjqipjpJ2krqUvpVma7pwdpD8oBSDHnc4cTJ2oprgY5CKXnWGlcagTqimoyCqNp2+ZRaXYrAang536oKUqnqbnnD6oGiSSG08WhiN/pMank6UUmtok6xuSozEsrqF7pmiiTinDI9Ol1KS1KiknoSQilw==",
+   "related": "https://www.youtube.com/watch?v=Y_zpVf53Hwc",
+   "run": "40193499654",
+   "checkpoints": {},
+   "av_review_sha256": "64b19a27e0dd566052e8525e5cc8e1b2e71d7842868b4bf9368737c1ec97e4fd",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-28T19:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {

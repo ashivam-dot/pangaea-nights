@@ -3765,7 +3765,7 @@
         "premise": "how_deep-04",
         "replay": ".github/replay/how_deep-04-shell-slope-repair.json"
       },
-      "stage": "upload_intent",
+      "stage": "scheduled",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -4189,7 +4189,28 @@
       },
       "archive": "batch-reviewed-40193499654",
       "intended_publish_at": "2026-10-28T19:30:00Z",
-      "upload_intent_at": "2026-10-25T12:45:53+00:00"
+      "upload_intent_at": "2026-10-25T12:45:53+00:00",
+      "delivery": {
+        "video_id": "UsJ7eUlITT4",
+        "url": "https://www.youtube.com/shorts/UsJ7eUlITT4",
+        "existing": false,
+        "title": "Ocean of Giant Shelled Hunters — How Deep Do You Dare Go? 🐚",
+        "privacy": "private",
+        "publish_at": "2026-10-28T19:30:00Z",
+        "made_for_kids": null,
+        "self_declared_made_for_kids": false,
+        "upload_status": "uploaded",
+        "readback_problems": [],
+        "owner_readback": {
+          "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+          "privacyStatus": "private",
+          "publishAt": "2026-10-28T19:30:00Z",
+          "madeForKids": false,
+          "selfDeclaredMadeForKids": false,
+          "containsSyntheticMedia": null,
+          "uploadStatus": "processed"
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -4893,5 +4914,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:45:53+00:00"
+  "updated_at": "2026-10-25T12:46:31+00:00"
 }
