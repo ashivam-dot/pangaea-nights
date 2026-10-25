@@ -3359,62 +3359,11 @@
       "inputs": {
         "dry_run": "true",
         "slot": "A",
-        "premise": "countdown-04"
+        "premise": "countdown-04",
+        "replay": ".github/replay/countdown-04-gorgonopsian-lystrosaurus-repair.json"
       },
-      "stage": "held",
+      "stage": "planned",
       "attempts": 1,
-      "source_sha": "2dfb5c1416589586933800db1fd8d35013a09242",
-      "before_ids": [
-        40171182599,
-        40167406784,
-        40167081277,
-        40165952771,
-        40165862617,
-        40161421084,
-        40160715571,
-        40160283123,
-        40157815850,
-        40156875292,
-        40156818584,
-        40154688202,
-        40154442347,
-        40152622139,
-        40152163089,
-        40151287146,
-        40150491810,
-        40149509321,
-        40148607387,
-        40148479040,
-        40148319091,
-        40147925087,
-        40147415761,
-        40146406019,
-        40144187249,
-        40143437986,
-        40143333505,
-        40140139736,
-        40138993804,
-        40136822897,
-        40136652437,
-        40135503878,
-        40131481179,
-        40128334178,
-        40124993101,
-        40122729549,
-        40121235398,
-        40119101082,
-        40077496948,
-        39924499144,
-        39830179361,
-        39803824162,
-        39787991414,
-        39780512299,
-        39772637874,
-        39766129149
-      ],
-      "submitted_at": "2026-10-25T07:02:29+00:00",
-      "run_id": 40171289495,
-      "cloud_status": "queued",
       "editorial_holds": [
         {
           "id": "direct-gorgonopsian-modern-cat-hold",
@@ -3581,11 +3530,29 @@
           }
         }
       ],
-      "problems": [
-        "Direct native-resolution inspection rejects both o4 paintings: the named Permian gorgonopsian is rendered as a modern striped cat or hyena with pointed external ear flaps and cat paws. The two exaggerated canines do not establish the fossil-based Inostrancevia skull/body plan. Preserve every spoken line, the same named choice and useful other images; repair only this visual with a source-grounded elongated low therapsid skull and coherent anatomy. All current image, pair, voice, render and audiovisual gates remain mandatory.",
-        "Direct native-resolution review excludes only o1 alternate: it depicts rows of upright ribbed cactus-like succulent stems rather than the specified leafy Permian seed-fern thicket. The original o1 base retains a coherent leafy thicket and remains available; no speech change or extra repaint is needed for this option. Keep every current release gate.",
-        "Direct native-resolution inspection rejects both o5 paintings: the named Lystrosaurus answer is rendered as a horned, crested dinosaur with a long narrow snout, not the short blunt beaked dicynodont with two downward upper tusks. Because this is the factual answer image, retain the premise, source, speech and useful siblings but replace this visual with a source-grounded smooth-headed beaked, tusked grazer. All original image, pair, narration, render and audiovisual checks remain mandatory."
-      ]
+      "repair_history": [
+        {
+          "run_id": 40171289495,
+          "source_sha": "2dfb5c1416589586933800db1fd8d35013a09242",
+          "stage": "held",
+          "problems": [
+            "Direct native-resolution inspection rejects both o4 paintings: the named Permian gorgonopsian is rendered as a modern striped cat or hyena with pointed external ear flaps and cat paws. The two exaggerated canines do not establish the fossil-based Inostrancevia skull/body plan. Preserve every spoken line, the same named choice and useful other images; repair only this visual with a source-grounded elongated low therapsid skull and coherent anatomy. All current image, pair, voice, render and audiovisual gates remain mandatory.",
+            "Direct native-resolution review excludes only o1 alternate: it depicts rows of upright ribbed cactus-like succulent stems rather than the specified leafy Permian seed-fern thicket. The original o1 base retains a coherent leafy thicket and remains available; no speech change or extra repaint is needed for this option. Keep every current release gate.",
+            "Direct native-resolution inspection rejects both o5 paintings: the named Lystrosaurus answer is rendered as a horned, crested dinosaur with a long narrow snout, not the short blunt beaked dicynodont with two downward upper tusks. Because this is the factual answer image, retain the premise, source, speech and useful siblings but replace this visual with a source-grounded smooth-headed beaked, tusked grazer. All original image, pair, narration, render and audiovisual checks remain mandatory."
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "countdown-04"
+          }
+        }
+      ],
+      "obsolete_runs": [
+        40171289495
+      ],
+      "repair_queued_at": "2026-10-25T08:11:31+00:00",
+      "repair_source_sha": "b058dbdb4ff53115e4fb443f4ba0e9755ba5cea6",
+      "repair_reason": "All exact original cat/horned-dinosaur/cactus images are excluded. Preserve every spoken line and reviewed useful art; use source-grounded gorgonopsian jaws and a licensed-reference Lystrosaurus reconstruction with mandatory publishing attribution. Cached image/pair preflight passes at 0.882058; current cloud picture, narration, render and complete audiovisual gates remain mandatory."
     },
     {
       "repo": "pangaea-nights",
@@ -3854,7 +3821,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry countdown-04: Direct native-resolution inspection rejects both o4 paintings: the named Permian gorgonopsian is rendered as a modern striped cat or hyena with pointed external ear flaps and cat paws. The two exaggerated canines do not establish the fossil-based Inostrancevia skull/body plan. Preserve every spoken line, the same named choice and useful other images; repair only this visual with a source-grounded elongated low therapsid skull and coherent anatomy. All current image, pair, voice, render and audiovisual gates remain mandatory.; Direct native-resolution review excludes only o1 alternate: it depicts rows of upright ribbed cactus-like succulent stems rather than the specified leafy Permian seed-fern thicket. The original o1 base retains a coherent leafy thicket and remains available; no speech change or extra repaint is needed for this option. Keep every current release gate.; Direct native-resolution inspection rejects both o5 paintings: the named Lystrosaurus answer is rendered as a horned, crested dinosaur with a long narrow snout, not the short blunt beaked dicynodont with two downward upper tusks. Because this is the factual answer image, retain the premise, source, speech and useful siblings but replace this visual with a source-grounded smooth-headed beaked, tusked grazer. All original image, pair, narration, render and audiovisual checks remain mandatory.",
+  "halted": null,
   "complete": false,
   "health": {
     "public": 2,
@@ -3862,5 +3829,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T08:11:11+00:00"
+  "updated_at": "2026-10-25T08:11:31+00:00"
 }
