@@ -99,6 +99,9 @@ review and release retain their predecessor checks. Every pending dispatch is re
   and render gates. The release check must also compare earlier batch videos, then use fresh live deduplication,
   owner-visible metadata and complete audiovisual review. Sleep documentaries retain the stable cadence below.
 
+- **Narration first.** Shorts check the actual voice report and measured timeline before generating images.
+  Each image shard checks its own slot, so a failed sibling narration does not stop a passing slot. Failed voice
+  diagnostics are retained; every final speech, picture, render and audiovisual gate remains mandatory.
 - **Targeted image repairs.** A manual dry preview can use a manifest in `.github/replay` through `replay`.
   Original source, exact prompt/model, image hash, dimensions and original take metadata must match; every retained
   base/alternate receives current picture checks again. Changed prompts generate new art. Cached seeds are not

@@ -229,6 +229,19 @@ def voice(args) -> None:
     pl = _load(args.slot, "plan.json")
     rep = ladder_voice.narrate(pl["premise"], _dir(args.slot) / "voice")
     print(json.dumps({k: rep[k] for k in ("voice", "speed", "wpm", "wer")}))
+    voice_check(args)
+
+
+def voice_check(args) -> None:
+    from . import ladder_voice
+
+    pl = _load(args.slot, 'plan.json')
+    report = _load(args.slot, 'voice/voice.json')
+    problems = ladder_voice.preflight_problems(pl['premise'], report)
+    _save(args.slot, 'voice/preflight.json', {'passed': not problems, 'problems': problems,
+                                             'release_approval': False})
+    if problems:
+        sys.exit('narration preflight held: ' + '; '.join(problems))
 
 
 def _media(path: Path) -> dict:
@@ -496,7 +509,7 @@ def register(sub) -> None:
     s.add_argument("--slot", choices=list(ladder.SLOTS), required=True)
     s.add_argument("--shard", required=True, help="k/n, e.g. 0/9")
     s.set_defaults(fn=images)
-    for name, fn in (("ladder-voice", voice), ("ladder-render", render)):
+    for name, fn in (("ladder-voice", voice), ("ladder-voice-check", voice_check), ("ladder-render", render)):
         s = sub.add_parser(name)
         s.add_argument("--slot", choices=list(ladder.SLOTS), required=True)
         if name == "ladder-render":

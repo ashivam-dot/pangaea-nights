@@ -104,8 +104,9 @@ jobs:
           retention-days: 7
 
   images:
-    needs: plan
-    if: needs.plan.outputs.any == 'true'
+    needs: [plan, voice]
+    # Each shard checks its own slot: one failed voice must not cancel a passing sibling slot.
+    if: ${{ !cancelled() && needs.plan.outputs.any == 'true' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 120
     strategy:
@@ -129,6 +130,14 @@ jobs:
         with:
           name: ladder-plan
           path: work/ladder
+      - uses: actions/download-artifact@v6
+        with:
+          name: ladder-voice-${{ matrix.slot }}
+          path: work/ladder/${{ matrix.slot }}/voice
+      - name: Refuse expensive image generation for a failed narration
+        env:
+          SLOT: ${{ matrix.slot }}
+        run: python -m studio.cli ladder-voice-check --slot "$SLOT"
       - name: Generate
         env:
           SLOT: ${{ matrix.slot }}
@@ -173,10 +182,12 @@ jobs:
           SLOT: ${{ matrix.slot }}
         run: python -m studio.cli ladder-voice --slot "$SLOT"
       - uses: actions/upload-artifact@v5
+        if: always()
         with:
           name: ladder-voice-${{ matrix.slot }}
           path: work/ladder/${{ matrix.slot }}/voice
           retention-days: 3
+          if-no-files-found: ignore
 
   render:
     needs: [plan, images, voice]

@@ -92,6 +92,31 @@ def _take(lines: list[dict], speed: float) -> dict:
     return out
 
 
+def preflight_problems(p: dict, report: dict) -> list[str]:
+    """Existing speech/timeline limits, checked before imagery. Final production gates still apply."""
+    from . import shorts_ladder
+
+    expected = {line_id(s): s['text'] for s in ladder.segments(p)}
+    segments = report.get('segments', {})
+    if set(segments) != set(expected) or any(segments[k].get('text') != text for k, text in expected.items()):
+        return ['narration report does not match the exact planned spoken script']
+    if set(report.get('durations', {})) != set(expected):
+        return ['narration report lacks the complete measured line durations']
+    tl = shorts_ladder.timeline(p, report['durations'])
+    out = list(tl['problems'])
+    if not shorts_ladder.gate('wer', report.get('wer'))['ok']:
+        out.append('overall narration WER fails the existing release gate')
+    if not shorts_ladder.gate('wer_line', max(s.get('wer', float('inf')) for s in segments.values()))['ok']:
+        out.append('line narration WER fails the existing release gate')
+    if not shorts_ladder.gate('wpm', report.get('wpm'))['ok']:
+        out.append('narration pace fails the existing release gate')
+    if not shorts_ladder.verdict_heard(report, p['answer_n']):
+        out.append('spoken answer number is not confirmed')
+    if not shorts_ladder.gate('hook_hold_s', tl['hook_end'])['ok']:
+        out.append('hook hold fails the existing release gate')
+    return out
+
+
 def narrate(p: dict, out: Path) -> dict:
     """voice/<line>.wav for hook, o1..o8, verdict and cta, and voice/voice.json with durations, word times, pace
     and the Whisper check."""

@@ -2,6 +2,34 @@
 import pytest
 from studio.ladder_voice import wer
 
+
+def test_narration_preflight_refuses_real_asr_loop_and_late_timeline():
+ from studio import ladder, ladder_voice, shorts_ladder
+ p = ladder.find(ladder.load_banks(strict=True), 'how_deep-02')
+ durations = shorts_ladder.estimated_durations(p, 165)
+ report = {'wer': 0, 'wpm': 165, 'durations': durations,
+           'segments': {ladder_voice.line_id(s): {'text': s['text'], 'heard': s['text'], 'wer': 0}
+                        for s in ladder.segments(p)}}
+ assert ladder_voice.preflight_problems(p, report) == []
+ report['segments']['cta']['heard'] += ' eight' * 26
+ report['segments']['cta']['wer'] = 8.667
+ assert any('line narration WER' in e for e in ladder_voice.preflight_problems(p, report))
+ report['segments']['cta']['wer'] = 0
+ report['durations']['verdict'] = 60
+ assert any('total' in e for e in ladder_voice.preflight_problems(p, report))
+
+
+def test_narration_preflight_requires_own_complete_script_and_answer():
+ from studio import ladder, ladder_voice, shorts_ladder
+ p = ladder.find(ladder.load_banks(strict=True), 'how_deep-02')
+ report = {'wer': 0, 'wpm': 165, 'durations': shorts_ladder.estimated_durations(p, 165),
+           'segments': {ladder_voice.line_id(s): {'text': s['text'], 'heard': s['text'], 'wer': 0}
+                        for s in ladder.segments(p)}}
+ report['segments']['verdict']['heard'] = 'Real answer is six.'
+ assert any('answer number' in e for e in ladder_voice.preflight_problems(p, report))
+ report['segments']['o1']['text'] = 'a different script'
+ assert any('exact planned' in e for e in ladder_voice.preflight_problems(p, report))
+
 @pytest.mark.parametrize('expected,heard',[
  ('Three: ten metres down, freezing blue twilight.','3 10 meters down, freezing blue twilight.'),
  ('Four: fifty metres, the last light fades.','4-50 meters the last light fades.'),
