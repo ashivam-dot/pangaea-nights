@@ -2505,6 +2505,52 @@
           "evidence": {
             "ladder-img-A-5/o6.png": "0822ed0a78f886c0b73a59b40ee0cd79ad52f9a7712c5cd6b06b54711937266c",
             "ladder-img-A-5/o6-alt1.png": "326bfdfed7d9274cfa02dfd85411ba277dbb777d56a2904a86aa33b74039b377"
+          },
+          "resolved_at": "2026-10-25T06:06:18+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "a6065ddf31cc0b407a708d5ce83bd1e624568716",
+            "replay": ".github/replay/how-deep-03-mud-sand-repair.json",
+            "replay_sha256": "f17c9522e12d196a782e9ee8c069a3325ae62a59bf114d0bee13e91f21614c3d",
+            "images": {
+              "o1": [
+                "4d02f2ebd5365f13d565bf3302602b987c9464bf2914bade24f739900a87baf6",
+                "61b10c7906db61c3bebb846abe79da926fc471cc5160f8e28af4dded53ab9321"
+              ],
+              "o2": [
+                "176d71a0de94450d4b1ba72890116d0386e4f585a4a381da47992cadb0d9bca4",
+                "115d720b8b29ba1b6f38cdad2830d489171fc8d39a4eb0ed6a768bcd04b5daea"
+              ],
+              "o3": [
+                "18afcadfb1406d9ca0150f3c005ef5184251c2b6259c29a90494ba09dbe6e4a2"
+              ],
+              "o4": [
+                "6ecd5d4ef9013f6a78c1f095de32c3e087a063f44823595c23b7d17bcdb0d6b4",
+                "fd92b35f3ae3b5227d6ccceb4cc0824dd4281ede07a358cbeb2a930f1e887286"
+              ],
+              "o5": [
+                "9bf42e977358794ccb9db654cb8551319b1945740130d342d559ff8d5e3e397a",
+                "af7dd8bd881c0d623b2ede12abf8cca5446c10ac274dcf1fdc6b27f3b6c14157"
+              ],
+              "o6": [
+                "70949644ec0bf4f9476ca17cd0b5dc908da6d1727e9f1d64395602078f96fd0a",
+                "f8c4205cda3fca39858bb951a9e5faf53262d5e5cfb98a8b46a84b116f5970b1"
+              ],
+              "o7": [
+                "a4914aa4e437e60ad30957bb0b5de2036b1e965e242a60172ab0cdff80d3cb44",
+                "781b73269ac240264a9bf5af5519e7644038ca51b20c88c8abfa67e282ed8c5c"
+              ],
+              "o8": [
+                "37b30638208430cc5f13a7f2014ab2219359b275685acb956b4f2eb397814b90",
+                "f5d14df7e99c4e7fac5bffcab4d16b8fd5476fec44ee234877a7c6ca1ddb369d"
+              ],
+              "end": [
+                "70949644ec0bf4f9476ca17cd0b5dc908da6d1727e9f1d64395602078f96fd0a"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/how-deep-03-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -2515,6 +2561,52 @@
           "evidence": {
             "ladder-img-A-4/o5.png": "411233bc27698d87a74646ca5163242b09bd22519acfc353b41010c0ea0f52f6",
             "ladder-img-A-4/o5-alt1.png": "b5fe617a6011f4dff9ebff09008d0685c33036951f203a8658e0760bd428283a"
+          },
+          "resolved_at": "2026-10-25T06:06:18+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "a6065ddf31cc0b407a708d5ce83bd1e624568716",
+            "replay": ".github/replay/how-deep-03-mud-sand-repair.json",
+            "replay_sha256": "f17c9522e12d196a782e9ee8c069a3325ae62a59bf114d0bee13e91f21614c3d",
+            "images": {
+              "o1": [
+                "4d02f2ebd5365f13d565bf3302602b987c9464bf2914bade24f739900a87baf6",
+                "61b10c7906db61c3bebb846abe79da926fc471cc5160f8e28af4dded53ab9321"
+              ],
+              "o2": [
+                "176d71a0de94450d4b1ba72890116d0386e4f585a4a381da47992cadb0d9bca4",
+                "115d720b8b29ba1b6f38cdad2830d489171fc8d39a4eb0ed6a768bcd04b5daea"
+              ],
+              "o3": [
+                "18afcadfb1406d9ca0150f3c005ef5184251c2b6259c29a90494ba09dbe6e4a2"
+              ],
+              "o4": [
+                "6ecd5d4ef9013f6a78c1f095de32c3e087a063f44823595c23b7d17bcdb0d6b4",
+                "fd92b35f3ae3b5227d6ccceb4cc0824dd4281ede07a358cbeb2a930f1e887286"
+              ],
+              "o5": [
+                "9bf42e977358794ccb9db654cb8551319b1945740130d342d559ff8d5e3e397a",
+                "af7dd8bd881c0d623b2ede12abf8cca5446c10ac274dcf1fdc6b27f3b6c14157"
+              ],
+              "o6": [
+                "70949644ec0bf4f9476ca17cd0b5dc908da6d1727e9f1d64395602078f96fd0a",
+                "f8c4205cda3fca39858bb951a9e5faf53262d5e5cfb98a8b46a84b116f5970b1"
+              ],
+              "o7": [
+                "a4914aa4e437e60ad30957bb0b5de2036b1e965e242a60172ab0cdff80d3cb44",
+                "781b73269ac240264a9bf5af5519e7644038ca51b20c88c8abfa67e282ed8c5c"
+              ],
+              "o8": [
+                "37b30638208430cc5f13a7f2014ab2219359b275685acb956b4f2eb397814b90",
+                "f5d14df7e99c4e7fac5bffcab4d16b8fd5476fec44ee234877a7c6ca1ddb369d"
+              ],
+              "end": [
+                "70949644ec0bf4f9476ca17cd0b5dc908da6d1727e9f1d64395602078f96fd0a"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/how-deep-03-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -2525,6 +2617,52 @@
           "evidence": {
             "ladder-img-A-7/o8.png": "9a9db89ab2b4794c9d3eb4fd28bbaa5467c241ee716b1b66cb9909ac7008b9f7",
             "ladder-img-A-7/o8-alt1.png": "1cfeb6e0e2a4fd88d07afd6c4cbc64deaa7bc0b0ec47f99891d48a7bbba22ce5"
+          },
+          "resolved_at": "2026-10-25T06:06:18+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "a6065ddf31cc0b407a708d5ce83bd1e624568716",
+            "replay": ".github/replay/how-deep-03-mud-sand-repair.json",
+            "replay_sha256": "f17c9522e12d196a782e9ee8c069a3325ae62a59bf114d0bee13e91f21614c3d",
+            "images": {
+              "o1": [
+                "4d02f2ebd5365f13d565bf3302602b987c9464bf2914bade24f739900a87baf6",
+                "61b10c7906db61c3bebb846abe79da926fc471cc5160f8e28af4dded53ab9321"
+              ],
+              "o2": [
+                "176d71a0de94450d4b1ba72890116d0386e4f585a4a381da47992cadb0d9bca4",
+                "115d720b8b29ba1b6f38cdad2830d489171fc8d39a4eb0ed6a768bcd04b5daea"
+              ],
+              "o3": [
+                "18afcadfb1406d9ca0150f3c005ef5184251c2b6259c29a90494ba09dbe6e4a2"
+              ],
+              "o4": [
+                "6ecd5d4ef9013f6a78c1f095de32c3e087a063f44823595c23b7d17bcdb0d6b4",
+                "fd92b35f3ae3b5227d6ccceb4cc0824dd4281ede07a358cbeb2a930f1e887286"
+              ],
+              "o5": [
+                "9bf42e977358794ccb9db654cb8551319b1945740130d342d559ff8d5e3e397a",
+                "af7dd8bd881c0d623b2ede12abf8cca5446c10ac274dcf1fdc6b27f3b6c14157"
+              ],
+              "o6": [
+                "70949644ec0bf4f9476ca17cd0b5dc908da6d1727e9f1d64395602078f96fd0a",
+                "f8c4205cda3fca39858bb951a9e5faf53262d5e5cfb98a8b46a84b116f5970b1"
+              ],
+              "o7": [
+                "a4914aa4e437e60ad30957bb0b5de2036b1e965e242a60172ab0cdff80d3cb44",
+                "781b73269ac240264a9bf5af5519e7644038ca51b20c88c8abfa67e282ed8c5c"
+              ],
+              "o8": [
+                "37b30638208430cc5f13a7f2014ab2219359b275685acb956b4f2eb397814b90",
+                "f5d14df7e99c4e7fac5bffcab4d16b8fd5476fec44ee234877a7c6ca1ddb369d"
+              ],
+              "end": [
+                "70949644ec0bf4f9476ca17cd0b5dc908da6d1727e9f1d64395602078f96fd0a"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/how-deep-03-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -2950,5 +3088,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T06:03:37+00:00"
+  "updated_at": "2026-10-25T06:06:18+00:00"
 }
