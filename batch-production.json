@@ -1034,6 +1034,53 @@
             "ladder-img-A-5/o6.png": "f3a5650b4d2d1679788ec8614ef2347dfe66a9e42f1964979cad1811009b06d8",
             "ladder-img-A-7/o8.png": "be7651f9bb754fc4ea3cc9cebf4c199a52f1de4845d739c8ebb212fd54244a01",
             "ladder-img-A-7/o8-alt1.png": "6e322435b1e47d8de6d23030454ff849488bfc806396f66b8f090027f8c448c8"
+          },
+          "resolved_at": "2026-10-25T01:23:55+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "35f1ea21425e8ec75b3ade3dfef7682611b8adb9",
+            "replay": ".github/replay/countdown-high-ground-repair.json",
+            "replay_sha256": "db8cceac02b65c6f3d89ad7ff3adc121b1936bda536eedcd32e2d5dc29c3f1cd",
+            "images": {
+              "o1": [
+                "2f3324490d9b59350eac24483c6e39e560ad0c397040977f64762f7ed44665d3",
+                "844dbddb3fb276856c36cbecdf30c5f65c8a43e54a4f3d64cc16a2af4d7f8394"
+              ],
+              "o2": [
+                "c7f16bc21a4570e437bb59ed332f85a12addc5842f8431b5aa842bc1c0518769",
+                "a9be70a1e9962069bcdf0e2fd4c2910fdb3e2c9c6322fe5b49ef1b66f3b59201"
+              ],
+              "o3": [
+                "ca10a27b9bf8482affb1582897017e685f6b080c7fec1f3e7519a306d52dd21e",
+                "93531c335580d33ca825410a6b78578d5269d067c544f9870374a7410d90bad3"
+              ],
+              "o4": [
+                "7fca922e20fad923d0839194315b16cf79ecb900684b7422bb3dc573beebba6b",
+                "ca212c959f5a01e670becbf04754f3e7790ca82bec6666788a4be7f2d2401b2e"
+              ],
+              "o5": [
+                "ec28b9f96d07371c63c0a252e9e704ed6b339f7abd3099e8865f40cea95817de",
+                "cccfd7df1022ce617af1604d1e4f37a226a1cd55a1c76dd07a085ed84419d3df"
+              ],
+              "o6": [
+                "c02450dde322c7b5aaf745afba3a5a73f7b5b34a81a2a1c2f684c2eff4c22631",
+                "d9592a88c271a5ab99a6df2aa4cb8fd60494e349db3dc025f30816f8703c9e3f"
+              ],
+              "o7": [
+                "eec8c61841aed16bc035c6bd7104927380d356adcc960dbb354663fe717cb13a",
+                "1524df7a03edc9d6ea88656cd65dbea937d729639a618a90f1565be1737dc25c"
+              ],
+              "o8": [
+                "8f587c5b98a26aadde1116eca409991ce2dbb6d596bdc910acc5f047eb41a19a",
+                "650a52662e3f26bd14146d0ad6429b2471ba711b2a7e1575a871e1075e165b34"
+              ],
+              "end": [
+                "3f521234805900132db6503d53371a2441441b06b3645d29cbe3a3588b927eb1"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/countdown-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -1428,5 +1475,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:22:47+00:00"
+  "updated_at": "2026-10-25T01:23:55+00:00"
 }
