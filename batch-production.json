@@ -1963,6 +1963,53 @@
           "evidence": {
             "ladder-img-A-3/o4.png": "8522940edabea2d2e73e781ff902ae50b016b0f2f0a5dd2eae1a6d5846a2cbe1",
             "ladder-img-A-3/o4-alt1.png": "5f27431de35d336465453b3dd0b82da013318d5a241853d99494d37c62f3ddea"
+          },
+          "resolved_at": "2026-10-25T04:20:23+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "744991933557b158e997cb1d7bdd23b12a358645",
+            "replay": ".github/replay/survive-night-02-shelter-repair.json",
+            "replay_sha256": "b659ac48c1a4b1420200700c981ea46685898807c9e7c6039468ef40493218f1",
+            "images": {
+              "o1": [
+                "a8d92c2039f2eaf035b9aaf82b3396b5ad42ccb3ddedf5264ba23f83e745db21",
+                "44b25b382b8836f8f793dfee306ecc7dc26d6e1233a40d161ec1121f48396b44"
+              ],
+              "o2": [
+                "2be3c7e153e3f6ad27ea0cc5a7b41e8792517116aa6d5ba2e5a57c00ba3ee8a2",
+                "88766dd8e2207fe3f2c7250d8aa01db94bbfaa648217e0c8d6dc7cd6ffe99841"
+              ],
+              "o3": [
+                "fdc129ad10baa8676b2831172b6c503aefb55fee217a280823a3b302a2c3d98b",
+                "cc567559569ca887b865c0149ab23d899147ca50bbb0dc0307269e57a75ae6f8"
+              ],
+              "o4": [
+                "017996f9a24dda92b8926ed54a1088b886d1b44284322c6bdc8dfde43aff189d",
+                "fb84563a901d6b48bda2cc74b12efa8b575d9f5785311df550d01724ad3d9a8f"
+              ],
+              "o5": [
+                "a301ec24e43ef26f5fea74158176e7f7ca84fb50f7df1986b79cdc6233bce0a4",
+                "f4a2630047cf74bc37e5ea8d259d418a9352893c2e66d6c1f7f0c06b8b75374b"
+              ],
+              "o6": [
+                "f4d882929ec19f7d93359fb4393a0a62cbd2835f97014e3ed5ceac47e8d21122",
+                "371b638536f296e7e6726f464f518674c12beb43749d70218db25818c5fa7e6f"
+              ],
+              "o7": [
+                "600a2c1f5b0e27ba6b5d95ebb8f94d57cbe21f65a360600d13c29b5f84b4be0f",
+                "a16113bbc20632f227e99f03863e7f2bd9fec6c30750b990d2617811a2f5734c"
+              ],
+              "o8": [
+                "d9ecf310135ac6e4ee404c4071ca0dffe6085827c2dabc7c230a7efbfb7f302a",
+                "8e0725d2dd885d3bbe1f2c1e4e7a1390da674d4e6c20c21750338c5046487f30"
+              ],
+              "end": [
+                "0eac9c6df5b3cd390e3a342ffa8ed3c9146d1bf323df638a4c2d38e34d69c63f"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive-night-02-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -1973,6 +2020,53 @@
           "evidence": {
             "ladder-img-A-4/o5.png": "22caf7bb8047dd26dcaa2fa9775660082a35ddf5cb32a185f3fc23910eb6c5cd",
             "ladder-img-A-4/o5-alt1.png": "401ce7aca73f00187325ce7268b6d98954e5928ab951c136051e162159c1456f"
+          },
+          "resolved_at": "2026-10-25T04:20:23+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "744991933557b158e997cb1d7bdd23b12a358645",
+            "replay": ".github/replay/survive-night-02-shelter-repair.json",
+            "replay_sha256": "b659ac48c1a4b1420200700c981ea46685898807c9e7c6039468ef40493218f1",
+            "images": {
+              "o1": [
+                "a8d92c2039f2eaf035b9aaf82b3396b5ad42ccb3ddedf5264ba23f83e745db21",
+                "44b25b382b8836f8f793dfee306ecc7dc26d6e1233a40d161ec1121f48396b44"
+              ],
+              "o2": [
+                "2be3c7e153e3f6ad27ea0cc5a7b41e8792517116aa6d5ba2e5a57c00ba3ee8a2",
+                "88766dd8e2207fe3f2c7250d8aa01db94bbfaa648217e0c8d6dc7cd6ffe99841"
+              ],
+              "o3": [
+                "fdc129ad10baa8676b2831172b6c503aefb55fee217a280823a3b302a2c3d98b",
+                "cc567559569ca887b865c0149ab23d899147ca50bbb0dc0307269e57a75ae6f8"
+              ],
+              "o4": [
+                "017996f9a24dda92b8926ed54a1088b886d1b44284322c6bdc8dfde43aff189d",
+                "fb84563a901d6b48bda2cc74b12efa8b575d9f5785311df550d01724ad3d9a8f"
+              ],
+              "o5": [
+                "a301ec24e43ef26f5fea74158176e7f7ca84fb50f7df1986b79cdc6233bce0a4",
+                "f4a2630047cf74bc37e5ea8d259d418a9352893c2e66d6c1f7f0c06b8b75374b"
+              ],
+              "o6": [
+                "f4d882929ec19f7d93359fb4393a0a62cbd2835f97014e3ed5ceac47e8d21122",
+                "371b638536f296e7e6726f464f518674c12beb43749d70218db25818c5fa7e6f"
+              ],
+              "o7": [
+                "600a2c1f5b0e27ba6b5d95ebb8f94d57cbe21f65a360600d13c29b5f84b4be0f",
+                "a16113bbc20632f227e99f03863e7f2bd9fec6c30750b990d2617811a2f5734c"
+              ],
+              "o8": [
+                "d9ecf310135ac6e4ee404c4071ca0dffe6085827c2dabc7c230a7efbfb7f302a",
+                "8e0725d2dd885d3bbe1f2c1e4e7a1390da674d4e6c20c21750338c5046487f30"
+              ],
+              "end": [
+                "0eac9c6df5b3cd390e3a342ffa8ed3c9146d1bf323df638a4c2d38e34d69c63f"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive-night-02-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -2415,5 +2509,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T04:18:47+00:00"
+  "updated_at": "2026-10-25T04:20:23+00:00"
 }
