@@ -3679,7 +3679,55 @@
       ],
       "submitted_at": "2026-10-25T08:14:04+00:00",
       "run_id": 40175814446,
-      "cloud_status": "in_progress"
+      "cloud_status": "completed",
+      "review": {
+        "schema": 1,
+        "model": "gemini-3-flash-preview",
+        "duration": 44.3,
+        "video_sha256": "4146b30534c4971afdb5996beaaa849d675f5ccff76b7a90a31f22c46ec882bd",
+        "brief_sha256": "ba62affa053d1d3f4aa1bd5de116cde0fe848fd814f31623d0e8677f02903800",
+        "review_video_sha256": "3c3067d45937d6b83933f3d9affcd9da72063932e6d2394e6c3f181d47991026",
+        "review_audio_sha256": "804ff1cae52679e00d08af4f9e23f9fa3bd1a354e198691e62550d98f150c320",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "Pangaea's biggest volcano just woke up.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.0,
+              "seen": "Fern thicket in orange haze.",
+              "heard": "Pangaea's biggest volcano just woke up."
+            },
+            {
+              "part": "middle",
+              "seconds": 20.0,
+              "seen": "Lystrosaurus near burrow.",
+              "heard": "Dig in with the herd of tusked grazers."
+            },
+            {
+              "part": "ending",
+              "seconds": 42.5,
+              "seen": "Lava river under sunset.",
+              "heard": "Comment your number."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -4013,5 +4061,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T08:35:51+00:00"
+  "updated_at": "2026-10-25T08:36:48+00:00"
 }
