@@ -142,6 +142,40 @@ def args_run(args):
     return args[1].rsplit('/', 1)[-1]
 
 
+@pytest.mark.parametrize('active_ids,extra_buffer,dispatch', [([11], 0, True), ([11, 99], 0, False),
+                                                            ([11], 2, False)])
+def test_finished_future_preview_frees_producer_for_predecessor_repair(
+        monkeypatch, active_ids, extra_buffer, dispatch):
+    repair = {'premise': 'repair', 'stage': 'planned', 'inputs': {'dry_run': 'true'}}
+    running = {'premise': 'running', 'stage': 'building', 'run_id': 11, 'source_sha': 'abc'}
+    finished = {'premise': 'finished', 'stage': 'building', 'run_id': 12, 'source_sha': 'abc'}
+    data = {'jobs': [repair, running, finished] + [
+        {'premise': f'buffer-{i}', 'stage': 'reviewed'} for i in range(extra_buffer)], 'halted': None}
+    monkeypatch.setattr(batch, 'load', lambda: data)
+    monkeypatch.setattr(batch, 'builds', lambda *a: [{'id': i, 'status': 'in_progress'} for i in active_ids])
+    monkeypatch.setattr(batch, 'materialize', lambda *a: pytest.fail('future preview reviewed before repair'))
+    writes, checkpoints = [], []
+    def gh(*args, **kw):
+        if kw.get('body'):
+            assert checkpoints[-1]['jobs'][0]['stage'] == 'dispatch_unresolved'
+            writes.append(kw['body'])
+            return None
+        if args[1].endswith('/commits/main'):
+            return {'sha': 'abc'}
+        return {'head_sha': 'abc', 'status': 'in_progress'} if args_run(args) == '11' else {
+            'head_sha': 'abc', 'status': 'completed', 'conclusion': 'success'}
+    monkeypatch.setattr(batch, 'gh', gh)
+    adapter = SimpleNamespace(REPO='owner/repo', WORKFLOW='run.yml', paused=lambda: False,
+                              review_ready=lambda *a: False)
+    batch.tick(adapter, 'publish', save=lambda d: checkpoints.append(deepcopy(d)))
+    assert bool(writes) is dispatch
+    assert repair['stage'] == ('dispatch_unresolved' if dispatch else 'planned')
+    assert running['stage'] == finished['stage'] == 'building'
+    assert finished['cloud_status'] == 'completed' and not finished.get('review')
+    assert not data['halted']
+
+
+
 @pytest.mark.parametrize('active_ids,expected', [([11], True), ([11, 99], False)])
 def test_bounded_lookahead_overlaps_only_owned_dry_previews(monkeypatch, active_ids, expected):
     data = {'jobs': [{'premise': 'current', 'stage': 'building', 'run_id': 11, 'source_sha': 'abc'},

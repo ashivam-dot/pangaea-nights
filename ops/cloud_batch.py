@@ -376,7 +376,10 @@ def tick(adapter, mode, save=persist):
         data["halted"] = f"Repair held entry {held[0]['premise']}: " + "; ".join(held[0].get("problems", []))
     pending = next((j for j in data["jobs"] if j["stage"] == "planned"), None)
     buffered = sum(j["stage"] not in FINAL | {"planned"} for j in data["jobs"])
-    in_flight = [j for j in data["jobs"] if j["stage"] in ("building", "dispatch_unresolved")]
+    # A completed future preview can still be "building" while ordered review waits
+    # for an earlier repair. It occupies buffer space, but no longer uses a producer.
+    in_flight = [j for j in data["jobs"] if j["stage"] == "dispatch_unresolved"
+                 or (j["stage"] == "building" and j.get("cloud_status") != "completed")]
     # Independent reserved dry previews may overlap within a small bounded buffer.
     # Editorial holds still stop review/release, and uncertain dispatch/delivery stops all work.
     safe_halt = not data.get("halted") or entry_halt(data)
