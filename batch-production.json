@@ -2450,7 +2450,7 @@
         "premise": "how_deep-03",
         "replay": ".github/replay/how-deep-03-mud-sand-repair.json"
       },
-      "stage": "building",
+      "stage": "reviewed",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -2743,7 +2743,8 @@
           ],
           "issues": []
         }
-      }
+      },
+      "archive": "batch-reviewed-40171182599"
     },
     {
       "repo": "pangaea-nights",
@@ -3488,5 +3489,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T07:25:50+00:00"
+  "updated_at": "2026-10-25T07:25:55+00:00"
 }
