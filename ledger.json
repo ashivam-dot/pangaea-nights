@@ -699,6 +699,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "countdown-03",
+   "series": "countdown",
+   "era": "Cretaceous",
+   "slot": "B",
+   "video_id": "PS9nDmXNtO0",
+   "url": "https://www.youtube.com/shorts/PS9nDmXNtO0",
+   "title": "Dinosaur Winter After the Asteroid — Which Home Gets You Through? ❄️",
+   "publish_at": "2026-10-27T00:30:00Z",
+   "uploaded_at": "2026-10-25T05:57:50Z",
+   "script": "The sun is gone for months. Choose your home. Stay in a warm nest under ferns. Take shelter inside a fallen log. Hide in a shallow sea reef. Sink into a quiet freshwater pond. Shelter in a narrow rock crevice. Drift far offshore in the open sea. Climb above the ash cloud. Stay exposed on open ground, through the cold. Real answer: number 4, because freshwater animals probably had low extinction rates after the impact. That record inspired our pond choice. Comment your number.",
+   "frame0": "nqQhpzGpSiHVoUykEyOWKTqo3yghKgOrKyTTqaQiKSf3rvcp6iAvIWslbCRMo7OjPyIcqmKbXKWCrTAqxKs2K6IokKggpCyLoaGbJs6UYiehppkr6h1Qnt0mFKxOpBUdSBpcJrIWiSgXKKMlyakgoxemECLvJDwf1a2/nqccI54spWSnIqd5qqMmNyT+p+Qn+qaPJ46kXySnKXKiZiATpmMhZRTynmqlTRYQEoWnZx+9CEWpjiG+CYu58SlzkKmf3qJeKhqsWrC2qJqiBqW6JC+owyRMsOAhkSSTjOsouqZsmpGhs6BOpOCqQ6e3KPWirCSHpgQijyRvHq6h6SicGyITFC2TqH+hgpukLQcgnx3oIp+laCiDlEgYBiIEnUQUGCVTpVeaaie1JGCfsJ1CJ6ukeajLoWSpVpxIpEKlFJpwJLAlByGooc+mAySEoAMstaFlpgQkIKa9qFug/KiJnFCsXwQ8rP+hSSk9oAqm5qJLpeIj8ikkJo0YwxjFJdAofKkFqHOqYx+rKUeYQI57pLAiSaQLqH8l6aEJqN+gBqQWIhen0aUIqPKj36WiqlepCieEmmMpsI0kJogsTqWrqTcWbh1CogSeXSAIolqQcaRDKcMr+qIpLo8hKiVXJQqbJiOppjOjRaPOpNKnMhqYJ4uJLyMVndSTnSgqKMGmII6HpiQeu6QDEIenEpF0nXuhLB6Hp0SmxiFjJXmmNqRPHkiZ9x5KqFIhDRksqM6cKaYIKcUhByYtpA8nOiUsq2iQIKMMo90YT6mwJzSi1KCXoiWnJKcVIeWaWh4Dp7GoAKUGH8apw6loJWAhESnzo/sooC2lqMkaByIVJDQqCqf2q2QqUzCYqlSotSPMpGgo2aVlKLcdn5oTKJih96cCnvojaSgKpr0oSCZwpMKoB6e5JReghyWGjksmbIg6Jb0ec6PlI9AeQor4qEskn6z5qHsaECBKp98kPy3sJPAUBZWGHDGn06lHJB+kOiPRox4ri6V0Lmqq1iMAKB6pRaydpTOr9igeqICcnKDEp8klTKmepoIiiCHpnm6pJKxiDAyla6kIpYknxaZDp4IpNiippogl7CXrnBUk6qYgqVQf1hzfnF4ra6TtnL2guJ0nqfsku6qtpcSYRx0kJV2nyB6oH4sj86yDpk+mAZ0VpG4oOSDHlkUokSvmJHeh9iUEGaqknaAHJFOUhqY/kHQbR6nHn2cdHi42m+Koa6TApLapnSf6piEq/6jCH9mfrKWHqEsonioRJnGsfSTRHOYJ9yi4KYgg8qTJorKoVSvjK4oktqHzJ1iaMaKCK/8cDJ8pqeOkOKG/J/EnWY/gn/so+aP/qXCkBy/XnVsfayFhKekjvKikpQ==",
+   "related": "https://www.youtube.com/watch?v=Y_zpVf53Hwc",
+   "run": "40165952771",
+   "checkpoints": {},
+   "av_review_sha256": "d625aec82727e02804c52f1913e4983ac79ac199f16fafb1579374e47ace3ba5",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-27T00:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
