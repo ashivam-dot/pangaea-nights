@@ -301,7 +301,8 @@
           "label": "Shelf edge, fading blue",
           "vo": "Four: the shelf edge, light fading.",
           "danger": 4,
-          "image_prompt": "Fully submerged side-view at the rim of a pale Ordovician carbonate shelf dropping into deep blue seawater. Exactly one straight-shelled cephalopod floats horizontally beside the shelf edge. Its rigid smooth shell is a very long slender straight tapering cone with a narrow pointed apex extending far behind a small compact head. The long cone is at least three times longer than the short arm cluster at its broad opening. Show the whole elongated straight shell in profile. A cool underwater depth gradient surrounds the animal; one warm orange reflection on the shelf. Photoreal painterly, vertical composition."
+          "image_prompt": "Fully submerged underwater nature-documentary close view at an Ordovician carbonate shelf edge. A sharply detailed pale limestone ledge fills the lower third: crisp angular cracks, tiny pits, sediment grains and broken shell fragments. Exactly one straight-shelled cephalopod floats just above this ledge in clear blue seawater. Show its whole rigid elongated straight conical shell diagonally across the middle, with fine transverse growth lines and a narrow pointed apex. A compact head and short arm cluster emerge only from the broad shell mouth; the shell is three times longer than the arms. Behind the ledge the shelf drops into dark blue water. One warm orange glow on the shelf, photoreal painterly, vertical composition.",
+          "art_direction": "Cool deep-blue underwater palette, crisp near-field limestone and shell textures, soft neutral external fill, clear complete subject profile, one warm orange glow on the shelf"
         },
         {
           "n": 5,
