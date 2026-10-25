@@ -1343,7 +1343,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T03:03:54+00:00",
-      "cloud_status": "in_progress",
+      "cloud_status": "completed",
       "editorial_holds": [
         {
           "id": "direct-frond-morphology-40151287146",
@@ -1433,7 +1433,55 @@
         40154442347
       ],
       "repair_reason": "Repair only the storm scene after exact combined-image preflight found o2/o3 similarity 0.918 above 0.90. All nine exact cached inputs now pass current picture and pair selection (max 0.876); narration unchanged. Explicit cache-only production avoids unused spare generation, while full cloud image, voice, render and AV gates remain mandatory.",
-      "run_id": 40156818584
+      "run_id": 40156818584,
+      "review": {
+        "schema": 1,
+        "model": "gemini-3-flash-preview",
+        "duration": 43.4,
+        "video_sha256": "9ea7bd9d2e95b75017646c9944fd564a53ce4a3bc3adc71ddb0f4cb23986d57d",
+        "brief_sha256": "18a2242e47fc17f5d5681297d2a61698cc7b9edd563a7394681cbc96a5b22403",
+        "review_video_sha256": "d9eaadb08fa68439132dcaeec6f01738a7c6e5b4dbeb86b2a46fb4d14d21e12c",
+        "review_audio_sha256": "ae02efb3054b3054948e3c1cf77e0d184273b19aab2628882c8230931fe33f3e",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "Before fish, before shells.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 1.5,
+              "seen": "A sunset reflecting on shallow water over green microbial mats with the title overlay.",
+              "heard": "Before fish, before shells."
+            },
+            {
+              "part": "middle",
+              "seconds": 15.5,
+              "seen": "Flat, round disk-like organisms on a dark, silty seafloor at fifty metres depth.",
+              "heard": "Four: fifty metres, quiet and dim."
+            },
+            {
+              "part": "ending",
+              "seconds": 42.0,
+              "seen": "The initial sunset scene over microbial mats with the text 'COMMENT YOUR NUMBER'.",
+              "heard": "Comment your number."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -1863,7 +1911,7 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:18:07+00:00",
+  "updated_at": "2026-10-25T03:19:12+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
