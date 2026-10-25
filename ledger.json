@@ -1445,6 +1445,19 @@
     "failures": [],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-25T08:07:33Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "survive_night-03",
+    "run": "40174192962",
+    "ok": true,
+    "failures": [],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded"
+    ]
    }
   ],
   "alerts": [
