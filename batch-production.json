@@ -1348,6 +1348,48 @@
           "evidence": {
             "ladder-img-A-6/o7.png": "f22ca0fd99a94e423c8d5f526ef6aa02b108633fe28687e707beb37d613e216b",
             "ladder-img-A-6/o7-alt1.png": "97f42c762d8eeb5c74d7329e5641bfbfcd602c108e5963392b3996e2bd71c4d7"
+          },
+          "resolved_at": "2026-10-25T02:26:13+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "1574ec5955ef7b871a7208d6f9e8b33be40e6ebf",
+            "replay": ".github/replay/how-deep-charnia-repair.json",
+            "replay_sha256": "95d62ad880a0d3a4c894e3cc4265d7ac78043fe0cb263e094d7564869340410a",
+            "images": {
+              "o1": [
+                "9d29a24307de852e8b6ea764cb8dd585a269cb732a5b731d5bcb51d9b3575230",
+                "c84006b61a5c719627c3c2a8f4b4ef9989310140db2147194b9bb6baebd168a5"
+              ],
+              "o2": [
+                "b611888894c8c5dfc43ed4514cd7283f31aac11eb17278df4ded95ad2e080d23",
+                "15ad962fdc9d46ba770ce203a9c182d0ad88015f75029bc9d539ebe25542d73c"
+              ],
+              "o3": [
+                "3989f07ab5f556881a1e462164ab908e330a592864ac3ef0f72bda34c8b50f59"
+              ],
+              "o4": [
+                "7976c42252720dd65d537deb0ea60a386cabc70f523e6e06ebcbd5b248818bd9"
+              ],
+              "o5": [
+                "d4bddafa16db6729f8306f52d165bbc6bd7fdcec1b4d98965ee71f5649dd9a5e"
+              ],
+              "o6": [
+                "00a01d13b136bae449cc2fe28f5965ca469cff8551083b2891886017b51d70c5"
+              ],
+              "o7": [
+                "8fab7d997556bd07743fc553985e3231c65ed6516c2a293d4e966dfb1b76938f",
+                "c2735edd036bee92527411ffb5293bf9291d3480a89ec84868bba63af0b45f44"
+              ],
+              "o8": [
+                "7d091438cec1e032f231df2c15338ca673dea7d5e5773d18504fd160018ec6a9"
+              ],
+              "end": [
+                "9d29a24307de852e8b6ea764cb8dd585a269cb732a5b731d5bcb51d9b3575230"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/how-deep-charnia-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -1728,5 +1770,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T02:14:52+00:00"
+  "updated_at": "2026-10-25T02:26:13+00:00"
 }
