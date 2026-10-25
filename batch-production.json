@@ -1910,7 +1910,7 @@
         "premise": "survive_night-02",
         "replay": ".github/replay/survive-night-02-shelter-repair.json"
       },
-      "stage": "building",
+      "stage": "reviewed",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -2144,7 +2144,8 @@
           ],
           "issues": []
         }
-      }
+      },
+      "archive": "batch-reviewed-40165862617"
     },
     {
       "repo": "pangaea-nights",
@@ -2755,5 +2756,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T05:51:24+00:00"
+  "updated_at": "2026-10-25T05:51:28+00:00"
 }
