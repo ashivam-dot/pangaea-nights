@@ -187,7 +187,7 @@
      "label": "Warm nest under ferns",
      "vo": "Stay in a warm nest under ferns.",
      "danger": 1,
-     "image_prompt": "A woven nest of dry ferns under a fallen log in a grey ash-dusted forest, soot drifting down in gloomy twilight, photoreal painterly, vertical composition, one warm focal light from a smouldering ember"
+     "image_prompt": "A dry unlit nest woven from fern stems lies beneath a large naturally fallen log in an ash-dusted Cretaceous forest, frost on fern leaves, slate twilight and falling soot, the nest intact with no fire inside it, one warm amber focal glow from a distant smouldering tree far behind the log, photoreal painterly, vertical composition"
     },
     {
      "n": 2,
@@ -212,17 +212,17 @@
     },
     {
      "n": 5,
-     "label": "Inside a fallen Triceratops",
-     "vo": "Shelter inside a fallen Triceratops.",
+     "label": "Narrow rock crevice",
+     "vo": "Shelter in a narrow rock crevice.",
      "danger": 5,
-     "image_prompt": "The huge dark form of a fallen Triceratops lying in grey ash on a frozen plain, frill dusted with soot, photoreal painterly, vertical composition, one warm focal light from a smouldering tree behind it"
+     "image_prompt": "An empty natural cleft between two massive dark basalt boulders in a grey ash-dusted Cretaceous forest, deep shadow inside the narrow rock fissure, soot drifting in cold slate twilight, dim amber light from a distant smouldering tree beyond the cleft, photoreal painterly, vertical composition"
     },
     {
      "n": 6,
-     "label": "Ride a mosasaur",
-     "vo": "Ride a giant sea lizard offshore.",
+     "label": "Far offshore in open sea",
+     "vo": "Drift far offshore in the open sea.",
      "danger": 6,
-     "image_prompt": "A mosasaur gliding through cold murky open ocean under a grey ash-veiled surface, dim and empty water around it, photoreal painterly, vertical composition, one warm focal light from a faint orange glow above"
+     "image_prompt": "Wide landscape view across empty Cretaceous open ocean under ash-darkened twilight, cold low waves stretch to a distant grey horizon, soot drifting through slate air, one warm muted orange sun glows through heavy haze, no animals or structures, photoreal painterly, vertical composition"
     },
     {
      "n": 7,
@@ -258,7 +258,8 @@
     "prehistoric",
     "science"
    ],
-   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?",
+   "end_image": "o4"
   },
   {
    "id": "countdown-04",

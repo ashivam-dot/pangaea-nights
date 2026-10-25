@@ -561,9 +561,10 @@ def image_jobs(p: dict) -> list[dict]:
     end = (f"A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open "
            f"calm sky in the upper half of the frame. {art}. {STYLE}.")
     if p.get("end_image"):
-        if p["end_image"] != "o1":
-            raise ValueError("the end plate can reprise only the opening image")
-        jobs.append({**jobs[0], "id": "end", "n": 0, "luma": (62.0, 198.0)})
+        if p["end_image"] not in ("o1", f"o{p['answer_n']}"):
+            raise ValueError("the end plate can reprise only the opening image or the winning choice")
+        closing = next(job for job in jobs if job["id"] == p["end_image"])
+        jobs.append({**closing, "id": "end", "n": 0, "luma": (62.0, 198.0)})
     else:
         jobs.append({"id": "end", "n": 0, "scene": end, "prompt": end, "luma": (62.0, 198.0)})
     return jobs

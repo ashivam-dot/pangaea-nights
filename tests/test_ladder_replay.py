@@ -219,6 +219,20 @@ def test_opening_reprise_is_an_exact_scene_and_does_not_change_narration():
         ladder.image_jobs({**p,'end_image':'o8'})
 
 
+def test_winning_choice_reprise_preserves_answer_scene_and_narration():
+    from studio import ladder
+
+    original = ladder.find(ladder.load_banks(strict=False), 'countdown-03')
+    p = {**original, 'end_image': f"o{original['answer_n']}"}
+    jobs = {job['id']: job for job in ladder.image_jobs(p)}
+    winning = jobs[p['end_image']]
+    assert jobs['end'] == {**winning, 'id': 'end', 'n': 0, 'luma': (62.0, 198.0)}
+    assert ladder.script_text(p) == ladder.script_text(original)
+    assert not ladder.premise_problems(p)
+    with pytest.raises(ValueError, match='only the opening image or the winning choice'):
+        ladder.image_jobs({**p, 'end_image': 'o5'})
+
+
 def test_end_reprise_keeps_honest_original_slot_and_one_currently_reviewed_image(cached, tmp_path, monkeypatch):
     _, original, data, _ = cached
     job={**original,'id':'end'}

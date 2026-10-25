@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "premise": "countdown-03",
+  "source": {
+    "run_id": 40160715571,
+    "sha": "397d84810469e9af23a10f1915df2b44888a5fb5",
+    "key": "2026-10-25-countdown-03"
+  },
+  "images": {
+    "o2": [
+      {
+        "file": "countdown-03-shelters-repair/art/o2.png",
+        "sha256": "e676653089da10d15987884c4bc194136f3393ff08a19e9cbebc985bd25459d1",
+        "model": "klein4b-q8-768",
+        "prompt": "POV from inside a hollow fallen log looking out at a dim ash-covered forest floor, grey flakes falling, photoreal painterly, vertical composition, one warm focal light from a smouldering stump outside. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12587275219,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 50.7,
+          "raw_p99": 183.0,
+          "gamma": 0.417,
+          "spread": 196.0
+        }
+      },
+      {
+        "file": "countdown-03-shelters-repair/art/o2-alt1.png",
+        "sha256": "3af0a1d9d97e9a08f8a47348c7170a412eb55ea163aefad88ac987ffee469eeb",
+        "model": "klein4b-q8-768",
+        "prompt": "POV from inside a hollow fallen log looking out at a dim ash-covered forest floor, grey flakes falling, photoreal painterly, vertical composition, one warm focal light from a smouldering stump outside. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12587275219,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 51.6,
+          "raw_p99": 217.0,
+          "gamma": 0.422,
+          "spread": 196.0
+        }
+      }
+    ],
+    "o3": [
+      {
+        "file": "countdown-03-shelters-repair/art/o3.png",
+        "sha256": "f821ee445e2bff416ab57b5a7666d34edacbc13283fdc4f25ee1e9f339473119",
+        "model": "klein4b-q8-768",
+        "prompt": "A shallow Cretaceous reef of rudist shells under murky grey water, dim light filtering down through floating ash, photoreal painterly, vertical composition, one warm focal light from a faint orange shaft of light. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12587472347,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 81.1,
+          "raw_p99": 196.0,
+          "gamma": 0.588,
+          "spread": 101.0
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "countdown-03-shelters-repair/art/o4-alt1.png",
+        "sha256": "1f053b76af38106b2030097bfc0cb213793bf97265b66234de3635496f5cb22a",
+        "model": "klein4b-q8-768",
+        "prompt": "A still freshwater pond in a grey ash-dusted forest, lily pads and reeds, a turtle resting on a log, mist over dark water, photoreal painterly, vertical composition, one warm focal light from a smouldering stump. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12586931999,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 81.8,
+          "raw_p99": 212.0,
+          "gamma": 0.593,
+          "spread": 135.0
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "countdown-03-shelters-repair/art/o7-alt1.png",
+        "sha256": "c19de738eef8a4bb2b9913e143da9241c6842f3eb431446d7541b0ddbe36c23d",
+        "model": "klein4b-q8-768",
+        "prompt": "A bare rocky mountain summit poking above a sea of grey ash cloud, a dim smothered sun barely visible, photoreal painterly, vertical composition, one warm focal light from the dim red sun. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12587760167,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 83.5,
+          "raw_p99": 145.0,
+          "gamma": 0.604,
+          "spread": 126.0
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "countdown-03-shelters-repair/art/o8.png",
+        "sha256": "709024f97ce0398d0dd1f2c7216d7c410acae139fdd6ea1bd40e3b4a0eeaf169",
+        "model": "klein4b-q8-768",
+        "prompt": "A wide frozen plain under falling soot, dead ferns crusted in frost, endless grey twilight, photoreal painterly, vertical composition, one warm focal light from a distant wildfire on the horizon. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12587638140,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 91.2,
+          "raw_p99": 191.0,
+          "gamma": 0.655,
+          "spread": 150.0
+        }
+      },
+      {
+        "file": "countdown-03-shelters-repair/art/o8-alt1.png",
+        "sha256": "5d95874cad58b8cd99c8e2e9c6c1f8b30f5cf2877c02f0aeb81d4aec88f6c9f6",
+        "model": "klein4b-q8-768",
+        "prompt": "A wide frozen plain under falling soot, dead ferns crusted in frost, endless grey twilight, photoreal painterly, vertical composition, one warm focal light from a distant wildfire on the horizon. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12587638140,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 80.1,
+          "raw_p99": 172.0,
+          "gamma": 0.582,
+          "spread": 115.0
+        }
+      }
+    ],
+    "o1": [
+      {
+        "file": "countdown-03-shelters-repair/art/o1-full-t0.png",
+        "sha256": "77b085d3fdd6ec5dfdd07a1f419d79988d3425faa0bc8851200ff2ed55235d57",
+        "model": "klein4b-q8-768",
+        "prompt": "A dry unlit nest woven from fern stems lies beneath a large naturally fallen log in an ash-dusted Cretaceous forest, frost on fern leaves, slate twilight and falling soot, the nest intact with no fire inside it, one warm amber focal glow from a distant smouldering tree far behind the log, photoreal painterly, vertical composition. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 77.9,
+          "raw_p99": 197.0,
+          "gamma": 0.568,
+          "spread": 137.0
+        },
+        "generation": {
+          "file": "countdown-03-shelters-repair/art/o1-full-t0-generation.json",
+          "sha256": "24ff8cf3067ac0f63fd5bc06f88a74599407ee41ee95ad3ec33b608d6f80967b"
+        }
+      },
+      {
+        "file": "countdown-03-shelters-repair/art/o1-full-t1.png",
+        "sha256": "e2050f3cb39ac4552cb3c5de74070a2c5d65ba0b307dd69e5d21a878a978e613",
+        "model": "klein4b-q8-768",
+        "prompt": "A dry unlit nest woven from fern stems lies beneath a large naturally fallen log in an ash-dusted Cretaceous forest, frost on fern leaves, slate twilight and falling soot, the nest intact with no fire inside it, one warm amber focal glow from a distant smouldering tree far behind the log, photoreal painterly, vertical composition. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 82.5,
+          "raw_p99": 208.0,
+          "gamma": 0.597,
+          "spread": 159.0
+        },
+        "generation": {
+          "file": "countdown-03-shelters-repair/art/o1-full-t1-generation.json",
+          "sha256": "76aefd17b1e053ec54e022677c2c803c8769e6c8b85a100c15f404453458c262"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "countdown-03-shelters-repair/art/o5-full-t0.png",
+        "sha256": "bb1c9ebab4733b2449a68dbb24c58c59e39838d77b4b5dd3d457e25c2faed989",
+        "model": "klein4b-q8-768",
+        "prompt": "An empty natural cleft between two massive dark basalt boulders in a grey ash-dusted Cretaceous forest, deep shadow inside the narrow rock fissure, soot drifting in cold slate twilight, dim amber light from a distant smouldering tree beyond the cleft, photoreal painterly, vertical composition. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 40.6,
+          "raw_p99": 193.0,
+          "gamma": 0.366,
+          "spread": 138.0
+        },
+        "generation": {
+          "file": "countdown-03-shelters-repair/art/o5-full-t0-generation.json",
+          "sha256": "173ada4256218b7dc7bb21ebe0a48146ef3b1a57b01739390a8884b936c70b94"
+        }
+      },
+      {
+        "file": "countdown-03-shelters-repair/art/o5-full-t1.png",
+        "sha256": "df9fb94c4db32ff4e5dc6812757f7a1a20f01d387fc1ebbc051e0f93986e220c",
+        "model": "klein4b-q8-768",
+        "prompt": "An empty natural cleft between two massive dark basalt boulders in a grey ash-dusted Cretaceous forest, deep shadow inside the narrow rock fissure, soot drifting in cold slate twilight, dim amber light from a distant smouldering tree beyond the cleft, photoreal painterly, vertical composition. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 38.6,
+          "raw_p99": 222.0,
+          "gamma": 0.357,
+          "spread": 189.0
+        },
+        "generation": {
+          "file": "countdown-03-shelters-repair/art/o5-full-t1-generation.json",
+          "sha256": "1fb49492b33aa947dad18ca260c3621c464b32d171d1d807daa99ce64d3d75bd"
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "countdown-03-shelters-repair/art/o6-full-t0.png",
+        "sha256": "278c5facc24877046f9bbda9575824cb975d69b40b36c63922ff646e06e29d06",
+        "model": "klein4b-q8-768",
+        "prompt": "Wide landscape view across empty Cretaceous open ocean under ash-darkened twilight, cold low waves stretch to a distant grey horizon, soot drifting through slate air, one warm muted orange sun glows through heavy haze, no animals or structures, photoreal painterly, vertical composition. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 82.3,
+          "raw_p99": 167.0,
+          "gamma": 0.596,
+          "spread": 117.0
+        },
+        "generation": {
+          "file": "countdown-03-shelters-repair/art/o6-full-t0-generation.json",
+          "sha256": "a5e1124fca1dc9af5ebd339d55f084cd8023afe59d1f63aa71790702d92a5e75"
+        }
+      },
+      {
+        "file": "countdown-03-shelters-repair/art/o6-full-t1.png",
+        "sha256": "8f9a50506c67881507079051ad03031e9fb2ad4cc57e71b6710d6586f31174c0",
+        "model": "klein4b-q8-768",
+        "prompt": "Wide landscape view across empty Cretaceous open ocean under ash-darkened twilight, cold low waves stretch to a distant grey horizon, soot drifting through slate air, one warm muted orange sun glows through heavy haze, no animals or structures, photoreal painterly, vertical composition. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 75.2,
+          "raw_p99": 157.0,
+          "gamma": 0.552,
+          "spread": 104.0
+        },
+        "generation": {
+          "file": "countdown-03-shelters-repair/art/o6-full-t1-generation.json",
+          "sha256": "04ae568114ca039cd5701f98fb3e5418b6545ec3412440479f5b5eac1d0a644f"
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "countdown-03-shelters-repair/art/o4-alt1.png",
+        "sha256": "1f053b76af38106b2030097bfc0cb213793bf97265b66234de3635496f5cb22a",
+        "model": "klein4b-q8-768",
+        "prompt": "A still freshwater pond in a grey ash-dusted forest, lily pads and reeds, a turtle resting on a log, mist over dark water, photoreal painterly, vertical composition, one warm focal light from a smouldering stump. Ash-grey twilight world, desaturated slate blues with flakes of falling soot, 35mm handheld feel, cold breath of mist. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12586931999,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 81.8,
+          "raw_p99": 212.0,
+          "gamma": 0.593,
+          "spread": 135.0
+        },
+        "source_image": "o4"
+      }
+    ]
+  },
+  "cached_only": true
+}
