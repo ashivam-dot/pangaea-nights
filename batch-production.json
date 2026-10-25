@@ -3233,7 +3233,7 @@
         "slot": "A",
         "premise": "countdown-04"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "2dfb5c1416589586933800db1fd8d35013a09242",
       "before_ids": [
@@ -3286,7 +3286,22 @@
       ],
       "submitted_at": "2026-10-25T07:02:29+00:00",
       "run_id": 40171289495,
-      "cloud_status": "queued"
+      "cloud_status": "queued",
+      "editorial_holds": [
+        {
+          "id": "direct-gorgonopsian-modern-cat-hold",
+          "run_id": 40171289495,
+          "observed_at": "2026-10-25T07:30:12+00:00",
+          "reason": "Direct native-resolution inspection rejects both o4 paintings: the named Permian gorgonopsian is rendered as a modern striped cat or hyena with pointed external ear flaps and cat paws. The two exaggerated canines do not establish the fossil-based Inostrancevia skull/body plan. Preserve every spoken line, the same named choice and useful other images; repair only this visual with a source-grounded elongated low therapsid skull and coherent anatomy. All current image, pair, voice, render and audiovisual gates remain mandatory.",
+          "evidence": {
+            "ladder-img-A-3/o4.png": "236915a330f5e5fcddc2f00e6545e75824062e9715975351289ae4aaf71da0a0",
+            "ladder-img-A-3/o4-alt1.png": "42dc3b5649b7c87e336ccb24de549787fa6f32dc31d57e49e85d5657c8399d6f"
+          }
+        }
+      ],
+      "problems": [
+        "Direct native-resolution inspection rejects both o4 paintings: the named Permian gorgonopsian is rendered as a modern striped cat or hyena with pointed external ear flaps and cat paws. The two exaggerated canines do not establish the fossil-based Inostrancevia skull/body plan. Preserve every spoken line, the same named choice and useful other images; repair only this visual with a source-grounded elongated low therapsid skull and coherent anatomy. All current image, pair, voice, render and audiovisual gates remain mandatory."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -3555,7 +3570,7 @@
       "attempts": 0
     }
   ],
-  "halted": null,
+  "halted": "Repair held entry countdown-04: Direct native-resolution inspection rejects both o4 paintings: the named Permian gorgonopsian is rendered as a modern striped cat or hyena with pointed external ear flaps and cat paws. The two exaggerated canines do not establish the fossil-based Inostrancevia skull/body plan. Preserve every spoken line, the same named choice and useful other images; repair only this visual with a source-grounded elongated low therapsid skull and coherent anatomy. All current image, pair, voice, render and audiovisual gates remain mandatory.",
   "complete": false,
   "health": {
     "public": 2,
@@ -3563,5 +3578,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T07:26:57+00:00"
+  "updated_at": "2026-10-25T07:30:12+00:00"
 }
