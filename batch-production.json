@@ -2781,7 +2781,7 @@
         "premise": "level_1_8-03",
         "replay": ".github/replay/level-03-coherent-armor-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -2965,7 +2965,9 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T07:26:54+00:00"
+      "submitted_at": "2026-10-25T07:26:54+00:00",
+      "run_id": 40172801247,
+      "cloud_status": "queued"
     },
     {
       "repo": "pangaea-nights",
@@ -3575,8 +3577,8 @@
   "health": {
     "public": 2,
     "scheduled": 7,
-    "held": 0,
+    "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T07:34:26+00:00"
+  "updated_at": "2026-10-25T07:34:30+00:00"
 }
