@@ -184,3 +184,11 @@ and all earlier labels stay. Source-bound CLIP embeddings catch that exact failu
 reviewed empty/animal controls. This remains an image screen; full audiovisual review is mandatory.
 An additional empty-lake take at 0.481 rose to 0.511 and is conservatively held; another was already
 over the ceiling. Ordinary bounded spares remain necessary, and a later lake take passes at 0.468.
+
+The countdown04 input repair keeps every spoken line, excludes the rejected cactus alternate,
+and replaces only the gorgonopsian and Lystrosaurus images. The latter uses Nobu Tamura's
+CC BY 3.0 anatomical reference with the existing free local FLUX.2 model. Reference-conditioned
+art has an explicit schema-2 origin, exact request and reference hashes, saved Commons license
+evidence, and mandatory source/adaptation credit in the publishing description. It cannot be
+presented as text-only generation. Current image, pair, narrator, render and complete audiovisual
+checks still apply; staged inputs do not approve a release.

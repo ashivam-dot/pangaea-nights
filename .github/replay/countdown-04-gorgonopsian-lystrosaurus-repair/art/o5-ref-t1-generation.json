@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "origin": "local-stable-diffusion.cpp-reference",
+  "source_sha": "b3aa55b923864c6c719c9bbbc10beeb31326aeee",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "Place the Lystrosaurus from the supplied anatomical reference in a dry Permian riverbank scene beside a small earthen burrow. Preserve the animal's exact short blunt downturned beak, smooth broad head, two small downward upper tusks, low barrel body, four short sturdy legs and short tail. Preserve its fossil-informed head and body proportions. One animal stands in side profile in the foreground, looking left. Replace the white backdrop with dusty red ground, a burrow opening, sparse low ferns and distant red volcanic haze under an orange sunset. Photoreal painterly illustration, vertical composition, one warm focal light from the low orange sun. Plausible illustrative soft tissue over the known fossil anatomy. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 814754850
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o5-ref-t1-raw.png",
+    "sha256": "2ca1462a57893178ea2b17ff06ee1ee6810c014f33598de4a10cf4248003b2ac"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 120.8,
+  "conditioning": {
+    "mode": "reference",
+    "endpoint": "/v1/images/edits",
+    "request_extra_args": {
+      "seed": 814754850,
+      "sample_params": {
+        "sample_steps": 4,
+        "sample_method": "euler",
+        "guidance": {
+          "txt_cfg": 1.0
+        }
+      }
+    },
+    "references": [
+      {
+        "title": "File:Lystrosaurus BW.jpg",
+        "author": "Nobu Tamura",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Lystrosaurus_BW.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Lystrosaurus_BW.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sha256": "138cea5690395c8096bea28605ba7cd849b2eb094d80691fd3bc920aa05685d4",
+        "license_evidence_sha256": "8cc99f725d2a6089c7e8efbb9b92c1949d08a898b0ef3059f5ef340bea3cf8c6",
+        "credit": "Anatomical reference for the Lystrosaurus illustration: Nobu Tamura, Lystrosaurus BW.jpg, https://commons.wikimedia.org/wiki/File:Lystrosaurus_BW.jpg (CC BY 3.0, https://creativecommons.org/licenses/by/3.0/), AI-adapted background and rendering with illustrative soft tissue and coloration.",
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/reference-Lystrosaurus-BW.jpg",
+        "license_evidence": {
+          "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/lystrosaurus-image-licenses.json",
+          "sha256": "8cc99f725d2a6089c7e8efbb9b92c1949d08a898b0ef3059f5ef340bea3cf8c6"
+        }
+      }
+    ]
+  }
+}

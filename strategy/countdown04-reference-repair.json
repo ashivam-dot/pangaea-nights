@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-25T08:10:36.486453+00:00",
+  "premise": "countdown-04",
+  "scope": "Input repair; complete current cloud picture/voice/render and audiovisual review required",
+  "release_approval": false,
+  "speech_changed": false,
+  "original_source_sha": "2dfb5c1416589586933800db1fd8d35013a09242",
+  "original_run": 40171289495,
+  "replay": ".github/replay/countdown-04-gorgonopsian-lystrosaurus-repair.json",
+  "replay_sha256": "b0838d5175fb82168d113408d4891172d2f871f299896817f6b22b7c42e22a80",
+  "selected_reference_image": "art-v5-reference/o5-ref-t1.png",
+  "reference_author": "Nobu Tamura",
+  "reference_license": "CC BY 3.0",
+  "reference_sha256": "138cea5690395c8096bea28605ba7cd849b2eb094d80691fd3bc920aa05685d4",
+  "conditioning": "Existing FLUX.2 Klein local /v1/images/edits, explicitly schema 2 reference origin, exact request/weights/raw/exposure/reference/license bindings",
+  "publishing_attribution": "Complete source and adaptation credit is in the premise description and is mandatory in current image generation checks",
+  "unchanged_gates": "All existing numerical and audiovisual gates remain",
+  "full_local_tests": 386,
+  "post_staging_bank_and_replay_tests": 73,
+  "cached_preflight": {
+    "passes": true,
+    "pair_max": 0.8820579051971436,
+    "pair_min": 0.6511827111244202
+  },
+  "excluded_all_exact_refused_original_bytes": true,
+  "manual_staging_fix": "Any hash-bound hold overrides older historical pass; undeployed first staging quarantined outside repo."
+}

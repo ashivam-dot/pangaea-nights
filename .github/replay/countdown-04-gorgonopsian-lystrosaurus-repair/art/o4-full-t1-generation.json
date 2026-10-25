@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "b3aa55b923864c6c719c9bbbc10beeb31326aeee",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "An extreme close-up side view of the biting jaws of a Permian gorgonopsian Inostrancevia, based on its fossil skull. Only the very long narrow snout, mouth and cheek fill the entire picture, nose to the left and cropped cheek to the right. A single enormous curved upper canine tooth hangs down from the front of the upper jaw, clearly much longer than the row of small pointed cheek teeth behind it. The opposite upper canine is mostly hidden by the side-on view. The mouth opens enough to show the long canine against the empty dark gap, with a plain continuous lower jaw beneath. Small round nostril at the tip of the long snout. Neutral rough grey-brown skin covers the elongated skull; illustrative soft tissue. A blurred cracked red plain and volcanic ash glow lie behind. The long tooth and narrow jaws dominate the picture, photoreal painterly, vertical composition, one warm focal light from distant lava. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 859016224
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o4-full-t1-raw.png",
+    "sha256": "a228a9fe0f3ddcca52f456e174ff40e2679e691ef7189968fc8d0c21b614256c"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 42.4
+}

@@ -1,0 +1,249 @@
+{
+  "schema": 1,
+  "premise": "countdown-04",
+  "cached_only": true,
+  "source": {
+    "run_id": 40171289495,
+    "sha": "2dfb5c1416589586933800db1fd8d35013a09242",
+    "key": "2026-10-25-countdown-04"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o1.png",
+        "sha256": "e4c6a8e55640c50ad82f81ca4158338619105f90133e71abe0049c3e9b2520cc",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 57.6,
+          "raw_p99": 161.0,
+          "gamma": 0.453,
+          "spread": 99.0
+        },
+        "artifact_id": 12590259568,
+        "prompt": "A dense thicket of Glossopteris seed ferns on a dry Permian plain, red-brown haze above, leaves dusted with ash, photoreal painterly, vertical composition, one warm focal light from a lava glow on the horizon. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o2": [
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o2.png",
+        "sha256": "6b68b1f3c5b5df18ed7df354e4aad3e11a16a919dc5292156110d798cad11f92",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 59.5,
+          "raw_p99": 196.0,
+          "gamma": 0.463,
+          "spread": 150.0
+        },
+        "artifact_id": 12591256175,
+        "prompt": "POV from inside a shaded rock cave above a slow Permian river, red haze over the far bank, photoreal painterly, vertical composition, one warm focal light from a lava glow through the haze. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o2-alt1.png",
+        "sha256": "bfba4a8f4370faa7d0fc636f5e26bbc3084f61c18268abe5879c8569fb7ee261",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 53.7,
+          "raw_p99": 199.0,
+          "gamma": 0.432,
+          "spread": 172.0
+        },
+        "artifact_id": 12591256175,
+        "prompt": "POV from inside a shaded rock cave above a slow Permian river, red haze over the far bank, photoreal painterly, vertical composition, one warm focal light from a lava glow through the haze. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o3": [
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o3.png",
+        "sha256": "741b4318ffb07354df8c4d5490503d04e9064977cc5e27b44da1dbce685b446e",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 76.2,
+          "raw_p99": 193.0,
+          "gamma": 0.558,
+          "spread": 109.0
+        },
+        "artifact_id": 12590487862,
+        "prompt": "A steaming Permian swamp of grey mud and horsetails under a rust-coloured sky, bubbles rising from the mire, photoreal painterly, vertical composition, one warm focal light from a volcanic glow behind the trees. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o3-alt1.png",
+        "sha256": "6aac006849460c18c9115b0b7ab1783d99275fd005adf8b1393d2e96bcc3db29",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 73.1,
+          "raw_p99": 178.0,
+          "gamma": 0.539,
+          "spread": 107.0
+        },
+        "artifact_id": 12590487862,
+        "prompt": "A steaming Permian swamp of grey mud and horsetails under a rust-coloured sky, bubbles rising from the mire, photoreal painterly, vertical composition, one warm focal light from a volcanic glow behind the trees. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o4": [
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o4-full-t0.png",
+        "sha256": "5bc9fcd225c9f9d3ef15dcbe06fa29c52680d87cb06ed0f998ee1b7496417941",
+        "model": "klein4b-q8-768",
+        "prompt": "An extreme close-up side view of the biting jaws of a Permian gorgonopsian Inostrancevia, based on its fossil skull. Only the very long narrow snout, mouth and cheek fill the entire picture, nose to the left and cropped cheek to the right. A single enormous curved upper canine tooth hangs down from the front of the upper jaw, clearly much longer than the row of small pointed cheek teeth behind it. The opposite upper canine is mostly hidden by the side-on view. The mouth opens enough to show the long canine against the empty dark gap, with a plain continuous lower jaw beneath. Small round nostril at the tip of the long snout. Neutral rough grey-brown skin covers the elongated skull; illustrative soft tissue. A blurred cracked red plain and volcanic ash glow lie behind. The long tooth and narrow jaws dominate the picture, photoreal painterly, vertical composition, one warm focal light from distant lava. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 80.6,
+          "raw_p99": 179.0,
+          "gamma": 0.585,
+          "spread": 91.0
+        },
+        "generation": {
+          "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o4-full-t0-generation.json",
+          "sha256": "3ccb9fc90428c2bd099a2dde07a98215f6277391c7dfe7685a75fb97e58398f2"
+        }
+      },
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o4-full-t1.png",
+        "sha256": "b2d87035ab4025d899e2b9668f4bfd560f79da715512638b3427b622e0eb2bd1",
+        "model": "klein4b-q8-768",
+        "prompt": "An extreme close-up side view of the biting jaws of a Permian gorgonopsian Inostrancevia, based on its fossil skull. Only the very long narrow snout, mouth and cheek fill the entire picture, nose to the left and cropped cheek to the right. A single enormous curved upper canine tooth hangs down from the front of the upper jaw, clearly much longer than the row of small pointed cheek teeth behind it. The opposite upper canine is mostly hidden by the side-on view. The mouth opens enough to show the long canine against the empty dark gap, with a plain continuous lower jaw beneath. Small round nostril at the tip of the long snout. Neutral rough grey-brown skin covers the elongated skull; illustrative soft tissue. A blurred cracked red plain and volcanic ash glow lie behind. The long tooth and narrow jaws dominate the picture, photoreal painterly, vertical composition, one warm focal light from distant lava. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 90.3,
+          "raw_p99": 185.0,
+          "gamma": 0.649,
+          "spread": 102.0
+        },
+        "generation": {
+          "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o4-full-t1-generation.json",
+          "sha256": "597b39d66c84ca4a38be3524668b68516801010670dae4b8cf1682a23f4be0ce"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o5-ref-t1.png",
+        "sha256": "8a81942ddf743c22f213de45df194abe2cb6430b90d6047cfcc33450b4d3d41b",
+        "model": "klein4b-q8-768",
+        "prompt": "Place the Lystrosaurus from the supplied anatomical reference in a dry Permian riverbank scene beside a small earthen burrow. Preserve the animal's exact short blunt downturned beak, smooth broad head, two small downward upper tusks, low barrel body, four short sturdy legs and short tail. Preserve its fossil-informed head and body proportions. One animal stands in side profile in the foreground, looking left. Replace the white backdrop with dusty red ground, a burrow opening, sparse low ferns and distant red volcanic haze under an orange sunset. Photoreal painterly illustration, vertical composition, one warm focal light from the low orange sun. Plausible illustrative soft tissue over the known fossil anatomy. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 80.5,
+          "raw_p99": 215.0,
+          "gamma": 0.584,
+          "spread": 100.0
+        },
+        "generation": {
+          "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o5-ref-t1-generation.json",
+          "sha256": "bf34f991cebbf6b310f2ca6e733ccf58dd7d8f05cd22137365d990928ae557b8"
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o6.png",
+        "sha256": "11d1123ba104ec970ea5dc43a2ec060be5d8a1b0b3dc56df168938feaa98436b",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 79.8,
+          "raw_p99": 193.0,
+          "gamma": 0.58,
+          "spread": 159.0
+        },
+        "artifact_id": 12590789926,
+        "prompt": "View from a black basalt ridge over endless fissure eruptions, curtains of lava fountaining across Siberian Pangaea, photoreal painterly, vertical composition, one warm focal light from the lava fountains. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o6-alt1.png",
+        "sha256": "033982f570b02aa12f17da0dd371b4755b934afb7a692b8582006254bd5e848e",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 70.0,
+          "raw_p99": 210.0,
+          "gamma": 0.521,
+          "spread": 110.0
+        },
+        "artifact_id": 12590789926,
+        "prompt": "View from a black basalt ridge over endless fissure eruptions, curtains of lava fountaining across Siberian Pangaea, photoreal painterly, vertical composition, one warm focal light from the lava fountains. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o7": [
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o7.png",
+        "sha256": "4e88dffa80327b4d1be82851a63de3d7b02169f64ced7170d6381d9e59eae66c",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 63.8,
+          "raw_p99": 141.0,
+          "gamma": 0.486,
+          "spread": 61.0
+        },
+        "artifact_id": 12590838807,
+        "prompt": "A warm shallow Permian bay turning murky purple and still, dead shells on the sand, sulphurous haze overhead, photoreal painterly, vertical composition, one warm focal light from a lava glow beyond. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o7-alt1.png",
+        "sha256": "f4451b69a44fa93d6c9c2cf46e8f40e9155c36256907564fa1a8f780899775e1",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 69.9,
+          "raw_p99": 180.0,
+          "gamma": 0.521,
+          "spread": 82.0
+        },
+        "artifact_id": 12590838807,
+        "prompt": "A warm shallow Permian bay turning murky purple and still, dead shells on the sand, sulphurous haze overhead, photoreal painterly, vertical composition, one warm focal light from a lava glow beyond. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o8": [
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o8.png",
+        "sha256": "07d0c21a41284d0307dcbbb206dd0712a42438b9c8e38926724b05b9e56e51d1",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 43.0,
+          "raw_p99": 199.0,
+          "gamma": 0.378,
+          "spread": 168.0
+        },
+        "artifact_id": 12592030878,
+        "prompt": "A cracked crust of fresh basalt glowing red through its seams, steam and gas venting into a black sky, photoreal painterly, vertical composition, one warm focal light from the molten cracks. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/o8-alt1.png",
+        "sha256": "769a7a6c7251427b15f9191c49b62f10eedbd9eb2475560f543da951859ca5b2",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 40.8,
+          "raw_p99": 208.0,
+          "gamma": 0.368,
+          "spread": 170.0
+        },
+        "artifact_id": 12592030878,
+        "prompt": "A cracked crust of fresh basalt glowing red through its seams, steam and gas venting into a black sky, photoreal painterly, vertical composition, one warm focal light from the molten cracks. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "end": [
+      {
+        "file": "countdown-04-gorgonopsian-lystrosaurus-repair/art/end.png",
+        "sha256": "4675288abda1d4bdde20a53b019f413422a22487162288d3273540e9aba84bee",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 77.0,
+          "raw_p99": 228.0,
+          "gamma": 0.562,
+          "spread": 165.0
+        },
+        "artifact_id": 12591727517,
+        "prompt": "A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open calm sky in the upper half of the frame. Choking red-brown haze over arid Pangaea, rust and charcoal palette, telephoto 135mm, lava rivers on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ]
+  }
+}

@@ -130,6 +130,9 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
             if cached_only and not cached:
                 raise ValueError(f"cache-only replay lacks exact inputs for {job['id']}")
             for img, exposure, take, provenance in cached:
+                for credit in provenance["source"].get("required_credits", []):
+                    if credit not in p.get("description", ""):
+                        raise ValueError("reference adaptation attribution is missing from the publishing description")
                 verdict = qa.review(img, job["scene"])
                 fig = qa.figure(img)
                 probs = exposure_problems(exposure) + take_problems(verdict, job, fig)

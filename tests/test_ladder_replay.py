@@ -284,6 +284,69 @@ def test_local_generation_is_explicit_and_reproduces_the_original_raw_grade(loca
     assert 'artifact_id' not in found[0][3] and 'run_id' not in source
 
 
+@pytest.fixture
+def reference_cached(local_cached):
+    path, job, data, row, proof, proof_path = local_cached
+    ref = path.parent / 'reference.png'
+    Image.new('RGB', (8, 8), 'green').save(ref)
+    page = 'https://commons.wikimedia.org/wiki/File:Reference.png'
+    url = 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Reference.png'
+    license_url = 'https://creativecommons.org/licenses/by/3.0/'
+    credit = f'Reference: Artist, {page}, CC BY 3.0, {license_url}, AI-adapted setting.'
+    evidence = path.parent / 'license.json'
+    evidence.write_text(json.dumps({'query': {'pages': {'1': {
+        'title': 'File:Reference.png', 'imageinfo': [{'url': url, 'descriptionurl': page,
+        'extmetadata': {'Artist': {'value': '<b>Artist</b>'},
+                        'LicenseShortName': {'value': 'CC BY 3.0'},
+                        'LicenseUrl': {'value': license_url}}}]}}}}))
+    proof.update(schema=2, origin='local-stable-diffusion.cpp-reference', conditioning={
+        'mode': 'reference', 'endpoint': '/v1/images/edits',
+        'request_extra_args': {'seed': proof['settings']['seed'], 'sample_params': {
+            'sample_steps': 4, 'sample_method': 'euler', 'guidance': {'txt_cfg': 1.0}}},
+        'references': [{'file': ref.name, 'sha256': replay.digest(ref), 'title': 'File:Reference.png',
+                        'author': 'Artist', 'page': page, 'url': url, 'license': 'CC BY 3.0',
+                        'license_url': license_url, 'credit': credit,
+                        'license_evidence': {'file': evidence.name, 'sha256': replay.digest(evidence)}}]})
+    proof_path.write_text(json.dumps(proof))
+    row['generation']['sha256'] = replay.digest(proof_path)
+    data['cached_only'] = True
+    return local_cached, credit
+
+
+def test_reference_pixels_and_license_survive_as_explicit_provenance(reference_cached, tmp_path, monkeypatch):
+    (_, job, data, _, _, _), credit = reference_cached
+    found = replay.candidates(data, job, 'test', (8, 8))
+    assert found[0][3]['source']['kind'] == 'local-stable-diffusion.cpp-reference'
+    assert found[0][3]['source']['required_credits'] == [credit]
+    with pytest.raises(ValueError, match='attribution is missing'):
+        li.generate({'id': data['premise']}, 'original-key', tmp_path/'uncredited', 0, 1, model='test', replay=data)
+    monkeypatch.setattr(qa, 'review', lambda *a: verdict(['broken 0.8']))
+    monkeypatch.setattr(li.sdcpp, 'Server', lambda *a: pytest.fail('reference gates loaded a painter'))
+    report = li.generate({'id': data['premise'], 'description': credit}, 'original-key',
+                         tmp_path/'credited-but-broken', 0, 1, model='test', replay=data)
+    assert not report['images'][0]['ok']  # attribution never waives the current picture gates
+
+
+@pytest.mark.parametrize('changed', ['reference_bytes', 'license', 'credit', 'request', 'text_only'])
+def test_reference_conditioning_cannot_hide_unlicensed_or_changed_inputs(reference_cached, changed):
+    (path, job, data, row, proof, proof_path), _ = reference_cached
+    ref = proof['conditioning']['references'][0]
+    if changed == 'reference_bytes':
+        (path.parent / ref['file']).write_bytes(b'changed reference')
+    elif changed == 'license':
+        ref['license'] = 'public domain'
+    elif changed == 'credit':
+        ref['credit'] = 'Artist'
+    elif changed == 'request':
+        proof['conditioning']['request_extra_args']['seed'] += 1
+    else:
+        proof.update(schema=1, origin='local-stable-diffusion.cpp')
+    proof_path.write_text(json.dumps(proof))
+    row['generation']['sha256'] = replay.digest(proof_path)
+    with pytest.raises(ValueError):
+        replay.candidates(data, job, 'test', (8, 8))
+
+
 def test_local_closing_reprise_keeps_original_seed_and_receives_current_checks(local_cached, tmp_path, monkeypatch):
     _, original, data, row, _, _ = local_cached
     job = {**original, 'id': 'end'}

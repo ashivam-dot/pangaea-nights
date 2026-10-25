@@ -1,0 +1,364 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "3084638": {
+        "pageid": 3084638,
+        "ns": 6,
+        "title": "File:Lystr georg1DB.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Lystr_georg1DB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Lystr_georg1DB.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=3084638",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2007-11-13 14:55:56",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Lystr georg1DB",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|CC-BY-SA-3.0,2.5,2.0,1.0|License migration redundant|Self-published work|Images by Dmitry Bogdanov|Lystrosaurus life restorations",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<i>Lystrosaurus georgi</i>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "dmitrchel@mail.ru",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q39957193\" class=\"extiw\" title=\"d:Q39957193\"><span title=\"Russian artist\">Dmitry Bogdanov</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "2883297": {
+        "pageid": 2883297,
+        "ns": 6,
+        "title": "File:Lystr murr1DB.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Lystr_murr1DB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Lystr_murr1DB.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=2883297",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2007-10-09 03:53:35",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Lystr murr1DB",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|CC-BY-SA-3.0,2.5,2.0,1.0|License migration redundant|Self-published work|Images by Dmitry Bogdanov|Lystrosaurus life restorations",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<i>Lystrosaurus murray</i>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "dmitrchel@mail.ru",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q39957193\" class=\"extiw\" title=\"d:Q39957193\"><span title=\"Russian artist\">Dmitry Bogdanov</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "19461397": {
+        "pageid": 19461397,
+        "ns": 6,
+        "title": "File:Lystrosaurus BW.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Lystrosaurus_BW.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Lystrosaurus_BW.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=19461397",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2007-10-19 06:35:51",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Lystrosaurus BW",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|License migration redundant|Self-published work|Colored pencil drawings|Paleo-illustrations by Nobu Tamura|Files uploaded by Nobu Tamura|Lystrosaurus life restorations",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<i>Lystrosaurus murrayi</i>, a dicynodont from the Early Triassic of South Africa,  pencil drawing, digital coloring",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-10-18",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Nobu Tamura (<a rel=\"nofollow\" class=\"external free\" href=\"https://spinops.blogspot.com\">https://spinops.blogspot.com</a>)",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<i><a rel=\"nofollow\" class=\"external text\" href=\"https://spinops.blogspot.com/?view=magazine\">All illustrations on this site are copyrighted to Nobu Tamura. The low resolution versions of the images are licensed under Creative Commons Attribution-ShareAlike (CC BY-SA) license meaning that you are free to use them as long as you properly credit the author (\u00a9\u00a0N.\u00a0Tamura). High resolution versions are available upon request.</a></i>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "188854240": {
+        "pageid": 188854240,
+        "ns": 6,
+        "title": "File:Lystrosaurus murrayi updated.svg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Lystrosaurus_murrayi_updated.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Lystrosaurus_murrayi_updated.svg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=188854240",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-04-11 23:18:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Lystrosaurus murrayi updated",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Lystrosaurus|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Diagram of the size of the extinct dicynodont <i>Lystrosaurus murrayi</i> compared to a human. Silhouette is derived from <a class=\"external free\" href=\"https://commons.wikimedia.org/wiki/File:Lystrosaurus_murrayi_scale.svg\">https://commons.wikimedia.org/wiki/File:Lystrosaurus_murrayi_scale.svg</a> by Smokeybjb, released under a CC-BY SA 3.0 license. Scale is based on scaling the skeleton of <i>Lystrosaurus murrayi</i> depicted in Figure 7 of \"Functional and evolutionary aspects of the postcranial anatomy of dicynodonts (Synapsida, Therapsida)\" by Sanghamitra Ray (Palaeontology 49(6): 1263-1286). on which the original silhouette is based, related to skull lengths given in Kulik, Zoe T.; Sidor, Christian A. (21 September 2022). \"A test of Bergmann's rule in the Early Triassic: latitude, body size, and sampling in Lystrosaurus\". Paleobiology. 49 (1): 53\u201367. , which give an average skull length of ~ 10 cm (based on figures in diagram) and a maximum known skull length of 21.3 cm for <i>L. murrayi</i> based on BP/1/ 3236 as mentioned in the main text",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2026-04-12",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Hemiauchenia\" title=\"User:Hemiauchenia\">Hemiauchenia</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

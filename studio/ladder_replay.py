@@ -1,5 +1,6 @@
 """Exact image inputs for targeted dry repairs; cached pictures still receive current QA."""
 import hashlib
+import html
 import json
 import re
 from pathlib import Path
@@ -53,10 +54,46 @@ def local_generation(folder, row, job, model, size, key):
     settings = {"model": model, "prompt": job["prompt"], "width": size[0], "height": size[1],
                 "steps": cand.steps, "cfg": cand.cfg, "sampler": cand.sampler,
                 "seed": ladder_images._seed(key, row.get("source_image", job["id"]), row["take"])}
-    if proof.get("schema") != 1 or proof.get("origin") != "local-stable-diffusion.cpp" \
-            or proof.get("settings") != settings or proof.get("binary_tag") != sdcpp.SD_TAG \
+    reference = proof.get("schema") == 2 and proof.get("origin") == "local-stable-diffusion.cpp-reference"
+    text_only = proof.get("schema") == 1 and proof.get("origin") == "local-stable-diffusion.cpp" \
+        and "conditioning" not in proof
+    if not (reference or text_only) or proof.get("settings") != settings or proof.get("binary_tag") != sdcpp.SD_TAG \
             or not re.fullmatch(r"[0-9a-f]{40}", proof.get("source_sha", "")):
         raise ValueError("local generation settings or source differ from this production")
+    references = []
+    if reference:
+        conditioning = proof.get("conditioning", {})
+        extra = {"seed": settings["seed"], "sample_params": {"sample_steps": cand.steps,
+                 "sample_method": cand.sampler, "guidance": {"txt_cfg": cand.cfg}}}
+        refs = conditioning.get("references", [])
+        if conditioning.get("mode") != "reference" or conditioning.get("endpoint") != "/v1/images/edits" \
+                or conditioning.get("request_extra_args") != extra or not 1 <= len(refs) <= 4:
+            raise ValueError("local reference conditioning lacks its exact request")
+        for ref in refs:
+            image = checked(ref)
+            evidence = checked(ref["license_evidence"])
+            if image.stat().st_size > 8_000_000 or evidence.stat().st_size > 1_000_000:
+                raise ValueError("oversized reference or license evidence")
+            with Image.open(image) as img:
+                if img.width * img.height > 16_000_000:
+                    raise ValueError("oversized reference dimensions")
+                img.verify()
+            pages = json.loads(evidence.read_text()).get("query", {}).get("pages", {})
+            page = next((p for p in pages.values() if p.get("title") == ref.get("title")), {})
+            info = (page.get("imageinfo") or [{}])[0]
+            meta = info.get("extmetadata", {})
+            artist = html.unescape(re.sub(r"<[^>]+>", "", meta.get("Artist", {}).get("value", "")))
+            if ref.get("license") != "CC BY 3.0" or meta.get("LicenseShortName", {}).get("value") != ref["license"] \
+                    or ref.get("license_url", "").rstrip("/") != "https://creativecommons.org/licenses/by/3.0" \
+                    or meta.get("LicenseUrl", {}).get("value", "").rstrip("/") != ref["license_url"].rstrip("/") \
+                    or not str(ref.get("author", "")).strip() or ref["author"] not in artist \
+                    or ref.get("page") != info.get("descriptionurl") or ref.get("url") != info.get("url"):
+                raise ValueError("reference attribution differs from saved Commons license evidence")
+            credit = ref.get("credit", "")
+            if not all(s and s in credit for s in (ref["author"], ref["page"], ref["license"], ref["license_url"])) \
+                    or "AI-adapted" not in credit:
+                raise ValueError("reference lacks complete adaptation attribution")
+            references.append(ref)
     weights = proof.get("weights", [])
     if len(weights) != len(cand.weights) or any(
             w.get("repo") != expected.repo or w.get("file") != expected.file
@@ -70,9 +107,12 @@ def local_generation(folder, row, job, model, size, key):
     with Image.open(checked(row)) as actual:
         if actual.convert("RGB").tobytes() != graded.tobytes() or exposure != row.get("exposure"):
             raise ValueError("local image or exposure differs from its reproducible raw grade")
-    return {"kind": proof["origin"], "receipt_sha256": binding["sha256"],
+    result = {"kind": proof["origin"], "receipt_sha256": binding["sha256"],
             "source_sha": proof["source_sha"], "settings": settings, "weights": weights,
             "binary_tag": proof["binary_tag"], "raw_sha256": proof["raw"]["sha256"]}
+    if reference:
+        result.update(conditioning=proof["conditioning"], required_credits=[r["credit"] for r in references])
+    return result
 
 
 def candidates(replay, job, model, size):

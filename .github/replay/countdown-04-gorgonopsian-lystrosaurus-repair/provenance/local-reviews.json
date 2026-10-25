@@ -1,0 +1,66 @@
+{
+  "images": [
+    {
+      "file": "art-v1/o4-full-t0.png",
+      "image_sha256": "b7d2626c1a4b4bb095f17abe7a099e8ac15c9cbc4092bf8caff0475b21386818",
+      "decision": "hold",
+      "reason": "Direct review: large projecting ear/crest and dinosaur-like head, without the required long upper canine pair. Exclude both takes despite generic numerical image checks."
+    },
+    {
+      "file": "art-v1/o4-full-t1.png",
+      "image_sha256": "57b60ab62ab601ea6192a166b3520e3ad293e1c6a078ed7898f2dfd63b09fe36",
+      "decision": "hold",
+      "reason": "Direct review: large projecting ear/crest and dinosaur-like head, without the required long upper canine pair. Exclude both takes despite generic numerical image checks."
+    },
+    {
+      "file": "art-v2/o4-full-t0.png",
+      "image_sha256": "5bc9fcd225c9f9d3ef15dcbe06fa29c52680d87cb06ed0f998ee1b7496417941",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: elongated narrow skull/jaw close-up with conspicuous long upper canine and smaller cheek teeth. No projecting modern cat ears, fur pattern or cat body substitutes. The deliberately cropped fossil-informed jaw study supports the spoken huge-canine choice; rough soft-tissue texture is an illustrative reconstruction, not an anatomical certainty."
+    },
+    {
+      "file": "art-v2/o4-full-t1.png",
+      "image_sha256": "b2d87035ab4025d899e2b9668f4bfd560f79da715512638b3427b622e0eb2bd1",
+      "decision": "pass",
+      "reason": "Direct native-resolution review: close side profile of an elongated fossil-informed jaw, a prominent upper canine and smaller cheek teeth. No modern cat body, pointed ear flaps or visible anatomy distortion. Skin texture remains an illustrative reconstruction; current numerical QA passes."
+    },
+    {
+      "file": "art-v3/o5-full-t0.png",
+      "image_sha256": "7a642130c8f01faec8d38e1ba9b4fe44b091681fbf93ecf3895573a2774ed4ae",
+      "decision": "hold",
+      "reason": "Modern pig/elephant/walrus morphology with protruding ear flaps and curved or oversized tusks; lacks the required short toothless beak and true dicynodont head. Reject despite generic numerical image QA."
+    },
+    {
+      "file": "art-v3/o5-full-t1.png",
+      "image_sha256": "a831deecd755ed438cf8b5a7933fe86c3cc8d906790320f4fc7a14e891cd2e28",
+      "decision": "hold",
+      "reason": "Modern pig/elephant/walrus morphology with protruding ear flaps and curved or oversized tusks; lacks the required short toothless beak and true dicynodont head. Reject despite generic numerical image QA."
+    },
+    {
+      "file": "art-v4/o5-full-t0.png",
+      "image_sha256": "5cd03219eab6aae7c53e35f691b4c19a6e06daba7304ad6295caf50f42180d70",
+      "decision": "hold",
+      "reason": "The long dinosaur-like muzzle does not show the short downturned toothless dicynodont beak; a single large fang alone does not establish the Lystrosaurus head. Exclude despite passing numerical gates."
+    },
+    {
+      "file": "art-v4/o5-full-t1.png",
+      "image_sha256": "5fc590501f4be3c1cc80566579ea5fcafd6d3fcaa235ac44efe840f6590d1cb7",
+      "decision": "hold",
+      "reason": "The long dinosaur-like muzzle lacks the short downturned toothless beak and visible downward tusks required by the named factual answer. Exclude despite passing numerical gates."
+    },
+    {
+      "file": "art-v5-reference/o5-ref-t0.png",
+      "image_sha256": "98e10e7e6456fd5310d26977c7bbea8155ce2fe76d4a8815daa550d1f59c800c",
+      "decision": "hold",
+      "reason": "Reference-conditioned head and body are substantially improved, but the canine tusks are not distinct enough against the beak and lower jaw at final size; retain as research, select the clearer second take."
+    },
+    {
+      "file": "art-v5-reference/o5-ref-t1.png",
+      "image_sha256": "8a81942ddf743c22f213de45df194abe2cb6430b90d6047cfcc33450b4d3d41b",
+      "decision": "pass",
+      "reason": "Direct native-resolution and enlarged-head inspection: short broad downturned toothless beak, smooth rounded dicynodont head, low barrel body, four short sturdy legs and short tail match the licensed Tamura anatomical reference. The nearer pale downward upper canine is visibly separate from the lower jaw and the far canine is partly occluded, consistent with the side view. No modern ear flaps, horned dinosaur or long mammalian snout. Plain soft tissue/coloration remain illustrative; all current numerical gates pass."
+    }
+  ],
+  "release_approval": false,
+  "reviewed_at": "2026-10-25T08:08:17.029229+00:00"
+}

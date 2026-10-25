@@ -295,14 +295,14 @@
      "label": "Follow the gorgonopsid",
      "vo": "Follow the predator with huge canine teeth.",
      "danger": 4,
-     "image_prompt": "A sabre-toothed Inostrancevia stalking across a cracked red plain, long fangs bared, ash drifting in the haze, photoreal painterly, vertical composition, one warm focal light from a lava river behind it"
+     "image_prompt": "An extreme close-up side view of the biting jaws of a Permian gorgonopsian Inostrancevia, based on its fossil skull. Only the very long narrow snout, mouth and cheek fill the entire picture, nose to the left and cropped cheek to the right. A single enormous curved upper canine tooth hangs down from the front of the upper jaw, clearly much longer than the row of small pointed cheek teeth behind it. The opposite upper canine is mostly hidden by the side-on view. The mouth opens enough to show the long canine against the empty dark gap, with a plain continuous lower jaw beneath. Small round nostril at the tip of the long snout. Neutral rough grey-brown skin covers the elongated skull; illustrative soft tissue. A blurred cracked red plain and volcanic ash glow lie behind. The long tooth and narrow jaws dominate the picture, photoreal painterly, vertical composition, one warm focal light from distant lava."
     },
     {
      "n": 5,
      "label": "Dig in with Lystrosaurus",
      "vo": "Dig in with the herd of tusked grazers.",
      "danger": 5,
-     "image_prompt": "A herd of stocky tusked Lystrosaurus digging burrows into a dry riverbank, realistic reptilian skin, red haze above, photoreal painterly, vertical composition, one warm focal light from a low orange sun"
+     "image_prompt": "Place the Lystrosaurus from the supplied anatomical reference in a dry Permian riverbank scene beside a small earthen burrow. Preserve the animal's exact short blunt downturned beak, smooth broad head, two small downward upper tusks, low barrel body, four short sturdy legs and short tail. Preserve its fossil-informed head and body proportions. One animal stands in side profile in the foreground, looking left. Replace the white backdrop with dusty red ground, a burrow opening, sparse low ferns and distant red volcanic haze under an orange sunset. Photoreal painterly illustration, vertical composition, one warm focal light from the low orange sun. Plausible illustrative soft tissue over the known fossil anatomy."
     },
     {
      "n": 6,
@@ -334,7 +334,7 @@
     "wiki_revid": 1369641214,
     "source_sentence": "Lystrosaurus survived the Permian-Triassic extinction event (Earth's most severe) 252 million years ago and thrived in the immediate aftermath; its fossils are, by far, the most common terrestrial vertebrate fossils in Early Triassic beds around the world, such as in the Lystrosaurus Assemblage Zone in South Africa."
    },
-   "description": "The worst extinction in Earth's history began with volcanoes the size of a continent. Eight plans for surviving the Great Dying on Pangaea, and the stubby digger that actually did.",
+   "description": "The worst extinction in Earth's history began with volcanoes the size of a continent. Eight plans for surviving the Great Dying on Pangaea, and the stubby digger that actually did.\n\nAnatomical reference for the Lystrosaurus illustration: Nobu Tamura, Lystrosaurus BW.jpg, https://commons.wikimedia.org/wiki/File:Lystrosaurus_BW.jpg (CC BY 3.0, https://creativecommons.org/licenses/by/3.0/), AI-adapted background and rendering with illustrative soft tissue and coloration.",
    "tags": [
     "Pangaea",
     "Great Dying",
