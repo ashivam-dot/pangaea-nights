@@ -2796,10 +2796,21 @@
             "ladder-img-A-2/o3.png": "5d0bb4531737f5f97c1f27781ba6035c3182ccf2e81266c04c2d73589d2fab8c",
             "ladder-img-A-2/o3-alt1.png": "fe1b8698ff3162f40935b0eabe942bfe3bee96a2ab4d3b060fc6f8b5800eca2c"
           }
+        },
+        {
+          "id": "direct-mammoth-ribs-hold",
+          "run_id": 40167406784,
+          "observed_at": "2026-10-25T06:31:02+00:00",
+          "reason": "Direct full-resolution inspection rejects both o4 paintings: the base puts a living hairy animal inside the purported long-dead mammoth ribs, and the alternate reads as straight wooden A-frame beams rather than curved weathered mammoth rib bones. Preserve the skeleton shelter choice and narration; replace this image with a coherent naturally fallen empty ribcage, with no living animal. Keep all current picture, pairwise-image, narrator, render and audiovisual gates.",
+          "evidence": {
+            "ladder-img-A-3/o4.png": "d05a6cd67cde550aeb9af8e9048bc1c65511cc31f6c5f6c101dd8fd232a3aaf3",
+            "ladder-img-A-3/o4-alt1.png": "ba92652b3412142865c6a95f328baf3a65791757742f6adf3ace3e2c7a4c4e39"
+          }
         }
       ],
       "problems": [
-        "Direct full-resolution inspection rejects both o3 paintings for narration mismatch: the scene shows upright standing spruces with a hollow in their bases, rather than shelter beneath the exposed upturned roots of a fallen spruce. Preserve all spoken lines and useful other art; repair only this fallen-root image direction. Full current picture, pairwise-image, narrator, render and audiovisual gates remain mandatory."
+        "Direct full-resolution inspection rejects both o3 paintings for narration mismatch: the scene shows upright standing spruces with a hollow in their bases, rather than shelter beneath the exposed upturned roots of a fallen spruce. Preserve all spoken lines and useful other art; repair only this fallen-root image direction. Full current picture, pairwise-image, narrator, render and audiovisual gates remain mandatory.",
+        "Direct full-resolution inspection rejects both o4 paintings: the base puts a living hairy animal inside the purported long-dead mammoth ribs, and the alternate reads as straight wooden A-frame beams rather than curved weathered mammoth rib bones. Preserve the skeleton shelter choice and narration; replace this image with a coherent naturally fallen empty ribcage, with no living animal. Keep all current picture, pairwise-image, narrator, render and audiovisual gates."
       ]
     },
     {
@@ -3091,5 +3102,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T06:24:38+00:00"
+  "updated_at": "2026-10-25T06:31:02+00:00"
 }
