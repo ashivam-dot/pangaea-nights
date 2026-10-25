@@ -903,7 +903,7 @@
         "slot": "A",
         "premise": "countdown-02"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "e6a49e9b13ab469143af9f1a3cf57247c7318f32",
       "before_ids": [
@@ -947,6 +947,9 @@
             "ladder-img-A-7/o8-alt1.png": "6e322435b1e47d8de6d23030454ff849488bfc806396f66b8f090027f8c448c8"
           }
         }
+      ],
+      "problems": [
+        "Direct still review: both option6 candidates show dinosaurs on a coastal shore instead of the promised far inland high ground. Both option8 candidates depict a small glowing lava bowl in the surf rather than a Chicxulub-scale impact rim. Replace these scenes, preserve all other accepted art, then require unchanged production and full AV gates."
       ]
     },
     {
@@ -1328,13 +1331,13 @@
       "attempts": 0
     }
   ],
-  "halted": null,
+  "halted": "Repair held entry countdown-02: Direct still review: both option6 candidates show dinosaurs on a coastal shore instead of the promised far inland high ground. Both option8 candidates depict a small glowing lava bowl in the surf rather than a Chicxulub-scale impact rim. Replace these scenes, preserve all other accepted art, then require unchanged production and full AV gates.",
   "complete": false,
   "health": {
     "public": 1,
     "scheduled": 0,
-    "held": 0,
+    "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:01:59+00:00"
+  "updated_at": "2026-10-25T01:02:03+00:00"
 }
