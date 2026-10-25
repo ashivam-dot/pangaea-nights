@@ -1302,7 +1302,7 @@
         "premise": "how_deep-02",
         "replay": ".github/replay/how-deep-charnia-repair.json"
       },
-      "stage": "reviewed",
+      "stage": "upload_intent",
       "attempts": 3,
       "source_sha": "ec1005bf9841cf9c54a1e7b345cfb30a86f9a343",
       "before_ids": [
@@ -1482,7 +1482,9 @@
           "issues": []
         }
       },
-      "archive": "batch-reviewed-40156818584"
+      "archive": "batch-reviewed-40156818584",
+      "intended_publish_at": "2026-10-26T00:30:00Z",
+      "upload_intent_at": "2026-10-25T03:19:19+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -1912,7 +1914,7 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:19:17+00:00",
+  "updated_at": "2026-10-25T03:19:19+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
