@@ -1302,10 +1302,12 @@
         "premise": "how_deep-02",
         "replay": ".github/replay/how-deep-charnia-repair.json"
       },
-      "stage": "held",
-      "attempts": 2,
-      "source_sha": "1574ec5955ef7b871a7208d6f9e8b33be40e6ebf",
+      "stage": "dispatch_unresolved",
+      "attempts": 3,
+      "source_sha": "ec1005bf9841cf9c54a1e7b345cfb30a86f9a343",
       "before_ids": [
+        40154688202,
+        40154442347,
         40152622139,
         40152163089,
         40151287146,
@@ -1340,7 +1342,7 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T02:26:20+00:00",
+      "submitted_at": "2026-10-25T03:03:54+00:00",
       "cloud_status": "completed",
       "editorial_holds": [
         {
@@ -1409,16 +1411,28 @@
             "slot": "A",
             "premise": "how_deep-02"
           }
+        },
+        {
+          "run_id": 40154442347,
+          "source_sha": "1574ec5955ef7b871a7208d6f9e8b33be40e6ebf",
+          "stage": "held",
+          "problems": [
+            "production run cancelled"
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "how_deep-02",
+            "replay": ".github/replay/how-deep-charnia-repair.json"
+          },
+          "repair_reason": "Exact reviewed frond/disc replacement with pinned morphology source and passing-opening reprise. Preserve every spoken fact and all passing siblings; current cloud image, narration, render and full audiovisual gates remain."
         }
       ],
       "obsolete_runs": [
-        40151287146
+        40151287146,
+        40154442347
       ],
-      "repair_reason": "Exact reviewed frond/disc replacement with pinned morphology source and passing-opening reprise. Preserve every spoken fact and all passing siblings; current cloud image, narration, render and full audiovisual gates remain.",
-      "run_id": 40154442347,
-      "problems": [
-        "production run cancelled"
-      ]
+      "repair_reason": "Repair only the storm scene after exact combined-image preflight found o2/o3 similarity 0.918 above 0.90. All nine exact cached inputs now pass current picture and pair selection (max 0.876); narration unchanged. Explicit cache-only production avoids unused spare generation, while full cloud image, voice, render and AV gates remain mandatory."
     },
     {
       "repo": "pangaea-nights",
@@ -1797,7 +1811,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry how_deep-02: production run cancelled",
+  "halted": null,
   "complete": false,
   "health": {
     "public": 1,
@@ -1805,7 +1819,7 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:03:48+00:00",
+  "updated_at": "2026-10-25T03:03:54+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
