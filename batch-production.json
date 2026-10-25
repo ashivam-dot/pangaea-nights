@@ -1065,7 +1065,7 @@
         "premise": "countdown-02",
         "replay": ".github/replay/countdown-high-ground-repair.json"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 3,
       "source_sha": "b24c1a3028916134cbde9852e9856727573e1573",
       "before_ids": [
@@ -1102,7 +1102,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T01:50:12+00:00",
-      "cloud_status": "in_progress",
+      "cloud_status": "completed",
       "editorial_holds": [
         {
           "id": "direct-tsunami-high-ground-impact-scale-40147415761",
@@ -1199,7 +1199,10 @@
         40150491810
       ],
       "repair_reason": "Exact Linux replay reproduced phantom tokens on the unchanged 1.238-second CTA; measured 150ms quiet ASR margins fixed every actual production line without changing narration, thresholds, pictures or timing. Repair also includes verified unstarted spoken scripts.",
-      "run_id": 40152163089
+      "run_id": 40152163089,
+      "problems": [
+        "production run cancelled"
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -1624,5 +1627,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:57:20+00:00"
+  "updated_at": "2026-10-25T01:57:22+00:00"
 }
