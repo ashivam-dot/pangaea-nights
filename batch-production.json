@@ -4698,7 +4698,7 @@
         "slot": "A",
         "premise": "countdown-05"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "9e060be109b657a6a4c06a9da6996f737e5c3ec6",
       "before_ids": [
@@ -4765,7 +4765,22 @@
       ],
       "submitted_at": "2026-10-25T12:15:12+00:00",
       "run_id": 40192297453,
-      "cloud_status": "in_progress"
+      "cloud_status": "in_progress",
+      "editorial_holds": [
+        {
+          "id": "countdown05-early-triassic-route-hold",
+          "run_id": 40192297453,
+          "observed_at": "2026-10-25T13:15:11+00:00",
+          "reason": "The southward-route pictures contain dinosaur-like animals and flowering-tree forms in a scene set just after the Permian-Triassic extinction. Replace only this picture with an unoccupied ridge toward conifers and seed ferns. Preserve all narration, accepted siblings and every current picture, pairwise, narration, render and full audiovisual gate.",
+          "evidence": {
+            "ladder-img-A-6/o7.png": "1af5a69fc5a2441b54cb345cda0f179e92f07d52c56db4d71341585b3fa6a663",
+            "ladder-img-A-6/o7-alt1.png": "ab6dc8c86b0db1f65659f972c8000060344cee71ce0df04219996742fe6a1da7"
+          }
+        }
+      ],
+      "problems": [
+        "The southward-route pictures contain dinosaur-like animals and flowering-tree forms in a scene set just after the Permian-Triassic extinction. Replace only this picture with an unoccupied ridge toward conifers and seed ferns. Preserve all narration, accepted siblings and every current picture, pairwise, narration, render and full audiovisual gate."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -4986,5 +5001,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T13:09:22+00:00"
+  "updated_at": "2026-10-25T13:15:11+00:00"
 }
