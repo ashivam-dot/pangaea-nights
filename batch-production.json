@@ -1179,13 +1179,13 @@
       "attempts": 0
     }
   ],
-  "halted": null,
-  "updated_at": "2026-10-25T00:54:32+00:00",
+  "halted": "Repair held entry survive_night-01: production run cancelled",
+  "updated_at": "2026-10-25T00:54:33+00:00",
   "complete": false,
   "health": {
     "public": 0,
     "scheduled": 0,
-    "held": 3,
+    "held": 1,
     "mode": "publish"
   },
   "held_candidates": [
