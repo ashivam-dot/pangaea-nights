@@ -366,7 +366,7 @@
         39772637874,
         39766129149
       ],
-      "cloud_status": "pending",
+      "cloud_status": "in_progress",
       "editorial_holds": [
         {
           "id": "direct-muskox-anatomy-40135503878",
@@ -630,7 +630,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T00:55:47+00:00",
-      "cloud_status": "queued",
+      "cloud_status": "in_progress",
       "editorial_holds": [
         {
           "id": "direct-duckbill-anatomy-40143333505",
@@ -885,7 +885,8 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T00:37:24+00:00",
-      "run_id": 40147415761
+      "run_id": 40147415761,
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -1267,12 +1268,12 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-25T01:00:32+00:00",
+  "updated_at": "2026-10-25T01:00:35+00:00",
   "complete": false,
   "health": {
-    "public": 0,
+    "public": 1,
     "scheduled": 0,
-    "held": 1,
+    "held": 0,
     "mode": "publish"
   },
   "held_candidates": [
