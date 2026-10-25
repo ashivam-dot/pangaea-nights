@@ -16,9 +16,10 @@ from pathlib import Path
 import requests
 
 API = "https://generativelanguage.googleapis.com/v1beta/models"
-# Free-tier video/audio input and output verified in the official pricing table on 24 October 2026.
+# Free-tier video/audio input and output verified in the official pricing table on 25 October 2026.
 # Do not silently adopt a newly listed paid-only model or change billing when quota is unavailable.
-FREE_MODELS = ("gemini-3.8-flash", "gemini-3-flash-preview", "gemini-3.1-flash-lite")
+FREE_MODELS = ("gemini-3.8-flash", "gemini-3.6-flash", "gemini-3-flash-preview",
+               "gemini-3.5-flash-lite", "gemini-3.1-flash-lite")
 CHECKS = ("speech_clear", "pronunciation_ok", "music_balance_ok", "captions_readable", "visuals_match",
           "continuity_ok", "opening_clear", "complete_payoff", "no_material_factual_contradiction")
 SCHEMA = {

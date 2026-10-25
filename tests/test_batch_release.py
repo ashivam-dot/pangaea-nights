@@ -29,6 +29,17 @@ def test_a_pass_alone_is_not_an_audiovisual_review():
     assert "Wrong object" in " ".join(review.verdict_problems(v, 40))
 
 
+def test_reviewer_discovers_only_verified_free_models_and_prefers_full_flash(monkeypatch):
+    names = ['gemini-3.8-pro', 'gemini-3.5-flash-lite', 'gemini-3.6-flash',
+             'gemini-3.8-flash', 'gemini-3.1-flash-lite', 'gemini-3-flash-preview',
+             'gemini-omni-1.1-flash', 'unreviewed-new-model']
+    response = SimpleNamespace(status_code=200, json=lambda: {'models': [
+        {'name': 'models/' + name, 'supportedGenerationMethods': ['generateContent']} for name in names]})
+    monkeypatch.setattr(review.requests, 'get', lambda *a, **k: response)
+    assert review._models('fake') == ['gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-3-flash-preview',
+                                    'gemini-3.5-flash-lite', 'gemini-3.1-flash-lite']
+
+
 def test_science_release_rejects_old_directions_and_gives_the_editor_the_body_plan(tmp_path, monkeypatch):
     import copy
     from studio import batch_release as adapter, ladder
