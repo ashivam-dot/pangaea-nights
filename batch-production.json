@@ -542,6 +542,53 @@
           "evidence": {
             "ladder-img-A-4/o5-alt1.png": "aeac7d7d42774d82d141824c4ade1bbda7ae74050ebc30a2b86affae3a26b7a0",
             "ladder-img-A-4/o5.png": "fe4d78f3af4e7f38953f2f05d524cdcec793a4c43d4ba115c7dc48a16f0887d5"
+          },
+          "resolved_at": "2026-10-25T00:51:18+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "bb8685620813b5dc40f43f4d8c9ab26a8b4e754b",
+            "replay": ".github/replay/survive-night-exact-repair.json",
+            "replay_sha256": "0e681da86e0a3dde17eb7490b10fd7a1b1ee930ce369fe8ed5ebeb0659030439",
+            "images": {
+              "o1": [
+                "bdd9a1905f716a740937a5c0fde71441eb48e99fcfa85a17758c326cdd237291",
+                "51e329505b78a936c9a82d00559beae99b688527aaf1d88a79b2299c40da0c40"
+              ],
+              "o2": [
+                "82009bf164f47d11afb3f24b0c49dce716f57b6c8e47a60c7f4cbb0ec32fd0e5",
+                "29e2a79b8e709d90cc03ddea359b7f6538bb1f8130f47302fe85bd55d8d87048"
+              ],
+              "o3": [
+                "403dc058c6449d435672e90554f36cac70b5bfad5c7ca832b851b944d3faa731",
+                "954728a4dd032bb7f67214b80e02649647d13c8c08e9a3f92668ca76456ae115"
+              ],
+              "o4": [
+                "524fc53e90767c433651fdfddc71ff249e384d32e9e0cea01007f1ec271e20bc",
+                "1d0ccc8b5cfba2b307a9f32cc3b948dddb76bb697ce84bf15b1d186cecbc4bd0"
+              ],
+              "o5": [
+                "5f3e5c609a87ad339804a17c885d8c100a815027d683dcb2040320869c5e2369",
+                "b3b66414385ea79f78f3b5d7b3363d5c57068228c899f2ef9f729e0e21956dc2"
+              ],
+              "o6": [
+                "c1a914a3c622f00a725829d675c6cf6e1b69926d155b1e4359fa88827bd41180",
+                "b574c7490ce691527dd2633d6c6bb6f9a4c97677604180b01ebe4781847cfb1f"
+              ],
+              "o7": [
+                "b1147802a57f55b89772853066865f5c4f82fdbd54d0e8ba08beacd53978175a",
+                "2fc634e9fe047419ac810cd99d12c185ca9252270f4c6766e371554a40591eb2"
+              ],
+              "o8": [
+                "8097f05dfe2d6b8cc0591bc2a4bf20aa05195d9bcc7d16c3275a472a2e20482c",
+                "10a03e1cb6d5e67120281969feca257cc49f08e0bdd9381903a206e4754ef6ec"
+              ],
+              "end": [
+                "8556d16482fa9210a513f604e2b3abebedd6f504de37479ef6c5d1f9beb3dc60"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive-night-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -554,6 +601,53 @@
             "ladder-img-A-3/o4.png": "931e7d91638667466833fc35882b16309bf80d652d0642059d721f1ce21aac52",
             "ladder-img-A-7/o8-alt1.png": "0dd49e8b78d03c2679430e352d7546e86de7d8cbe4935d09e8d08dd678bfef01",
             "ladder-img-A-7/o8.png": "a2523945f8c1e840a4dc67dee9853622c4ec300af5bbf4b8243d45c05f1911e4"
+          },
+          "resolved_at": "2026-10-25T00:51:18+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "bb8685620813b5dc40f43f4d8c9ab26a8b4e754b",
+            "replay": ".github/replay/survive-night-exact-repair.json",
+            "replay_sha256": "0e681da86e0a3dde17eb7490b10fd7a1b1ee930ce369fe8ed5ebeb0659030439",
+            "images": {
+              "o1": [
+                "bdd9a1905f716a740937a5c0fde71441eb48e99fcfa85a17758c326cdd237291",
+                "51e329505b78a936c9a82d00559beae99b688527aaf1d88a79b2299c40da0c40"
+              ],
+              "o2": [
+                "82009bf164f47d11afb3f24b0c49dce716f57b6c8e47a60c7f4cbb0ec32fd0e5",
+                "29e2a79b8e709d90cc03ddea359b7f6538bb1f8130f47302fe85bd55d8d87048"
+              ],
+              "o3": [
+                "403dc058c6449d435672e90554f36cac70b5bfad5c7ca832b851b944d3faa731",
+                "954728a4dd032bb7f67214b80e02649647d13c8c08e9a3f92668ca76456ae115"
+              ],
+              "o4": [
+                "524fc53e90767c433651fdfddc71ff249e384d32e9e0cea01007f1ec271e20bc",
+                "1d0ccc8b5cfba2b307a9f32cc3b948dddb76bb697ce84bf15b1d186cecbc4bd0"
+              ],
+              "o5": [
+                "5f3e5c609a87ad339804a17c885d8c100a815027d683dcb2040320869c5e2369",
+                "b3b66414385ea79f78f3b5d7b3363d5c57068228c899f2ef9f729e0e21956dc2"
+              ],
+              "o6": [
+                "c1a914a3c622f00a725829d675c6cf6e1b69926d155b1e4359fa88827bd41180",
+                "b574c7490ce691527dd2633d6c6bb6f9a4c97677604180b01ebe4781847cfb1f"
+              ],
+              "o7": [
+                "b1147802a57f55b89772853066865f5c4f82fdbd54d0e8ba08beacd53978175a",
+                "2fc634e9fe047419ac810cd99d12c185ca9252270f4c6766e371554a40591eb2"
+              ],
+              "o8": [
+                "8097f05dfe2d6b8cc0591bc2a4bf20aa05195d9bcc7d16c3275a472a2e20482c",
+                "10a03e1cb6d5e67120281969feca257cc49f08e0bdd9381903a206e4754ef6ec"
+              ],
+              "end": [
+                "8556d16482fa9210a513f604e2b3abebedd6f504de37479ef6c5d1f9beb3dc60"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive-night-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -564,6 +658,53 @@
           "evidence": {
             "ladder-img-A-6/o7.png": "ddf897dc884b44d3d9f8e9ed12603d63f9015da50fb4b0644f5c03a5918b5e38",
             "ladder-img-A-6/o7-alt1.png": "684cdf68d3c383dbc29115e73811b20a6aa04381123eee7c06a227e2a3188a96"
+          },
+          "resolved_at": "2026-10-25T00:51:18+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "bb8685620813b5dc40f43f4d8c9ab26a8b4e754b",
+            "replay": ".github/replay/survive-night-exact-repair.json",
+            "replay_sha256": "0e681da86e0a3dde17eb7490b10fd7a1b1ee930ce369fe8ed5ebeb0659030439",
+            "images": {
+              "o1": [
+                "bdd9a1905f716a740937a5c0fde71441eb48e99fcfa85a17758c326cdd237291",
+                "51e329505b78a936c9a82d00559beae99b688527aaf1d88a79b2299c40da0c40"
+              ],
+              "o2": [
+                "82009bf164f47d11afb3f24b0c49dce716f57b6c8e47a60c7f4cbb0ec32fd0e5",
+                "29e2a79b8e709d90cc03ddea359b7f6538bb1f8130f47302fe85bd55d8d87048"
+              ],
+              "o3": [
+                "403dc058c6449d435672e90554f36cac70b5bfad5c7ca832b851b944d3faa731",
+                "954728a4dd032bb7f67214b80e02649647d13c8c08e9a3f92668ca76456ae115"
+              ],
+              "o4": [
+                "524fc53e90767c433651fdfddc71ff249e384d32e9e0cea01007f1ec271e20bc",
+                "1d0ccc8b5cfba2b307a9f32cc3b948dddb76bb697ce84bf15b1d186cecbc4bd0"
+              ],
+              "o5": [
+                "5f3e5c609a87ad339804a17c885d8c100a815027d683dcb2040320869c5e2369",
+                "b3b66414385ea79f78f3b5d7b3363d5c57068228c899f2ef9f729e0e21956dc2"
+              ],
+              "o6": [
+                "c1a914a3c622f00a725829d675c6cf6e1b69926d155b1e4359fa88827bd41180",
+                "b574c7490ce691527dd2633d6c6bb6f9a4c97677604180b01ebe4781847cfb1f"
+              ],
+              "o7": [
+                "b1147802a57f55b89772853066865f5c4f82fdbd54d0e8ba08beacd53978175a",
+                "2fc634e9fe047419ac810cd99d12c185ca9252270f4c6766e371554a40591eb2"
+              ],
+              "o8": [
+                "8097f05dfe2d6b8cc0591bc2a4bf20aa05195d9bcc7d16c3275a472a2e20482c",
+                "10a03e1cb6d5e67120281969feca257cc49f08e0bdd9381903a206e4754ef6ec"
+              ],
+              "end": [
+                "8556d16482fa9210a513f604e2b3abebedd6f504de37479ef6c5d1f9beb3dc60"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive-night-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -995,7 +1136,7 @@
     }
   ],
   "halted": "Repair held entry level_1_8-16: production run failure",
-  "updated_at": "2026-10-25T00:45:21+00:00",
+  "updated_at": "2026-10-25T00:51:18+00:00",
   "complete": false,
   "health": {
     "public": 0,
