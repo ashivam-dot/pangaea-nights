@@ -1584,6 +1584,54 @@
           "evidence": {
             "ladder-img-A-4/o5.png": "9af2d12ea43e8be046f75cf1ede7bfc0a52b63c3b69ce79a3df05be954bb0e87",
             "ladder-img-A-4/o5-alt1.png": "2c08194ed69573e172b2e4169b93d50d307c80d19622a1eb2ef6165fb3d11a09"
+          },
+          "resolved_at": "2026-10-25T03:59:34+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "397d84810469e9af23a10f1915df2b44888a5fb5",
+            "replay": ".github/replay/hideout-boulder-ocean-repair.json",
+            "replay_sha256": "580d23074fc43afac47c5685ed8bb9f16f8ce62abd94aefa0e7c7d1ee5c39ebf",
+            "images": {
+              "o1": [
+                "cf81208d740fc292ab54ff0aef08f4b64becd9e2ae3bf2cfb13e10c04aecc6ec",
+                "44fc7e7176b6fb2402e581aed42c089883e7130261a94f33bad491c250c103eb"
+              ],
+              "o2": [
+                "725f48c7e25f82122d8b2bdad9b34a932d37d44ff2bd0e4b525909f8ec83d6a6",
+                "43aea8dfa2778521f48d55983b6c485049b1d935c2f33dd48fec9d6a5c5c2bcf"
+              ],
+              "o3": [
+                "16318f78b82a3312d9891c9c655ab5d2f7211a19597b83122f58043c501c5566",
+                "ead77d207ff51c4e7749f9756edba8706cf5b21ae058e8be93fd7997e1e1bfbe"
+              ],
+              "o4": [
+                "e4e7b34700067be69255b51639f3ef35f08b440c923fadae166f13c25375fe22",
+                "795975d35fee16a560abb96ef7bdf9c6393ba7037c68a293bb066f30fa2cab27"
+              ],
+              "o5": [
+                "993a014ce3c9931ea0bbc8ca06ddd32b3333e9240b4acc2c0af3514f12d141a4",
+                "73bb3d63c9058dfe507ac010be4c2e4c329880d82c3affa0200b3b7931f10be8"
+              ],
+              "o6": [
+                "2461e762c981e380c6c86d99fbf0c274e1057271601e67c555bb386d27f7b131",
+                "6ebd5199b2a3e70434fdfd485b47d44937568910ae8b54b76bef9fcbfebef00b"
+              ],
+              "o7": [
+                "376c8af845f5c519663942698c68a1e7f7f46121886abb9f952dbfe032eae8e5",
+                "17010aa349e09c49ccb29b6fd6680b1f5f3f606a18d83fb35b93a445abeafcea"
+              ],
+              "o8": [
+                "ac660003f203d20a757c45a0bf9ed77649b17d85cebbaebaa86b415cdecb6743",
+                "5f5524a96709f92b2057fdbadf0975f34ee4ccd70132ff88f7b6e1b7d3bea56a"
+              ],
+              "end": [
+                "cf81208d740fc292ab54ff0aef08f4b64becd9e2ae3bf2cfb13e10c04aecc6ec",
+                "44fc7e7176b6fb2402e581aed42c089883e7130261a94f33bad491c250c103eb"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/hideout-boulder-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -1594,6 +1642,54 @@
           "evidence": {
             "ladder-img-A-7/o8-alt1.png": "6a29776621d7f0fc08ecfb71875a27495798fd9c4a37c6a03414296d4c4cc070",
             "ladder-img-A-7/o8.png": "d983437ac287924dc64e4995f2c6f4c041dd13d647ff545a71b10d22dc060b9c"
+          },
+          "resolved_at": "2026-10-25T03:59:34+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "397d84810469e9af23a10f1915df2b44888a5fb5",
+            "replay": ".github/replay/hideout-boulder-ocean-repair.json",
+            "replay_sha256": "580d23074fc43afac47c5685ed8bb9f16f8ce62abd94aefa0e7c7d1ee5c39ebf",
+            "images": {
+              "o1": [
+                "cf81208d740fc292ab54ff0aef08f4b64becd9e2ae3bf2cfb13e10c04aecc6ec",
+                "44fc7e7176b6fb2402e581aed42c089883e7130261a94f33bad491c250c103eb"
+              ],
+              "o2": [
+                "725f48c7e25f82122d8b2bdad9b34a932d37d44ff2bd0e4b525909f8ec83d6a6",
+                "43aea8dfa2778521f48d55983b6c485049b1d935c2f33dd48fec9d6a5c5c2bcf"
+              ],
+              "o3": [
+                "16318f78b82a3312d9891c9c655ab5d2f7211a19597b83122f58043c501c5566",
+                "ead77d207ff51c4e7749f9756edba8706cf5b21ae058e8be93fd7997e1e1bfbe"
+              ],
+              "o4": [
+                "e4e7b34700067be69255b51639f3ef35f08b440c923fadae166f13c25375fe22",
+                "795975d35fee16a560abb96ef7bdf9c6393ba7037c68a293bb066f30fa2cab27"
+              ],
+              "o5": [
+                "993a014ce3c9931ea0bbc8ca06ddd32b3333e9240b4acc2c0af3514f12d141a4",
+                "73bb3d63c9058dfe507ac010be4c2e4c329880d82c3affa0200b3b7931f10be8"
+              ],
+              "o6": [
+                "2461e762c981e380c6c86d99fbf0c274e1057271601e67c555bb386d27f7b131",
+                "6ebd5199b2a3e70434fdfd485b47d44937568910ae8b54b76bef9fcbfebef00b"
+              ],
+              "o7": [
+                "376c8af845f5c519663942698c68a1e7f7f46121886abb9f952dbfe032eae8e5",
+                "17010aa349e09c49ccb29b6fd6680b1f5f3f606a18d83fb35b93a445abeafcea"
+              ],
+              "o8": [
+                "ac660003f203d20a757c45a0bf9ed77649b17d85cebbaebaa86b415cdecb6743",
+                "5f5524a96709f92b2057fdbadf0975f34ee4ccd70132ff88f7b6e1b7d3bea56a"
+              ],
+              "end": [
+                "cf81208d740fc292ab54ff0aef08f4b64becd9e2ae3bf2cfb13e10c04aecc6ec",
+                "44fc7e7176b6fb2402e581aed42c089883e7130261a94f33bad491c250c103eb"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/hideout-boulder-editorial-replan.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -2019,7 +2115,7 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:57:45+00:00",
+  "updated_at": "2026-10-25T03:59:34+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
