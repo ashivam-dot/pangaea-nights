@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "36e0cb6506b18096f21158658fdea5377f2a3bed",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "Wide view through clear turquoise Cambrian ocean water beside a steep jagged dark rock wall at the far left edge. Broad diagonal sunbeams fan from the upper right through empty blue water, illuminating sharply detailed suspended mineral particles. The largest brilliant amber sunbeam crosses the open center diagonally; pale rippling ocean surface high above, distant dark open water below, rugged rock textures restricted to the left edge, no animals, crisp nature documentary underwater photograph, photoreal painterly, vertical composition. Asymmetric underwater wide view, textured dark stone at one edge, broad diagonal rays across clear blue open water, fine crisp suspended sediment, one warm amber sunbeam. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 1665955378
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "how-deep-03-mud-sand-repair/art/o8-full-t1-raw.png",
+    "sha256": "d5b0c0bcefe779b8d846a4bec853342f59036e098fa81713405427d118855dcd"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 103.7
+}

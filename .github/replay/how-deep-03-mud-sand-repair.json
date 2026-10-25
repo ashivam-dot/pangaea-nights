@@ -1,0 +1,291 @@
+{
+  "schema": 1,
+  "premise": "how_deep-03",
+  "source": {
+    "run_id": 40161421084,
+    "sha": "397d84810469e9af23a10f1915df2b44888a5fb5",
+    "key": "2026-10-25-how_deep-03"
+  },
+  "images": {
+    "o2": [
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o2.png",
+        "sha256": "176d71a0de94450d4b1ba72890116d0386e4f585a4a381da47992cadb0d9bca4",
+        "model": "klein4b-q8-768",
+        "prompt": "dense shimmering cloud of tiny swimming arthropods and jellies in bright turquoise water, light rays streaming down, one warm golden sun shaft through the swarm, photoreal painterly, vertical composition. Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12587156512,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 143.7,
+          "raw_p99": 253.0,
+          "gamma": 1.175,
+          "spread": 167.0
+        }
+      },
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o2-alt1.png",
+        "sha256": "115d720b8b29ba1b6f38cdad2830d489171fc8d39a4eb0ed6a768bcd04b5daea",
+        "model": "klein4b-q8-768",
+        "prompt": "dense shimmering cloud of tiny swimming arthropods and jellies in bright turquoise water, light rays streaming down, one warm golden sun shaft through the swarm, photoreal painterly, vertical composition. Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12587156512,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 123.8,
+          "raw_p99": 253.0,
+          "gamma": 0.932,
+          "spread": 192.0
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o4.png",
+        "sha256": "6ecd5d4ef9013f6a78c1f095de32c3e087a063f44823595c23b7d17bcdb0d6b4",
+        "model": "klein4b-q8-768",
+        "prompt": "Cambrian reef of tall cup-shaped sponges and branching growths on a sunlit seabed, small shrimp darting between them, one warm amber light patch on the reef crest, photoreal painterly, vertical composition. Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12586917914,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 112.8,
+          "raw_p99": 230.0,
+          "gamma": 0.826,
+          "spread": 142.0
+        }
+      },
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o4-alt1.png",
+        "sha256": "fd92b35f3ae3b5227d6ccceb4cc0824dd4281ede07a358cbeb2a930f1e887286",
+        "model": "klein4b-q8-768",
+        "prompt": "Cambrian reef of tall cup-shaped sponges and branching growths on a sunlit seabed, small shrimp darting between them, one warm amber light patch on the reef crest, photoreal painterly, vertical composition. Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12586917914,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 106.2,
+          "raw_p99": 223.0,
+          "gamma": 0.769,
+          "spread": 135.0
+        }
+      }
+    ],
+    "o1": [
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o1-full-t0.png",
+        "sha256": "4d02f2ebd5365f13d565bf3302602b987c9464bf2914bade24f739900a87baf6",
+        "model": "klein4b-q8-768",
+        "prompt": "Upward-looking close view immediately below the rippling surface of an open Cambrian sea. The entire tall frame shows the underside of turbulent emerald-green water and bright white foam, with sharp small rolling wave crests and intricate reflective patterns. A warm amber sunlight glint occupies the upper right through the moving water. No seabed, no rocks, no plants, empty upper ocean surface, crisp documentary underwater texture photograph, photoreal painterly, vertical composition. Extreme close upward view, churning emerald-green underside of ocean surface and fine white foam, graphic rippled wave textures fill the frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 101.4,
+          "raw_p99": 252.0,
+          "gamma": 0.73,
+          "spread": 169.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o1-full-t0-generation.json",
+          "sha256": "a82686eb8741ebcc6bc018cefbcfcf5979d68fe654c15db0bbf522fb719ce81c"
+        }
+      },
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o1-full-t1.png",
+        "sha256": "61b10c7906db61c3bebb846abe79da926fc471cc5160f8e28af4dded53ab9321",
+        "model": "klein4b-q8-768",
+        "prompt": "Upward-looking close view immediately below the rippling surface of an open Cambrian sea. The entire tall frame shows the underside of turbulent emerald-green water and bright white foam, with sharp small rolling wave crests and intricate reflective patterns. A warm amber sunlight glint occupies the upper right through the moving water. No seabed, no rocks, no plants, empty upper ocean surface, crisp documentary underwater texture photograph, photoreal painterly, vertical composition. Extreme close upward view, churning emerald-green underside of ocean surface and fine white foam, graphic rippled wave textures fill the frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 98.6,
+          "raw_p99": 250.0,
+          "gamma": 0.709,
+          "spread": 191.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o1-full-t1-generation.json",
+          "sha256": "025d405f858d59b056efdb588957abd78f7ef297d26a624c6a517d48d30be3cc"
+        }
+      }
+    ],
+    "o3": [
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o3-full-t0.png",
+        "sha256": "18afcadfb1406d9ca0150f3c005ef5184251c2b6259c29a90494ba09dbe6e4a2",
+        "model": "klein4b-q8-768",
+        "prompt": "A single sharply detailed translucent Cambrian jelly drifts in clear mid-depth turquoise open water, its delicate rim and thin trailing filaments catching light, dark blue water continues far behind it with no shelter or seabed, one warm amber sun shaft crosses suspended particles, crisp nature documentary macro photograph, photoreal painterly, vertical composition. Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 96.4,
+          "raw_p99": 229.0,
+          "gamma": 0.692,
+          "spread": 128.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o3-full-t0-generation.json",
+          "sha256": "4023f06b8c1df1b82587ef6ffd21fb50c6428ea853dc8c604b2ed8d29252e09e"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o5-full-t0.png",
+        "sha256": "9bf42e977358794ccb9db654cb8551319b1945740130d342d559ff8d5e3e397a",
+        "model": "klein4b-q8-768",
+        "prompt": "High overhead view looking down through clear turquoise Cambrian water at a broad pale sandbank, sharply defined parallel ripple ridges and a darker deep-water channel beyond the curved bank, suspended sparkling particles, empty sea with no animals, one warm amber patch of sunlight on the rippled sand, photoreal painterly, vertical composition. Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 126.1,
+          "raw_p99": 235.0,
+          "gamma": 0.957,
+          "spread": 133.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o5-full-t0-generation.json",
+          "sha256": "f7a359e2d4a56b0139e8a61b3e8253b1030e0f8fcf83542cb76c9466c4eb3809"
+        }
+      },
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o5-full-t3.png",
+        "sha256": "af7dd8bd881c0d623b2ede12abf8cca5446c10ac274dcf1fdc6b27f3b6c14157",
+        "model": "klein4b-q8-768",
+        "prompt": "High overhead view looking down through clear turquoise Cambrian water at a broad pale sandbank, sharply defined parallel ripple ridges and a darker deep-water channel beyond the curved bank, suspended sparkling particles, empty sea with no animals, one warm amber patch of sunlight on the rippled sand, photoreal painterly, vertical composition. Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 115.1,
+          "raw_p99": 236.0,
+          "gamma": 0.847,
+          "spread": 142.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o5-full-t3-generation.json",
+          "sha256": "8dc4230df850e84d1c7aed326ca6453a232ddbb59d4e2211d87fce4903080369"
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o6-full-t0.png",
+        "sha256": "70949644ec0bf4f9476ca17cd0b5dc908da6d1727e9f1d64395602078f96fd0a",
+        "model": "klein4b-q8-768",
+        "prompt": "An extremely low view across a broad empty Cambrian seafloor of fine grey mud, sharp close detail of gentle ripples and tiny burrow tracks, clear turquoise water and pale drifting particles above, no animals, the seabed extends to a distant soft horizon, one warm amber shaft of sunlight crosses the mud, photoreal painterly, vertical composition. Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 135.8,
+          "raw_p99": 225.0,
+          "gamma": 1.069,
+          "spread": 116.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o6-full-t0-generation.json",
+          "sha256": "ef8a08c66d667e3a0224649ac960e2ef75d269be049d1ebceb860ad202964583"
+        }
+      },
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o6-full-t1.png",
+        "sha256": "f8c4205cda3fca39858bb951a9e5faf53262d5e5cfb98a8b46a84b116f5970b1",
+        "model": "klein4b-q8-768",
+        "prompt": "An extremely low view across a broad empty Cambrian seafloor of fine grey mud, sharp close detail of gentle ripples and tiny burrow tracks, clear turquoise water and pale drifting particles above, no animals, the seabed extends to a distant soft horizon, one warm amber shaft of sunlight crosses the mud, photoreal painterly, vertical composition. Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 125.4,
+          "raw_p99": 212.0,
+          "gamma": 0.949,
+          "spread": 120.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o6-full-t1-generation.json",
+          "sha256": "a5e24dc81176cc303bae880b81991f6ff587922d5cafe9e6362ca46d8e41c820"
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o7-full-t0.png",
+        "sha256": "a4914aa4e437e60ad30957bb0b5de2036b1e965e242a60172ab0cdff80d3cb44",
+        "model": "klein4b-q8-768",
+        "prompt": "A monumental underwater reef cliff plunges diagonally into dark navy Cambrian ocean water. Close rugged limestone ledges and an immense natural overhang fill most of the tall frame, with finely detailed rust-orange mineral bands and grey craggy stone. A faint warm amber shaft of real sunlight from the distant surface catches only the uppermost exposed rock ledge; the overhang stays shadowed and the far deep-water channel remains black-blue. Soft neutral external documentary fill reveals the near stone without making it glow. Wide-angle geological nature photograph, dramatic layered depth, sharp detailed near stone, no animals, photoreal painterly, vertical composition. Rugged rust-orange and charcoal limestone reef wall, diagonal plunging ledges, sharply detailed wide-angle geological landscape, one faint warm amber sunlight reflection on the upper ledge, neutral external fill on near stone, distant dark navy water. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 50.8,
+          "raw_p99": 192.0,
+          "gamma": 0.418,
+          "spread": 148.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o7-full-t0-generation.json",
+          "sha256": "e9c25d65ea8d4ac4cc5283f7303e7a9837e4c74763aaae977419755e2b07c142"
+        }
+      },
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o7-full-t3.png",
+        "sha256": "781b73269ac240264a9bf5af5519e7644038ca51b20c88c8abfa67e282ed8c5c",
+        "model": "klein4b-q8-768",
+        "prompt": "A monumental underwater reef cliff plunges diagonally into dark navy Cambrian ocean water. Close rugged limestone ledges and an immense natural overhang fill most of the tall frame, with finely detailed rust-orange mineral bands and grey craggy stone. A faint warm amber shaft of real sunlight from the distant surface catches only the uppermost exposed rock ledge; the overhang stays shadowed and the far deep-water channel remains black-blue. Soft neutral external documentary fill reveals the near stone without making it glow. Wide-angle geological nature photograph, dramatic layered depth, sharp detailed near stone, no animals, photoreal painterly, vertical composition. Rugged rust-orange and charcoal limestone reef wall, diagonal plunging ledges, sharply detailed wide-angle geological landscape, one faint warm amber sunlight reflection on the upper ledge, neutral external fill on near stone, distant dark navy water. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 33.6,
+          "raw_p99": 160.0,
+          "gamma": 0.333,
+          "spread": 133.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o7-full-t3-generation.json",
+          "sha256": "e081730187fd6042b935b8ae9321ab95b2babf9851b47f59a0e2d519ae34d2d5"
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o8-full-t0.png",
+        "sha256": "37b30638208430cc5f13a7f2014ab2219359b275685acb956b4f2eb397814b90",
+        "model": "klein4b-q8-768",
+        "prompt": "Wide view through clear turquoise Cambrian ocean water beside a steep jagged dark rock wall at the far left edge. Broad diagonal sunbeams fan from the upper right through empty blue water, illuminating sharply detailed suspended mineral particles. The largest brilliant amber sunbeam crosses the open center diagonally; pale rippling ocean surface high above, distant dark open water below, rugged rock textures restricted to the left edge, no animals, crisp nature documentary underwater photograph, photoreal painterly, vertical composition. Asymmetric underwater wide view, textured dark stone at one edge, broad diagonal rays across clear blue open water, fine crisp suspended sediment, one warm amber sunbeam. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 101.2,
+          "raw_p99": 254.0,
+          "gamma": 0.729,
+          "spread": 205.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o8-full-t0-generation.json",
+          "sha256": "eea5e77223e42b8d7abe599a216813e32922db5dd90c66f0958979a001d2b154"
+        }
+      },
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o8-full-t1.png",
+        "sha256": "f5d14df7e99c4e7fac5bffcab4d16b8fd5476fec44ee234877a7c6ca1ddb369d",
+        "model": "klein4b-q8-768",
+        "prompt": "Wide view through clear turquoise Cambrian ocean water beside a steep jagged dark rock wall at the far left edge. Broad diagonal sunbeams fan from the upper right through empty blue water, illuminating sharply detailed suspended mineral particles. The largest brilliant amber sunbeam crosses the open center diagonally; pale rippling ocean surface high above, distant dark open water below, rugged rock textures restricted to the left edge, no animals, crisp nature documentary underwater photograph, photoreal painterly, vertical composition. Asymmetric underwater wide view, textured dark stone at one edge, broad diagonal rays across clear blue open water, fine crisp suspended sediment, one warm amber sunbeam. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 101.9,
+          "raw_p99": 255.0,
+          "gamma": 0.735,
+          "spread": 218.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o8-full-t1-generation.json",
+          "sha256": "3a41d07f276d3eb85acb34503c69fa0192e66b8c83620f30a3718cb8a9c66301"
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "how-deep-03-mud-sand-repair/art/o6-full-t0.png",
+        "sha256": "70949644ec0bf4f9476ca17cd0b5dc908da6d1727e9f1d64395602078f96fd0a",
+        "model": "klein4b-q8-768",
+        "prompt": "An extremely low view across a broad empty Cambrian seafloor of fine grey mud, sharp close detail of gentle ripples and tiny burrow tracks, clear turquoise water and pale drifting particles above, no animals, the seabed extends to a distant soft horizon, one warm amber shaft of sunlight crosses the mud, photoreal painterly, vertical composition. Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 135.8,
+          "raw_p99": 225.0,
+          "gamma": 1.069,
+          "spread": 116.0
+        },
+        "generation": {
+          "file": "how-deep-03-mud-sand-repair/art/o6-full-t0-generation.json",
+          "sha256": "ef8a08c66d667e3a0224649ac960e2ef75d269be049d1ebceb860ad202964583"
+        },
+        "source_image": "o6"
+      }
+    ]
+  },
+  "cached_only": true
+}

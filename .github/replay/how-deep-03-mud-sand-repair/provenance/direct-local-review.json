@@ -1,0 +1,72 @@
+{
+  "images": [
+    {
+      "file": "o3-full-t0.png",
+      "image_sha256": "18afcadfb1406d9ca0150f3c005ef5184251c2b6259c29a90494ba09dbe6e4a2",
+      "decision": "pass",
+      "reason": "Direct full-resolution still review: a translucent jelly with a coherent bell and fine trailing tentacles drifts in empty turquoise mid-depth water. No person, lettering or fish-like hunter. Its recorded sharpness7.1084 misses the normal8 threshold but is above the established6 soft-only fallback floor; only the unchanged production gate may choose that fallback. No numeric gate is overridden.",
+      "requires_existing_soft_only_fallback": true
+    },
+    {
+      "file": "o5-full-t0.png",
+      "image_sha256": "9bf42e977358794ccb9db654cb8551319b1945740130d342d559ff8d5e3e397a",
+      "decision": "pass",
+      "reason": "Direct full-resolution inspection: overhead view of an empty pale bank with clearly defined ripple ridges, surrounded by turquoise water and a darker water channel. No animal, person, lettering or built object. The still alone does not establish scale or depth; full rendered beat alignment remains required."
+    },
+    {
+      "file": "o5-full-t3.png",
+      "image_sha256": "af7dd8bd881c0d623b2ede12abf8cca5446c10ac274dcf1fdc6b27f3b6c14157",
+      "decision": "pass",
+      "reason": "Direct full-resolution still inspection: Overhead empty crescent-shaped ripple-ridged sandbank with turquoise water around it; no people, animals, text or built object. Full AV still must assess the beat context and implied depth."
+    },
+    {
+      "file": "o6-full-t0.png",
+      "image_sha256": "70949644ec0bf4f9476ca17cd0b5dc908da6d1727e9f1d64395602078f96fd0a",
+      "decision": "pass",
+      "reason": "Direct full-resolution still inspection: Extremely low view across empty rippled grey mud in turquoise water, with suspended particles and an amber shaft crossing the substrate. No fish-like hunter, malformed animal, human or lettering."
+    },
+    {
+      "file": "o6-full-t1.png",
+      "image_sha256": "f8c4205cda3fca39858bb951a9e5faf53262d5e5cfb98a8b46a84b116f5970b1",
+      "decision": "pass",
+      "reason": "Direct full-resolution still inspection: Low substrate view across detailed muddy ripple ridges under clear turquoise water. No animal, human, lettering or modern prop; matches lying flat on seafloor mud."
+    },
+    {
+      "file": "diagonal-sunbeam/o8-full-t0.png",
+      "image_sha256": "37b30638208430cc5f13a7f2014ab2219359b275685acb956b4f2eb397814b90",
+      "decision": "pass",
+      "reason": "Direct full-resolution still review: wide asymmetric underwater view with rugged rock edge at left, clear turquoise open water and diagonal warm sunbeams from the rippled surface. Empty beam is the central exposed-water subject; no person, animal, writing or built object. Existing Shorts-specific picture gate passes. Current cached-set distinctness and full AV remain required."
+    },
+    {
+      "file": "diagonal-sunbeam/o8-full-t1.png",
+      "image_sha256": "f5d14df7e99c4e7fac5bffcab4d16b8fd5476fec44ee234877a7c6ca1ddb369d",
+      "decision": "pass",
+      "reason": "Direct full-resolution still review: coherent underwater rock edge, diagonal bright sunbeam through clear open water and visible suspended particles; no person, animal, lettering or built object. Same exposed-water choice. Existing Shorts-specific picture gates pass; full cached-set distinctness and AV remain mandatory."
+    },
+    {
+      "file": "surface-cliff/o1-full-t0.png",
+      "image_sha256": "4d02f2ebd5365f13d565bf3302602b987c9464bf2914bade24f739900a87baf6",
+      "decision": "pass",
+      "reason": "Direct full-resolution inspection: close emerald-green underside of the ocean surface with coherent rolling wave/foam textures and warm reflected light. No seabed, person, lettering or creature. Correctly distinguishes floating at the surface from lying on mud. Existing picture gates pass; whole-set distinctness/full AV remain required."
+    },
+    {
+      "file": "surface-cliff/o1-full-t1.png",
+      "image_sha256": "61b10c7906db61c3bebb846abe79da926fc471cc5160f8e28af4dded53ab9321",
+      "decision": "pass",
+      "reason": "Direct full-resolution inspection: close emerald-green underside of the ocean surface with coherent rolling wave/foam textures and warm reflected light. No seabed, person, lettering or creature. Correctly distinguishes floating at the surface from lying on mud. Existing picture gates pass; whole-set distinctness/full AV remain required."
+    },
+    {
+      "file": "copper-cliff/o7-full-t0.png",
+      "image_sha256": "a4914aa4e437e60ad30957bb0b5de2036b1e965e242a60172ab0cdff80d3cb44",
+      "decision": "pass",
+      "reason": "Direct full-resolution still inspection: empty underwater geological cliff with sharply defined craggy ledges and overhang, warm externally sunlit upper rock and dark blue water below. No animal, person, text or implausible self-luminous rock. Distinct composition from the blue reef and open-water sunbeam; exact whole-set production distinctness checks remain required. Current cloud and full audiovisual checks remain mandatory."
+    },
+    {
+      "file": "copper-cliff/o7-full-t3.png",
+      "image_sha256": "781b73269ac240264a9bf5af5519e7644038ca51b20c88c8abfa67e282ed8c5c",
+      "decision": "pass",
+      "reason": "Direct full-resolution inspection: sharply detailed empty geological reef cliff and overhang above clear dark-blue water, externally lit upper rock, orange mineral bands, no animal, person, text or self-luminous stone. Current per-image gates pass. Whole-set distinctness, cloud production and complete audiovisual review remain mandatory."
+    }
+  ],
+  "full_video_approved": false
+}

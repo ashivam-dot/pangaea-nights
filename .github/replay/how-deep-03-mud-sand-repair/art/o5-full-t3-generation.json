@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "5d9ad7e7e563dc6bdca78304886364aebbe22c6d",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "High overhead view looking down through clear turquoise Cambrian water at a broad pale sandbank, sharply defined parallel ripple ridges and a darker deep-water channel beyond the curved bank, suspended sparkling particles, empty sea with no animals, one warm amber patch of sunlight on the rippled sand, photoreal painterly, vertical composition. Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 563185216
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "how-deep-03-mud-sand-repair/art/o5-full-t3-raw.png",
+    "sha256": "5d0e438661ff635922bc7bccc9b3b1420c12b1fda50934f86f6e9ca92b92f648"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 96.2
+}

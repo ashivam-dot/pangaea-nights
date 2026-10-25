@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-25T05:20:12+00:00",
+  "premise": "how_deep-03",
+  "candidate_sha256": "e730e6df054fc6c7c9b4a35ce7df95cef6b60f643f4c4f97d77539a8fb143d52",
+  "passed": true,
+  "problems": [],
+  "wer": 0.034,
+  "wpm": 164.0,
+  "max_line_wer": 0.125,
+  "duration": 42.894,
+  "release_approval": false
+}

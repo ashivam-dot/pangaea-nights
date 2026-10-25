@@ -190,7 +190,8 @@
           "label": "Floating at the surface",
           "vo": "One: floating at the sunlit surface.",
           "danger": 1,
-          "image_prompt": "view just below a sunlit ocean surface looking up at rippling light, tiny drifting larvae sparkling in turquoise water, one warm amber sun glint dancing on the waves, photoreal painterly, vertical composition"
+          "image_prompt": "Upward-looking close view immediately below the rippling surface of an open Cambrian sea. The entire tall frame shows the underside of turbulent emerald-green water and bright white foam, with sharp small rolling wave crests and intricate reflective patterns. A warm amber sunlight glint occupies the upper right through the moving water. No seabed, no rocks, no plants, empty upper ocean surface, crisp documentary underwater texture photograph, photoreal painterly, vertical composition",
+          "art_direction": "Extreme close upward view, churning emerald-green underside of ocean surface and fine white foam, graphic rippled wave textures fill the frame"
         },
         {
           "n": 2,
@@ -204,7 +205,7 @@
           "label": "Open water, mid-depth",
           "vo": "Three: hanging in open water, nowhere to hide.",
           "danger": 3,
-          "image_prompt": "vast empty open water at mid-depth, blue in every direction, a small soft swimming creature alone, a long segmented shadow far off, one warm amber light shaft, photoreal painterly, vertical composition"
+          "image_prompt": "A single sharply detailed translucent Cambrian jelly drifts in clear mid-depth turquoise open water, its delicate rim and thin trailing filaments catching light, dark blue water continues far behind it with no shelter or seabed, one warm amber sun shaft crosses suspended particles, crisp nature documentary macro photograph, photoreal painterly, vertical composition"
         },
         {
           "n": 4,
@@ -215,31 +216,33 @@
         },
         {
           "n": 5,
-          "label": "Above the trilobite field",
-          "vo": "Five: just above crawling trilobites.",
+          "label": "Above a rippled sandbank",
+          "vo": "Five: hovering just above a rippled sandbank.",
           "danger": 5,
-          "image_prompt": "close view a metre above a seafloor crowded with crawling trilobites, their segmented shells catching light, a big flap-finned predator gliding overhead, one warm amber glint, photoreal painterly, vertical composition"
+          "image_prompt": "High overhead view looking down through clear turquoise Cambrian water at a broad pale sandbank, sharply defined parallel ripple ridges and a darker deep-water channel beyond the curved bank, suspended sparkling particles, empty sea with no animals, one warm amber patch of sunlight on the rippled sand, photoreal painterly, vertical composition"
         },
         {
           "n": 6,
           "label": "Flat on the seafloor",
           "vo": "Six: lying flat on the seafloor mud.",
           "danger": 6,
-          "image_prompt": "POV pressed flat on fine grey Cambrian seafloor mud, trilobites ploughing past at eye level, a huge flap-finned predator silhouette passing high above in bright water, one warm amber glint, photoreal painterly, vertical composition"
+          "image_prompt": "An extremely low view across a broad empty Cambrian seafloor of fine grey mud, sharp close detail of gentle ripples and tiny burrow tracks, clear turquoise water and pale drifting particles above, no animals, the seabed extends to a distant soft horizon, one warm amber shaft of sunlight crosses the mud, photoreal painterly, vertical composition"
         },
         {
           "n": 7,
           "label": "Down the reef cliff",
           "vo": "Seven: dropping down the dark reef cliff.",
           "danger": 7,
-          "image_prompt": "steep underwater cliff of reef rock dropping into deep blue darkness, spiny worms clinging to ledges, one warm amber shaft of light fading along the wall, photoreal painterly, vertical composition"
+          "image_prompt": "A monumental underwater reef cliff plunges diagonally into dark navy Cambrian ocean water. Close rugged limestone ledges and an immense natural overhang fill most of the tall frame, with finely detailed rust-orange mineral bands and grey craggy stone. A faint warm amber shaft of real sunlight from the distant surface catches only the uppermost exposed rock ledge; the overhang stays shadowed and the far deep-water channel remains black-blue. Soft neutral external documentary fill reveals the near stone without making it glow. Wide-angle geological nature photograph, dramatic layered depth, sharp detailed near stone, no animals, photoreal painterly, vertical composition",
+          "art_direction": "Rugged rust-orange and charcoal limestone reef wall, diagonal plunging ledges, sharply detailed wide-angle geological landscape, one faint warm amber sunlight reflection on the upper ledge, neutral external fill on near stone, distant dark navy water"
         },
         {
           "n": 8,
-          "label": "Lit water, giant eyes",
-          "vo": "Eight: bright open water, facing the clawed hunter.",
+          "label": "Inside the brightest sunbeam",
+          "vo": "Eight: suspended inside a bright sunbeam.",
           "danger": 8,
-          "image_prompt": "a giant Anomalocaris filling the frame in bright open water, segmented swimming flaps rippling, spiny grasping frontal appendages reaching forward, huge stalked compound eyes, one warm amber sun shaft behind it, photoreal painterly, vertical composition"
+          "image_prompt": "Wide view through clear turquoise Cambrian ocean water beside a steep jagged dark rock wall at the far left edge. Broad diagonal sunbeams fan from the upper right through empty blue water, illuminating sharply detailed suspended mineral particles. The largest brilliant amber sunbeam crosses the open center diagonally; pale rippling ocean surface high above, distant dark open water below, rugged rock textures restricted to the left edge, no animals, crisp nature documentary underwater photograph, photoreal painterly, vertical composition",
+          "art_direction": "Asymmetric underwater wide view, textured dark stone at one edge, broad diagonal rays across clear blue open water, fine crisp suspended sediment, one warm amber sunbeam"
         }
       ],
       "answer_n": 6,
@@ -261,7 +264,8 @@
         "deep sea",
         "prehistoric"
       ],
-      "related_topic_hint": "The Ocean Before the Dinosaurs"
+      "related_topic_hint": "The Ocean Before the Dinosaurs",
+      "end_image": "o6"
     },
     {
       "id": "how_deep-04",

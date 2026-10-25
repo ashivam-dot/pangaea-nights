@@ -1,0 +1,537 @@
+{
+  "original": {
+    "id": "how_deep-03",
+    "era": "Cambrian",
+    "title": "The Cambrian Ocean Has a Hunter \u2014 How Deep Do You Hide? \ud83e\udd90",
+    "banner": "Cambrian hunter: where do you hide?",
+    "hook_vo": "A spiked-claw hunter owns this ocean. Pick a depth.",
+    "art_direction": "Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Floating at the surface",
+        "vo": "One: floating at the sunlit surface.",
+        "danger": 1,
+        "image_prompt": "view just below a sunlit ocean surface looking up at rippling light, tiny drifting larvae sparkling in turquoise water, one warm amber sun glint dancing on the waves, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 2,
+        "label": "In the drifting plankton",
+        "vo": "Two: drifting in a plankton cloud.",
+        "danger": 2,
+        "image_prompt": "dense shimmering cloud of tiny swimming arthropods and jellies in bright turquoise water, light rays streaming down, one warm golden sun shaft through the swarm, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 3,
+        "label": "Open water, mid-depth",
+        "vo": "Three: hanging in open water, nowhere to hide.",
+        "danger": 3,
+        "image_prompt": "vast empty open water at mid-depth, blue in every direction, a small soft swimming creature alone, a long segmented shadow far off, one warm amber light shaft, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 4,
+        "label": "Beside the sponge reef",
+        "vo": "Four: beside a reef of cup-shaped sponges.",
+        "danger": 4,
+        "image_prompt": "Cambrian reef of tall cup-shaped sponges and branching growths on a sunlit seabed, small shrimp darting between them, one warm amber light patch on the reef crest, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 5,
+        "label": "Above the trilobite field",
+        "vo": "Five: just above crawling trilobites.",
+        "danger": 5,
+        "image_prompt": "close view a metre above a seafloor crowded with crawling trilobites, their segmented shells catching light, a big flap-finned predator gliding overhead, one warm amber glint, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 6,
+        "label": "Flat on the seafloor",
+        "vo": "Six: lying flat on the seafloor mud.",
+        "danger": 6,
+        "image_prompt": "POV pressed flat on fine grey Cambrian seafloor mud, trilobites ploughing past at eye level, a huge flap-finned predator silhouette passing high above in bright water, one warm amber glint, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 7,
+        "label": "Down the reef cliff",
+        "vo": "Seven: dropping down the dark reef cliff.",
+        "danger": 7,
+        "image_prompt": "steep underwater cliff of reef rock dropping into deep blue darkness, spiny worms clinging to ledges, one warm amber shaft of light fading along the wall, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 8,
+        "label": "Lit water, giant eyes",
+        "vo": "Eight: bright open water, facing the clawed hunter.",
+        "danger": 8,
+        "image_prompt": "a giant Anomalocaris filling the frame in bright open water, segmented swimming flaps rippling, spiny grasping frontal appendages reaching forward, huge stalked compound eyes, one warm amber sun shaft behind it, photoreal painterly, vertical composition"
+      }
+    ],
+    "answer_n": 6,
+    "verdict_vo": "Real answer: number 6, because this hunter probably avoided the sea bed, where grabbing prey risked claw damage. Lie flat.",
+    "fact": {
+      "text": "Anomalocaris probably did not hunt animals on the seafloor, since grabbing prey there at speed could damage its frontal appendages.",
+      "wiki_title": "Anomalocaris",
+      "wiki_revid": 1379615198,
+      "source_sentence": "It probably would have not hunted benthic animals like trilobites, considering the possibility of damaging the frontal appendages on the substrate while trying to grab prey from seafloor at speed."
+    },
+    "description": "The ocean's first apex predator is cruising overhead and you have eight places to hide. The safest one goes against every instinct.",
+    "tags": [
+      "cambrian",
+      "ocean",
+      "anomalocaris",
+      "prehistoric predator",
+      "how deep",
+      "survival",
+      "deep sea",
+      "prehistoric"
+    ],
+    "related_topic_hint": "The Ocean Before the Dinosaurs",
+    "series": "how_deep"
+  },
+  "replacement": {
+    "id": "how_deep-03",
+    "era": "Cambrian",
+    "title": "The Cambrian Ocean Has a Hunter \u2014 How Deep Do You Hide? \ud83e\udd90",
+    "banner": "Cambrian hunter: where do you hide?",
+    "hook_vo": "A spiked-claw hunter owns this ocean. Pick a depth.",
+    "art_direction": "Turquoise and sand palette with crisp Cambrian clarity, macro 50mm lens, one warm sunlit amber glint per frame.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Floating at the surface",
+        "vo": "One: floating at the sunlit surface.",
+        "danger": 1,
+        "image_prompt": "Upward-looking close view immediately below the rippling surface of an open Cambrian sea. The entire tall frame shows the underside of turbulent emerald-green water and bright white foam, with sharp small rolling wave crests and intricate reflective patterns. A warm amber sunlight glint occupies the upper right through the moving water. No seabed, no rocks, no plants, empty upper ocean surface, crisp documentary underwater texture photograph, photoreal painterly, vertical composition",
+        "art_direction": "Extreme close upward view, churning emerald-green underside of ocean surface and fine white foam, graphic rippled wave textures fill the frame"
+      },
+      {
+        "n": 2,
+        "label": "In the drifting plankton",
+        "vo": "Two: drifting in a plankton cloud.",
+        "danger": 2,
+        "image_prompt": "dense shimmering cloud of tiny swimming arthropods and jellies in bright turquoise water, light rays streaming down, one warm golden sun shaft through the swarm, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 3,
+        "label": "Open water, mid-depth",
+        "vo": "Three: hanging in open water, nowhere to hide.",
+        "danger": 3,
+        "image_prompt": "A single sharply detailed translucent Cambrian jelly drifts in clear mid-depth turquoise open water, its delicate rim and thin trailing filaments catching light, dark blue water continues far behind it with no shelter or seabed, one warm amber sun shaft crosses suspended particles, crisp nature documentary macro photograph, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 4,
+        "label": "Beside the sponge reef",
+        "vo": "Four: beside a reef of cup-shaped sponges.",
+        "danger": 4,
+        "image_prompt": "Cambrian reef of tall cup-shaped sponges and branching growths on a sunlit seabed, small shrimp darting between them, one warm amber light patch on the reef crest, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 5,
+        "label": "Above a rippled sandbank",
+        "vo": "Five: hovering just above a rippled sandbank.",
+        "danger": 5,
+        "image_prompt": "High overhead view looking down through clear turquoise Cambrian water at a broad pale sandbank, sharply defined parallel ripple ridges and a darker deep-water channel beyond the curved bank, suspended sparkling particles, empty sea with no animals, one warm amber patch of sunlight on the rippled sand, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 6,
+        "label": "Flat on the seafloor",
+        "vo": "Six: lying flat on the seafloor mud.",
+        "danger": 6,
+        "image_prompt": "An extremely low view across a broad empty Cambrian seafloor of fine grey mud, sharp close detail of gentle ripples and tiny burrow tracks, clear turquoise water and pale drifting particles above, no animals, the seabed extends to a distant soft horizon, one warm amber shaft of sunlight crosses the mud, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 7,
+        "label": "Down the reef cliff",
+        "vo": "Seven: dropping down the dark reef cliff.",
+        "danger": 7,
+        "image_prompt": "A monumental underwater reef cliff plunges diagonally into dark navy Cambrian ocean water. Close rugged limestone ledges and an immense natural overhang fill most of the tall frame, with finely detailed rust-orange mineral bands and grey craggy stone. A faint warm amber shaft of real sunlight from the distant surface catches only the uppermost exposed rock ledge; the overhang stays shadowed and the far deep-water channel remains black-blue. Soft neutral external documentary fill reveals the near stone without making it glow. Wide-angle geological nature photograph, dramatic layered depth, sharp detailed near stone, no animals, photoreal painterly, vertical composition",
+        "art_direction": "Rugged rust-orange and charcoal limestone reef wall, diagonal plunging ledges, sharply detailed wide-angle geological landscape, one faint warm amber sunlight reflection on the upper ledge, neutral external fill on near stone, distant dark navy water"
+      },
+      {
+        "n": 8,
+        "label": "Inside the brightest sunbeam",
+        "vo": "Eight: suspended inside a bright sunbeam.",
+        "danger": 8,
+        "image_prompt": "Wide view through clear turquoise Cambrian ocean water beside a steep jagged dark rock wall at the far left edge. Broad diagonal sunbeams fan from the upper right through empty blue water, illuminating sharply detailed suspended mineral particles. The largest brilliant amber sunbeam crosses the open center diagonally; pale rippling ocean surface high above, distant dark open water below, rugged rock textures restricted to the left edge, no animals, crisp nature documentary underwater photograph, photoreal painterly, vertical composition",
+        "art_direction": "Asymmetric underwater wide view, textured dark stone at one edge, broad diagonal rays across clear blue open water, fine crisp suspended sediment, one warm amber sunbeam"
+      }
+    ],
+    "answer_n": 6,
+    "verdict_vo": "Real answer: number 6, because this hunter probably avoided the sea bed, where grabbing prey risked claw damage. Lie flat.",
+    "fact": {
+      "text": "Anomalocaris probably did not hunt animals on the seafloor, since grabbing prey there at speed could damage its frontal appendages.",
+      "wiki_title": "Anomalocaris",
+      "wiki_revid": 1379615198,
+      "source_sentence": "It probably would have not hunted benthic animals like trilobites, considering the possibility of damaging the frontal appendages on the substrate while trying to grab prey from seafloor at speed."
+    },
+    "description": "The ocean's first apex predator is cruising overhead and you have eight places to hide. The safest one goes against every instinct.",
+    "tags": [
+      "cambrian",
+      "ocean",
+      "anomalocaris",
+      "prehistoric predator",
+      "how deep",
+      "survival",
+      "deep sea",
+      "prehistoric"
+    ],
+    "related_topic_hint": "The Ocean Before the Dinosaurs",
+    "series": "how_deep",
+    "end_image": "o6"
+  },
+  "reason": "All four actual o3 production takes failed unchanged picture gates for mushy detail, weak aesthetics and/or figure probability. Direct review of first and fourth refused thumbnails confirms a tiny indistinct drifting organism and long indistinct shadow. Clarify the same mid-depth open-water scene with one crisp jelly; preserve all speech, title, source and answer6. Original failed bytes remain excluded.",
+  "release_approval": false,
+  "additional_reason": "Both actual o6 paintings show a modern fish-like hunter and materially wrong armoured forms. Exclude both and reframe the same spoken flat-on-seafloor choice as a detailed empty muddy substrate; all speech, source, title and answer remain unchanged.",
+  "additional_reasons": [
+    "Both actual o6 paintings show a modern fish-like hunter and materially wrong armoured forms; replace only image direction with empty muddy substrate.",
+    "Both actual o5 paintings also show fish-like hunter and pillbug-like animals; deliberately replan this single spoken choice to a rippled sandbank. Title, sourced explanation and answer6 stay.",
+    "Both focal Anomalocaris takes still have materially false fish/insect body plans after explicit anatomy directions. Replace the single exposed-water choice with a bright sunbeam; the hunter remains an off-screen threat described in the hook and sourced verdict."
+  ],
+  "closing_decision": "Close on the exact reviewed winning-choice image so the sourced payoff shows its answer. Recheck the reused image as the end slot with honest source_image provenance; narration and all original image/AV gates stay.",
+  "image_direction_revision": {
+    "scope": "o8 image only; all candidate-v6 speech preserved",
+    "reason": "All four narrow central vertical sunbeam attempts failed unchanged picture checks, including figure probability. Replace the vertical composition with asymmetric diagonal rays and a textured rock edge; preserve the exposed-water choice, source and answer. Failed pixels and diagnostics remain excluded.",
+    "refused_checks": [
+      {
+        "file": "o8-full-t0.json",
+        "problems": [
+          "aesthetic 4.52",
+          "mushy 6.1",
+          "person 0.60"
+        ],
+        "figure": 0.6028869152069092,
+        "ok": false,
+        "reasons": [
+          "aesthetic 4.52",
+          "mushy 6.1"
+        ],
+        "person": 0.19,
+        "text": 0.0281,
+        "broken": 0.0268,
+        "similarity": 0.2627,
+        "aesthetic": 4.5234,
+        "brightness": 110.5742,
+        "contrast": 48.0532,
+        "sharpness": 6.078
+      },
+      {
+        "file": "o8-full-t1.json",
+        "problems": [
+          "aesthetic 4.46",
+          "person 0.62"
+        ],
+        "figure": 0.6245551705360413,
+        "ok": false,
+        "reasons": [
+          "person 0.30",
+          "aesthetic 4.46"
+        ],
+        "person": 0.3011,
+        "text": 0.0114,
+        "broken": 0.0145,
+        "similarity": 0.2725,
+        "aesthetic": 4.4577,
+        "brightness": 109.2045,
+        "contrast": 57.0343,
+        "sharpness": 10.0504
+      },
+      {
+        "file": "o8-full-t2.json",
+        "problems": [
+          "aesthetic 4.15",
+          "mushy 7.6",
+          "person 0.61"
+        ],
+        "figure": 0.6090832948684692,
+        "ok": false,
+        "reasons": [
+          "person 0.35",
+          "aesthetic 4.15",
+          "mushy 7.6"
+        ],
+        "person": 0.3459,
+        "text": 0.0381,
+        "broken": 0.0255,
+        "similarity": 0.2747,
+        "aesthetic": 4.152,
+        "brightness": 111.2168,
+        "contrast": 54.1437,
+        "sharpness": 7.5633
+      },
+      {
+        "file": "o8-full-t3.json",
+        "problems": [
+          "person 0.59"
+        ],
+        "figure": 0.5878053307533264,
+        "ok": false,
+        "reasons": [
+          "person 0.33"
+        ],
+        "person": 0.3254,
+        "text": 0.0129,
+        "broken": 0.0092,
+        "similarity": 0.2768,
+        "aesthetic": 4.6137,
+        "brightness": 110.7954,
+        "contrast": 51.8267,
+        "sharpness": 11.9687
+      }
+    ],
+    "release_approval": false
+  },
+  "set_direction_revision": {
+    "failed_preflight": {
+      "scope": "Exact production cached-image gates and selection only; depth/motion/full AV not approved",
+      "manifest_sha256": "708fcad319bb7e5ecf2f8b7d36be84d0a39bf9a60f7617a5f15d4020cd81f7ad",
+      "passes": false,
+      "selection": {
+        "missing": [],
+        "pair_max": 0.9085952639579773,
+        "pair_min": 0.7704939246177673,
+        "prompt_similarity_min": 0.2781,
+        "choice": {
+          "o1": 0,
+          "o2": 0,
+          "o3": 0,
+          "o4": 0,
+          "o5": 0,
+          "o6": 1,
+          "o7": 0,
+          "o8": 1,
+          "end": 0
+        },
+        "embeddings": {
+          "o1": "sAjMm62l1KBxm7qolyCoKZIphx03J6KmDphRnjocqpIIqcgolSnuoKOqkRYCJ4QahR2tJj+muaHCow0lvyVSJlGjkaSEptkmUaRyJwolgSnGJ8+fXKRUJUGoCK3QJXuk6qa2Jnej2yqvJXCk8aV9JXSsGScaIGYgiJ0HI28ggJ1vm9Ohop2YKSMl4yERqG2kWaa+puMZmaj8otWo8iQYo7YgyKfjoGGqIiibJbSVh6aeqbuToyftqPa57KLroWQkIqAVqB6norHPk7ujeKm3KKgnAx3dpaYhgCFiI8AguZzzJ7ekSaCmpW2l2aRYHdwhQp9uJv0icKD6pfqjACI3on0lhympnCMoWKZ5LeufQCn3pWWovaGEpbOk6qNFqIqk4qVNqIeniieboo0mAQi9GGAfiR44qVylmihFp6iZISi4oauhMCS7JKYkPqA8qWorOaDsD4ok1iS1pE2gHJlKKJ2tDBiKrPYgCCuZqO0eEqSVoSUkSiMpnoaUFaQJIG8hSiSyFV0l86M2KFSiwSuepSEex6M0H1EpaykkIBsZ3aA9HMYkHR5oKIajiaLtJGEk5yVxJKOVXR4XJcsVHJWRqjMtvSVwnNKlXaInopyYaaj1JVAjvxCnp2IkO6jEKZohFZiAKU0RaKBMppCpIxiFJgElNCZ6EQKgaR7qHdukaR2eoiyh/S0oo0yjr6HbpC0q9yRCGo6g7iA1GyEWzSERnmYptSYlKMekmakYJR+oQCEuI3gg9w0bILCdtaNNrw+q+xenFdYp6iVrJXOfsKjwohOp0iFUJqim1aLrqlWm3CmEG+0f+KDFJKkp64s8oEAleC3jEKElfRt/JCIss6MrrPIlATGyp1GeKCa4pRgjAyqjJCkpSqYCGZgjPaGNly0QliKOn1ukiiibn9mn/SUaJjalRaBFoA4ofiaaJhKht5UEGZsmPyBsq54sB6KWIHOdA6mVpV0pNiXErC6iASIRq9+hsRc0KFciECQQp6woayguLMMhFiRPHzwU66QbEAisKSZ1n8sf6wq0qL8sWp1WpOsdXyX9qCSpr5/6pKSinqcQJwQhvx08qcojYxLxqYedzCtVoj4sfR2/pEOlWJkuopIpux8AoWgdghVFp3Aoba37H6Qoep2XKWivmaUXm9KjHahVGRMcN6XHoDok7poqohMXsCHJpuYghhzaAlEo5aXuoPSjYChgnM8lKKTqHQwk9COFpiIiFqoAm4+lbJkHqnYmNCgIJ92m16cYJJEjcx89HdqldiEmqLKnJ5g9p9KnQaeMp3qZqB+6GkgoUaeqGxilryVtJQ4XYCppqMOlfyFGFpEoV6LvpBEo9xwNqbmksStLJ3QZLpp1JXspMSMjkA==",
+          "o2": "LieindOYoSXVoS+fCZ5DKxIpmKHMnDSoQydEnqkcYybKozUo4CWapkutfZsWJFkdbiPvKEigCKbYpYOYqheQH6GlghtZoWqZjqSJJjoXhSoFKXybhKJFIxKhoKqQKXGfIZ1oItanzCgLJianKacPKZysXCRAmHqjMyScoVaheySEpMWhEagmKQQoySArpiuiQaTmoQypMx3toSofJR9KIbyHOh0xodWqFCf5J4wmwZDtqrYQRykDovy5RaovqCcrySXCqU6pWq7iI6KmWahuJGKm3SG2rXYlAh53KKIe06C+I/oe4xF5nJAh+JOlJrqhfaaKI1olMaMTpc4XLCBEICgTJRc0I54ZJqayLXikmyUVneiqByKkHFKhFKVkrConHJxaqI2iTimNHW0piSDmG/WjgaWeqyqoAClgoRCrd6LOpaSgCSKGlPmhXKSCqRQomSCUoeAnDia8pn0oW54NLAiwYqFrlyKhGSeUq9skXSNhnMEgFSk6pxsleCAlne4NWRxQnL8QmqEvHjOiZCtXHO4lZ6R1oDcp4ClKn+kpWiFeIJ4lMqInLb2kTaUuJK4mwSVslPmq0aXFLA6bzhN9qLMsrqmeIW4aKyMbIxyXnaClIoEl+iUmJKgpiqjxJQooLZSSJUUUO6gUqI6rpiMZKPYjrCHkFnGiryZLI1SgiiGJpdOkiiTmmCOmrR8AIzoj0yOJjK6iVSVLnRcgJZiUnUwb4CQxnqOlGaiAKAMl8CHnKPAhm6AUJgqbdpe2ruapBBGjoLEluST/lximrJqhIhmqfZ+xKbkXYaXCop6kOSW2JFanOajuKdQrHJ8dI9Amsi2mH82lM6c7ILoidadjqUgoWzCmnWKjwaVuoCImHyEMqd8qwhSJopEmDyOJGWqdlCE+pJUl0Jq/oQOhEClIJn6d9pyiHwsphxRXJMyYJShHLPYoehyKrRYosaYXIRWORqSSptUosCXOqtyfjqDzpb8QqZ57JRIiXCjhp+wg2iRuKg2RkqXpo5ylhqthIQ6sQ6RCqJAh7RxImfQjap4nojMZTJeqq8GrxyBdGrGl9qnFJJ8cPR0NqhMp96gzGZCXayjloWIq1gRVpBqmU6YVmbUi2SozqpMcOShUqC+bKavwJYYgwx4KKmKsiyIjpxWmZanUpJ+jqKctqCEomBtUpL8gCqSEJJUpaqUCH10ltqHxofCqGyivnwghpqdVKxionRQspv4hyawBIUOoHKDWpJAoPiK0JqGg0Kl0GFektqQnJxypdRwhqsubA5nZI3IeuqBEpLMghCFqomgojZ2bpm2piKg0JSAhaiu8nfWoeSm/pL8e56FMJJUlPab8mqEm4yXUliGin5l+JXIoXxtYqQ==",
+          "o3": "TChgpHykGaBrn4iloBtlKGMmO6GvlEWmfiiCHmIRaCFFqKMm6ihhoJqn2CI5KEmk96EtlLyZqKERlLMhbKeLJkyli6aSo9AhHA+nI08gEZxsKJmQdB6OnESmrKqYpFoihZ8WKQ4lAClPJpqjY6lAKVWsnqBqIB6fQykpoUEg06A+l9OlmqHHKAYnfZeZos6iX6gZqSSkypcyIZWosCjdG6AiDCXmoBKoGisyIxYpK6oVqAIimigWnN65G6hzqGYofaFGqaaqNrEgGPajSKqPKL8oRRwtqmGgzh3QFIwlGqF3JLwcaqEIIr+lLaHiJ9ueUJzmJPMl86QoH2icBiUlIgAdTiKdIpclTKeTLVsewxSJok6smJxPoDOhIqf2ozoq+KSypoioSiymE34kBynhICyhe6IagGqpcijkodqjsSB+mpOjOCg3J9qihhuuoawn95o7mpUo2yjfpColDiAVKKqvnqHiqsMkvCowo3Yo4iSWExkeeyOip/ujXR4gn1uc1aDdmDkkgabtJrOgaSiWpsMlzad6oJUrNSiYnCAse43ZJ2sUOJ6ZKRKq36DdHVYkdSnkI8eka6T0LJmqYJzuokMryyKToj+a06VOIHYi2yGtJPOBDpoVmCcneKlOIkQlHCV9J0IpFJ/enDmssByEKOQgjyReF7siWiRUKWulviUEH4KjgihqI7ginyExpronvyjtHrEaLYc8p2QeJSjTHF2OWSDuH2+gD6h8Jtqc/g1GKW8o9KfLmc6iVCCor3OsfRxGo64o/xslncwV6KM8pwurLRdYHI0gPSWvqRymIiNgIPOg3qfhLG4oyaZuIGsnki2xGeagb5iGHjkoRarBqnoppjEvpZWk7CYBpv0hOB/lp5opg6O9pBSVgSF0nbSdmBuXpY4k2B71Hl6osB7RKQGkjYvRDxwj7iieKOKrsSQJKYUn+hYVqFcp/qJ5Io6kThsApQIpLSb5qIadsZhNqd6ogKFPJH0kMymtniosT4/0LbwcJKi5pB2k1qZvIieoLRVVoXme5pkIqNQtFhiopVCdiCSUplyqp6QsHoipr55corOgRyOsq9ilraWKHrmcCijCpUUsdiVMpIGoFRJsqEsdBCAlqEmpb5N7qPInua2VI3kmLZcPJPOu9KStpLKhIqfUpL6l0Z60H4ImKKDJqXCkOaLNH50mZKjyk+gmmqe7pVQWiSU6HzIkXKW5KVGkHBk8pwYiG6o6pQ2gXZPNoDMjjKEWLXGeIqZPpJAeoyCyIRerlCUAp22oWyQJobIhkyM2oGmlmaSLoU4mXqGkHmGnIyKflWYlsyrnogWnfyTMFVYoTKOtm3OkfR4Dp4uR8ymLF5EkWBwuIw0hMyc1pA==",
+          "o4": "UyqlJG+iT6JeqVOi9h0jJ7IlUaX+lNChGScgoxwpYqCQppkuZSMVp/mpziToK3CpGZ9kJ5IkeqZnmg0gVyb1I80kMJc2pTmlFx34KFcgRy9sKCSacKUvIdAh0a/Ao+cqRKJDKiwVYCngFS+kTauHKDKs0KRfI7WUVCXxmgYYbCD/pTwauaftKqcp5BwAB7ikraJ+qmoOQaTkkPef/ydnqjoi4hqPnwmoUyl1JUYrdJGSqEwnCic5pCi5iChWprImiqC7qXyr+6sWpCmfyqx9KJAoeSH4r1omSyU1HqIlTyTkle+ecKBTqZIiwqJlkywlTiXAJw+lhKFcpTEoJycJIXUor6YKKfwkaJ4FLfApaym9ICqpEiTLpXEbFB4BqNAk3JR8huOjaCmFKDQlL52HolGicpjbpbihnyh6qQ2mOCT8oSUeCabjjnMXf6UZpOspQZ6MIMgslCW8nBEnAh7lK5Gwl5yZqVuVWC05qFgTWxeSHoOfICTeqJ2hYCiRE3CkWyTupWgpU6WUJziYkyNzpY8kMKwbI3MsAygEpFEq1KciKQcig6EJK1mc0KJuJnUofispkrGnR6jdLBcpX5TNpagsf6OioKQiyKdII1olMqtNKXuoF6Q8p0koOqLnJzgo/BarKS4oR54qIf+m6qTuKSyhg6VvGdglMSm5HeCkTCktpp2m/S8oHeIkeB/vKAgi96YAnD8mPBpuqnMaDSVpqDCjvSX9HRcdm6vfJGmlxCboKKiMAhMqIXCfoqM0saWmdJ03p+AiZqGZGLInRpwgpPkqcSb1KLUgyJ9IqvCjySh7o0QleqfPKfkpYRzeJC0fBC0DJTcpOqaKJnMscKpGqGIruS/Aq7ipVh4YqbUjqiT2pBqeGyG7pIwni6dCGF+hIBlPqBqjW6K8pYSpNKXgIZQhGaOvqLon6COiI6YhbqG6KOYoZ6eFqkcpZ6saKNOh+CUtqI0mOSO0qtCjrZx0rpGnjCMOIX8oOSVOprIrJSzAKBeRMqhRmySk8KmopHqogZcVIHcnqKZ2qOKilKr0EmifeCbRqoipxCQxpbOqo6kZpNAg7aDbqcYm7Ke2p6AlIiwDqlMqQCidIdipL52GH5IqNSheol6lSCIzoukbP6wfIp0kBSBpKVOw2aFHqE6m2CCgGqSizqKQmAQnICRtoeWiISM1nPaOEqcynloomKyVJESf3ZqnltojC6h6JDai3SW+Gr8kAqRAG6okKiKWqJApIajOIBCeSBjipmchR51PHdKoqqhgqKSs/CT9pWmm/KEWqF2hbZ86oSsdlo3SnNKoxCSHJGIl8yIVqE2kt6zjJrsn5RbqJPEqv6DRqRAdUyQ/oAkhrqdiKK8i0JdYHQ==",
+          "o5": "cSYnntYlnJOmJHGd6aZMKfcn7aPFK5yjxyhIn86Z8qOrpF4mhClGmEGnICLMl8knuCfQKHKmEyUUpzsm3KFoI0al9qh/pzsjVydWKE6Zci6ZIEElmQdbKAGi1a2PnDcpbKOAKC0h6CmJKr2oF6eOIhepsSTdICQpX6i1GD2omqUhqemeYiGcLBufcBhlrJukXqhhpJ4kP6DDo+kZ/55BoQmoSxhJIJGsfixvK3AglaZ6rPuhsSkYp1u5zyi4pMMhrKldIGecMbAuKPkcoqjMoSggMBqMpEYjTpngJi4nOiPqKE2pACfMqugkQCEIJB4noKTMI2Yoz6U6psEWDyrBomkZoiihnm4o3aCNLfInYChcpUmrzadnqIadHqEbnw6eXxuDqKui+yUZHACeBpl4HZsoWCFYqB6q3CkooF2PTCIWqImc6yqAKYOpH6EjpdYr/6N0nY4k9KJlqt0VpZ1zJfivUiAnrK+cqCthpmufuCVTmKQjHCkDqbsgyyVcJhSjGCKkpDsmjx2uJVygyKGypSQWq44iGasneSxWo0oo7R4DHP+jwA0vKsSWaCMsqAAqTCgDKDOq/CBlK/emBCJdpH0sr4ntH0OZ3agjJcilSSGOjo4lnqHoraEon6hvJVqpBJtKK4koQyEXo62qLaILKjmQ5yAoIHqk8SRPpxqki6ArnHsmji6om3Um3SGJqiIu2SX1ICOgNigjqdkfEyBzpTEcPiZCqDOfRKWmJpQjqSkeK4oMBR0TIeweQKMPrD2fxyXRqWckXxvOJ4Inq6chp/WWHCUqIiCmsSgYqeyoiyJEnn4ZrqeLnV4o/iONog0oiy2VIjSejyTuKNgkOqY0qZgpOzGFqM0dwx2uosobNCWWI1YYg6C7qw8iqqSXohOfbyAulhQhNySyp72opSFAI2cleCGOo0MoOCcrI/UcGhw2IbigNiTwrN4p3Kg9KKGqWSGcFGsoSx02pOWkHqj8qCSoWhmwKMAi3h3kH3WXj5zhKrklEKONJ4ciL6nmJNGoFaLOo72nMyDSqd8sSKQRnXGq5yQ9jPSoFqdXKX6v2qMhJrQXbCL2q9siAJXAobup9CZXqh0qoSieHA0dlqEgnM8q+SnQpFOeuJ2SqBgRHa8QKIEp3qVpIu+w56IiqbWmvamXHoijsqoVpXYkUSVslwSlHqTPp6cpU6AGKNIcZaHUo06n0CS2HNaajKf3Gx4lUiiHqACloqozqSGUIpvZpsIllaC7KuGn7KVppKkgFyeCpYGUDJwnqYIZyyivo1ojsqDLpSGdPBqKqh4g+qiMmJ6mQZ+HKGcdHCf1I32oFSJzJtsmCaI+F4kk2aGHqPUkeCswItema6TTJ90jdiQ8qA==",
+          "o6": "UKXpoialoKcnHduhaCEpK4QniCBjKWGpwyieoKIbtg7+pwcrdCk9GCmi0p1Ml1mp8x0GKECgySOhq82cO6V+Ix8is6GEmZWYIaVFJg0gdCbzH8okRJsEJTOkp6z/pEWWFKJOKOkclyloKBKhVKmJJa+mGx53JUakGKzRG8inv5zmpjaqaqP4IowXTR2TqbSlraUrpPWdRaQlqOGm0h8np/SgnKHCIqWnHyXrKPkiHqjHqwShQJnUqSe6EiMJo1YqUKULoC2ks7GHISUnQaGnKH0hUaIrrPwkDRlCo5kkNaRJn0mjo55QpqOllqFYHJiX8KOMJUIjLKXyp6UjWyHYov0eeSZkn5YkYaaELRegUCm0HmGkS6RppnSpFakXpYqhlqCVqLCk/h5lqAIgOyehJRSeg6NNqW+rCiFWo/wbXKF5pimchCjMIlciN6LqpZ0sS6iDJGoeC5lyn1OY3aXqKcasaB76rCChRSyxqcmkzqPYozqSPZspmvgmdKZJoTino53qHqUh0qQsHMSk4iSlq3Sc2Ze3omApmincl9kkVKLBIR8p7qG3Kq8S6Q/fnfAiBSiXJfImdyD9KKiltRlblGYmHSQ1nZelrqCYJEaiKYP8JhImmqF/pIkk36MnKjOggahDJkYXPqDZo/mqdRozJjKh9iVUoUSjhyV6ooGoQh3xoL+b7iwroE0hr5c1HSQmcSQJodOYNSj8IOAiA55SH/skTClFIIoczKQkJHUOUSQHIzQncB2WHG8h2qWxrZWpOaJTpXkkHSQloMSjU6kzqPSoByYXJ8YmPpm3pJicxR/UIUCkLKhBJS4oKR7hmJkpgi3LJAelqaKvKM0l2qeEqhUpVDDGn+yn5yfzIUMgTyUmJTkqz54bpT0oPBX+FEAgEyKkpMMjqyeJnoCkOBkmHbSkZBVvoWsjcR9rIYOnJiVDFbEjzSOaqO4mcqoPlpSkC6EtIZ0m0yirqDmlPCMwqZUhrBTmJzok1yTEp2EmOSQbLFOfjSbRIMwozqSeH7ip5CWepREeYR8iqRAtmpzCIm4UgCD4pwmppaZWmlyoCgouIMcnFp34qlIOeBfsp3qkOCUcpGkrxKLflMSm/SP2IzAlGRqupIgdYiAWo/shra1yoHQmj6JLJROwvJ2rGAqlFKnYpjqlq6gup7UgqqSzpxAlTKSkngUm5Z60HqQmhZPgphiqJx71ImAXWKbSIFScnihFqbsccarEozyjEKPPpl8rMZ1ToaKkLaczokekaCUloZujqqQEp/oZVqAZIa2ha6XupeymbyTbqaYg+agRpemjNSUGJJmgCCaip4Wl2CXIHmIkMJ8pqEYo86AhIUkWUynvJYuoGShOIUEqQ6Y+GA==",
+          "o7": "biZxpW2k6ZvnqvSoPCSxJsEimiOEoZGj6ys1op8pjJ2wp+stvieLIi2my5lVKPyp55xqKDMkVBeVpEQphKWRI6IckKRDqG+WsaZcKIIdCi8GJJAfuiNaH3gZ07EoEn4ldKZhK6CWySbiIkch+aopKfapkZnDiyueUqZtpL+gH55LJcqklR6xK/Ao4iOApFqd0Z8jrUMj6Z0Wmlqq0RwiqrSjTpTsnfumFSqqJIIlTqSIpmOYWykdpxe5YSAeqxoo2h1YqmGoB7CiII+m1aywKDgt7inKsAMkmCBKEagedKXkkv6bjaDmqdsayKb/GW8grBS6oRul2KILm1Am5yaxHIogdRRmKHcjE6DzLFcjaCaXpWakTSEPqSoEHqI1p1gcfiABkGahbSrQmR4p6SJQjTamwpyzpyOqRyXSojSVryn/pbScJqHVJ16iFKbDGlsrMKT3Ilcp0CKBnTKhd41fKT+wZJqKrOUk9CtNpOIYfyizI4KkGxhmqiWk3CBwo1WbvpPPDpsmVqTfJ/OawyiTqfciYKryIwosgSc9pIooW6XtJBIqdqUWJG6lGqWhJOkXmio/pTWkxZpzK1sp1KXCpScokyYvqGqTA6DdItQhCKhyKZehI5wzqa4eD6XfHl0lTp3UKF8pJ5mdIYKr1KQknLUh7JjMk64mHyjvIfqkeCnTnxGo6zCdnrklBpwXJnIp4xsGqWKctSUxqoinJCreoy4k4SqIIiOY1KoeDsiobyT0KaIfYCZQJYqeHKBar4mp1p7Kp4In+Bnlo8kl2puVpCsnpxn8JzwjG6DTqhKk+CU6l0Qj2KgrLKIs4ydKiLwj8CzLJFkgwKDEIqUpLqxHqOAoYywjpEOofiggopuiAB7sIKmc6aeFqI8ogKb5oM6nySFOqRIk9ZrlpxmoraHCkJGhOx1spEQgnSgBKwokmKVgLNYmuaXpqAIlAKybJhgdEibXqb4mmSmtp4KjUCCUr0yoUJ8FIg4pcSjxowgluCgELXaTJqTsmv2lxqWQoOmmxBRDIiCYJZ7YpA4sVqQzG4YcPCdfqsmn3ip6nwGsdKA2ojIdZJ90qaSh26QinuYkOCwiqm4n2iRxqReo/qZWIloncClCpvinuhnXI9MkIa0SICUogpmhKtWxzaenqL+mYqRIppioHo4uJK6YFJ5woPSfHKS2pBkajR4SHqMn6qv8lD2oRqDhlsCk8KT6HIEgQhEnHpoQBKjzosidbp9xnzso3JWJKFikRqbHpjKkRqCHotKp6aWcpROrfBf7pneoDhIxpeEeGaEKpuefnZVxFqyorR8apaUlySS9qpem6qVXHT0pOKGoHdcoXKQprPelPybMJbwcS52GJngoPicHIw==",
+          "o8": "wSerqO2lRJ7ioPaq8CEtKQ2ewh3ypAUUNy1aptsm1hteqPosqiq/kC6jbSeoKQ6myQ3uJJygDppEnG0hRZ01KXMV5aICoiIkZqLaJ1IiYSepJpMY2RbfIVWlZ68slp+cHaS9J+UlEyh2J4+hk6jIJ9CsaySqIcohtqihIKIbGiRimSagyRnjKaEm0yFdqP+puKKKqqgj6KckIW+o9iVVnp4fz4IaJnGqCywwJ24eK6qnqWIcPSksnKe50SRJqNMmXaOrpnijxrFEog6go6xHKDcqMSI0rZGkJyTgjSofraD+InKnCaEypXuoFqlgHaAhRBwJHkWeJZ9bJEUosiEvG04g2iXlJOgjSZ45LWUZ8SfgqlahT5XTqHGgjKQcp3GlmqBXpbOi4ymmJDwo3BxtoDYddpqzp6iqGibuq14kVCmMpM4Zv5rKJmckwqQZG3UqDxM5IZUoTic1o6qg854ej1WtE6L9rY8k4SxKpoAmGinUGt2keSONpwmiXaE9numcABs3oxkkPqExJGwdmyTsqA0kuqJmIYwotyg2mXQmeKa0JDMpKpB3mGGldKEyKYIk2iZunMGgX6ABJv4iNqYvpFQpsCWDohqaWKTHl1emnaMwJawlex+bppAh7aR2JH0pfKNNKMInVB0toz+p1KIjHMYh7yBrnOgVZSdanzen9iGxoTymKy2BlEwnAp8LG+wjdiTfpaSlnCfWpNelAylgo8sgjSgaKiAhUqrnJcqmMiQJJqElw5LOJiiiO6N9sainnqUlo6Ql3yVPGTEe5alJprEi6yAXJFsUjRqGpayj8p/4mdyX5aE6LDIsyx9iIYAdNy2QHWwoIiRzIPMo36QXqgwqgS1UpCimTSXynZIhgCYmpZokCKZBqMgn6B0LHXan35vzpK2BlpTHp0SrZR72nPOn16EUpqMd3yG8Jk+kIad+JssjxCgyqh4oyKslJzahDyhcphkouSn1pDqdhCOcrhaqdKezJxEo8yfqob4mMSmzLT6lraFgHPmi6aUYJVerwSDNFO8kjB2Gp8AqKhiRHGWiQSVzqRWpTCiYHpmq25xcIMIWZZ4Jqasd6J5so5ufqSi9qaIpeSRCpLkdb6AupNwkqx7FpAWknyHjHlMpGavCJPInBKSAKZqxfJPrF9WmeqtcoROnM6XTIOOiWaBDp2Cizg3xouEYCJ0fnEQmWaosqCeh9CTKICwbtKZ5IxQjNhy3qF8dJ6kzkx8YHaWDq/0ne6JzJGGlXqfRnoCnP6SCIaSnVaQNpb6obaNVqTuhJZ82mKKmn5QXqHmlRKOLGY2oTia7ImcjryplqWuly5sBA58osqMMpvIo36XYqvadNyvvJDGkYpQ3H4UomCKnIQ=="
+        }
+      },
+      "current_cloud_and_av_required": true
+    },
+    "scope": "o1 and o7 image direction only; all speech identical to candidate-v5",
+    "reason": "Full-set check refuses pairmax.908595>.90. Direct selected-set review shows the surface image includes a prominent seabed and the cliff is a brightly glowing side wall similar to the exposed sunbeam. Reframe o1 as close underside-of-surface textures and o7 as a downward dark rock descent. Preserve all labels, narration, source, answer6 and previous useful art. Exact failed set and diagnostics retained.",
+    "release_approval": false
+  },
+  "cliff_direction_revision": {
+    "scope": "o7 image only; preserve all speech/title/source/answer6",
+    "reason": "All four grey downward-cliff attempts failed unchanged aesthetic/picture gates. Add distinct rust-orange mineral bands, a monumental overhang and layered wide-angle geological depth while preserving the spoken dark cliff descent. Previous four raw/graded attempts and diagnostics retained and excluded.",
+    "failed_checks": [
+      {
+        "file": "o7-full-t0.json",
+        "problems": [
+          "aesthetic 4.07"
+        ],
+        "figure": 0.3243653476238251,
+        "ok": false,
+        "reasons": [
+          "aesthetic 4.07"
+        ],
+        "person": 0.2486,
+        "text": 0.0189,
+        "broken": 0.1104,
+        "similarity": 0.2994,
+        "aesthetic": 4.0684,
+        "brightness": 96.1166,
+        "contrast": 49.5131,
+        "sharpness": 12.7653
+      },
+      {
+        "file": "o7-full-t1.json",
+        "problems": [
+          "aesthetic 4.49",
+          "person 0.55",
+          "prompt similarity 0.243 < 0.25"
+        ],
+        "figure": 0.5457569360733032,
+        "ok": false,
+        "reasons": [
+          "aesthetic 4.49"
+        ],
+        "person": 0.1315,
+        "text": 0.1046,
+        "broken": 0.159,
+        "similarity": 0.2435,
+        "aesthetic": 4.4859,
+        "brightness": 84.3405,
+        "contrast": 72.4009,
+        "sharpness": 16.9395
+      },
+      {
+        "file": "o7-full-t2.json",
+        "problems": [
+          "aesthetic 3.68"
+        ],
+        "figure": 0.39064908027648926,
+        "ok": false,
+        "reasons": [
+          "aesthetic 3.68"
+        ],
+        "person": 0.2503,
+        "text": 0.0727,
+        "broken": 0.123,
+        "similarity": 0.2698,
+        "aesthetic": 3.6759,
+        "brightness": 86.4572,
+        "contrast": 69.2771,
+        "sharpness": 16.8109
+      },
+      {
+        "file": "o7-full-t3.json",
+        "problems": [
+          "aesthetic 4.03"
+        ],
+        "figure": 0.3085142970085144,
+        "ok": false,
+        "reasons": [
+          "aesthetic 4.03"
+        ],
+        "person": 0.0935,
+        "text": 0.085,
+        "broken": 0.1117,
+        "similarity": 0.2738,
+        "aesthetic": 4.029,
+        "brightness": 77.7009,
+        "contrast": 70.5676,
+        "sharpness": 14.7627
+      }
+    ],
+    "release_approval": false
+  },
+  "manifest": ".github/replay/how-deep-03-mud-sand-repair.json",
+  "direct_review": {
+    "original_images": [
+      {
+        "file": "ladder-img-A-3/o4-alt1.png",
+        "image_sha256": "fd92b35f3ae3b5227d6ccceb4cc0824dd4281ede07a358cbeb2a930f1e887286",
+        "decision": "pass",
+        "reason": "Direct full-resolution still review: a sunlit seabed with cup-opening sponges, porous branching growths and small invertebrates. No people, text or obvious malformed focal object. Fits the reef option; source-linked science and full rendered audiovisual review still required."
+      },
+      {
+        "file": "ladder-img-A-3/o4.png",
+        "image_sha256": "6ecd5d4ef9013f6a78c1f095de32c3e087a063f44823595c23b7d17bcdb0d6b4",
+        "decision": "pass",
+        "reason": "Direct full-resolution still review: a sunlit seabed with cup-opening sponges, porous branching growths and small invertebrates. No people, text or obvious malformed focal object. Fits the reef option; source-linked science and full rendered audiovisual review still required."
+      },
+      {
+        "file": "ladder-img-A-1/o2-alt1.png",
+        "image_sha256": "115d720b8b29ba1b6f38cdad2830d489171fc8d39a4eb0ed6a768bcd04b5daea",
+        "decision": "pass",
+        "reason": "Direct full-resolution still review: dense tiny swimming invertebrates and translucent jellies in turquoise sunlit water, matching the plankton-cloud option. No human, lettering or malformed focal creature is visible. Full rendered AV still required."
+      },
+      {
+        "file": "ladder-img-A-1/o2.png",
+        "image_sha256": "176d71a0de94450d4b1ba72890116d0386e4f585a4a381da47992cadb0d9bca4",
+        "decision": "pass",
+        "reason": "Direct full-resolution still review: dense tiny swimming invertebrates and translucent jellies in turquoise sunlit water, matching the plankton-cloud option. No human, lettering or malformed focal creature is visible. Full rendered AV still required."
+      },
+      {
+        "file": "ladder-img-A-0/o1.png",
+        "image_sha256": "a85877338a1e7c4d9552941f2c5407001e43649be13ea1b6b4f95280f34047d4",
+        "decision": "pass",
+        "reason": "Direct full-resolution inspection: underwater view toward rippling turquoise surface, bright sun glints and small larvae. No person, lettering or malformed focal creature."
+      },
+      {
+        "file": "ladder-img-A-6/o7.png",
+        "image_sha256": "81b24c70f7d511d35925892326f99e544e8a9637f08392f7f5d7da8e612a36d3",
+        "decision": "pass",
+        "reason": "Direct full-resolution inspection: steep underwater rock wall drops into darker blue water, with small bristled/coiled worm-like growths on ledges and an amber sun patch above. No person, lettering or obvious focal body-plan defect. Fits reef-cliff choice; full AV remains required."
+      },
+      {
+        "file": "ladder-img-A-6/o7-alt1.png",
+        "image_sha256": "a608b0e94ca63f467bcc2888e4e6d3de6a92817858749592c920329f52ab4359",
+        "decision": "pass",
+        "reason": "Direct full-resolution inspection: steep underwater rock wall drops into darker blue water, with small bristled/coiled worm-like growths on ledges and an amber sun patch above. No person, lettering or obvious focal body-plan defect. Fits reef-cliff choice; full AV remains required."
+      }
+    ],
+    "local_images": [
+      {
+        "file": "o3-full-t0.png",
+        "image_sha256": "18afcadfb1406d9ca0150f3c005ef5184251c2b6259c29a90494ba09dbe6e4a2",
+        "decision": "pass",
+        "reason": "Direct full-resolution still review: a translucent jelly with a coherent bell and fine trailing tentacles drifts in empty turquoise mid-depth water. No person, lettering or fish-like hunter. Its recorded sharpness7.1084 misses the normal8 threshold but is above the established6 soft-only fallback floor; only the unchanged production gate may choose that fallback. No numeric gate is overridden.",
+        "requires_existing_soft_only_fallback": true
+      },
+      {
+        "file": "o5-full-t0.png",
+        "image_sha256": "9bf42e977358794ccb9db654cb8551319b1945740130d342d559ff8d5e3e397a",
+        "decision": "pass",
+        "reason": "Direct full-resolution inspection: overhead view of an empty pale bank with clearly defined ripple ridges, surrounded by turquoise water and a darker water channel. No animal, person, lettering or built object. The still alone does not establish scale or depth; full rendered beat alignment remains required."
+      },
+      {
+        "file": "o5-full-t3.png",
+        "image_sha256": "af7dd8bd881c0d623b2ede12abf8cca5446c10ac274dcf1fdc6b27f3b6c14157",
+        "decision": "pass",
+        "reason": "Direct full-resolution still inspection: Overhead empty crescent-shaped ripple-ridged sandbank with turquoise water around it; no people, animals, text or built object. Full AV still must assess the beat context and implied depth."
+      },
+      {
+        "file": "o6-full-t0.png",
+        "image_sha256": "70949644ec0bf4f9476ca17cd0b5dc908da6d1727e9f1d64395602078f96fd0a",
+        "decision": "pass",
+        "reason": "Direct full-resolution still inspection: Extremely low view across empty rippled grey mud in turquoise water, with suspended particles and an amber shaft crossing the substrate. No fish-like hunter, malformed animal, human or lettering."
+      },
+      {
+        "file": "o6-full-t1.png",
+        "image_sha256": "f8c4205cda3fca39858bb951a9e5faf53262d5e5cfb98a8b46a84b116f5970b1",
+        "decision": "pass",
+        "reason": "Direct full-resolution still inspection: Low substrate view across detailed muddy ripple ridges under clear turquoise water. No animal, human, lettering or modern prop; matches lying flat on seafloor mud."
+      },
+      {
+        "file": "diagonal-sunbeam/o8-full-t0.png",
+        "image_sha256": "37b30638208430cc5f13a7f2014ab2219359b275685acb956b4f2eb397814b90",
+        "decision": "pass",
+        "reason": "Direct full-resolution still review: wide asymmetric underwater view with rugged rock edge at left, clear turquoise open water and diagonal warm sunbeams from the rippled surface. Empty beam is the central exposed-water subject; no person, animal, writing or built object. Existing Shorts-specific picture gate passes. Current cached-set distinctness and full AV remain required."
+      },
+      {
+        "file": "diagonal-sunbeam/o8-full-t1.png",
+        "image_sha256": "f5d14df7e99c4e7fac5bffcab4d16b8fd5476fec44ee234877a7c6ca1ddb369d",
+        "decision": "pass",
+        "reason": "Direct full-resolution still review: coherent underwater rock edge, diagonal bright sunbeam through clear open water and visible suspended particles; no person, animal, lettering or built object. Same exposed-water choice. Existing Shorts-specific picture gates pass; full cached-set distinctness and AV remain mandatory."
+      },
+      {
+        "file": "surface-cliff/o1-full-t0.png",
+        "image_sha256": "4d02f2ebd5365f13d565bf3302602b987c9464bf2914bade24f739900a87baf6",
+        "decision": "pass",
+        "reason": "Direct full-resolution inspection: close emerald-green underside of the ocean surface with coherent rolling wave/foam textures and warm reflected light. No seabed, person, lettering or creature. Correctly distinguishes floating at the surface from lying on mud. Existing picture gates pass; whole-set distinctness/full AV remain required."
+      },
+      {
+        "file": "surface-cliff/o1-full-t1.png",
+        "image_sha256": "61b10c7906db61c3bebb846abe79da926fc471cc5160f8e28af4dded53ab9321",
+        "decision": "pass",
+        "reason": "Direct full-resolution inspection: close emerald-green underside of the ocean surface with coherent rolling wave/foam textures and warm reflected light. No seabed, person, lettering or creature. Correctly distinguishes floating at the surface from lying on mud. Existing picture gates pass; whole-set distinctness/full AV remain required."
+      },
+      {
+        "file": "copper-cliff/o7-full-t0.png",
+        "image_sha256": "a4914aa4e437e60ad30957bb0b5de2036b1e965e242a60172ab0cdff80d3cb44",
+        "decision": "pass",
+        "reason": "Direct full-resolution still inspection: empty underwater geological cliff with sharply defined craggy ledges and overhang, warm externally sunlit upper rock and dark blue water below. No animal, person, text or implausible self-luminous rock. Distinct composition from the blue reef and open-water sunbeam; exact whole-set production distinctness checks remain required. Current cloud and full audiovisual checks remain mandatory."
+      },
+      {
+        "file": "copper-cliff/o7-full-t3.png",
+        "image_sha256": "781b73269ac240264a9bf5af5519e7644038ca51b20c88c8abfa67e282ed8c5c",
+        "decision": "pass",
+        "reason": "Direct full-resolution inspection: sharply detailed empty geological reef cliff and overhang above clear dark-blue water, externally lit upper rock, orange mineral bands, no animal, person, text or self-luminous stone. Current per-image gates pass. Whole-set distinctness, cloud production and complete audiovisual review remain mandatory."
+      }
+    ],
+    "full_video_approved": false
+  },
+  "narration_preflight": {
+    "result": {
+      "at": "2026-10-25T05:20:12+00:00",
+      "premise": "how_deep-03",
+      "candidate_sha256": "e730e6df054fc6c7c9b4a35ce7df95cef6b60f643f4c4f97d77539a8fb143d52",
+      "passed": true,
+      "problems": [],
+      "wer": 0.034,
+      "wpm": 164.0,
+      "max_line_wer": 0.125,
+      "duration": 42.894,
+      "release_approval": false
+    },
+    "speech_identical_to_voiced_candidate": true,
+    "candidate_sha256": "1194db785271dcaed7b1a53c945247bc1f4764fd32f7ede5f0066714e1023de1"
+  }
+}
