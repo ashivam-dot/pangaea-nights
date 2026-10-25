@@ -1441,7 +1441,7 @@
       "series": "level_1_8",
       "slot": "A",
       "target": "2026-10-26T14:30:00Z",
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "inputs": {
         "dry_run": "true",
         "slot": "A",
@@ -1500,7 +1500,9 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T03:04:49+00:00",
-      "attempts": 1
+      "attempts": 1,
+      "run_id": 40156875292,
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -1861,7 +1863,7 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:05:32+00:00",
+  "updated_at": "2026-10-25T03:05:36+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
