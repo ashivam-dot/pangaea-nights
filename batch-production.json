@@ -5515,7 +5515,7 @@
         "slot": "A",
         "premise": "countdown-06"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 1,
       "source_sha": "bbb5a37e495b25e7038374cace91805f05b31d43",
       "before_ids": [
@@ -5580,7 +5580,9 @@
         40148607387,
         40148479040
       ],
-      "submitted_at": "2026-10-25T17:46:28+00:00"
+      "submitted_at": "2026-10-25T17:46:28+00:00",
+      "run_id": 40218080484,
+      "cloud_status": "queued"
     },
     {
       "repo": "pangaea-nights",
@@ -5745,5 +5747,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T18:06:10+00:00"
+  "updated_at": "2026-10-25T18:06:13+00:00"
 }
