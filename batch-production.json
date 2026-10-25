@@ -4346,7 +4346,7 @@
         "slot": "A",
         "premise": "survive_night-04"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "89284d8eca5e88cce39d926951c4c8961291db7b",
       "before_ids": [
@@ -4413,7 +4413,22 @@
       ],
       "submitted_at": "2026-10-25T11:40:39+00:00",
       "run_id": 40189867657,
-      "cloud_status": "queued"
+      "cloud_status": "queued",
+      "editorial_holds": [
+        {
+          "id": "survive04-pterosaur-roost-hold",
+          "run_id": 40189867657,
+          "observed_at": "2026-10-25T12:19:22+00:00",
+          "reason": "The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required.",
+          "evidence": {
+            "ladder-img-A-3/o4.png": "3a0a7e04847698463c8c0365990cbd40497018013df9ae4a8c212fffa9c6b716",
+            "ladder-img-A-3/o4-alt1.png": "dbf1c0c1b808c89c05c1834139df2fde6c567322cd44d20c3772f2db36fba7b3"
+          }
+        }
+      ],
+      "problems": [
+        "The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -4706,7 +4721,7 @@
       "attempts": 0
     }
   ],
-  "halted": null,
+  "halted": "Repair held entry survive_night-04: The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required.",
   "complete": false,
   "health": {
     "public": 2,
@@ -4714,5 +4729,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:18:09+00:00"
+  "updated_at": "2026-10-25T12:19:22+00:00"
 }
