@@ -2147,7 +2147,7 @@
         "slot": "A",
         "premise": "how_deep-03"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "397d84810469e9af23a10f1915df2b44888a5fb5",
       "before_ids": [
@@ -2194,7 +2194,22 @@
       ],
       "submitted_at": "2026-10-25T04:18:44+00:00",
       "run_id": 40161421084,
-      "cloud_status": "queued"
+      "cloud_status": "queued",
+      "editorial_holds": [
+        {
+          "id": "actual-how-deep-03-fishlike-hunter-40161421084",
+          "run_id": 40161421084,
+          "observed_at": "2026-10-25T05:06:01+00:00",
+          "reason": "Direct full-resolution inspection rejects both o6 takes: the supposed Cambrian flap-finned hunter is shown as a fish/shark-like vertebrate with a large tail and paired fins, without the lateral swimming lobes and grasping frontal appendages of Anomalocaris. Foreground armoured forms also lack a clear trilobite body plan. Exclude both exact images. Preserve the spoken flat-on-seafloor option, answer6 and qualified source; deliberately simplify this image to an empty muddy seafloor viewed at substrate height, with the hunter remaining off screen.",
+          "evidence": {
+            "ladder-img-A-5/o6.png": "0822ed0a78f886c0b73a59b40ee0cd79ad52f9a7712c5cd6b06b54711937266c",
+            "ladder-img-A-5/o6-alt1.png": "326bfdfed7d9274cfa02dfd85411ba277dbb777d56a2904a86aa33b74039b377"
+          }
+        }
+      ],
+      "problems": [
+        "Direct full-resolution inspection rejects both o6 takes: the supposed Cambrian flap-finned hunter is shown as a fish/shark-like vertebrate with a large tail and paired fins, without the lateral swimming lobes and grasping frontal appendages of Anomalocaris. Foreground armoured forms also lack a clear trilobite body plan. Exclude both exact images. Preserve the spoken flat-on-seafloor option, answer6 and qualified source; deliberately simplify this image to an empty muddy seafloor viewed at substrate height, with the hunter remaining off screen."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -2513,5 +2528,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T05:03:29+00:00"
+  "updated_at": "2026-10-25T05:06:01+00:00"
 }
