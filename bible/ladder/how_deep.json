@@ -234,13 +234,13 @@
     {
      "n": 8,
      "label": "Lit water, giant eyes",
-     "vo": "Eight: open bright water, face to face with Anomalocaris.",
+     "vo": "Eight: bright open water, facing the clawed hunter.",
      "danger": 8,
      "image_prompt": "a giant Anomalocaris filling the frame in bright open water, segmented swimming flaps rippling, spiny grasping frontal appendages reaching forward, huge stalked compound eyes, one warm amber sun shaft behind it, photoreal painterly, vertical composition"
     }
    ],
    "answer_n": 6,
-   "verdict_vo": "Real answer: number 6, because Anomalocaris probably didn't hunt on the seafloor, where grabbing prey could damage its claws. Lie flat.",
+   "verdict_vo": "Real answer: number 6, because this hunter probably avoided the sea bed, where grabbing prey risked claw damage. Lie flat.",
    "fact": {
     "text": "Anomalocaris probably did not hunt animals on the seafloor, since grabbing prey there at speed could damage its frontal appendages.",
     "wiki_title": "Anomalocaris",
@@ -437,7 +437,7 @@
    "era": "Devonian",
    "title": "The Devonian Ocean's Armoured Giant — How Deep Do You Swim? 🐟",
    "banner": "Armoured giant fish: how deep?",
-   "hook_vo": "An armoured fish with bone blades for teeth. Choose.",
+   "hook_vo": "Bone blades for teeth. Choose your prehistoric reef shelter.",
    "art_direction": "Steel-blue and gunmetal palette, hard side light on armour plates, 28mm lens, one warm copper glow per frame.",
    "options": [
     {
@@ -450,7 +450,7 @@
     {
      "n": 2,
      "label": "Reef flat with youngsters",
-     "vo": "Two: reef flat, only young armoured fish.",
+     "vo": "Two: shallow water, where young armoured fish live.",
      "danger": 2,
      "image_prompt": "shallow Devonian reef flat with small young armoured fish patrolling between coral heads, their head plates gleaming, bright water, one warm copper glow on the reef, photoreal painterly, vertical composition"
     },
@@ -492,13 +492,13 @@
     {
      "n": 8,
      "label": "Jaws of Dunkleosteus",
-     "vo": "Eight: inside the jaws of Dunkleosteus.",
+     "vo": "Eight: inside the giant fish, between its jaws.",
      "danger": 8,
      "image_prompt": "the gaping bony jaws of a giant Dunkleosteus filling the frame, sharp self-sharpening bone blades, heavy armoured head plates, deep dark water, one warm copper glow on the blades, photoreal painterly, vertical composition"
     }
    ],
    "answer_n": 2,
-   "verdict_vo": "Real answer: number 2, because adult Dunkleosteus probably lived in the deep sea, leaving youngsters in the shallows. Smaller bites, still bites.",
+   "verdict_vo": "Real answer: number 2, because these adult fish probably lived in the deep sea, leaving youngsters in the shallows. Smaller bites, still bites.",
    "fact": {
     "text": "Adult Dunkleosteus probably lived in deep sea locations, while younger ones lived in shallow waters.",
     "wiki_title": "Dunkleosteus",
@@ -523,7 +523,7 @@
    "era": "Carboniferous",
    "title": "Giant Bug Era Swamp Lake at Night — How Deep Do You Wade? 🪲",
    "banner": "Coal swamp lake: how deep?",
-   "hook_vo": "Giant dragonflies above. Something bigger below. Wade in?",
+   "hook_vo": "Giant insects above. Huge predators below. Choose your depth.",
    "art_direction": "Dense emerald and peat-brown palette, humid haze, 35mm lens at water level, one warm moonlit-gold glow per frame.",
    "options": [
     {
@@ -536,7 +536,7 @@
     {
      "n": 2,
      "label": "Knee-deep among horsetails",
-     "vo": "Two: knee-deep among giant horsetails.",
+     "vo": "Two: shallow water among tall swamp plants.",
      "danger": 2,
      "image_prompt": "knee-deep dark water among tall jointed horsetail stems, floating peat and fallen branches, a giant millipede on a log, one warm golden glow through the mist, photoreal painterly, vertical composition"
     },
@@ -578,7 +578,7 @@
     {
      "n": 8,
      "label": "Face of Rhizodus",
-     "vo": "Eight: the bottom, where Rhizodus waits.",
+     "vo": "Eight: the bottom, where the giant fish waits.",
      "danger": 8,
      "image_prompt": "a giant Rhizodus lobe-finned fish lunging out of murky brown water straight at the viewer, two huge front fangs, armoured scales, one warm golden glow on its teeth, photoreal painterly, vertical composition"
     }
@@ -657,7 +657,7 @@
     {
      "n": 7,
      "label": "Black water, spiral shadows",
-     "vo": "Seven: black water, spiral shadows below.",
+     "vo": "Seven: deep darkness, with spiral shadows below.",
      "danger": 7,
      "image_prompt": "black deep water of an inland sea, faint glimpses of large sleek fish circling, spiral tooth shapes glinting, one warm saffron glint in the dark, photoreal painterly, vertical composition"
     },

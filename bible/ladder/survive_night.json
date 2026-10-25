@@ -370,7 +370,7 @@
     {
      "n": 3,
      "label": "On a fallen clubmoss log",
-     "vo": "On top of a fallen giant clubmoss.",
+     "vo": "On top of a fallen giant club moss.",
      "danger": 3,
      "image_prompt": "POV lying along a fallen Lepidodendron trunk with diamond-patterned bark spanning dark swamp water, emerald canopy above, an orange glow in the mist, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
     },
@@ -497,7 +497,7 @@
     }
    ],
    "answer_n": 1,
-   "verdict_vo": "Real answer: number 1, because Deinosuchus probably ambushed dinosaurs at the water's edge, then dragged them under. Sleep far from water.",
+   "verdict_vo": "Real answer: number 1, because this giant crocodile probably ambushed dinosaurs beside water. Stay dry and sleep far inland.",
    "fact": {
     "text": "Deinosuchus is thought to have ambushed dinosaurs and other land animals at the water's edge and submerged them until they drowned.",
     "wiki_title": "Deinosuchus",
@@ -535,7 +535,7 @@
     {
      "n": 2,
      "label": "Frozen riverbed",
-     "vo": "Down in a frozen riverbed.",
+     "vo": "Down in a frozen river bed.",
      "danger": 2,
      "image_prompt": "POV standing on the ice of a frozen riverbed cutting through flat Ice Age grassland at night, frost smoke rising, green aurora above, amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
     },

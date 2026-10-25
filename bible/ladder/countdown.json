@@ -192,7 +192,7 @@
     {
      "n": 2,
      "label": "Hollow fallen log",
-     "vo": "Crawl inside a hollow fallen log.",
+     "vo": "Take shelter inside a fallen log.",
      "danger": 2,
      "image_prompt": "POV from inside a hollow fallen log looking out at a dim ash-covered forest floor, grey flakes falling, photoreal painterly, vertical composition, one warm focal light from a smouldering stump outside"
     },
@@ -220,7 +220,7 @@
     {
      "n": 6,
      "label": "Ride a mosasaur",
-     "vo": "Ride a mosasaur into open ocean.",
+     "vo": "Ride a giant sea lizard offshore.",
      "danger": 6,
      "image_prompt": "A mosasaur gliding through cold murky open ocean under a grey ash-veiled surface, dim and empty water around it, photoreal painterly, vertical composition, one warm focal light from a faint orange glow above"
     },
@@ -234,13 +234,13 @@
     {
      "n": 8,
      "label": "Open plain in the cold",
-     "vo": "Wait it out on the open plain.",
+     "vo": "Stay exposed on open ground, through the cold.",
      "danger": 8,
      "image_prompt": "A wide frozen plain under falling soot, dead ferns crusted in frost, endless grey twilight, photoreal painterly, vertical composition, one warm focal light from a distant wildfire on the horizon"
     }
    ],
    "answer_n": 4,
-   "verdict_vo": "Real answer: number 4, because freshwater animals probably had relatively low extinction rates after the impact. Their survival record inspired our pond choice.",
+   "verdict_vo": "Real answer: number 4, because freshwater animals probably had low extinction rates after the impact. That record inspired our pond choice.",
    "fact": {
     "text": "Freshwater animals had low extinction rates in the K–Pg extinction.",
     "wiki_title": "Cretaceous–Paleogene extinction event",
@@ -271,7 +271,7 @@
     {
      "n": 1,
      "label": "Hide in a fern thicket",
-     "vo": "Hide deep in a seed-fern thicket.",
+     "vo": "Hide deep in a dense leafy thicket.",
      "danger": 1,
      "image_prompt": "A dense thicket of Glossopteris seed ferns on a dry Permian plain, red-brown haze above, leaves dusted with ash, photoreal painterly, vertical composition, one warm focal light from a lava glow on the horizon"
     },
@@ -292,14 +292,14 @@
     {
      "n": 4,
      "label": "Follow the gorgonopsid",
-     "vo": "Follow the sabre-toothed gorgonopsid.",
+     "vo": "Follow the predator with huge canine teeth.",
      "danger": 4,
      "image_prompt": "A sabre-toothed Inostrancevia stalking across a cracked red plain, long fangs bared, ash drifting in the haze, photoreal painterly, vertical composition, one warm focal light from a lava river behind it"
     },
     {
      "n": 5,
      "label": "Dig in with Lystrosaurus",
-     "vo": "Dig in with the tusked Lystrosaurus herd.",
+     "vo": "Dig in with the herd of tusked grazers.",
      "danger": 5,
      "image_prompt": "A herd of stocky tusked Lystrosaurus digging burrows into a dry riverbank, realistic reptilian skin, red haze above, photoreal painterly, vertical composition, one warm focal light from a low orange sun"
     },
@@ -326,7 +326,7 @@
     }
    ],
    "answer_n": 5,
-   "verdict_vo": "Real answer: number 5, because Lystrosaurus survived the Permian–Triassic extinction and thrived afterward. Our pick follows that remarkable fossil survival record.",
+   "verdict_vo": "Real answer: number 5, because this animal survived the extinction and thrived afterward. Fossils guide our imaginary choice.",
    "fact": {
     "text": "Lystrosaurus survived the Permian–Triassic extinction and its fossils are the most common land-vertebrate fossils of the Early Triassic.",
     "wiki_title": "Lystrosaurus",
@@ -437,13 +437,13 @@
    "era": "Precambrian",
    "title": "An Ice-Covered Ocean on Snowball Earth — Where Might Life Hide? 🧊",
    "banner": "Earth freezes over. Where does life hide?",
-   "hook_vo": "Imagine an ice-covered ocean. Where might life persist?",
+   "hook_vo": "An ocean sealed by ice. Where could life survive?",
    "art_direction": "Glacial cyan and white under a pale dim sun, crystalline ice textures, macro-to-wide contrast, black abyss below.",
    "options": [
     {
      "n": 1,
      "label": "Inside a frozen wave",
-     "vo": "Hide inside a frozen breaking wave.",
+     "vo": "Inside a frozen ocean wave.",
      "danger": 1,
      "image_prompt": "A towering breaking wave frozen solid on a white Cryogenian sea, crystal-blue ice curling overhead, pale dim sun behind, photoreal painterly, vertical composition, one warm focal light from the low sun"
     },
@@ -457,7 +457,7 @@
     {
      "n": 3,
      "label": "Snowfield at the equator",
-     "vo": "Wait on the snowfield at the equator.",
+     "vo": "On the equator's frozen snow field.",
      "danger": 3,
      "image_prompt": "A blinding white snowfield stretching flat to every horizon on the Cryogenian equator, a small cold sun overhead, photoreal painterly, vertical composition, one warm focal light from the small sun"
     },
@@ -471,7 +471,7 @@
     {
      "n": 5,
      "label": "Drifting ice floe",
-     "vo": "Ride a drifting ice floe.",
+     "vo": "A slab of drifting sea ice.",
      "danger": 5,
      "image_prompt": "A cracked ice floe drifting on a slushy grey-white sea under a pale sky, sharp blue fractures, photoreal painterly, vertical composition, one warm focal light from a weak low sun"
     },
@@ -498,7 +498,7 @@
     }
    ],
    "answer_n": 4,
-   "verdict_vo": "Real answer: number 4, because scientists propose some life survived using chemicals around deep-ocean hydrothermal vents. One possible refuge beneath the ice.",
+   "verdict_vo": "Real answer: number 4, because scientists propose life used chemicals near deep sea vents to survive. A possible refuge beneath the ice.",
    "fact": {
     "text": "One proposed refuge for life during Snowball Earth was deep-ocean hydrothermal vents powered by chemicals rather than sunlight.",
     "wiki_title": "Snowball Earth",
@@ -550,7 +550,7 @@
     {
      "n": 4,
      "label": "Follow Dunkleosteus",
-     "vo": "Follow the armoured Dunkleosteus.",
+     "vo": "Follow the giant fish with bony armor.",
      "danger": 4,
      "image_prompt": "A huge armoured Dunkleosteus gliding through murky jade water, bony jaw plates gleaming, photoreal painterly, vertical composition, one warm focal light from an amber shaft of light behind it"
     },
@@ -643,7 +643,7 @@
     {
      "n": 5,
      "label": "Deep, dim seafloor",
-     "vo": "Sink to the deep, dim seafloor.",
+     "vo": "Go down to the deep, dim sea bed.",
      "danger": 5,
      "image_prompt": "A dim deep seafloor of grey mud far below the shelf, thin-shelled creatures in the gloom, photoreal painterly, vertical composition, one warm focal light from a faint warm glow from above"
     },

@@ -19,6 +19,8 @@ PACE_TAKES = 3
 SPEED = (0.85, 1.30)
 MAX_WER = 0.08
 ANSWER_PAUSE = 0.14
+ASR_SHORT_CLIP_S = 2.0
+ASR_MARGIN_S = 0.15
 
 
 def line_id(segment: dict) -> str:
@@ -66,6 +68,11 @@ def _transcribe(audio: np.ndarray, sr: int) -> str:
     from .voice import whisper
 
     wav = librosa.resample(audio, orig_sr=sr, target_sr=16000)
+    # Exact Linux replay of the 1.238s CTA looped phantom "8" tokens. A quiet acoustic margin fixes the
+    # short-clip decoder boundary. Only the recognizer input changes; narrated audio/timing and gates do not.
+    if len(wav) < ASR_SHORT_CLIP_S * 16000:
+        margin = round(ASR_MARGIN_S * 16000)
+        wav = np.pad(wav, (margin, margin))
     segs, _ = whisper().transcribe(wav, language="en", beam_size=1, vad_filter=False,
                                    condition_on_previous_text=False)
     return " ".join(s.text for s in segs)
@@ -161,6 +168,7 @@ def narrate(p: dict, out: Path) -> dict:
     for k, s in segs.items():
         sf.write(str(out / f"{k}.wav"), s.pop("audio"), SR)
     report = {"voice": VOICE, "speed": round(speed, 3), "wpm": round(wpm(segs), 1), "wer": round(errors / words, 3),
+              "asr_short_clip_padding_s": ASR_MARGIN_S, "asr_short_clip_max_s": ASR_SHORT_CLIP_S,
               "segments": segs, "durations": {k: s["duration"] for k, s in segs.items()}}
     (out / "voice.json").write_text(json.dumps(report, indent=1))
     return report

@@ -291,7 +291,7 @@
     {
      "n": 4,
      "label": "Arthropleura",
-     "vo": "Level four: Arthropleura. Huge millipede. Calm.",
+     "vo": "Level four: a huge millipede. Calm and quiet.",
      "danger": 4,
      "image_prompt": "A giant Arthropleura millipede curled along the floor of a vast hollow lycopod trunk, broad armored segments and many legs, ember-orange glow on its plates, steamy emerald coal swamp with green fog, macro POV from a mossy hollow, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
@@ -356,7 +356,7 @@
     {
      "n": 1,
      "label": "Burrowing Diictodon",
-     "vo": "Level one: Diictodon, peeking from its burrow.",
+     "vo": "Level one: a tiny grazer at its burrow.",
      "danger": 1,
      "image_prompt": "A small tusked Diictodon peeking from a spiral burrow in red mud, whiskered snout, glow of a distant ember lighting its face, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
@@ -370,48 +370,48 @@
     {
      "n": 3,
      "label": "Tusked Dicynodon",
-     "vo": "Level three: a dicynodon, beak and two tusks.",
+     "vo": "Level three: a beak and two great tusks.",
      "danger": 3,
      "image_prompt": "A stout Dicynodon grazing horsetails at night, horny beak and two short tusks, ember light on its wrinkled hide, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 4,
      "label": "Bumpy Scutosaurus",
-     "vo": "Level four: Scutosaurus, a tank of bony bumps.",
+     "vo": "Level four: a walking tank of bony bumps.",
      "danger": 4,
      "image_prompt": "A heavy Scutosaurus standing in dry grass, broad body studded with bony knobs and a spiky cheek frill, warm ember glow along one flank, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 5,
      "label": "Moschorhinus",
-     "vo": "Level five: Moschorhinus, short snout, big bite.",
+     "vo": "Level five: short snout, with a big bite.",
      "danger": 5,
      "image_prompt": "A muscular Moschorhinus therocephalian prowling at the edge of a riverbank, blunt powerful snout, ember light in its eyes, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 6,
      "label": "Rubidgea",
-     "vo": "Level six: Rubidgea, a skull built for biting.",
+     "vo": "Level six: a massive skull, built for biting.",
      "danger": 6,
      "image_prompt": "A Rubidgea gorgonopsian with a massive broad skull and long sabre canines standing on a red ridge, ember glow, violet dust in the air, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 7,
      "label": "Young Inostrancevia",
-     "vo": "Level seven: a young Inostrancevia, still learning.",
+     "vo": "Level seven: a young hunter, still learning.",
      "danger": 7,
      "image_prompt": "A young Inostrancevia stalking through dry grass, lean body, long sabre canines showing, ember-lit from one side, low lens, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 8,
      "label": "Adult Inostrancevia",
-     "vo": "Level eight: adult Inostrancevia. Top of Pangaea.",
+     "vo": "Level eight: the adult hunter with huge canines.",
      "danger": 8,
      "image_prompt": "A full-grown Inostrancevia standing over the lens in the dark, huge sabre canines bared, ember glow under its jaw, rust-red dust swirling, rust-red Permian floodplain under a dusty violet night sky, low 24mm lens in dry grass, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     }
    ],
    "answer_n": 8,
-   "verdict_vo": "Real answer: number 8, because Inostrancevia's longest canines could reach 15 centimetres. Probably your best bet for keeping everything else away.",
+   "verdict_vo": "Real answer: number 8, because this animal's longest canines could reach 15 centimetres. Probably your best bet for keeping everything else away.",
    "fact": {
     "text": "Inostrancevia, a gorgonopsian, had large canines, the longest of which could reach 15 cm.",
     "source_sentence": "It also has very advanced dentition, possessing large canines, the longest of which can reach 15 cm (5.9 in) and which may have been used to shear the skin of prey.",
@@ -442,49 +442,49 @@
     {
      "n": 1,
      "label": "Little Procolophon",
-     "vo": "Level one: Procolophon, small and spiky-cheeked.",
+     "vo": "Level one: a small animal with spiky cheeks.",
      "danger": 1,
      "image_prompt": "A small stocky Procolophon reptile sitting on cracked grey mud, spiky cheek horns, the low amber sun glowing behind it, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 2,
      "label": "Tusked Lystrosaurus",
-     "vo": "Level two: Lystrosaurus, a tusked, beaked grazer.",
+     "vo": "Level two: a grazing animal with two tusks.",
      "danger": 2,
      "image_prompt": "A stocky Lystrosaurus with a horny beak and two short tusks chewing horsetail stems by a shrinking pool, amber sun disc behind, heat shimmer, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 3,
      "label": "Burrowing Thrinaxodon",
-     "vo": "Level three: Thrinaxodon, curled up in a burrow.",
+     "vo": "Level three: a little hunter in a burrow.",
      "danger": 3,
      "image_prompt": "A furry Thrinaxodon curled asleep at the end of a dirt burrow, cross-section view, amber light spilling in from the entrance, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 4,
      "label": "Quick Prolacerta",
-     "vo": "Level four: Prolacerta, quick and twitchy.",
+     "vo": "Level four: a quick, twitchy little reptile.",
      "danger": 4,
      "image_prompt": "A slim long-necked Prolacerta darting over grey stones, mouth open, amber sunlight catching its scales through the haze, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 5,
      "label": "Moschorhinus",
-     "vo": "Level five: Moschorhinus, a hungry survivor.",
+     "vo": "Level five: a hungry survivor, with sharp teeth.",
      "danger": 5,
      "image_prompt": "A heavy-jawed Moschorhinus pacing along a dry riverbed in hazy amber light, ribs showing, ash drifting in the air, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 6,
      "label": "Proterosuchus",
-     "vo": "Level six: Proterosuchus, a hooked snout in the shallows.",
+     "vo": "Level six: a hooked snout in the shallows.",
      "danger": 6,
      "image_prompt": "A sprawling Proterosuchus lying in a muddy shallow with its hooked upper jaw and rows of teeth, amber sun reflected in the water, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 7,
      "label": "Erythrosuchus",
-     "vo": "Level seven: Erythrosuchus, a big-headed brute.",
+     "vo": "Level seven: a brute with a massive head.",
      "danger": 7,
      "image_prompt": "A huge big-headed Erythrosuchus striding across the badlands toward the lens, deep skull and curved teeth, amber backlight and dust, ash-grey Early Triassic hothouse badlands, hazy amber sun disc low on the horizon, 35mm lens with heat shimmer, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
@@ -528,7 +528,7 @@
     {
      "n": 1,
      "label": "Tiny Fruitadens",
-     "vo": "Level one: Fruitadens, tiny and quick.",
+     "vo": "Level one: a tiny dinosaur, quick and nimble.",
      "danger": 1,
      "image_prompt": "A tiny Fruitadens dinosaur standing on a fallen conifer branch, long tail and small beak, a lantern-yellow wildfire glow far behind it, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
@@ -542,7 +542,7 @@
     {
      "n": 3,
      "label": "Camptosaurus",
-     "vo": "Level three: Camptosaurus, a slow, sturdy plodder.",
+     "vo": "Level three: a slow and sturdy plant eater.",
      "danger": 3,
      "image_prompt": "A sturdy Camptosaurus grazing on low cycads in silver moonlight, heavy hindquarters, warm yellow fire glow far off, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
@@ -570,7 +570,7 @@
     {
      "n": 7,
      "label": "Ceratosaurus",
-     "vo": "Level seven: Ceratosaurus. A horn and a bad mood.",
+     "vo": "Level seven: a horn and a bad mood.",
      "danger": 7,
      "image_prompt": "A Ceratosaurus with a nose horn and bony ridges stalking through ferns toward the lens, moonlit, yellow fire glow on its teeth, silver-blue moonlit Late Jurassic plains with tall conifers, long telephoto from ground level, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
@@ -621,55 +621,55 @@
     {
      "n": 2,
      "label": "Belemnite school",
-     "vo": "Level two: a school of belemnites, darting.",
+     "vo": "Level two: a school of small darting swimmers.",
      "danger": 2,
      "image_prompt": "A tight school of torpedo-shaped belemnites streaking past the lens, ink-dark eyes, warm plankton glow sparkling between them, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 3,
      "label": "Leedsichthys",
-     "vo": "Level three: Leedsichthys, a giant gentle filter-feeder.",
+     "vo": "Level three: a giant, gentle filter feeder.",
      "danger": 3,
      "image_prompt": "A colossal Leedsichthys fish gliding with its huge mouth open to filter plankton, warm glowing plankton streaming into it, green moon shafts above, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 4,
      "label": "Long-necked Cryptoclidus",
-     "vo": "Level four: Cryptoclidus, long neck, four flippers.",
+     "vo": "Level four: a long neck and four flippers.",
      "danger": 4,
      "image_prompt": "A Cryptoclidus plesiosaur rowing with four flippers, long neck stretched ahead, interlocking needle teeth, warm plankton glow along its body, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 5,
      "label": "Ophthalmosaurus",
-     "vo": "Level five: Ophthalmosaurus, eyes the size of plates.",
+     "vo": "Level five: eyes the size of dinner plates.",
      "danger": 5,
      "image_prompt": "Close fisheye view of an Ophthalmosaurus ichthyosaur gliding through dark water, its enormous eye ringed by a bony scleral ring, warm plankton glow reflected in the pupil, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 6,
      "label": "Metriorhynchus",
-     "vo": "Level six: Metriorhynchus, a crocodile with a tail fin.",
+     "vo": "Level six: a crocodile with a tail fin.",
      "danger": 6,
      "image_prompt": "A sleek Metriorhynchus sea crocodile with flippers and a fish tail fin twisting through cobalt water, narrow jaws, plankton glow, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 7,
      "label": "Simolestes",
-     "vo": "Level seven: Simolestes, a short-necked pliosaur.",
+     "vo": "Level seven: a powerful hunter with short neck.",
      "danger": 7,
      "image_prompt": "A Simolestes pliosaur with a deep broad skull cruising out of green moon shafts, flippers spread, warm plankton glow on its teeth, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 8,
      "label": "Liopleurodon",
-     "vo": "Level eight: Liopleurodon. Big jaws. Keep away.",
+     "vo": "Level eight: huge jaws. Keep well away.",
      "danger": 8,
      "image_prompt": "A Liopleurodon rising from the deep straight toward the lens, massive jaws parted, four powerful flippers, warm plankton glow flaring around its snout, deep cobalt Jurassic sea at midnight with green moonbeam shafts, fisheye lens close to the creature, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     }
    ],
    "answer_n": 5,
-   "verdict_vo": "Real answer: number 5, because Ophthalmosaurus had eyes about 22 centimetres across. Your best bet for a ride in dark water.",
+   "verdict_vo": "Real answer: number 5, because this animal had eyes about 22 centimetres across. Your best bet for a ride in dark water.",
    "fact": {
     "text": "The eyes of Ophthalmosaurus measured 22–23 cm in diameter at the outer margin of the bony scleral ring.",
     "source_sentence": "The proportionally large eyes of Ophthalmosaurus measured 22–23 centimetres (8.7–9.1 in) in diameter at the outer margin of the bony scleral ring, while the scleral aperture itself measured 10 centimetres (3.9 in) in diameter.",

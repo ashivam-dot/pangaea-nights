@@ -3,6 +3,30 @@ import pytest
 from studio.ladder_voice import wer
 
 
+@pytest.mark.parametrize('samples,padded', [(16000, True), (48000, False)])
+def test_asr_short_clip_margin_preserves_all_audio_and_unprompted_decoding(monkeypatch, samples, padded):
+ from types import SimpleNamespace
+ import sys
+ import numpy as np
+ from studio import ladder_voice, voice
+ audio = np.linspace(-.5, .5, samples, dtype=np.float32)
+ before = audio.copy()
+ monkeypatch.setitem(sys.modules, 'librosa', SimpleNamespace(resample=lambda wav, **kwargs: wav.copy()))
+ def transcribe(wav, **kwargs):
+  assert kwargs == {'language': 'en', 'beam_size': 1, 'vad_filter': False,
+                    'condition_on_previous_text': False}
+  if padded:
+   assert len(wav) == samples + 4800
+   np.testing.assert_array_equal(wav[2400:-2400], before)
+   assert not np.any(wav[:2400]) and not np.any(wav[-2400:])
+  else:
+   np.testing.assert_array_equal(wav, before)
+  return [SimpleNamespace(text='Comment your number.')], None
+ monkeypatch.setattr(voice, 'whisper', lambda: SimpleNamespace(transcribe=transcribe))
+ assert ladder_voice._transcribe(audio, 16000) == 'Comment your number.'
+ np.testing.assert_array_equal(audio, before)
+
+
 def test_narration_preflight_refuses_real_asr_loop_and_late_timeline():
  from studio import ladder, ladder_voice, shorts_ladder
  p = ladder.find(ladder.load_banks(strict=True), 'how_deep-02')
