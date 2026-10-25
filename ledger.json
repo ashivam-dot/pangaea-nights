@@ -2198,6 +2198,21 @@
     "failures": [],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-25T20:18:02Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "level_1_8-05",
+    "run": "40226819866",
+    "ok": false,
+    "failures": [
+     "Art collected only; no video or audiovisual release approval"
+    ],
+    "published": false,
+    "refusals": [
+     "Art-only collection cannot publish"
+    ]
    }
   ],
   "alerts": [
