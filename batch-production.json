@@ -1424,9 +1424,9 @@
   "complete": false,
   "health": {
     "public": 1,
-    "scheduled": 0,
+    "scheduled": 1,
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:11:32+00:00"
+  "updated_at": "2026-10-25T01:11:34+00:00"
 }
