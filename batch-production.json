@@ -569,8 +569,35 @@
         "slot": "A",
         "premise": "countdown-02"
       },
-      "stage": "planned",
-      "attempts": 0
+      "stage": "dispatch_unresolved",
+      "attempts": 1,
+      "source_sha": "e6a49e9b13ab469143af9f1a3cf57247c7318f32",
+      "before_ids": [
+        40146406019,
+        40144187249,
+        40143437986,
+        40143333505,
+        40140139736,
+        40138993804,
+        40136822897,
+        40136652437,
+        40135503878,
+        40131481179,
+        40128334178,
+        40124993101,
+        40122729549,
+        40121235398,
+        40119101082,
+        40077496948,
+        39924499144,
+        39830179361,
+        39803824162,
+        39787991414,
+        39780512299,
+        39772637874,
+        39766129149
+      ],
+      "submitted_at": "2026-10-25T00:37:24+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -951,8 +978,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry level_1_8-16: production run failure",
-  "updated_at": "2026-10-25T00:37:21+00:00",
+  "halted": "Repair held entry how_deep-01: production run failure",
+  "updated_at": "2026-10-25T00:37:24+00:00",
   "complete": false,
   "health": {
     "public": 0,
