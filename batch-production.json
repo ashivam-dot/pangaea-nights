@@ -3434,7 +3434,7 @@
         "premise": "countdown-04",
         "replay": ".github/replay/countdown-04-gorgonopsian-lystrosaurus-repair.json"
       },
-      "stage": "upload_intent",
+      "stage": "scheduled",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -3730,7 +3730,28 @@
       },
       "archive": "batch-reviewed-40175814446",
       "intended_publish_at": "2026-10-28T14:30:00Z",
-      "upload_intent_at": "2026-10-25T08:36:54+00:00"
+      "upload_intent_at": "2026-10-25T08:36:54+00:00",
+      "delivery": {
+        "video_id": "pOhO49JtnSw",
+        "url": "https://www.youtube.com/shorts/pOhO49JtnSw",
+        "existing": false,
+        "title": "Pangaea's Supervolcano Wakes Up — Which Plan Saves You? 🌋",
+        "privacy": "private",
+        "publish_at": "2026-10-28T14:30:00Z",
+        "made_for_kids": null,
+        "self_declared_made_for_kids": false,
+        "upload_status": "uploaded",
+        "readback_problems": [],
+        "owner_readback": {
+          "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+          "privacyStatus": "private",
+          "publishAt": "2026-10-28T14:30:00Z",
+          "madeForKids": false,
+          "selfDeclaredMadeForKids": false,
+          "containsSyntheticMedia": null,
+          "uploadStatus": "processed"
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -4064,5 +4085,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T08:36:54+00:00"
+  "updated_at": "2026-10-25T08:37:46+00:00"
 }

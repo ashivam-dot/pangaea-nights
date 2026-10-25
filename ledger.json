@@ -811,6 +811,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "countdown-04",
+   "series": "countdown",
+   "era": "Permian",
+   "slot": "A",
+   "video_id": "pOhO49JtnSw",
+   "url": "https://www.youtube.com/shorts/pOhO49JtnSw",
+   "title": "Pangaea's Supervolcano Wakes Up — Which Plan Saves You? 🌋",
+   "publish_at": "2026-10-28T14:30:00Z",
+   "uploaded_at": "2026-10-25T08:37:46Z",
+   "script": "Pangaea's biggest volcano just woke up. Choose fast. Hide deep in a dense leafy thicket. Shelter in a cool river cave. Wallow in the swamp mud. Follow the predator with huge canine teeth. Dig in with the herd of tusked grazers. Climb a ridge to watch the eruption. Wade out into a warm sea bay. Walk straight onto the lava fields. Real answer: number 5, because this animal survived the extinction and thrived afterward. Fossils guide our imaginary choice. Comment your number.",
+   "frame0": "4CNHJ2mh3abHn+MlEZzTKT8srgrMKOOotZl/qXWlZqC6rXUkQSwMqCoeXyFgKBQcNCLbJ8Yor6C5pusoUaboJcIk3KYPrBYkRKB2JmAmjS9LIQIp3aRhKHIkPawRpKQm9Z91ob4hRCemKikcfKpjKJ6pRxy4JS+kAK2PpcCnmJ0SmSAcwqxZJRYlpabZpeMpCBoCpDkYE6R6mgqYEyNApsQkD6ZaGd+ooyioo4+oWaLypOyroSiqo4e5A6bIpF8q36QekzOoVbDLJEenh6daKlCmT6LMoXkd/SZ4IyCdjyQGoqMYtyC8p++f7ZpFJNAmCROTpJAn9qnzoFUkQilmnSihPihuJQYkOaiqLVImCSoXJY2rjiXbIuqimSAJp++haCSXnrypCChjH0ahwCBEHRIkfqe/n56s1ClLmAGpBJT4p2Ebp5UdJ4apUybmFdYqnqepqWGSc5rim2Spg6mGJTiuDyakqR6okSuypcOfjyMFqCEh0yhdKOwgpiX3mi0g26i+oIAeRqnsKEKkxxxlFY4m8KrvHropDRysq5kWuCXhKZSndKn8LfQhSJuhp40mlShmJ0enLh2/JfQqjp/opFCgRCNhoWkgVyBxpwig/6Z5Jz8m/JZoqz0ckR3gKE2j+SNoouQhMBX8o2KsKyY1IYIgcafvqyqkSyaCJU6SeSTaqG2k8S1KG3eg1yQmKFGs8BvJqEakdysunBuhGh2tpOkhlioSpdkmeiCTk3YghKBAJxojhh61myEnTRyuqqag3KQdpTAnyKa+G0QW/KFXpDonxyXmEVYcBigQqt8npSRTn8qluqspp/cp2Sj/oxoqqC0QpGGoYqnhJrQpOxmqp3AqdTD9qDqlPKG4oDAmPyIVpRgo0R+cGXQgA6AUpFoHTyqeJTEoLSX4IAGk6qUsLNekDSVYnCkhABrXInim5x3pJrOT9BpvrAopKKsapGKYQJlRoXUl3io7pj2oP6TGHEsjmyOaoGuZyh/cp8QrM58cJq6l16LUJvQmC6jyIJIcfiaFJHMmzCYSoxowH6S6oJkiNShCqEersp1gp5OrEZ7llGgkw5p9pEwps6VAqCUqjynCohkieJ2DqSelD6GBKIUrrSLnnGslix5gqOEgXKy+pJAiLBNLJyKtQ5hLqz4mbKXmIEWnBxCkqJYliJ9coaAbMKHTI6AodadAIlghEaH6Fx6n3RlHoREh2aGynIuiJyu5qFio2qkop5KhQpRVqJYtUB0Ol9+aoaVInMMsICUYqPuqraSLpJ2iKijoJl0oKKfjpEee+CVlJnUjl6kWmZ+nmKiKJCaecqTKqAalNqnvIHMUIp+zqZ4fmqOeqD6jiCM1qM2rlySiKbgo/6ZzpQ==",
+   "related": "https://www.youtube.com/watch?v=gZc5tTHJX_k",
+   "run": "40175814446",
+   "checkpoints": {},
+   "av_review_sha256": "4146b30534c4971afdb5996beaaa849d675f5ccff76b7a90a31f22c46ec882bd",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-28T14:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
