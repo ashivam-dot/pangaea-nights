@@ -1028,6 +1028,19 @@
     "failures": [],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-25T02:12:30Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "countdown-02",
+    "run": "40152622139",
+    "ok": true,
+    "failures": [],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded"
+    ]
    }
   ],
   "alerts": [
