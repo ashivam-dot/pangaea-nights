@@ -14,7 +14,7 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-verified-ice-reprise.json"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 7,
       "obsolete_runs": [
         40121235398,
@@ -28,7 +28,7 @@
       ],
       "repair_reason": "Keep all nine exact reviewed cached ice/deep-water inputs; voice repair 3976361 retakes only the verdict when the existing spoken-answer check fails even below overall WER limit. Final answer, media and full AV gates remain unchanged. Cancelled stale bot rerun attempt 2 only retried publish against failed voice gates.",
       "source_sha": "39763610fec1793e834d72bbb9933e5ed6679f69",
-      "cloud_status": "queued",
+      "cloud_status": "completed",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
         {
@@ -229,7 +229,10 @@
           }
         }
       ],
-      "run_id": 40146406019
+      "run_id": 40146406019,
+      "problems": [
+        "production run failure"
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -949,7 +952,7 @@
     }
   ],
   "halted": "Repair held entry level_1_8-16: production run failure",
-  "updated_at": "2026-10-25T00:37:19+00:00",
+  "updated_at": "2026-10-25T00:37:21+00:00",
   "complete": false,
   "health": {
     "public": 0,
