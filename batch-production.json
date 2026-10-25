@@ -3710,9 +3710,9 @@
   "complete": false,
   "health": {
     "public": 2,
-    "scheduled": 7,
+    "scheduled": 8,
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T07:48:47+00:00"
+  "updated_at": "2026-10-25T07:48:49+00:00"
 }
