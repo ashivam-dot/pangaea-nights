@@ -1065,10 +1065,12 @@
         "premise": "countdown-02",
         "replay": ".github/replay/countdown-high-ground-repair.json"
       },
-      "stage": "held",
-      "attempts": 2,
-      "source_sha": "35f1ea21425e8ec75b3ade3dfef7682611b8adb9",
+      "stage": "dispatch_unresolved",
+      "attempts": 3,
+      "source_sha": "b24c1a3028916134cbde9852e9856727573e1573",
       "before_ids": [
+        40151287146,
+        40150491810,
         40149509321,
         40148607387,
         40148479040,
@@ -1099,7 +1101,7 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T01:24:13+00:00",
+      "submitted_at": "2026-10-25T01:50:12+00:00",
       "cloud_status": "completed",
       "editorial_holds": [
         {
@@ -1175,16 +1177,28 @@
             "slot": "A",
             "premise": "countdown-02"
           }
+        },
+        {
+          "run_id": 40150491810,
+          "source_sha": "35f1ea21425e8ec75b3ade3dfef7682611b8adb9",
+          "stage": "held",
+          "problems": [
+            "production run failure"
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "countdown-02",
+            "replay": ".github/replay/countdown-high-ground-repair.json"
+          },
+          "repair_reason": "Replace only exact refused inland/impact scenes; preserve all seven original usable image slots. Adopt independently reviewed inland style and impact-cloud replan, common turtle wording, and source-faithful shorter verdict. Actual production preflight passes 43.197s, WER0.025, line max0.167, pair max0.87577. Final cloud and full AV checks still required."
         }
       ],
       "obsolete_runs": [
-        40147415761
+        40147415761,
+        40150491810
       ],
-      "repair_reason": "Replace only exact refused inland/impact scenes; preserve all seven original usable image slots. Adopt independently reviewed inland style and impact-cloud replan, common turtle wording, and source-faithful shorter verdict. Actual production preflight passes 43.197s, WER0.025, line max0.167, pair max0.87577. Final cloud and full AV checks still required.",
-      "run_id": 40150491810,
-      "problems": [
-        "production run failure"
-      ]
+      "repair_reason": "Exact Linux replay reproduced phantom tokens on the unchanged 1.238-second CTA; measured 150ms quiet ASR margins fixed every actual production line without changing narration, thresholds, pictures or timing. Repair also includes verified unstarted spoken scripts."
     },
     {
       "repo": "pangaea-nights",
@@ -1599,7 +1613,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry countdown-02: production run failure",
+  "halted": null,
   "complete": false,
   "health": {
     "public": 1,
@@ -1607,5 +1621,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:36:22+00:00"
+  "updated_at": "2026-10-25T01:50:12+00:00"
 }
