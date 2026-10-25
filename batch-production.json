@@ -14,7 +14,7 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-verified-ice-reprise.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 7,
       "obsolete_runs": [
         40121235398,
@@ -28,7 +28,7 @@
       ],
       "repair_reason": "Keep all nine exact reviewed cached ice/deep-water inputs; voice repair 3976361 retakes only the verdict when the existing spoken-answer check fails even below overall WER limit. Final answer, media and full AV gates remain unchanged. Cancelled stale bot rerun attempt 2 only retried publish against failed voice gates.",
       "source_sha": "39763610fec1793e834d72bbb9933e5ed6679f69",
-      "cloud_status": "completed",
+      "cloud_status": "queued",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
         {
@@ -228,7 +228,8 @@
             "release_approval": false
           }
         }
-      ]
+      ],
+      "run_id": 40146406019
     },
     {
       "repo": "pangaea-nights",
@@ -945,7 +946,7 @@
     }
   ],
   "halted": "Repair held entry survive_night-01: Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.; Direct inspection of actual o4 base/alternate: skull has multiple paired/upcurved brow horns rather than a coherent three-horn Triceratops skull. Actual o8 base also contains a small grey-clad human figure hiding behind the carcass, despite the no-humans rule; its predator/carcass anatomy is unreliable. Replace only o4 and o8, preserve usable other slots, source fact, answer and publishing order. This is an exact-media hold, not a numeric threshold change.; Direct actual-pixel inspection of o7 base and alternate: a circular repeated tread/ribbed trench, not a natural three-toed T. rex footprint. Replace this exact option with a deliberately documented exposed-mudflat refuge; retain sourced smell fact, answer 2, other usable media and current cloud/AV gates.",
-  "updated_at": "2026-10-25T00:21:56+00:00",
+  "updated_at": "2026-10-25T00:22:01+00:00",
   "complete": false,
   "health": {
     "public": 0,
