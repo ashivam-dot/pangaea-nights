@@ -111,7 +111,9 @@ review and release retain their predecessor checks. Every pending dispatch is re
   a pending ordinary preview. This input cannot directly publish. Deep-water scenes use neutral external fill
   against black water, without the shallow scenes' glowing focal-light style; exposure and readability gates stay in force.
   An explicit hash-bound `cached_only: true` repair checks only the supplied exact art and never generates spare
-  takes. Missing inputs or failed current checks hold it; the full pairwise-image and rendered-video gates still apply.
+  paintings. Its image checks share one cloud runner to avoid repeated ML setup; every supplied image is still
+  screened and the final image-pair, narration, render and audiovisual gates remain mandatory. Other replays retain
+  ordinary parallel generation. A missing or refused cached input still holds the repair instead of repainting.
   Bank entries with `production_hold` stay available for audit but cannot be selected, explicitly replayed or released.
   The unbooked sea-scorpion slot is deliberately replaced by the existing asteroid-hideout premise at the same time;
   original artifacts and unresolved scientific refusals remain quarantined.

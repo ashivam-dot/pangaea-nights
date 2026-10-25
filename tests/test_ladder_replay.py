@@ -158,7 +158,9 @@ def test_an_image_replay_cannot_use_the_direct_publishing_mode(cached):
         ladder_cli.plan(Namespace(mode="publish", replay=".github/replay/repair.json", premise=""))
 
 
-def test_dry_plan_pins_the_manifest_and_selects_its_premise(tmp_path, monkeypatch):
+@pytest.mark.parametrize("cached_only,expected_shards", [(False, 9), (True, 1)])
+def test_dry_plan_pins_the_manifest_and_selects_its_premise(tmp_path, monkeypatch, capsys,
+                                                         cached_only, expected_shards):
     from studio import ledger
 
     monkeypatch.setattr(config, "ROOT", tmp_path)
@@ -168,7 +170,7 @@ def test_dry_plan_pins_the_manifest_and_selects_its_premise(tmp_path, monkeypatc
     monkeypatch.delenv("GITHUB_OUTPUT", raising=False)
     path = tmp_path / ".github/replay/repair.json"
     path.parent.mkdir(parents=True)
-    path.write_text(json.dumps({"schema": 1, "premise": "how_deep-01", "images": {},
+    path.write_text(json.dumps({"schema": 1, "premise": "how_deep-01", "images": {}, "cached_only": cached_only,
                                "source": {"run_id": 123, "sha": "a" * 40, "key": "source-key"}}))
     ladder_cli.plan(Namespace(mode="dry", replay=".github/replay/repair.json", premise="", slot="A", shards=9))
     plan = json.loads((config.WORK / "ladder/A/plan.json").read_text())
@@ -176,6 +178,9 @@ def test_dry_plan_pins_the_manifest_and_selects_its_premise(tmp_path, monkeypatc
     assert plan["image_replay"] == {"path": ".github/replay/repair.json", "sha256": replay.digest(path)}
     # A replay crossing midnight keeps its proven seed history while calendar/rotation checks stay current.
     assert plan["key"] == "source-key" and plan["day"] == "2030-01-02"
+    matrix = json.loads(next(line.removeprefix("images=") for line in capsys.readouterr().out.splitlines()
+                             if line.startswith("images=")))
+    assert matrix == [{"slot": "A", "shard": f"{i}/{expected_shards}"} for i in range(expected_shards)]
 
 
 def test_original_exhausted_seeds_are_not_repainted_and_current_qa_still_binds(cached, tmp_path, monkeypatch):

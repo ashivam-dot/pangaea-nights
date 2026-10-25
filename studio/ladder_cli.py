@@ -136,6 +136,7 @@ def plan(args) -> None:
 
     image_replay = None
     replay_seed_key = None
+    cached_only = False
     if replay_path := getattr(args, "replay", ""):
         from . import ladder_replay
 
@@ -147,6 +148,7 @@ def plan(args) -> None:
         args.premise = replay["premise"]
         image_replay = {"path": replay_path, "sha256": ladder_replay.digest(config.ROOT / replay_path)}
         replay_seed_key = replay["source"]["key"]
+        cached_only = replay.get("cached_only", False)
     data = ledger.load()
     banks = ladder.with_proven(ladder.load_banks(strict=False), data)
     today = ladder.now_day()
@@ -195,7 +197,9 @@ def plan(args) -> None:
 
         alert.send("Pangaea Nights Shorts plan:\n" + "\n".join(
             f"- {a.get('slot') or a.get('premise')}: {'; '.join(a['problems'])}" for a in alerts))
-    _output({"slots": made, "images": image_matrix(made, args.shards), "any": bool(made)})
+    # Cached-only inputs still run every current picture check. One shard avoids
+    # bootstrapping nine ML runners when generation is explicitly forbidden.
+    _output({"slots": made, "images": image_matrix(made, 1 if cached_only else args.shards), "any": bool(made)})
     if any(a["kind"] == "plan" for a in alerts) and not made:
         sys.exit("an allowed publish slot planned no premise")
 
