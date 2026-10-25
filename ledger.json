@@ -2172,6 +2172,21 @@
     "refusals": [
      "Art-only collection cannot publish"
     ]
+   },
+   {
+    "at": "2026-10-25T19:35:28Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "level_1_8-05",
+    "run": "40223456981",
+    "ok": false,
+    "failures": [
+     "Art collected only; no video or audiovisual release approval"
+    ],
+    "published": false,
+    "refusals": [
+     "Art-only collection cannot publish"
+    ]
    }
   ],
   "alerts": [
