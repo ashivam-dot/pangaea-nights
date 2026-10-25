@@ -3962,6 +3962,50 @@
             "ladder-img-A-2/o3.png": "34357fe9d7d75aa95eb89cb073305bc0bc43432f690b146ec80be8073c19be72",
             "ladder-img-A-2/o3-alt1.png": "f5fb87f7077cb0f327c5096d217c6471b98029febf4c7c841cd555efc095fd15",
             "ladder-img-A-0/o1-alt1.png": "6edca234a3140d7f049ca2a7e28296d5d1a44e76b3104c82bdcc9d580bbb08c8"
+          },
+          "resolved_at": "2026-10-25T10:35:56+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "96a326c91517fce9adaa2532d5356f0a96c9f496",
+            "replay": ".github/replay/level_1_8-04-anatomy-repair.json",
+            "replay_sha256": "5cbbf17e9f34af1d0341a06f7d64a2d994d247ebb069c970bd155d150d03a994",
+            "images": {
+              "o1": [
+                "34df96697915af324be3b113c39463eddc290444384ce71ccc88c4cb4cec5a66"
+              ],
+              "o2": [
+                "8c79e0c6ba40b0af2c6e8d4e47ae5108cf2da7ac8d52317d2b54122596c081cf",
+                "e7e75b6e59dac4d7e60f0508e45e838aa86707c4b4c5e25f622721d2eed6ebcd"
+              ],
+              "o3": [
+                "139aa8653e4bb1b8c101db27490f60d403cb266c01f3140faca2b24f6b184251",
+                "47395f8b79eca6d1ee0c680fbf992365c2fc74b7b716b8ceb67d2df4463ad624"
+              ],
+              "o4": [
+                "e969405a6a9b2f102ddd80d96e9e1eea21f82e8a51d4af9df60cd7305c3fb501",
+                "0197efdd8593355ea11638a0652cc802df70b5e730ff15036137dbfb7553058e"
+              ],
+              "o5": [
+                "fc6b48088aad4ee550654b16974ea9835645b598a3af6d5dfdd6ae78e33a9105"
+              ],
+              "o6": [
+                "f38a811e8972f85adff0516ce1e5fad3b8c84b211dcc629ef0c04a96b152bf34",
+                "b25811b4594dac8421926c45bc4871c64dcdb2c0f7adf80581833c5f83d5597c"
+              ],
+              "o7": [
+                "e25cd1e60bbd46b93817eb5fe6ca66af728ddb172094d2d10b3a0da418cbac8a"
+              ],
+              "o8": [
+                "294ced34955bc4210e59b2d1dca02210f7148a4606eb115c5147e8313bd0728a",
+                "b40fb58d3d4f15eff44de2b89eebf7f698ab292084618c35cf752d9b82491d5f"
+              ],
+              "end": [
+                "e969405a6a9b2f102ddd80d96e9e1eea21f82e8a51d4af9df60cd7305c3fb501"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/level_1_8-04-harvestman-repair/staged-input-repair.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -3975,6 +4019,50 @@
             "ladder-img-A-7/o8.png": "82afce8a4ce1181b5926c3a563370efd94b9e40a05a99a2c0d464bfeed35f93d",
             "ladder-img-A-7/o8-alt1.png": "c42fd1d5a2b5a1152814c4b6bea328edefb9f9e0466d0a6122518efa25619658",
             "ladder-img-A-4/o5-alt1.png": "247e1e3e4c776acdaf24decd8e53aaa86dfe273ddcea3801bce083e8a74583e7"
+          },
+          "resolved_at": "2026-10-25T10:35:56+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "96a326c91517fce9adaa2532d5356f0a96c9f496",
+            "replay": ".github/replay/level_1_8-04-anatomy-repair.json",
+            "replay_sha256": "5cbbf17e9f34af1d0341a06f7d64a2d994d247ebb069c970bd155d150d03a994",
+            "images": {
+              "o1": [
+                "34df96697915af324be3b113c39463eddc290444384ce71ccc88c4cb4cec5a66"
+              ],
+              "o2": [
+                "8c79e0c6ba40b0af2c6e8d4e47ae5108cf2da7ac8d52317d2b54122596c081cf",
+                "e7e75b6e59dac4d7e60f0508e45e838aa86707c4b4c5e25f622721d2eed6ebcd"
+              ],
+              "o3": [
+                "139aa8653e4bb1b8c101db27490f60d403cb266c01f3140faca2b24f6b184251",
+                "47395f8b79eca6d1ee0c680fbf992365c2fc74b7b716b8ceb67d2df4463ad624"
+              ],
+              "o4": [
+                "e969405a6a9b2f102ddd80d96e9e1eea21f82e8a51d4af9df60cd7305c3fb501",
+                "0197efdd8593355ea11638a0652cc802df70b5e730ff15036137dbfb7553058e"
+              ],
+              "o5": [
+                "fc6b48088aad4ee550654b16974ea9835645b598a3af6d5dfdd6ae78e33a9105"
+              ],
+              "o6": [
+                "f38a811e8972f85adff0516ce1e5fad3b8c84b211dcc629ef0c04a96b152bf34",
+                "b25811b4594dac8421926c45bc4871c64dcdb2c0f7adf80581833c5f83d5597c"
+              ],
+              "o7": [
+                "e25cd1e60bbd46b93817eb5fe6ca66af728ddb172094d2d10b3a0da418cbac8a"
+              ],
+              "o8": [
+                "294ced34955bc4210e59b2d1dca02210f7148a4606eb115c5147e8313bd0728a",
+                "b40fb58d3d4f15eff44de2b89eebf7f698ab292084618c35cf752d9b82491d5f"
+              ],
+              "end": [
+                "e969405a6a9b2f102ddd80d96e9e1eea21f82e8a51d4af9df60cd7305c3fb501"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/level_1_8-04-harvestman-repair/staged-input-repair.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -3985,6 +4073,50 @@
           "evidence": {
             "ladder-img-A-6/o7.png": "33a658c438546e0a4c1d7e45d3e4b8f27c335f9937dcbf37c618eddd8d3cf1a6",
             "ladder-img-A-6/o7-alt1.png": "bd5906b7386ea899d574bacbf4343d29ed758ab28996073c0da62b6330d82956"
+          },
+          "resolved_at": "2026-10-25T10:35:56+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "96a326c91517fce9adaa2532d5356f0a96c9f496",
+            "replay": ".github/replay/level_1_8-04-anatomy-repair.json",
+            "replay_sha256": "5cbbf17e9f34af1d0341a06f7d64a2d994d247ebb069c970bd155d150d03a994",
+            "images": {
+              "o1": [
+                "34df96697915af324be3b113c39463eddc290444384ce71ccc88c4cb4cec5a66"
+              ],
+              "o2": [
+                "8c79e0c6ba40b0af2c6e8d4e47ae5108cf2da7ac8d52317d2b54122596c081cf",
+                "e7e75b6e59dac4d7e60f0508e45e838aa86707c4b4c5e25f622721d2eed6ebcd"
+              ],
+              "o3": [
+                "139aa8653e4bb1b8c101db27490f60d403cb266c01f3140faca2b24f6b184251",
+                "47395f8b79eca6d1ee0c680fbf992365c2fc74b7b716b8ceb67d2df4463ad624"
+              ],
+              "o4": [
+                "e969405a6a9b2f102ddd80d96e9e1eea21f82e8a51d4af9df60cd7305c3fb501",
+                "0197efdd8593355ea11638a0652cc802df70b5e730ff15036137dbfb7553058e"
+              ],
+              "o5": [
+                "fc6b48088aad4ee550654b16974ea9835645b598a3af6d5dfdd6ae78e33a9105"
+              ],
+              "o6": [
+                "f38a811e8972f85adff0516ce1e5fad3b8c84b211dcc629ef0c04a96b152bf34",
+                "b25811b4594dac8421926c45bc4871c64dcdb2c0f7adf80581833c5f83d5597c"
+              ],
+              "o7": [
+                "e25cd1e60bbd46b93817eb5fe6ca66af728ddb172094d2d10b3a0da418cbac8a"
+              ],
+              "o8": [
+                "294ced34955bc4210e59b2d1dca02210f7148a4606eb115c5147e8313bd0728a",
+                "b40fb58d3d4f15eff44de2b89eebf7f698ab292084618c35cf752d9b82491d5f"
+              ],
+              "end": [
+                "e969405a6a9b2f102ddd80d96e9e1eea21f82e8a51d4af9df60cd7305c3fb501"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/level_1_8-04-harvestman-repair/staged-input-repair.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -4241,5 +4373,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T10:34:41+00:00"
+  "updated_at": "2026-10-25T10:35:56+00:00"
 }
