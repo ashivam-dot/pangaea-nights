@@ -1065,10 +1065,11 @@
         "premise": "countdown-02",
         "replay": ".github/replay/countdown-high-ground-repair.json"
       },
-      "stage": "held",
-      "attempts": 3,
-      "source_sha": "b24c1a3028916134cbde9852e9856727573e1573",
+      "stage": "dispatch_unresolved",
+      "attempts": 4,
+      "source_sha": "34a87a170f45cde92bbc7b948cbb57e737cececc",
       "before_ids": [
+        40152163089,
         40151287146,
         40150491810,
         40149509321,
@@ -1101,7 +1102,7 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T01:50:12+00:00",
+      "submitted_at": "2026-10-25T01:57:38+00:00",
       "cloud_status": "completed",
       "editorial_holds": [
         {
@@ -1192,17 +1193,29 @@
             "replay": ".github/replay/countdown-high-ground-repair.json"
           },
           "repair_reason": "Replace only exact refused inland/impact scenes; preserve all seven original usable image slots. Adopt independently reviewed inland style and impact-cloud replan, common turtle wording, and source-faithful shorter verdict. Actual production preflight passes 43.197s, WER0.025, line max0.167, pair max0.87577. Final cloud and full AV checks still required."
+        },
+        {
+          "run_id": 40152163089,
+          "source_sha": "b24c1a3028916134cbde9852e9856727573e1573",
+          "stage": "held",
+          "problems": [
+            "production run cancelled"
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "countdown-02",
+            "replay": ".github/replay/countdown-high-ground-repair.json"
+          },
+          "repair_reason": "Exact Linux replay reproduced phantom tokens on the unchanged 1.238-second CTA; measured 150ms quiet ASR margins fixed every actual production line without changing narration, thresholds, pictures or timing. Repair also includes verified unstarted spoken scripts."
         }
       ],
       "obsolete_runs": [
         40147415761,
-        40150491810
+        40150491810,
+        40152163089
       ],
-      "repair_reason": "Exact Linux replay reproduced phantom tokens on the unchanged 1.238-second CTA; measured 150ms quiet ASR margins fixed every actual production line without changing narration, thresholds, pictures or timing. Repair also includes verified unstarted spoken scripts.",
-      "run_id": 40152163089,
-      "problems": [
-        "production run cancelled"
-      ]
+      "repair_reason": "Exact failed narration isolated cave-line boundary misrecognition; clearer cave/ocean speech measured at zero line and overall WER with production short-clip margins, 167.6wpm and 43.044s timeline. Facts, choices and reviewed images retained; all current gates required."
     },
     {
       "repo": "pangaea-nights",
@@ -1619,7 +1632,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry countdown-02: production run cancelled",
+  "halted": null,
   "complete": false,
   "health": {
     "public": 1,
@@ -1627,5 +1640,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:57:23+00:00"
+  "updated_at": "2026-10-25T01:57:38+00:00"
 }
