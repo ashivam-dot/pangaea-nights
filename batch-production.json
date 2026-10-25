@@ -4569,7 +4569,7 @@
         "premise": "survive_night-04",
         "replay": ".github/replay/survive_night-04-reviewed-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -4883,7 +4883,9 @@
         40146406019,
         40144187249
       ],
-      "submitted_at": "2026-10-25T15:16:36+00:00"
+      "submitted_at": "2026-10-25T15:16:36+00:00",
+      "run_id": 40206168455,
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -5348,8 +5350,8 @@
   "health": {
     "public": 3,
     "scheduled": 11,
-    "held": 1,
+    "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T15:21:02+00:00"
+  "updated_at": "2026-10-25T15:21:06+00:00"
 }
