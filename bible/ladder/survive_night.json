@@ -297,8 +297,8 @@
      "label": "In a pterosaur roost",
      "vo": "Inside a pterosaur roost on the rocks.",
      "danger": 4,
-     "image_prompt": "Natural-history documentary portrait, tight side profile of the HEAD AND UPPER NECK ONLY of one living Rhamphorhynchus resting on a Late Jurassic limestone roost at night. Reconstruct the living head from the supplied fossil skull reference: a long very low narrow skull, long slender tapered jaws, interlocking forward-slanting needle teeth visible in a slightly open mouth, rounded low crown, one small dark eye far behind the long jaws. Intact grey-brown skin covers the skull and fine short grey-brown fibres cover the upper neck. The slender snout points right and fills most of the image width. Only the head and upper neck enter the frame; the lower neck continues beyond the left crop edge. The softly defocused lower background shows pale limestone roost stone; turquoise lagoon and sea-green night sky fill the upper background with a restrained coral-pink moon glow. Neutral readable documentary fill reveals the long toothed jaws and low skull geometry. Photoreal painterly living-animal reconstruction, vertical close portrait composition, quiet natural colours.",
-     "art_direction": "Tight living Rhamphorhynchus head and upper-neck side profile, fossil-bound long low toothed jaws and uncrested rounded crown above softly defocused limestone and turquoise water"
+     "image_prompt": "Natural-history documentary view from inside a low sheltered limestone alcove, looking outward over a Late Jurassic turquoise lagoon at night. A broad empty pale limestone roost ledge fills the lower foreground. An uneven weathered rock overhang crosses the upper left corner, with a narrow crack opening toward the water. The ledge has rough mineral texture and a dry flat resting surface. Through the opening lie softly rippling turquoise water and a distant low limestone island under a small coral-pink moon. The composition contains only limestone, quiet water, remote conifers and night sky. Neutral readable fill reveals the stone texture, with restrained warm moonlight on the ledge. Photoreal painterly natural-history landscape, vertical composition.",
+     "art_direction": "Empty sheltered limestone roost ledge seen from within a rocky alcove above a turquoise lagoon under a sea-green sky and small coral-pink moon."
     },
     {
      "n": 5,
@@ -341,7 +341,7 @@
     "wiki_revid": 1376454427,
     "source_sentence": "At times, the lagoons almost dried out, exposing sticky carbonate muds that trapped insects and a few small dinosaurs."
    },
-   "description": "A Late Jurassic island chain in what is now Germany, with warm lagoons that look perfect for the night. Eight choices, from a conifer ridge to a swim in open water.\n\nHead geometry reference: Rhamphorhynchus specimen from Solnhofen, photo Dean Falk Schnabel, https://commons.wikimedia.org/wiki/File:Rhamphorhynchus_muensteri_fossil.jpg, CC0 (https://creativecommons.org/publicdomain/zero/1.0/), cropped fossil reference used for AI adaptation, living animal, colour and setting are illustrative.",
+   "description": "A Late Jurassic island chain in what is now Germany, with warm lagoons that look perfect for the night. Eight choices, from a conifer ridge to a swim in open water.",
    "tags": [
     "dinosaurs",
     "Jurassic",
