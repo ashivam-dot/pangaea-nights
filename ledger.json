@@ -1155,6 +1155,22 @@
     "refusals": [
      "dry run: nothing is uploaded"
     ]
+   },
+   {
+    "at": "2026-10-25T03:53:32Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "level_1_8-13",
+    "run": "40156875292",
+    "ok": false,
+    "failures": [
+     "option_pair_max: {\"value\": 0.9136, \"floor\": 0.3, \"ceiling\": 0.9}"
+    ],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded",
+     "gates failed: option_pair_max: {\"value\": 0.9136, \"floor\": 0.3, \"ceiling\": 0.9}"
+    ]
    }
   ],
   "alerts": [
