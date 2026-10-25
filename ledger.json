@@ -1434,6 +1434,17 @@
     "refusals": [
      "dry run: nothing is uploaded"
     ]
+   },
+   {
+    "at": "2026-10-25T08:02:52Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "countdown-04",
+    "run": "40171289495",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [
