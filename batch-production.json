@@ -4151,7 +4151,7 @@
       ],
       "submitted_at": "2026-10-25T11:16:46+00:00",
       "run_id": 40188193823,
-      "cloud_status": "in_progress"
+      "cloud_status": "completed"
     },
     {
       "repo": "pangaea-nights",
@@ -4400,5 +4400,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T11:30:35+00:00"
+  "updated_at": "2026-10-25T11:30:38+00:00"
 }
