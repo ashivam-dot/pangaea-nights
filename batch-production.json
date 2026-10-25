@@ -1613,7 +1613,7 @@
         "slot": "A",
         "premise": "survive_night-02"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 1,
       "source_sha": "f2ba146e52bc17c948d9d2d9738f9e308d08e79f",
       "before_ids": [
@@ -1655,7 +1655,9 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T03:20:01+00:00"
+      "submitted_at": "2026-10-25T03:20:01+00:00",
+      "run_id": 40157815850,
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -1999,10 +2001,10 @@
   "health": {
     "public": 1,
     "scheduled": 4,
-    "held": 0,
+    "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:42:59+00:00",
+  "updated_at": "2026-10-25T03:43:05+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
