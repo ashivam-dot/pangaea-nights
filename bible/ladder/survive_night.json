@@ -105,7 +105,7 @@
     {
      "n": 2,
      "label": "Dry riverbed inland",
-     "vo": "A dry riverbed, a day's walk inland.",
+     "vo": "A dry river bed, far inland.",
      "danger": 2,
      "image_prompt": "POV standing in a cracked dry riverbed winding inland through red rock under a violet starfield, scattered seed-fern stumps, copper moon low on the horizon, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
     },
@@ -119,7 +119,7 @@
     {
      "n": 4,
      "label": "Salt flat, dead centre",
-     "vo": "Dead centre of a giant salt flat.",
+     "vo": "The middle of a huge salt flat.",
      "danger": 4,
      "image_prompt": "POV standing on a vast cracked white salt flat stretching to every horizon under a violet night sky, frost glittering, one copper moon low in the east, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
     },
@@ -153,7 +153,7 @@
     }
    ],
    "answer_n": 1,
-   "verdict_vo": "Real answer: number 1, because Pangaea's interior was far drier than its shores, with extreme heat and cold. Stay coastal, probably.",
+   "verdict_vo": "Real answer: number 1, because the interior was drier, with extreme temperatures. The coast probably gives you better odds.",
    "fact": {
     "text": "The interior of Pangaea was significantly drier than its shores and saw extreme variations of heat and cold.",
     "wiki_title": "Pangaea",
@@ -184,7 +184,7 @@
     {
      "n": 1,
      "label": "Snow hollow in a drift",
-     "vo": "A hollow dug into a snowdrift.",
+     "vo": "A hollow dug into a snow drift.",
      "danger": 1,
      "image_prompt": "POV from inside a hollow dug into a deep snowdrift, looking out at a frozen Ice Age valley in blue hour, spruce trees heavy with snow, amber glow far away, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
     },

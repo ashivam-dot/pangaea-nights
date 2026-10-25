@@ -133,7 +133,7 @@
     {
      "n": 6,
      "label": "Acutiramus on patrol",
-     "vo": "Level six: Acutiramus, patrolling the channel.",
+     "vo": "Level six: a huge sea scorpion patrols below.",
      "danger": 6,
      "image_prompt": "A large Acutiramus sea scorpion gliding over a submerged log, segmented body and slim pincers, copper dusk light from the surface, telephoto haze, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
@@ -147,7 +147,7 @@
     {
      "n": 8,
      "label": "Jaekelopterus",
-     "vo": "Level eight: Jaekelopterus. Longer than a sofa.",
+     "vo": "Level eight: the biggest, longer than a sofa.",
      "danger": 8,
      "image_prompt": "Jaekelopterus filling the whole vertical frame, an enormous sea scorpion with huge spiked pincers and long segmented body, gliding over a delta bottom, copper sunset shaft above, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     }
@@ -191,7 +191,7 @@
     {
      "n": 2,
      "label": "Brachiopod shell",
-     "vo": "Level two: a brachiopod shell, two neat halves.",
+     "vo": "Level two: a shell with two neat halves.",
      "danger": 2,
      "image_prompt": "A ribbed brachiopod shell lying open on dark sediment, gold light catching its ridges, tiny particles drifting through the navy water, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
@@ -226,20 +226,20 @@
     {
      "n": 7,
      "label": "Dunkleosteus head plates",
-     "vo": "Level seven: Dunkleosteus plates. Solid bone.",
+     "vo": "Level seven: solid bone plates across the head.",
      "danger": 7,
      "image_prompt": "Close detail of the bony head and trunk plates of Dunkleosteus, thick seams between plates, a gold shaft of light sliding over the armor in navy water, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     },
     {
      "n": 8,
      "label": "Inside Dunkleosteus's jaws",
-     "vo": "Level eight: inside the jaws. Bad idea.",
+     "vo": "Level eight: between its teeth. A terrible idea.",
      "danger": 8,
      "image_prompt": "POV staring into the open bony jaws of Dunkleosteus, sharp self-sharpening blade plates closing in, gold light glinting on the edges, black water behind, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
     }
    ],
    "answer_n": 7,
-   "verdict_vo": "Real answer: number 7, because Dunkleosteus was covered in bony armor plates across its skull and front half. Probably your toughest coat.",
+   "verdict_vo": "Real answer: number 7, because this fish wore bony armor plates across its skull and front half. Probably your toughest coat.",
    "fact": {
     "text": "Dunkleosteus was covered in dermal bone forming armor plates across its skull and the front half of its trunk.",
     "source_sentence": "Dunkleosteus was covered in dermal bone forming armor plates across its skull and front half of its trunk.",
