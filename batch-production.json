@@ -4982,9 +4982,9 @@
   "complete": false,
   "health": {
     "public": 2,
-    "scheduled": 10,
+    "scheduled": 12,
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:48:58+00:00"
+  "updated_at": "2026-10-25T12:49:01+00:00"
 }
