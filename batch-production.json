@@ -4482,7 +4482,55 @@
       ],
       "submitted_at": "2026-10-25T11:16:46+00:00",
       "run_id": 40188193823,
-      "cloud_status": "completed"
+      "cloud_status": "completed",
+      "review": {
+        "schema": 1,
+        "model": "gemini-3.8-flash",
+        "duration": 44.016,
+        "video_sha256": "8434efc5b4b3b3e7b0ce4c27b97fd131f18a154f195268f6c696667f76215be5",
+        "brief_sha256": "62ba2e43c5f901e7facb80695443b66af1fb69513df05715b2b9dff878d8c0ea",
+        "review_video_sha256": "98d6a3f5c28cf291491c92fff93358cad84d1bbf43bbbf8da2d5066f843a11f7",
+        "review_audio_sha256": "5df6581890bc90d2ee5e98189bab47c44b10044857a9e4eaefd94ddcf8db5702",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "One humid night in the coal forest.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.5,
+              "seen": "Close view of a springtail on dewy moss inside a green hollow log.",
+              "heard": "Pick a bunkmate."
+            },
+            {
+              "part": "middle",
+              "seconds": 22.0,
+              "seen": "Meganeura griffinfly with outstretched clear wings and danger meter overlay.",
+              "heard": "Level six: Meganeura, a dragonfly wide as a hawk."
+            },
+            {
+              "part": "ending",
+              "seconds": 38.0,
+              "seen": "Arthropleura curled on the hollow floor with the answer banner displayed.",
+              "heard": "suggest Arthropleura may have eaten plants."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -4914,5 +4962,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:46:31+00:00"
+  "updated_at": "2026-10-25T12:48:13+00:00"
 }
