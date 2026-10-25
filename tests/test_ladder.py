@@ -47,6 +47,23 @@ def test_bank_failures_are_caught():
     assert ladder.premise_problems(p, p["series"])
 
 
+def test_inland_shot_can_replace_coastal_setting_without_changing_other_cached_prompts():
+    p = copy.deepcopy(ladder.find(BANKS, "countdown-02"))
+    original = ladder.image_jobs(p)
+    p["options"][5]["art_direction"] = "Violet storm sky over high inland conifer ridges, warm amber rim light."
+    repaired = ladder.image_jobs(p)
+    assert not ladder.premise_problems(p)
+    assert "Gulf coast" not in repaired[5]["prompt"] and "inland conifer ridges" in repaired[5]["prompt"]
+    assert all(a == b for i, (a, b) in enumerate(zip(original, repaired)) if i != 5)
+
+
+@pytest.mark.parametrize("direction", ["", None, "A warm scene. Another scene.", "A person in a boat."])
+def test_option_art_direction_cannot_bypass_composed_prompt_gates(direction):
+    p = copy.deepcopy(ALL[0])
+    p["options"][5]["art_direction"] = direction
+    assert ladder.premise_problems(p)
+
+
 def test_overlap_measures_shared_4grams():
     a = "Number one: a deep burrow under the roots of the old forest at night."
     assert ladder.overlap(a, [a]) == 1.0

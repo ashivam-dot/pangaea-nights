@@ -186,13 +186,17 @@ def premise_problems(p: dict, series: str | None = None) -> list[str]:
         elif danger[-1] <= danger[0]:
             out.append("danger must climb")
         for o in opts:
+            if "art_direction" in o:
+                direction = o["art_direction"]
+                if not isinstance(direction, str) or not direction.strip() or len(gates.sentences(direction)) != 1:
+                    out.append(f"option {o['n']} art_direction must be one sentence")
             if not 1 <= len(words(o.get("label", ""))) <= LIMITS["label_words"]:
                 out.append(f"option {o['n']} label has {len(words(o.get('label', '')))} words (1-5)")
             if not 1 <= len(words(o.get("vo", ""))) <= LIMITS["option_vo_words"]:
                 out.append(f"option {o['n']} vo has {len(words(o.get('vo', '')))} words (1-9)")
             out += [f"option {o['n']} image: {x}" for x in prompt_problems(o.get("image_prompt", ""))]
             out += [f"option {o['n']} hits the blocklist: {b}" for b in blocklist_hits(" ".join(
-                [o.get("label", ""), o.get("vo", ""), o.get("image_prompt", "")]))]
+                [o.get("label", ""), o.get("vo", ""), o.get("image_prompt", ""), str(o.get("art_direction", ""))]))]
         labels = [o.get("label", "").lower() for o in opts]
         if len(set(labels)) != len(labels):
             out.append("two options share a label")
@@ -225,7 +229,7 @@ def premise_problems(p: dict, series: str | None = None) -> list[str]:
     mascot_lines = {k: str(p.get(k, "")) for k in ("title", "banner", "hook_vo", "verdict_vo", "art_direction",
                                                      "description")}
     mascot_lines["fact"] = str(fact.get("text", ""))
-    mascot_lines.update({f"option {o.get('n')}": " ".join(str(o.get(k, "")) for k in ("label", "vo", "image_prompt"))
+    mascot_lines.update({f"option {o.get('n')}": " ".join(str(o.get(k, "")) for k in ("label", "vo", "image_prompt", "art_direction"))
                          for o in opts if isinstance(o, dict)})
     out += [f"{k} has a mascot: '{m.group(0)}'" for k, v in mascot_lines.items() for m in MASCOT.finditer(v)]
     if len(opts) == OPTIONS and all(isinstance(o, dict) for o in opts):
@@ -531,10 +535,14 @@ def image_jobs(p: dict) -> list[dict]:
     jobs = []
     for o in p["options"]:
         scene = o["image_prompt"]
+        # A shared coastal setting must not override an inland refuge. An explicit
+        # option direction changes only that shot; all composed-prompt gates still run.
+        option_art = o.get("art_direction", art)
+        option_art = option_art.strip().rstrip(".") if isinstance(option_art, str) and option_art.strip() else art
         dark = dark_water_direction(scene)
         # The old universal glowing focal light overrode even explicit black-water instructions.
         scene_art = ("neutral charcoal and muted mineral tones, close documentary composition, "
-                     "soft external foreground fill and featureless black water on every edge") if dark else art
+                     "soft external foreground fill and featureless black water on every edge") if dark else option_art
         style = ("photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, "
                  "matte non-luminous subjects, black background water") if dark else STYLE
         jobs.append({"id": f"o{o['n']}", "n": o["n"], "scene": scene,
