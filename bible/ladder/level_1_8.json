@@ -187,7 +187,7 @@
      "label": "Soft sponge wrap",
      "vo": "Level one: a soft sponge. Cosy, useless.",
      "danger": 1,
-     "image_prompt": "A loose yellow sponge drifting alone in dark open water, pores glowing gold from a single shaft of light below, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "A broad irregular ochre-yellow marine sponge spreads over a small grey stone shelf on the seafloor, a low asymmetrical mound with thousands of natural small pores and soft uneven folds. The sponge occupies the central half of the frame. A wide soft amber shaft illuminates its textured surface and nearby pale sediment clearly. Navy Devonian seawater fills the upper background with tiny suspended particles. Macro natural-history photograph of a simple primitive porous marine animal, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
     },
     {
      "n": 2,
@@ -201,42 +201,42 @@
      "label": "Trilobite shield",
      "vo": "Level three: a spiky trilobite shield.",
      "danger": 3,
-     "image_prompt": "A spiny Devonian trilobite rolled half closed on a ledge, eyes like stacked lenses, gold rim light along every spine, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "An oblique overhead view of a spiny Devonian trilobite resting flat on a dark stone ledge. Its wide crescent cephalon shield, narrow raised axial lobe, two broad pleural lobes and many curved transverse thoracic segments are clearly visible from above. Paired tiny lateral compound eyes sit on the head shield. Short defensive spines fringe the shell. The mouth and walking limbs are hidden underneath its body. An anatomically coherent fossil arthropod, detailed natural shell texture, warm gold rim light from one shaft, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
     },
     {
      "n": 4,
      "label": "Coiled ammonoid shell",
      "vo": "Level four: a coiled ammonoid shell.",
      "danger": 4,
-     "image_prompt": "A goniatite ammonoid hanging in navy water, its coiled shell banded cream and brown, tentacles trailing, gold underlight, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "A single empty Devonian ammonoid shell resting on dark pebbles, close side view with the whole tightly coiled flat spiral clearly visible. Its round disk-shaped cream shell has a natural central spiral and a few subtle brown bands around the whorls, with one small empty opening at the lower right edge. Warm gold side light reveals the entire shell and nearby sediment clearly. Tiny suspended particles in inky navy open Devonian seawater at night, macro natural-history view, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
     },
     {
      "n": 5,
      "label": "Straight nautiloid cone",
      "vo": "Level five: a nautiloid cone, long as a spear.",
      "danger": 5,
-     "image_prompt": "A long straight-shelled nautiloid drifting horizontally through the dark, tentacles fanning from the opening, a gold glow along the shell, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "A single long empty straight nautiloid shell rests diagonally across dark pale pebbles on a Devonian seafloor. The shell is one narrow smooth gently tapered ivory cone, thick at the open lower-left end and pointed at the upper-right tip. Fine natural growth rings cross its surface. The large opening is hollow and empty. Warm gold side light reveals the entire straight shell clearly against inky navy water, macro natural-history illustration, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
     },
     {
      "n": 6,
      "label": "Shark skin",
-     "vo": "Level six: shark skin, rough as sandpaper.",
+     "vo": "Level six: shark skin, without heavy armor.",
      "danger": 6,
-     "image_prompt": "An early shark, Cladoselache, sliding past the lens, close detail of its rough scaled skin and long pectoral fin, gold light raking across it, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "A side view of the early shark Cladoselache swimming horizontally above a Devonian seafloor, streamlined dark slate body with mostly smooth skin, broad pectoral fins and a deeply forked tail. Its head is a simple natural shark profile without bony armor plates. A wide soft amber shaft reveals the flank and fin clearly, navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
     },
     {
      "n": 7,
      "label": "Dunkleosteus head plates",
      "vo": "Level seven: solid bone plates across the head.",
      "danger": 7,
-     "image_prompt": "Close detail of the bony head and trunk plates of Dunkleosteus, thick seams between plates, a gold shaft of light sliding over the armor in navy water, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "A single ancient Devonian placoderm fish swimming horizontally from right to left above pale seafloor sediment, clear side profile of the complete fish. Its wide blunt head and front trunk are enclosed in only a few large smooth grey dermal bone plates with long seams. A narrow dark grey unarmored hindbody tapers back into a vertical fish tail fin, with small pectoral fins projecting at the sides. The closed mouth forms a short blunt bony beak beneath the rounded head shield. Warm gold side light clearly reveals the head plates and solid fish body, inky navy water, macro natural-history reconstruction, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
     },
     {
      "n": 8,
-     "label": "Inside Dunkleosteus's jaws",
-     "vo": "Level eight: between its teeth. A terrible idea.",
+     "label": "Bubble coat",
+     "vo": "Level eight: just bubbles. No armor at all.",
      "danger": 8,
-     "image_prompt": "POV staring into the open bony jaws of Dunkleosteus, sharp self-sharpening blade plates closing in, gold light glinting on the edges, black water behind, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "A loose cluster of large transparent air bubbles rises slowly above a dark rocky Devonian seafloor. Each round bubble has a clear empty interior and a thin silver-gold reflective rim. The bubbles overlap naturally but remain separate spheres, with navy water visible through them. Warm gold side light illuminates the bubbles and pale sediment below clearly, macro natural-history photograph, inky navy open water at night, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
     }
    ],
    "answer_n": 7,
@@ -258,7 +258,8 @@
     "deep time",
     "paleontology"
    ],
-   "related_topic_hint": "The Ocean Before the Dinosaurs"
+   "related_topic_hint": "The Ocean Before the Dinosaurs",
+   "end_image": "o7"
   },
   {
    "id": "level_1_8-04",

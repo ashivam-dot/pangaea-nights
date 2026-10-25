@@ -1,0 +1,237 @@
+{
+  "at": "2026-10-25T07:08:59.247646+00:00",
+  "original": {
+    "id": "level_1_8-03",
+    "era": "Devonian",
+    "title": "Level 1 to 8 Ocean Armor in the Devonian — What Do You Wear? 🛡️",
+    "banner": "Pick your armor for the Devonian sea",
+    "hook_vo": "The Devonian sea at night. Choose your armor.",
+    "art_direction": "Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Soft sponge wrap",
+        "vo": "Level one: a soft sponge. Cosy, useless.",
+        "danger": 1,
+        "image_prompt": "A loose yellow sponge drifting alone in dark open water, pores glowing gold from a single shaft of light below, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 2,
+        "label": "Brachiopod shell",
+        "vo": "Level two: a shell with two neat halves.",
+        "danger": 2,
+        "image_prompt": "A ribbed brachiopod shell lying open on dark sediment, gold light catching its ridges, tiny particles drifting through the navy water, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 3,
+        "label": "Trilobite shield",
+        "vo": "Level three: a spiky trilobite shield.",
+        "danger": 3,
+        "image_prompt": "A spiny Devonian trilobite rolled half closed on a ledge, eyes like stacked lenses, gold rim light along every spine, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 4,
+        "label": "Coiled ammonoid shell",
+        "vo": "Level four: a coiled ammonoid shell.",
+        "danger": 4,
+        "image_prompt": "A goniatite ammonoid hanging in navy water, its coiled shell banded cream and brown, tentacles trailing, gold underlight, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 5,
+        "label": "Straight nautiloid cone",
+        "vo": "Level five: a nautiloid cone, long as a spear.",
+        "danger": 5,
+        "image_prompt": "A long straight-shelled nautiloid drifting horizontally through the dark, tentacles fanning from the opening, a gold glow along the shell, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 6,
+        "label": "Shark skin",
+        "vo": "Level six: shark skin, rough as sandpaper.",
+        "danger": 6,
+        "image_prompt": "An early shark, Cladoselache, sliding past the lens, close detail of its rough scaled skin and long pectoral fin, gold light raking across it, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 7,
+        "label": "Dunkleosteus head plates",
+        "vo": "Level seven: solid bone plates across the head.",
+        "danger": 7,
+        "image_prompt": "Close detail of the bony head and trunk plates of Dunkleosteus, thick seams between plates, a gold shaft of light sliding over the armor in navy water, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 8,
+        "label": "Inside Dunkleosteus's jaws",
+        "vo": "Level eight: between its teeth. A terrible idea.",
+        "danger": 8,
+        "image_prompt": "POV staring into the open bony jaws of Dunkleosteus, sharp self-sharpening blade plates closing in, gold light glinting on the edges, black water behind, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      }
+    ],
+    "answer_n": 7,
+    "verdict_vo": "Real answer: number 7, because this fish wore bony armor plates across its skull and front half. Probably your toughest coat.",
+    "fact": {
+      "text": "Dunkleosteus was covered in dermal bone forming armor plates across its skull and the front half of its trunk.",
+      "source_sentence": "Dunkleosteus was covered in dermal bone forming armor plates across its skull and front half of its trunk.",
+      "wiki_title": "Dunkleosteus",
+      "wiki_revid": 1374991596
+    },
+    "description": "The Devonian ocean was the age of armored fish, and the heaviest suit belonged to a predator. Eight kinds of protection, from a sponge to solid bone, and the one worth borrowing.",
+    "tags": [
+      "Devonian",
+      "Dunkleosteus",
+      "armored fish",
+      "placoderm",
+      "ancient ocean",
+      "prehistoric life",
+      "deep time",
+      "paleontology"
+    ],
+    "related_topic_hint": "The Ocean Before the Dinosaurs",
+    "series": "level_1_8"
+  },
+  "replacement": {
+    "id": "level_1_8-03",
+    "era": "Devonian",
+    "title": "Level 1 to 8 Ocean Armor in the Devonian — What Do You Wear? 🛡️",
+    "banner": "Pick your armor for the Devonian sea",
+    "hook_vo": "The Devonian sea at night. Choose your armor.",
+    "art_direction": "Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Soft sponge wrap",
+        "vo": "Level one: a soft sponge. Cosy, useless.",
+        "danger": 1,
+        "image_prompt": "A broad irregular ochre-yellow marine sponge spreads over a small grey stone shelf on the seafloor, a low asymmetrical mound with thousands of natural small pores and soft uneven folds. The sponge occupies the central half of the frame. A wide soft amber shaft illuminates its textured surface and nearby pale sediment clearly. Navy Devonian seawater fills the upper background with tiny suspended particles. Macro natural-history photograph of a simple primitive porous marine animal, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+      },
+      {
+        "n": 2,
+        "label": "Brachiopod shell",
+        "vo": "Level two: a shell with two neat halves.",
+        "danger": 2,
+        "image_prompt": "A ribbed brachiopod shell lying open on dark sediment, gold light catching its ridges, tiny particles drifting through the navy water, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 3,
+        "label": "Trilobite shield",
+        "vo": "Level three: a spiky trilobite shield.",
+        "danger": 3,
+        "image_prompt": "An oblique overhead view of a spiny Devonian trilobite resting flat on a dark stone ledge. Its wide crescent cephalon shield, narrow raised axial lobe, two broad pleural lobes and many curved transverse thoracic segments are clearly visible from above. Paired tiny lateral compound eyes sit on the head shield. Short defensive spines fringe the shell. The mouth and walking limbs are hidden underneath its body. An anatomically coherent fossil arthropod, detailed natural shell texture, warm gold rim light from one shaft, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+      },
+      {
+        "n": 4,
+        "label": "Coiled ammonoid shell",
+        "vo": "Level four: a coiled ammonoid shell.",
+        "danger": 4,
+        "image_prompt": "A single empty Devonian ammonoid shell resting on dark pebbles, close side view with the whole tightly coiled flat spiral clearly visible. Its round disk-shaped cream shell has a natural central spiral and a few subtle brown bands around the whorls, with one small empty opening at the lower right edge. Warm gold side light reveals the entire shell and nearby sediment clearly. Tiny suspended particles in inky navy open Devonian seawater at night, macro natural-history view, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+      },
+      {
+        "n": 5,
+        "label": "Straight nautiloid cone",
+        "vo": "Level five: a nautiloid cone, long as a spear.",
+        "danger": 5,
+        "image_prompt": "A single long empty straight nautiloid shell rests diagonally across dark pale pebbles on a Devonian seafloor. The shell is one narrow smooth gently tapered ivory cone, thick at the open lower-left end and pointed at the upper-right tip. Fine natural growth rings cross its surface. The large opening is hollow and empty. Warm gold side light reveals the entire straight shell clearly against inky navy water, macro natural-history illustration, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+      },
+      {
+        "n": 6,
+        "label": "Shark skin",
+        "vo": "Level six: shark skin, without heavy armor.",
+        "danger": 6,
+        "image_prompt": "A side view of the early shark Cladoselache swimming horizontally above a Devonian seafloor, streamlined dark slate body with mostly smooth skin, broad pectoral fins and a deeply forked tail. Its head is a simple natural shark profile without bony armor plates. A wide soft amber shaft reveals the flank and fin clearly, navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+      },
+      {
+        "n": 7,
+        "label": "Dunkleosteus head plates",
+        "vo": "Level seven: solid bone plates across the head.",
+        "danger": 7,
+        "image_prompt": "A single ancient Devonian placoderm fish swimming horizontally from right to left above pale seafloor sediment, clear side profile of the complete fish. Its wide blunt head and front trunk are enclosed in only a few large smooth grey dermal bone plates with long seams. A narrow dark grey unarmored hindbody tapers back into a vertical fish tail fin, with small pectoral fins projecting at the sides. The closed mouth forms a short blunt bony beak beneath the rounded head shield. Warm gold side light clearly reveals the head plates and solid fish body, inky navy water, macro natural-history reconstruction, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+      },
+      {
+        "n": 8,
+        "label": "Bubble coat",
+        "vo": "Level eight: just bubbles. No armor at all.",
+        "danger": 8,
+        "image_prompt": "A loose cluster of large transparent air bubbles rises slowly above a dark rocky Devonian seafloor. Each round bubble has a clear empty interior and a thin silver-gold reflective rim. The bubbles overlap naturally but remain separate spheres, with navy water visible through them. Warm gold side light illuminates the bubbles and pale sediment below clearly, macro natural-history photograph, inky navy open water at night, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light"
+      }
+    ],
+    "answer_n": 7,
+    "verdict_vo": "Real answer: number 7, because this fish wore bony armor plates across its skull and front half. Probably your toughest coat.",
+    "fact": {
+      "text": "Dunkleosteus was covered in dermal bone forming armor plates across its skull and the front half of its trunk.",
+      "source_sentence": "Dunkleosteus was covered in dermal bone forming armor plates across its skull and front half of its trunk.",
+      "wiki_title": "Dunkleosteus",
+      "wiki_revid": 1374991596
+    },
+    "description": "The Devonian ocean was the age of armored fish, and the heaviest suit belonged to a predator. Eight kinds of protection, from a sponge to solid bone, and the one worth borrowing.",
+    "tags": [
+      "Devonian",
+      "Dunkleosteus",
+      "armored fish",
+      "placoderm",
+      "ancient ocean",
+      "prehistoric life",
+      "deep time",
+      "paleontology"
+    ],
+    "related_topic_hint": "The Ocean Before the Dinosaurs",
+    "series": "level_1_8",
+    "end_image": "o7"
+  },
+  "manifest": ".github/replay/level-03-coherent-armor-repair.json",
+  "manifest_sha256": "0ddbdbf68f8b0e1971d4accce2044b3dd7a62ff81a04594595e0d4b837426c34",
+  "voice_preflight": {
+    "at": "2026-10-25T06:57:52+00:00",
+    "premise": "level_1_8-03",
+    "candidate_sha256": "b105616028a04cd193af6fe831f7f00932d4d7f362b8635c654b1f7fbc896868",
+    "passed": true,
+    "problems": [],
+    "wer": 0.022,
+    "wpm": 162.0,
+    "max_line_wer": 0.143,
+    "duration": 42.386,
+    "release_approval": false
+  },
+  "speech_changed": true,
+  "source_sha": "2dfb5c1416589586933800db1fd8d35013a09242",
+  "release_approval": false,
+  "remaining": "Current cached-image preflight, cloud, and full audiovisual checks",
+  "cached_image_preflight": {
+    "scope": "Exact production cached-image gates and selection only; depth/motion/full AV not approved",
+    "manifest_sha256": "0ddbdbf68f8b0e1971d4accce2044b3dd7a62ff81a04594595e0d4b837426c34",
+    "passes": true,
+    "selection": {
+      "missing": [],
+      "pair_max": 0.881290078163147,
+      "pair_min": 0.6895954608917236,
+      "prompt_similarity_min": 0.2913,
+      "choice": {
+        "o1": 0,
+        "o2": 1,
+        "o3": 0,
+        "o4": 0,
+        "o5": 0,
+        "o6": 0,
+        "o7": 0,
+        "o8": 0,
+        "end": 0
+      },
+      "embeddings": {
+        "o1": "9yQXJoaphJZToxepWKa1I94kKyBYoycnLSjKnqeg7507JsgukSJbpbWvnSMJJAejyyauJK4ldqzJpe8i0SHapfef7KG9JUMlJJwDJYoTSyrOKBSjJZ/hJLuesKyrJq0mNZ8rJvMlDic1J7GnLqgbIzKspKQtpHCkgSvRIGWhzCipqIuo6Y63KsIoK6LtoGioe6jJq6Wj1qDIqCuYjCIHJhAlhaNFnbGtEyVmIUEsCR2DpjAjBCgqnRK5pSBcJpyhMiV1qnCrpaBbpq4lTKmGoL2lNSR9r60chJgZHG4lg5klJHmjZagGp8IoQR8CJPMj2CU8nQIh2apxFeklkh4zmL4msaZBJcEkKSZfLQAjECq0qLys2B6WpAqQkpiUq0YiBqnloxWmlip2JasnB6s6nr2nkqjkqpgfqCpvp/2q/CE8pcWnbyM8J/wnkpx6q9UpvheFGvUoUCjNpsojr6AuLP2wdCZQpF+s9ydynA8hNpz7nBYklCh4oOwqmhpHJ+IboZ+9oz8q/KaAGe2mN6r2m3ilPyPVGyYrJCmNHForFqf+IO4nFqcYLb+lLqiwJPkoySpyqIep2KX2LNMpmKCkqyAqrhxeqeWb96OOnLAgqKY3JXYoRqIHLFon6aNKJb8od6nVLN4hqquso3OrRKQNKwqm9SKxKVKkpiVjJbEXzSb6oHappCHLJfsk+5rDI+qnr6UjmoecoCVdqOogtCIIKOWhyii8m5uoIKpXKDeoD6KDKAklAKSFJXikiqGHqtWsOyQ4omQeF6PbIqadOqY6pgckD5VhKeKWh6iMp7urpKVXJTukA6jSK+AsEhSHJEinXi3el6EZgSK9HyUqY6korC8rwTEmqzKsYihUnZAgQSj0qNeJlqZAqBcoJqk2oCyq2KUBqDcl2yrvIZmpP6BMJloMkSnuJIQlspktGt+mJCPsKRkjOByCquwnnqhcKsIYf6QRqFclNhVRq1qUIiiCrXcj6aV3o44hWSeoppMrESEyKGKbyquSpPGRjq2iqMCjySbdpaif3B1vqtyWpabjqOsjrKh1qeyr6qWSodOn5KpcJ/sjHienpbwYOKlRolgYWyT1p2+h4yUrnu8ntaG3nuYkpyxkrJCVfyhfn+CaYKyxKnScaAr1KqKt9qjrpluotSXjp46n652WpG8sCJr5ocCm7xwmJW4kcJMInRyhdaSPqkgoEStZJCgob6xFJp+k3CWHnaEduKiqosEhvR+9p1cqpab9pNiZgKmkH/0ho6RkJnOpgqAjpS+rBSO9pskkep2yokenTxVFqDskgR8kJoanRphoJMgX3yN+qNSnvySFFsYeGKLaIP8oeKE7oogjKSFhqLIeNBQslpMoYh/gpg==",
+        "o2": "3CMUJA8gH6YGoP+lz5jOJTuSrhpAJSajoy05HiuVpqRlIg0q9Bu3lcmscCCbJ4sbHx12ohKrX6n3JIyUsKXDJQQkeqZKpGsROSUwKqchxCh4JrOo6CPBpDWobq15Jj0mYCLiJ0Gmmi2hIYurxKdlJy+s16ZnpesaoyhlmfqnShuxoNunmaMRJY2c7JrForQg4KjQpogm9xbdpAmpNCjIpGAgo6hcJGCszKA7KjoYUaMtqj6V5SJ5q1G5FqsFqIkre6x7qASj0a1zIw+pxKhzLN0soKfMreuVYSb4HJgsKaXdH/amBZAcq4Sq7SiNLN4Zn40DJEcm06fXn2Qkq50ZJPkjDqM/KDgkeqe8LS4nSyq9pVWoaiZ/pkSkaaifqBUr9KJsp8amuihKpG+ZtiUlqYIlc473mwqnRCg/IfgkoRanph2q0xVzoBCklCH4px8sI6ZOIXmRcymKqCElWZBvKVSvVaN6pdYauihApzUqH6U2FUEs8qMvqK0dxCU9IWgmraK9G9Msg50MgXgZkyV/pPod3aQ5J1MteiKwKLwpLJqEKBYowZDNK12r0iV0KIQpiirPosOsmR7VKUeo2pwhHmEqriY1nTKnThwNKXMpGiB3KJUhSiVzleMlQKkrJKuikJ0wKbIkO45XIzemfiN0KteZjyOuJN8lISWfJZSncyGWnnaktCtRKb0nC41/oQYcxSXnkdQgDSv8I5GdSCWBJXKl4aMOKKOZuavVKVIjXadapFOf4agDqTYgEKSxr/SqoSVvoQ4nIx7MH50ZyqYZJZUeqyiGIqglMyU8pSimsRuHmTqmTKwzK80q3KXooBqgui1apOEYiqkxJZcnZ6wbrWIoJTHsjBGnSSmYntefVyZtp7AlCZ1VpJMZfKYHhG6rL6XqptmdTCpEJIOlTx+3LCikTiXeJrklsCIoKHKoOaJmKzqcphYeqHugv6ncnxMm86kBnxwmbCTqrr6mBx8mpNMYKihhjOodR5Q5oFMqr6QgKsschacnoAwaXKlem5ipKaErofUhpB9looks1KGHoVukDR+bpNaqTKT6lN2okahfJ3CgGCQMpaghaab5JF0jfSbDpwAjdRTSJrqeJ6lQJuyf3SC+pvuhMyRDon4YoKkyJEWdHYoXKmetqafipqCk1yJapecliKCqpB4q5Qhdqxqoj6RbnzEj/qQ3nMqRoammrPCgVylUnSumSakjJEioACkGppUgaKvlq0cd0CRsII4q0aSfKRaZ46hupVcoBCXsJdCqbam8I1addiRhHDIcZxsUo+OlWp9CpFOl3KV6pW6pYyUyqfAhbSiYqy2ksaAVJL0muKRjqHElZacaor4oOyOiqsigpibkJaMowCHnmA==",
+        "o3": "RJzpoZWjQqxSpx0hoyQvJc0lp5NVJsamECwxJFqi1aeuK5UsSihYHVasGiTCKAao+iSBI+KiJK5fJrAkY6bUofwoR6Q4opogXihfHnQkWy4IpS+oeiqcHzakSa+8Kiwo3BQklSAbRCuwKTiqjaKUJfupGxouqOKkByqEpMShIBxylmycQ6B/J1QnJx1LJl6V8KUwrCEgSqhtogao9SU5q9YhWqiYqYatNyRPKQUsN6U5pO+nSifCpVG5iyghn0gaiqL7qFWqG6fqpDOogKlCLBwsISFjsS+ghCNcpXIlJqTSoU6jdyPTqUOhVp9sKaikAiRloB4mRaJqI9kpxJwBJcWhCSBzKK+hFKdALWIjjSlSqrap25W1HgMrhqQoptEru6U+pDmqjShAHHEhviZbqGGnrwgSJA6nJipGqQWl5CjrpiSoGJwLJkeplqYFlhQpepyEnMAfHCjXpeWlDaaxKKKuIqZYqZUgnilhoJAgpx3wIXgl7qXJqvajEhxIpgSgFqTgqDwny6ZqpPoYE6ljqXUlKabKKFMs5yYzKakoMqCiJmMmpSgkK36o/hycoAMo5Sk0pHKrPRsFLFwomKZUJkEqxCVEpcyifJkAHpIhBCIDJfieRCSup2YnjaUgKF0pphOlKUYqJqV3KLOjpSX+JIobISXAKHElbytZKQsgPyOwpdWkAiofJ40knqA5o2eguJlHI8QpYieMpPKklSNFnv+oHiThm2+ke6pwJhGkqBktnXGT76QPpnUYhKCBqW+obR+ypyMnu6G9I1eceSUqnywsNRzyozot7SFBqLOkgSY2pYKXc6qkK38qOCJ8q5yaPi2IJVInEadyFW0p8Kwiqecq3S9Zo9imYSlqqs2eNhQ2D0MkI6hHoDckgKwfnO2oIKYgoeCVrikFIwOooCYYKOihi5+4pSCbgyMfK1+ieah9K4imLqdBp1ulcaUjA4ynMSNSoWQlySQRo9KiryY8rnIVNic4GpyeRyJZqKgo353gLKui36xLFOmkn6w5oeCoTyUzJLSjViVKqNeo1CoMo9CnkyRko22o5B9pIwep96J9phyokKI2m9KRl6tQHNcoRAaqpRkrehZUKEMdYaqzIh8p8yZQnranNCCMneAiGamzmCyrviREJuysMKT/n1Af/irXny6cuqFSmjSl16Wrqc+oMSW8opwkzpEwpSWhD6ozq6Io2iTAIssmFaTiJVGlQSoIIXKj055Op2El8B7voYsoLZsSIfSgoqgLIlEiehiHJPar8qnRGU6orChjH/Skw6bWnGUgjqoFqmqnjqF9qdapGynTqikhCCkdqTmkbKRuJDonBRakIA+SFZ17pFaiACbXpAujDiJVHSYpCSDxoQ==",
+        "o4": "kyeKKF2awCBfIUWkHSGVJgAkFiO+JPCgZyzbpXOhxBHAmxcqHyNqin6tFZm1I7yeOhpbIKaqbKkRpPqjBqXPFXMl3KB1nXAk8SX6JjMsTC2vJFqmziYomSulU7A4JRcotaLQK40pTyuMI92iKqmeJkusX6dJpXQjViSRqJeoMaTOmYeqjaRHKiwhQR63ou2cwqSiqRAPO6bKpdGogCgYp4OhlKLbo8Kqq5XHK6snyKPWqdumwyIhrE25noUkpaAqJak5qYSrnK4znFKoi6IvKHwokCQbrZigGydbpSYsZKBAJ8mpDJ7cqeeiR5ohK8GbU6foJakolqveJmYobx5JFN4TR6gQIO8hu6dcLXkCBCwrCRao6yTlIDEYTacIFKUqyKOIqVCkyiI+HdyZGyQRpPalL6faJfykKyyspNKjpSZepmCnpB3HHkkgu6QnoC0mJA2fIlIkVCVMpw4mB6XXIOisAKieqGuenyoZpvcqlSRmH32XF6LyqNUhEBoEKdsjKpubqQIrwKJOne6nXigpq/Mij6mTI/orfigoJpoo26B8JJQmno+BKq6nfRzyKSUouyvJqQWmy6OMLY4kBKNCE2QsTyjnF5EeGp1yKdEo+BxCJFEdaiQrpBUpMqZJFD8jKKZ/KwMmW6qany6lBpGHKVylUSWKJ0QkBCm/HDqShiSyoOul5CU4Jd8cbRuPKMWoXCdlpKwpOSu3JhMVLia1JnajnKL/Jr+fF6kdJTweyCQlpdIaT6lCnDAoQaRcrdqoviKBqI8rn6VbJp6juqgMEY4luB7GHiQoDyt/pkanYKg5n6+VG6TcLAQo76IdmaiYWS3an3Ah7KaSJPIoOaxkq/Io3zEoqEOmjSp1oe0cHKHLokIgiaFWrBclRKqXJYypw6HKHkMUSCeqJaaodZ5XK9oeBSMwpisqJR6XJ3msPhp1KoelEZ4CqbIktKocpsgi5yVspG0s5SkZqcmkWyb6qYaltyZaDosVqyUBpU4qhKFjLa0kk6mmJF4k4qlRjvmp/yb4I4AlwiQzqOUlACEsor0cUSeYoTqs8afkpKipxaStGrMYfaN8p56SZaJnGnMfoJuApJ0r46CYJf8gYagKnu8oKiHBpg6pXiHlq0on4awRGJKk65rwHwqtP6WXpOmlG5vGnuqnL6R2qDIo5ZdZpgKhJynGm58pMKhtmjUlmag4qiMjYCgGIT0jwKhHKB2oXCuPpG8lGK4tqAeiLycWKGEoHqm8IjshWaeQpnopbyYznCOsVKDvoJalViLuILoptaV9oeqk1KSgpLcPQKKpoUeoXCCypK8ljyY9rOOfbSFDHX4kqZ1Lp88ohqDRjqIpPSo7nhYgGye9GhceFJkzGg==",
+        "o5": "HyGGJQehDSceHNGnzxWNKIKPlCU2oDCnIi0aqlgdSR7HKcwqWSb0puyscyX+nE+fEwD6IpOm2qudoMWnTSIyIFSWFCgVjdAdSJ97KrmjGSU1I/qk6iTLH92lFqjpKaOdTAgEFxapGiwkJzWiyKV7KrOpDSjSHq6JGCn0l3+l1yLopZ2nmKilJ/2cox8cm7SgT6PYpOmejqlapSunECbVqSYmLKLsIwOsDp+jKRcqS6h0rGCcRCTjo3q5mSCKpPslLaeGpd+olq36JYClfKznJIUrQqclspOnPiyUpuwq56OBJJ2VlSYdo++lypfnKMOh/CRRJRQoGKiTHo8iliTpKC8kYaMGIV8g4qOBLfCcWSgPpfeZtZEeoXedX6RsqS4hlBuQl16jmSDrHxwYZSXmqPspGauMpBwdwCQvq36qxSATJEiqCCYnpWMoYaNzp98lXZtgKC4ocSVGpackIJTvHner+6YAoNql4imlp1QpCSHGpTEoRyIGp4QkcRVpkcOkgqG4pAokgqJEpHekNRxDpR6nAKYhJAAsxil2oLcmcygAJVsd/yCSKkGlqaRJKmUg2CnHpSepfKgGLBemYJWLpT8r3Bd1Hxue3KYpKnYmWSEGJi8mpSj0pfAkaKQxJnYpPhgCJkooJqXcqBKp1paQLNMeNSvioHGhECTcJkaNJioqofGnKSSuIhKoYafeGR8ksCpCnWolLixAmtCZt6I5pecgLCTrKPylbKsdJ/2fkaYBmIIaDqp+IKyXh6XfrximBqCon6McUCFFphqnraRSnoSdMyZfpNwnJyTSplelaSC0IW6ghghGJxEso6OjJcGlgS25nLEhCKZ2Jj0iAKlzrcAp+i0GpF2jdhEGJDYl9qbqqS8mRSXupqkkq6chKJCqHKFKFQakQigHnQer8yfmJzEhGiQEp3AocSGTF40gOqGiKo6iEBj0pmomFqnEKI8g3qaSpJooJZwZqeQicyfYq4SoAqQ6JCaZ7iW/mKMpQKh8K42gMKVMKjein6ZhJD6sEyT+KMOcpiRKq9SpRZhjrNSmR6pCqTykZKYlC7akQKYLHYqgPCCTqfGSRahQGQUmKiCgot8taKiopb4kFh//IVKktSm4qTcYEybDpx4nJ6sBoq2k7qjKljqyo5u2nYaeYiXyo5WZ0R2WEkcmNI0lpNijGJ5WojYoqKkLIWMmK6mXpDKldyjNJVKNSqJjIsamwCr+GNUjaaoBIpyXPCO9pP4naabgKRWmCKXQojMka6GwKBqp1Kd9pUKjhKJtIdClCqplG2enayRxowucOqk2omOqSSkEJAUq1yq5qMuhWKEpmaIlK6DlJ7GktqBEopQr1SmqngYkNiNxIJonoyJtnw==",
+        "o6": "/yFMqbsblaYDpE6lsinbIHUlyyqepe4ZUC4DqGokVRuOKE0tYCluoderux9qKAKh2qdGqLKmkqvOICkb0yvJIbEqbiVDqL2nHSHiJQ+kXC3Ypr2m4yKGoZWpzK4jK9Ih1aQvIm4dLCmrIc+jtygHJhus+iQLGNkn0yuYp5EcwCclHeOfZaNEnyAo+ifeJdMkp6hTqv6mi6c0pBegd6cxqI0k8qIwKGSqYCcHGnApcKHJqTMWDyyCogS5bRoFHQ+n4qG0qBelc6sjpHekw6qXHn0o4SHqsE8bgiakqp0oPqRHnHqm8SSZpcygb6m+JdClryASLBCf3yKGmfUoLZtBKIQl/KcPK+ehOqZnLTclIyOKpn0gWBwBHuIob6nVpbQpv5ymo/WpVikEKLAhPqZ8oxWaTKP4nV+cmCX3o0ipOS2upKmp1KBOGfClrJ4rpaMoxqqeK58qIifqnLyiSBiXqNqtOwg+rOIjrC1DpQombJ0sp2aZeiAFqKapXBtOpoClqaafoIkfvZpupN4mfamRIIAoBKk2KJwkECsbKCAoUZ0MLI0UKyknLEOkXyTPKDYkiCpYotObqiduLI2lbawTHFApFigTHzEs1RY2Jo6lHqpfKC8mBipqrCcjbyQ6JlAqgCSkKRAhiaosJC+mWSlaKAQhqypNoFMnOisHqOadJyyAmtykiBYdJNYZsahyrcusAB8EKZ0dASYTpLwjlKR4oz8M8RZRLFqop6qeKz6glRWAJvSkQ6gUJYcA7CMkqwWgIKRXoUajnJ8nIXKhGKQVIWspHyhDpIopLKSrplSq5iYHHh2p1hwCKdct06P5JI2cZC3JJ/EqkJG+JXoqr6MXqDgsMyzUIVWfLysNqMglGShYpQUiaZ0VpZEhPaqFJ36m0qgHJI2orCidpqup8aTRIj2h+JzZqQEkDBGSLL+fraX7JHMo5aZKoQAsHiLlol+qTaAgE1aMYSjxqwQgtScyqq2s8aMfqSYaFyw6qk8oJSysLDqkBaYVIpYkiqa9HweqtyUJKhmlLifBqfikNiagnbkcfCc2qzagaaglIIaqtK1xqVWlX6vSqjKn6qCKpAEiXSVqnRYsZ5nsJh+d1afam0ImRCW8jZ+lhSG1pFgsSKnPKsajg6NDJlatyqCpo+6mhaGYpcmiCZzNoOyigRiyqMglISGSqdkrCKhyobEhlqynpFMqRiT9GC4mK54LKDQkTiVlJw0ZGh9uJGWaASfaplIoYprLlpwgyKJiFVAgBZrToiCs9htQrO6Sy6JroI2otCXxpQSklSXgIAmnHqYEpzOpVSV4KSkpsC2Uqe8j76m0mzAqECY5FTKU5ShvqJskZCY2qVGkEyVREyMbZqYcJg==",
+        "o7": "cyKAn7AfgqWYo7SoBRJcKJMoWydfnRadpCydqSAmTSVTKcEuailvIUStaChoJ4ckSao5qaypBKwfn/GUlCdJGfMg7aFkpwocSxuxKZ8lsyXtGEwgsijiJDYYO69KJP8kRZwGJPEZSikVngQk6BizmCGlISlnmGWgKChhoiScJyiUpCusm6i/ItMjzCL0pQqds6vtqlkbXacrpOefmqBgpB8oTKi2H3qpQysBkg4k4aUXrLikLCPznTi5niHKokaH8R6upLmp9qCSpsOlraqIn7ehdyZysIQevCj+qSwnu6PYniGm3yhzqWokJaQLKeekByVGHqYYfaN0obcpTSDyKbIoA5m2K5qgWqhjLWUldSPEpp+k+iYdE10pearEHOYoeKW3pJ2mdineIm6isRcDlFanmKncqoGlhCv8ovimTi2lo3an9xy3JfmZCyjaqL8ohKgcJiss3CQGn6WYeqMLJSmuiaC/qbgmcy3oox8oNxPrpN8kjhV5qjusxqblIu2cFBjBqQEqCSBtoZ4kl6xQJaomQqQ3IyophCy4JFwqNhzzKJknoCZnLGql0JBfHx0pDCToqHSgTxzILGso/qjfpAQrySZGorwj2SCAF+EVaakCJ6ongyYFqhUmPSkzI9Mg1COnILIkBqmOJoSp/SgkJbOSFCn0pKkmnCtdp0mjWCrKqd2g5KTRoZUeQaS6q7St+BhwJjwmxCSuIMUeraJyJukknJvSKoWmIaxMK0inySCFKYgdIKAzJBkhxalYqCCkg6Mjn/wj8aN3JWQa2CUfoOcqtSnKofArZCIyqJsff6XPnkWoqiW9KKUt/B/dpgOpYS3PJvwkXyETHHMsG6ktrHkqWDBTqFKkXys0qs4ojKijo/AZGoDKoHGnWadwKB0RU6Vmk++arSt0JBKsI6a4JHmgTqRvqZwfMyAwK1KkbKHeI04n7aVepFKcuKgcJgemPZBCoTQa8CitqWAeHyYCq1GrBJxEIF0j6yj+n0EpSyizKhkkoKlRHKAmzKVHoN6o9Sh+JYikliMVpD4g9KEPqTcd3CUQqLKp3ai1pfeshKztqRypB6RNrFsmPamRqa0kBCSSpi0qfabWHreWP6iAB3wkPBn9nmeot6Ggp1wqLq3hJ5eoYiF5mOesbxT3paajJibHorWjOyb0pUcoa6EuqJGeeisKpRwn4qQhqPGgn6wopLcpHybJmEMmbxrhJCukqSiNKOSZ7KMbohSkOCS3pw4oHiOXJZQkuBgaIDshiaZOIsCrghMvpR2mr6TWHQuYbaKBq8mrsSGflxYiSaiEqeOrNCgtGDcikyzvqICbJaNsJHAmfh46m7MdcCQzqPgZkCfVonGk+Z2xpvAeGyWlmA==",
+        "o8": "RCeXHhqg6aSKpW6kYZPDJa0pRar9o50mdxvaoj4XBiQ+KQgsb51lpP6sGJyjJrSqZhMhosoQx6lRo3sho4yZoFYYqqdNpycjCKIvKPYkIaa+Kx6lj5oYogAmK6yLpwYpOaopJlImDCy+IKakkqgMnOGuWaUZIgue7igon08l0yVjpW2pdJ93JNwpSp8/lBqgGiJhqj+mT6dfpZuhUCahph4jbScEpZ+paScGJs0s3Jk1JL8o1CZ1p2G5zKfRqHEk2SRCrGqss6yCouKeR6uLJoUnv6OgrH0hSJImoO4l96bpJVQb0aE0GTol6p1zJxYk5qEeH4EliaW6oY4aip/7nVkmlaaEK1Qk3qRsLQ4n/ibdFKestZunm8yakKAEqZ8reyBNJOuoJyoVJfckBKJOG+ujIqVMpe6fOSuSqYmlpigEJLijFQ/5JQ+akiQGrMonnpxZJdQoVyoipjoqzhOUJyiy5R3vp8Kc7Cb0GU+JC6EXpYgmLKAtovmnyCf+nQkcVpgDoK4ql6REKUCnPZlhpkegqahOnOsqJSlWlTotbqYfo10iwJ0ZKfWl5KhQpAUs7igcH0qsD6Z0LnGefqHDq2Us8Ba7ouqo8qY+Gl4dAB5KKGMmAqniJ2chiqoMHO+YHKH5K/4eQ6l+pNqqKBzfK56hTaXbop0nhCS+J+WctCZ0psupeCoZJYWh4aL+IXucUiQwIDwq8KAwqZ2kLin1JAWkEpcSpLikQagqKlSgMyLsLAMouqThIIsegxsUrB6sHSBwHUwnlKIdFBEgoJUgpWepMJWJID+gkKJWqPeo0iETpFSdf6CJKgYrpqc9KVckaS0KJb4RLaKUBRkpOqLcqbYsNDNyqiCl9CjDp3wpiiYFqI4hOKctHfwg7JsBoAiqZZmxqSMl2ScfGi2lrh8WKFYl4aEzkLUoUiIuKHqbfSYaKa8lCKMXqiolFKa1KoKkxR17qA0jeZ9FrOilRCFgrBEg6h/+nS4mnSm+qVwrUiWCLCukfKXIIQil+aktpbSoJhkkI4gT/Rq9pHIoUh1roqckNiaVqg2g+KFJKNCli6fvpxEoSSYupbQnBKeYFd6gmiHopAMqQSj3m62ouaI6FmogHioRmuunop0bpPOaxaxWJdsjCyN1KFaoOapGpheqdp1+jkmewZhZp84oj53do/4LJKqCnZ0l/BnPHT6aeqpYpaAhqiDdI1abKKWgJGKosZ2KHqWn76eanqOg7yJjoZMkPB0kJGEmkKpVp58fzqMLJ5Kq6BsapZOqbSQzHwAmdpj+pcel06Z+o04kkSQ1Hh6oGJpVEsqlpym6o1uqSBsYJiWh9pwCndIoaqcmJISkhyYUp2+Zj5zcpLgjASQiqQ=="
+      }
+    },
+    "current_cloud_and_av_required": true
+  },
+  "verification": {
+    "full_local_tests": 380,
+    "passed": true,
+    "pair_max": 0.881290078163147,
+    "pair_limit": 0.9,
+    "new_body_part_regressions": 2
+  },
+  "footwear_screen_limit": "An additional visually empty lake rose from0.481 to0.511 and is conservatively refused; no threshold or previous positive labels were changed."
+}

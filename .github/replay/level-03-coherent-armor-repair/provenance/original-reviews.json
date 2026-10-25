@@ -1,0 +1,55 @@
+{
+  "reviewed_at": "2026-10-25T06:24:53.270303+00:00",
+  "scope": "Direct full-resolution still inspection only; no rendered-media or release approval",
+  "images": [
+    {
+      "file": "ladder-img-A-1/o2-alt1.png",
+      "image_sha256": "0f0d71860eeeed6c5ee447fc53ed94fa4d653e8f9029909784c9fd7993527dd1",
+      "decision": "pass",
+      "reason": "Clearly legible ribbed shell on sediment with a coherent warm focal light; illustrative shell option is readable.",
+      "run_id": 40167081277,
+      "source_sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc"
+    },
+    {
+      "file": "ladder-img-A-1/o2.png",
+      "image_sha256": "71a2c3fa93b5827fab33deba5258c67ae3d462ea7b5074749510d236096a404e",
+      "decision": "pass",
+      "reason": "Clearly legible ribbed shell on sediment with a coherent warm focal light; illustrative shell option is readable.",
+      "run_id": 40167081277,
+      "source_sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc"
+    },
+    {
+      "file": "ladder-img-A-2/o3-alt1.png",
+      "image_sha256": "af953be131c368798f3b68ece515bde6ba4b7e01e6576e7795c127232c7b5d3b",
+      "decision": "hold",
+      "reason": "Both takes add a vertebrate fish-like face and frontal mouth to a purported trilobite; replace with a coherent dorsal arthropod view.",
+      "run_id": 40167081277,
+      "source_sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc"
+    },
+    {
+      "file": "ladder-img-A-2/o3.png",
+      "image_sha256": "06f7d58850c4eb2ab93685545fbf00987624bd473eb883694b2516a624c39505",
+      "decision": "hold",
+      "reason": "Both takes add a vertebrate fish-like face and frontal mouth to a purported trilobite; replace with a coherent dorsal arthropod view.",
+      "run_id": 40167081277,
+      "source_sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc"
+    },
+    {
+      "file": "ladder-img-A-6/o7-alt1.png",
+      "image_sha256": "f310ee2f8b235555294335daca96cce13757c1e620501390fb24d280dd55870f",
+      "decision": "hold",
+      "reason": "A crocodilian scaly head/back with pointed teeth in the alternate does not depict placoderm head/trunk plates.",
+      "run_id": 40167081277,
+      "source_sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc"
+    },
+    {
+      "file": "ladder-img-A-6/o7.png",
+      "image_sha256": "86858b1deaaf91da8026a193d1f0b9df8f719c54efbab7ec041a81de65e7f49a",
+      "decision": "hold",
+      "reason": "A crocodilian scaly head/back with pointed teeth in the alternate does not depict placoderm head/trunk plates.",
+      "run_id": 40167081277,
+      "source_sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc"
+    }
+  ],
+  "release_approval": false
+}

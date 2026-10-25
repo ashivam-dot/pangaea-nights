@@ -133,12 +133,16 @@ def embed(img: Image.Image) -> np.ndarray:
 # check is a two-sided contrast: deep-time scene types against people. On 31 empty ladder takes it scored at most 0.38;
 # on 14 Commons photos of people (portraits, hikers, silhouettes, beach figures) at least 0.64. The face and hand labels
 # catch a stray body part: hands/faces pasted into 18 empty takes were caught 16/18 with them, 13/18 without.
+# The exact survive03 modern-shoes failure scored 0.465 with the earlier labels. Adding only
+# positive footwear labels raises it to 0.543 at the same 0.50 ceiling; 23 reviewed clean
+# controls retain their passing classification. Existing human-label mass can only increase.
 FIGURE_NO = ["an empty landscape", "a prehistoric animal", "a dramatic sky with fire, smoke or lightning",
              "a cave, burrow or hollow tree", "the sea, a shore or underwater", "plants, a forest or roots",
              "a volcano or lava"]
 FIGURE_YES = ["a landscape with a person in it", "a human silhouette", "a person", "people",
               "a small figure of a person in the distance", "a diver or a swimmer", "a human face",
-              "a human hand or arm"]
+              "a human hand or arm", "human legs and feet wearing modern shoes in a first-person view",
+              "a person's boots in the foreground"]
 FIGURE_LIMIT = 0.50
 _figure_emb = None
 

@@ -1,0 +1,72 @@
+{
+  "reviewed_at": "2026-10-25T07:01:59.988908+00:00",
+  "images": [
+    {
+      "file": "art-v1/o1-full-t0.png",
+      "image_sha256": "0e8ca3498a15b1da63d1daab4255354ec7e266b14f6e8112a1a02b0cb3a824ba",
+      "decision": "pass",
+      "reason": "Direct full-resolution view: coherent porous marine sponge, or dorsal segmented trilobite-like exoskeleton without the refused frontal vertebrate face. Natural material, no person or lettering, clear selected subject."
+    },
+    {
+      "file": "art-v1/o1-full-t1.png",
+      "image_sha256": "5188a1314bf773caf9b502cbcb8addf72de2d32838bab43e4b78374b32f24115",
+      "decision": "pass",
+      "reason": "Direct full-resolution view: coherent porous marine sponge, or dorsal segmented trilobite-like exoskeleton without the refused frontal vertebrate face. Natural material, no person or lettering, clear selected subject."
+    },
+    {
+      "file": "art-v1/o3-full-t0.png",
+      "image_sha256": "df113ddce6c759c572ccaf2566b07e532cea70792a2a7048ef395be9b62685b1",
+      "decision": "pass",
+      "reason": "Direct full-resolution view: coherent porous marine sponge, or dorsal segmented trilobite-like exoskeleton without the refused frontal vertebrate face. Natural material, no person or lettering, clear selected subject."
+    },
+    {
+      "file": "art-v1/o3-full-t2.png",
+      "image_sha256": "71a92d2c9b20ffc10fd6894ef8b86c45c5ca33a65f0b13ae6ef6d3442e89dc48",
+      "decision": "pass",
+      "reason": "Direct full-resolution view: coherent porous marine sponge, or dorsal segmented trilobite-like exoskeleton without the refused frontal vertebrate face. Natural material, no person or lettering, clear selected subject."
+    },
+    {
+      "file": "art-v2/o6-full-t0.png",
+      "image_sha256": "6ddc240b39cd98193d204d61882e195d254cf737004e07b184fb903428497e60",
+      "decision": "pass",
+      "reason": "Direct full-resolution view shows a coherent single early shark illustration with mostly smooth skin, pectoral/dorsal fins and a forked tail. No bony placoderm head plates, unplanned humans or lettering; corresponds to the corrected lightly armored shark option."
+    },
+    {
+      "file": "art-v2/o6-full-t1.png",
+      "image_sha256": "51263ce929a88b78deafcaedfe1cc579895f6adb8d01e10d78c2754cfa8317e1",
+      "decision": "pass",
+      "reason": "Direct full-resolution view shows a coherent single early shark illustration with mostly smooth skin, pectoral/dorsal fins and a forked tail. No bony placoderm head plates, unplanned humans or lettering; corresponds to the corrected lightly armored shark option."
+    },
+    {
+      "file": "art-v4/o4-full-t0.png",
+      "image_sha256": "ac3d515df81e4572b50439ff5b6a918398a0590580320cf739183fdebe4443a4",
+      "decision": "pass",
+      "reason": "A clear single flat spiral shell without the former suspended conical body and long human-like dangling appendages; empty ammonoid-shell option is readable."
+    },
+    {
+      "file": "art-v4/o4-full-t1.png",
+      "image_sha256": "43a57d0bc26e5b6eb03a0951904392453c7d1d83b65cf5cb4256f4b53b1a92fe",
+      "decision": "pass",
+      "reason": "A clear single flat spiral shell without the former suspended conical body and long human-like dangling appendages; empty ammonoid-shell option is readable."
+    },
+    {
+      "file": "art-v6/o7-full-t0.png",
+      "image_sha256": "10c9e0f3ced8c62946c7ec20c449a86c31bcd549ce1da84c4d43813a057fec73",
+      "decision": "pass",
+      "reason": "A single blunt-headed fish has visibly seamed broad smooth head and shoulder plates, a closed mouth and coherent fins; the front-armor choice is legible. No crocodilian snout, reptilian scales or pointed tooth row. This is a painterly reconstruction, not a precise claim about its unknown posterior anatomy."
+    },
+    {
+      "file": "art-v7/o5-full-t3.png",
+      "image_sha256": "fdb285cb4995dee553608183ddeb67782c30c520b49f7ae281a922d1d352bb92",
+      "decision": "pass",
+      "reason": "Single empty gently tapered straight cone shell lies naturally on the sediment, with a clear open aperture and ridged wall; no limbs, vertebrate face, human artifact or lettering. Current ladder QA passes on this exact t3."
+    },
+    {
+      "file": "art-v8/o8-full-t0.png",
+      "image_sha256": "384e02e4a87c71f40e037835e683604e0f41c65a3051729616f116a8414c21d2",
+      "decision": "pass",
+      "reason": "A single loose cluster of clearly translucent bubbles floats above bare sediment. The deliberately nonprotective bubble-coat joke is visible with no animal, jaws, body parts or lettering. Current ordinary picture QA passes on this exact take."
+    }
+  ],
+  "release_approval": false
+}

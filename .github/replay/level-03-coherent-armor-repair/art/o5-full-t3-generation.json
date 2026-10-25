@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "2dfb5c1416589586933800db1fd8d35013a09242",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "A single long empty straight nautiloid shell rests diagonally across dark pale pebbles on a Devonian seafloor. The shell is one narrow smooth gently tapered ivory cone, thick at the open lower-left end and pointed at the upper-right tip. Fine natural growth rings cross its surface. The large opening is hollow and empty. Warm gold side light reveals the entire straight shell clearly against inky navy water, macro natural-history illustration, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 236986032
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "level-03-coherent-armor-repair/art/o5-full-t3-raw.png",
+    "sha256": "11461313daff3b501c90beb15028e7d77adbfcb1b8a1f97992e7c35d77e98436"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 61.7
+}

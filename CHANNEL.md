@@ -177,3 +177,10 @@ A declared closing reprise may use the opening image or the winning-choice image
 Local generated reprises retain the original slot's seed and must match that slot's exact image, prompt,
 take, exposure and generation receipt; they never claim a new ending take. The final ending still receives
 current picture and complete audiovisual checks.
+
+The figure contrast also includes human legs/feet and foreground boots after the actual survive03 lake
+image escaped the earlier body-part labels. Only positive human labels were added; the existing 0.50 ceiling
+and all earlier labels stay. Source-bound CLIP embeddings catch that exact failure and preserve 23 directly
+reviewed empty/animal controls. This remains an image screen; full audiovisual review is mandatory.
+An additional empty-lake take at 0.481 rose to 0.511 and is conservatively held; another was already
+over the ceiling. Ordinary bounded spares remain necessary, and a later lake take passes at 0.468.

@@ -1,0 +1,16 @@
+{
+  "source": {
+    "title": "Cladoselache",
+    "revid": 1381246450,
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1381246450",
+    "source_sentence": "Placoid scales (denticles) were present in Cladoselache, but they are tiny and bluntly conical structures which are absent from much of the body.",
+    "referenced_primary_paper": "Woodward & White (1938), The dermal tubercles of the Upper Devonian shark, Cladoselache; doi:10.1080/00222933808526863",
+    "primary_full_text_reviewed": false
+  },
+  "changes": {
+    "option6": "Remove rough-as-sandpaper and rough scaled flank; retain a lightly armored early shark contrast.",
+    "option8": "Use jaws rather than teeth for the toothless bony-bladed placoderm."
+  },
+  "unchanged": "Answer seven, armor payoff, qualified verdict, narrator identity and all quality gates",
+  "release_approval": false
+}

@@ -1,0 +1,263 @@
+{
+  "schema": 1,
+  "premise": "level_1_8-03",
+  "cached_only": true,
+  "source": {
+    "run_id": 40167081277,
+    "sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc",
+    "key": "2026-10-25-level_1_8-03"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "level-03-coherent-armor-repair/art/o1-full-t0.png",
+        "sha256": "0e8ca3498a15b1da63d1daab4255354ec7e266b14f6e8112a1a02b0cb3a824ba",
+        "model": "klein4b-q8-768",
+        "prompt": "A broad irregular ochre-yellow marine sponge spreads over a small grey stone shelf on the seafloor, a low asymmetrical mound with thousands of natural small pores and soft uneven folds. The sponge occupies the central half of the frame. A wide soft amber shaft illuminates its textured surface and nearby pale sediment clearly. Navy Devonian seawater fills the upper background with tiny suspended particles. Macro natural-history photograph of a simple primitive porous marine animal, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 58.4,
+          "raw_p99": 227.0,
+          "gamma": 0.457,
+          "spread": 192.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o1-full-t0-generation.json",
+          "sha256": "f817e4983c9a3858f93152fce14b80dd9e0090ff451c5b31726863103b4d951f"
+        }
+      },
+      {
+        "file": "level-03-coherent-armor-repair/art/o1-full-t1.png",
+        "sha256": "5188a1314bf773caf9b502cbcb8addf72de2d32838bab43e4b78374b32f24115",
+        "model": "klein4b-q8-768",
+        "prompt": "A broad irregular ochre-yellow marine sponge spreads over a small grey stone shelf on the seafloor, a low asymmetrical mound with thousands of natural small pores and soft uneven folds. The sponge occupies the central half of the frame. A wide soft amber shaft illuminates its textured surface and nearby pale sediment clearly. Navy Devonian seawater fills the upper background with tiny suspended particles. Macro natural-history photograph of a simple primitive porous marine animal, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 58.5,
+          "raw_p99": 226.0,
+          "gamma": 0.458,
+          "spread": 171.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o1-full-t1-generation.json",
+          "sha256": "a67e2ab76f5be72fb353cdd0c4f7b3b9a9d50ce76f7cdcc61c39b2fa13f5f7e5"
+        }
+      }
+    ],
+    "o2": [
+      {
+        "file": "level-03-coherent-armor-repair/art/o2.png",
+        "sha256": "71a2c3fa93b5827fab33deba5258c67ae3d462ea7b5074749510d236096a404e",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 21.6,
+          "raw_p99": 225.0,
+          "gamma": 0.3,
+          "spread": 151.0
+        },
+        "artifact_id": 12589286119,
+        "prompt": "A ribbed brachiopod shell lying open on dark sediment, gold light catching its ridges, tiny particles drifting through the navy water, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "level-03-coherent-armor-repair/art/o2-alt1.png",
+        "sha256": "0f0d71860eeeed6c5ee447fc53ed94fa4d653e8f9029909784c9fd7993527dd1",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 21.1,
+          "raw_p99": 192.0,
+          "gamma": 0.3,
+          "spread": 159.0
+        },
+        "artifact_id": 12589286119,
+        "prompt": "A ribbed brachiopod shell lying open on dark sediment, gold light catching its ridges, tiny particles drifting through the navy water, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o3": [
+      {
+        "file": "level-03-coherent-armor-repair/art/o3-full-t0.png",
+        "sha256": "df113ddce6c759c572ccaf2566b07e532cea70792a2a7048ef395be9b62685b1",
+        "model": "klein4b-q8-768",
+        "prompt": "An oblique overhead view of a spiny Devonian trilobite resting flat on a dark stone ledge. Its wide crescent cephalon shield, narrow raised axial lobe, two broad pleural lobes and many curved transverse thoracic segments are clearly visible from above. Paired tiny lateral compound eyes sit on the head shield. Short defensive spines fringe the shell. The mouth and walking limbs are hidden underneath its body. An anatomically coherent fossil arthropod, detailed natural shell texture, warm gold rim light from one shaft, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. scientific reconstruction: a flattened oval segmented exoskeleton with a central axial lobe and two side pleural lobes, a broad head shield and a tail shield; slightly elevated three-quarter view makes the three longitudinal lobes readable. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 34.7,
+          "raw_p99": 228.0,
+          "gamma": 0.338,
+          "spread": 174.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o3-full-t0-generation.json",
+          "sha256": "a7536032000301dc8336d4af4eb6bfd5abbc77e5c2d3512bfb20a89fd960bf94"
+        }
+      },
+      {
+        "file": "level-03-coherent-armor-repair/art/o3-full-t2.png",
+        "sha256": "71a92d2c9b20ffc10fd6894ef8b86c45c5ca33a65f0b13ae6ef6d3442e89dc48",
+        "model": "klein4b-q8-768",
+        "prompt": "An oblique overhead view of a spiny Devonian trilobite resting flat on a dark stone ledge. Its wide crescent cephalon shield, narrow raised axial lobe, two broad pleural lobes and many curved transverse thoracic segments are clearly visible from above. Paired tiny lateral compound eyes sit on the head shield. Short defensive spines fringe the shell. The mouth and walking limbs are hidden underneath its body. An anatomically coherent fossil arthropod, detailed natural shell texture, warm gold rim light from one shaft, inky navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. scientific reconstruction: a flattened oval segmented exoskeleton with a central axial lobe and two side pleural lobes, a broad head shield and a tail shield; slightly elevated three-quarter view makes the three longitudinal lobes readable. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 2,
+        "exposure": {
+          "raw_mean": 40.4,
+          "raw_p99": 219.0,
+          "gamma": 0.366,
+          "spread": 184.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o3-full-t2-generation.json",
+          "sha256": "6edfb6807c2d1bfca9db92095d775a2c7be5db6263a4ce4a6f1075fd76f16ca6"
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "level-03-coherent-armor-repair/art/o4-full-t0.png",
+        "sha256": "ac3d515df81e4572b50439ff5b6a918398a0590580320cf739183fdebe4443a4",
+        "model": "klein4b-q8-768",
+        "prompt": "A single empty Devonian ammonoid shell resting on dark pebbles, close side view with the whole tightly coiled flat spiral clearly visible. Its round disk-shaped cream shell has a natural central spiral and a few subtle brown bands around the whorls, with one small empty opening at the lower right edge. Warm gold side light reveals the entire shell and nearby sediment clearly. Tiny suspended particles in inky navy open Devonian seawater at night, macro natural-history view, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 41.3,
+          "raw_p99": 247.2,
+          "gamma": 0.37,
+          "spread": 209.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o4-full-t0-generation.json",
+          "sha256": "a651c9390523742e62b51b5494a130cf491bc4329758ebdda386639cf19b2475"
+        }
+      },
+      {
+        "file": "level-03-coherent-armor-repair/art/o4-full-t1.png",
+        "sha256": "43a57d0bc26e5b6eb03a0951904392453c7d1d83b65cf5cb4256f4b53b1a92fe",
+        "model": "klein4b-q8-768",
+        "prompt": "A single empty Devonian ammonoid shell resting on dark pebbles, close side view with the whole tightly coiled flat spiral clearly visible. Its round disk-shaped cream shell has a natural central spiral and a few subtle brown bands around the whorls, with one small empty opening at the lower right edge. Warm gold side light reveals the entire shell and nearby sediment clearly. Tiny suspended particles in inky navy open Devonian seawater at night, macro natural-history view, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 41.6,
+          "raw_p99": 243.0,
+          "gamma": 0.372,
+          "spread": 221.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o4-full-t1-generation.json",
+          "sha256": "a09a4cded4e82c469ceeaa2a926ea6d520fc385009f7e117fdd21fc39f1cde7e"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "level-03-coherent-armor-repair/art/o5-full-t3.png",
+        "sha256": "fdb285cb4995dee553608183ddeb67782c30c520b49f7ae281a922d1d352bb92",
+        "model": "klein4b-q8-768",
+        "prompt": "A single long empty straight nautiloid shell rests diagonally across dark pale pebbles on a Devonian seafloor. The shell is one narrow smooth gently tapered ivory cone, thick at the open lower-left end and pointed at the upper-right tip. Fine natural growth rings cross its surface. The large opening is hollow and empty. Warm gold side light reveals the entire straight shell clearly against inky navy water, macro natural-history illustration, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 25.9,
+          "raw_p99": 243.0,
+          "gamma": 0.3,
+          "spread": 176.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o5-full-t3-generation.json",
+          "sha256": "4f41e7b43af080c84b8afe3ec93718e73bd554e5169fc06f45ea98874392fd80"
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "level-03-coherent-armor-repair/art/o6-full-t0.png",
+        "sha256": "6ddc240b39cd98193d204d61882e195d254cf737004e07b184fb903428497e60",
+        "model": "klein4b-q8-768",
+        "prompt": "A side view of the early shark Cladoselache swimming horizontally above a Devonian seafloor, streamlined dark slate body with mostly smooth skin, broad pectoral fins and a deeply forked tail. Its head is a simple natural shark profile without bony armor plates. A wide soft amber shaft reveals the flank and fin clearly, navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 31.4,
+          "raw_p99": 182.0,
+          "gamma": 0.322,
+          "spread": 141.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o6-full-t0-generation.json",
+          "sha256": "b797970115c60f18b4140dd373fd586dc58acef3bd82c85e01decd34bfbab5ea"
+        }
+      },
+      {
+        "file": "level-03-coherent-armor-repair/art/o6-full-t1.png",
+        "sha256": "51263ce929a88b78deafcaedfe1cc579895f6adb8d01e10d78c2754cfa8317e1",
+        "model": "klein4b-q8-768",
+        "prompt": "A side view of the early shark Cladoselache swimming horizontally above a Devonian seafloor, streamlined dark slate body with mostly smooth skin, broad pectoral fins and a deeply forked tail. Its head is a simple natural shark profile without bony armor plates. A wide soft amber shaft reveals the flank and fin clearly, navy open Devonian sea at night, macro lens with heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 36.5,
+          "raw_p99": 211.0,
+          "gamma": 0.346,
+          "spread": 134.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o6-full-t1-generation.json",
+          "sha256": "a4e108738eb8833c0d7c15ac2b7edb0ca1ea50a5020d50797ce4b9623bd0dcd1"
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "level-03-coherent-armor-repair/art/o7-full-t0.png",
+        "sha256": "10c9e0f3ced8c62946c7ec20c449a86c31bcd549ce1da84c4d43813a057fec73",
+        "model": "klein4b-q8-768",
+        "prompt": "A single ancient Devonian placoderm fish swimming horizontally from right to left above pale seafloor sediment, clear side profile of the complete fish. Its wide blunt head and front trunk are enclosed in only a few large smooth grey dermal bone plates with long seams. A narrow dark grey unarmored hindbody tapers back into a vertical fish tail fin, with small pectoral fins projecting at the sides. The closed mouth forms a short blunt bony beak beneath the rounded head shield. Warm gold side light clearly reveals the head plates and solid fish body, inky navy water, macro natural-history reconstruction, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 34.1,
+          "raw_p99": 187.0,
+          "gamma": 0.335,
+          "spread": 146.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o7-full-t0-generation.json",
+          "sha256": "e801c285a8f2d39e454fd1e25afc44de0c5c5b7e77c5a480a599793742c6abaf"
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "level-03-coherent-armor-repair/art/o8-full-t0.png",
+        "sha256": "384e02e4a87c71f40e037835e683604e0f41c65a3051729616f116a8414c21d2",
+        "model": "klein4b-q8-768",
+        "prompt": "A loose cluster of large transparent air bubbles rises slowly above a dark rocky Devonian seafloor. Each round bubble has a clear empty interior and a thin silver-gold reflective rim. The bubbles overlap naturally but remain separate spheres, with navy water visible through them. Warm gold side light illuminates the bubbles and pale sediment below clearly, macro natural-history photograph, inky navy open water at night, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 20.9,
+          "raw_p99": 167.0,
+          "gamma": 0.3,
+          "spread": 156.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o8-full-t0-generation.json",
+          "sha256": "3fae1246d1210143ae495db45ee815fb0306946d00ee740e78db6797d8985bbe"
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "level-03-coherent-armor-repair/art/o7-full-t0.png",
+        "sha256": "10c9e0f3ced8c62946c7ec20c449a86c31bcd549ce1da84c4d43813a057fec73",
+        "model": "klein4b-q8-768",
+        "prompt": "A single ancient Devonian placoderm fish swimming horizontally from right to left above pale seafloor sediment, clear side profile of the complete fish. Its wide blunt head and front trunk are enclosed in only a few large smooth grey dermal bone plates with long seams. A narrow dark grey unarmored hindbody tapers back into a vertical fish tail fin, with small pectoral fins projecting at the sides. The closed mouth forms a short blunt bony beak beneath the rounded head shield. Warm gold side light clearly reveals the head plates and solid fish body, inky navy water, macro natural-history reconstruction, heavy vignette, photoreal painterly deep-time scene, vertical composition, one warm focal light. Inky navy open water, rim-lit from below by one gold shaft, macro lens with heavy vignette. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 34.1,
+          "raw_p99": 187.0,
+          "gamma": 0.335,
+          "spread": 146.0
+        },
+        "generation": {
+          "file": "level-03-coherent-armor-repair/art/o7-full-t0-generation.json",
+          "sha256": "e801c285a8f2d39e454fd1e25afc44de0c5c5b7e77c5a480a599793742c6abaf"
+        },
+        "source_image": "o7"
+      }
+    ]
+  }
+}

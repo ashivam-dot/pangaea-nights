@@ -1,0 +1,181 @@
+{
+  "extra_labels": [
+    "human legs and feet wearing modern shoes in a first-person view",
+    "a person's boots in the foreground"
+  ],
+  "unchanged_limit": 0.5,
+  "rows": [
+    {
+      "file": "evidence/pangaea-nights/survive_night-03-40167406784/incremental/ladder-img-A-4/o5.png",
+      "sha256": "3055bbb6266fe2e8f66b025b35341e86a362b6cfbc9199649e603d1b82986347",
+      "direct_decision": "hold",
+      "before": 0.46530455350875854,
+      "after": 0.5425151586532593
+    },
+    {
+      "file": "evidence/pangaea-nights/level-03-armor-repair/art-v1/o1-full-t0.png",
+      "sha256": "0e8ca3498a15b1da63d1daab4255354ec7e266b14f6e8112a1a02b0cb3a824ba",
+      "direct_decision": "pass",
+      "before": 0.21389073133468628,
+      "after": 0.21417757868766785
+    },
+    {
+      "file": "evidence/pangaea-nights/level-03-armor-repair/art-v1/o1-full-t1.png",
+      "sha256": "5188a1314bf773caf9b502cbcb8addf72de2d32838bab43e4b78374b32f24115",
+      "direct_decision": "pass",
+      "before": 0.21686087548732758,
+      "after": 0.21721071004867554
+    },
+    {
+      "file": "evidence/pangaea-nights/level-03-armor-repair/art-v1/o3-full-t0.png",
+      "sha256": "df113ddce6c759c572ccaf2566b07e532cea70792a2a7048ef395be9b62685b1",
+      "direct_decision": "pass",
+      "before": 0.11270993202924728,
+      "after": 0.11305233836174011
+    },
+    {
+      "file": "evidence/pangaea-nights/level-03-armor-repair/art-v1/o3-full-t2.png",
+      "sha256": "71a92d2c9b20ffc10fd6894ef8b86c45c5ca33a65f0b13ae6ef6d3442e89dc48",
+      "direct_decision": "pass",
+      "before": 0.38571813702583313,
+      "after": 0.38848552107810974
+    },
+    {
+      "file": "evidence/pangaea-nights/level-03-armor-repair/art-v2/o6-full-t0.png",
+      "sha256": "6ddc240b39cd98193d204d61882e195d254cf737004e07b184fb903428497e60",
+      "direct_decision": "pass",
+      "before": 0.15339021384716034,
+      "after": 0.15360698103904724
+    },
+    {
+      "file": "evidence/pangaea-nights/level-03-armor-repair/art-v2/o6-full-t1.png",
+      "sha256": "51263ce929a88b78deafcaedfe1cc579895f6adb8d01e10d78c2754cfa8317e1",
+      "direct_decision": "pass",
+      "before": 0.13277146220207214,
+      "after": 0.1329953372478485
+    },
+    {
+      "file": "evidence/pangaea-nights/level-03-armor-repair/art-v4/o4-full-t0.png",
+      "sha256": "ac3d515df81e4572b50439ff5b6a918398a0590580320cf739183fdebe4443a4",
+      "direct_decision": "pass",
+      "before": 0.0989425778388977,
+      "after": 0.0996970608830452
+    },
+    {
+      "file": "evidence/pangaea-nights/level-03-armor-repair/art-v4/o4-full-t1.png",
+      "sha256": "43a57d0bc26e5b6eb03a0951904392453c7d1d83b65cf5cb4256f4b53b1a92fe",
+      "direct_decision": "pass",
+      "before": 0.12115111947059631,
+      "after": 0.12313960492610931
+    },
+    {
+      "file": "evidence/pangaea-nights/level-03-armor-repair/art-v6/o7-full-t0.png",
+      "sha256": "10c9e0f3ced8c62946c7ec20c449a86c31bcd549ce1da84c4d43813a057fec73",
+      "direct_decision": "pass",
+      "before": 0.2681956887245178,
+      "after": 0.2682492733001709
+    },
+    {
+      "file": "evidence/pangaea-nights/level-03-armor-repair/art-v7/o5-full-t3.png",
+      "sha256": "fdb285cb4995dee553608183ddeb67782c30c520b49f7ae281a922d1d352bb92",
+      "direct_decision": "pass",
+      "before": 0.440284788608551,
+      "after": 0.4406681954860687
+    },
+    {
+      "file": "evidence/pangaea-nights/survive-03-fallen-root-repair/art-v3/o3-full-t0.png",
+      "sha256": "7834af7b72159f2036e8fc2a8550492f5cf8be736055e1ee36d3b2cc840970fc",
+      "direct_decision": "pass",
+      "before": 0.06197137385606766,
+      "after": 0.08823388814926147
+    },
+    {
+      "file": "evidence/pangaea-nights/survive-03-fallen-root-repair/art-v3/o3-full-t1.png",
+      "sha256": "5e70bcd11bbf53fb313bae21472c961131ab0d048151e20f3759d555c5ad8d7f",
+      "direct_decision": "pass",
+      "before": 0.06500612944364548,
+      "after": 0.09783194959163666
+    },
+    {
+      "file": "evidence/pangaea-nights/survive-03-fallen-root-repair/art-v5/o4-full-t0.png",
+      "sha256": "f5383ce8bb0283933297c638ae0396b650af65c406e7542be97bef09c68220a2",
+      "direct_decision": "pass",
+      "before": 0.3317878842353821,
+      "after": 0.49814489483833313
+    },
+    {
+      "file": "evidence/pangaea-nights/survive-03-fallen-root-repair/art-v7/o8-full-t1.png",
+      "sha256": "55d23c02298fb791e30e393504856bd7e210ff991da4c9c3307e704d52690830",
+      "direct_decision": "pass",
+      "before": 0.0331520140171051,
+      "after": 0.03404433652758598
+    },
+    {
+      "file": "evidence/pangaea-nights/level_1_8-03-40167081277/incremental/ladder-img-A-1/o2-alt1.png",
+      "sha256": "0f0d71860eeeed6c5ee447fc53ed94fa4d653e8f9029909784c9fd7993527dd1",
+      "direct_decision": "pass",
+      "before": 0.1281346082687378,
+      "after": 0.12828810513019562
+    },
+    {
+      "file": "evidence/pangaea-nights/level_1_8-03-40167081277/incremental/ladder-img-A-1/o2.png",
+      "sha256": "71a2c3fa93b5827fab33deba5258c67ae3d462ea7b5074749510d236096a404e",
+      "direct_decision": "pass",
+      "before": 0.13431091606616974,
+      "after": 0.1345256268978119
+    },
+    {
+      "file": "evidence/pangaea-nights/survive_night-03-40167406784/incremental/ladder-img-A-1/o2-alt1.png",
+      "sha256": "e784fad63dabbcbd3dac5eb601d76726ce200870f294f8a046574a778f08db64",
+      "direct_decision": "pass",
+      "before": 0.18414758145809174,
+      "after": 0.19042624533176422
+    },
+    {
+      "file": "evidence/pangaea-nights/survive_night-03-40167406784/incremental/ladder-img-A-1/o2.png",
+      "sha256": "596c3d3b6abd191a6efeb324f1be57c422eea3c7bc7ef8ffaf61d237bc0cec08",
+      "direct_decision": "pass",
+      "before": 0.15665896236896515,
+      "after": 0.1769479364156723
+    },
+    {
+      "file": "evidence/pangaea-nights/survive_night-03-40167406784/incremental/ladder-img-A-0/o1-alt1.png",
+      "sha256": "501a9058e275224b3876ae3f54987f30678b1deb7531774be07cc71ab6f27c7e",
+      "direct_decision": "pass",
+      "before": 0.26048821210861206,
+      "after": 0.2815220057964325
+    },
+    {
+      "file": "evidence/pangaea-nights/survive_night-03-40167406784/incremental/ladder-img-A-0/o1.png",
+      "sha256": "b07661e41106709bb609731f30a8bff725fee9b696b076e3c46bf7d70580ebd0",
+      "direct_decision": "pass",
+      "before": 0.42823755741119385,
+      "after": 0.45986613631248474
+    },
+    {
+      "file": "evidence/pangaea-nights/survive_night-03-40167406784/incremental/ladder-img-A-5/o6.png",
+      "sha256": "f101556db52056d87d067af5a9c04f782757244b4de9f8f419d038763bcf03df",
+      "direct_decision": "pass",
+      "before": 0.0962558463215828,
+      "after": 0.10038026422262192
+    },
+    {
+      "file": "evidence/pangaea-nights/survive_night-03-40167406784/incremental/ladder-img-A-6/o7-alt1.png",
+      "sha256": "b4dbf95c728dafa8786a599ff63cbe0324cd7e6a4deb36d0c72d1b55ee68ae8c",
+      "direct_decision": "pass",
+      "before": 0.08652251213788986,
+      "after": 0.09642110764980316
+    },
+    {
+      "file": "evidence/pangaea-nights/survive_night-03-40167406784/incremental/ladder-img-A-6/o7.png",
+      "sha256": "e9f9cdf974baf9f4fa0a52b57d2863299474167b8fd69fa3609867846724acf5",
+      "direct_decision": "pass",
+      "before": 0.1313779354095459,
+      "after": 0.1441299468278885
+    }
+  ],
+  "new_refusals": [],
+  "shoes_detected": true,
+  "release_approval": false,
+  "model": "OpenAI CLIP ViT-B/32, normalized original image/text embeddings; no labels synthesized"
+}
