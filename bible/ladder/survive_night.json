@@ -289,7 +289,8 @@
      "label": "On the warm lagoon flats",
      "vo": "Out on the warm lagoon flats.",
      "danger": 3,
-     "image_prompt": "POV on wide warm shallow lagoon flats at night, ankle-deep milky turquoise water, a dead silence over the brine, coral-pink moon reflected, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "An unoccupied natural-history landscape of a Late Jurassic shallow brine lagoon at night. The near foreground is milky turquoise ankle-shallow water flowing over smooth pale carbonate mud, tiny ripple ridges clearly visible beneath the water. The empty flat extends toward a thin distant limestone island on the right horizon. A small coral-pink moon lights a narrow reflection across the open lagoon. The view looks down across the empty shoreline, with only water, mineral sediment, distant low conifers and sky in the picture. Sea-green night sky, pale limestone, cool water, soft warm moon accent, photoreal painterly documentary landscape, vertical composition.",
+     "art_direction": "Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow."
     },
     {
      "n": 4,
@@ -304,21 +305,24 @@
      "label": "On a driftwood log",
      "vo": "Drifting on a big driftwood log.",
      "danger": 5,
-     "image_prompt": "POV lying on a huge bleached driftwood log floating across a moonlit Jurassic lagoon, the island receding, coral-pink moonlight on the ripples, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "An unoccupied bleached tree trunk floating diagonally across a Late Jurassic lagoon at night, seen from the shore. The thick natural driftwood log fills the lower left foreground and points toward a small distant limestone island. Its barkless pale wood, broken natural branches and uneven waterline are clearly visible. Turquoise ripples lap around the empty log. A small coral-pink moon and thin conifer island lie high in the background. Only natural driftwood, water, remote island and night sky occupy the frame. A warm coral-pink moon glow lights the upper wooden surface. Photoreal painterly nature-documentary still, vertical composition.",
+     "art_direction": "Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow."
     },
     {
      "n": 6,
      "label": "Dried lagoon mud",
      "vo": "Dead centre of the dried lagoon mud.",
      "danger": 6,
-     "image_prompt": "Wide landscape view across a vast cracked white carbonate mud flat of a half-dried lagoon, tiny feathered dinosaur tracks ending in sticky mud, coral-pink moonlight, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Ground-focused natural-history documentary detail of a half-dried Late Jurassic lagoon. Empty bleached carbonate mud forms irregular natural polygonal cracks across the near foreground, with dark wet turquoise clay visible inside a few narrow fissures. A shallow pool lies near the upper right edge, with a low limestone rim across the upper background. The mud surface is unmarked and undisturbed. The composition contains mineral ground, quiet water and a small strip of sea-green night sky only. One warm coral-pink moon glow accents the upper pool. Cool pale tones, neutral readable documentary fill, photoreal painterly vertical composition.",
+     "art_direction": "Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow."
     },
     {
      "n": 7,
      "label": "Wading out to the reef",
      "vo": "Wading out to the sponge reef.",
      "danger": 7,
-     "image_prompt": "POV wading through dark warm water toward a distant sponge reef at night, long shapes of Jurassic marine reptiles gliding under the surface, coral-pink moon, pale turquoise lagoon, bleached white limestone mud, sea-green night sky, coral-pink moonlight, 28mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Unoccupied water-level natural-history landscape looking across a Late Jurassic lagoon toward a low natural sponge reef. A few small rounded ochre sponge mounds emerge just above shallow turquoise water in the upper right midground, attached to pale limestone. Soft ripples fill the lower foreground, with gentle clear water revealing bare pale sediment underneath. The horizon is level, with distant low limestone islands and a small coral-pink moon. The scene contains only rippling water, attached simple sponges, mineral reef, distant island and sky. Sea-green night palette, restrained warm moon reflection, readable cool shadows, photoreal painterly documentary landscape, vertical composition.",
+     "art_direction": "Unoccupied natural-history environment of mineral ground and water with a warm coral-pink moon glow."
     },
     {
      "n": 8,

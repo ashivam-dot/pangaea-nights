@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "premise": "survive_night-04",
+  "source": {
+    "run_id": 40189867657,
+    "sha": "89284d8eca5e88cce39d926951c4c8961291db7b",
+    "key": "2026-10-25-survive_night-04"
+  },
+  "art_only": [
+    "o3",
+    "o4",
+    "o5",
+    "o6",
+    "o7"
+  ],
+  "images": {},
+  "references": {
+    "o4": [
+      {
+        "file": "survive04-pterosaur-reference/fossil-head.png",
+        "sha256": "d4fb1a5628e44770026172aee274f4f59513e9be550bf23c1ba033b040fd802e",
+        "parent": {
+          "file": "survive04-pterosaur-reference/rhamphorhynchus-parent.jpg",
+          "sha256": "0cbffebbc5a23a5bb1485ae69df3ef8f0f354ae4c33b0ac2e2f41ee271846494"
+        },
+        "license_evidence": {
+          "file": "survive04-pterosaur-reference/commons-0.json",
+          "sha256": "7439c2e55a17d87e0f9130b9193cb8df49b36e552249c833218c47f5b56072b6"
+        },
+        "title": "File:Rhamphorhynchus muensteri fossil.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Rhamphorhynchus_muensteri_fossil.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Rhamphorhynchus_muensteri_fossil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Dean Falk Schnabel",
+        "license": "CC0",
+        "crop_ltrb": [
+          1950,
+          650,
+          3400,
+          1350
+        ],
+        "credit": "Head geometry reference: Rhamphorhynchus specimen from Solnhofen, photo Dean Falk Schnabel, https://commons.wikimedia.org/wiki/File:Rhamphorhynchus_muensteri_fossil.jpg, CC0 (https://creativecommons.org/publicdomain/zero/1.0/), cropped fossil reference used for AI adaptation, living animal, colour and setting are illustrative."
+      }
+    ]
+  }
+}
