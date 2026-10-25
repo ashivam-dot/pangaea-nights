@@ -733,6 +733,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "how_deep-03",
+   "series": "how_deep",
+   "era": "Cambrian",
+   "slot": "A",
+   "video_id": "yKLki8K_JGc",
+   "url": "https://www.youtube.com/shorts/yKLki8K_JGc",
+   "title": "The Cambrian Ocean Has a Hunter — How Deep Do You Hide? 🦐",
+   "publish_at": "2026-10-27T14:30:00Z",
+   "uploaded_at": "2026-10-25T07:26:48Z",
+   "script": "A spiked-claw hunter owns this ocean. Pick a depth. One: floating at the sunlit surface. Two: drifting in a plankton cloud. Three: hanging in open water, nowhere to hide. Four: beside a reef of cup-shaped sponges. Five: hovering just above a rippled sandbank. Six: lying flat on the seafloor mud. Seven: dropping down the dark reef cliff. Eight: suspended inside a bright sunbeam. Real answer: number 6, because this hunter probably avoided the sea bed, where grabbing prey risked claw damage. Lie flat. Comment your number.",
+   "frame0": "SSITJPmfuBlHI2yo1CSjKSkj96NhJl+l8BWlIGIlvBwCpX8i2SqYpB+sj6YMIHGdrSREKlCom6cop8Wg2Z1fKBmkrag3nRMjiyWtKTQkIyxGFtUSm6S8IOinDKtZoRyfX6V3JGSnYijkJL+hxaIGKeCqTZtrJGwmh52qJP8VvChSpcQoOigQJfumJiVZqHGlmpYbpiqcCqd5H7yolB92pogfOSJfpFmsEyYTHwYkxKOiqZolYyoVp+S5tanWHKoWCSH4oviqa7HcJqamhay2JAqbGaImsMqUwpJclesdJqhDJjCnRR3tpVgijxlfJNsjkZuHKDMpraRvoyyjFSe7nPkmRCR5JTykFahnLYWjTCiLJo6pM6aOo+mggZ70pfml45psqCOpyys7qNMkZR2QJXonYyGVqM+pfyq3omsd/qCnoWCkeBxvmTakvqKSqfApfxwAJiij4yH+G0mi9aQuKE+usCW3qi6k6yodo0qdvB5+pkIkaCUZJmikV6fMnv+Vfx0cJkYk2CZFJL6hCiwbpjcjQxxWk+seex8jKHWVKqW9JuUpOSb0KE6YPKHInm2mDSlXJcygs4EeKOigzp8+pzQpqho3EyOqRKX1IFWpi6EnJTWntKUSJLOdh6RUJXsemKSCKEUpEKQdGx6p4CCkJLCc8qAapcUi5SSoKB6ojCQWIy8oVi3aneKlnp4wm3woGyr7lqCgSCcMobwQLJ5tF4krDKCAJP+k5KexIqIdmaQrnpog2pNXmWqMbx+zsNOj5Z6rIhklMSB9HswP0aodKCSqCJcCKLwaupZcqVCjHCRnJIQhFKU4IQUo1BS5Ha0pZi1mKJGZJagNIx8l1qQzqQwVdC60pGKlqKnBJ2kkkCK3IL0pLqb2pHEl0aFipUoeZyh9IuadKh0iokikhSado5+da6W9okEjMaLFIDcenqVqmBAm1SXLqB4pWhiXmWOcbKXWmW8q86SXGs4lKyY6qMOekQzlKVmX2iYUpgkbviXZK20n7qR4J/4hlKuIJS+r2iEvnqEkHB+SpYElHSZLqHqY5hwqpqKo1qaaIVyoOSHXpEYhfaFuqMKnwh3mpf6mRyf6owArviHEHl4lZSEIpCgfgSfTl/EiMKXtqBQpYq02n9cgHp1BIBCyUKTkFcCf5aMBIcGfd6NjIiYmliMYpv8gQCgCpX8ke6IADJ4jEhmRnnSmMCrqnTIMyqmAIE6dVB1/pkCho6nWH/aMKqWSq+4hUyUFK+anFKlpJZKgw5+iHaqfzaAPpUaoT5++otWrPJ96IpygiCGRnSofkaQ4I7UjA5vcJd2dpynpqCqmqR6oobgnyKpSo/kg76Xch2UiBS01oKWlKCETpYorc5c6og==",
+   "related": "https://www.youtube.com/watch?v=Y_zpVf53Hwc",
+   "run": "40171182599",
+   "checkpoints": {},
+   "av_review_sha256": "e67a23aa5ccb39167f2b06cbe3aa4521b2f7d92f84ccb3bf90e3f1d250059c28",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-27T14:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
