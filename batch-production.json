@@ -2119,10 +2119,21 @@
             "ladder-img-A-4/o5.png": "08c204217d13446e089319dbdc2a5c5ad992a717a29fa0ffd5271a3fd974fd32",
             "ladder-img-A-4/o5-alt1.png": "a13be02ff72591bfad90ce1b8ac33d946c14291524d3faae2a19c234a28136f3"
           }
+        },
+        {
+          "id": "actual-countdown-03-mosasaur-anatomy-40160715571",
+          "run_id": 40160715571,
+          "observed_at": "2026-10-25T04:50:34+00:00",
+          "reason": "Direct full-resolution inspection rejects both o6 mosasaur takes: both show a claw-footed, armoured crocodilian suspended in air above the sea; the alternate has wing-like fins and a forked wing/tail form. They do not depict a plausible flipper-bearing marine reptile gliding underwater. Deliberately replan only this unbooked choice as the empty offshore ocean, preserving the answer4 freshwater-extinction explanation and other useful work. Both exact images remain excluded.",
+          "evidence": {
+            "ladder-img-A-5/o6.png": "1906a5eaf9e34ecd0cbad641cc0c6c63edc00506419dc91e6c67ec72262e4361",
+            "ladder-img-A-5/o6-alt1.png": "289725b487bb87c742990acb2a3db81261b5475275c435b6c149b57a8993a99b"
+          }
         }
       ],
       "problems": [
-        "Direct full-resolution inspection rejects both o5 Triceratops takes: the base displaces the horn arrangement around the temple/frill and the alternate has two strongly curved brow horns but no recognisable nasal horn. These are materially inaccurate species depictions. Deliberately replace this single unbooked carcass-shelter choice with a narrow natural rock crevice; preserve the title, fact, answer4, freshwater-extinction explanation and every other spoken line. Both exact images remain excluded."
+        "Direct full-resolution inspection rejects both o5 Triceratops takes: the base displaces the horn arrangement around the temple/frill and the alternate has two strongly curved brow horns but no recognisable nasal horn. These are materially inaccurate species depictions. Deliberately replace this single unbooked carcass-shelter choice with a narrow natural rock crevice; preserve the title, fact, answer4, freshwater-extinction explanation and every other spoken line. Both exact images remain excluded.",
+        "Direct full-resolution inspection rejects both o6 mosasaur takes: both show a claw-footed, armoured crocodilian suspended in air above the sea; the alternate has wing-like fins and a forked wing/tail form. They do not depict a plausible flipper-bearing marine reptile gliding underwater. Deliberately replan only this unbooked choice as the empty offshore ocean, preserving the answer4 freshwater-extinction explanation and other useful work. Both exact images remain excluded."
       ]
     },
     {
@@ -2494,7 +2505,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry countdown-03: Direct full-resolution inspection rejects both o5 Triceratops takes: the base displaces the horn arrangement around the temple/frill and the alternate has two strongly curved brow horns but no recognisable nasal horn. These are materially inaccurate species depictions. Deliberately replace this single unbooked carcass-shelter choice with a narrow natural rock crevice; preserve the title, fact, answer4, freshwater-extinction explanation and every other spoken line. Both exact images remain excluded.",
+  "halted": "Repair held entry countdown-03: Direct full-resolution inspection rejects both o5 Triceratops takes: the base displaces the horn arrangement around the temple/frill and the alternate has two strongly curved brow horns but no recognisable nasal horn. These are materially inaccurate species depictions. Deliberately replace this single unbooked carcass-shelter choice with a narrow natural rock crevice; preserve the title, fact, answer4, freshwater-extinction explanation and every other spoken line. Both exact images remain excluded.; Direct full-resolution inspection rejects both o6 mosasaur takes: both show a claw-footed, armoured crocodilian suspended in air above the sea; the alternate has wing-like fins and a forked wing/tail form. They do not depict a plausible flipper-bearing marine reptile gliding underwater. Deliberately replan only this unbooked choice as the empty offshore ocean, preserving the answer4 freshwater-extinction explanation and other useful work. Both exact images remain excluded.",
   "complete": false,
   "health": {
     "public": 1,
@@ -2502,5 +2513,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T04:50:00+00:00"
+  "updated_at": "2026-10-25T04:50:34+00:00"
 }
