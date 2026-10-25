@@ -4991,7 +4991,7 @@
         "slot": "A",
         "premise": "how_deep-05"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "053dea9627a39590737d991ea13b3d5e12a18651",
       "before_ids": [
@@ -5077,7 +5077,10 @@
       ],
       "submitted_at": "2026-10-25T14:58:53.346597+00:00",
       "run_id": 40204761241,
-      "cloud_status": "completed"
+      "cloud_status": "completed",
+      "problems": [
+        "production run cancelled"
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -5350,5 +5353,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T15:16:28+00:00"
+  "updated_at": "2026-10-25T15:16:30+00:00"
 }
