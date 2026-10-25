@@ -29,7 +29,7 @@
       ],
       "repair_reason": "A timed natural clause pause preserves narrator and every spoken answer word. Twelve local exact-audio trials across three premises all retain literal number N under unchanged production ASR. Original run failed only verdict_number_heard; all exact cached images and final gates retained.",
       "source_sha": "a9cf2f673035b8f8f01babce1b06074261318bd7",
-      "cloud_status": "in_progress",
+      "cloud_status": "completed",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
         {
@@ -247,7 +247,55 @@
           }
         }
       ],
-      "run_id": 40147925087
+      "run_id": 40147925087,
+      "review": {
+        "schema": 1,
+        "model": "gemini-3-flash-preview",
+        "duration": 42.416,
+        "video_sha256": "996c5001d1b45d00609fffce85d3351c035e01ad839cdab1cab6391321044ae5",
+        "brief_sha256": "39840e894d43012e3abf757af7e0a159257f8b5fe4319b792e98db2158aa4dbe",
+        "review_video_sha256": "6c4f08723aaa9e1aecdc0212dbc8ac50d79ac5d7c11288571af2885ef9658fef",
+        "review_audio_sha256": "2758e0e44b4242f9861c4d6307f0c0bf7b29e2d1668fa4b844c02e540bd1c28d",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "Imagine the ocean frozen over.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.5,
+              "seen": "A wide shot of a cracked blue ice sheet stretching to a warm amber sunset on the horizon.",
+              "heard": "Pick your depth."
+            },
+            {
+              "part": "middle",
+              "seconds": 22.0,
+              "seen": "A dark underwater cavern with a massive basalt arch and drifting white marine snow particles.",
+              "heard": "Six: one kilometre. Crushing cold, no light."
+            },
+            {
+              "part": "ending",
+              "seconds": 38.0,
+              "seen": "Green algae mats clinging to the underside of a translucent ice ceiling with bright light beams.",
+              "heard": "Life may have found a foothold there."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -1195,7 +1243,7 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-25T00:59:20+00:00",
+  "updated_at": "2026-10-25T00:59:48+00:00",
   "complete": false,
   "health": {
     "public": 0,
