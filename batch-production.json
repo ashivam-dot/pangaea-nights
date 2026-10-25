@@ -1,6 +1,7 @@
 {
-  "schema": 1,
+  "created_at": "2026-10-24T20:11:36+00:00",
   "enabled": true,
+  "schema": 1,
   "held_candidates": [
     {
       "repo": "pangaea-nights",
@@ -48,7 +49,6 @@
       "quarantined_at": "2026-10-24T21:43:51+00:00"
     }
   ],
-  "created_at": "2026-10-24T20:11:36+00:00",
   "jobs": [
     {
       "repo": "pangaea-nights",
@@ -750,7 +750,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T01:09:16+00:00",
-      "cloud_status": "in_progress",
+      "cloud_status": "completed",
       "editorial_holds": [
         {
           "id": "direct-duckbill-anatomy-40143333505",
@@ -979,7 +979,55 @@
         40148607387
       ],
       "repair_reason": "Keep all exact reviewed image inputs and accepted ordering. Use ordinary spoken compounds tree line and mud flat after all four unchanged base.en beam1 voice trials scored zero WER; no answer, fact, voice identity, or gate changes.",
-      "run_id": 40149509321
+      "run_id": 40149509321,
+      "review": {
+        "schema": 1,
+        "model": "gemini-3.8-flash",
+        "duration": 43.84,
+        "video_sha256": "f6fd025b43c339f25e99eccefff2f627d4cb02f9d819148e6616e9da76cf212d",
+        "brief_sha256": "ffd3802556f9970db8a2506507590d7d557efa854a63f2bdce317226e2a36c99",
+        "review_video_sha256": "fedede8239736c2655614196e426ad9eaa39f11707f0e5ba57d0d81f3a2b230f",
+        "review_audio_sha256": "805917bd5ddb3617e478290d4c305294ccaa1b80bc07a042761c6d2971d82d29",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "One night in T. rex country.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.5,
+              "seen": "POV looking out from inside a hollow mossy log toward a misty riverbank with a smouldering stump.",
+              "heard": "Pick your bed."
+            },
+            {
+              "part": "middle",
+              "seconds": 22.0,
+              "seen": "A dinosaur nest containing speckled eggs cushioned in ferns under a moonlit night sky.",
+              "heard": "right next to a nest."
+            },
+            {
+              "part": "ending",
+              "seconds": 38.5,
+              "seen": "A wide shot of the moonlit river and glowing stump overlayed with verdict text highlighting option two.",
+              "heard": "Our imagined refuge keeps your scent blowing away from it."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -1495,8 +1543,8 @@
   "health": {
     "public": 1,
     "scheduled": 1,
-    "held": 1,
+    "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:24:18+00:00"
+  "updated_at": "2026-10-25T01:24:34+00:00"
 }
