@@ -1,0 +1,37 @@
+name: exact-audio-asr-diagnostic
+on:
+  workflow_dispatch:
+    inputs:
+      source_run:
+        description: Completed production run with ladder-voice-A artifact
+        required: true
+        type: string
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: exact-audio-asr-diagnostic
+  cancel-in-progress: false
+jobs:
+  compare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q -r requirements/base.txt 'faster-whisper>=1.1,<2' 'librosa>=0.10,<1.1'
+      - uses: actions/download-artifact@v6
+        with:
+          name: ladder-voice-A
+          path: diagnostic-voice
+          run-id: ${{ inputs.source_run }}
+          github-token: ${{ github.token }}
+      - run: python -m ops.asr_diagnostic diagnostic-voice diagnostic-out
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: exact-audio-asr-diagnostic
+          path: diagnostic-out
+          retention-days: 30
