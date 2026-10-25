@@ -4645,6 +4645,51 @@
           "evidence": {
             "ladder-img-A-3/o4.png": "3a0a7e04847698463c8c0365990cbd40497018013df9ae4a8c212fffa9c6b716",
             "ladder-img-A-3/o4-alt1.png": "dbf1c0c1b808c89c05c1834139df2fde6c567322cd44d20c3772f2db36fba7b3"
+          },
+          "resolved_at": "2026-10-25T15:15:00+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "2d9d52a5aa76e667b9600b97986cbe14b2e25752",
+            "replay": ".github/replay/survive_night-04-reviewed-repair.json",
+            "replay_sha256": "ffc8d31d376b10de0dc1ae17edd44ee6159474639d25edf5caedb745b398a19d",
+            "images": {
+              "o1": [
+                "5c8fd18fee33d7e74be0157398577c146c772950b249f42307a4f2c541fd7ef8",
+                "4053a265ade5a007d34a3b51606f684e83e19c6e3bef5e27c1212c53172f56c7"
+              ],
+              "o2": [
+                "8e6eda57527565f96233bb92592a295967f31a958a009b0b0895f8032f3deb1f",
+                "bed14c539c0c222a698c5c5b91994d8e06b7ef1ad4385af049ec42d903bab53e"
+              ],
+              "o3": [
+                "75378be6a7cfd40c6f72ff93fd11c10923b61a033ca886e63f3e9cde5a463022"
+              ],
+              "o4": [
+                "2887506fff5f5bc8d93c96ac2e7d37bd21c2501260a948c6347693c0bda52606"
+              ],
+              "o5": [
+                "2599279c6c0cf39c0bf7aaffb9ca36ce9b16a8167e231de70c0553e3911eb47f",
+                "377eabeb82644fe6030dc2243909af1ea6cc0cb52e44385cb5d35fc2bfd63a0e"
+              ],
+              "o6": [
+                "924c742ef02c1ae31e2a23222358d52f54ba718206178e1bfed0a24d28663c02",
+                "e2e76d302ddc27168fd3fafae7c5d1b0a6546aa13aa2c5d0f8bab94b3cb834c0"
+              ],
+              "o7": [
+                "417b02a0d1023a3f95e72d2f1ec4e591373474fb7afdb687c6d863ff03577a04",
+                "b7e3f69d31e6613719267b5e659c7d121dd226050c3c93fc3a623558ff418cbc"
+              ],
+              "o8": [
+                "285570d518a1bc00b83a2871ab33501d1536fc0c2db8f52d24a8d35a44a85841",
+                "6a317e23205bda49269dca2ee5b3a8c6dca1999be61328da23245699464d1589"
+              ],
+              "end": [
+                "37fbf7fed0aefe37963fcf358ab8d62bdf89b52f7e505754b776bcc50343fdf6"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive04-pterosaur-repair/roost-environment-repair-proof.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -4656,6 +4701,51 @@
             "ladder-img-A-2/o3.png": "6de1db045783901dfba770c40a52a13c85e346c4f2bd455cf25cc1a939e0ae4c",
             "ladder-img-A-4/o5.png": "897e0d5eb9f8249f766b1b2fba6ae46ba6408af07eeffedf7f5af9cc7fa72448",
             "ladder-img-A-4/o5-alt1.png": "0ca62a41715fd7966848205f7b8d00b33ef06ed26cffbc68c3ac226fd8f94a4c"
+          },
+          "resolved_at": "2026-10-25T15:15:00+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "2d9d52a5aa76e667b9600b97986cbe14b2e25752",
+            "replay": ".github/replay/survive_night-04-reviewed-repair.json",
+            "replay_sha256": "ffc8d31d376b10de0dc1ae17edd44ee6159474639d25edf5caedb745b398a19d",
+            "images": {
+              "o1": [
+                "5c8fd18fee33d7e74be0157398577c146c772950b249f42307a4f2c541fd7ef8",
+                "4053a265ade5a007d34a3b51606f684e83e19c6e3bef5e27c1212c53172f56c7"
+              ],
+              "o2": [
+                "8e6eda57527565f96233bb92592a295967f31a958a009b0b0895f8032f3deb1f",
+                "bed14c539c0c222a698c5c5b91994d8e06b7ef1ad4385af049ec42d903bab53e"
+              ],
+              "o3": [
+                "75378be6a7cfd40c6f72ff93fd11c10923b61a033ca886e63f3e9cde5a463022"
+              ],
+              "o4": [
+                "2887506fff5f5bc8d93c96ac2e7d37bd21c2501260a948c6347693c0bda52606"
+              ],
+              "o5": [
+                "2599279c6c0cf39c0bf7aaffb9ca36ce9b16a8167e231de70c0553e3911eb47f",
+                "377eabeb82644fe6030dc2243909af1ea6cc0cb52e44385cb5d35fc2bfd63a0e"
+              ],
+              "o6": [
+                "924c742ef02c1ae31e2a23222358d52f54ba718206178e1bfed0a24d28663c02",
+                "e2e76d302ddc27168fd3fafae7c5d1b0a6546aa13aa2c5d0f8bab94b3cb834c0"
+              ],
+              "o7": [
+                "417b02a0d1023a3f95e72d2f1ec4e591373474fb7afdb687c6d863ff03577a04",
+                "b7e3f69d31e6613719267b5e659c7d121dd226050c3c93fc3a623558ff418cbc"
+              ],
+              "o8": [
+                "285570d518a1bc00b83a2871ab33501d1536fc0c2db8f52d24a8d35a44a85841",
+                "6a317e23205bda49269dca2ee5b3a8c6dca1999be61328da23245699464d1589"
+              ],
+              "end": [
+                "37fbf7fed0aefe37963fcf358ab8d62bdf89b52f7e505754b776bcc50343fdf6"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive04-pterosaur-repair/roost-environment-repair-proof.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -4668,6 +4758,51 @@
             "ladder-img-A-6/o7-alt1.png": "a9e4e77d2aa650ddef556ea96bfe5ecf2c66523ff8e54e033be27313ab56bc3e",
             "ladder-img-A-5/o6.png": "7224a8447b83f4cca2193e65807242ea72930ffc15471f6ac8d4364b3f71b43c",
             "ladder-img-A-5/o6-alt1.png": "55bf042004ce287394a4c19f545c39724fd0fbf68485edc3cd10fb1eb0d129bb"
+          },
+          "resolved_at": "2026-10-25T15:15:00+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "2d9d52a5aa76e667b9600b97986cbe14b2e25752",
+            "replay": ".github/replay/survive_night-04-reviewed-repair.json",
+            "replay_sha256": "ffc8d31d376b10de0dc1ae17edd44ee6159474639d25edf5caedb745b398a19d",
+            "images": {
+              "o1": [
+                "5c8fd18fee33d7e74be0157398577c146c772950b249f42307a4f2c541fd7ef8",
+                "4053a265ade5a007d34a3b51606f684e83e19c6e3bef5e27c1212c53172f56c7"
+              ],
+              "o2": [
+                "8e6eda57527565f96233bb92592a295967f31a958a009b0b0895f8032f3deb1f",
+                "bed14c539c0c222a698c5c5b91994d8e06b7ef1ad4385af049ec42d903bab53e"
+              ],
+              "o3": [
+                "75378be6a7cfd40c6f72ff93fd11c10923b61a033ca886e63f3e9cde5a463022"
+              ],
+              "o4": [
+                "2887506fff5f5bc8d93c96ac2e7d37bd21c2501260a948c6347693c0bda52606"
+              ],
+              "o5": [
+                "2599279c6c0cf39c0bf7aaffb9ca36ce9b16a8167e231de70c0553e3911eb47f",
+                "377eabeb82644fe6030dc2243909af1ea6cc0cb52e44385cb5d35fc2bfd63a0e"
+              ],
+              "o6": [
+                "924c742ef02c1ae31e2a23222358d52f54ba718206178e1bfed0a24d28663c02",
+                "e2e76d302ddc27168fd3fafae7c5d1b0a6546aa13aa2c5d0f8bab94b3cb834c0"
+              ],
+              "o7": [
+                "417b02a0d1023a3f95e72d2f1ec4e591373474fb7afdb687c6d863ff03577a04",
+                "b7e3f69d31e6613719267b5e659c7d121dd226050c3c93fc3a623558ff418cbc"
+              ],
+              "o8": [
+                "285570d518a1bc00b83a2871ab33501d1536fc0c2db8f52d24a8d35a44a85841",
+                "6a317e23205bda49269dca2ee5b3a8c6dca1999be61328da23245699464d1589"
+              ],
+              "end": [
+                "37fbf7fed0aefe37963fcf358ab8d62bdf89b52f7e505754b776bcc50343fdf6"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive04-pterosaur-repair/roost-environment-repair-proof.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -4678,6 +4813,51 @@
           "evidence": {
             "ladder-img-A-7/o8.png": "1a31eca9faa69ab9cb6a1d6cfd64f4d09df2a41bda72cd52f9d06f432b0440e4",
             "ladder-img-A-7/o8-alt1.png": "4dd8c420f6f152608355753a4e48ef104a282ba82fcdcc41972515a9de7c8109"
+          },
+          "resolved_at": "2026-10-25T15:15:00+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "2d9d52a5aa76e667b9600b97986cbe14b2e25752",
+            "replay": ".github/replay/survive_night-04-reviewed-repair.json",
+            "replay_sha256": "ffc8d31d376b10de0dc1ae17edd44ee6159474639d25edf5caedb745b398a19d",
+            "images": {
+              "o1": [
+                "5c8fd18fee33d7e74be0157398577c146c772950b249f42307a4f2c541fd7ef8",
+                "4053a265ade5a007d34a3b51606f684e83e19c6e3bef5e27c1212c53172f56c7"
+              ],
+              "o2": [
+                "8e6eda57527565f96233bb92592a295967f31a958a009b0b0895f8032f3deb1f",
+                "bed14c539c0c222a698c5c5b91994d8e06b7ef1ad4385af049ec42d903bab53e"
+              ],
+              "o3": [
+                "75378be6a7cfd40c6f72ff93fd11c10923b61a033ca886e63f3e9cde5a463022"
+              ],
+              "o4": [
+                "2887506fff5f5bc8d93c96ac2e7d37bd21c2501260a948c6347693c0bda52606"
+              ],
+              "o5": [
+                "2599279c6c0cf39c0bf7aaffb9ca36ce9b16a8167e231de70c0553e3911eb47f",
+                "377eabeb82644fe6030dc2243909af1ea6cc0cb52e44385cb5d35fc2bfd63a0e"
+              ],
+              "o6": [
+                "924c742ef02c1ae31e2a23222358d52f54ba718206178e1bfed0a24d28663c02",
+                "e2e76d302ddc27168fd3fafae7c5d1b0a6546aa13aa2c5d0f8bab94b3cb834c0"
+              ],
+              "o7": [
+                "417b02a0d1023a3f95e72d2f1ec4e591373474fb7afdb687c6d863ff03577a04",
+                "b7e3f69d31e6613719267b5e659c7d121dd226050c3c93fc3a623558ff418cbc"
+              ],
+              "o8": [
+                "285570d518a1bc00b83a2871ab33501d1536fc0c2db8f52d24a8d35a44a85841",
+                "6a317e23205bda49269dca2ee5b3a8c6dca1999be61328da23245699464d1589"
+              ],
+              "end": [
+                "37fbf7fed0aefe37963fcf358ab8d62bdf89b52f7e505754b776bcc50343fdf6"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive04-pterosaur-repair/roost-environment-repair-proof.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -5217,5 +5397,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T15:11:49+00:00"
+  "updated_at": "2026-10-25T15:15:00+00:00"
 }
