@@ -1176,7 +1176,7 @@
         "premise": "countdown-02",
         "replay": ".github/replay/countdown-high-ground-repair.json"
       },
-      "stage": "scheduled",
+      "stage": "public",
       "attempts": 4,
       "source_sha": "34a87a170f45cde92bbc7b948cbb57e737cececc",
       "before_ids": [
@@ -1384,7 +1384,7 @@
         "url": "https://www.youtube.com/shorts/Lk50ASUJOdc",
         "existing": false,
         "title": "Asteroid Tsunami Heading for the Coast — Where Do You Run? 🌊",
-        "privacy": "private",
+        "privacy": "public",
         "publish_at": "2026-10-25T19:30:00Z",
         "made_for_kids": null,
         "self_declared_made_for_kids": false,
@@ -1392,14 +1392,15 @@
         "readback_problems": [],
         "owner_readback": {
           "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
-          "privacyStatus": "private",
-          "publishAt": "2026-10-25T19:30:00Z",
+          "privacyStatus": "public",
+          "publishAt": null,
           "madeForKids": false,
           "selfDeclaredMadeForKids": false,
           "containsSyntheticMedia": null,
           "uploadStatus": "processed"
         }
-      }
+      },
+      "public_verified_at": "2026-10-25T19:39:23.684509+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -5829,5 +5830,5 @@
     "held": 4,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T19:39:22+00:00"
+  "updated_at": "2026-10-25T19:39:24+00:00"
 }
