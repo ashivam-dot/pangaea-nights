@@ -5435,7 +5435,7 @@
         "slot": "A",
         "premise": "survive_night-05"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "bbb5a37e495b25e7038374cace91805f05b31d43",
       "before_ids": [
@@ -5502,7 +5502,33 @@
       ],
       "submitted_at": "2026-10-25T16:21:13+00:00",
       "run_id": 40211267149,
-      "cloud_status": "completed"
+      "cloud_status": "completed",
+      "editorial_holds": [
+        {
+          "id": "survive05-flame-and-peat-visuals-held",
+          "run_id": 40211267149,
+          "observed_at": "2026-10-25T18:56:56+00:00",
+          "reason": "Direct inspection finds literal flames in the unlit choices1-6, including the no-fire sandbar; the dry peat hollow is also filled with water. The shared flame cue contradicted the spoken choices. Exclude these exact inputs, preserve every spoken line and accepted fire choices7/8, repair only visual directions, and require every final gate.",
+          "evidence": {
+            "ladder-img-A-0/o1-alt1.png": "dd5381d71c9c9fd1a5f90e101cdd3004ed50e7c9abe7a1a609224d98f6a74553",
+            "ladder-img-A-0/o1.png": "9bf068839f18a154739b214f0c0f147d508c6d53d72a9732d4d09e48f9c485e4",
+            "ladder-img-A-1/o2-alt1.png": "3eda70dbbc7d119f870cf8f33fbe401c38deae4581887b0634b8d5ec0b67eca5",
+            "ladder-img-A-1/o2.png": "089b5b90e64a36d6f7bef9a8f1c4ce00bcad47f5bef1abce58a9dfe6783bb2e9",
+            "ladder-img-A-2/o3-alt1.png": "38352fc6b5a94a21f244c14433ec4f65902248377cf94d7520a0994076bdc8ea",
+            "ladder-img-A-2/o3.png": "405e239a2de2448bdd8fd55a6f5125dd4430966d1803cbd5445904eeb1616484",
+            "ladder-img-A-3/o4-alt1.png": "35d799e5173d0a9b5b78653fa871309debdf41faf7053a6c9d75a021e7b8df91",
+            "ladder-img-A-3/o4.png": "2c297532fd3a2d5f16c913bc036c8a42ddbd77f338797f5afb0cf0a99e8c1e58",
+            "ladder-img-A-4/o5-alt1.png": "a4b11f7095bfcac414bb4b6b1c684401949f431afa0a0275fa93ff34773b931f",
+            "ladder-img-A-4/o5.png": "1c6196b0c0c4c4caf572c666e81e29fc2e99a5cbb0b1abb8d4088d438cba2ed2",
+            "ladder-img-A-5/o6-alt1.png": "b0cf1249239488686e82899c7001d02b940499ddca80289d9580783ae8e933be",
+            "ladder-img-A-5/o6.png": "93a92a0588944d5450481d86e70fb7ee1f459ab8ea94e7462f2e959ab1777042",
+            "ladder-img-A-8/end.png": "88f445a89729da20ed722d8d55a3fb02e5de6155165027eba7accba9d93b29ef"
+          }
+        }
+      ],
+      "problems": [
+        "Direct inspection finds literal flames in the unlit choices1-6, including the no-fire sandbar; the dry peat hollow is also filled with water. The shared flame cue contradicted the spoken choices. Exclude these exact inputs, preserve every spoken line and accepted fire choices7/8, repair only visual directions, and require every final gate."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -5747,5 +5773,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T18:50:09+00:00"
+  "updated_at": "2026-10-25T18:56:56+00:00"
 }
