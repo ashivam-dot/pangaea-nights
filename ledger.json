@@ -798,6 +798,22 @@
      "dry run: nothing is uploaded",
      "gates failed: wer_line_max: {\"value\": 0.286, \"floor\": 0.0, \"ceiling\": 0.25, \"line\": \"o5\"}"
     ]
+   },
+   {
+    "at": "2026-10-25T00:17:45Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "how_deep-01",
+    "run": "40143437986",
+    "ok": false,
+    "failures": [
+     "verdict_number_heard: {\"value\": false}"
+    ],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded",
+     "gates failed: verdict_number_heard: {\"value\": false}"
+    ]
    }
   ],
   "alerts": [
