@@ -1171,6 +1171,22 @@
      "dry run: nothing is uploaded",
      "gates failed: option_pair_max: {\"value\": 0.9136, \"floor\": 0.3, \"ceiling\": 0.9}"
     ]
+   },
+   {
+    "at": "2026-10-25T03:56:28Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "survive_night-02",
+    "run": "40157815850",
+    "ok": false,
+    "failures": [
+     "option_pair_max: {\"value\": 0.9043, \"floor\": 0.3, \"ceiling\": 0.9}"
+    ],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded",
+     "gates failed: option_pair_max: {\"value\": 0.9043, \"floor\": 0.3, \"ceiling\": 0.9}"
+    ]
    }
   ],
   "alerts": [
