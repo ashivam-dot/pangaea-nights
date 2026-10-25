@@ -1061,7 +1061,8 @@
      "label": "A deep cave",
      "vo": "Level three: a deep cave in the hills.",
      "danger": 2,
-     "image_prompt": "Mouth of a limestone cave in forested hills seen from inside, the outside world glowing orange, a fireball streak in the sky, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "Deep inside a vast natural limestone cavern, rough rounded grey rock walls surround a winding passage descending into darkness. Jagged stalactites hang from the ceiling and uneven stalagmites rise from the wet stony floor. A small distant curved cave opening admits a diffuse warm amber glow that reflects in shallow pools. Photoreal painterly deep-time scene, vertical composition, wide-angle view of the natural underground chamber.",
+     "art_direction": "Subterranean limestone chamber with irregular mineral formations, wet dark rock and diffuse warm amber light from a distant natural opening."
     },
     {
      "n": 4,
@@ -1072,10 +1073,10 @@
     },
     {
      "n": 5,
-     "label": "Inside a Triceratops herd",
-     "vo": "Level five: in the middle of a Triceratops herd.",
+     "label": "A boulder field",
+     "vo": "Level five: crouched among fallen boulders.",
      "danger": 4,
-     "image_prompt": "A herd of Triceratops bunched together on a plain looking up at a blazing streak in the sky, orange light on their frills, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "A jumbled field of huge fallen limestone boulders at the foot of a bare cliff, deep narrow gaps between angular rocks in the foreground, sparse low ferns growing in crevices, distant Cretaceous conifers, a blood-orange sky with one thin bright meteor streak overhead, warm orange glow along the rock edges, low ground-level view, photoreal painterly deep-time scene, vertical composition"
     },
     {
      "n": 6,
@@ -1096,7 +1097,7 @@
      "label": "Ground zero, Yucatán",
      "vo": "Level eight: ground zero, the shallow Yucatán sea.",
      "danger": 8,
-     "image_prompt": "POV floating on a shallow warm sea as a blinding fireball fills the sky above, the water surface glowing orange and white, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+     "image_prompt": "An immense open shallow tropical sea above a submerged pale limestone platform, turquoise water and sand visible through the foreground ripples, water extending unbroken to a flat empty ocean horizon, a gigantic blinding orange-white asteroid descending above the far horizon and lighting the entire sea with a warm glow, photoreal painterly deep-time scene, vertical composition, open marine water in every direction"
     }
    ],
    "answer_n": 2,
@@ -1118,7 +1119,8 @@
     "deep time",
     "paleontology"
    ],
-   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?"
+   "related_topic_hint": "What Did the Last Day of the Dinosaurs Feel Like?",
+   "end_image": "o1"
   },
   {
    "id": "level_1_8-14",

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "2c755b3793b8da34cadad245ed08e4d0bc52ed32",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "Deep inside a vast natural limestone cavern, rough rounded grey rock walls surround a winding passage descending into darkness. Jagged stalactites hang from the ceiling and uneven stalagmites rise from the wet stony floor. A small distant curved cave opening admits a diffuse warm amber glow that reflects in shallow pools. Photoreal painterly deep-time scene, vertical composition, wide-angle view of the natural underground chamber. Subterranean limestone chamber with irregular mineral formations, wet dark rock and diffuse warm amber light from a distant natural opening. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 1019707687
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "hideout-boulder-ocean-repair/art/o3-full-t0-raw.png",
+    "sha256": "0685e3869166b30c47980e1703de8d6c4e105ab47534d645db6bb38cf653e20f"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 63.6
+}

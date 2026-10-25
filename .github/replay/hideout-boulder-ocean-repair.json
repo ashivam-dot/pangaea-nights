@@ -1,0 +1,302 @@
+{
+  "schema": 1,
+  "premise": "level_1_8-13",
+  "source": {
+    "run_id": 40156875292,
+    "sha": "ec1005bf9841cf9c54a1e7b345cfb30a86f9a343",
+    "key": "2026-10-25-level_1_8-13"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "hideout-boulder-ocean-repair/art/o1.png",
+        "sha256": "cf81208d740fc292ab54ff0aef08f4b64becd9e2ae3bf2cfb13e10c04aecc6ec",
+        "model": "klein4b-q8-768",
+        "prompt": "Looking out from inside a hollow fallen log at a forest floor, an orange sky glowing through the opening, one bright streak overhead, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585328822,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 45.3,
+          "raw_p99": 195.0,
+          "gamma": 0.39,
+          "spread": 182.0
+        }
+      },
+      {
+        "file": "hideout-boulder-ocean-repair/art/o1-alt1.png",
+        "sha256": "44fc7e7176b6fb2402e581aed42c089883e7130261a94f33bad491c250c103eb",
+        "model": "klein4b-q8-768",
+        "prompt": "Looking out from inside a hollow fallen log at a forest floor, an orange sky glowing through the opening, one bright streak overhead, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585328822,
+        "take": 3,
+        "exposure": {
+          "raw_mean": 50.6,
+          "raw_p99": 217.0,
+          "gamma": 0.417,
+          "spread": 191.0
+        }
+      }
+    ],
+    "o2": [
+      {
+        "file": "hideout-boulder-ocean-repair/art/o2.png",
+        "sha256": "725f48c7e25f82122d8b2bdad9b34a932d37d44ff2bd0e4b525909f8ec83d6a6",
+        "model": "klein4b-q8-768",
+        "prompt": "A dark burrow entrance dug into a muddy riverbank just above the waterline, roots hanging, the river reflecting a bright streak in an orange sky, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585223651,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 53.1,
+          "raw_p99": 233.0,
+          "gamma": 0.429,
+          "spread": 140.0
+        }
+      },
+      {
+        "file": "hideout-boulder-ocean-repair/art/o2-alt1.png",
+        "sha256": "43aea8dfa2778521f48d55983b6c485049b1d935c2f33dd48fec9d6a5c5c2bcf",
+        "model": "klein4b-q8-768",
+        "prompt": "A dark burrow entrance dug into a muddy riverbank just above the waterline, roots hanging, the river reflecting a bright streak in an orange sky, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585223651,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 53.1,
+          "raw_p99": 196.0,
+          "gamma": 0.429,
+          "spread": 156.0
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "hideout-boulder-ocean-repair/art/o4.png",
+        "sha256": "e4e7b34700067be69255b51639f3ef35f08b440c923fadae166f13c25375fe22",
+        "model": "klein4b-q8-768",
+        "prompt": "View from the crown of a towering conifer above a dark forest canopy, a huge bright fireball streak crossing the orange sky, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584538585,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 68.2,
+          "raw_p99": 252.0,
+          "gamma": 0.511,
+          "spread": 161.0
+        }
+      },
+      {
+        "file": "hideout-boulder-ocean-repair/art/o4-alt1.png",
+        "sha256": "795975d35fee16a560abb96ef7bdf9c6393ba7037c68a293bb066f30fa2cab27",
+        "model": "klein4b-q8-768",
+        "prompt": "View from the crown of a towering conifer above a dark forest canopy, a huge bright fireball streak crossing the orange sky, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584538585,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 72.7,
+          "raw_p99": 255.0,
+          "gamma": 0.537,
+          "spread": 159.0
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "hideout-boulder-ocean-repair/art/o6.png",
+        "sha256": "2461e762c981e380c6c86d99fbf0c274e1057271601e67c555bb386d27f7b131",
+        "model": "klein4b-q8-768",
+        "prompt": "An empty Cretaceous beach with the sea pulling far back from the shore, wet sand reflecting a bright orange fireball overhead, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585164848,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 76.1,
+          "raw_p99": 247.0,
+          "gamma": 0.557,
+          "spread": 117.0
+        }
+      },
+      {
+        "file": "hideout-boulder-ocean-repair/art/o6-alt1.png",
+        "sha256": "6ebd5199b2a3e70434fdfd485b47d44937568910ae8b54b76bef9fcbfebef00b",
+        "model": "klein4b-q8-768",
+        "prompt": "An empty Cretaceous beach with the sea pulling far back from the shore, wet sand reflecting a bright orange fireball overhead, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585164848,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 82.0,
+          "raw_p99": 249.0,
+          "gamma": 0.594,
+          "spread": 131.0
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "hideout-boulder-ocean-repair/art/o7.png",
+        "sha256": "376c8af845f5c519663942698c68a1e7f7f46121886abb9f952dbfe032eae8e5",
+        "model": "klein4b-q8-768",
+        "prompt": "A bare cliff top above a forest with the horizon flaring white and orange as a fireball descends, dust and wind rising, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584659155,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 85.6,
+          "raw_p99": 250.0,
+          "gamma": 0.617,
+          "spread": 167.0
+        }
+      },
+      {
+        "file": "hideout-boulder-ocean-repair/art/o7-alt1.png",
+        "sha256": "17010aa349e09c49ccb29b6fd6680b1f5f3f606a18d83fb35b93a445abeafcea",
+        "model": "klein4b-q8-768",
+        "prompt": "A bare cliff top above a forest with the horizon flaring white and orange as a fireball descends, dust and wind rising, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584659155,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 78.9,
+          "raw_p99": 251.0,
+          "gamma": 0.574,
+          "spread": 153.0
+        }
+      }
+    ],
+    "o3": [
+      {
+        "file": "hideout-boulder-ocean-repair/art/o3-full-t0.png",
+        "sha256": "16318f78b82a3312d9891c9c655ab5d2f7211a19597b83122f58043c501c5566",
+        "model": "klein4b-q8-768",
+        "prompt": "Deep inside a vast natural limestone cavern, rough rounded grey rock walls surround a winding passage descending into darkness. Jagged stalactites hang from the ceiling and uneven stalagmites rise from the wet stony floor. A small distant curved cave opening admits a diffuse warm amber glow that reflects in shallow pools. Photoreal painterly deep-time scene, vertical composition, wide-angle view of the natural underground chamber. Subterranean limestone chamber with irregular mineral formations, wet dark rock and diffuse warm amber light from a distant natural opening. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 50.4,
+          "raw_p99": 194.0,
+          "gamma": 0.415,
+          "spread": 125.0
+        },
+        "generation": {
+          "file": "hideout-boulder-ocean-repair/art/o3-full-t0-generation.json",
+          "sha256": "8d80f43f100c5df6de32d9b0204066c96def69b9a1d8b45d967eb9f937ebad4e"
+        }
+      },
+      {
+        "file": "hideout-boulder-ocean-repair/art/o3-full-t1.png",
+        "sha256": "ead77d207ff51c4e7749f9756edba8706cf5b21ae058e8be93fd7997e1e1bfbe",
+        "model": "klein4b-q8-768",
+        "prompt": "Deep inside a vast natural limestone cavern, rough rounded grey rock walls surround a winding passage descending into darkness. Jagged stalactites hang from the ceiling and uneven stalagmites rise from the wet stony floor. A small distant curved cave opening admits a diffuse warm amber glow that reflects in shallow pools. Photoreal painterly deep-time scene, vertical composition, wide-angle view of the natural underground chamber. Subterranean limestone chamber with irregular mineral formations, wet dark rock and diffuse warm amber light from a distant natural opening. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 53.8,
+          "raw_p99": 196.0,
+          "gamma": 0.433,
+          "spread": 132.0
+        },
+        "generation": {
+          "file": "hideout-boulder-ocean-repair/art/o3-full-t1-generation.json",
+          "sha256": "025649418c2eed5a9610bd2cd510f9dafc1568c909b2420e957b57d75a318853"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "hideout-boulder-ocean-repair/art/o5-full-t0.png",
+        "sha256": "993a014ce3c9931ea0bbc8ca06ddd32b3333e9240b4acc2c0af3514f12d141a4",
+        "model": "klein4b-q8-768",
+        "prompt": "A jumbled field of huge fallen limestone boulders at the foot of a bare cliff, deep narrow gaps between angular rocks in the foreground, sparse low ferns growing in crevices, distant Cretaceous conifers, a blood-orange sky with one thin bright meteor streak overhead, warm orange glow along the rock edges, low ground-level view, photoreal painterly deep-time scene, vertical composition. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 65.5,
+          "raw_p99": 177.0,
+          "gamma": 0.496,
+          "spread": 134.0
+        },
+        "generation": {
+          "file": "hideout-boulder-ocean-repair/art/o5-full-t0-generation.json",
+          "sha256": "0735027e7ff741b11e4984ae158a1f0dd41e123c228ea840716f035507740c57"
+        }
+      },
+      {
+        "file": "hideout-boulder-ocean-repair/art/o5-full-t1.png",
+        "sha256": "73bb3d63c9058dfe507ac010be4c2e4c329880d82c3affa0200b3b7931f10be8",
+        "model": "klein4b-q8-768",
+        "prompt": "A jumbled field of huge fallen limestone boulders at the foot of a bare cliff, deep narrow gaps between angular rocks in the foreground, sparse low ferns growing in crevices, distant Cretaceous conifers, a blood-orange sky with one thin bright meteor streak overhead, warm orange glow along the rock edges, low ground-level view, photoreal painterly deep-time scene, vertical composition. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 54.2,
+          "raw_p99": 175.0,
+          "gamma": 0.435,
+          "spread": 125.0
+        },
+        "generation": {
+          "file": "hideout-boulder-ocean-repair/art/o5-full-t1-generation.json",
+          "sha256": "c44fe1b324dd4d5a774912ae202a8ce82304bd41bbb402ec8ec5a52dec1b68f3"
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "hideout-boulder-ocean-repair/art/o8-full-t0.png",
+        "sha256": "ac660003f203d20a757c45a0bf9ed77649b17d85cebbaebaa86b415cdecb6743",
+        "model": "klein4b-q8-768",
+        "prompt": "An immense open shallow tropical sea above a submerged pale limestone platform, turquoise water and sand visible through the foreground ripples, water extending unbroken to a flat empty ocean horizon, a gigantic blinding orange-white asteroid descending above the far horizon and lighting the entire sea with a warm glow, photoreal painterly deep-time scene, vertical composition, open marine water in every direction. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 109.2,
+          "raw_p99": 242.0,
+          "gamma": 0.794,
+          "spread": 95.0
+        },
+        "generation": {
+          "file": "hideout-boulder-ocean-repair/art/o8-full-t0-generation.json",
+          "sha256": "ce2c5e1c9f255b7251643a1b0b2ad76e4faf73f9c4f931431616bcb0433ca854"
+        }
+      },
+      {
+        "file": "hideout-boulder-ocean-repair/art/o8-full-t1.png",
+        "sha256": "5f5524a96709f92b2057fdbadf0975f34ee4ccd70132ff88f7b6e1b7d3bea56a",
+        "model": "klein4b-q8-768",
+        "prompt": "An immense open shallow tropical sea above a submerged pale limestone platform, turquoise water and sand visible through the foreground ripples, water extending unbroken to a flat empty ocean horizon, a gigantic blinding orange-white asteroid descending above the far horizon and lighting the entire sea with a warm glow, photoreal painterly deep-time scene, vertical composition, open marine water in every direction. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 128.7,
+          "raw_p99": 253.0,
+          "gamma": 0.985,
+          "spread": 123.0
+        },
+        "generation": {
+          "file": "hideout-boulder-ocean-repair/art/o8-full-t1-generation.json",
+          "sha256": "18b00419d2b10238184f97d773026abce61c36e14754e8a7220f47e0139c187a"
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "hideout-boulder-ocean-repair/art/o1.png",
+        "sha256": "cf81208d740fc292ab54ff0aef08f4b64becd9e2ae3bf2cfb13e10c04aecc6ec",
+        "model": "klein4b-q8-768",
+        "prompt": "Looking out from inside a hollow fallen log at a forest floor, an orange sky glowing through the opening, one bright streak overhead, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585328822,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 45.3,
+          "raw_p99": 195.0,
+          "gamma": 0.39,
+          "spread": 182.0
+        },
+        "source_image": "o1"
+      },
+      {
+        "file": "hideout-boulder-ocean-repair/art/o1-alt1.png",
+        "sha256": "44fc7e7176b6fb2402e581aed42c089883e7130261a94f33bad491c250c103eb",
+        "model": "klein4b-q8-768",
+        "prompt": "Looking out from inside a hollow fallen log at a forest floor, an orange sky glowing through the opening, one bright streak overhead, blood-orange end-Cretaceous sky with one bright streak overhead, 16mm wide lens, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light. Blood-orange sky with a single bright streak overhead, dark riverside forest, 16mm wide lens, everything lit by the incoming fireball. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585328822,
+        "take": 3,
+        "exposure": {
+          "raw_mean": 50.6,
+          "raw_p99": 217.0,
+          "gamma": 0.417,
+          "spread": 191.0
+        },
+        "source_image": "o1"
+      }
+    ]
+  },
+  "cached_only": true
+}
