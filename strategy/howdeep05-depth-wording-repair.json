@@ -1,0 +1,13 @@
+{
+  "premise": "how_deep-05",
+  "source_run": 40204761241,
+  "source_sha": "053dea9627a39590737d991ea13b3d5e12a18651",
+  "field": "options[3].vo",
+  "original": "Four: sixty metres, dim green twilight.",
+  "replacement": "Four: dim green twilight at sixty metres.",
+  "basis": "Production recognition merged adjacent option number and depth into 460 metres; reorder the same depth and descriptive words to separate them.",
+  "other_speech_changed": false,
+  "image_prompts_changed": false,
+  "release_approval": false,
+  "remaining": "Normal production voice, image, render and complete audiovisual gates"
+}
