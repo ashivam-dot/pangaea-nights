@@ -361,7 +361,7 @@
      "label": "Among the tree ferns",
      "vo": "Tucked among the tree ferns.",
      "danger": 1,
-     "image_prompt": "POV tucked among the trunks of towering Carboniferous tree ferns, dense emerald fronds overhead, swamp water glinting, one orange glow far off, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Low documentary view among the trunks of towering Carboniferous tree ferns, dense emerald fronds overhead, swamp water glinting, one orange glow far off, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     },
     {
      "n": 2,
@@ -375,7 +375,7 @@
      "label": "On a fallen clubmoss log",
      "vo": "On top of a fallen giant club moss.",
      "danger": 3,
-     "image_prompt": "POV lying along a fallen Lepidodendron trunk with diamond-patterned bark spanning dark swamp water, emerald canopy above, an orange glow in the mist, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Low documentary view along a fallen Lepidodendron trunk with diamond-patterned bark spanning dark swamp water, emerald canopy above, an orange glow in the mist, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     },
     {
      "n": 4,
@@ -396,7 +396,7 @@
      "label": "Sleep in a peat hollow",
      "vo": "Sleep in a soft hollow of dry peat.",
      "danger": 6,
-     "image_prompt": "POV in a soft hollow of dry crumbling peat between clubmoss roots, dead fronds heaped around, the emerald forest dark above, a faint orange glow, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Close environmental view into a soft hollow of dry crumbling peat between clubmoss roots, dead fronds heaped around, the emerald forest dark above, a faint orange glow, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     },
     {
      "n": 7,
@@ -454,7 +454,7 @@
      "label": "Up a swamp cypress",
      "vo": "Up in a swamp cypress.",
      "danger": 2,
-     "image_prompt": "POV looking down from the branches of a moss-draped swamp cypress over still olive water, fog curling between the trunks, an amber glow on the far bank, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "High documentary view down from the branches of a moss-draped swamp cypress over still olive water, fog curling between the trunks, an amber glow on the far bank, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     },
     {
      "n": 3,
@@ -468,21 +468,21 @@
      "label": "In a hadrosaur nest mound",
      "vo": "Inside a warm hadrosaur nest mound.",
      "danger": 4,
-     "image_prompt": "POV curled into a warm rotting-vegetation hadrosaur nest mound on a riverbank, eggs half buried, adult duckbills looming in the fog, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Close documentary view into a warm rotting-vegetation hadrosaur nest mound on a riverbank, eggs half buried, adult duckbills looming in the fog, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     },
     {
      "n": 5,
      "label": "On a floating log",
      "vo": "Asleep on a floating log.",
      "danger": 5,
-     "image_prompt": "POV lying on a floating log in a foggy Cretaceous bayou, olive water lapping at the bark, two eyes and a long armoured snout breaking the surface nearby, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Low documentary view across a floating log in a foggy Cretaceous bayou, olive water lapping at the bark, two eyes and a long armoured snout breaking the surface nearby, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     },
     {
      "n": 6,
      "label": "Shallows with turtles",
      "vo": "In the shallows with the sea turtles.",
      "danger": 6,
-     "image_prompt": "POV knee-deep in warm shallows where large sea turtles rest at night, olive water rippling, a long armoured back drifting closer, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Low documentary view over warm shallows where large sea turtles rest at night, olive water rippling, a long armoured back drifting closer, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     },
     {
      "n": 7,
@@ -496,7 +496,7 @@
      "label": "At the water's edge",
      "vo": "Right at the water's edge.",
      "danger": 8,
-     "image_prompt": "POV lying on mud at the very edge of a still olive bayou at night, the colossal head of Deinosuchus rising from the water just ahead, amber glow on its teeth, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Low documentary view from mud at the very edge of a still olive bayou at night, the colossal head of Deinosuchus rising from the water just ahead, amber glow on its teeth, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     }
    ],
    "answer_n": 1,
@@ -533,7 +533,7 @@
      "label": "Open grass, clear sky",
      "vo": "Open grass under a clear sky.",
      "danger": 1,
-     "image_prompt": "POV lying in open frost-covered steppe grass under an enormous clear starry sky with a faint green aurora, nothing in any direction, amber glow on the horizon, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Low documentary view across open frost-covered steppe grass under an enormous clear starry sky with a faint green aurora, nothing in any direction, amber glow on the horizon, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     },
     {
      "n": 2,
@@ -547,7 +547,7 @@
      "label": "Boulder windbreak, dug in",
      "vo": "Dug in behind a big boulder.",
      "danger": 3,
-     "image_prompt": "POV dug into the lee side of a huge lichen-covered glacial boulder on the steppe, wind-blown snow streaming past the other side, aurora and amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Sheltered ground-level view from the lee side of a huge lichen-covered glacial boulder on the steppe, wind-blown snow streaming past the other side, aurora and amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     },
     {
      "n": 4,
@@ -561,7 +561,7 @@
      "label": "Beside a woolly rhino",
      "vo": "Leaning on a sleeping woolly rhino.",
      "danger": 5,
-     "image_prompt": "Close POV leaning against the shaggy flank of a sleeping woolly rhinoceros in frosted grass, its long horn silhouetted against the aurora, amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Close documentary view beside the shaggy flank of a sleeping woolly rhinoceros in frosted grass, its long horn silhouetted against the aurora, amber glow, pale straw grass, ice-white frost, faint green aurora, amber horizon glow, 21mm ultra-wide, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     },
     {
      "n": 6,
@@ -654,7 +654,7 @@
      "label": "Volcanic crater rim",
      "vo": "On the rim of a steaming crater.",
      "danger": 6,
-     "image_prompt": "POV on the rim of a steaming basalt crater, yellow sulphur crust underfoot, molten lava glowing orange in the vent below, purple sky, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Wide documentary view from the rim of a steaming basalt crater, yellow sulphur crust covering the rocky rim, molten lava glowing orange in the vent below, purple sky, sulphur-yellow haze, bruised purple sky, black basalt, molten-orange volcanic glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
     },
     {
      "n": 7,
