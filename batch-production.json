@@ -2446,56 +2446,11 @@
       "inputs": {
         "dry_run": "true",
         "slot": "A",
-        "premise": "how_deep-03"
+        "premise": "how_deep-03",
+        "replay": ".github/replay/how-deep-03-mud-sand-repair.json"
       },
-      "stage": "held",
+      "stage": "planned",
       "attempts": 1,
-      "source_sha": "397d84810469e9af23a10f1915df2b44888a5fb5",
-      "before_ids": [
-        40160715571,
-        40160283123,
-        40157815850,
-        40156875292,
-        40156818584,
-        40154688202,
-        40154442347,
-        40152622139,
-        40152163089,
-        40151287146,
-        40150491810,
-        40149509321,
-        40148607387,
-        40148479040,
-        40148319091,
-        40147925087,
-        40147415761,
-        40146406019,
-        40144187249,
-        40143437986,
-        40143333505,
-        40140139736,
-        40138993804,
-        40136822897,
-        40136652437,
-        40135503878,
-        40131481179,
-        40128334178,
-        40124993101,
-        40122729549,
-        40121235398,
-        40119101082,
-        40077496948,
-        39924499144,
-        39830179361,
-        39803824162,
-        39787991414,
-        39780512299,
-        39772637874,
-        39766129149
-      ],
-      "submitted_at": "2026-10-25T04:18:44+00:00",
-      "run_id": 40161421084,
-      "cloud_status": "queued",
       "editorial_holds": [
         {
           "id": "actual-how-deep-03-fishlike-hunter-40161421084",
@@ -2666,11 +2621,29 @@
           }
         }
       ],
-      "problems": [
-        "Direct full-resolution inspection rejects both o6 takes: the supposed Cambrian flap-finned hunter is shown as a fish/shark-like vertebrate with a large tail and paired fins, without the lateral swimming lobes and grasping frontal appendages of Anomalocaris. Foreground armoured forms also lack a clear trilobite body plan. Exclude both exact images. Preserve the spoken flat-on-seafloor option, answer6 and qualified source; deliberately simplify this image to an empty muddy seafloor viewed at substrate height, with the hunter remaining off screen.",
-        "Direct full-resolution inspection rejects both o5 takes. The supposed Cambrian hunter has a modern fish face, tail and paired fins rather than radiodont swimming lobes and frontal grasping appendages. The seabed animals read as domed woodlice with undifferentiated transverse plates rather than a flattened three-lobed trilobite exoskeleton. Exclude both exact images. Deliberately replan this single unbooked hovering-over-trilobites choice to hovering above a rippled sandbank; keep title, answer6, sourced seafloor-claw-risk explanation and the other spoken lines.",
-        "Direct full-resolution inspection rejects both focal o8 hunter depictions. Both combine a fish-shaped scaled face, fixed eyes without stalks, paired rigid fins and fish tail with insect or crustacean legs, rather than the required elongated radiodont body with repeated lateral swimming flaps and two frontal grasping appendages. The prior explicit anatomy wording has not repaired the actual model output. Deliberately replan only this exposed-water choice as suspension inside a bright sunbeam, with the hunter remaining an off-screen threat. Preserve the title, hooked dilemma, answer6 and qualified seafloor-claw-risk source; exclude both exact images."
-      ]
+      "repair_history": [
+        {
+          "run_id": 40161421084,
+          "source_sha": "397d84810469e9af23a10f1915df2b44888a5fb5",
+          "stage": "held",
+          "problems": [
+            "Direct full-resolution inspection rejects both o6 takes: the supposed Cambrian flap-finned hunter is shown as a fish/shark-like vertebrate with a large tail and paired fins, without the lateral swimming lobes and grasping frontal appendages of Anomalocaris. Foreground armoured forms also lack a clear trilobite body plan. Exclude both exact images. Preserve the spoken flat-on-seafloor option, answer6 and qualified source; deliberately simplify this image to an empty muddy seafloor viewed at substrate height, with the hunter remaining off screen.",
+            "Direct full-resolution inspection rejects both o5 takes. The supposed Cambrian hunter has a modern fish face, tail and paired fins rather than radiodont swimming lobes and frontal grasping appendages. The seabed animals read as domed woodlice with undifferentiated transverse plates rather than a flattened three-lobed trilobite exoskeleton. Exclude both exact images. Deliberately replan this single unbooked hovering-over-trilobites choice to hovering above a rippled sandbank; keep title, answer6, sourced seafloor-claw-risk explanation and the other spoken lines.",
+            "Direct full-resolution inspection rejects both focal o8 hunter depictions. Both combine a fish-shaped scaled face, fixed eyes without stalks, paired rigid fins and fish tail with insect or crustacean legs, rather than the required elongated radiodont body with repeated lateral swimming flaps and two frontal grasping appendages. The prior explicit anatomy wording has not repaired the actual model output. Deliberately replan only this exposed-water choice as suspension inside a bright sunbeam, with the hunter remaining an off-screen threat. Preserve the title, hooked dilemma, answer6 and qualified seafloor-claw-risk source; exclude both exact images."
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "how_deep-03"
+          }
+        }
+      ],
+      "obsolete_runs": [
+        40161421084
+      ],
+      "repair_queued_at": "2026-10-25T06:06:23+00:00",
+      "repair_source_sha": "a6065ddf31cc0b407a708d5ce83bd1e624568716",
+      "repair_reason": "Replace excluded malformed Cambrian animals with exact directly reviewed depth habitats; unchanged qualified source, answer6, and voice-v5 speech. Full cached-image selection passes pairmax0.882982<0.90; every current cloud and complete AV gate remains mandatory."
     },
     {
       "repo": "pangaea-nights",
@@ -3080,7 +3053,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry how_deep-03: Direct full-resolution inspection rejects both o6 takes: the supposed Cambrian flap-finned hunter is shown as a fish/shark-like vertebrate with a large tail and paired fins, without the lateral swimming lobes and grasping frontal appendages of Anomalocaris. Foreground armoured forms also lack a clear trilobite body plan. Exclude both exact images. Preserve the spoken flat-on-seafloor option, answer6 and qualified source; deliberately simplify this image to an empty muddy seafloor viewed at substrate height, with the hunter remaining off screen.; Direct full-resolution inspection rejects both o5 takes. The supposed Cambrian hunter has a modern fish face, tail and paired fins rather than radiodont swimming lobes and frontal grasping appendages. The seabed animals read as domed woodlice with undifferentiated transverse plates rather than a flattened three-lobed trilobite exoskeleton. Exclude both exact images. Deliberately replan this single unbooked hovering-over-trilobites choice to hovering above a rippled sandbank; keep title, answer6, sourced seafloor-claw-risk explanation and the other spoken lines.; Direct full-resolution inspection rejects both focal o8 hunter depictions. Both combine a fish-shaped scaled face, fixed eyes without stalks, paired rigid fins and fish tail with insect or crustacean legs, rather than the required elongated radiodont body with repeated lateral swimming flaps and two frontal grasping appendages. The prior explicit anatomy wording has not repaired the actual model output. Deliberately replan only this exposed-water choice as suspension inside a bright sunbeam, with the hunter remaining an off-screen threat. Preserve the title, hooked dilemma, answer6 and qualified seafloor-claw-risk source; exclude both exact images.",
+  "halted": null,
   "complete": false,
   "health": {
     "public": 1,
@@ -3088,5 +3061,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T06:06:18+00:00"
+  "updated_at": "2026-10-25T06:06:23+00:00"
 }
