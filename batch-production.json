@@ -525,10 +525,12 @@
         "premise": "survive_night-01",
         "replay": ".github/replay/survive-night-exact-repair.json"
       },
-      "stage": "held",
-      "attempts": 2,
-      "source_sha": "bb8685620813b5dc40f43f4d8c9ab26a8b4e754b",
+      "stage": "dispatch_unresolved",
+      "attempts": 3,
+      "source_sha": "179682206c978760b017928ec19e831062c37126",
       "before_ids": [
+        40148479040,
+        40148319091,
         40147925087,
         40147415761,
         40146406019,
@@ -555,7 +557,7 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T00:51:22+00:00",
+      "submitted_at": "2026-10-25T00:55:47+00:00",
       "cloud_status": "completed",
       "editorial_holds": [
         {
@@ -747,16 +749,28 @@
             "slot": "A",
             "premise": "survive_night-01"
           }
+        },
+        {
+          "run_id": 40148319091,
+          "source_sha": "bb8685620813b5dc40f43f4d8c9ab26a8b4e754b",
+          "stage": "held",
+          "problems": [
+            "production run cancelled"
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "survive_night-01",
+            "replay": ".github/replay/survive-night-exact-repair.json"
+          },
+          "repair_reason": "Exact reviewed replan replaces malformed skull, duckbills, tire-like footprint and human/carcass predator scene with roots, boulder, mudflat and a coherent tyrannosaur head. Every retained source and take preserved; current pair preflight 0.8753, full cloud and AV remain mandatory."
         }
       ],
       "obsolete_runs": [
-        40143333505
+        40143333505,
+        40148319091
       ],
-      "repair_reason": "Exact reviewed replan replaces malformed skull, duckbills, tire-like footprint and human/carcass predator scene with roots, boulder, mudflat and a coherent tyrannosaur head. Every retained source and take preserved; current pair preflight 0.8753, full cloud and AV remain mandatory.",
-      "run_id": 40148319091,
-      "problems": [
-        "production run cancelled"
-      ]
+      "repair_reason": "Recover the same exact reviewed input bundle after GitHub cancelled its pending shared repair group. New workflow gives each non-publishing preview a unique group while retaining publisher locks, all gates and durable dispatch history."
     },
     {
       "repo": "pangaea-nights",
@@ -1179,8 +1193,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry survive_night-01: production run cancelled",
-  "updated_at": "2026-10-25T00:54:33+00:00",
+  "halted": null,
+  "updated_at": "2026-10-25T00:55:47+00:00",
   "complete": false,
   "health": {
     "public": 0,
