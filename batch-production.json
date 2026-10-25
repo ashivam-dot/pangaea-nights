@@ -1065,7 +1065,7 @@
         "premise": "countdown-02",
         "replay": ".github/replay/countdown-high-ground-repair.json"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 2,
       "source_sha": "35f1ea21425e8ec75b3ade3dfef7682611b8adb9",
       "before_ids": [
@@ -1100,7 +1100,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T01:24:13+00:00",
-      "cloud_status": "queued",
+      "cloud_status": "completed",
       "editorial_holds": [
         {
           "id": "direct-tsunami-high-ground-impact-scale-40147415761",
@@ -1181,7 +1181,10 @@
         40147415761
       ],
       "repair_reason": "Replace only exact refused inland/impact scenes; preserve all seven original usable image slots. Adopt independently reviewed inland style and impact-cloud replan, common turtle wording, and source-faithful shorter verdict. Actual production preflight passes 43.197s, WER0.025, line max0.167, pair max0.87577. Final cloud and full AV checks still required.",
-      "run_id": 40150491810
+      "run_id": 40150491810,
+      "problems": [
+        "production run failure"
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -1570,5 +1573,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:36:11+00:00"
+  "updated_at": "2026-10-25T01:36:15+00:00"
 }
