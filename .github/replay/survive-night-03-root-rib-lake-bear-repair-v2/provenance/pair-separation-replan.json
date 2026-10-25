@@ -1,0 +1,180 @@
+{
+  "original": {
+    "id": "survive_night-03",
+    "era": "Pleistocene",
+    "title": "One Ice Age Night \u2014 Which Cave Do You Sleep In? \ud83e\uddca",
+    "banner": "Which shelter do you pick?",
+    "hook_vo": "Ice Age Europe, a freezing night. Choose your shelter.",
+    "art_direction": "Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Snow hollow in a drift",
+        "vo": "A hollow dug into a snow drift.",
+        "danger": 1,
+        "image_prompt": "POV from inside a hollow dug into a deep snowdrift, looking out at a frozen Ice Age valley in blue hour, spruce trees heavy with snow, amber glow far away, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 2,
+        "label": "Shallow rock overhang",
+        "vo": "A shallow overhang, open to the valley.",
+        "danger": 2,
+        "image_prompt": "POV under a shallow limestone overhang open to a snowy Ice Age valley, frost on the rock lip, a small amber resin fire glowing on the dry ground, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 3,
+        "label": "Under a fallen spruce",
+        "vo": "Under the roots of a fallen spruce.",
+        "danger": 3,
+        "image_prompt": "A low close view underneath the torn-out roots of a fallen spruce in a snowy Ice Age forest. Huge irregular gnarled brown roots branch upward and sideways, gripping clumps of dark soil and small stones above a shallow empty recess in the ground. A fallen rough-barked trunk extends diagonally away from the roots toward the upper right. Thin tangled roots dangle over the hollow, patches of snow rest on the root tangles, distant standing spruce trees are small behind. A faint warm amber reflection touches one root, cold blue evening light across the snow, frosted grey limestone, natural uprooted tree, photoreal painterly wilderness, vertical composition, one warm focal light"
+      },
+      {
+        "n": 4,
+        "label": "Inside a mammoth rib arch",
+        "vo": "Under the ribs of an old mammoth.",
+        "danger": 4,
+        "image_prompt": "Three-quarter side view of a single large weathered mammoth ribcage lying half buried in snow on an open Ice Age valley floor. Smooth curved ivory ribs arc upward from the snowy ground and join the same short backbone along the top, enclosing a small empty hollow underneath the bone arches. The connected ribs and backbone are the only bone structure in the scene. Their lower ends are embedded in snow. The rest of the frame shows a wide distant blue winter valley and a low snowy ridge, with a faint amber reflection on one old rib, steel-blue snow light, frosted grey limestone, photoreal painterly wilderness, vertical composition, one warm focal light"
+      },
+      {
+        "n": 5,
+        "label": "Frozen lake shore",
+        "vo": "Right on the frozen lake shore.",
+        "danger": 5,
+        "image_prompt": "An empty low shore-level view across an untouched frozen alpine lake at night, jagged natural ice begins beside an uninhabited snow-covered limestone bank, long fine trails of windblown powder snow sweep over the blue ice, distant snowy mountains and an amber natural sky reflection on the far bank, purely wild prehistoric winter landscape, foreground contains only natural ice and snow, steel-blue snow light, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 6,
+        "label": "Deep cave with old bones",
+        "vo": "Deep in a cave littered with bones.",
+        "danger": 6,
+        "image_prompt": "POV deep inside a dark limestone cave, the floor scattered with huge old bear bones and skulls, frost at the entrance far behind, amber glow on the walls, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 7,
+        "label": "Cave with fresh claw marks",
+        "vo": "A cave with fresh claw marks.",
+        "danger": 7,
+        "image_prompt": "POV at the mouth of a snow-dusted cave, deep fresh claw gouges scored across the limestone walls, warm musky breath steaming from the dark inside, amber glow, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 8,
+        "label": "The cave bear's den",
+        "vo": "The back of a cave bear's den.",
+        "danger": 8,
+        "image_prompt": "A large cave bear lies curled in a natural earthen hibernation hollow at the back of a limestone cave, seen in a quiet side view. One coherent heavy brown furry body with rounded ears, a high domed forehead and a broad muzzle rests close to the ground, its head lifted slightly. Smooth thick fur, natural bear paws folded near its chest, neutral animal expression. Faint amber reflected light reveals the bear and dry rock around it; a small cold-blue snowy cave entrance is far behind. Ice Age wilderness, photoreal painterly, vertical composition, one warm focal light"
+      }
+    ],
+    "answer_n": 2,
+    "verdict_vo": "Real answer: number 2, because cave bears frequently hibernated in caves through winter. The open overhang is probably safer.",
+    "fact": {
+      "text": "Cave bears frequently used caves to hibernate during the winter months.",
+      "wiki_title": "Cave bear",
+      "wiki_revid": 1378613344,
+      "source_sentence": "This reflects the views of experts that cave bears spent more time in caves than the brown bear, frequently using them to hibernate during the winter months."
+    },
+    "description": "Glacial Europe, a night far below freezing, and eight places to sleep. The cosy-looking caves were not always empty. Pick your number before the verdict.",
+    "tags": [
+      "Ice Age",
+      "cave bear",
+      "Pleistocene",
+      "prehistoric",
+      "survival",
+      "deep time",
+      "megafauna",
+      "would you rather"
+    ],
+    "related_topic_hint": "One Night in the Ice Age (Pleistocene megafauna)",
+    "series": "survive_night",
+    "end_image": "o2"
+  },
+  "replacement": {
+    "id": "survive_night-03",
+    "era": "Pleistocene",
+    "title": "One Ice Age Night \u2014 Which Cave Do You Sleep In? \ud83e\uddca",
+    "banner": "Which shelter do you pick?",
+    "hook_vo": "Ice Age Europe, a freezing night. Choose your shelter.",
+    "art_direction": "Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Snow hollow in a drift",
+        "vo": "A hollow dug into a snow drift.",
+        "danger": 1,
+        "image_prompt": "POV from inside a hollow dug into a deep snowdrift, looking out at a frozen Ice Age valley in blue hour, spruce trees heavy with snow, amber glow far away, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 2,
+        "label": "Shallow rock overhang",
+        "vo": "A shallow overhang, open to the valley.",
+        "danger": 2,
+        "image_prompt": "POV under a shallow limestone overhang open to a snowy Ice Age valley, frost on the rock lip, a small amber resin fire glowing on the dry ground, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 3,
+        "label": "Under a fallen spruce",
+        "vo": "Under the roots of a fallen spruce.",
+        "danger": 3,
+        "image_prompt": "A low close view underneath the torn-out roots of a fallen spruce in a snowy Ice Age forest. Huge irregular gnarled brown roots branch upward and sideways, gripping clumps of dark soil and small stones above a shallow empty recess in the ground. A fallen rough-barked trunk extends diagonally away from the roots toward the upper right. Thin tangled roots dangle over the hollow, patches of snow rest on the root tangles, distant standing spruce trees are small behind. A faint warm amber reflection touches one root, cold blue evening light across the snow, frosted grey limestone, natural uprooted tree, photoreal painterly wilderness, vertical composition, one warm focal light"
+      },
+      {
+        "n": 4,
+        "label": "Inside a mammoth rib arch",
+        "vo": "Under the ribs of an old mammoth.",
+        "danger": 4,
+        "image_prompt": "Three-quarter side view of a single large weathered mammoth ribcage lying half buried in snow on an open Ice Age valley floor. Smooth curved ivory ribs arc upward from the snowy ground and join the same short backbone along the top, enclosing a small empty hollow underneath the bone arches. The connected ribs and backbone are the only bone structure in the scene. Their lower ends are embedded in snow. The rest of the frame shows a wide distant blue winter valley and a low snowy ridge, with a faint amber reflection on one old rib, steel-blue snow light, frosted grey limestone, photoreal painterly wilderness, vertical composition, one warm focal light"
+      },
+      {
+        "n": 5,
+        "label": "Frozen lake shore",
+        "vo": "Right on the frozen lake shore.",
+        "danger": 5,
+        "image_prompt": "An empty low shore-level view across an untouched frozen alpine lake at night, jagged natural ice begins beside an uninhabited snow-covered limestone bank, long fine trails of windblown powder snow sweep over the blue ice, distant snowy mountains and an amber natural sky reflection on the far bank, purely wild prehistoric winter landscape, foreground contains only natural ice and snow, steel-blue snow light, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 6,
+        "label": "Deep cave with old bones",
+        "vo": "Deep in a cave littered with bones.",
+        "danger": 6,
+        "image_prompt": "A low close view of the floor deep inside a limestone cave, with several large weathered animal limb bones, a heavy curved animal rib and one bear skull with an elongated muzzle lying half-buried in pale cave sediment. The old bones dominate the lower two-thirds of the frame. Behind them is a deep nearly black rock recess, with jagged natural limestone and frost along the lower edges. A soft amber reflection lights the bones from outside the frame, cool blue fill on stone. The distant entrance is entirely outside this close composition, photoreal painterly Ice Age natural history, vertical composition"
+      },
+      {
+        "n": 7,
+        "label": "Cave with fresh claw marks",
+        "vo": "A cave with fresh claw marks.",
+        "danger": 7,
+        "image_prompt": "POV at the mouth of a snow-dusted cave, deep fresh claw gouges scored across the limestone walls, warm musky breath steaming from the dark inside, amber glow, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 8,
+        "label": "The cave bear's den",
+        "vo": "The back of a cave bear's den.",
+        "danger": 8,
+        "image_prompt": "A large cave bear lies curled in a natural earthen hibernation hollow at the back of a limestone cave, seen in a quiet side view. One coherent heavy brown furry body with rounded ears, a high domed forehead and a broad muzzle rests close to the ground, its head lifted slightly. Smooth thick fur, natural bear paws folded near its chest, neutral animal expression. Faint amber reflected light reveals the bear and dry rock around it; a small cold-blue snowy cave entrance is far behind. Ice Age wilderness, photoreal painterly, vertical composition, one warm focal light"
+      }
+    ],
+    "answer_n": 2,
+    "verdict_vo": "Real answer: number 2, because cave bears frequently hibernated in caves through winter. The open overhang is probably safer.",
+    "fact": {
+      "text": "Cave bears frequently used caves to hibernate during the winter months.",
+      "wiki_title": "Cave bear",
+      "wiki_revid": 1378613344,
+      "source_sentence": "This reflects the views of experts that cave bears spent more time in caves than the brown bear, frequently using them to hibernate during the winter months."
+    },
+    "description": "Glacial Europe, a night far below freezing, and eight places to sleep. The cosy-looking caves were not always empty. Pick your number before the verdict.",
+    "tags": [
+      "Ice Age",
+      "cave bear",
+      "Pleistocene",
+      "prehistoric",
+      "survival",
+      "deep time",
+      "megafauna",
+      "would you rather"
+    ],
+    "related_topic_hint": "One Night in the Ice Age (Pleistocene megafauna)",
+    "series": "survive_night",
+    "end_image": "o2"
+  },
+  "reason": "The best complete current cached-image selection has o2/o6 cosine0.90696 above the unchanged0.90 ceiling. Preserve original cave art as evidence but give this unbooked deep-bone-cave choice its own close floor study and dark background. All spoken lines remain unchanged.",
+  "release_approval": false
+}

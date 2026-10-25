@@ -1,0 +1,219 @@
+{
+  "at": "2026-10-25T07:22:37.320472+00:00",
+  "original": {
+    "id": "survive_night-03",
+    "era": "Pleistocene",
+    "title": "One Ice Age Night — Which Cave Do You Sleep In? 🧊",
+    "banner": "Which shelter do you pick?",
+    "hook_vo": "Ice Age Europe, a freezing night. Choose your shelter.",
+    "art_direction": "Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Snow hollow in a drift",
+        "vo": "A hollow dug into a snow drift.",
+        "danger": 1,
+        "image_prompt": "POV from inside a hollow dug into a deep snowdrift, looking out at a frozen Ice Age valley in blue hour, spruce trees heavy with snow, amber glow far away, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 2,
+        "label": "Shallow rock overhang",
+        "vo": "A shallow overhang, open to the valley.",
+        "danger": 2,
+        "image_prompt": "POV under a shallow limestone overhang open to a snowy Ice Age valley, frost on the rock lip, a small amber resin fire glowing on the dry ground, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 3,
+        "label": "Under a fallen spruce",
+        "vo": "Under the roots of a fallen spruce.",
+        "danger": 3,
+        "image_prompt": "POV tucked beneath the upturned roots of a fallen giant spruce in deep snow, icicles hanging from the roots, amber glow through the frozen forest, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 4,
+        "label": "Inside a mammoth rib arch",
+        "vo": "Under the ribs of an old mammoth.",
+        "danger": 4,
+        "image_prompt": "POV beneath the arching weathered ribs of a long-dead woolly mammoth half buried in snow, starlight through the gaps, an amber glow on the ivory, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 5,
+        "label": "Frozen lake shore",
+        "vo": "Right on the frozen lake shore.",
+        "danger": 5,
+        "image_prompt": "POV on the shore of a vast frozen lake at night, wind scouring the ice, snow devils racing across it, one amber glow on the far bank, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 6,
+        "label": "Deep cave with old bones",
+        "vo": "Deep in a cave littered with bones.",
+        "danger": 6,
+        "image_prompt": "POV deep inside a dark limestone cave, the floor scattered with huge old bear bones and skulls, frost at the entrance far behind, amber glow on the walls, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 7,
+        "label": "Cave with fresh claw marks",
+        "vo": "A cave with fresh claw marks.",
+        "danger": 7,
+        "image_prompt": "POV at the mouth of a snow-dusted cave, deep fresh claw gouges scored across the limestone walls, warm musky breath steaming from the dark inside, amber glow, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 8,
+        "label": "The cave bear's den",
+        "vo": "The back of a cave bear's den.",
+        "danger": 8,
+        "image_prompt": "POV deep in a cave as a massive cave bear lifts its head from a hibernation hollow, eyes catching amber light, steam rising from its thick fur, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      }
+    ],
+    "answer_n": 2,
+    "verdict_vo": "Real answer: number 2, because cave bears frequently hibernated in caves through winter. The open overhang is probably safer.",
+    "fact": {
+      "text": "Cave bears frequently used caves to hibernate during the winter months.",
+      "wiki_title": "Cave bear",
+      "wiki_revid": 1378613344,
+      "source_sentence": "This reflects the views of experts that cave bears spent more time in caves than the brown bear, frequently using them to hibernate during the winter months."
+    },
+    "description": "Glacial Europe, a night far below freezing, and eight places to sleep. The cosy-looking caves were not always empty. Pick your number before the verdict.",
+    "tags": [
+      "Ice Age",
+      "cave bear",
+      "Pleistocene",
+      "prehistoric",
+      "survival",
+      "deep time",
+      "megafauna",
+      "would you rather"
+    ],
+    "related_topic_hint": "One Night in the Ice Age (Pleistocene megafauna)",
+    "series": "survive_night"
+  },
+  "replacement": {
+    "id": "survive_night-03",
+    "era": "Pleistocene",
+    "title": "One Ice Age Night — Which Cave Do You Sleep In? 🧊",
+    "banner": "Which shelter do you pick?",
+    "hook_vo": "Ice Age Europe, a freezing night. Choose your shelter.",
+    "art_direction": "Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Snow hollow in a drift",
+        "vo": "A hollow dug into a snow drift.",
+        "danger": 1,
+        "image_prompt": "POV from inside a hollow dug into a deep snowdrift, looking out at a frozen Ice Age valley in blue hour, spruce trees heavy with snow, amber glow far away, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 2,
+        "label": "Shallow rock overhang",
+        "vo": "A shallow overhang, open to the valley.",
+        "danger": 2,
+        "image_prompt": "POV under a shallow limestone overhang open to a snowy Ice Age valley, frost on the rock lip, a small amber resin fire glowing on the dry ground, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 3,
+        "label": "Under a fallen spruce",
+        "vo": "Under the roots of a fallen spruce.",
+        "danger": 3,
+        "image_prompt": "A low close view underneath the torn-out roots of a fallen spruce in a snowy Ice Age forest. Huge irregular gnarled brown roots branch upward and sideways, gripping clumps of dark soil and small stones above a shallow empty recess in the ground. A fallen rough-barked trunk extends diagonally away from the roots toward the upper right. Thin tangled roots dangle over the hollow, patches of snow rest on the root tangles, distant standing spruce trees are small behind. A faint warm amber reflection touches one root, cold blue evening light across the snow, frosted grey limestone, natural uprooted tree, photoreal painterly wilderness, vertical composition, one warm focal light"
+      },
+      {
+        "n": 4,
+        "label": "Inside a mammoth rib arch",
+        "vo": "Under the ribs of an old mammoth.",
+        "danger": 4,
+        "image_prompt": "Three-quarter side view of a single large weathered mammoth ribcage lying half buried in snow on an open Ice Age valley floor. Smooth curved ivory ribs arc upward from the snowy ground and join the same short backbone along the top, enclosing a small empty hollow underneath the bone arches. The connected ribs and backbone are the only bone structure in the scene. Their lower ends are embedded in snow. The rest of the frame shows a wide distant blue winter valley and a low snowy ridge, with a faint amber reflection on one old rib, steel-blue snow light, frosted grey limestone, photoreal painterly wilderness, vertical composition, one warm focal light"
+      },
+      {
+        "n": 5,
+        "label": "Frozen lake shore",
+        "vo": "Right on the frozen lake shore.",
+        "danger": 5,
+        "image_prompt": "An empty low shore-level view across an untouched frozen alpine lake at night, jagged natural ice begins beside an uninhabited snow-covered limestone bank, long fine trails of windblown powder snow sweep over the blue ice, distant snowy mountains and an amber natural sky reflection on the far bank, purely wild prehistoric winter landscape, foreground contains only natural ice and snow, steel-blue snow light, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 6,
+        "label": "Deep cave with old bones",
+        "vo": "Deep in a cave littered with bones.",
+        "danger": 6,
+        "image_prompt": "A low close view of the floor deep inside a limestone cave, with several large weathered animal limb bones, a heavy curved animal rib and one bear skull with an elongated muzzle lying half-buried in pale cave sediment. The old bones dominate the lower two-thirds of the frame. Behind them is a deep nearly black rock recess, with jagged natural limestone and frost along the lower edges. A soft amber reflection lights the bones from outside the frame, cool blue fill on stone. The distant entrance is entirely outside this close composition, photoreal painterly Ice Age natural history, vertical composition"
+      },
+      {
+        "n": 7,
+        "label": "Cave with fresh claw marks",
+        "vo": "A cave with fresh claw marks.",
+        "danger": 7,
+        "image_prompt": "POV at the mouth of a snow-dusted cave, deep fresh claw gouges scored across the limestone walls, warm musky breath steaming from the dark inside, amber glow, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light"
+      },
+      {
+        "n": 8,
+        "label": "The cave bear's den",
+        "vo": "The back of a cave bear's den.",
+        "danger": 8,
+        "image_prompt": "A large cave bear lies curled in a natural earthen hibernation hollow at the back of a limestone cave, seen in a quiet side view. One coherent heavy brown furry body with rounded ears, a high domed forehead and a broad muzzle rests close to the ground, its head lifted slightly. Smooth thick fur, natural bear paws folded near its chest, neutral animal expression. Faint amber reflected light reveals the bear and dry rock around it; a small cold-blue snowy cave entrance is far behind. Ice Age wilderness, photoreal painterly, vertical composition, one warm focal light"
+      }
+    ],
+    "answer_n": 2,
+    "verdict_vo": "Real answer: number 2, because cave bears frequently hibernated in caves through winter. The open overhang is probably safer.",
+    "fact": {
+      "text": "Cave bears frequently used caves to hibernate during the winter months.",
+      "wiki_title": "Cave bear",
+      "wiki_revid": 1378613344,
+      "source_sentence": "This reflects the views of experts that cave bears spent more time in caves than the brown bear, frequently using them to hibernate during the winter months."
+    },
+    "description": "Glacial Europe, a night far below freezing, and eight places to sleep. The cosy-looking caves were not always empty. Pick your number before the verdict.",
+    "tags": [
+      "Ice Age",
+      "cave bear",
+      "Pleistocene",
+      "prehistoric",
+      "survival",
+      "deep time",
+      "megafauna",
+      "would you rather"
+    ],
+    "related_topic_hint": "One Night in the Ice Age (Pleistocene megafauna)",
+    "series": "survive_night",
+    "end_image": "o2"
+  },
+  "manifest": ".github/replay/survive-night-03-root-rib-lake-bear-repair-v2.json",
+  "manifest_sha256": "35fe5ed006b72213341c50b8e110a251abb4baef0611b2fb7ab8587ac2468f23",
+  "voice_preflight": null,
+  "speech_changed": false,
+  "source_sha": "0d27a6bbdc0690630a7f087b01886a48148cf578",
+  "release_approval": false,
+  "remaining": "Current cached-image preflight, cloud, and full audiovisual checks",
+  "cached_image_preflight": {
+    "scope": "Exact production cached-image gates and selection only; depth/motion/full AV not approved",
+    "manifest_sha256": "35fe5ed006b72213341c50b8e110a251abb4baef0611b2fb7ab8587ac2468f23",
+    "passes": true,
+    "selection": {
+      "missing": [],
+      "pair_max": 0.8978224396705627,
+      "pair_min": 0.6846054792404175,
+      "prompt_similarity_min": 0.2755,
+      "choice": {
+        "o1": 0,
+        "o2": 1,
+        "o3": 0,
+        "o4": 0,
+        "o5": 0,
+        "o6": 0,
+        "o7": 0,
+        "o8": 0,
+        "end": 0
+      },
+      "embeddings": {
+        "o1": "lqVnKHgk6Bd4qIKgkyuXJzekXB3JJd6oeSuIqeklPyM0qpIpL5yWngOs2hqDpaCsgqYQlwmd7ZjKp4MdaKZ3J/Ccxat7ILgdaQ9jKiGghy1yKBIoYKa6qFkbsqyCpWMpNiV6lA8qyClzKaQlkRY7m84i0ijzG3ghvazeIOskOaZ4qIWpvhpDqbaYySHFpWCh1acSqESgtiI2KFSpkJ/KqPCnYhkQKAamLifqJoegjCKmp8Cn5I1WJzS59h4UqTAlX6lIKaEebbGKm3ie1KZYKPccUSZjJ8knWiFUlrcey6ZBqqmnuhxhlF+o9iO2ppQht6AxLCQlRCQen0QpR6ElpmMlk5S/m0co1aGMLTwRXiAMo4ulhqe+pFKchaDqJ48ityOPp7GNrSjrEwSkEaRGqCikbhP2phesPB61qgUbsSdVJNEhTyBclqcZfiUXmV8rYqQzIgwkfZsWp8Wi8KDUpv+tAaQxJV4dviRnpxekmY1Dmrmi05QrqPGppKSeKAQfvqJnqfGl7SjuH3gjKyh5pWiaK6NYpeen2ii/qF4cJpxppn4lCqn9p7iecyHzqOeokKQdoAImWSLdK70pkSCQqfAl8yS9plamOCFZJtgl5qDjI7Usux+ALL4mO52oKBKjxyhVIm+EDKdIqNapF6ciKhQkmCT/JFQqiyV5pGOg36IurASgNDAnoLSnpSL0Hb4tvSUVrCCrySXAJacUxKQRqJUl3Ch9md6gh6AYGlSo1SX2KV8pWypOH+AWUpg6q1eVaST5nNiiY5tyKB2mzqgjHNWtEiYeItgkZJ4IpCepzibwpR2scpxxKkMoDilcqo4riS3Ep3Cd45bdJFUp+iOCqZQrwTCIpQWiUyLCICIlnaTtJ8uZvyX4HeMmcaZopUChDBQQErcpiyhtogOorZyhlW2mNqELGIAfXyYpKD8mtqqjIwogCyMyKDknG6+kqiWrZi3Qqaak9yQTqTSqmxSHJtGhZiWEJ90qDByjF10f4CC5LNui1iseJcUn/KY7pympMCBcI5OnyqNnpvkkz6mbH0qk/yV/qSio9KOTnruoG6hrI62oMSxcoxaUECV6oluj7Sfpph0k2J2bGyYYc6XiLOoo7SIHpaioggk6rbObNKs/GfEplpzJJ1WtvaCvIFklTK07J8SknaJuqqccO6WDI58gtZIKITElP4yUpFollquloOSiyyGrJqandihdm+OmySwAqCenuqz7qOGLxKQ0lMUqOB/9n76gOqbsIDoh9SOkjoikuSmbqaIl3iatIeGoxalLqVqk0iiKpn2VvKQpKTKm+6Q1LBaipqPcpu2j/KbzKAInjyRRphIntKdOq42phy9eH8igox25JVYkr6MsIw==",
+        "o2": "0afeJJ2cPB2npkSqCyh7JWGn3Kj7J42ltCtOrLidKxuPrDIooiZCn3Gsvx3NIv6sZSPwHOAjjqZiqh0pI6nzKKOEY6hzIboaSqI2KjAodC4BJNgo3J0XpzIk069fn5YodY0Bm9smriqeKAQjkKXQoKKokSZhk5cgYa6mHVegjiR5rDOXJKAhqGAlxCXEp5mlY6QikyUYS6VnJ+Opp6FUI1SggJpmo7eqyyCekRSnEximpJCooSSvJDC5WKRspTaih6kGLBUnIbFxHUmcLKUpJtmpG5aAp6EiLimtnUwpS6i3qt+h8qe9Hp2oZQ5cpJwmLKmHKrYdRyZnpDgpZSSvFmCbC57yn64m/CBTLUChIyhFpRKofqfBmvWZM58jlPUUFyIGooCdeCksJCiYm6mpnYaoPaUepi2tNShZq/IjjieYpMGaHBzRpialkihqJGwrIRZLqTofsRyWqK+bBJ1MqhmvMqaVp5mY2yV+m52hDCgtpiUp3yiupqyoDaOEIvsUeB/FpxSVoibRJqaRlaVOqOGm5iappn8dFx17qPcYbCTOIhsnZZ7roZQiPKUMrLepxR97JEukAZ7aKX0sUCClrL4iRiehpYem4JNfHp6gtZ9uoS8tK5nJK78SnhixKTSkpSbho0Uo0Z5AoHalix7eKyMi/h6CH3UotCHPmRulHiRiqSKjjC3lpwKruhmTJ5En9iavrHeoeyT1mWaqWp50Gt8ofCd+Hx0mLqleqPWlpyUTLQ0lcCzDJ9InwZ0sp4cnL6IZJWeeTanmJJepqCKWo1yrj6EmILunQpIqnm6UhSUEkaqsQpyYKOgoTyylnKsoUS3dpeknGR8fGRooXZRFqWUrHzF6oRmkPyLUIh0msajXKcGfSSEPKDUpuqccnQylGqZXp9UrQCNtHE2oAaAJKGucgqIWqKooaikIJPolzajpoaGZKCILGXAqD60PrMcfUS2SqJekCirtmp+pUSSPp3SqxSHRpvUo4iGBG+EkraLRK4qowJyJJ94npKhNpcmqHx9NDzudp6LcqCGWK6ixJA8hNZ1dppOr9KhDpukgb6ifJPghKCy+nxClAyYwIfublyXFpxYlkqoApWUZzJ9cKEMjFSfaqSaRuSRQrL0nbarqoYspPpvtK1+t0BZHF3MdyarYHgqkBKhIp+ydAKXCn1QqpSedJFmfiRqHobsax6j0o3ml5iRDKY+mcSAJoygeMiyppfOm0queIxeFVZtfpA0oHaFNp7ql/6WZKMElkif4JAms8yUfp4agIyW9qZSdCajXpJ4XYCBVpZqlI6XjICmp2ahfKruoAZlxqWSfHqlrKKkiTyPKqG8my6Evp8mjKi+wpPqd+ZhNmmwnPCC1Hg==",
+        "o3": "gKgpHOwdMiWtpqCWUCUgILKnq5YxKR+ogyszreChHp9urakovqE3oiSrTR3godao4yLHpDMYf59SqzImjKk0K18ljai5oHohdhvbH5akUi55oGIkO5wZoa4jn7AUj80mIRwTJE0RUykgJAYmGKIwoCSmWyQzIkol/65fpXmHESJKqS2pfqb7pTQmwiQgoy4jAaeMoFqdbRxHJsSpvSEkIy+fHiVRnXqpvSSrobIp06LXJJyrOqXjova425tvpY4fgajTKris9bCNl1wleaQUKlWn9h8DqtQhTSb7JS0lnaszpcyhVxLUpXOozyAoJ64gJaEAJ7KlOinPklAc/Sh6o6YiSCCylE8kiSFkLZOjlCO/FTupFyPLHj2kCqT/GqGlByY3GralfCZEn1mmjJ2/pgGio6gonNektB7qpQKl9CSIpt0gPCgMniWoy6DmGkws3yIjnIgrzRxzJMakKKhWoxKs7KLYkESeeSp+JAOsoxw8pfMocCR5IKOi5iH3J7CdKKlfn5yrzCJwI1ciiCPHqs+obKgWrICgFJCnp8EiNqXqJPIb8KguqykknaLdq82pGCRsm1kqhB08LIkuOJ81qZkYvCMgpiMiKCbsKI2YraooKI4sCabjLBIowKQrKH2qPyg9I9AjbqWqqCaqRadCKQUULx/yFEAnRSVVlVmkxSRqqLSNFytdpD6sCSWMKE4gTiWFqySpxyrMJteqlqOVqJcnNCrrII0o95XiohuoUpRXKjwfkCfmnCgjgCiBqmYmBKDAmjmgpqUpJlmqKqX1J72rUyIXovKovRZum1up4CJVpHWs3ahsI40qIya5pxUoYC3kqAmaLKTeJfYohCmAqrUpRzFipt6owihjHMIo7aeOKBWmFSm6KZcrZ6vRoRMilZSEIuMohyFBpYgeP6YmHvIkGCUTqdQisxVsJFwdmqY5pQckRiD9KDAsza8Yqq2nDS4koA2eUStzJ5KX6qGlHfqZpqKQHoslTCJtHNYr8BwHLnWmxBySJMYki6lwpMyqxyFMJ7IYzKdVoFqoNKotJUKf1yXxq76pd6J2qdCXlJ3GINcgvy39IkImsSjIo/slTChopRcnk6aYqdekPYb9JgIrYKBDqumkCyYfrQchjqXPngIniiJUKK+r4yTsFMIj7KpdH6SlvJ1yp3wni6hvpK4pBCgfKi0ofZZ0GoYkgKcDJ7ocv6gyInam6KQHpbOg1SyXnSScPazgGtEb3Cewplwrx6lpp4uoFhuhGAMmwigWmnOp0yeDpheb2yo/GQYlnKmppgIh9ybpKPqioqINKBSoCJ1qKlGmJqa9p3AmYKbIKT4asCX4pWIl+6gMq0WfGzBWnM6eKCLSo/ck3KjpHw==",
+        "o4": "EqZ8JMaPoiOxqvuXOSyxJ6qmOqQgKmma3C6dq9algiCVq9MlRB44HIStNSXIpOCrThvhFDmcyqk/owgp+agUJWiktKn3oZ4b5KEfLQgnzS/ZHL8qOZRHqvEkerFFJDgqwZ/kIiQmFynrKTApeSQ4pmOkriTLoDwsjK4jGmOh3J0lq/io86ZWnNkhghr5pXAegamFoaeiDSN9KcCoTaJ5pt2mjiT6J6inQh6pJ9mkKyW3DemqZqB9n6O4zB14qX+jNqwNLJagBrCTI0geW6icH6qdFylYqAsjcChQqZQoXqbuqV8lyiAoqtWk9KDVow0oR6QnLIsmdinFpFYkPR49Dygjf6kPprydaBSJLRwl8yVRpYSk/qSlohsieSVpJj4e6iJ0o1uk1SaoKCGkO6oNpRGiQqcGqb+uzikKqNqfqxNwJXUjdh1BndKkCyImIZMqA6JrqCgnZiXljQUgxKi2qD6udKc6pawbdCRPoXwdyqccpAMmMytgIcGpyiQEKJGbhKk+quigQChDJpSaSh5lrBGlsZiKq/sidCV1qoOh0SQ6JBsjtanBqLYk5aezp5Kk0p3qpUuZAKWuLbAt3B0kqUYYxyjIpj+f2J3GJKwnXp9dJ58vrhyIKPwpJ6AjJ8uWByo9KI4rDqhco7iqxaWVLKqdlCceossroSO/oQekwSgwqeEhly6BpMqkhyRgKq4kuiBro9GfoyJkFwaqtSPApZkqkCdeID2ZhqFlqmohsShpLJelHysTliApZSWGrWgjCx13IWyjDJ4DJv+pEqYZnTOpVirKBO+lNyWMnSmmhxXJp1qs6CCeKFQnMihjqBkrhi23o9MlE6mqJlYo4SNqqsIsIi3bjlofLA7emC4oi6HgKLqlUZ8GHaMlE6ucKRGoLKRlpe0qoSa2nA6sraWzn1Mk3qQfoekj2yXsmFuit6X3HUOfsSZRIRYpyKzhpR+oWi8/qLOneiiipnmo1aBGo4ql2KQkkYYos6GSHrgoNiapLDaRNScJK6Yjy6rcHiip/CPIKf+heZw6ohKmaKxwIy6oTaa6qLKqMaWFqPekqKdVmPMjIS2UqF+QnaVnoqgb5h7MqKQn1p6ppKUYC5q8LJGicCQWqeQjrKMwqA4jLa2/HjspSSbSKLatY6TxqCQmiaVap6qpTKJIpxgcvqnZIAYp9yfznsgk4KaRoBAl3asMH2SkPaAtJVGj0BzGo7cVfi1qqD+bBaxWHsEXbBSlJYcrG6hcqLqmBKAxnTMlCCLbJFmtziYSoXakKivuoTShQKx6qAchXCm2HXuqdKdeKMKouhv4JImpIaOHpw4goahLLCEm7ScEqbUrc6EapRambCxGqVGbwiVTHFkoNKRfIQ==",
+        "o5": "9qWWJxsny58OqvqlSSpTJe+mKp2KKD6keyo/pkArVSSRqfworCiClaCseSfLprKrTZQJKZAkQZghqD6f7h1hK1KUOKp2lZUlJaTPKGYUATB2JnkaFaekppQhzKzSHQwlL6BOJsUopB5oKdYkTxtdJ82ojSCyKAUqDqzxokOkJRoiqD0e5qOuIfekRyQMqo+gwaffqUMk/iCMosimEqR5F5ikSKhSJoCkDyolKTwm5B01pgYXciTFKhS5P6WPq0kkCqVrJWUpbrI8HS6hsqueJ9yV+yTlqCooVCnooOkn/Ksqp5eiVCCYnqYY555Gp+ckMqneLWwqXqQ2qcwZqBkDlPkjlZtIoyEqUahDLVAjfBpmoT+oHqfOqseddRaTIEYmAiRaqfymcyy7Ilmg7qJoInGiaKWPpGittik3qhCeQyg7oBKoyCbGJYokSxxaJukochaEIMUonx0Cpg2l5ahXofSvJaKwpGglHCRvokWj7x9npBOeTR8tqNirlaIsnV6i+KWnkd8gXivLKKIhsSc/o62o0pxCE1eijygfoWMjph63m3MkBR8CpVkApJ80qqyk7SVEIdGlm6bJKhAYAZ2nFecmsykKINKpraLqI/ciR6jsIg8sVx3wISeffKM0KQ0kUiGOKDkhMJ4jItqo/yBLLLYiviQQJA8r/admqTaoBCfhpEcXMS7GqVYjIqRkITAxEyuGqkGkhiBuIRoejRSbn5QrfCoLJT0gDKkHJNcfLSHTKjUhOiowoiakyqGxruKf6CO5GFsV9SWjDmAG8KiIpuarvRzRKH2khSJqoiCYlCpNHKuihCl3Kukn2BgOqvgpQS1Uo2CjvwmvKQ0lVQhgpZgoti7sp+Sb+BJ/pWUkNyWuKxujZpzGJCIk7CWkqBKhHacypiYpNyc5ndioO55IGsSkwqaLoNAj1CZgJEUix6YTpuqlVJ+lI88oUq28qEGscC9BqBSo/SlkqnSoXSF5qI6ixR2MJl2bopzApOQhNyePLI0eMCwFKTomWaVaF3anoCLjG7SsOpawpScmeqVhIKGjEiASozWoCKh4qHapVKDBImgDpif6p7uoHSjPoaGmXSctqJkqVyjGpGWkqqZlIzQmJB8NG7ukRx5CqAQkM6zmncYmfSJgJrCtLR/LpE2WKaohKR6r4Ki6qhilgaVgJCMngCTlnYUg0BihpFUpwqbEJEefjx7DJdCgUiB0IyOk6CqAquKiS61GFiakTyeRpV0nBCd1ocig4KiZpTwizaQkJkWfxySbp1GnexhapKGou6eMqYCdoh2Qq0eoxqY1KOGcjZ2rpMCqwyRdqRcmCajdIvcl6qdBqKYobKd8p1Ko6y2CoU+h/KHUKBEmpyjVpA==",
+        "o6": "3qjcJ3OlehjcqWOlcChUJw6qThz6I22p4yoOGWWeYx/JqIAqeyGGpgOp2Cb9JWeoDR89oQUkbyBOqMKer6OuITEhmqWXp/skVxgQKkwkpiy6GPolJaI0p2QnL69xpOUoTJ5sJeokeiq7Ib8naaVDpSqppCICoV+YfazkonAhYiViqM0Ug6l/qcsdbqF0qUmmNaUaqdAgAaW9nCaqx5OYJUykfSGVpACqfKA4nIepaibUqKClNCAFo4y5GSryIf+qcapfKHshNqzpISghR6YKIJwk/CC+r7iliCa2jV8pLKo4pdWjAaf/pnWoNKjFHvwUQaZfp5IopSKOpgcolpQOpCkWAKjcpYGZIRuMLRGiKCoepPunLB8dEcMevJ3yqbginpzGpPWimSZXJe4bpCRUoPSsyaWPqhyoO6ZkrF4nmir3pAujpKMdHWyoGiSOKUssEqAujZ0qHSROHaAi7JwhqCauiqaeqzsk5yiDpn6lZClYphCfO59zqjao7BPfpLke4h9QqIMokiWLJEMgVqm9prAkJygNIjMoaiQ+qBaU0SJMKIklBSAaI7kjpiBTqRapOig4pQCh4595GjQvO6W1qpChfiLgpWMd2x85KLGkq6DZGoMsfxoRLPEirKNZKUYjFChGJAoi6ZyRqyalmKI9JEioDyU4pMEqCif5o1ekIiYYqnan6qnFo1yltp+vKXmrAyf4phGshSd6J/GoTplKoyilyylMJO6gRKikpuGkBig2KZ8obSdAKB0oUKPUqgokl6QmoXucGaXxJLemzSN9GnAYJaWJKMAiwKZNlXOjrSTPFAiqmJwfKSIpkSovqasiiS1/KmMp/SgIJ90fFKA+qqMoji9fpWys2if3ooQfLaZCGdUicxXSFnkmaaQbIqqjpaomrNQkGShqEtmqxqRZJnagiRzCof8rdx4nJH8fo6fZIlmmW6BDqtsod6xWqyiivitbp9sl/STFpCap7yDjp3mlKiIIqNgkpyreooIoZKPHLH+m+Kk5FZAop6v4IUqosx7GpMceVKY5qpQjvR8vIv8jxKhxqDsgOqGjpUQj96hEmS8oNwrUHoslySgQJncjjyjAopOqtad/oR8k/yEAKL8qeimXpkwaSioao4UnoyZDqGgl4qUIKDUrzyh1HB4WwKp4og6pEJ4cqSWZVxiepygpLC2FLPway6g4Jg2hx6j2pbagcqa2I0uldiP3p9+gmiZxpF2o+alsJlYkTSlbkCwqWqg0qC+oG6hBoO2YHSPNH3KqEaHuqRGhCaZEIF6cGaBEGzIixiUcJSSbEJoOoHynz5zyKqWmIqAHrJGon6UyISIqPCBXqMYseRnZIF+cgyulpP4fP5i/IckoViHsIA==",
+        "o7": "YaRKGnGcUxVGowSk7idvKSypNalVKLOsfSzGqG6kUh0prWkovh1ToCawyZwuJ/2qBiaYpekiEaZ3qW8f3anGKGyi46QUJCgbeZtUKSkoEC/kJwcqY6hTHY4ia7FrIRkg8yBZn0IijigjKKKc06ftpdKnuRejqRgQX6iQJcYfEaA2pQqZe6BeqK8lsiQlqUUhNxk5IlYhph0nG4ulVRzWKMamWpp/pcOr2aC9I36cZyAJpfSniJbcIE+5H6SQqQalxqMBKXem269FI2gi4KVhJKSnJKH1qVsmJyTyFQMpZagKqSocWqSjIiWrkKC4JLeShqozJ68ZahcqFBMlaRizl/ciSB7lGasoVwGXLdKfUyiNpQKsMKUQpAai5RrPqZYMuCJvm3SjISeiHaAoDakAHlSnaZ6YqnirKyekHc4bjSB3m6GkByKFnFWodihOoTUslqdQpwkmdyhHqXSnIaWmq3iv/qcGn8CVCSD+GdKV+iRCoZgoNCqbqXeooqV7Gd4kJaddpp4mICE3lbklfKZwpnimjpRLpKIZaxk8p7aiTCQ/nIsp8KRmmNcksx0xqgUYbKWlm4qsZ6TzJj8sxaAnrOclOx6kpdmoqpd/FSEVZ6j4Hbwr2yUwLbsmMximLFynFSseokMnBaCWm2KjxBQzLB2jEBSGoEYSPin6IrMm6x9Upqqi5C4/qI6rQqccHtQllCX/qeqhnSZhJiarsCGkojkkqCdKpNIem6c8orOaMiFlKjMnXiwKK1Kfwx7xqdYmCiSUIv6hM6lcJvipXB//oXeuF6KbKD+kDKAyH5ecDyWqIvepNag3Iq8qQynTo6Ioli2vHimZgSYLpzEl/6BGrBkruyzmomaeFap6JTUgPhOxJIQjjCYKJW8jBqpFmtoQQKjcqOwq4igiobihXRUYo96eUiFYpKkmayU3IOsmH6Y7mx6XuI1NqTUhlKzSqS8nAip0ptyoPCnkpIOrjiNOoUIRyJSIplMot5kQoVUhaaBOKoCp2qIhoHKhZahFpCypj6HfnUkgQiPRqPOleqFlICAk3qEAqwur4KR/pYkmXKGGIzijJCrWJLkmFyUAI08j7CrNqH4bFKQbqQUjwqbmKsopeShZq9KbByHIqnWapKgFocklSyOBLLKqzR0NodgnM6tjqAOexpeZqQgm4ZADo/IidSmTKIqdL6YBl7qRPahHqEaofiiCJ32iqx+woYil3CpFqDmpIKwCKmkh6ahipSEqK6XZmVykNKhQlw4eRij0J9CsWpLOqGYmdxVHEb6mzaN9Ieck7yjHIG0mFKhZJZellanyKJyjnh+Bq26nKqhnJV4qeCH4lAIk+KRQqESeAy/4qJamcKeCIYkq+qDyog==",
+        "o8": "yaRyoEGUXxgHp/ik4ilBKE6nwCX3JzikbioKp3ElCpQwr+WcoxpHKVOsUqFBJCSsLyOFI0Ym4qgro5+ZOxhjplwjhphTpWwq9yXyKN+kmTC6oj0nbyUGoYUewa29olcsnKY1ojYmoiZNIkol2qTSIqyqRSjEolofTqi2pemit5hjqzEhj5mFJDgkF6axGfed4xxOqBkkDqhoqRGmZRrzm/inoCYiqVud5ZM7mo0sJqFEkL8l+yYpJlC5PSf+qNenhY6hIIymNKwnnFYcT6FKKbOYOJ1bricd2ytgpLqkR6OknxkR56KZoc+lJKaanbEpVRY6KMwoyiQLqvenkx+CKHUjVibLJD8dFBxVLTKoLCgtpz2imqSzp6Qg5atXI/MkKKuxp9KovykkJAyivKRkH5uqLKSbm5CrwyhSqg8YJiTunAek9iTRIjUo+ajdIAsriqFEmgApYCp7nUqop4DwpK+xUaVOp0chESYBo1gmYipJncgiLSC8qE+lMKYmpKCpGaCNFMydLxoAJRulB60PqxAZFSizJkspVyZ9K4shqqmiJqkoaqgDpGIqIBUZrM2fJCiTobOaqiMFK+Qtrxo4q4AoDiLep60TWyEkKXOgyaUkJ38sKpkRJ7glTJ/bKMkfApSIJ54qpqElqTUg9JG1JZWbWCcOppAfuph2omuiMiJKqNKhpiyuEnekrahGn6ce+CYSoFKlf6CWniOmmCDjIiEnkyucJM6kj6SNk5EQmCHOKeMkGifjphcmGifIr68QOyBWnJWoyicEIx2myiG7nFYdvhyfKB8mmSkkqKkbHBqLoA2i/iujLHIpqijemq8pUy1dFoEoFKnMISYojZ71ogIgtyR/ppykNyYbqaAkj6VBHeEfE57RnX8j1qsyHAKoFaNeqhwl0xjIJK2j7KhmGQ6jBJv1p28hyiqdHPqsIKIwKnehF6QsnXoiQxq4qPql0C1FqESgFCszIcmoXyU0qbynzCD+Iqcn46OVIocl5CPPL1ocuqtWJDgqQqr0Jvyp2aK/K++lDSPapqulIgsApF6kQhxLJT+swKZ1HuCs6KADHcAfZRoQppOlNiaRJEalPSl/qCMs4RwPpJwpIaTUHx8ppSc7Ibmlwh8AHxcj26tuoRcf3Jj+LDCpVaVVp58gGRzUKFWoxKeQpOgUW6NepXAj1yzRGqyhTZyhIEihcakwHsmcISTtHEqdBCJnHF+YGSgPpBSoipwCKCAl3idClgEjF6VsrSIdiapCpjEsuqS9pKerVB0EqhercJ6MKIOo6Z9npaWiZSRwqkYjQCTHJcSmKaRhKfWk0B8UqekkLabbHiMqe6j4pIYnmCUrIDmbIivWp2CqIKDlIdolgqDfJg=="
+      }
+    },
+    "current_cloud_and_av_required": true
+  },
+  "verification": "72 relevant ladder/prompt/QA/replay tests passed; direct original/local image review preserved; full cloud render and audiovisual release checks still mandatory."
+}

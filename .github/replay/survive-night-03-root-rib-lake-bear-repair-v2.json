@@ -1,0 +1,248 @@
+{
+  "schema": 1,
+  "premise": "survive_night-03",
+  "cached_only": true,
+  "source": {
+    "run_id": 40167406784,
+    "sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc",
+    "key": "2026-10-25-survive_night-03"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o1.png",
+        "sha256": "b07661e41106709bb609731f30a8bff725fee9b696b076e3c46bf7d70580ebd0",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 75.0,
+          "raw_p99": 164.0,
+          "gamma": 0.551,
+          "spread": 102.0
+        },
+        "artifact_id": 12589663832,
+        "prompt": "POV from inside a hollow dug into a deep snowdrift, looking out at a frozen Ice Age valley in blue hour, spruce trees heavy with snow, amber glow far away, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o1-alt1.png",
+        "sha256": "501a9058e275224b3876ae3f54987f30678b1deb7531774be07cc71ab6f27c7e",
+        "model": "klein4b-q8-768",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 74.2,
+          "raw_p99": 168.0,
+          "gamma": 0.546,
+          "spread": 123.0
+        },
+        "artifact_id": 12589663832,
+        "prompt": "POV from inside a hollow dug into a deep snowdrift, looking out at a frozen Ice Age valley in blue hour, spruce trees heavy with snow, amber glow far away, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o2": [
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o2.png",
+        "sha256": "596c3d3b6abd191a6efeb324f1be57c422eea3c7bc7ef8ffaf61d237bc0cec08",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 84.0,
+          "raw_p99": 193.0,
+          "gamma": 0.607,
+          "spread": 156.0
+        },
+        "artifact_id": 12589761171,
+        "prompt": "POV under a shallow limestone overhang open to a snowy Ice Age valley, frost on the rock lip, a small amber resin fire glowing on the dry ground, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o2-alt1.png",
+        "sha256": "e784fad63dabbcbd3dac5eb601d76726ce200870f294f8a046574a778f08db64",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 89.1,
+          "raw_p99": 204.0,
+          "gamma": 0.641,
+          "spread": 166.0
+        },
+        "artifact_id": 12589761171,
+        "prompt": "POV under a shallow limestone overhang open to a snowy Ice Age valley, frost on the rock lip, a small amber resin fire glowing on the dry ground, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o3": [
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o3-full-t0.png",
+        "sha256": "7834af7b72159f2036e8fc2a8550492f5cf8be736055e1ee36d3b2cc840970fc",
+        "model": "klein4b-q8-768",
+        "prompt": "A low close view underneath the torn-out roots of a fallen spruce in a snowy Ice Age forest. Huge irregular gnarled brown roots branch upward and sideways, gripping clumps of dark soil and small stones above a shallow empty recess in the ground. A fallen rough-barked trunk extends diagonally away from the roots toward the upper right. Thin tangled roots dangle over the hollow, patches of snow rest on the root tangles, distant standing spruce trees are small behind. A faint warm amber reflection touches one root, cold blue evening light across the snow, frosted grey limestone, natural uprooted tree, photoreal painterly wilderness, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 85.5,
+          "raw_p99": 193.0,
+          "gamma": 0.617,
+          "spread": 164.0
+        },
+        "generation": {
+          "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o3-full-t0-generation.json",
+          "sha256": "2125c24340c78b888f77f6100828bd36e5162e1f8824b56836668f33515aff73"
+        }
+      },
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o3-full-t1.png",
+        "sha256": "5e70bcd11bbf53fb313bae21472c961131ab0d048151e20f3759d555c5ad8d7f",
+        "model": "klein4b-q8-768",
+        "prompt": "A low close view underneath the torn-out roots of a fallen spruce in a snowy Ice Age forest. Huge irregular gnarled brown roots branch upward and sideways, gripping clumps of dark soil and small stones above a shallow empty recess in the ground. A fallen rough-barked trunk extends diagonally away from the roots toward the upper right. Thin tangled roots dangle over the hollow, patches of snow rest on the root tangles, distant standing spruce trees are small behind. A faint warm amber reflection touches one root, cold blue evening light across the snow, frosted grey limestone, natural uprooted tree, photoreal painterly wilderness, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 97.1,
+          "raw_p99": 225.0,
+          "gamma": 0.698,
+          "spread": 159.0
+        },
+        "generation": {
+          "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o3-full-t1-generation.json",
+          "sha256": "8d9e0a102bf651fdaadd2a7ac596f7dbaaf8b3a089c30696d8250e6b06eecd96"
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o4-full-t0.png",
+        "sha256": "f5383ce8bb0283933297c638ae0396b650af65c406e7542be97bef09c68220a2",
+        "model": "klein4b-q8-768",
+        "prompt": "Three-quarter side view of a single large weathered mammoth ribcage lying half buried in snow on an open Ice Age valley floor. Smooth curved ivory ribs arc upward from the snowy ground and join the same short backbone along the top, enclosing a small empty hollow underneath the bone arches. The connected ribs and backbone are the only bone structure in the scene. Their lower ends are embedded in snow. The rest of the frame shows a wide distant blue winter valley and a low snowy ridge, with a faint amber reflection on one old rib, steel-blue snow light, frosted grey limestone, photoreal painterly wilderness, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 123.4,
+          "raw_p99": 181.0,
+          "gamma": 0.928,
+          "spread": 71.0
+        },
+        "generation": {
+          "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o4-full-t0-generation.json",
+          "sha256": "83f7effe0714e8bf0c4eb5b3ed91241edeb4fb20ec2910f1e778c4b2289d9c11"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o5-full-t2.png",
+        "sha256": "ea1f05dac4a4e6e69cb3323b7918ca3afa0c20ebc14f6d6bcee239ae2f7534d3",
+        "model": "klein4b-q8-768",
+        "prompt": "An empty low shore-level view across an untouched frozen alpine lake at night, jagged natural ice begins beside an uninhabited snow-covered limestone bank, long fine trails of windblown powder snow sweep over the blue ice, distant snowy mountains and an amber natural sky reflection on the far bank, purely wild prehistoric winter landscape, foreground contains only natural ice and snow, steel-blue snow light, photoreal painterly, vertical composition. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 2,
+        "exposure": {
+          "raw_mean": 79.1,
+          "raw_p99": 175.0,
+          "gamma": 0.575,
+          "spread": 119.0
+        },
+        "generation": {
+          "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o5-full-t2-generation.json",
+          "sha256": "5b411dd5b47cfd8ebf89276314866b303de35130f6aed9539d88f3ac6ffdf234"
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o6-full-t0.png",
+        "sha256": "8e762cfbe2364868cfacf10bcbe7da3a0b99b5712b983a4b563cf6fe5f7585a5",
+        "model": "klein4b-q8-768",
+        "prompt": "A low close view of the floor deep inside a limestone cave, with several large weathered animal limb bones, a heavy curved animal rib and one bear skull with an elongated muzzle lying half-buried in pale cave sediment. The old bones dominate the lower two-thirds of the frame. Behind them is a deep nearly black rock recess, with jagged natural limestone and frost along the lower edges. A soft amber reflection lights the bones from outside the frame, cool blue fill on stone. The distant entrance is entirely outside this close composition, photoreal painterly Ice Age natural history, vertical composition. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 64.0,
+          "raw_p99": 192.0,
+          "gamma": 0.488,
+          "spread": 195.0
+        },
+        "generation": {
+          "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o6-full-t0-generation.json",
+          "sha256": "fc0bbef169b5a76501fe9ad13403d3022687aaea8a0180b2538850844825ba9e"
+        }
+      },
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o6-full-t1.png",
+        "sha256": "a9ef4bb0d5fd96034a5260af31a225aa5c21c06b6bc3a61d6728dc7af7ca1aff",
+        "model": "klein4b-q8-768",
+        "prompt": "A low close view of the floor deep inside a limestone cave, with several large weathered animal limb bones, a heavy curved animal rib and one bear skull with an elongated muzzle lying half-buried in pale cave sediment. The old bones dominate the lower two-thirds of the frame. Behind them is a deep nearly black rock recess, with jagged natural limestone and frost along the lower edges. A soft amber reflection lights the bones from outside the frame, cool blue fill on stone. The distant entrance is entirely outside this close composition, photoreal painterly Ice Age natural history, vertical composition. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 65.9,
+          "raw_p99": 199.0,
+          "gamma": 0.498,
+          "spread": 182.0
+        },
+        "generation": {
+          "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o6-full-t1-generation.json",
+          "sha256": "4a0740cc7fa67efa800ac3e2c1f22d9f4de1386406dd6af5393c4a0a9b2a81b9"
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o7.png",
+        "sha256": "e9f9cdf974baf9f4fa0a52b57d2863299474167b8fd69fa3609867846724acf5",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 73.2,
+          "raw_p99": 191.0,
+          "gamma": 0.54,
+          "spread": 143.0
+        },
+        "artifact_id": 12588958315,
+        "prompt": "POV at the mouth of a snow-dusted cave, deep fresh claw gouges scored across the limestone walls, warm musky breath steaming from the dark inside, amber glow, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o7-alt1.png",
+        "sha256": "b4dbf95c728dafa8786a599ff63cbe0324cd7e6a4deb36d0c72d1b55ee68ae8c",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 89.3,
+          "raw_p99": 184.0,
+          "gamma": 0.642,
+          "spread": 130.0
+        },
+        "artifact_id": 12588958315,
+        "prompt": "POV at the mouth of a snow-dusted cave, deep fresh claw gouges scored across the limestone walls, warm musky breath steaming from the dark inside, amber glow, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o8": [
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o8-full-t1.png",
+        "sha256": "55d23c02298fb791e30e393504856bd7e210ff991da4c9c3307e704d52690830",
+        "model": "klein4b-q8-768",
+        "prompt": "A large cave bear lies curled in a natural earthen hibernation hollow at the back of a limestone cave, seen in a quiet side view. One coherent heavy brown furry body with rounded ears, a high domed forehead and a broad muzzle rests close to the ground, its head lifted slightly. Smooth thick fur, natural bear paws folded near its chest, neutral animal expression. Faint amber reflected light reveals the bear and dry rock around it; a small cold-blue snowy cave entrance is far behind. Ice Age wilderness, photoreal painterly, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 61.8,
+          "raw_p99": 177.0,
+          "gamma": 0.475,
+          "spread": 134.0
+        },
+        "generation": {
+          "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o8-full-t1-generation.json",
+          "sha256": "6b84906906ada0c3b4181638264dd2f3ab86792190471ecf9c123564a5e93674"
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o2.png",
+        "sha256": "596c3d3b6abd191a6efeb324f1be57c422eea3c7bc7ef8ffaf61d237bc0cec08",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 84.0,
+          "raw_p99": 193.0,
+          "gamma": 0.607,
+          "spread": 156.0
+        },
+        "artifact_id": 12589761171,
+        "prompt": "POV under a shallow limestone overhang open to a snowy Ice Age valley, frost on the rock lip, a small amber resin fire glowing on the dry ground, steel-blue snow light, frosted grey limestone, amber pine-resin glow, 35mm lens, photoreal painterly, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source_image": "o2"
+      }
+    ]
+  }
+}

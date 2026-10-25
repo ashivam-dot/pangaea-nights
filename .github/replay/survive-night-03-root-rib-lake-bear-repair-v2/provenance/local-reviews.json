@@ -1,0 +1,96 @@
+{
+  "images": [
+    {
+      "file": "art-v1/o3-full-t0.png",
+      "image_sha256": "d5a875575c76b15d651dfac4c067129f7f9d7e76bf3b5517b14907f6e493fa01",
+      "decision": "hold",
+      "reason": "The root mound is painted as a nearly circular sawn-log end with a bark rim rather than an irregular mass of uprooted roots and soil. Exclude these takes; keep the original root-shelter narration."
+    },
+    {
+      "file": "art-v1/o3-full-t1.png",
+      "image_sha256": "6ebf2a830f060428008c7ecb7bbc419370eada16713a2e128d192adafbe035a9",
+      "decision": "hold",
+      "reason": "The root mound is painted as a nearly circular sawn-log end with a bark rim rather than an irregular mass of uprooted roots and soil. Exclude these takes; keep the original root-shelter narration."
+    },
+    {
+      "file": "art-v3/o3-full-t0.png",
+      "image_sha256": "7834af7b72159f2036e8fc2a8550492f5cf8be736055e1ee36d3b2cc840970fc",
+      "decision": "pass",
+      "reason": "An irregular exposed mass of roots and soil shelters an empty ground recess beneath the tilted fallen conifer; no sawn-log disk or upright hollow trunk."
+    },
+    {
+      "file": "art-v3/o3-full-t1.png",
+      "image_sha256": "5e70bcd11bbf53fb313bae21472c961131ab0d048151e20f3759d555c5ad8d7f",
+      "decision": "pass",
+      "reason": "An irregular exposed mass of roots and soil shelters an empty ground recess beneath the tilted fallen conifer; no sawn-log disk or upright hollow trunk."
+    },
+    {
+      "file": "art-v2/o4-full-t0.png",
+      "image_sha256": "d9daa5ba9a3621d1362ce456d0ad3191a20339871db96032bb97c17104a312b9",
+      "decision": "hold",
+      "reason": "The image adds separate giant foreground bones floating above the main skeleton."
+    },
+    {
+      "file": "art-v2/o4-full-t1.png",
+      "image_sha256": "f7f18f82ae5592d7093dba7706fd35d4f130bae68f1eb025fc52b2d5fc265f95",
+      "decision": "hold",
+      "reason": "Separate giant unattached foreground bones float above a second skeleton; exclude this construction."
+    },
+    {
+      "file": "art-v5/o4-full-t0.png",
+      "image_sha256": "f5383ce8bb0283933297c638ae0396b650af65c406e7542be97bef09c68220a2",
+      "decision": "pass",
+      "reason": "A single connected group of rounded rib arches embedded in snow forms the intended empty old skeleton shelter; no living animal, wooden beams or floating foreground bones."
+    },
+    {
+      "file": "art-v5/o4-full-t1.png",
+      "image_sha256": "fecf21b46d2d0dc9a5d3a9b082800fc8769aab7aecc5a4d05c855df3d63773a3",
+      "decision": "hold",
+      "reason": "Ribs join a radial ring at the top rather than a linear vertebral column; exclude this malformed ribcage take."
+    },
+    {
+      "file": "art-v7/o8-full-t0.png",
+      "image_sha256": "8cfc563ac355c01502660d90df84ecaf3c33a5197e68da9411820faac2e6e023",
+      "decision": "hold",
+      "reason": "A manufactured brazier or torch-like fixture with a flame stands at the rear of the cave; exclude this anachronistic take."
+    },
+    {
+      "file": "art-v7/o8-full-t1.png",
+      "image_sha256": "55d23c02298fb791e30e393504856bd7e210ff991da4c9c3307e704d52690830",
+      "decision": "pass",
+      "reason": "A single coherent curled bear blocks the natural rock recess. Forelimbs and paws join the body, no extra animal or modern fixture is visible, and the hazard matches the spoken bear choice."
+    },
+    {
+      "file": "art-v8/o5-full-t2.png",
+      "image_sha256": "ea1f05dac4a4e6e69cb3323b7918ca3afa0c20ebc14f6d6bcee239ae2f7534d3",
+      "decision": "pass",
+      "reason": "A clear low shore-level view shows only natural snow, cracked lake ice and a distant mountain valley with an amber far-bank glow. No feet, legs, shoes, furniture or manufactured fixtures are visible. Matches the spoken frozen-lake-shore choice; unchanged current figure score0.468 passes."
+    },
+    {
+      "file": "art-v8/o5-full-t0.png",
+      "image_sha256": "11a5be1174bba1d8c1abb35648ecd204ecb0797f871b0507a201d89cf3068b17",
+      "decision": "hold",
+      "reason": "Current figure check 0.5108 exceeds the unchanged0.50 ceiling; preserve this conservative automated refusal and select the separately passing t2. This does not assert a visible person was directly identified."
+    },
+    {
+      "file": "art-v8/o5-full-t1.png",
+      "image_sha256": "fcb7b461cc1feb01a09a9099634efb400766da93bbf7b5223ad3140ce6692332",
+      "decision": "hold",
+      "reason": "Current figure check 0.5485 exceeds the unchanged0.50 ceiling; preserve this conservative automated refusal and select the separately passing t2. This does not assert a visible person was directly identified."
+    },
+    {
+      "file": "art-v9/o6-full-t0.png",
+      "image_sha256": "8e762cfbe2364868cfacf10bcbe7da3a0b99b5712b983a4b563cf6fe5f7585a5",
+      "decision": "pass",
+      "reason": "Direct full-resolution review: naturally weathered animal skull and long bones on the snowy cave floor, dark rock recess behind, coherent connected skull and empty setting. No hanging lanterns or manufactured fixtures. Close bone study makes this distinct from the shallow-overhang shelter; unchanged cave-bones narration preserved. Pairwise selection still required."
+    },
+    {
+      "file": "art-v9/o6-full-t1.png",
+      "image_sha256": "a9ef4bb0d5fd96034a5260af31a225aa5c21c06b6bc3a61d6728dc7af7ca1aff",
+      "decision": "pass",
+      "reason": "Direct full-resolution review: naturally weathered animal skull and long bones on the snowy cave floor, dark rock recess behind, coherent connected skull and empty setting. No hanging lanterns or manufactured fixtures. Close bone study makes this distinct from the shallow-overhang shelter; unchanged cave-bones narration preserved. Pairwise selection still required."
+    }
+  ],
+  "release_approval": false,
+  "reviewed_at": "2026-10-25T07:22:32.976933+00:00"
+}

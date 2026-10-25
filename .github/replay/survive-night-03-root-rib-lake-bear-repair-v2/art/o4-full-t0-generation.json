@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "2dfb5c1416589586933800db1fd8d35013a09242",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "Three-quarter side view of a single large weathered mammoth ribcage lying half buried in snow on an open Ice Age valley floor. Smooth curved ivory ribs arc upward from the snowy ground and join the same short backbone along the top, enclosing a small empty hollow underneath the bone arches. The connected ribs and backbone are the only bone structure in the scene. Their lower ends are embedded in snow. The rest of the frame shows a wide distant blue winter valley and a low snowy ridge, with a faint amber reflection on one old rib, steel-blue snow light, frosted grey limestone, photoreal painterly wilderness, vertical composition, one warm focal light. Glacial Europe in blue hour: steel-blue snow, frosted limestone, one amber glow of a distant resin-pine fire, 35mm handheld feel. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 1854352983
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "survive-night-03-root-rib-lake-bear-repair-v2/art/o4-full-t0-raw.png",
+    "sha256": "f119362f09415d5bde1b1f470b44bde3c1d727aa2013492669e3bd05a5ce3500"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 71.1
+}
