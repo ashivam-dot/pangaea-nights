@@ -2718,10 +2718,21 @@
             "ladder-img-A-2/o3.png": "06f7d58850c4eb2ab93685545fbf00987624bd473eb883694b2516a624c39505",
             "ladder-img-A-2/o3-alt1.png": "af953be131c368798f3b68ece515bde6ba4b7e01e6576e7795c127232c7b5d3b"
           }
+        },
+        {
+          "id": "direct-placoderm-crocodile-hold",
+          "run_id": 40167081277,
+          "observed_at": "2026-10-25T06:46:11+00:00",
+          "reason": "Direct full-resolution inspection rejects both o7 paintings: the supposed Dunkleosteus armor is a crocodilian scaly head/back, and the alternate has a row of pointed teeth. Dunkleosteus was a placoderm with broad dermal head/trunk plates and bony cutting jaws, not a toothed crocodile. Replace only these false anatomical views with a coherent close study of broad armor plates; retain answer seven and the sourced qualified verdict. All current image, pair, narrator, render and audiovisual gates remain.",
+          "evidence": {
+            "ladder-img-A-6/o7.png": "86858b1deaaf91da8026a193d1f0b9df8f719c54efbab7ec041a81de65e7f49a",
+            "ladder-img-A-6/o7-alt1.png": "f310ee2f8b235555294335daca96cce13757c1e620501390fb24d280dd55870f"
+          }
         }
       ],
       "problems": [
-        "Direct full-resolution inspection rejects both o3 paintings: the intended Devonian trilobite has a vertebrate fish-like face, lips and a frontal mouth instead of a trilobite cephalon with a ventral mouth. Preserve the spoken shield choice and other useful art; replace only this option with a scientifically coherent dorsal three-lobed segmented arthropod. Full current picture, pairwise-image, narrator, render and audiovisual checks remain mandatory."
+        "Direct full-resolution inspection rejects both o3 paintings: the intended Devonian trilobite has a vertebrate fish-like face, lips and a frontal mouth instead of a trilobite cephalon with a ventral mouth. Preserve the spoken shield choice and other useful art; replace only this option with a scientifically coherent dorsal three-lobed segmented arthropod. Full current picture, pairwise-image, narrator, render and audiovisual checks remain mandatory.",
+        "Direct full-resolution inspection rejects both o7 paintings: the supposed Dunkleosteus armor is a crocodilian scaly head/back, and the alternate has a row of pointed teeth. Dunkleosteus was a placoderm with broad dermal head/trunk plates and bony cutting jaws, not a toothed crocodile. Replace only these false anatomical views with a coherent close study of broad armor plates; retain answer seven and the sourced qualified verdict. All current image, pair, narrator, render and audiovisual gates remain."
       ]
     },
     {
@@ -3095,7 +3106,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry level_1_8-03: Direct full-resolution inspection rejects both o3 paintings: the intended Devonian trilobite has a vertebrate fish-like face, lips and a frontal mouth instead of a trilobite cephalon with a ventral mouth. Preserve the spoken shield choice and other useful art; replace only this option with a scientifically coherent dorsal three-lobed segmented arthropod. Full current picture, pairwise-image, narrator, render and audiovisual checks remain mandatory.",
+  "halted": "Repair held entry level_1_8-03: Direct full-resolution inspection rejects both o3 paintings: the intended Devonian trilobite has a vertebrate fish-like face, lips and a frontal mouth instead of a trilobite cephalon with a ventral mouth. Preserve the spoken shield choice and other useful art; replace only this option with a scientifically coherent dorsal three-lobed segmented arthropod. Full current picture, pairwise-image, narrator, render and audiovisual checks remain mandatory.; Direct full-resolution inspection rejects both o7 paintings: the supposed Dunkleosteus armor is a crocodilian scaly head/back, and the alternate has a row of pointed teeth. Dunkleosteus was a placoderm with broad dermal head/trunk plates and bony cutting jaws, not a toothed crocodile. Replace only these false anatomical views with a coherent close study of broad armor plates; retain answer seven and the sourced qualified verdict. All current image, pair, narrator, render and audiovisual gates remain.",
   "complete": false,
   "health": {
     "public": 2,
@@ -3103,5 +3114,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T06:38:46+00:00"
+  "updated_at": "2026-10-25T06:46:11+00:00"
 }
