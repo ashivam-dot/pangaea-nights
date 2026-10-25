@@ -2734,7 +2734,7 @@
         "slot": "A",
         "premise": "survive_night-03"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "f4586ff1ce1c7b76c846f43c8b41a81e8e4d35bc",
       "before_ids": [
@@ -2785,7 +2785,22 @@
       ],
       "submitted_at": "2026-10-25T05:57:55+00:00",
       "run_id": 40167406784,
-      "cloud_status": "queued"
+      "cloud_status": "queued",
+      "editorial_holds": [
+        {
+          "id": "direct-fallen-spruce-hold",
+          "run_id": 40167406784,
+          "observed_at": "2026-10-25T06:24:38+00:00",
+          "reason": "Direct full-resolution inspection rejects both o3 paintings for narration mismatch: the scene shows upright standing spruces with a hollow in their bases, rather than shelter beneath the exposed upturned roots of a fallen spruce. Preserve all spoken lines and useful other art; repair only this fallen-root image direction. Full current picture, pairwise-image, narrator, render and audiovisual gates remain mandatory.",
+          "evidence": {
+            "ladder-img-A-2/o3.png": "5d0bb4531737f5f97c1f27781ba6035c3182ccf2e81266c04c2d73589d2fab8c",
+            "ladder-img-A-2/o3-alt1.png": "fe1b8698ff3162f40935b0eabe942bfe3bee96a2ab4d3b060fc6f8b5800eca2c"
+          }
+        }
+      ],
+      "problems": [
+        "Direct full-resolution inspection rejects both o3 paintings for narration mismatch: the scene shows upright standing spruces with a hollow in their bases, rather than shelter beneath the exposed upturned roots of a fallen spruce. Preserve all spoken lines and useful other art; repair only this fallen-root image direction. Full current picture, pairwise-image, narrator, render and audiovisual gates remain mandatory."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -3076,5 +3091,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T06:24:14+00:00"
+  "updated_at": "2026-10-25T06:24:38+00:00"
 }
