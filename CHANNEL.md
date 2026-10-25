@@ -134,6 +134,8 @@ review and release retain their predecessor checks. Every pending dispatch is re
   Shorts matrix. This reserves four of the account's 20 for news, fiction and monitoring. Long image shards keep
   every planned scene (up to ten images per two-hour shard, eleven for a three-hour preview); the existing retry
   budget, image checks and workflow timeouts stay in force. The next full build must verify elapsed time.
+  The two owned batch previews each cap image concurrency at eight; voice completes before images start.
+  Completed previews still occupy the four-entry buffer while waiting for ordered review, but free a producer slot.
 
 ## Packaging
 

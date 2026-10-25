@@ -105,12 +105,18 @@ def test_each_dry_preview_has_an_independent_queue_without_changing_live_modes()
 
 
 def test_concurrency_stays_within_twenty():
+    from ops.cloud_batch import MAX_BUILDING
+
     shorts = load("shorts.yml")["jobs"]
     n = len(ladder.SLOTS)
     images = min(shorts["images"]["strategy"]["max-parallel"],
                  len(ladder_cli.image_matrix(list(ladder.SLOTS), len(ladder.IMAGE_IDS))))
     shorts_peak = images + n  # images + one voice per slot
     assert shorts_peak <= fanout.LIMIT - 4  # news, fiction and monitoring also share the account
+    preview_images = min(shorts["images"]["strategy"]["max-parallel"],
+                         len(ladder_cli.image_matrix(["A"], len(ladder.IMAGE_IDS))))
+    assert MAX_BUILDING * preview_images <= fanout.LIMIT - 4
+    assert set(shorts["images"]["needs"]) == {"plan", "voice"}  # narration cannot add parallel runners
     ep = config.shape("full")
     assert ep.image_shards + ep.voice_shards <= fanout.LIMIT - 4
     for length in config.LENGTHS:

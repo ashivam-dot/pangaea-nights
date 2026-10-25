@@ -1,7 +1,8 @@
 name: shorts
 # The choice-ladder Shorts (studio/ladder_cli.py). One run a day builds every slot the ramp allows: slot A releases
 # at 14:30 UTC the same day, slot B at 00:30 UTC the next morning (from launch day 8, after 7 gate-clean Shorts).
-# Peak 19 jobs (17 image + 2 voice); the episode never fans out while this runs (studio/fanout.py).
+# Two owned batch previews may overlap: eight image jobs each reserve four of the account's twenty runners.
+# Voice precedes images, and the episode never fans out while this runs (studio/fanout.py).
 
 on:
   schedule:
@@ -111,7 +112,7 @@ jobs:
     timeout-minutes: 120
     strategy:
       fail-fast: false  # one slot's failed shard must not cancel the other slot's images
-      max-parallel: 17  # + 2 voice = 19, so an episode plan job alongside keeps the total at 20
+      max-parallel: 8  # two owned previews use at most 16 image runners; reserve four for the fleet
       matrix:
         include: ${{ fromJSON(needs.plan.outputs.images) }}
     steps:

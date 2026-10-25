@@ -24,7 +24,7 @@ PLAN_FILE = "strategy/batch-2026-10-25.json"
 FINAL = {"public", "scheduled"}
 MAX_ATTEMPTS = 2
 MAX_PREVIEW_AHEAD = 4  # held and completed dry previews share a bounded buffer
-MAX_BUILDING = 2  # at most eighteen independent image shards; release stays ordered
+MAX_BUILDING = 2  # eight concurrent image shards each; leave four runners for the rest of the fleet
 
 
 class TransientOperation(RuntimeError):
