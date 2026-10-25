@@ -5292,7 +5292,7 @@
       ],
       "submitted_at": "2026-10-25T15:32:29+00:00",
       "run_id": 40207430412,
-      "cloud_status": "queued"
+      "cloud_status": "in_progress"
     },
     {
       "repo": "pangaea-nights",
@@ -5432,7 +5432,7 @@
         "slot": "A",
         "premise": "survive_night-05"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 1,
       "source_sha": "bbb5a37e495b25e7038374cace91805f05b31d43",
       "before_ids": [
@@ -5497,7 +5497,9 @@
         40148479040,
         40148319091
       ],
-      "submitted_at": "2026-10-25T16:21:13+00:00"
+      "submitted_at": "2026-10-25T16:21:13+00:00",
+      "run_id": 40211267149,
+      "cloud_status": "queued"
     },
     {
       "repo": "pangaea-nights",
@@ -5676,5 +5678,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T16:46:40+00:00"
+  "updated_at": "2026-10-25T16:46:43+00:00"
 }
