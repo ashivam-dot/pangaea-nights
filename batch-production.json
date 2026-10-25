@@ -4524,12 +4524,23 @@
             "ladder-img-A-5/o6.png": "7224a8447b83f4cca2193e65807242ea72930ffc15471f6ac8d4364b3f71b43c",
             "ladder-img-A-5/o6-alt1.png": "55bf042004ce287394a4c19f545c39724fd0fbf68485edc3cd10fb1eb0d129bb"
           }
+        },
+        {
+          "id": "survive04-open-sea-hold",
+          "run_id": 40189867657,
+          "observed_at": "2026-10-25T12:43:02+00:00",
+          "reason": "The final swim-option paintings substitute shallow carbonate pools with isolated or forked fin shapes for the planned open dark sea. Repair only this visual as unoccupied open water and a distant island, preserving all speech and accepted siblings. Every existing picture/pair/narrator/render/full audiovisual gate remains required.",
+          "evidence": {
+            "ladder-img-A-7/o8.png": "1a31eca9faa69ab9cb6a1d6cfd64f4d09df2a41bda72cd52f9d06f432b0440e4",
+            "ladder-img-A-7/o8-alt1.png": "4dd8c420f6f152608355753a4e48ef104a282ba82fcdcc41972515a9de7c8109"
+          }
         }
       ],
       "problems": [
         "The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required.",
         "Lagoon-flat image includes human feet; driftwood images include human hands or a modern burning lamp. Replace only these two scenes with unoccupied documentary environment views. Preserve narration, accepted siblings and all current picture/pair/narrator/render/full audiovisual gates.",
-        "Reef images contain airborne marine reptiles or ambiguous crocodile-like anatomy; dried-lagoon images invent leaf/sole-like prints. Replace only these two visuals with unoccupied reef water and cracked carbonate mud details. Preserve all speech, accepted siblings and existing picture/pair/narrator/render/full audiovisual gates."
+        "Reef images contain airborne marine reptiles or ambiguous crocodile-like anatomy; dried-lagoon images invent leaf/sole-like prints. Replace only these two visuals with unoccupied reef water and cracked carbonate mud details. Preserve all speech, accepted siblings and existing picture/pair/narrator/render/full audiovisual gates.",
+        "The final swim-option paintings substitute shallow carbonate pools with isolated or forked fin shapes for the planned open dark sea. Repair only this visual as unoccupied open water and a distant island, preserving all speech and accepted siblings. Every existing picture/pair/narrator/render/full audiovisual gate remains required."
       ]
     },
     {
@@ -4823,7 +4834,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry survive_night-04: The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required.; Lagoon-flat image includes human feet; driftwood images include human hands or a modern burning lamp. Replace only these two scenes with unoccupied documentary environment views. Preserve narration, accepted siblings and all current picture/pair/narrator/render/full audiovisual gates.; Reef images contain airborne marine reptiles or ambiguous crocodile-like anatomy; dried-lagoon images invent leaf/sole-like prints. Replace only these two visuals with unoccupied reef water and cracked carbonate mud details. Preserve all speech, accepted siblings and existing picture/pair/narrator/render/full audiovisual gates.",
+  "halted": "Repair held entry survive_night-04: The option4 roost paintings contain crowded crested short-tail/dragon-like pterosaur forms and ambiguous fused wing anatomy instead of a clear Late Jurassic long-tailed Rhamphorhynchus scene. Preserve all speech and accepted siblings; repair only this roost painting. Every current picture, pairwise, narrator, render and full audiovisual release gate remains required.; Lagoon-flat image includes human feet; driftwood images include human hands or a modern burning lamp. Replace only these two scenes with unoccupied documentary environment views. Preserve narration, accepted siblings and all current picture/pair/narrator/render/full audiovisual gates.; Reef images contain airborne marine reptiles or ambiguous crocodile-like anatomy; dried-lagoon images invent leaf/sole-like prints. Replace only these two visuals with unoccupied reef water and cracked carbonate mud details. Preserve all speech, accepted siblings and existing picture/pair/narrator/render/full audiovisual gates.; The final swim-option paintings substitute shallow carbonate pools with isolated or forked fin shapes for the planned open dark sea. Repair only this visual as unoccupied open water and a distant island, preserving all speech and accepted siblings. Every existing picture/pair/narrator/render/full audiovisual gate remains required.",
   "complete": false,
   "health": {
     "public": 2,
@@ -4831,5 +4842,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:42:46+00:00"
+  "updated_at": "2026-10-25T12:43:02+00:00"
 }
