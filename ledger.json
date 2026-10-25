@@ -922,6 +922,19 @@
      "dry run: nothing is uploaded",
      "gates failed: timeline: {\"problems\": [\"total 45.45s is outside 30-45s\"]}; duration_s: {\"value\": 45.4667, \"floor\": 30.0, \"ceiling\": 45.0}; wer_line_max: {\"value\": 0.429, \"floor\": 0.0, \"ceiling\": 0.25, \"line\": \"o4\"}"
     ]
+   },
+   {
+    "at": "2026-10-25T01:08:36Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "level_1_8-16",
+    "run": "40148479040",
+    "ok": true,
+    "failures": [],
+    "published": false,
+    "refusals": [
+     "dry run: nothing is uploaded"
+    ]
    }
   ],
   "alerts": [
