@@ -2096,7 +2096,55 @@
       ],
       "submitted_at": "2026-10-25T05:31:43+00:00",
       "run_id": 40165862617,
-      "cloud_status": "in_progress"
+      "cloud_status": "completed",
+      "review": {
+        "schema": 1,
+        "model": "gemini-3.8-flash",
+        "duration": 43.57,
+        "video_sha256": "758856bb0d067bc7f4b7cd42f4031bbdb013a417b2cae62ee52962e1a0119307",
+        "brief_sha256": "506a4a835e47b5265809eb92d3ef914a11295579eeb1a5fa9ca157f0e294d65b",
+        "review_video_sha256": "e015afa5df4a900fe147367268e9dbcfacafb0709484841846a6072323803b94",
+        "review_audio_sha256": "9f51ac68d810ed981e277c68671740c73f9bad5cf53ee9e937869cde36b7b814",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "One supercontinent.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.5,
+              "seen": "Damp fern gully framing a calm moonlit sea under violet night sky with banner text.",
+              "heard": "Where do you stop?"
+            },
+            {
+              "part": "middle",
+              "seconds": 15.0,
+              "seen": "Polygonal white salt crust reflecting a copper moon with option 4 graphic overlay.",
+              "heard": "huge salt flat."
+            },
+            {
+              "part": "ending",
+              "seconds": 38.0,
+              "seen": "Coastal fern gully background with answer reveal banner and caption text.",
+              "heard": "The coast probably gives you better odds."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -2707,5 +2755,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T05:48:35+00:00"
+  "updated_at": "2026-10-25T05:51:24+00:00"
 }
