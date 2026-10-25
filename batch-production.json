@@ -1299,12 +1299,16 @@
       "inputs": {
         "dry_run": "true",
         "slot": "A",
-        "premise": "how_deep-02"
+        "premise": "how_deep-02",
+        "replay": ".github/replay/how-deep-charnia-repair.json"
       },
-      "stage": "held",
-      "attempts": 1,
-      "source_sha": "35f1ea21425e8ec75b3ade3dfef7682611b8adb9",
+      "stage": "dispatch_unresolved",
+      "attempts": 2,
+      "source_sha": "1574ec5955ef7b871a7208d6f9e8b33be40e6ebf",
       "before_ids": [
+        40152622139,
+        40152163089,
+        40151287146,
         40150491810,
         40149509321,
         40148607387,
@@ -1336,8 +1340,7 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T01:36:19+00:00",
-      "run_id": 40151287146,
+      "submitted_at": "2026-10-25T02:26:20+00:00",
       "cloud_status": "in_progress",
       "editorial_holds": [
         {
@@ -1393,9 +1396,25 @@
           }
         }
       ],
-      "problems": [
-        "Direct inspection of both actual option-seven candidates: thin grass-like strands, without the broad segmented leaf-like branches described in pinned Charnia revision 1373445695. The named payoff requires a scientifically plausible frond reconstruction. Repair this exact scene; retain passing sibling images and all spoken facts. Closing plate also exhausted all four existing image gates."
-      ]
+      "repair_history": [
+        {
+          "run_id": 40151287146,
+          "source_sha": "35f1ea21425e8ec75b3ade3dfef7682611b8adb9",
+          "stage": "held",
+          "problems": [
+            "Direct inspection of both actual option-seven candidates: thin grass-like strands, without the broad segmented leaf-like branches described in pinned Charnia revision 1373445695. The named payoff requires a scientifically plausible frond reconstruction. Repair this exact scene; retain passing sibling images and all spoken facts. Closing plate also exhausted all four existing image gates."
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "how_deep-02"
+          }
+        }
+      ],
+      "obsolete_runs": [
+        40151287146
+      ],
+      "repair_reason": "Exact reviewed frond/disc replacement with pinned morphology source and passing-opening reprise. Preserve every spoken fact and all passing siblings; current cloud image, narration, render and full audiovisual gates remain."
     },
     {
       "repo": "pangaea-nights",
@@ -1762,7 +1781,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry how_deep-02: Direct inspection of both actual option-seven candidates: thin grass-like strands, without the broad segmented leaf-like branches described in pinned Charnia revision 1373445695. The named payoff requires a scientifically plausible frond reconstruction. Repair this exact scene; retain passing sibling images and all spoken facts. Closing plate also exhausted all four existing image gates.",
+  "halted": null,
   "complete": false,
   "health": {
     "public": 1,
@@ -1770,5 +1789,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T02:26:13+00:00"
+  "updated_at": "2026-10-25T02:26:20+00:00"
 }
