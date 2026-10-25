@@ -3870,7 +3870,7 @@
         "slot": "A",
         "premise": "level_1_8-04"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "f50f3c21d92f256dc235049d002d1ae18a9a7a57",
       "before_ids": [
@@ -3929,7 +3929,23 @@
       ],
       "submitted_at": "2026-10-25T08:37:50+00:00",
       "run_id": 40177381015,
-      "cloud_status": "queued"
+      "cloud_status": "queued",
+      "editorial_holds": [
+        {
+          "id": "direct-level04-six-legged-harvestman",
+          "run_id": 40177381015,
+          "observed_at": "2026-10-25T09:13:08+00:00",
+          "reason": "Both harvestman paintings show six main walking legs rather than eight. Preserve every spoken line and useful siblings; repair only this arachnid picture with eight separated legs on one compact body. The springtail alternate is also excluded in the reviewed cached repair. All current picture, narration, render and audiovisual gates remain required.",
+          "evidence": {
+            "ladder-img-A-2/o3.png": "34357fe9d7d75aa95eb89cb073305bc0bc43432f690b146ec80be8073c19be72",
+            "ladder-img-A-2/o3-alt1.png": "f5fb87f7077cb0f327c5096d217c6471b98029febf4c7c841cd555efc095fd15",
+            "ladder-img-A-0/o1-alt1.png": "6edca234a3140d7f049ca2a7e28296d5d1a44e76b3104c82bdcc9d580bbb08c8"
+          }
+        }
+      ],
+      "problems": [
+        "Both harvestman paintings show six main walking legs rather than eight. Preserve every spoken line and useful siblings; repair only this arachnid picture with eight separated legs on one compact body. The springtail alternate is also excluded in the reviewed cached repair. All current picture, narration, render and audiovisual gates remain required."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -4178,5 +4194,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T09:11:05+00:00"
+  "updated_at": "2026-10-25T09:13:08+00:00"
 }
