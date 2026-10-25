@@ -504,12 +504,19 @@
       "inputs": {
         "dry_run": "true",
         "slot": "A",
-        "premise": "survive_night-01"
+        "premise": "survive_night-01",
+        "replay": ".github/replay/survive-night-exact-repair.json"
       },
-      "stage": "held",
-      "attempts": 1,
-      "source_sha": "80b5fb275f40b43928ae6ce722b92dc27c5370a7",
+      "stage": "dispatch_unresolved",
+      "attempts": 2,
+      "source_sha": "bb8685620813b5dc40f43f4d8c9ab26a8b4e754b",
       "before_ids": [
+        40147925087,
+        40147415761,
+        40146406019,
+        40144187249,
+        40143437986,
+        40143333505,
         40140139736,
         40138993804,
         40136822897,
@@ -530,8 +537,7 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-24T23:35:04+00:00",
-      "run_id": 40143333505,
+      "submitted_at": "2026-10-25T00:51:22+00:00",
       "cloud_status": "in_progress",
       "editorial_holds": [
         {
@@ -708,11 +714,27 @@
           }
         }
       ],
-      "problems": [
-        "Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.",
-        "Direct inspection of actual o4 base/alternate: skull has multiple paired/upcurved brow horns rather than a coherent three-horn Triceratops skull. Actual o8 base also contains a small grey-clad human figure hiding behind the carcass, despite the no-humans rule; its predator/carcass anatomy is unreliable. Replace only o4 and o8, preserve usable other slots, source fact, answer and publishing order. This is an exact-media hold, not a numeric threshold change.",
-        "Direct actual-pixel inspection of o7 base and alternate: a circular repeated tread/ribbed trench, not a natural three-toed T. rex footprint. Replace this exact option with a deliberately documented exposed-mudflat refuge; retain sourced smell fact, answer 2, other usable media and current cloud/AV gates."
-      ]
+      "repair_history": [
+        {
+          "run_id": 40143333505,
+          "source_sha": "80b5fb275f40b43928ae6ce722b92dc27c5370a7",
+          "stage": "held",
+          "problems": [
+            "Actual o5 base and alternate depict horn/ear-like projections on a heavy reptilian head and an unrecognizable narrow ridged muzzle, not a broad-beaked duck-billed hadrosaur herd. Both fail direct anatomical alignment with the spoken sleeping duckbills option. Replace only o5; retain other usable inputs and all spoken text. Current cloud media and full audiovisual gates remain mandatory.",
+            "Direct inspection of actual o4 base/alternate: skull has multiple paired/upcurved brow horns rather than a coherent three-horn Triceratops skull. Actual o8 base also contains a small grey-clad human figure hiding behind the carcass, despite the no-humans rule; its predator/carcass anatomy is unreliable. Replace only o4 and o8, preserve usable other slots, source fact, answer and publishing order. This is an exact-media hold, not a numeric threshold change.",
+            "Direct actual-pixel inspection of o7 base and alternate: a circular repeated tread/ribbed trench, not a natural three-toed T. rex footprint. Replace this exact option with a deliberately documented exposed-mudflat refuge; retain sourced smell fact, answer 2, other usable media and current cloud/AV gates."
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "survive_night-01"
+          }
+        }
+      ],
+      "obsolete_runs": [
+        40143333505
+      ],
+      "repair_reason": "Exact reviewed replan replaces malformed skull, duckbills, tire-like footprint and human/carcass predator scene with roots, boulder, mudflat and a coherent tyrannosaur head. Every retained source and take preserved; current pair preflight 0.8753, full cloud and AV remain mandatory."
     },
     {
       "repo": "pangaea-nights",
@@ -1136,7 +1158,7 @@
     }
   ],
   "halted": "Repair held entry level_1_8-16: production run failure",
-  "updated_at": "2026-10-25T00:51:18+00:00",
+  "updated_at": "2026-10-25T00:51:22+00:00",
   "complete": false,
   "health": {
     "public": 0,
