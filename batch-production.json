@@ -2916,6 +2916,50 @@
           "evidence": {
             "ladder-img-A-2/o3.png": "5d0bb4531737f5f97c1f27781ba6035c3182ccf2e81266c04c2d73589d2fab8c",
             "ladder-img-A-2/o3-alt1.png": "fe1b8698ff3162f40935b0eabe942bfe3bee96a2ab4d3b060fc6f8b5800eca2c"
+          },
+          "resolved_at": "2026-10-25T07:24:51+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "5c82425af8e09cdb17b2ff82ba6efd2b06d837ae",
+            "replay": ".github/replay/survive-night-03-root-rib-lake-bear-repair-v2.json",
+            "replay_sha256": "35fe5ed006b72213341c50b8e110a251abb4baef0611b2fb7ab8587ac2468f23",
+            "images": {
+              "o1": [
+                "b07661e41106709bb609731f30a8bff725fee9b696b076e3c46bf7d70580ebd0",
+                "501a9058e275224b3876ae3f54987f30678b1deb7531774be07cc71ab6f27c7e"
+              ],
+              "o2": [
+                "596c3d3b6abd191a6efeb324f1be57c422eea3c7bc7ef8ffaf61d237bc0cec08",
+                "e784fad63dabbcbd3dac5eb601d76726ce200870f294f8a046574a778f08db64"
+              ],
+              "o3": [
+                "7834af7b72159f2036e8fc2a8550492f5cf8be736055e1ee36d3b2cc840970fc",
+                "5e70bcd11bbf53fb313bae21472c961131ab0d048151e20f3759d555c5ad8d7f"
+              ],
+              "o4": [
+                "f5383ce8bb0283933297c638ae0396b650af65c406e7542be97bef09c68220a2"
+              ],
+              "o5": [
+                "ea1f05dac4a4e6e69cb3323b7918ca3afa0c20ebc14f6d6bcee239ae2f7534d3"
+              ],
+              "o6": [
+                "8e762cfbe2364868cfacf10bcbe7da3a0b99b5712b983a4b563cf6fe5f7585a5",
+                "a9ef4bb0d5fd96034a5260af31a225aa5c21c06b6bc3a61d6728dc7af7ca1aff"
+              ],
+              "o7": [
+                "e9f9cdf974baf9f4fa0a52b57d2863299474167b8fd69fa3609867846724acf5",
+                "b4dbf95c728dafa8786a599ff63cbe0324cd7e6a4deb36d0c72d1b55ee68ae8c"
+              ],
+              "o8": [
+                "55d23c02298fb791e30e393504856bd7e210ff991da4c9c3307e704d52690830"
+              ],
+              "end": [
+                "596c3d3b6abd191a6efeb324f1be57c422eea3c7bc7ef8ffaf61d237bc0cec08"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive-03-fallen-root-repair/staging-v10-receipt.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -2926,6 +2970,50 @@
           "evidence": {
             "ladder-img-A-3/o4.png": "d05a6cd67cde550aeb9af8e9048bc1c65511cc31f6c5f6c101dd8fd232a3aaf3",
             "ladder-img-A-3/o4-alt1.png": "ba92652b3412142865c6a95f328baf3a65791757742f6adf3ace3e2c7a4c4e39"
+          },
+          "resolved_at": "2026-10-25T07:24:51+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "5c82425af8e09cdb17b2ff82ba6efd2b06d837ae",
+            "replay": ".github/replay/survive-night-03-root-rib-lake-bear-repair-v2.json",
+            "replay_sha256": "35fe5ed006b72213341c50b8e110a251abb4baef0611b2fb7ab8587ac2468f23",
+            "images": {
+              "o1": [
+                "b07661e41106709bb609731f30a8bff725fee9b696b076e3c46bf7d70580ebd0",
+                "501a9058e275224b3876ae3f54987f30678b1deb7531774be07cc71ab6f27c7e"
+              ],
+              "o2": [
+                "596c3d3b6abd191a6efeb324f1be57c422eea3c7bc7ef8ffaf61d237bc0cec08",
+                "e784fad63dabbcbd3dac5eb601d76726ce200870f294f8a046574a778f08db64"
+              ],
+              "o3": [
+                "7834af7b72159f2036e8fc2a8550492f5cf8be736055e1ee36d3b2cc840970fc",
+                "5e70bcd11bbf53fb313bae21472c961131ab0d048151e20f3759d555c5ad8d7f"
+              ],
+              "o4": [
+                "f5383ce8bb0283933297c638ae0396b650af65c406e7542be97bef09c68220a2"
+              ],
+              "o5": [
+                "ea1f05dac4a4e6e69cb3323b7918ca3afa0c20ebc14f6d6bcee239ae2f7534d3"
+              ],
+              "o6": [
+                "8e762cfbe2364868cfacf10bcbe7da3a0b99b5712b983a4b563cf6fe5f7585a5",
+                "a9ef4bb0d5fd96034a5260af31a225aa5c21c06b6bc3a61d6728dc7af7ca1aff"
+              ],
+              "o7": [
+                "e9f9cdf974baf9f4fa0a52b57d2863299474167b8fd69fa3609867846724acf5",
+                "b4dbf95c728dafa8786a599ff63cbe0324cd7e6a4deb36d0c72d1b55ee68ae8c"
+              ],
+              "o8": [
+                "55d23c02298fb791e30e393504856bd7e210ff991da4c9c3307e704d52690830"
+              ],
+              "end": [
+                "596c3d3b6abd191a6efeb324f1be57c422eea3c7bc7ef8ffaf61d237bc0cec08"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive-03-fallen-root-repair/staging-v10-receipt.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -2935,6 +3023,50 @@
           "reason": "Direct full-resolution inspection excludes o6 alternate: two modern manufactured hanging lanterns appear inside the Ice Age bear-bone cave, although the planned wilderness scene has only an amber glow. The base o6 painting retains the usable animal-bone cave without these anachronistic fixtures. Preserve useful base art, all speech and every current release gate.",
           "evidence": {
             "ladder-img-A-5/o6-alt1.png": "55e9aa70412c0ceea9693921aa65142baa17526ea1e088e5515128bd7724a02b"
+          },
+          "resolved_at": "2026-10-25T07:24:51+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "5c82425af8e09cdb17b2ff82ba6efd2b06d837ae",
+            "replay": ".github/replay/survive-night-03-root-rib-lake-bear-repair-v2.json",
+            "replay_sha256": "35fe5ed006b72213341c50b8e110a251abb4baef0611b2fb7ab8587ac2468f23",
+            "images": {
+              "o1": [
+                "b07661e41106709bb609731f30a8bff725fee9b696b076e3c46bf7d70580ebd0",
+                "501a9058e275224b3876ae3f54987f30678b1deb7531774be07cc71ab6f27c7e"
+              ],
+              "o2": [
+                "596c3d3b6abd191a6efeb324f1be57c422eea3c7bc7ef8ffaf61d237bc0cec08",
+                "e784fad63dabbcbd3dac5eb601d76726ce200870f294f8a046574a778f08db64"
+              ],
+              "o3": [
+                "7834af7b72159f2036e8fc2a8550492f5cf8be736055e1ee36d3b2cc840970fc",
+                "5e70bcd11bbf53fb313bae21472c961131ab0d048151e20f3759d555c5ad8d7f"
+              ],
+              "o4": [
+                "f5383ce8bb0283933297c638ae0396b650af65c406e7542be97bef09c68220a2"
+              ],
+              "o5": [
+                "ea1f05dac4a4e6e69cb3323b7918ca3afa0c20ebc14f6d6bcee239ae2f7534d3"
+              ],
+              "o6": [
+                "8e762cfbe2364868cfacf10bcbe7da3a0b99b5712b983a4b563cf6fe5f7585a5",
+                "a9ef4bb0d5fd96034a5260af31a225aa5c21c06b6bc3a61d6728dc7af7ca1aff"
+              ],
+              "o7": [
+                "e9f9cdf974baf9f4fa0a52b57d2863299474167b8fd69fa3609867846724acf5",
+                "b4dbf95c728dafa8786a599ff63cbe0324cd7e6a4deb36d0c72d1b55ee68ae8c"
+              ],
+              "o8": [
+                "55d23c02298fb791e30e393504856bd7e210ff991da4c9c3307e704d52690830"
+              ],
+              "end": [
+                "596c3d3b6abd191a6efeb324f1be57c422eea3c7bc7ef8ffaf61d237bc0cec08"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive-03-fallen-root-repair/staging-v10-receipt.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -2944,6 +3076,50 @@
           "reason": "Direct full-resolution inspection rejects o5: modern lace-up shoes and trousered human legs enter the frozen-lake wilderness view, with a foreground campfire not requested by the scene. Preserve the spoken frozen-lake-shore choice and every other spoken line; replace only this visual with a clearly empty low shore-level view of natural ice and windblown snow. All current picture, pair, narrator, render and audiovisual checks remain mandatory.",
           "evidence": {
             "ladder-img-A-4/o5.png": "3055bbb6266fe2e8f66b025b35341e86a362b6cfbc9199649e603d1b82986347"
+          },
+          "resolved_at": "2026-10-25T07:24:51+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "5c82425af8e09cdb17b2ff82ba6efd2b06d837ae",
+            "replay": ".github/replay/survive-night-03-root-rib-lake-bear-repair-v2.json",
+            "replay_sha256": "35fe5ed006b72213341c50b8e110a251abb4baef0611b2fb7ab8587ac2468f23",
+            "images": {
+              "o1": [
+                "b07661e41106709bb609731f30a8bff725fee9b696b076e3c46bf7d70580ebd0",
+                "501a9058e275224b3876ae3f54987f30678b1deb7531774be07cc71ab6f27c7e"
+              ],
+              "o2": [
+                "596c3d3b6abd191a6efeb324f1be57c422eea3c7bc7ef8ffaf61d237bc0cec08",
+                "e784fad63dabbcbd3dac5eb601d76726ce200870f294f8a046574a778f08db64"
+              ],
+              "o3": [
+                "7834af7b72159f2036e8fc2a8550492f5cf8be736055e1ee36d3b2cc840970fc",
+                "5e70bcd11bbf53fb313bae21472c961131ab0d048151e20f3759d555c5ad8d7f"
+              ],
+              "o4": [
+                "f5383ce8bb0283933297c638ae0396b650af65c406e7542be97bef09c68220a2"
+              ],
+              "o5": [
+                "ea1f05dac4a4e6e69cb3323b7918ca3afa0c20ebc14f6d6bcee239ae2f7534d3"
+              ],
+              "o6": [
+                "8e762cfbe2364868cfacf10bcbe7da3a0b99b5712b983a4b563cf6fe5f7585a5",
+                "a9ef4bb0d5fd96034a5260af31a225aa5c21c06b6bc3a61d6728dc7af7ca1aff"
+              ],
+              "o7": [
+                "e9f9cdf974baf9f4fa0a52b57d2863299474167b8fd69fa3609867846724acf5",
+                "b4dbf95c728dafa8786a599ff63cbe0324cd7e6a4deb36d0c72d1b55ee68ae8c"
+              ],
+              "o8": [
+                "55d23c02298fb791e30e393504856bd7e210ff991da4c9c3307e704d52690830"
+              ],
+              "end": [
+                "596c3d3b6abd191a6efeb324f1be57c422eea3c7bc7ef8ffaf61d237bc0cec08"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/survive-03-fallen-root-repair/staging-v10-receipt.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -3295,5 +3471,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T07:24:09+00:00"
+  "updated_at": "2026-10-25T07:24:51+00:00"
 }
