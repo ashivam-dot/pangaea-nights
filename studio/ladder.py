@@ -442,10 +442,13 @@ def pick(banks: dict[str, list[dict]], data: dict, at: date, planned: list[dict]
         p = find(banks, override)
         if not p:
             raise BankError(f"no usable premise {override!r}")
+        if p.get("production_hold"):
+            raise BankError("production hold: " + str(p["production_hold"]))
         if p["id"] in taken:
             raise BankError(f"premise {override} was already published")
         return p
     taken |= set(demoted(data, at)) | set(exclude or ())
+    taken |= {p["id"] for ps in banks.values() for p in ps if p.get("production_hold")}
     past = [(_day(s["publish_at"]), s["series"]) for s in history(data)] + [(at, p["series"]) for p in planned]
     last_used = {s: i for i, (_, s) in enumerate(past)}
     queue = [q for q in (data.get("ladder") or {}).get("queue", []) if q not in taken]
@@ -486,6 +489,8 @@ def plan_problems(p: dict, data: dict, at: date, planned: list[dict] | None = No
     rot = rotation_problems(past, p["series"], at)
     nov = overlap(script, others)
     prem = premise_problems(p, p["series"])
+    if p.get("production_hold"):
+        prem.append("production hold: " + str(p["production_hold"]))
     return {"premise": {"ok": not prem, "problems": prem},
             "novelty_4gram": {"value": round(nov, 3), "ceiling": NOVELTY_MAX, "ok": nov <= NOVELTY_MAX},
             "rotation": {"ok": not rot, "problems": rot},
@@ -498,6 +503,11 @@ IMAGE_IDS = [f"o{n}" for n in range(1, OPTIONS + 1)] + ["end"]
 ANATOMY = {("pterosaur", "quetzalcoatlus", "pteranodon", "nyctosaurus", "rhamphorhynchus"):
            "the pterosaur has bare leathery membrane wings stretched from one long finger, a long beak, no feathers, "
            "not a bird",
+           ("jaekelopterus",):
+           "scientific reconstruction: a fully submerged aquatic eurypterid with a broad flattened head shield, "
+           "two large compound eyes, two long forward cheliceral pincers, a wide segmented abdomen, "
+           "broad flat rear swimming limbs and a broad flat triangular telson at the very end; the whole body lies "
+           "horizontally in water, with the terminal segment lying flat",
            ("opabinia",):
            "scientific reconstruction: one elongated horizontal soft body with lateral swimming lobes, five "
            "short-stalked eyes clustered above the head, and one flexible forward proboscis ending in a small claw; "

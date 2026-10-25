@@ -105,6 +105,8 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
     start = time.monotonic()
     if replay and replay["premise"] != p["id"]:
         raise ValueError("image replay belongs to a different premise")
+    cached_only = bool(replay and replay.get("cached_only"))
+    report["cached_only"] = cached_only
     with ExitStack() as stack:
         server = None
         report["load_s"] = 0.0
@@ -124,7 +126,10 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                                       "score": round(take_score(verdict, fig), 3), "fallback": fallback})
                 if cached_from:
                     entry["kept"][-1]["cached_from"] = cached_from
-            for img, exposure, take, provenance in ladder_replay.candidates(replay, job, model, (w, h)):
+            cached = ladder_replay.candidates(replay, job, model, (w, h))
+            if cached_only and not cached:
+                raise ValueError(f"cache-only replay lacks exact inputs for {job['id']}")
+            for img, exposure, take, provenance in cached:
                 verdict = qa.review(img, job["scene"])
                 fig = qa.figure(img)
                 probs = exposure_problems(exposure) + take_problems(verdict, job, fig)
@@ -142,7 +147,7 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                     break
             exhausted = ladder_replay.exhausted(replay, job, model, key, TAKES)
             for take in range(TAKES):
-                if len(entry["kept"]) >= wanted or exhausted:
+                if len(entry["kept"]) >= wanted or exhausted or cached_only:
                     break
                 if replay and replay["source"]["key"] == key and any(
                         r.get("cached_from", {}).get("take") == take

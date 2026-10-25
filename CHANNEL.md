@@ -110,6 +110,11 @@ review and release retain their predecessor checks. Every pending dispatch is re
   repainted and counted as separate takes. Repairs have their own serialized dry-run group, so they do not cancel
   a pending ordinary preview. This input cannot directly publish. Deep-water scenes use neutral external fill
   against black water, without the shallow scenes' glowing focal-light style; exposure and readability gates stay in force.
+  An explicit hash-bound `cached_only: true` repair checks only the supplied exact art and never generates spare
+  takes. Missing inputs or failed current checks hold it; the full pairwise-image and rendered-video gates still apply.
+  Bank entries with `production_hold` stay available for audit but cannot be selected, explicitly replayed or released.
+  The unbooked sea-scorpion slot is deliberately replaced by the existing asteroid-hideout premise at the same time;
+  original artifacts and unresolved scientific refusals remain quarantined.
 
 - **When.** `episode.yml` builds on Tuesday and Friday at 14:10 UTC (`10 14 * * 2,5`). A 2-hour build takes about
   3.5 hours and a 3-hour build about 4.5, and the episode is scheduled for the next 21:00 UTC

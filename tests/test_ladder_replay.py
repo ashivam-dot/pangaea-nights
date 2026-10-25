@@ -65,6 +65,42 @@ def test_cache_hashes_and_prompt_binding_cannot_be_ignored(cached):
     assert replay.candidates(data, job, "different model", (8, 8)) == []
 
 
+def test_explicit_cached_only_repair_never_paints_unused_alternates(cached, tmp_path, monkeypatch):
+    _, job, data, _ = cached
+    data['cached_only'] = True
+    data['images'][job['id']] = data['images'][job['id']][:1]
+    monkeypatch.setattr(qa, 'review', lambda *a: verdict())
+    monkeypatch.setattr(li.sdcpp, 'Server', lambda *a: pytest.fail('cache-only repair loaded a painter'))
+    report = li.generate({'id': data['premise']}, 'original-key', tmp_path/'cache-only', 0, 1,
+                         model='test', replay=data)
+    assert report['cached_only'] and report['images'][0]['ok']
+    assert len(report['images'][0]['kept']) == 1
+    assert report['images'][0]['kept'][0]['cached_from']['take'] == 0
+
+
+def test_cache_only_refusal_still_fails_and_changed_prompts_cannot_generate(cached, tmp_path, monkeypatch):
+    _, job, data, _ = cached
+    data['cached_only'] = True
+    monkeypatch.setattr(qa, 'review', lambda *a: verdict(['broken 0.8']))
+    monkeypatch.setattr(li.sdcpp, 'Server', lambda *a: pytest.fail('cache-only refusal loaded a painter'))
+    report = li.generate({'id': data['premise']}, 'original-key', tmp_path/'bad-cache', 0, 1,
+                         model='test', replay=data)
+    assert not report['images'][0]['ok'] and not report['images'][0]['kept']
+    job['prompt'] = 'changed prompt with no exact cache'
+    with pytest.raises(ValueError, match='cache-only replay lacks exact inputs'):
+        li.generate({'id': data['premise']}, 'original-key', tmp_path/'changed', 0, 1,
+                    model='test', replay=data)
+
+
+def test_cache_only_policy_is_typed_and_bound_to_the_manifest(cached):
+    path, _, _, _ = cached
+    raw = json.loads(path.read_text())
+    raw['cached_only'] = 'true'
+    path.write_text(json.dumps(raw))
+    with pytest.raises(ValueError, match='explicit boolean'):
+        replay.load('.github/replay/repair.json')
+
+
 def test_direct_image_refusal_survives_a_clean_numeric_review(cached, tmp_path, monkeypatch):
     _, job, data, _ = cached
     row = data['images'][job['id']][1]

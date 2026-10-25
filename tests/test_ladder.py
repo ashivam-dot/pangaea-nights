@@ -259,6 +259,19 @@ def test_pterosaur_prompts_spell_out_membrane_wings():
     assert jobs["o1"]["scene"] == "A giant Quetzalcoatlus soaring"  # CLIP similarity still scores the plain scene
 
 
+def test_jaekelopterus_has_its_aquatic_body_plan_without_overriding_other_eurypterids():
+    from studio import ladder
+    p = {"art_direction": "copper underwater light", "options": [
+        {"n": 1, "image_prompt": "Jaekelopterus gliding over silt"},
+        {"n": 2, "image_prompt": "A spiny-legged eurypterid sifting mud"}]}
+    jobs = {j["id"]: j for j in ladder.image_jobs(p)}
+    assert "fully submerged" in jobs["o1"]["prompt"]
+    assert "triangular telson" in jobs["o1"]["prompt"]
+    assert "cheliceral pincers" in jobs["o1"]["prompt"]
+    assert "triangular telson" not in jobs["o2"]["prompt"]
+    assert jobs["o1"]["scene"] == p["options"][0]["image_prompt"]
+
+
 def test_readback_flags_a_failed_upload():
     assert youtube.readback_problems(readback(uploadStatus="uploaded"), WHEN) == []
     assert youtube.readback_problems(readback(uploadStatus="processed"), WHEN) == []

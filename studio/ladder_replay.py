@@ -28,6 +28,8 @@ def load(path, expected_sha=None):
         raise ValueError("image replay lacks its exact original production source")
     if not isinstance(data.get("images"), dict) or set(data["images"]) - set(ladder.IMAGE_IDS):
         raise ValueError("image replay contains unknown image slots")
+    if "cached_only" in data and type(data["cached_only"]) is not bool:
+        raise ValueError("cached_only must be an explicit boolean")
     data["_folder"] = path.parent
     return data
 

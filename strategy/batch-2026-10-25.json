@@ -78,7 +78,7 @@
     },
     {
       "repo": "pangaea-nights",
-      "premise": "level_1_8-02",
+      "premise": "level_1_8-13",
       "series": "level_1_8",
       "slot": "A",
       "target": "2026-10-26T14:30:00Z",
@@ -86,8 +86,9 @@
       "inputs": {
         "dry_run": "true",
         "slot": "A",
-        "premise": "level_1_8-02"
-      }
+        "premise": "level_1_8-13"
+      },
+      "editorial_replan": "Same series and unbooked target. Quarantine sea-scorpion draft and all unresolved refusals; use existing asteroid-hideout premise after actual narrator/ASR/timeline preflight. All normal current picture, render, variation and full AV checks remain mandatory."
     },
     {
       "repo": "pangaea-nights",

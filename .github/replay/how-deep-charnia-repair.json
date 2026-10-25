@@ -69,17 +69,20 @@
     ],
     "o3": [
       {
-        "file": "how-deep-charnia-repair/art/o3.png",
-        "sha256": "3989f07ab5f556881a1e462164ab908e330a592864ac3ef0f72bda34c8b50f59",
+        "file": "how-deep-charnia-repair/art/o3-full-t0.png",
+        "sha256": "2205a55a7a9aed61c82ae87da36e599007e920a5b995cd389f71b0eb8b809781",
         "model": "klein4b-q8-768",
-        "prompt": "murky underwater scene at ten metres with storm surge churning clouds of sand, soft flat organisms half buried, swirling sediment, one warm amber glow filtering from the surface, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
-        "artifact_id": 12584210431,
-        "take": 3,
+        "prompt": "Underwater at ten metres during a storm surge: dense curling clouds of coarse sand erupt from the seafloor, forming a powerful diagonal vortex across most of the frame. Distinct close sediment particles catch one warm amber beam of filtered storm light. Almost all of the distant seabed is obscured by turbulent grey-blue water. Empty storm-churned underwater view, high-contrast sand plumes and deep dark gaps. Steel blue and charcoal underwater storm palette with a warm amber rim through dense brown sediment, strong diagonal motion and crisp close suspended sand grains. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
         "exposure": {
-          "raw_mean": 100.7,
-          "raw_p99": 229.0,
-          "gamma": 0.725,
-          "spread": 95.0
+          "raw_mean": 53.2,
+          "raw_p99": 173.0,
+          "gamma": 0.43,
+          "spread": 139.0
+        },
+        "generation": {
+          "file": "how-deep-charnia-repair/art/o3-full-t0-generation.json",
+          "sha256": "cf1ab03966c83bb34a957f8aae26e528056d8c4ab6da4030043e766886f3c098"
         }
       }
     ],
@@ -212,13 +215,6 @@
       "model": "klein4b-q8-768",
       "prompt": "underwater view in clear shallow water over rippled sand, flat oval quilted soft-bodied creatures lying on the bottom, gentle light ripples, one warm rose-gold sun disc above, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
     },
-    "o3": {
-      "file": "how-deep-charnia-repair/art/shard-02.json",
-      "sha256": "5675d536a11db88f139a9432fcf355a9c805e25f78b8aab97cfc5b8a067078e6",
-      "artifact_id": 12584210431,
-      "model": "klein4b-q8-768",
-      "prompt": "murky underwater scene at ten metres with storm surge churning clouds of sand, soft flat organisms half buried, swirling sediment, one warm amber glow filtering from the surface, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
-    },
     "o5": {
       "file": "how-deep-charnia-repair/art/shard-04.json",
       "sha256": "ceea62ea7ebc07d3b8a910e110b94e3771da7a844c6481a2de4887bdd09d5d0d",
@@ -240,5 +236,6 @@
       "model": "klein4b-q8-768",
       "prompt": "thick grey volcanic ash raining down through deep dark water onto a seafloor of feathery fronds, the bottom vanishing under a soft blanket, one warm orange volcanic glow far above, photoreal painterly, vertical composition. Muted sage and slate palette, soft silty haze, long 85mm lens compression, one warm rose-gold glow in each frame. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
     }
-  }
+  },
+  "cached_only": true
 }

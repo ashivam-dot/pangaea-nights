@@ -1,0 +1,853 @@
+{
+  "at": "2026-10-25T03:00:32+00:00",
+  "reason": "Scientific habitat and anatomy failed direct review in exact cloud images; four bounded local repairs produced fish-crustacean hybrids. Quarantined until an accurate reconstruction stack is validated. See strategy/sea-scorpion-quarantine.json.",
+  "original": {
+    "id": "level_1_8-02",
+    "era": "Devonian",
+    "title": "Giant Bug Ladder: Level 1 to 8 Sea Scorpions — Which Is Biggest? 🦂",
+    "banner": "Which giant sea scorpion is biggest?",
+    "hook_vo": "Eight sea scorpions. Only one holds the record.",
+    "art_direction": "Murky olive-green river delta at dusk, telephoto compression through silt, a single copper sunset shaft.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Fingertip hatchling",
+        "vo": "Level one: a hatchling, smaller than a fingertip.",
+        "danger": 1,
+        "image_prompt": "A tiny newly moulted sea scorpion resting on a pebble in a shallow brackish channel, translucent shell, a copper shaft of low sun striking it, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 2,
+        "label": "Paddle-legged swimmer",
+        "vo": "Level two: a swimmer with paddle legs.",
+        "danger": 2,
+        "image_prompt": "A small eurypterid sculling through green water with broad flat oar-shaped rear legs, silt glittering in a copper sunbeam, reeds of early plants above, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 3,
+        "label": "Spiny-legged ambusher",
+        "vo": "Level three: an ambusher with spiked legs.",
+        "danger": 3,
+        "image_prompt": "A eurypterid half buried in mud with long spiny front legs raised to trap prey, copper light grazing its carapace, olive murk around it, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 4,
+        "label": "Broad mud sifter",
+        "vo": "Level four: a broad sifter, raking the mud.",
+        "danger": 4,
+        "image_prompt": "A wide flat-bodied eurypterid raking a muddy bottom with comb-edged legs, clouds of silt rising, one copper sunbeam piercing the water, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 5,
+        "label": "Clawed Pterygotus",
+        "vo": "Level five: Pterygotus, with long pincer claws.",
+        "danger": 5,
+        "image_prompt": "Pterygotus cruising mid-water with two long serrated pincer claws held forward and a flattened tail fin, copper backlight outlining it, olive haze, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 6,
+        "label": "Acutiramus on patrol",
+        "vo": "Level six: a huge sea scorpion patrols below.",
+        "danger": 6,
+        "image_prompt": "A large Acutiramus sea scorpion gliding over a submerged log, segmented body and slim pincers, copper dusk light from the surface, telephoto haze, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 7,
+        "label": "Ambush beside you",
+        "vo": "Level seven: one just surfaced next to you.",
+        "danger": 7,
+        "image_prompt": "Low POV at the waterline of a dusky delta as a big eurypterid head and pincers break the surface right in front of the lens, copper ripples, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      },
+      {
+        "n": 8,
+        "label": "Jaekelopterus",
+        "vo": "Level eight: the biggest, longer than a sofa.",
+        "danger": 8,
+        "image_prompt": "Jaekelopterus filling the whole vertical frame, an enormous sea scorpion with huge spiked pincers and long segmented body, gliding over a delta bottom, copper sunset shaft above, murky olive-green Devonian river delta at dusk, telephoto lens through drifting silt, photoreal painterly deep-time scene, vertical 9:16 composition, one warm focal light"
+      }
+    ],
+    "answer_n": 8,
+    "verdict_vo": "Real answer: number 8, because Jaekelopterus, the largest sea scorpion, reached about 2.5 metres long. No arthropod since has topped it.",
+    "fact": {
+      "text": "The largest eurypterid (sea scorpion), Jaekelopterus, reached about 2.5 m in length.",
+      "source_sentence": "The largest, Jaekelopterus, reached 2.5 meters (8.2 ft) in length.",
+      "wiki_title": "Eurypterid",
+      "wiki_revid": 1359707789
+    },
+    "description": "Before fish ruled the rivers, sea scorpions did, and some grew longer than the animals that hunt in rivers today. Eight of them, smallest to biggest, and the one that set the record for any arthropod.",
+    "tags": [
+      "sea scorpion",
+      "eurypterid",
+      "Devonian",
+      "giant bugs",
+      "prehistoric life",
+      "deep time",
+      "paleontology",
+      "arthropods"
+    ],
+    "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  "replacement": "level_1_8-13",
+  "target": "2026-10-26T14:30:00Z",
+  "original_run": 40154688202,
+  "old_plan_job": {
+    "repo": "pangaea-nights",
+    "premise": "level_1_8-02",
+    "series": "level_1_8",
+    "slot": "A",
+    "target": "2026-10-26T14:30:00Z",
+    "stage": "planned",
+    "inputs": {
+      "dry_run": "true",
+      "slot": "A",
+      "premise": "level_1_8-02"
+    }
+  },
+  "exact_cloud_hold": {
+    "state_commit": "4c91d90c1332c97a203ad9f4a9f6bf5d781c446d",
+    "coordinator_source": "9cc51ce9627901aad58edf5161d3aff052a5ee46",
+    "hold": {
+      "id": "actual-cloud-sea-scorpion-40154688202",
+      "run_id": 40154688202,
+      "observed_at": "2026-10-25T02:51:55+00:00",
+      "reason": "Direct inspection of both actual cloud o8 takes: both place Jaekelopterus hovering above a marsh and open-air horizon instead of gliding over a submerged delta bottom. Both have a long narrow scorpion-like tail instead of a broad flattened eurypterid telson. Scientifically misleading habitat and anatomy; exclude these exact bytes before another render. Retain useful siblings and unchanged narration.",
+      "evidence": {
+        "ladder-img-A-7/o8.png": "d20e3fd593cc1a7199de0f36505701abbdf54fe2389bf6f7fecc36c07461697f",
+        "ladder-img-A-7/o8-alt1.png": "3b2e0cb25697ab056b3fe3a0a01a3487ebc04f5d23e029a83c03662c31e49379"
+      }
+    },
+    "generation_cancelled": false
+  },
+  "exact_local_reviews": {
+    "at": "2026-10-25T02:59:00.479470+00:00",
+    "images": [
+      {
+        "file": "o8-full-t0.png",
+        "image_sha256": "6f4dbf55967479fdd17790cccde4f22a86b5c34bfd5ed931b6c0b634ddba1bd7",
+        "decision": "hold",
+        "observation": "Fish/crustacean hybrid with projecting triangular head shield and vertical fish-like fins; does not faithfully show the broad segmented eurypterid body and flat terminal triangular telson. Habitat is underwater but scientific body plan is misleading."
+      },
+      {
+        "file": "o8-full-t1.png",
+        "image_sha256": "a85de125a6136f9562fecfdc9fa01d7b4697d4c30d7a2e7e9078b79ace87b49d",
+        "decision": "hold",
+        "observation": "Fish/crustacean hybrid with projecting triangular head shield and vertical fish-like fins; does not faithfully show the broad segmented eurypterid body and flat terminal triangular telson. Habitat is underwater but scientific body plan is misleading."
+      },
+      {
+        "file": "o8-full-t2.png",
+        "image_sha256": "97319ac5d58476d644fa4c2ebdf0b000c94b02416377e14c8b09fd6fd7e9ac39",
+        "decision": "hold",
+        "observation": "Fish/crustacean hybrid with projecting triangular head shield and vertical fish-like fins; does not faithfully show the broad segmented eurypterid body and flat terminal triangular telson. Habitat is underwater but scientific body plan is misleading."
+      },
+      {
+        "file": "o8-full-t3.png",
+        "image_sha256": "be6c48c6f7277b4acb9eb5431b7c7d618f23b1d4fc124902ed28b52639d91b88",
+        "decision": "hold",
+        "observation": "Fish/crustacean hybrid with projecting triangular head shield and vertical fish-like fins; does not faithfully show the broad segmented eurypterid body and flat terminal triangular telson. Habitat is underwater but scientific body plan is misleading."
+      }
+    ],
+    "release_approval": false
+  },
+  "replacement_narration_preflight": {
+    "at": "2026-10-25T02:58:48+00:00",
+    "premise": "level_1_8-13",
+    "candidate_sha256": "2056a5d08eddd75b4da14eb9623369b52b970f7b23a3e6e03fcda8a928d5513e",
+    "passed": true,
+    "problems": [],
+    "wer": 0.042,
+    "wpm": 164.9,
+    "max_line_wer": 0.222,
+    "duration": 44.2,
+    "release_approval": false
+  },
+  "sequence_preflight": {
+    "scope": "Simulated future plan gates only; no media or bookings approved",
+    "passed": 31,
+    "jobs": [
+      {
+        "premise": "how_deep-01",
+        "target": "now-after-review",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "level_1_8-16",
+        "target": "2026-10-25T06:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "survive_night-01",
+        "target": "2026-10-25T14:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "countdown-02",
+        "target": "2026-10-25T19:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "how_deep-02",
+        "target": "2026-10-26T00:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "level_1_8-13",
+        "target": "2026-10-26T14:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "survive_night-02",
+        "target": "2026-10-26T19:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.027,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "countdown-03",
+        "target": "2026-10-27T00:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.014,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "how_deep-03",
+        "target": "2026-10-27T14:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "level_1_8-03",
+        "target": "2026-10-27T19:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "survive_night-03",
+        "target": "2026-10-28T00:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "countdown-04",
+        "target": "2026-10-28T14:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "how_deep-04",
+        "target": "2026-10-28T19:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.042,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "level_1_8-04",
+        "target": "2026-10-29T00:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.012,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "survive_night-04",
+        "target": "2026-10-29T14:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "countdown-05",
+        "target": "2026-10-29T19:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "how_deep-05",
+        "target": "2026-10-30T00:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.013,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "level_1_8-05",
+        "target": "2026-10-30T14:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.012,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "survive_night-05",
+        "target": "2026-10-30T19:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.013,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "countdown-06",
+        "target": "2026-10-31T00:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.014,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "how_deep-06",
+        "target": "2026-10-31T14:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "level_1_8-06",
+        "target": "2026-10-31T19:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "survive_night-06",
+        "target": "2026-11-01T00:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.028,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "countdown-07",
+        "target": "2026-11-01T14:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "how_deep-07",
+        "target": "2026-11-01T19:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.027,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "level_1_8-07",
+        "target": "2026-11-02T00:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.012,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "survive_night-07",
+        "target": "2026-11-02T14:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.027,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "countdown-08",
+        "target": "2026-11-02T19:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.014,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "how_deep-08",
+        "target": "2026-11-03T00:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.027,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "level_1_8-08",
+        "target": "2026-11-03T14:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.024,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      },
+      {
+        "premise": "survive_night-08",
+        "target": "2026-11-03T19:30:00Z",
+        "gates": {
+          "premise": {
+            "ok": true,
+            "problems": []
+          },
+          "novelty_4gram": {
+            "value": 0.0,
+            "ceiling": 0.35,
+            "ok": true
+          },
+          "rotation": {
+            "ok": true,
+            "problems": []
+          },
+          "reuse": {
+            "ok": true
+          }
+        }
+      }
+    ]
+  },
+  "selection_reason": "Existing level_1_8-13 retains the reserved series and uses mostly distinct natural refuges rather than rare-animal reconstructions; the mammal-ride alternative level_1_8-14 needs several uncommon animal body plans. Both remain subject to current quality gates.",
+  "release_approval": false
+}
