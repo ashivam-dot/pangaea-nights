@@ -367,42 +367,54 @@
      "label": "Among the tree ferns",
      "vo": "Tucked among the tree ferns.",
      "danger": 1,
-     "image_prompt": "Low documentary view among the trunks of towering Carboniferous tree ferns, dense emerald fronds overhead, swamp water glinting, one orange glow far off, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
+     "image_prompt": "An empty natural-history view among the rough trunks of towering Carboniferous tree ferns. Dense emerald fronds arch above the frame, tangled natural roots and leaf litter fill the close foreground, and still shallow swamp water lies behind them. Pale amber moonlight filters through a canopy gap and reflects on the damp bark. Only trunks, fronds, roots, water and night sky occupy this moonlit forest.",
+     "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+     "lighting": "moonlight"
     },
     {
      "n": 2,
      "label": "Bare sandbar, stay dark",
      "vo": "A bare sandbar, and no fire at all.",
      "danger": 2,
-     "image_prompt": "natural-history documentary view on a bare pale sandbar in a slow river through a dark coal forest, no flame anywhere near, stars over the canopy gap, a faint orange glow far away, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "An empty bare pale sandbar crosses a slow river through a Carboniferous coal forest at night. Fine sand grains and low ripple ridges fill the near foreground, a narrow dark river channel curves around the sandbar, and distant emerald clubmoss trunks border the far bank. A small pale amber moon above the canopy gap gives reflected moonlight to the sand. Only undisturbed sand, river, distant trees and starry sky.",
+     "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+     "lighting": "moonlight"
     },
     {
      "n": 3,
      "label": "On a fallen clubmoss log",
      "vo": "On top of a fallen giant club moss.",
      "danger": 3,
-     "image_prompt": "Low documentary view along a fallen Lepidodendron trunk with diamond-patterned bark spanning dark swamp water, emerald canopy above, an orange glow in the mist, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
+     "image_prompt": "An empty fallen giant Lepidodendron trunk spans a Carboniferous swamp. The natural log fills the lower foreground diagonally, its coarse repeating diamond leaf-scar bark clearly visible. Broken woody branch stubs and tree-fern fronds are visible along the sides, with dark still water below the log. Pale amber moonlight from above reflects on the bark, with a cool emerald moonlit canopy behind.",
+     "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+     "lighting": "moonlight"
     },
     {
      "n": 4,
      "label": "Next to a millipede trail",
      "vo": "Next to a giant millipede trail.",
      "danger": 4,
-     "image_prompt": "Low natural-history documentary view beside a wide fresh Arthropleura trackway in the leaf litter, the segmented body of a very long giant millipede disappearing into ferns, orange glow, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Low natural-history view beside a broad Arthropleura trackway pressed into damp Carboniferous leaf litter. One long low flattened millipede crawls away toward the upper right, its continuous oval-armoured body made of many similar overlapping segments and many short walking legs beneath both sides. Its small head is low and partly hidden by ferns. Pale amber moonlight picks out the near tracks and leaf veins in the cool moonlit forest.",
+     "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+     "lighting": "moonlight"
     },
     {
      "n": 5,
      "label": "Catch a giant dragonfly",
      "vo": "Catch a giant dragonfly for dinner.",
      "danger": 5,
-     "image_prompt": "natural-history documentary view looking up at a Meganeura griffinfly with a seventy-centimetre wingspan hovering over swamp water, wings glittering, one orange glow behind it, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Natural-history side view of one giant Meganeura griffinfly perched on a rough clubmoss branch above dark Carboniferous swamp water. Its elongated slender insect abdomen, six thin legs, two large compound eyes and four long translucent densely veined wings are clear against distant emerald tree ferns. Two wings extend to each side of the thorax. Reflected pale amber moonlight catches the wing veins in the cool moonlit canopy.",
+     "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+     "lighting": "moonlight"
     },
     {
      "n": 6,
      "label": "Sleep in a peat hollow",
      "vo": "Sleep in a soft hollow of dry peat.",
      "danger": 6,
-     "image_prompt": "Close environmental view into a soft hollow of dry crumbling peat between clubmoss roots, dead fronds heaped around, the emerald forest dark above, a faint orange glow, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
+     "image_prompt": "Close environmental detail of one empty shallow hollow in completely dry crumbly brown peat between thick Carboniferous clubmoss roots. The hollow floor consists of dry fibrous plant fragments and curled brittle fern leaves, with clear coarse texture and uneven root ridges around its rim. The dry earth occupies nearly the whole frame, with a small emerald moonlit canopy patch high above. Pale amber moonlight makes the dry peat fibres readable.",
+     "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+     "lighting": "moonlight"
     },
     {
      "n": 7,
@@ -438,7 +450,8 @@
     "Arthropleura",
     "would you rather"
    ],
-   "related_topic_hint": "Giant Insects of the Coal Forests"
+   "related_topic_hint": "Giant Insects of the Coal Forests",
+   "end_image": "o2"
   },
   {
    "id": "survive_night-06",

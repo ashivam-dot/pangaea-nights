@@ -385,28 +385,32 @@
           "label": "Clear sunlit water",
           "vo": "Three: clear, sunlit, wide open water.",
           "danger": 3,
-          "image_prompt": "clear sunlit water over a pale seabed, open and empty, a large clawed sea scorpion shadow far away, sharp light rays, one warm brass glow from the surface, photoreal painterly, vertical composition"
+          "image_prompt": "Clear sunlit Silurian seawater over an open pale sand bed. Close foreground sand ripple ridges and a few small flat mineral pebbles have crisp natural texture; the unobstructed pale seabed extends to the far blue-green water. Soft caustic sunlight moves over the ripples and makes a restrained warm brass reflection on one near pebble. Unoccupied natural-history underwater landscape, only mineral sediment, clear water and light.",
+          "art_direction": "Clear blue-green shallow water above pale rippled sediment, warm reflected sunlight and readable mineral texture."
         },
         {
           "n": 4,
           "label": "Twilight water, sixty metres",
           "vo": "Four: dim green twilight at sixty metres.",
           "danger": 4,
-          "image_prompt": "dim olive-green twilight water at sixty metres, the seabed blurred, faint drifting particles, a distant clawed silhouette, one warm brass glow barely reaching down, photoreal painterly, vertical composition"
+          "image_prompt": "Dim green twilight water over a Silurian shelf, viewed just above a low flat grey mudstone ledge at the near lower left. Crisp shallow ripple ridges and scattered fine shell fragments lie across the ledge, fading into soft olive water beyond. Restrained warm brass reflection remains only on the near mineral surface. The upper background is uninterrupted dim green water, with suspended fine particles and no visible creature. Readable close documentary detail with a wide open midground.",
+          "art_direction": "Dim olive twilight water with restrained warm brass reflection on nearby flat mineral sediment."
         },
         {
           "n": 5,
           "label": "Pitch black, no light",
           "vo": "Five: deep enough that light gives up.",
           "danger": 5,
-          "image_prompt": "pitch black deep water where the last light has vanished, only a few drifting particles caught in one warm brass glow from far above, nothing visible beyond arm's length, photoreal painterly, vertical composition"
+          "image_prompt": "Pitch black deep water beside a rough dark mudstone outcrop. A small corner of matte coarse rock occupies the lower right foreground, with tiny suspended mineral particles close to its edge. Soft neutral external documentary fill reveals only the close rock grains and nearest particles. All the remaining frame is featureless black water; beyond the nearby outcrop nothing is visible. Empty natural-history underwater detail in neutral charcoal and grey mineral tones.",
+          "art_direction": "Neutral charcoal mineral detail under soft external documentary fill, with black water on all sides."
         },
         {
           "n": 6,
           "label": "Cold silt bottom",
           "vo": "Six: the cold silt floor, blind.",
           "danger": 6,
-          "image_prompt": "cold dark silty seafloor in deep water, soft grey mud, faint tracks crossing it, one warm dim brass glimmer above, heavy darkness all around, photoreal painterly, vertical composition"
+          "image_prompt": "A cold silty seafloor in pitch black deep water. Fine grey mud grains, shallow meandering animal tracks and small natural sediment ripples cover the near foreground floor. Soft neutral external documentary fill makes only these nearby grains and track edges readable. The flat floor fades rapidly into featureless black background water. Empty natural-history ground detail, matte grey silt and restrained neutral highlights, without any visible animal.",
+          "art_direction": "Cold matte grey silt under soft external documentary fill, with featureless black water beyond the foreground."
         },
         {
           "n": 7,

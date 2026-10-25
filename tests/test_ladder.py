@@ -64,6 +64,34 @@ def test_option_art_direction_cannot_bypass_composed_prompt_gates(direction):
     assert ladder.premise_problems(p)
 
 
+def test_moonlit_refuge_preserves_cached_siblings_and_exposure_checks():
+    p = copy.deepcopy(ladder.find(BANKS, "survive_night-05"))
+    p.pop('end_image', None)
+    before = ladder.image_jobs(p)
+    p['options'][1].update(
+        image_prompt='An empty pale sandbar under reflected amber moonlight, a narrow river and distant green coal forest beyond, with fine sand ripples visible in the near foreground.',
+        art_direction='Moonlit green forest and pale sand under reflected amber lunar light.',
+        lighting='moonlight')
+    assert not ladder.premise_problems(p)
+    after = ladder.image_jobs(p)
+    assert all(a == b for i, (a, b) in enumerate(zip(before, after)) if i != 1)
+    assert 'single orange flame' not in after[1]['prompt']
+    assert 'glowing focal light' not in after[1]['prompt']
+    assert after[1]['luma'] == before[1]['luma']
+
+
+@pytest.mark.parametrize('lighting,scene', [
+    ('unchecked', 'Amber moonlit sandbar'),
+    ('moonlight', 'Amber pitch black deep water in a trench'),
+    ('moonlight', 'A bright amber sandbar'),
+    ('moonlight', 'A moonlit person in a boat with amber light'),
+])
+def test_lighting_override_cannot_bypass_scene_or_content_gates(lighting, scene):
+    p = copy.deepcopy(ALL[0])
+    p['options'][1].update(lighting=lighting, image_prompt=scene)
+    assert ladder.premise_problems(p)
+
+
 def test_overlap_measures_shared_4grams():
     a = "Number one: a deep burrow under the roots of the old forest at night."
     assert ladder.overlap(a, [a]) == 1.0

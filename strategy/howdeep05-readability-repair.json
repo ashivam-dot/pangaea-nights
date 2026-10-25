@@ -1,0 +1,185 @@
+{
+  "at": "2026-10-25T18:57:37.879978+00:00",
+  "original": {
+    "id": "how_deep-05",
+    "era": "Silurian",
+    "title": "Giant Bug of the Ocean: Sea Scorpions — How Deep Do You Hide? 🦂",
+    "banner": "Giant sea scorpion: where do you hide?",
+    "hook_vo": "A sea scorpion nearly two metres long. Pick a depth.",
+    "art_direction": "Olive-green and bronze estuary palette, murky backlight, low-angle 35mm lens, one warm brass-coloured glow per frame.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Muddy shoreline shallows",
+        "vo": "One: ankle-deep on a muddy shore.",
+        "danger": 1,
+        "image_prompt": "ankle-deep muddy shoreline of a Silurian sea, low mossy green mats on bare rock, olive water, one warm brass-coloured sunset glow on the ripples, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 2,
+        "label": "Knee-deep in the shallows",
+        "vo": "Two: knee-deep, little scorpions everywhere.",
+        "danger": 2,
+        "image_prompt": "knee-deep olive water crowded with small eurypterids scuttling over the mud, their broad flat swimming legs churning silt, one warm brass sun glint on the surface, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 3,
+        "label": "Clear sunlit water",
+        "vo": "Three: clear, sunlit, wide open water.",
+        "danger": 3,
+        "image_prompt": "clear sunlit water over a pale seabed, open and empty, a large clawed sea scorpion shadow far away, sharp light rays, one warm brass glow from the surface, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 4,
+        "label": "Twilight water, sixty metres",
+        "vo": "Four: dim green twilight at sixty metres.",
+        "danger": 4,
+        "image_prompt": "dim olive-green twilight water at sixty metres, the seabed blurred, faint drifting particles, a distant clawed silhouette, one warm brass glow barely reaching down, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 5,
+        "label": "Pitch black, no light",
+        "vo": "Five: deep enough that light gives up.",
+        "danger": 5,
+        "image_prompt": "pitch black deep water where the last light has vanished, only a few drifting particles caught in one warm brass glow from far above, nothing visible beyond arm's length, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 6,
+        "label": "Cold silt bottom",
+        "vo": "Six: the cold silt floor, blind.",
+        "danger": 6,
+        "image_prompt": "cold dark silty seafloor in deep water, soft grey mud, faint tracks crossing it, one warm dim brass glimmer above, heavy darkness all around, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 7,
+        "label": "Beside the claw burrows",
+        "vo": "Seven: next to a nest of claws.",
+        "danger": 7,
+        "image_prompt": "cluster of large burrows in a muddy bed with spiny segmented legs poking out, giant serrated claws resting at the entrances, one warm brass glint on the claw tips, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 8,
+        "label": "Eye to eye, Pterygotus",
+        "vo": "Eight: face to face with Pterygotus.",
+        "danger": 8,
+        "image_prompt": "a giant Pterygotus sea scorpion lunging straight toward the viewer in murky green water, huge toothed claws spread wide, compound eyes catching one warm brass glow, broad flat tail behind, photoreal painterly, vertical composition"
+      }
+    ],
+    "answer_n": 5,
+    "verdict_vo": "Real answer: number 5, because Pterygotus hunted with claws and sharp eyesight. Where the light runs out, a sight hunter probably loses you.",
+    "fact": {
+      "text": "Pterygotus was a large, active predator with big grasping claws and sharp vision comparable to modern predatory arthropods.",
+      "wiki_title": "Pterygotus",
+      "wiki_revid": 1371893021,
+      "source_sentence": "Like its close relative Jaekelopterus, Pterygotus was a large and active predator noted for its robust and enlarged cheliceral claws that would have allowed it to puncture and grasp prey and a visual acuity (clarity of vision) comparable to that of modern predatory arthropods."
+    },
+    "description": "Sea scorpions grew to monstrous sizes in these waters, and they hunted by sight. Pick your depth carefully.",
+    "tags": [
+      "silurian",
+      "sea scorpion",
+      "eurypterid",
+      "ocean",
+      "how deep",
+      "giant bug",
+      "prehistoric predator",
+      "survival"
+    ],
+    "related_topic_hint": "The Ocean Before the Dinosaurs",
+    "series": "how_deep"
+  },
+  "replacement": {
+    "id": "how_deep-05",
+    "era": "Silurian",
+    "title": "Giant Bug of the Ocean: Sea Scorpions — How Deep Do You Hide? 🦂",
+    "banner": "Giant sea scorpion: where do you hide?",
+    "hook_vo": "A sea scorpion nearly two metres long. Pick a depth.",
+    "art_direction": "Olive-green and bronze estuary palette, murky backlight, low-angle 35mm lens, one warm brass-coloured glow per frame.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Muddy shoreline shallows",
+        "vo": "One: ankle-deep on a muddy shore.",
+        "danger": 1,
+        "image_prompt": "ankle-deep muddy shoreline of a Silurian sea, low mossy green mats on bare rock, olive water, one warm brass-coloured sunset glow on the ripples, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 2,
+        "label": "Knee-deep in the shallows",
+        "vo": "Two: knee-deep, little scorpions everywhere.",
+        "danger": 2,
+        "image_prompt": "knee-deep olive water crowded with small eurypterids scuttling over the mud, their broad flat swimming legs churning silt, one warm brass sun glint on the surface, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 3,
+        "label": "Clear sunlit water",
+        "vo": "Three: clear, sunlit, wide open water.",
+        "danger": 3,
+        "image_prompt": "Clear sunlit Silurian seawater over an open pale sand bed. Close foreground sand ripple ridges and a few small flat mineral pebbles have crisp natural texture; the unobstructed pale seabed extends to the far blue-green water. Soft caustic sunlight moves over the ripples and makes a restrained warm brass reflection on one near pebble. Unoccupied natural-history underwater landscape, only mineral sediment, clear water and light.",
+        "art_direction": "Clear blue-green shallow water above pale rippled sediment, warm reflected sunlight and readable mineral texture."
+      },
+      {
+        "n": 4,
+        "label": "Twilight water, sixty metres",
+        "vo": "Four: dim green twilight at sixty metres.",
+        "danger": 4,
+        "image_prompt": "Dim green twilight water over a Silurian shelf, viewed just above a low flat grey mudstone ledge at the near lower left. Crisp shallow ripple ridges and scattered fine shell fragments lie across the ledge, fading into soft olive water beyond. Restrained warm brass reflection remains only on the near mineral surface. The upper background is uninterrupted dim green water, with suspended fine particles and no visible creature. Readable close documentary detail with a wide open midground.",
+        "art_direction": "Dim olive twilight water with restrained warm brass reflection on nearby flat mineral sediment."
+      },
+      {
+        "n": 5,
+        "label": "Pitch black, no light",
+        "vo": "Five: deep enough that light gives up.",
+        "danger": 5,
+        "image_prompt": "Pitch black deep water beside a rough dark mudstone outcrop. A small corner of matte coarse rock occupies the lower right foreground, with tiny suspended mineral particles close to its edge. Soft neutral external documentary fill reveals only the close rock grains and nearest particles. All the remaining frame is featureless black water; beyond the nearby outcrop nothing is visible. Empty natural-history underwater detail in neutral charcoal and grey mineral tones.",
+        "art_direction": "Neutral charcoal mineral detail under soft external documentary fill, with black water on all sides."
+      },
+      {
+        "n": 6,
+        "label": "Cold silt bottom",
+        "vo": "Six: the cold silt floor, blind.",
+        "danger": 6,
+        "image_prompt": "A cold silty seafloor in pitch black deep water. Fine grey mud grains, shallow meandering animal tracks and small natural sediment ripples cover the near foreground floor. Soft neutral external documentary fill makes only these nearby grains and track edges readable. The flat floor fades rapidly into featureless black background water. Empty natural-history ground detail, matte grey silt and restrained neutral highlights, without any visible animal.",
+        "art_direction": "Cold matte grey silt under soft external documentary fill, with featureless black water beyond the foreground."
+      },
+      {
+        "n": 7,
+        "label": "Beside the claw burrows",
+        "vo": "Seven: next to a nest of claws.",
+        "danger": 7,
+        "image_prompt": "cluster of large burrows in a muddy bed with spiny segmented legs poking out, giant serrated claws resting at the entrances, one warm brass glint on the claw tips, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 8,
+        "label": "Eye to eye, Pterygotus",
+        "vo": "Eight: face to face with Pterygotus.",
+        "danger": 8,
+        "image_prompt": "a giant Pterygotus sea scorpion lunging straight toward the viewer in murky green water, huge toothed claws spread wide, compound eyes catching one warm brass glow, broad flat tail behind, photoreal painterly, vertical composition"
+      }
+    ],
+    "answer_n": 5,
+    "verdict_vo": "Real answer: number 5, because Pterygotus hunted with claws and sharp eyesight. Where the light runs out, a sight hunter probably loses you.",
+    "fact": {
+      "text": "Pterygotus was a large, active predator with big grasping claws and sharp vision comparable to modern predatory arthropods.",
+      "wiki_title": "Pterygotus",
+      "wiki_revid": 1371893021,
+      "source_sentence": "Like its close relative Jaekelopterus, Pterygotus was a large and active predator noted for its robust and enlarged cheliceral claws that would have allowed it to puncture and grasp prey and a visual acuity (clarity of vision) comparable to that of modern predatory arthropods."
+    },
+    "description": "Sea scorpions grew to monstrous sizes in these waters, and they hunted by sight. Pick your depth carefully.",
+    "tags": [
+      "silurian",
+      "sea scorpion",
+      "eurypterid",
+      "ocean",
+      "how deep",
+      "giant bug",
+      "prehistoric predator",
+      "survival"
+    ],
+    "related_topic_hint": "The Ocean Before the Dinosaurs",
+    "series": "how_deep"
+  },
+  "speech_changed": false,
+  "accepted_siblings_changed": false,
+  "release_approval": false,
+  "basis": "The first run exhausted all takes for open/twilight/black water, and the blind silt-floor choice contained a bright overhead sunbeam. Add nearby natural mineral texture for the existing sharpness/exposure checks; activate the existing black-water external-fill direction for choices5/6. Keep the luma/quality thresholds and every anatomical refusal intact."
+}

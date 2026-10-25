@@ -186,6 +186,12 @@ def premise_problems(p: dict, series: str | None = None) -> list[str]:
         elif danger[-1] <= danger[0]:
             out.append("danger must climb")
         for o in opts:
+            if "lighting" in o:
+                if o["lighting"] != "moonlight":
+                    out.append(f"option {o['n']} lighting must be moonlight when specified")
+                elif dark_water_direction(o.get("image_prompt", "")) or not re.search(
+                        r"moonlight|moonlit|lunar", o.get("image_prompt", ""), re.I):
+                    out.append(f"option {o['n']} moonlight needs an above-water moonlit scene")
             if "art_direction" in o:
                 direction = o["art_direction"]
                 if not isinstance(direction, str) or not direction.strip() or len(gates.sentences(direction)) != 1:
@@ -555,6 +561,12 @@ def image_jobs(p: dict) -> list[dict]:
                      "soft external foreground fill and featureless black water on every edge") if dark else option_art
         style = ("photoreal painterly deep-time scene, tall vertical composition, readable foreground detail, "
                  "matte non-luminous subjects, black background water") if dark else STYLE
+        if o.get("lighting") == "moonlight" and not dark:
+            # A literal glowing focal source contradicts an unlit refuge. Keep
+            # this opt-in local to the repaired shot; cached siblings stay exact.
+            style = ("photoreal painterly deep-time scene, tall vertical composition, "
+                     "well-exposed reflected pale amber moonlight, clear readable midtones, "
+                     "matte natural surfaces, cinematic depth, rich fine detail")
         jobs.append({"id": f"o{o['n']}", "n": o["n"], "scene": scene,
                      "prompt": f"{scene.strip().rstrip('.')}.{anatomy(scene)} {scene_art}. {style}." + dark,
                      "luma": (92.0, 168.0) if o["n"] == 1 else (62.0, 198.0)})
