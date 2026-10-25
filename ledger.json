@@ -1643,6 +1643,21 @@
     "failures": [],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-25T10:50:25Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "how_deep-04",
+    "run": "40183425660",
+    "ok": false,
+    "failures": [
+     "Art collected only; no video or audiovisual release approval"
+    ],
+    "published": false,
+    "refusals": [
+     "Art-only collection cannot publish"
+    ]
    }
   ],
   "alerts": [
