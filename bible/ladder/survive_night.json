@@ -121,14 +121,16 @@
      "label": "Salt flat, dead centre",
      "vo": "The middle of a huge salt flat.",
      "danger": 4,
-     "image_prompt": "POV standing on a vast cracked white salt flat stretching to every horizon under a violet night sky, frost glittering, one copper moon low in the east, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "An immense empty white salt flat seen from a low wide landscape viewpoint, fine polygonal salt crust across the foreground recedes toward a distant flat horizon. A thin sheet of water mirrors a large glowing copper moon above the horizon. Violet-indigo starfield fills the upper half, distant rust-red desert mountains form a low line, frost crystals catch the warm moon glow. Untouched Permian wilderness, photoreal painterly cinematic landscape, vertical composition, rich natural texture.",
+     "art_direction": "Vast white salt flat under a violet starfield, dramatic copper moon glow reflected in a thin water sheet, low wide landscape viewpoint and distant horizon."
     },
     {
      "n": 5,
-     "label": "Back against a Dimetrodon",
-     "vo": "Back to back with a sleeping Dimetrodon.",
+     "label": "Beneath a sandstone overhang",
+     "vo": "Beneath an overhang of warm red sandstone.",
      "danger": 5,
-     "image_prompt": "Low POV beside a sleeping Dimetrodon curled on warm red sandstone, its tall sail silhouetted against the stars, copper moonlight along the sail spines, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "A broad horizontal slab of ancient rust-red sandstone projects from a high weathered canyon wall, forming a shallow sheltered ledge above a flat bed of fine copper sand. Strong horizontal sediment layers, scattered angular stone fragments and a distant purple starry sky visible at the open right edge. Warm copper moon glow illuminates the edge of the natural rock slab. Wide side view from outside the overhang, photoreal painterly deep-time landscape, vertical composition.",
+     "art_direction": "A natural sandstone overhang with strong horizontal rock strata, warm copper light on rust-red stone, cool purple shadow and a narrow strip of starry sky."
     },
     {
      "n": 6,

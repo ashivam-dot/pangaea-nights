@@ -1,0 +1,280 @@
+{
+  "schema": 1,
+  "premise": "survive_night-02",
+  "source": {
+    "run_id": 40157815850,
+    "sha": "f2ba146e52bc17c948d9d2d9738f9e308d08e79f",
+    "key": "2026-10-25-survive_night-02"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "survive-night-02-shelter-repair/art/o1.png",
+        "sha256": "a8d92c2039f2eaf035b9aaf82b3396b5ad42ccb3ddedf5264ba23f83e745db21",
+        "model": "klein4b-q8-768",
+        "prompt": "POV down into a damp fern gully opening onto a calm moonlit Permian sea, glossopterid trees overhead, a copper moon rising over the water, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585770779,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 46.6,
+          "raw_p99": 181.0,
+          "gamma": 0.396,
+          "spread": 145.0
+        }
+      },
+      {
+        "file": "survive-night-02-shelter-repair/art/o1-alt1.png",
+        "sha256": "44b25b382b8836f8f793dfee306ecc7dc26d6e1233a40d161ec1121f48396b44",
+        "model": "klein4b-q8-768",
+        "prompt": "POV down into a damp fern gully opening onto a calm moonlit Permian sea, glossopterid trees overhead, a copper moon rising over the water, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585770779,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 40.9,
+          "raw_p99": 148.0,
+          "gamma": 0.368,
+          "spread": 138.0
+        }
+      }
+    ],
+    "o2": [
+      {
+        "file": "survive-night-02-shelter-repair/art/o2.png",
+        "sha256": "2be3c7e153e3f6ad27ea0cc5a7b41e8792517116aa6d5ba2e5a57c00ba3ee8a2",
+        "model": "klein4b-q8-768",
+        "prompt": "POV standing in a cracked dry riverbed winding inland through red rock under a violet starfield, scattered seed-fern stumps, copper moon low on the horizon, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584784328,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 61.0,
+          "raw_p99": 182.0,
+          "gamma": 0.471,
+          "spread": 107.0
+        }
+      },
+      {
+        "file": "survive-night-02-shelter-repair/art/o2-alt1.png",
+        "sha256": "88766dd8e2207fe3f2c7250d8aa01db94bbfaa648217e0c8d6dc7cd6ffe99841",
+        "model": "klein4b-q8-768",
+        "prompt": "POV standing in a cracked dry riverbed winding inland through red rock under a violet starfield, scattered seed-fern stumps, copper moon low on the horizon, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584784328,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 59.4,
+          "raw_p99": 199.0,
+          "gamma": 0.462,
+          "spread": 103.0
+        }
+      }
+    ],
+    "o3": [
+      {
+        "file": "survive-night-02-shelter-repair/art/o3.png",
+        "sha256": "fdc129ad10baa8676b2831172b6c503aefb55fee217a280823a3b302a2c3d98b",
+        "model": "klein4b-q8-768",
+        "prompt": "POV on the crest of an endless sea of rust-red dunes under a blazing starfield, frost forming on the sand, a copper moon rising behind the ridgelines, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584638809,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 71.4,
+          "raw_p99": 217.0,
+          "gamma": 0.529,
+          "spread": 125.0
+        }
+      },
+      {
+        "file": "survive-night-02-shelter-repair/art/o3-alt1.png",
+        "sha256": "cc567559569ca887b865c0149ab23d899147ca50bbb0dc0307269e57a75ae6f8",
+        "model": "klein4b-q8-768",
+        "prompt": "POV on the crest of an endless sea of rust-red dunes under a blazing starfield, frost forming on the sand, a copper moon rising behind the ridgelines, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584638809,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 69.5,
+          "raw_p99": 214.0,
+          "gamma": 0.518,
+          "spread": 123.0
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "survive-night-02-shelter-repair/art/o6.png",
+        "sha256": "f4d882929ec19f7d93359fb4393a0a62cbd2835f97014e3ed5ceac47e8d21122",
+        "model": "klein4b-q8-768",
+        "prompt": "POV from inside a narrow sand burrow looking up its mouth at the violet Permian night sky, loose red sand trickling down, copper moonlight at the entrance, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584794359,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 39.7,
+          "raw_p99": 174.0,
+          "gamma": 0.362,
+          "spread": 149.0
+        }
+      },
+      {
+        "file": "survive-night-02-shelter-repair/art/o6-alt1.png",
+        "sha256": "371b638536f296e7e6726f464f518674c12beb43749d70218db25818c5fa7e6f",
+        "model": "klein4b-q8-768",
+        "prompt": "POV from inside a narrow sand burrow looking up its mouth at the violet Permian night sky, loose red sand trickling down, copper moonlight at the entrance, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12584794359,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 44.3,
+          "raw_p99": 179.0,
+          "gamma": 0.385,
+          "spread": 142.0
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "survive-night-02-shelter-repair/art/o7.png",
+        "sha256": "600a2c1f5b0e27ba6b5d95ebb8f94d57cbe21f65a360600d13c29b5f84b4be0f",
+        "model": "klein4b-q8-768",
+        "prompt": "POV on the flat top of a lone red mesa as a towering dry lightning storm rolls over the Pangaean desert, dust wall approaching, copper lightning glow, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12586090826,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 63.2,
+          "raw_p99": 206.0,
+          "gamma": 0.483,
+          "spread": 109.0
+        }
+      },
+      {
+        "file": "survive-night-02-shelter-repair/art/o7-alt1.png",
+        "sha256": "a16113bbc20632f227e99f03863e7f2bd9fec6c30750b990d2617811a2f5734c",
+        "model": "klein4b-q8-768",
+        "prompt": "POV on the flat top of a lone red mesa as a towering dry lightning storm rolls over the Pangaean desert, dust wall approaching, copper lightning glow, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12586090826,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 55.9,
+          "raw_p99": 198.0,
+          "gamma": 0.444,
+          "spread": 121.0
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "survive-night-02-shelter-repair/art/o8.png",
+        "sha256": "d9ecf310135ac6e4ee404c4071ca0dffe6085827c2dabc7c230a7efbfb7f302a",
+        "model": "klein4b-q8-768",
+        "prompt": "POV at the barren heart of Pangaea, endless rippled red desert and dry salt pans under a freezing starfield, no plants anywhere, one copper moon, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585604826,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 63.1,
+          "raw_p99": 203.0,
+          "gamma": 0.482,
+          "spread": 112.0
+        }
+      },
+      {
+        "file": "survive-night-02-shelter-repair/art/o8-alt1.png",
+        "sha256": "8e0725d2dd885d3bbe1f2c1e4e7a1390da674d4e6c20c21750338c5046487f30",
+        "model": "klein4b-q8-768",
+        "prompt": "POV at the barren heart of Pangaea, endless rippled red desert and dry salt pans under a freezing starfield, no plants anywhere, one copper moon, violet-indigo starfield, rust-red sand, copper moonrise glow, long 85mm lens compression, photoreal painterly, vertical composition, one warm focal light. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585604826,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 57.7,
+          "raw_p99": 219.0,
+          "gamma": 0.454,
+          "spread": 118.0
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "survive-night-02-shelter-repair/art/end.png",
+        "sha256": "0eac9c6df5b3cd390e3a342ffa8ed3c9146d1bf323df638a4c2d38e34d69c63f",
+        "model": "klein4b-q8-768",
+        "prompt": "A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open calm sky in the upper half of the frame. Permian supercontinent under a vast starfield: violet-indigo sky over rust-red dunes and salt flats, copper moonrise, long 85mm compression. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12585084309,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 73.6,
+          "raw_p99": 207.0,
+          "gamma": 0.542,
+          "spread": 128.0
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "survive-night-02-shelter-repair/art/o4-full-t0.png",
+        "sha256": "017996f9a24dda92b8926ed54a1088b886d1b44284322c6bdc8dfde43aff189d",
+        "model": "klein4b-q8-768",
+        "prompt": "An immense empty white salt flat seen from a low wide landscape viewpoint, fine polygonal salt crust across the foreground recedes toward a distant flat horizon. A thin sheet of water mirrors a large glowing copper moon above the horizon. Violet-indigo starfield fills the upper half, distant rust-red desert mountains form a low line, frost crystals catch the warm moon glow. Untouched Permian wilderness, photoreal painterly cinematic landscape, vertical composition, rich natural texture. Vast white salt flat under a violet starfield, dramatic copper moon glow reflected in a thin water sheet, low wide landscape viewpoint and distant horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 150.5,
+          "raw_p99": 244.0,
+          "gamma": 1.278,
+          "spread": 205.0
+        },
+        "generation": {
+          "file": "survive-night-02-shelter-repair/art/o4-full-t0-generation.json",
+          "sha256": "43bcfbf9494c44a285e4523536aab0fb8322089ad8c06c5d82f1bcedb44f44f1"
+        }
+      },
+      {
+        "file": "survive-night-02-shelter-repair/art/o4-full-t1.png",
+        "sha256": "fb84563a901d6b48bda2cc74b12efa8b575d9f5785311df550d01724ad3d9a8f",
+        "model": "klein4b-q8-768",
+        "prompt": "An immense empty white salt flat seen from a low wide landscape viewpoint, fine polygonal salt crust across the foreground recedes toward a distant flat horizon. A thin sheet of water mirrors a large glowing copper moon above the horizon. Violet-indigo starfield fills the upper half, distant rust-red desert mountains form a low line, frost crystals catch the warm moon glow. Untouched Permian wilderness, photoreal painterly cinematic landscape, vertical composition, rich natural texture. Vast white salt flat under a violet starfield, dramatic copper moon glow reflected in a thin water sheet, low wide landscape viewpoint and distant horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 155.5,
+          "raw_p99": 241.0,
+          "gamma": 1.362,
+          "spread": 190.0
+        },
+        "generation": {
+          "file": "survive-night-02-shelter-repair/art/o4-full-t1-generation.json",
+          "sha256": "51887d0c2125917ba49d86e8ff87d03e8cb0259ce8345baa2193d0cf1be29fe6"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "survive-night-02-shelter-repair/art/o5-full-t0.png",
+        "sha256": "a301ec24e43ef26f5fea74158176e7f7ca84fb50f7df1986b79cdc6233bce0a4",
+        "model": "klein4b-q8-768",
+        "prompt": "A broad horizontal slab of ancient rust-red sandstone projects from a high weathered canyon wall, forming a shallow sheltered ledge above a flat bed of fine copper sand. Strong horizontal sediment layers, scattered angular stone fragments and a distant purple starry sky visible at the open right edge. Warm copper moon glow illuminates the edge of the natural rock slab. Wide side view from outside the overhang, photoreal painterly deep-time landscape, vertical composition. A natural sandstone overhang with strong horizontal rock strata, warm copper light on rust-red stone, cool purple shadow and a narrow strip of starry sky. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 59.6,
+          "raw_p99": 188.0,
+          "gamma": 0.464,
+          "spread": 114.0
+        },
+        "generation": {
+          "file": "survive-night-02-shelter-repair/art/o5-full-t0-generation.json",
+          "sha256": "96d39ea481e80ba38a38eaae83c394137399c77fd284f495717c705c3b9e416e"
+        }
+      },
+      {
+        "file": "survive-night-02-shelter-repair/art/o5-full-t1.png",
+        "sha256": "f4a2630047cf74bc37e5ea8d259d418a9352893c2e66d6c1f7f0c06b8b75374b",
+        "model": "klein4b-q8-768",
+        "prompt": "A broad horizontal slab of ancient rust-red sandstone projects from a high weathered canyon wall, forming a shallow sheltered ledge above a flat bed of fine copper sand. Strong horizontal sediment layers, scattered angular stone fragments and a distant purple starry sky visible at the open right edge. Warm copper moon glow illuminates the edge of the natural rock slab. Wide side view from outside the overhang, photoreal painterly deep-time landscape, vertical composition. A natural sandstone overhang with strong horizontal rock strata, warm copper light on rust-red stone, cool purple shadow and a narrow strip of starry sky. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 69.4,
+          "raw_p99": 152.0,
+          "gamma": 0.518,
+          "spread": 121.0
+        },
+        "generation": {
+          "file": "survive-night-02-shelter-repair/art/o5-full-t1-generation.json",
+          "sha256": "edea9d35422a84e596e8ca3ca05a494d40ca451b75c70d0f7419908f969934c0"
+        }
+      }
+    ]
+  },
+  "cached_only": true
+}
