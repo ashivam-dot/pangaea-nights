@@ -1,5 +1,52 @@
 {
-  "created_at": "2026-10-24T20:11:36+00:00",
+  "held_candidates": [
+    {
+      "repo": "pangaea-nights",
+      "premise": "level_1_8-01",
+      "series": "level_1_8",
+      "slot": "B",
+      "target": "2026-10-25T00:30:00Z",
+      "inputs": {
+        "dry_run": "true",
+        "slot": "A",
+        "premise": "level_1_8-01"
+      },
+      "stage": "held",
+      "attempts": 0,
+      "run_id": 40128334178,
+      "source_sha": "3ad54b8cb1b520f3bee25dcf0952bb5f529ff479",
+      "obsolete_runs": [
+        40122729549
+      ],
+      "repair_reason": "Old base/alternate Opabinia and Anomalocaris drawings contradicted the script; Hallucigenia was upright. New whole-body directions and shared source-grounded anatomy requirements; replacement still requires original gates and full audiovisual approval.",
+      "cloud_status": "in_progress",
+      "editorial_holds": [
+        {
+          "id": "actual-cloud-trilobite-40128334178",
+          "run_id": 40128334178,
+          "observed_at": "2026-10-24T21:26:41+00:00",
+          "reason": "Direct inspection of both actual cloud o2 takes: pillbug-like domed transverse plates and a rounded head, without the flattened three-lobed trilobite dorsal exoskeleton. Scientifically misleading; no release of this exact production. Keep other art for a targeted repair.",
+          "evidence": {
+            "ladder-img-A-1/o2.png": "f10a7f22e4469f0bab2e4233c22a3948e11c4b1169f518eecbdcda35c222ff29",
+            "ladder-img-A-1/o2-alt1.png": "1c7ad2b032ca07bfbfb907b64bc1189621d7329433880203ba6ac629c0b3e5d3"
+          }
+        },
+        {
+          "id": "actual-cloud-arrow-worms-40128334178",
+          "run_id": 40128334178,
+          "reason": "Actual o7 depicts segmented shrimp-like bodies with antennae and jointed legs, inconsistent with unsegmented transparent chaetognath worms with lateral and tail fins.",
+          "evidence": {
+            "o7.png": "ac3ffdbed80c22420a1d1d1c150fe844a7e6fadf83c278141e0a4d0c53208a31"
+          }
+        }
+      ],
+      "problems": [
+        "Direct inspection of both actual cloud o2 takes: pillbug-like domed transverse plates and a rounded head, without the flattened three-lobed trilobite dorsal exoskeleton. Scientifically misleading; no release of this exact production. Keep other art for a targeted repair."
+      ],
+      "quarantined_at": "2026-10-24T21:43:51+00:00"
+    }
+  ],
+  "enabled": true,
   "schema": 1,
   "quarantined_jobs": [
     {
@@ -110,54 +157,7 @@
       "release_approval": false
     }
   ],
-  "held_candidates": [
-    {
-      "repo": "pangaea-nights",
-      "premise": "level_1_8-01",
-      "series": "level_1_8",
-      "slot": "B",
-      "target": "2026-10-25T00:30:00Z",
-      "inputs": {
-        "dry_run": "true",
-        "slot": "A",
-        "premise": "level_1_8-01"
-      },
-      "stage": "held",
-      "attempts": 0,
-      "run_id": 40128334178,
-      "source_sha": "3ad54b8cb1b520f3bee25dcf0952bb5f529ff479",
-      "obsolete_runs": [
-        40122729549
-      ],
-      "repair_reason": "Old base/alternate Opabinia and Anomalocaris drawings contradicted the script; Hallucigenia was upright. New whole-body directions and shared source-grounded anatomy requirements; replacement still requires original gates and full audiovisual approval.",
-      "cloud_status": "in_progress",
-      "editorial_holds": [
-        {
-          "id": "actual-cloud-trilobite-40128334178",
-          "run_id": 40128334178,
-          "observed_at": "2026-10-24T21:26:41+00:00",
-          "reason": "Direct inspection of both actual cloud o2 takes: pillbug-like domed transverse plates and a rounded head, without the flattened three-lobed trilobite dorsal exoskeleton. Scientifically misleading; no release of this exact production. Keep other art for a targeted repair.",
-          "evidence": {
-            "ladder-img-A-1/o2.png": "f10a7f22e4469f0bab2e4233c22a3948e11c4b1169f518eecbdcda35c222ff29",
-            "ladder-img-A-1/o2-alt1.png": "1c7ad2b032ca07bfbfb907b64bc1189621d7329433880203ba6ac629c0b3e5d3"
-          }
-        },
-        {
-          "id": "actual-cloud-arrow-worms-40128334178",
-          "run_id": 40128334178,
-          "reason": "Actual o7 depicts segmented shrimp-like bodies with antennae and jointed legs, inconsistent with unsegmented transparent chaetognath worms with lateral and tail fins.",
-          "evidence": {
-            "o7.png": "ac3ffdbed80c22420a1d1d1c150fe844a7e6fadf83c278141e0a4d0c53208a31"
-          }
-        }
-      ],
-      "problems": [
-        "Direct inspection of both actual cloud o2 takes: pillbug-like domed transverse plates and a rounded head, without the flattened three-lobed trilobite dorsal exoskeleton. Scientifically misleading; no release of this exact production. Keep other art for a targeted repair."
-      ],
-      "quarantined_at": "2026-10-24T21:43:51+00:00"
-    }
-  ],
-  "enabled": true,
+  "created_at": "2026-10-24T20:11:36+00:00",
   "jobs": [
     {
       "repo": "pangaea-nights",
@@ -4686,5 +4686,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:15:03+00:00"
+  "updated_at": "2026-10-25T12:15:05+00:00"
 }
