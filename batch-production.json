@@ -14,8 +14,8 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-verified-ice-reprise.json"
       },
-      "stage": "held",
-      "attempts": 7,
+      "stage": "dispatch_unresolved",
+      "attempts": 8,
       "obsolete_runs": [
         40121235398,
         40124993101,
@@ -24,10 +24,11 @@
         40136822897,
         40138993804,
         40140139736,
-        40143437986
+        40143437986,
+        40146406019
       ],
-      "repair_reason": "Keep all nine exact reviewed cached ice/deep-water inputs; voice repair 3976361 retakes only the verdict when the existing spoken-answer check fails even below overall WER limit. Final answer, media and full AV gates remain unchanged. Cancelled stale bot rerun attempt 2 only retried publish against failed voice gates.",
-      "source_sha": "39763610fec1793e834d72bbb9933e5ed6679f69",
+      "repair_reason": "A timed natural clause pause preserves narrator and every spoken answer word. Twelve local exact-audio trials across three premises all retain literal number N under unchanged production ASR. Original run failed only verdict_number_heard; all exact cached images and final gates retained.",
+      "source_sha": "a9cf2f673035b8f8f01babce1b06074261318bd7",
       "cloud_status": "completed",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
@@ -178,9 +179,26 @@
             "replay": ".github/replay/snowball-verified-ice-reprise.json"
           },
           "repair_reason": "All eight option images retained under current QA; the genuinely empty passing opening is also the premise-declared closing reprise. Preserve original seeds and exhausted-take proofs. No classifier or numeric thresholds changed; full voice/render and exact-media AV approval remain mandatory."
+        },
+        {
+          "run_id": 40146406019,
+          "source_sha": "39763610fec1793e834d72bbb9933e5ed6679f69",
+          "stage": "held",
+          "problems": [
+            "production run failure"
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "how_deep-01",
+            "replay": ".github/replay/snowball-verified-ice-reprise.json"
+          },
+          "repair_reason": "Keep all nine exact reviewed cached ice/deep-water inputs; voice repair 3976361 retakes only the verdict when the existing spoken-answer check fails even below overall WER limit. Final answer, media and full AV gates remain unchanged. Cancelled stale bot rerun attempt 2 only retried publish against failed voice gates."
         }
       ],
       "before_ids": [
+        40147415761,
+        40146406019,
         40144187249,
         40143437986,
         40143333505,
@@ -204,7 +222,7 @@
         39772637874,
         39766129149
       ],
-      "submitted_at": "2026-10-25T00:21:56+00:00",
+      "submitted_at": "2026-10-25T00:45:16+00:00",
       "editorial_holds": [
         {
           "id": "direct-human-body-part-40138993804",
@@ -228,10 +246,6 @@
             "release_approval": false
           }
         }
-      ],
-      "run_id": 40146406019,
-      "problems": [
-        "production run failure"
       ]
     },
     {
@@ -979,8 +993,8 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry how_deep-01: production run failure",
-  "updated_at": "2026-10-25T00:38:05+00:00",
+  "halted": "Repair held entry level_1_8-16: production run failure",
+  "updated_at": "2026-10-25T00:45:16+00:00",
   "complete": false,
   "health": {
     "public": 0,
