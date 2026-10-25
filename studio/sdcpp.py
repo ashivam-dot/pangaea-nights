@@ -12,6 +12,8 @@ import socket
 import subprocess
 import time
 import zipfile
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -107,6 +109,22 @@ CANDIDATES = {
 DEFAULT = os.environ.get("PANGAEA_IMAGE_MODEL", "klein4b-q8-768")
 
 
+def _download_delay(response, attempt: int) -> float:
+    """Respect a provider's rate-limit delay without unbounded runner waits."""
+    fallback = min(60, 30 * (attempt + 1))
+    if response is None or response.status_code not in (429, 503):
+        return fallback
+    retry = response.headers.get("Retry-After", "")
+    try:
+        seconds = float(retry)
+    except (TypeError, ValueError):
+        try:
+            seconds = (parsedate_to_datetime(retry) - datetime.now(timezone.utc)).total_seconds()
+        except (TypeError, ValueError, OverflowError):
+            return fallback
+    return max(fallback, min(180, seconds))
+
+
 def _download(url: str, path: Path, tries: int = 4) -> Path:
     if path.exists() and path.stat().st_size > 0:
         return path
@@ -121,10 +139,14 @@ def _download(url: str, path: Path, tries: int = 4) -> Path:
                         fh.write(chunk)
             part.rename(path)
             return path
-        except requests.RequestException:
+        except requests.RequestException as exc:
+            part.unlink(missing_ok=True)
+            response = exc.response
+            if response is not None and 400 <= response.status_code < 500 and response.status_code not in (408, 429):
+                raise
             if attempt == tries - 1:
                 raise
-            time.sleep(10 * (attempt + 1))
+            time.sleep(_download_delay(response, attempt))
     return path
 
 
