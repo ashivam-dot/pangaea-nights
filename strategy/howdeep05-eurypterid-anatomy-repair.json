@@ -1,0 +1,279 @@
+{
+  "at": "2026-10-25T19:15:31.345308+00:00",
+  "original": {
+    "id": "how_deep-05",
+    "era": "Silurian",
+    "title": "Giant Bug of the Ocean: Sea Scorpions — How Deep Do You Hide? 🦂",
+    "banner": "Giant sea scorpion: where do you hide?",
+    "hook_vo": "A sea scorpion nearly two metres long. Pick a depth.",
+    "art_direction": "Olive-green and bronze estuary palette, murky backlight, low-angle 35mm lens, one warm brass-coloured glow per frame.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Muddy shoreline shallows",
+        "vo": "One: ankle-deep on a muddy shore.",
+        "danger": 1,
+        "image_prompt": "ankle-deep muddy shoreline of a Silurian sea, low mossy green mats on bare rock, olive water, one warm brass-coloured sunset glow on the ripples, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 2,
+        "label": "Knee-deep in the shallows",
+        "vo": "Two: knee-deep, little scorpions everywhere.",
+        "danger": 2,
+        "image_prompt": "knee-deep olive water crowded with small eurypterids scuttling over the mud, their broad flat swimming legs churning silt, one warm brass sun glint on the surface, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 3,
+        "label": "Clear sunlit water",
+        "vo": "Three: clear, sunlit, wide open water.",
+        "danger": 3,
+        "image_prompt": "Clear sunlit Silurian seawater over an open pale sand bed. Close foreground sand ripple ridges and a few small flat mineral pebbles have crisp natural texture; the unobstructed pale seabed extends to the far blue-green water. Soft caustic sunlight moves over the ripples and makes a restrained warm brass reflection on one near pebble. Unoccupied natural-history underwater landscape, only mineral sediment, clear water and light.",
+        "art_direction": "Clear blue-green shallow water above pale rippled sediment, warm reflected sunlight and readable mineral texture."
+      },
+      {
+        "n": 4,
+        "label": "Twilight water, sixty metres",
+        "vo": "Four: dim green twilight at sixty metres.",
+        "danger": 4,
+        "image_prompt": "Dim green twilight water over a Silurian shelf, viewed just above a low flat grey mudstone ledge at the near lower left. Crisp shallow ripple ridges and scattered fine shell fragments lie across the ledge, fading into soft olive water beyond. Restrained warm brass reflection remains only on the near mineral surface. The upper background is uninterrupted dim green water, with suspended fine particles and no visible creature. Readable close documentary detail with a wide open midground.",
+        "art_direction": "Dim olive twilight water with restrained warm brass reflection on nearby flat mineral sediment."
+      },
+      {
+        "n": 5,
+        "label": "Pitch black, no light",
+        "vo": "Five: deep enough that light gives up.",
+        "danger": 5,
+        "image_prompt": "Pitch black deep water beside a rough dark mudstone outcrop. A small corner of matte coarse rock occupies the lower right foreground, with tiny suspended mineral particles close to its edge. Soft neutral external documentary fill reveals only the close rock grains and nearest particles. All the remaining frame is featureless black water; beyond the nearby outcrop nothing is visible. Empty natural-history underwater detail in neutral charcoal and grey mineral tones.",
+        "art_direction": "Neutral charcoal mineral detail under soft external documentary fill, with black water on all sides."
+      },
+      {
+        "n": 6,
+        "label": "Cold silt bottom",
+        "vo": "Six: the cold silt floor, blind.",
+        "danger": 6,
+        "image_prompt": "A cold silty seafloor in pitch black deep water. Fine grey mud grains, shallow meandering animal tracks and small natural sediment ripples cover the near foreground floor. Soft neutral external documentary fill makes only these nearby grains and track edges readable. The flat floor fades rapidly into featureless black background water. Empty natural-history ground detail, matte grey silt and restrained neutral highlights, without any visible animal.",
+        "art_direction": "Cold matte grey silt under soft external documentary fill, with featureless black water beyond the foreground."
+      },
+      {
+        "n": 7,
+        "label": "Beside the claw burrows",
+        "vo": "Seven: next to a nest of claws.",
+        "danger": 7,
+        "image_prompt": "cluster of large burrows in a muddy bed with spiny segmented legs poking out, giant serrated claws resting at the entrances, one warm brass glint on the claw tips, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 8,
+        "label": "Eye to eye, Pterygotus",
+        "vo": "Eight: face to face with Pterygotus.",
+        "danger": 8,
+        "image_prompt": "a giant Pterygotus sea scorpion lunging straight toward the viewer in murky green water, huge toothed claws spread wide, compound eyes catching one warm brass glow, broad flat tail behind, photoreal painterly, vertical composition"
+      }
+    ],
+    "answer_n": 5,
+    "verdict_vo": "Real answer: number 5, because Pterygotus hunted with claws and sharp eyesight. Where the light runs out, a sight hunter probably loses you.",
+    "fact": {
+      "text": "Pterygotus was a large, active predator with big grasping claws and sharp vision comparable to modern predatory arthropods.",
+      "wiki_title": "Pterygotus",
+      "wiki_revid": 1371893021,
+      "source_sentence": "Like its close relative Jaekelopterus, Pterygotus was a large and active predator noted for its robust and enlarged cheliceral claws that would have allowed it to puncture and grasp prey and a visual acuity (clarity of vision) comparable to that of modern predatory arthropods."
+    },
+    "description": "Sea scorpions grew to monstrous sizes in these waters, and they hunted by sight. Pick your depth carefully.",
+    "tags": [
+      "silurian",
+      "sea scorpion",
+      "eurypterid",
+      "ocean",
+      "how deep",
+      "giant bug",
+      "prehistoric predator",
+      "survival"
+    ],
+    "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  "replacement": {
+    "id": "how_deep-05",
+    "era": "Silurian",
+    "title": "Giant Bug of the Ocean: Sea Scorpions — How Deep Do You Hide? 🦂",
+    "banner": "Giant sea scorpion: where do you hide?",
+    "hook_vo": "A sea scorpion nearly two metres long. Pick a depth.",
+    "art_direction": "Olive-green and bronze estuary palette, murky backlight, low-angle 35mm lens, one warm brass-coloured glow per frame.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Muddy shoreline shallows",
+        "vo": "One: ankle-deep on a muddy shore.",
+        "danger": 1,
+        "image_prompt": "ankle-deep muddy shoreline of a Silurian sea, low mossy green mats on bare rock, olive water, one warm brass-coloured sunset glow on the ripples, photoreal painterly, vertical composition"
+      },
+      {
+        "n": 2,
+        "label": "Knee-deep in the shallows",
+        "vo": "Two: knee-deep, little scorpions everywhere.",
+        "danger": 2,
+        "image_prompt": "Three small living Eurypterus swim just above a pale mud bed in shallow olive Silurian water. Use the supplied fossil as the body-plan guide: one broad low head shield with paired crescent eyes, an elongated flattened segmented abdomen tapering into one straight pointed terminal spine, small jointed walking legs tucked close beneath the front body and one conspicuous pair of broad flat rear swimming appendages. One complete animal is clearly visible in elevated side view at the lower left, with two much smaller separate animals in the midground. All three remain horizontal and fully submerged. Matte brown natural exoskeleton, fine suspended silt, a restrained warm amber sun glow on the near muddy floor. Only living animals, sediment and water replace the fossil slab.",
+        "art_direction": "Elevated underwater view of three small flat brown swimming Eurypterus over pale mud in shallow olive water, with a restrained brass sun reflection."
+      },
+      {
+        "n": 3,
+        "label": "Clear sunlit water",
+        "vo": "Three: clear, sunlit, wide open water.",
+        "danger": 3,
+        "image_prompt": "Clear sunlit Silurian seawater over an open pale sand bed. Close foreground sand ripple ridges and a few small flat mineral pebbles have crisp natural texture; the unobstructed pale seabed extends to the far blue-green water. Soft caustic sunlight moves over the ripples and makes a restrained warm brass reflection on one near pebble. Unoccupied natural-history underwater landscape, only mineral sediment, clear water and light.",
+        "art_direction": "Clear blue-green shallow water above pale rippled sediment, warm reflected sunlight and readable mineral texture."
+      },
+      {
+        "n": 4,
+        "label": "Twilight water, sixty metres",
+        "vo": "Four: dim green twilight at sixty metres.",
+        "danger": 4,
+        "image_prompt": "Dim green twilight water over a Silurian shelf, viewed just above a low flat grey mudstone ledge at the near lower left. Crisp shallow ripple ridges and scattered fine shell fragments lie across the ledge, fading into soft olive water beyond. Restrained warm brass reflection remains only on the near mineral surface. The upper background is uninterrupted dim green water, with suspended fine particles and no visible creature. Readable close documentary detail with a wide open midground.",
+        "art_direction": "Dim olive twilight water with restrained warm brass reflection on nearby flat mineral sediment."
+      },
+      {
+        "n": 5,
+        "label": "Pitch black, no light",
+        "vo": "Five: deep enough that light gives up.",
+        "danger": 5,
+        "image_prompt": "Pitch black deep water beside a rough dark mudstone outcrop. A small corner of matte coarse rock occupies the lower right foreground, with tiny suspended mineral particles close to its edge. Soft neutral external documentary fill reveals only the close rock grains and nearest particles. All the remaining frame is featureless black water; beyond the nearby outcrop nothing is visible. Empty natural-history underwater detail in neutral charcoal and grey mineral tones.",
+        "art_direction": "Neutral charcoal mineral detail under soft external documentary fill, with black water on all sides."
+      },
+      {
+        "n": 6,
+        "label": "Cold silt bottom",
+        "vo": "Six: the cold silt floor, blind.",
+        "danger": 6,
+        "image_prompt": "A cold silty seafloor in pitch black deep water. Fine grey mud grains, shallow meandering animal tracks and small natural sediment ripples cover the near foreground floor. Soft neutral external documentary fill makes only these nearby grains and track edges readable. The flat floor fades rapidly into featureless black background water. Empty natural-history ground detail, matte grey silt and restrained neutral highlights, without any visible animal.",
+        "art_direction": "Cold matte grey silt under soft external documentary fill, with featureless black water beyond the foreground."
+      },
+      {
+        "n": 7,
+        "label": "Beside the claw burrows",
+        "vo": "Seven: next to a nest of claws.",
+        "danger": 7,
+        "image_prompt": "A close underwater detail of two pairs of large brown Pterygotus cheliceral pincers resting on a flat muddy rock ledge. The animals remain completely behind the ledge, outside this close view. Four slender jointed claw arms enter from the upper edge in two separate pairs. Each ends in two narrow curved fingers with interlocking small teeth along their inner edges, matching the supplied claw-shape guide. The pincer teeth belong only to the claws. All the surrounding mud and mineral ledge are continuous unbroken natural surfaces. Fine silt curls around the claw tips in green Silurian water. Neutral documentary fill with one restrained warm amber glow on a near pincer, no visible head or body.",
+        "art_direction": "Close submerged muddy ledge with two separate pairs of brown toothed pincers entering from above, olive-green water and a restrained brass reflection."
+      },
+      {
+        "n": 8,
+        "label": "Eye to eye, Pterygotus",
+        "vo": "Eight: face to face with Pterygotus.",
+        "danger": 8,
+        "image_prompt": "Close three-quarter underwater portrait of one living Pterygotus, showing only its flat head shield and the bases of its two large cheliceral pincers. Use the supplied crop only as a head-and-claw shape guide, and follow the fossil-informed plan: a broad low trapezoid head shield with rounded corners, two large dark compound eyes at the front outer corners and a continuous matte brown carapace. The head is horizontal in the water. Two slender jointed pincers extend to the lower sides of the frame, with small interlocking teeth along the narrow curved fingers. The abdomen and small walking legs remain outside the tight portrait. Fine suspended silt in murky green Silurian water and neutral soft fill with a restrained warm amber glow reflected on the near eye. Natural non-glowing eyes.",
+        "art_direction": "Tight horizontal Pterygotus head portrait with dark lateral compound eyes and slender toothed pincers in murky green water, restrained brass eye reflection."
+      }
+    ],
+    "answer_n": 5,
+    "verdict_vo": "Real answer: number 5, because Pterygotus hunted with claws and sharp eyesight. Where the light runs out, a sight hunter probably loses you.",
+    "fact": {
+      "text": "Pterygotus was a large, active predator with big grasping claws and sharp vision comparable to modern predatory arthropods.",
+      "wiki_title": "Pterygotus",
+      "wiki_revid": 1371893021,
+      "source_sentence": "Like its close relative Jaekelopterus, Pterygotus was a large and active predator noted for its robust and enlarged cheliceral claws that would have allowed it to puncture and grasp prey and a visual acuity (clarity of vision) comparable to that of modern predatory arthropods."
+    },
+    "description": "Sea scorpions grew to monstrous sizes in these waters, and they hunted by sight. Pick your depth carefully.\n\nEurypterus reference: Susan H Butts, Eurypterus remipes (YPM IP 211408).jpg, https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_(YPM_IP_211408).jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), museum fossil shape guide adapted into an AI life reconstruction with illustrative colour and soft tissue / Pterygotus reference: Paleobiome, Pterygotus in enviroment.jpg, https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), head and cheliceral-claw crop of a modern illustrative reconstruction, not fossil evidence adapted into an AI life reconstruction with illustrative colour and soft tissue",
+    "tags": [
+      "silurian",
+      "sea scorpion",
+      "eurypterid",
+      "ocean",
+      "how deep",
+      "giant bug",
+      "prehistoric predator",
+      "survival"
+    ],
+    "related_topic_hint": "The Ocean Before the Dinosaurs"
+  },
+  "speech_changed": false,
+  "accepted_siblings_changed": false,
+  "release_approval": false,
+  "sources": {
+    "Eurypterus": "https://en.wikipedia.org/w/index.php?oldid=1374831692",
+    "Pterygotus": "https://en.wikipedia.org/w/index.php?oldid=1371893021"
+  },
+  "references": {
+    "o2": [
+      {
+        "file": "howdeep05-eurypterid-references/eurypterus.png",
+        "sha256": "d2d4aa4a5b1c575e003c4b14c1a2fdb5a5c5b2410fa1d886d595a19f0b35e147",
+        "parent": {
+          "file": "howdeep05-eurypterid-references/eurypterus-parent.jpg",
+          "sha256": "9c8168d5f670e6c027606c909b4e2c84a091692f75ae8cf0a18f52c413bac696"
+        },
+        "license_evidence": {
+          "file": "howdeep05-eurypterid-references/eurypterus-commons.json",
+          "sha256": "a73c9e1376a076a0230a6a35fea9cd970496317e0354ae822d6d62bc00459910"
+        },
+        "crop_ltrb": [
+          0,
+          0,
+          1280,
+          1112
+        ],
+        "title": "File:Eurypterus remipes (YPM IP 211408).jpg",
+        "author": "Susan H. Butts",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_(YPM_IP_211408).jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Eurypterus_remipes_%28YPM_IP_211408%29.jpg/1280px-Eurypterus_remipes_%28YPM_IP_211408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Eurypterus reference: Susan H Butts, Eurypterus remipes (YPM IP 211408).jpg, https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_(YPM_IP_211408).jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), museum fossil shape guide adapted into an AI life reconstruction with illustrative colour and soft tissue"
+      }
+    ],
+    "o7": [
+      {
+        "file": "howdeep05-eurypterid-references/pterygotus.png",
+        "sha256": "bfb24439ad381c4ec9ecf580845b432c1c1f25d46c7c215be77d9ff65e0a37ec",
+        "parent": {
+          "file": "howdeep05-eurypterid-references/pterygotus-parent.jpg",
+          "sha256": "61f186222f3dea18440865eee5010855336f08b952c9cab5c40c8421dd928bce"
+        },
+        "license_evidence": {
+          "file": "howdeep05-eurypterid-references/pterygotus-commons.json",
+          "sha256": "1021bb7bdd50a5a1b6e53b69368207c315b9e2c44b164a358cf1093036ef1597"
+        },
+        "crop_ltrb": [
+          160,
+          270,
+          600,
+          540
+        ],
+        "title": "File:Pterygotus in enviroment.jpg",
+        "author": "Paleobiome",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Pterygotus_in_enviroment.jpg/960px-Pterygotus_in_enviroment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Pterygotus reference: Paleobiome, Pterygotus in enviroment.jpg, https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), head and cheliceral-claw crop of a modern illustrative reconstruction, not fossil evidence adapted into an AI life reconstruction with illustrative colour and soft tissue"
+      }
+    ],
+    "o8": [
+      {
+        "file": "howdeep05-eurypterid-references/pterygotus.png",
+        "sha256": "bfb24439ad381c4ec9ecf580845b432c1c1f25d46c7c215be77d9ff65e0a37ec",
+        "parent": {
+          "file": "howdeep05-eurypterid-references/pterygotus-parent.jpg",
+          "sha256": "61f186222f3dea18440865eee5010855336f08b952c9cab5c40c8421dd928bce"
+        },
+        "license_evidence": {
+          "file": "howdeep05-eurypterid-references/pterygotus-commons.json",
+          "sha256": "1021bb7bdd50a5a1b6e53b69368207c315b9e2c44b164a358cf1093036ef1597"
+        },
+        "crop_ltrb": [
+          160,
+          270,
+          600,
+          540
+        ],
+        "title": "File:Pterygotus in enviroment.jpg",
+        "author": "Paleobiome",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Pterygotus_in_enviroment.jpg/960px-Pterygotus_in_enviroment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Pterygotus reference: Paleobiome, Pterygotus in enviroment.jpg, https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), head and cheliceral-claw crop of a modern illustrative reconstruction, not fossil evidence adapted into an AI life reconstruction with illustrative colour and soft tissue"
+      }
+    ]
+  },
+  "reference_scope": "The Eurypterus input is a Yale Peabody fossil photograph. Pterygotus uses only a cropped head/claw view of a CC0 modern illustration, not a species specimen or authority for the body/tail. Its supported anatomy comes from the pinned source description. The generated outputs require exact source review and all final gates.",
+  "original_refusals_preserved": true,
+  "basis": "Replace only spider-like small animals, mouthlike mud burrows and the upright robotic Pterygotus. The nest line is illustrated as paired resting claws; no reproductive nesting claim is introduced. No anatomy or lighting threshold changes."
+}

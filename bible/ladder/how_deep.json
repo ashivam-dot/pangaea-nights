@@ -378,7 +378,8 @@
           "label": "Knee-deep in the shallows",
           "vo": "Two: knee-deep, little scorpions everywhere.",
           "danger": 2,
-          "image_prompt": "knee-deep olive water crowded with small eurypterids scuttling over the mud, their broad flat swimming legs churning silt, one warm brass sun glint on the surface, photoreal painterly, vertical composition"
+          "image_prompt": "Three small living Eurypterus swim just above a pale mud bed in shallow olive Silurian water. Use the supplied fossil as the body-plan guide: one broad low head shield with paired crescent eyes, an elongated flattened segmented abdomen tapering into one straight pointed terminal spine, small jointed walking legs tucked close beneath the front body and one conspicuous pair of broad flat rear swimming appendages. One complete animal is clearly visible in elevated side view at the lower left, with two much smaller separate animals in the midground. All three remain horizontal and fully submerged. Matte brown natural exoskeleton, fine suspended silt, a restrained warm amber sun glow on the near muddy floor. Only living animals, sediment and water replace the fossil slab.",
+          "art_direction": "Elevated underwater view of three small flat brown swimming Eurypterus over pale mud in shallow olive water, with a restrained brass sun reflection."
         },
         {
           "n": 3,
@@ -417,14 +418,16 @@
           "label": "Beside the claw burrows",
           "vo": "Seven: next to a nest of claws.",
           "danger": 7,
-          "image_prompt": "cluster of large burrows in a muddy bed with spiny segmented legs poking out, giant serrated claws resting at the entrances, one warm brass glint on the claw tips, photoreal painterly, vertical composition"
+          "image_prompt": "A close underwater detail of two pairs of large brown Pterygotus cheliceral pincers resting on a flat muddy rock ledge. The animals remain completely behind the ledge, outside this close view. Four slender jointed claw arms enter from the upper edge in two separate pairs. Each ends in two narrow curved fingers with interlocking small teeth along their inner edges, matching the supplied claw-shape guide. The pincer teeth belong only to the claws. All the surrounding mud and mineral ledge are continuous unbroken natural surfaces. Fine silt curls around the claw tips in green Silurian water. Neutral documentary fill with one restrained warm amber glow on a near pincer, no visible head or body.",
+          "art_direction": "Close submerged muddy ledge with two separate pairs of brown toothed pincers entering from above, olive-green water and a restrained brass reflection."
         },
         {
           "n": 8,
           "label": "Eye to eye, Pterygotus",
           "vo": "Eight: face to face with Pterygotus.",
           "danger": 8,
-          "image_prompt": "a giant Pterygotus sea scorpion lunging straight toward the viewer in murky green water, huge toothed claws spread wide, compound eyes catching one warm brass glow, broad flat tail behind, photoreal painterly, vertical composition"
+          "image_prompt": "Close three-quarter underwater portrait of one living Pterygotus, showing only its flat head shield and the bases of its two large cheliceral pincers. Use the supplied crop only as a head-and-claw shape guide, and follow the fossil-informed plan: a broad low trapezoid head shield with rounded corners, two large dark compound eyes at the front outer corners and a continuous matte brown carapace. The head is horizontal in the water. Two slender jointed pincers extend to the lower sides of the frame, with small interlocking teeth along the narrow curved fingers. The abdomen and small walking legs remain outside the tight portrait. Fine suspended silt in murky green Silurian water and neutral soft fill with a restrained warm amber glow reflected on the near eye. Natural non-glowing eyes.",
+          "art_direction": "Tight horizontal Pterygotus head portrait with dark lateral compound eyes and slender toothed pincers in murky green water, restrained brass eye reflection."
         }
       ],
       "answer_n": 5,
@@ -435,7 +438,7 @@
         "wiki_revid": 1371893021,
         "source_sentence": "Like its close relative Jaekelopterus, Pterygotus was a large and active predator noted for its robust and enlarged cheliceral claws that would have allowed it to puncture and grasp prey and a visual acuity (clarity of vision) comparable to that of modern predatory arthropods."
       },
-      "description": "Sea scorpions grew to monstrous sizes in these waters, and they hunted by sight. Pick your depth carefully.",
+      "description": "Sea scorpions grew to monstrous sizes in these waters, and they hunted by sight. Pick your depth carefully.\n\nEurypterus reference: Susan H Butts, Eurypterus remipes (YPM IP 211408).jpg, https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_(YPM_IP_211408).jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), museum fossil shape guide adapted into an AI life reconstruction with illustrative colour and soft tissue / Pterygotus reference: Paleobiome, Pterygotus in enviroment.jpg, https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), head and cheliceral-claw crop of a modern illustrative reconstruction, not fossil evidence adapted into an AI life reconstruction with illustrative colour and soft tissue",
       "tags": [
         "silurian",
         "sea scorpion",

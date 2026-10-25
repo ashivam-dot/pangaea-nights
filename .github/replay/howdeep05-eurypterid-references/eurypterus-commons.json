@@ -1,0 +1,848 @@
+{
+  "batchcomplete": "",
+  "continue": {
+    "gsroffset": 8,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": {
+      "131347490": {
+        "pageid": 131347490,
+        "ns": 6,
+        "title": "File:Eurypterus remipes (YPM IP 211408).jpg",
+        "index": 7,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Eurypterus_remipes_%28YPM_IP_211408%29.jpg/1280px-Eurypterus_remipes_%28YPM_IP_211408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 868,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/7/75/Eurypterus_remipes_%28YPM_IP_211408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Eurypterus_remipes_%28YPM_IP_211408%29.jpg/1280px-Eurypterus_remipes_%28YPM_IP_211408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 868,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/7/75/Eurypterus_remipes_%28YPM_IP_211408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Eurypterus_remipes_%28YPM_IP_211408%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_(YPM_IP_211408).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=131347490",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-04-30 07:46:48",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Eurypterus remipes (YPM IP 211408)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Eurypterus remipes fossils",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "\"Eurypterus remipes (YPM IP 211408). Digital Image: Yale Peabody Museum; photo by Susan H. Butts 2021\" - Eurypterus remipes DeKay, 1825\n<p>Collected in United States of America\n</p>\n(licensed under <a rel=\"nofollow\" class=\"external free\" href=\"https://creativecommons.org/publicdomain/zero/1.0/\">https://creativecommons.org/publicdomain/zero/1.0/</a>)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2021",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.gbif.org/occurrence/351354296\">https://www.gbif.org/occurrence/351354296</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Susan H. Butts",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "131387481": {
+        "pageid": 131387481,
+        "ns": 6,
+        "title": "File:Eurypterus remipes (YPM IP 217393).jpg",
+        "index": 8,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Eurypterus_remipes_%28YPM_IP_217393%29.jpg/1280px-Eurypterus_remipes_%28YPM_IP_217393%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 667,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Eurypterus_remipes_%28YPM_IP_217393%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Eurypterus_remipes_%28YPM_IP_217393%29.jpg/1280px-Eurypterus_remipes_%28YPM_IP_217393%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 667,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Eurypterus_remipes_%28YPM_IP_217393%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Eurypterus_remipes_%28YPM_IP_217393%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_(YPM_IP_217393).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=131387481",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-05-01 10:46:51",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Eurypterus remipes (YPM IP 217393)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Eurypterus remipes fossils",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "IP.217393: Eurypterus remipes: (photo by Butts, S. H., 2020)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-07-14 12:48:33",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.gbif.org/occurrence/351354302\">https://www.gbif.org/occurrence/351354302</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Susan H. Butts",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "48707371": {
+        "pageid": 48707371,
+        "ns": 6,
+        "title": "File:Eurypterus remipes 4354.JPG",
+        "index": 6,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Eurypterus_remipes_4354.JPG/1280px-Eurypterus_remipes_4354.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 446,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Eurypterus_remipes_4354.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Eurypterus_remipes_4354.JPG/1280px-Eurypterus_remipes_4354.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 446,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Eurypterus_remipes_4354.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Eurypterus_remipes_4354.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_4354.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48707371",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-05-11 15:40:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Eurypterus remipes 4354",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Eurypterus remipes fossils",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Fossil of Eurypterus - Took the picture at Museon, Den Haag",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2015-08-13 11:04:42",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ghedoghedo\" title=\"User:Ghedoghedo\">Ghedoghedo</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "161492016": {
+        "pageid": 161492016,
+        "ns": 6,
+        "title": "File:Eurypterus remipes mortality slab.jpg",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Eurypterus_remipes_mortality_slab.jpg/1280px-Eurypterus_remipes_mortality_slab.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 1333,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Eurypterus_remipes_mortality_slab.jpg/1920px-Eurypterus_remipes_mortality_slab.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Eurypterus_remipes_mortality_slab.jpg/1280px-Eurypterus_remipes_mortality_slab.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 1333,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Eurypterus_remipes_mortality_slab.jpg/1920px-Eurypterus_remipes_mortality_slab.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Eurypterus_remipes_mortality_slab.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_mortality_slab.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=161492016",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-03-08 19:39:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Eurypterus remipes mortality slab",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Wyoming Dinosaur Center|Self-published work|Files with coordinates missing SDC location of creation|Eurypterus remipes fossils",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "43.642861",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-108.200272",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "From the specimen's label: \"The largest specimen is split because it had molted (shed) its exoskeleton and went on to live. The other two specimens are whole and must have died before burial, probably during a storm.\"",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-06-12 15:40:12",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:CryolophosaurusEllioti\" title=\"User:CryolophosaurusEllioti\">CryolophosaurusEllioti</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "131352609": {
+        "pageid": 131352609,
+        "ns": 6,
+        "title": "File:Eurypterus remipes remipes? (YPM IP 250770).jpg",
+        "index": 5,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Eurypterus_remipes_remipes%3F_%28YPM_IP_250770%29.jpg/1280px-Eurypterus_remipes_remipes%3F_%28YPM_IP_250770%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 744,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Eurypterus_remipes_remipes%3F_%28YPM_IP_250770%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Eurypterus_remipes_remipes%3F_%28YPM_IP_250770%29.jpg/1280px-Eurypterus_remipes_remipes%3F_%28YPM_IP_250770%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 744,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Eurypterus_remipes_remipes%3F_%28YPM_IP_250770%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Eurypterus_remipes_remipes%3F_%28YPM_IP_250770%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_remipes%3F_(YPM_IP_250770).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=131352609",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-04-30 11:17:43",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Eurypterus remipes remipes? (YPM IP 250770)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Eurypterus remipes fossils",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "IPJ.250770: Eurypterus remipes remipes?: (photo by Utrup, J., 2020)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.gbif.org/occurrence/2825598303\">https://www.gbif.org/occurrence/2825598303</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Jessica Utrup",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "131388142": {
+        "pageid": 131388142,
+        "ns": 6,
+        "title": "File:Eurypterus remipes remipes (YPM IP 534613).jpg",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Eurypterus_remipes_remipes_%28YPM_IP_534613%29.jpg/1280px-Eurypterus_remipes_remipes_%28YPM_IP_534613%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 744,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/5/58/Eurypterus_remipes_remipes_%28YPM_IP_534613%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Eurypterus_remipes_remipes_%28YPM_IP_534613%29.jpg/1280px-Eurypterus_remipes_remipes_%28YPM_IP_534613%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 744,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/5/58/Eurypterus_remipes_remipes_%28YPM_IP_534613%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Eurypterus_remipes_remipes_%28YPM_IP_534613%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_remipes_(YPM_IP_534613).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=131388142",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-05-01 11:07:38",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Eurypterus remipes remipes (YPM IP 534613)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Eurypterus remipes fossils",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "IP.534613: Eurypterus remipes remipes: (photo by Utrup, J., 2020)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.gbif.org/occurrence/1292077990\">https://www.gbif.org/occurrence/1292077990</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Jessica Utrup",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "131346173": {
+        "pageid": 131346173,
+        "ns": 6,
+        "title": "File:Eurypterus remipes remipes fossil.jpg",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Eurypterus_remipes_remipes_fossil.jpg/1280px-Eurypterus_remipes_remipes_fossil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 785,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Eurypterus_remipes_remipes_fossil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Eurypterus_remipes_remipes_fossil.jpg/1280px-Eurypterus_remipes_remipes_fossil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 785,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Eurypterus_remipes_remipes_fossil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Eurypterus_remipes_remipes_fossil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_remipes_fossil.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=131346173",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-04-30 06:52:27",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Eurypterus remipes remipes fossil",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Unknown date|Template Unknown (artist)|Eurypterus remipes fossils|Invertebrate palaeontology collection from Museums Victoria",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<i>Eurypterus remipes remipes</i>, sea scorpion fossil. [P 135665]",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://collections.museumsvictoria.com.au/specimens/521112\">https://collections.museumsvictoria.com.au/specimens/521112</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown photographer",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "131346227": {
+        "pageid": 131346227,
+        "ns": 6,
+        "title": "File:Eurypterus remipes remipes fossil 2.jpg",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Eurypterus_remipes_remipes_fossil_2.jpg/1280px-Eurypterus_remipes_remipes_fossil_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 667,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Eurypterus_remipes_remipes_fossil_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Eurypterus_remipes_remipes_fossil_2.jpg/1280px-Eurypterus_remipes_remipes_fossil_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 667,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Eurypterus_remipes_remipes_fossil_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Eurypterus_remipes_remipes_fossil_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Eurypterus_remipes_remipes_fossil_2.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=131346227",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-04-30 06:56:29",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Eurypterus remipes remipes fossil 2",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Unknown date|Eurypterus remipes fossils|Invertebrate palaeontology collection from Museums Victoria",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<i>Eurypterus remipes remipes</i>, fossil sea scorpion from the Fiddlers Green Formation, New York, United States. Registration no. P 135667.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Unknown date",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://collections.museumsvictoria.com.au/specimens/521114\">https://collections.museumsvictoria.com.au/specimens/521114</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Photographer: Jon Augier",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

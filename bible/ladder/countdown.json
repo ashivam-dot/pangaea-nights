@@ -463,7 +463,8 @@
      "label": "Snowfield at the equator",
      "vo": "On the equator's frozen snow field.",
      "danger": 3,
-     "image_prompt": "A blinding white snowfield stretching flat to every horizon on the Cryogenian equator, a small cold sun overhead, photoreal painterly, vertical composition, one warm focal light from the small sun"
+     "image_prompt": "An empty level Cryogenian snowfield seen close above its unbroken surface. Shallow wind-carved sastrugi form fine parallel white ridges across the foreground and continue onto a broad flat snowy plain. Fine granular snow crystals are readable on the near ridges. A very narrow strip of pale cyan sky lies at the upper edge, a tiny cold sun diffused through haze. A restrained warm reflection grazes one snow ridge. The entire ground is continuous snow with no exposed dark gap. Only snow, ice and sky.",
+     "art_direction": "Close granular white sastrugi on a continuous flat snowfield, a narrow pale cyan sky and restrained warm reflected sunlight."
     },
     {
      "n": 4,
@@ -477,7 +478,8 @@
      "label": "Drifting ice floe",
      "vo": "A slab of drifting sea ice.",
      "danger": 5,
-     "image_prompt": "A cracked ice floe drifting on a slushy grey-white sea under a pale sky, sharp blue fractures, photoreal painterly, vertical composition, one warm focal light from a weak low sun"
+     "image_prompt": "An isolated small flat sea-ice floe drifting in a broad pool of slushy grey-green seawater. An elevated oblique documentary composition shows the entire irregular pale blue slab and all of its edges, surrounded on every side by water and tiny loose ice fragments. Subtle shallow waves and frothy slush touch its thin vertical sides. The slab occupies the middle half of the frame, with green-grey water in every corner. A restrained warm sunset reflection lies on the water at the upper right. Empty Cryogenian ocean detail, only one separate slab and natural slush.",
+     "art_direction": "Elevated view of one fully separate pale blue ice slab surrounded by grey-green slushy seawater, warm reflected sunset at the upper right."
     },
     {
      "n": 6,
@@ -491,14 +493,16 @@
      "label": "Frozen salt flat",
      "vo": "Cross the frozen salt flat.",
      "danger": 7,
-     "image_prompt": "A frozen salt flat cracked into hexagons of ice and white crust, wind-blown snow streaming, photoreal painterly, vertical composition, one warm focal light from a pale orange sun"
+     "image_prompt": "Close downward natural-history view of an ancient frozen salt pan. Opaque chalk-white mineral crust forms small irregular polygon cells with thin dark hairline seams. Tiny granular salt crystals and a light dusting of frost cover the near polygon rims. Dry opaque cream and pale pink mineral crust fills the entire frame from edge to edge. A low restrained amber sidelight reveals the granular surface. The ground is a level continuous mineral pan; there is no deep opening or visible sea.",
+     "art_direction": "Downward macro detail of opaque white and pale pink salt polygons, granular frost and thin hairline seams under restrained amber sidelight."
     },
     {
      "n": 8,
      "label": "Top of the ice sheet",
      "vo": "Climb to the top of the ice sheet.",
      "danger": 8,
-     "image_prompt": "The crest of a kilometre-thick ice sheet under a black star-filled sky, wind tearing snow off the edge, photoreal painterly, vertical composition, one warm focal light from a thin dawn glow"
+     "image_prompt": "The uppermost broad rounded snow dome of a thick Cryogenian ice sheet at blue hour, seen from a distant elevated natural-history viewpoint. Soft wind-streaked snow covers the entire gently convex summit; shallow sculpted ridges cross the near slope and airborne spindrift skims its surface. The smooth ice dome fills the lower two thirds of the frame and curves gently toward a small band of starry deep blue sky. A thin restrained amber dawn rim touches its far upper edge. The landscape is completely unoccupied, only natural snow and sky.",
+     "art_direction": "A broad empty convex ice-sheet summit, shallow blue wind-sculpted snow, spindrift and starry deep blue sky with a thin amber dawn rim."
     }
    ],
    "answer_n": 4,
@@ -520,7 +524,8 @@
     "survival",
     "science"
    ],
-   "related_topic_hint": "Snowball Earth: The Planet That Froze"
+   "related_topic_hint": "Snowball Earth: The Planet That Froze",
+   "end_image": "o4"
   },
   {
    "id": "countdown-07",
