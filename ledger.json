@@ -1017,6 +1017,17 @@
      "dry run: nothing is uploaded",
      "gates failed: wer: {\"value\": 0.354, \"floor\": 0.0, \"ceiling\": 0.08}; wer_line_max: {\"value\": 8.667, \"floor\": 0.0, \"ceiling\": 0.25, \"line\": \"cta\"}"
     ]
+   },
+   {
+    "at": "2026-10-25T01:56:34Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "countdown-02",
+    "run": "40152163089",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [
