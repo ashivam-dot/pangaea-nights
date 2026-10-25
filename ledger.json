@@ -1237,6 +1237,17 @@
     "failures": [],
     "published": false,
     "refusals": null
+   },
+   {
+    "at": "2026-10-25T05:29:09Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "how_deep-03",
+    "run": "40161421084",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [
