@@ -394,16 +394,17 @@
           "label": "Twilight water, sixty metres",
           "vo": "Four: dim green twilight at sixty metres.",
           "danger": 4,
-          "image_prompt": "Dim green twilight water over a Silurian shelf, viewed just above a low flat grey mudstone ledge at the near lower left. Crisp shallow ripple ridges and scattered fine shell fragments lie across the ledge, fading into soft olive water beyond. Restrained warm brass reflection remains only on the near mineral surface. The upper background is uninterrupted dim green water, with suspended fine particles and no visible creature. Readable close documentary detail with a wide open midground.",
-          "art_direction": "Dim olive twilight water with restrained warm brass reflection on nearby flat mineral sediment."
+          "image_prompt": "Close oblique underwater view across a large natural grey-green mudstone ledge on a Silurian shelf at sixty metres. The rock fills the lower four fifths of the image, with crisp fractured layers, fine shallow cracks, small pale shell fragments and irregular mineral grains. A narrow upper strip shows dim soft olive-green twilight water and fine suspended silt. Diffuse green light makes the nearby uneven rock texture readable, with a restrained warm amber reflection on one small near mineral chip. Only rock, shell fragments, sediment and submerged water.",
+          "art_direction": "Close textured grey-green mudstone ledge filling most of the frame, dim olive twilight water above and a small restrained brass mineral reflection."
         },
         {
           "n": 5,
           "label": "Pitch black, no light",
           "vo": "Five: deep enough that light gives up.",
           "danger": 5,
-          "image_prompt": "Pitch black deep water beside a rough dark mudstone outcrop. A small corner of matte coarse rock occupies the lower right foreground, with tiny suspended mineral particles close to its edge. Soft neutral external documentary fill reveals only the close rock grains and nearest particles. All the remaining frame is featureless black water; beyond the nearby outcrop nothing is visible. Empty natural-history underwater detail in neutral charcoal and grey mineral tones.",
-          "art_direction": "Neutral charcoal mineral detail under soft external documentary fill, with black water on all sides."
+          "image_prompt": "Straight downward close view of a rough natural mudstone outcrop on the seafloor in pitch black deep water. The rock surface fills nearly the complete frame with crisp angular fracture ridges, irregular charcoal mineral grains and pale silt collected in deep narrow cracks. A tiny upper corner opens beyond a broken rock edge into empty dark water. Soft neutral external documentary fill reveals the close rock and its matte pale mineral flecks. The surface is uneven natural stone with no animal or plant. This is an illustrative close geological detail.",
+          "art_direction": "Downward close geological detail of crisp fractured charcoal mudstone with pale mineral flecks under soft neutral external documentary fill.",
+          "framing": "seafloor_macro"
         },
         {
           "n": 6,
