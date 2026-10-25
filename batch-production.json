@@ -1513,7 +1513,7 @@
       "series": "level_1_8",
       "slot": "A",
       "target": "2026-10-26T14:30:00Z",
-      "stage": "building",
+      "stage": "held",
       "inputs": {
         "dry_run": "true",
         "slot": "A",
@@ -1574,7 +1574,22 @@
       "submitted_at": "2026-10-25T03:04:49+00:00",
       "attempts": 1,
       "run_id": 40156875292,
-      "cloud_status": "in_progress"
+      "cloud_status": "in_progress",
+      "editorial_holds": [
+        {
+          "id": "direct-triceratops-horn-layout-40156875292",
+          "run_id": 40156875292,
+          "observed_at": "2026-10-25T03:25:00+00:00",
+          "reason": "Both o5 herd takes have prominently upward-curled and multiplied horns around the head/frill rather than a clear Triceratops layout of two forward brow horns and one short nose horn. Repair only this animal scene with explicit body-plan directions; retain other useful landscape siblings and every spoken line.",
+          "evidence": {
+            "ladder-img-A-4/o5.png": "9af2d12ea43e8be046f75cf1ede7bfc0a52b63c3b69ce79a3df05be954bb0e87",
+            "ladder-img-A-4/o5-alt1.png": "2c08194ed69573e172b2e4169b93d50d307c80d19622a1eb2ef6165fb3d11a09"
+          }
+        }
+      ],
+      "problems": [
+        "Both o5 herd takes have prominently upward-curled and multiplied horns around the head/frill rather than a clear Triceratops layout of two forward brow horns and one short nose horn. Repair only this animal scene with explicit body-plan directions; retain other useful landscape siblings and every spoken line."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -1968,7 +1983,7 @@
       "attempts": 0
     }
   ],
-  "halted": null,
+  "halted": "Repair held entry level_1_8-13: Both o5 herd takes have prominently upward-curled and multiplied horns around the head/frill rather than a clear Triceratops layout of two forward brow horns and one short nose horn. Repair only this animal scene with explicit body-plan directions; retain other useful landscape siblings and every spoken line.",
   "complete": false,
   "health": {
     "public": 1,
@@ -1976,7 +1991,7 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:20:04+00:00",
+  "updated_at": "2026-10-25T03:25:00+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
