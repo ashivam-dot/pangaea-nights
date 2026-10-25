@@ -16,7 +16,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from . import ladder, ladder_replay, plates, qa, sdcpp
+from . import ladder, ladder_reference, ladder_replay, plates, qa, sdcpp
 
 TAKES = 4
 KEEP = 2
@@ -115,6 +115,11 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
         report["load_s"] = 0.0
         for job in jobs:
             entry = {"id": job["id"], "takes": [], "kept": []}
+            refs = ladder_reference.inputs(replay, job["id"])
+            if refs:
+                if any(r["proof"]["credit"] not in p.get("description", "") for r in refs):
+                    raise ValueError("reference adaptation attribution is missing from the publishing description")
+                entry["reference_inputs"] = [r["proof"] for r in refs]
             # Only option images need alternatives for pairwise distinctness; the end is outside that gate.
             wanted = 1 if job["id"] == "end" else KEEP
             soft = []  # (score, take, img, verdict) of soft-only refusals
@@ -165,7 +170,11 @@ def generate(p: dict, key: str, out: Path, k: int, n: int, model: str = sdcpp.DE
                     server = stack.enter_context(sdcpp.Server(cand))
                     report["load_s"] = round(server.load_seconds, 1)
                 t = time.monotonic()
-                raw = sdcpp.to_pil(server.generate(job["prompt"], _seed(key, job["id"], take), w, h))
+                seed = _seed(key, job["id"], take)
+                raw = sdcpp.to_pil(server.edit(job["prompt"], seed, [r["path"] for r in refs], w, h) if refs
+                                   else server.generate(job["prompt"], seed, w, h))
+                if refs and raw.size != (w, h):
+                    raise ValueError("reference edit dimensions differ from the production model")
                 img, exposure = expose(raw, sum(job["luma"]) / 2)
                 verdict = qa.review(img, job["scene"])
                 fig = qa.figure(img)

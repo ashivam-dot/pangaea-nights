@@ -294,8 +294,8 @@
           "label": "Among the long shells",
           "vo": "Three: among drifting long cone shells.",
           "danger": 3,
-          "image_prompt": "Underwater natural-history view among two very long empty straight nautiloid shells suspended above pale sand in clear blue Ordovician seawater. Each shell is a single rigid slender ivory cone with fine growth rings: one wide circular hollow open mouth at its lower-left end, tapering evenly to one narrow closed pointed apex at its upper-right end. The complete elongated cone is visible from end to end. The circular shell mouth is hollow and empty; no animal head, arms or tentacles emerge. One shell is closer and the second smaller shell is farther away. Fine sand and tiny reef fragments below, filtered light above, one warm orange glow on the sand. Photoreal painterly, vertical composition.",
-          "art_direction": "Clear tropical blue seawater, crisp ivory conical shells and finely textured pale sand, natural-history side views, one warm orange glow"
+          "image_prompt": "Use the supplied fossil reference only for the long straight conical shell geometry and fine external texture. Underwater nature-documentary close side view as a living straight-shelled cephalopod swims horizontally past in clear blue Ordovician seawater. One very long rigid ivory shell crosses the middle of the frame at a shallow diagonal, parallel to the sandy seabed. Its broad left body end continues beyond the left edge of the frame; its head and arms are outside the picture. The visible shell tapers gradually to one narrow closed pointed apex at the right. Preserve the reference shell's slim proportions and natural fine growth rings, with muted brown mineral texture on ivory. The shell is free-swimming in open water. Fine current-borne marine particles pass around it; pale sand and small reef fragments lie below. Soft blue seawater and a subdued warm reflection on the nearby reef, photoreal painterly natural-history documentary, crisp foreground shell texture, vertical close composition.",
+          "art_direction": "Clear tropical blue seawater, pale textured sand and reef fragments, natural ivory and muted brown shell surface, close horizontal shell profile with a soft warm reflected accent"
         },
         {
           "n": 4,
@@ -343,7 +343,7 @@
         "wiki_revid": 1353695863,
         "source_sentence": "It was particularly abundant and widespread in the Late Ordovician, inhabiting the shallow tropical seas in and around Laurentia, Baltica and Siberia (equivalent to modern North America, Europe, and Asia)."
       },
-      "description": "Giant straight-shelled cephalopods ruled these warm seas long before fish took over. Eight depths, and only one sweet spot between the hunters and the dark.",
+      "description": "Giant straight-shelled cephalopods ruled these warm seas long before fish took over. Eight depths, and only one sweet spot between the hunters and the dark.\n\nStraight-shell geometry reference: Endoceras fossils, Natural History Museum of Milan, photo Antonov, https://commons.wikimedia.org/wiki/File:Endoceras_spp_Svezia_Museo_Milano.png, CC0 (https://creativecommons.org/publicdomain/zero/1.0/), cropped CC0 reference used for AI adaptation of related endocerid shell geometry, setting and coloration are illustrative.",
       "tags": [
         "ordovician",
         "ocean",

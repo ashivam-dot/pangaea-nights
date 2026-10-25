@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import base64
 import io
+import json
 import os
 import socket
 import subprocess
@@ -16,6 +17,7 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from dataclasses import dataclass, field
 from pathlib import Path
+from contextlib import ExitStack
 
 import requests
 
@@ -249,6 +251,24 @@ class Server:
         if not images:
             raise RuntimeError("txt2img returned no image: " + self.tail(600))
         return base64.b64decode(images[0].split(",", 1)[-1])
+
+    def edit(self, prompt: str, seed: int, references: list[Path], width: int, height: int) -> bytes:
+        """The existing Klein reference endpoint, with the same bounded sampling settings."""
+        if not self.c.name.startswith("klein") or not 1 <= len(references) <= 4:
+            raise ValueError("reference repair requires Klein and one to four inputs")
+        extra = {"seed": seed, "sample_params": {"sample_steps": self.c.steps,
+                 "sample_method": self.c.sampler, "guidance": {"txt_cfg": self.c.cfg}}}
+        request_prompt = prompt + self.c.prompt_suffix + " <sd_cpp_extra_args>" + json.dumps(extra) + "</sd_cpp_extra_args>"
+        with ExitStack() as stack:
+            files = [("image[]", (p.name, stack.enter_context(p.open("rb")), "image/png")) for p in references]
+            response = requests.post(f"http://127.0.0.1:{self.port}/v1/images/edits", files=files,
+                data={"prompt": request_prompt, "size": f"{width}x{height}", "n": "1", "output_format": "png"},
+                timeout=3600)
+        response.raise_for_status()
+        data = response.json().get("data") or []
+        if not data or not data[0].get("b64_json"):
+            raise RuntimeError("reference edit returned no image: " + self.tail(600))
+        return base64.b64decode(data[0]["b64_json"])
 
 
 def to_pil(data: bytes):

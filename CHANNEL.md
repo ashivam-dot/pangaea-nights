@@ -194,3 +194,10 @@ art has an explicit schema-2 origin, exact request and reference hashes, saved C
 evidence, and mandatory source/adaptation credit in the publishing description. It cannot be
 presented as text-only generation. Current image, pair, narrator, render and complete audiovisual
 checks still apply; staged inputs do not approve a release.
+
+Isolated dry art repairs may also condition Klein on one to four pinned CC0 Commons
+museum references. The replay binds the original image, exact crop pixels and saved
+license evidence by SHA; the normal take budget and image checks still apply. The
+report records reference inputs, and staging preserves their proof and mandatory
+adaptation credit for the final publishing description. This path cannot run as an
+ordinary or cached-only replay and never approves or publishes a video.

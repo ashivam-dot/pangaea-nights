@@ -38,6 +38,10 @@ def load(path, expected_sha=None):
             raise ValueError("art_only must name distinct known image slots")
         if data.get("cached_only"):
             raise ValueError("art_only generation cannot also be cached_only")
+    if "references" in data:
+        refs = data["references"]
+        if not isinstance(refs, dict) or not refs or set(refs) - set(data.get("art_only", [])):
+            raise ValueError("generation references require isolated art-only repair slots")
     data["_folder"] = path.parent
     return data
 
