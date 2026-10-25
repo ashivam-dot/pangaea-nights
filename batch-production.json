@@ -5259,11 +5259,22 @@
             "ladder-img-A-6/o7.png": "52fc5bb22eb5b0478c8e00f01ecf95791e2d91b634df42002b25db6b806897ed",
             "ladder-img-A-6/o7-alt1.png": "31a4dd50c19250a56e5d8bed7a27e6eab9e0a36f9268615de0329e3a06a06135"
           }
+        },
+        {
+          "id": "level05-option8-camera-anatomy-hold",
+          "run_id": 40205103515,
+          "observed_at": "2026-10-25T15:57:05+00:00",
+          "reason": "Both adult Inostrancevia images include a prominent modern camera/lens in the prehistoric scene and unreliable dinosaur-like anatomy. Replace these exact inputs; preserve narration, sibling holds, chronology and every release check.",
+          "evidence": {
+            "ladder-img-A-7/o8.png": "79d545dfa4ee22ac57d97f4bf6f862dfbaa72512682409d285248bf84cb1685e",
+            "ladder-img-A-7/o8-alt1.png": "7a47f0e9ac6bde5e9a79212f518489bde63325080a8691685a66f2f0ce4f842e"
+          }
         }
       ],
       "problems": [
         "Direct native-resolution review refuses options1-4: the Diictodon is mouse-like and lacks its beak/tusks; Suminia has unreliable hanging humanoid-like anatomy; Dicynodon is shown as a horned rhinoceros; Scutosaurus as a bipedal theropod. Replace only refused visual inputs using verified anatomy, preserving all speech, accepted siblings and every release gate.",
-        "Direct review refuses options5-7: modern donkey anatomy for Moschorhinus, bipedal theropods for Rubidgea, and elephant-like lower tusks for young Inostrancevia. Retain every spoken line and existing refusal; repair only exact incorrect visual inputs and require all final gates."
+        "Direct review refuses options5-7: modern donkey anatomy for Moschorhinus, bipedal theropods for Rubidgea, and elephant-like lower tusks for young Inostrancevia. Retain every spoken line and existing refusal; repair only exact incorrect visual inputs and require all final gates.",
+        "Both adult Inostrancevia images include a prominent modern camera/lens in the prehistoric scene and unreliable dinosaur-like anatomy. Replace these exact inputs; preserve narration, sibling holds, chronology and every release check."
       ]
     },
     {
@@ -5449,7 +5460,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry level_1_8-05: Direct native-resolution review refuses options1-4: the Diictodon is mouse-like and lacks its beak/tusks; Suminia has unreliable hanging humanoid-like anatomy; Dicynodon is shown as a horned rhinoceros; Scutosaurus as a bipedal theropod. Replace only refused visual inputs using verified anatomy, preserving all speech, accepted siblings and every release gate.; Direct review refuses options5-7: modern donkey anatomy for Moschorhinus, bipedal theropods for Rubidgea, and elephant-like lower tusks for young Inostrancevia. Retain every spoken line and existing refusal; repair only exact incorrect visual inputs and require all final gates.",
+  "halted": "Repair held entry level_1_8-05: Direct native-resolution review refuses options1-4: the Diictodon is mouse-like and lacks its beak/tusks; Suminia has unreliable hanging humanoid-like anatomy; Dicynodon is shown as a horned rhinoceros; Scutosaurus as a bipedal theropod. Replace only refused visual inputs using verified anatomy, preserving all speech, accepted siblings and every release gate.; Direct review refuses options5-7: modern donkey anatomy for Moschorhinus, bipedal theropods for Rubidgea, and elephant-like lower tusks for young Inostrancevia. Retain every spoken line and existing refusal; repair only exact incorrect visual inputs and require all final gates.; Both adult Inostrancevia images include a prominent modern camera/lens in the prehistoric scene and unreliable dinosaur-like anatomy. Replace these exact inputs; preserve narration, sibling holds, chronology and every release check.",
   "complete": false,
   "health": {
     "public": 3,
@@ -5457,5 +5468,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T15:54:02+00:00"
+  "updated_at": "2026-10-25T15:57:05+00:00"
 }
