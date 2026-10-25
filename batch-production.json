@@ -644,7 +644,7 @@
         "premise": "survive_night-01",
         "replay": ".github/replay/survive-night-exact-repair.json"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 3,
       "source_sha": "179682206c978760b017928ec19e831062c37126",
       "before_ids": [
@@ -677,7 +677,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T00:55:47+00:00",
-      "cloud_status": "in_progress",
+      "cloud_status": "completed",
       "editorial_holds": [
         {
           "id": "direct-duckbill-anatomy-40143333505",
@@ -890,7 +890,10 @@
         40148319091
       ],
       "repair_reason": "Recover the same exact reviewed input bundle after GitHub cancelled its pending shared repair group. New workflow gives each non-publishing preview a unique group while retaining publisher locks, all gates and durable dispatch history.",
-      "run_id": 40148607387
+      "run_id": 40148607387,
+      "problems": [
+        "production run failure"
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -1339,5 +1342,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:06:38+00:00"
+  "updated_at": "2026-10-25T01:06:40+00:00"
 }
