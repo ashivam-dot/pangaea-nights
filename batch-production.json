@@ -716,7 +716,7 @@
         "premise": "survive_night-01",
         "replay": ".github/replay/survive-night-exact-repair.json"
       },
-      "stage": "upload_intent",
+      "stage": "scheduled",
       "attempts": 4,
       "source_sha": "a7b2287537edda0cab77564e45980a64fa2408d3",
       "before_ids": [
@@ -1030,7 +1030,28 @@
       },
       "archive": "batch-reviewed-40149509321",
       "intended_publish_at": "2026-10-25T14:30:00Z",
-      "upload_intent_at": "2026-10-25T01:24:39+00:00"
+      "upload_intent_at": "2026-10-25T01:24:39+00:00",
+      "delivery": {
+        "video_id": "xs1R5WFnPm0",
+        "url": "https://www.youtube.com/shorts/xs1R5WFnPm0",
+        "existing": false,
+        "title": "Stranded With a T. rex for One Night — Where Do You Sleep? 🦖",
+        "privacy": "private",
+        "publish_at": "2026-10-25T14:30:00Z",
+        "made_for_kids": null,
+        "self_declared_made_for_kids": false,
+        "upload_status": "uploaded",
+        "readback_problems": [],
+        "owner_readback": {
+          "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+          "privacyStatus": "private",
+          "publishAt": "2026-10-25T14:30:00Z",
+          "madeForKids": false,
+          "selfDeclaredMadeForKids": false,
+          "containsSyntheticMedia": null,
+          "uploadStatus": "processed"
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -1549,5 +1570,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:24:39+00:00"
+  "updated_at": "2026-10-25T01:25:29+00:00"
 }

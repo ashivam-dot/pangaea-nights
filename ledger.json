@@ -569,6 +569,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "survive_night-01",
+   "series": "survive_night",
+   "era": "Cretaceous",
+   "slot": "A",
+   "video_id": "xs1R5WFnPm0",
+   "url": "https://www.youtube.com/shorts/xs1R5WFnPm0",
+   "title": "Stranded With a T. rex for One Night — Where Do You Sleep? 🦖",
+   "publish_at": "2026-10-25T14:30:00Z",
+   "uploaded_at": "2026-10-25T01:25:29Z",
+   "script": "One night in T. rex country. Pick your bed. A hollow log beside the creek. Across the river, wind blowing from the predator. Forty metres up an ancient conifer. In a hollow between enormous tree roots. Behind a mossy boulder at the tree line. In the ferns, right next to a nest. Exposed on the open mud flat. Right under a T. rex's searching nose. Real answer: number 2, because T. rex had a heightened sense of smell. Our imagined refuge keeps your scent blowing away from it. Comment your number.",
+   "frame0": "h6fGEASoFSYZmzurPJnGJK8YRilBIPmkwyVYqBYgRaDRrN8r4SjujtUnaRr+ISwjuSXJpIuhqKlZqjYhd6efLLsn4KUEIPki8SgCKoqg2igOInUkWaH/JuKgqKoBKAYpgpzbHysoNSlGJXqiC6hoH26psSFmKbcnWaxPKfajchbNmwEN3ahaqEokQp0TmT6TRaGUlL6jiamrKN2mJyhSpuQmzyAYpmuk5hrdIymmUyIjHF2j6ibzJRa5lSKnpMcd1SgUIrYUabI+ql+nDhgVIo6pkp5usREm3yKQIuWZppwHqR2noCZmqmmnOaUXnZUlXSt2JuimByj6nAsZISVpJSGhiSqvoLGc6qRhLYAgWANXptkAthuNmEkoPyf5ndYggp/9qa+joikrKa+Y/58lHdGoZ6shqJWnLSNLpV4hG6ZFKGgoniOsJVui9KA4I38oIqL5nWElhaaCpUSnNKTSIBSwkorwrimdyi7rqO0hEqcuqD8m7CjnKC0cvaQbKGAmUqXaqlmrapwEJhiR1SqfpF8gQqZnpwGdKyFdpEioKaUKIzco66WRGGWhh6eopUmplSo8qFIpHaS4m0gt9KI3pvQoISZlJHGY8SUfp1GgjapIkYsrSRzCLf4aJicIKaImwiUjIl4kFhClpMej5CR0H6InRiZ6mhGkEiSBpdSc2imVqLMcG6gKHnepfqhPoCuvK6LfnEKn6yoEqWimdKgjCi8eNirtJFQkRqU6pl6ftqU8KVSkW5ZRnwWSuCW9qJ+b3BTUI9GghZ46Ko6lGKjTo08pBZ13oc2RwhQuq7KoZSJAonWoG6s/I94ooxs8qFIkXS1km2Mo3qTpHl0raJ5nqagl2i6mqmmphKK1I1IkMahFnAqkUyl+EL0liKUQozMYOifcJ36iZZ9qqJylQJSUKOehnpm3EUUj0yDEJuKoHRXXIxEowp0ArEErS6AvqtSlWiRrosWSGCrvrFac7yUlrPWg0KaGK4UUAiiHpgEsyR1rI3CqZyEbKWskjKwspHitTCrnC2gknSSuqKEpw6nCI56l6CNeqxuqj60vpasnA62Jptcma6OqphweYCn6qkwlJqFGqEkoa50gkZ0iu6ZqqpgqJaYEJocooSIXqDkkJa2aHU4pgqZbpKukcyI5n+McbKgZIRSloaSWpOyezyEKJdgm1ywuoN+h9aHnHUclPqkmIiwllijcK5+mBqbDJk0lbC1bm9GnDamVnmyl56IHqN4luaJTp6mgdqJ+Fk4quyn/ILutoif5IISn5CVmIl6oc6heqyokTCYFJ2sc3aTKHqKorqmqKUAgVCEhqCAdaqW3I7QlwyOMlowqnJlcqyaUbizCnSmjjKQdLJQoHaboHQ==",
+   "related": "https://www.youtube.com/watch?v=Y_zpVf53Hwc",
+   "run": "40149509321",
+   "checkpoints": {},
+   "av_review_sha256": "f6fd025b43c339f25e99eccefff2f627d4cb02f9d819148e6616e9da76cf212d",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-25T14:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
