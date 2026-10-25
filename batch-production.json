@@ -4887,7 +4887,55 @@
       "run_id": 40206168455,
       "cloud_status": "completed",
       "retry_reason": "audiovisual review unavailable: gemini-3.8-flash: HTTP 503; gemini-3-flash-preview: HTTP 503; gemini-3.1-flash-lite: HTTP 503",
-      "review_retry_after": "2026-10-25T16:02:24.099709+00:00"
+      "review_retry_after": "2026-10-25T16:02:24.099709+00:00",
+      "review": {
+        "schema": 1,
+        "model": "gemini-3-flash-preview",
+        "duration": 44.0,
+        "video_sha256": "78846aac9336a5f221981d4d4964846f32acfc3178fa074f0c1e3c57655dd51c",
+        "brief_sha256": "7444bff3f0f10771afe5b2acbaf36365385e48be9e47901729cfe15168ba42a8",
+        "review_video_sha256": "6929a1612150c42445ad9d12a2493cb9e7762d4bd6c1310139f483d64da7f8bb",
+        "review_audio_sha256": "8792f727dc56a8c71616b02b14cb5954d508145cc3866d87a58ccd86a8fb4bd6",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "Jurassic islands, a warm lagoon.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.5,
+              "seen": "White sand beach with turquoise lagoon and pink moon.",
+              "heard": "Pick your bed."
+            },
+            {
+              "part": "middle",
+              "seconds": 22.0,
+              "seen": "Cracked white mud flats under a night sky.",
+              "heard": "Dead centre of the dried lagoon mud."
+            },
+            {
+              "part": "ending",
+              "seconds": 42.5,
+              "seen": "Call to action text over a lagoon landscape.",
+              "heard": "Comment your number."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -5468,5 +5516,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T16:03:18+00:00"
+  "updated_at": "2026-10-25T16:05:12+00:00"
 }
