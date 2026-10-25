@@ -413,7 +413,7 @@
         39772637874,
         39766129149
       ],
-      "cloud_status": "in_progress",
+      "cloud_status": "completed",
       "editorial_holds": [
         {
           "id": "direct-muskox-anatomy-40135503878",
@@ -630,7 +630,55 @@
         }
       ],
       "calendar_source_sha": "a1618ba86554b9021390df62c479f0fb4e8b162f",
-      "run_id": 40148479040
+      "run_id": 40148479040,
+      "review": {
+        "schema": 1,
+        "model": "gemini-3.8-flash",
+        "duration": 43.574,
+        "video_sha256": "034416b3156175049b0341d6dc28cbd9f9b0328587ec0348a4482487a5390364",
+        "brief_sha256": "50ef6b7ae9c1db12ad86748dd4376d019e4bd8f82b5a1d04cc104c36aca82b70",
+        "review_video_sha256": "04f122400cda241b8170767ca5ba4afcaad82486db773cb836dd665a98dac650",
+        "review_audio_sha256": "f8a3e2aa3be504159eadb58f16daf3d69808bb6d14a101ee493e90037993937c",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "Minus forty in the Ice Age.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 2.5,
+              "seen": "A lemming nestled in snow with top banner and subtitle Choose your",
+              "heard": "bunkmate."
+            },
+            {
+              "part": "middle",
+              "seconds": 22.0,
+              "seen": "Woolly mammoth resting in snow under aurora with level 6 label and danger meter",
+              "heard": "mammoth. Huge, warm, sleepy."
+            },
+            {
+              "part": "ending",
+              "seconds": 37.0,
+              "seen": "Real answer card overlaying woolly mammoth resting in snow with caption guard hairs",
+              "heard": "over a shorter undercoat."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -1356,5 +1404,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:09:24+00:00"
+  "updated_at": "2026-10-25T01:10:48+00:00"
 }
