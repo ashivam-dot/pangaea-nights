@@ -1229,7 +1229,7 @@
         "slot": "A",
         "premise": "how_deep-02"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "35f1ea21425e8ec75b3ade3dfef7682611b8adb9",
       "before_ids": [
@@ -1266,7 +1266,22 @@
       ],
       "submitted_at": "2026-10-25T01:36:19+00:00",
       "run_id": 40151287146,
-      "cloud_status": "in_progress"
+      "cloud_status": "in_progress",
+      "editorial_holds": [
+        {
+          "id": "direct-frond-morphology-40151287146",
+          "run_id": 40151287146,
+          "observed_at": "2026-10-25T02:04:02+00:00",
+          "reason": "Direct inspection of both actual option-seven candidates: thin grass-like strands, without the broad segmented leaf-like branches described in pinned Charnia revision 1373445695. The named payoff requires a scientifically plausible frond reconstruction. Repair this exact scene; retain passing sibling images and all spoken facts. Closing plate also exhausted all four existing image gates.",
+          "evidence": {
+            "ladder-img-A-6/o7.png": "f22ca0fd99a94e423c8d5f526ef6aa02b108633fe28687e707beb37d613e216b",
+            "ladder-img-A-6/o7-alt1.png": "97f42c762d8eeb5c74d7329e5641bfbfcd602c108e5963392b3996e2bd71c4d7"
+          }
+        }
+      ],
+      "problems": [
+        "Direct inspection of both actual option-seven candidates: thin grass-like strands, without the broad segmented leaf-like branches described in pinned Charnia revision 1373445695. The named payoff requires a scientifically plausible frond reconstruction. Repair this exact scene; retain passing sibling images and all spoken facts. Closing plate also exhausted all four existing image gates."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -1633,7 +1648,7 @@
       "attempts": 0
     }
   ],
-  "halted": null,
+  "halted": "Repair held entry how_deep-02: Direct inspection of both actual option-seven candidates: thin grass-like strands, without the broad segmented leaf-like branches described in pinned Charnia revision 1373445695. The named payoff requires a scientifically plausible frond reconstruction. Repair this exact scene; retain passing sibling images and all spoken facts. Closing plate also exhausted all four existing image gates.",
   "complete": false,
   "health": {
     "public": 1,
@@ -1641,5 +1656,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:57:43+00:00"
+  "updated_at": "2026-10-25T02:04:02+00:00"
 }
