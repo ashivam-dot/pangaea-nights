@@ -29,7 +29,7 @@
       ],
       "repair_reason": "A timed natural clause pause preserves narrator and every spoken answer word. Twelve local exact-audio trials across three premises all retain literal number N under unchanged production ASR. Original run failed only verdict_number_heard; all exact cached images and final gates retained.",
       "source_sha": "a9cf2f673035b8f8f01babce1b06074261318bd7",
-      "cloud_status": "queued",
+      "cloud_status": "in_progress",
       "editorial_hold_at": "2026-10-24T20:26:36.275549+00:00",
       "repair_history": [
         {
@@ -294,7 +294,7 @@
         39772637874,
         39766129149
       ],
-      "cloud_status": "queued",
+      "cloud_status": "pending",
       "editorial_holds": [
         {
           "id": "direct-muskox-anatomy-40135503878",
@@ -525,7 +525,7 @@
         "premise": "survive_night-01",
         "replay": ".github/replay/survive-night-exact-repair.json"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 2,
       "source_sha": "bb8685620813b5dc40f43f4d8c9ab26a8b4e754b",
       "before_ids": [
@@ -556,7 +556,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T00:51:22+00:00",
-      "cloud_status": "queued",
+      "cloud_status": "completed",
       "editorial_holds": [
         {
           "id": "direct-duckbill-anatomy-40143333505",
@@ -753,7 +753,10 @@
         40143333505
       ],
       "repair_reason": "Exact reviewed replan replaces malformed skull, duckbills, tire-like footprint and human/carcass predator scene with roots, boulder, mudflat and a coherent tyrannosaur head. Every retained source and take preserved; current pair preflight 0.8753, full cloud and AV remain mandatory.",
-      "run_id": 40148319091
+      "run_id": 40148319091,
+      "problems": [
+        "production run cancelled"
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -1177,7 +1180,7 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-25T00:54:30+00:00",
+  "updated_at": "2026-10-25T00:54:32+00:00",
   "complete": false,
   "health": {
     "public": 0,
