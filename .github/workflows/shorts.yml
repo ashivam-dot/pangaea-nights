@@ -36,8 +36,10 @@ on:
         default: false
 
 concurrency:
-  # one run per mode at a time: a manual dry run must not queue behind (or be dropped by) the daily publish run
-  group: shorts-${{ github.event_name == 'schedule' && 'publish' || (inputs.dry_run != false && (inputs.replay != '' && 'repair' || 'dry') || inputs.mode) }}
+  # Dry previews do not publish. Give each its own group: GitHub otherwise replaces
+  # a pending repair when a second one queues, even with cancel-in-progress false.
+  # The coordinator bounds production; the live publisher keeps its existing lock.
+  group: shorts-${{ github.event_name == 'schedule' && 'publish' || (inputs.dry_run != false && format('dry-{0}', github.run_id) || inputs.mode) }}
   cancel-in-progress: false
 
 permissions:

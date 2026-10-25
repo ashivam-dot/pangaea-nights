@@ -95,6 +95,15 @@ def test_state_pushers_share_one_concurrency_group():
         assert job["env"]["DRY"] == "${{ github.event_name != 'schedule' && inputs.dry_run != false }}"
 
 
+def test_each_dry_preview_has_an_independent_queue_without_changing_live_modes():
+    doc = load('shorts.yml')
+    expression = doc['concurrency']['group']
+    assert "inputs.dry_run != false && format('dry-{0}', github.run_id)" in expression
+    assert "github.event_name == 'schedule' && 'publish'" in expression
+    assert '|| inputs.mode' in expression
+    assert doc['concurrency']['cancel-in-progress'] is False
+
+
 def test_concurrency_stays_within_twenty():
     shorts = load("shorts.yml")["jobs"]
     n = len(ladder.SLOTS)
