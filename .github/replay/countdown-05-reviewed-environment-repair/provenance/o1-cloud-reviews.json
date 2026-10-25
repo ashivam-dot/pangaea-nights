@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-0/o1.png",
+      "image_sha256": "fd1483d246033f07a5dae74b8b78fcb78ff38120c729b912762b85b36c8e7747",
+      "decision": "pass",
+      "reason": "Direct native inspection: empty muddy river with dry rust-red eroded banks, exposed roots, sparse conifers casting thin shade and a hot hazy plain. No snow, people, props, animals or writing. Clearly fits the scorched riverbank choice."
+    },
+    {
+      "file": "ladder-img-A-0/o1-alt1.png",
+      "image_sha256": "2bc6e95ca76874305cca73697a424c567baab079b66e5e83bac07754db27853b",
+      "decision": "pass",
+      "reason": "Direct native inspection: empty muddy river with dry rust-red eroded banks, exposed roots, sparse conifers casting thin shade and a hot hazy plain. No snow, people, props, animals or writing. Clearly fits the scorched riverbank choice."
+    },
+    {
+      "file": "ladder-img-A-1/o3.png",
+      "image_sha256": "4951219ae8612ffd18b967297dea49b46703c736c747221ceebc0b665bee11b9",
+      "decision": "pass",
+      "reason": "Directly inspected the retained native o3 painting: readable red sand ripples surrounding an empty bowl-shaped depression and rounded dune rim under copper light. No people, feet, tents, animal anatomy, text or era-mismatched plants. Matches the dune-hollow beat; source-art approval only."
+    }
+  ],
+  "at": "2026-10-25T13:42:44.039856+00:00",
+  "scope": "Source paintings only",
+  "release_approval": false
+}

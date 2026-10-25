@@ -1,0 +1,19 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-0/o7.png",
+      "image_sha256": "82cbe0118314e55e6e647a00dd649010773f55bb3bb293b914cee14dd9705426",
+      "decision": "pass",
+      "reason": "Directly inspected both native source paintings: unoccupied rust-red mineral ridge with stones, sparse fernlike ground plants, conifers and twilight. No animals, people, roads, exposed human parts or flowering-tree forms; matches the planned post-extinction route scene. Source-art review only; final pair, voice, render and audiovisual gates remain required."
+    },
+    {
+      "file": "ladder-img-A-0/o7-alt1.png",
+      "image_sha256": "ba5428ef825c5a09594dd8d197e56e185483201accb4b20724804982722dfa5d",
+      "decision": "pass",
+      "reason": "Directly inspected both native source paintings: unoccupied rust-red mineral ridge with stones, sparse fernlike ground plants, conifers and twilight. No animals, people, roads, exposed human parts or flowering-tree forms; matches the planned post-extinction route scene. Source-art review only; final pair, voice, render and audiovisual gates remain required."
+    }
+  ],
+  "at": "2026-10-25T13:41:57.708678+00:00",
+  "scope": "Source paintings only",
+  "release_approval": false
+}

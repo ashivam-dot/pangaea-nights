@@ -1,0 +1,265 @@
+{
+  "schema": 1,
+  "premise": "countdown-05",
+  "cached_only": true,
+  "source": {
+    "run_id": 40192297453,
+    "sha": "9e060be109b657a6a4c06a9da6996f737e5c3ec6",
+    "key": "2026-10-25-countdown-05"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o1.png",
+        "sha256": "fd1483d246033f07a5dae74b8b78fcb78ff38120c729b912762b85b36c8e7747",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 130.7,
+          "raw_p99": 248.0,
+          "gamma": 1.008,
+          "spread": 189.0
+        },
+        "artifact_id": 12600287036,
+        "prompt": "Unoccupied natural-history view along a narrow muddy river in an arid Early Triassic landscape. A slow brown-green water channel curves diagonally from the lower left into the far right distance. The near riverbank is dry rust-red mineral earth with exposed brown roots and scattered stones. Two sparse drought-stressed conifers cast thin long shadows across a small patch of bare ground beside the water. Beyond them lies a pale dusty plain in heat haze. Copper sunlight enters from the upper right behind the conifers, with warm readable soil and dark green foliage. Only river, bare dry ground, rocks, roots, conifers and hazy sky occupy the picture. Photoreal painterly documentary landscape, vertical composition, one warm copper sun accent. Unoccupied arid Early Triassic environment, rust-red mineral ground, subdued copper sunlight, nature-documentary landscape with readable soil texture. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40195585545,
+          "sha": "447deb62fdb8c50f9b5194efb72d700ad38ca20e",
+          "key": "2026-10-25-countdown-05"
+        }
+      },
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o1-alt1.png",
+        "sha256": "2bc6e95ca76874305cca73697a424c567baab079b66e5e83bac07754db27853b",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 104.9,
+          "raw_p99": 249.0,
+          "gamma": 0.759,
+          "spread": 183.0
+        },
+        "artifact_id": 12600287036,
+        "prompt": "Unoccupied natural-history view along a narrow muddy river in an arid Early Triassic landscape. A slow brown-green water channel curves diagonally from the lower left into the far right distance. The near riverbank is dry rust-red mineral earth with exposed brown roots and scattered stones. Two sparse drought-stressed conifers cast thin long shadows across a small patch of bare ground beside the water. Beyond them lies a pale dusty plain in heat haze. Copper sunlight enters from the upper right behind the conifers, with warm readable soil and dark green foliage. Only river, bare dry ground, rocks, roots, conifers and hazy sky occupy the picture. Photoreal painterly documentary landscape, vertical composition, one warm copper sun accent. Unoccupied arid Early Triassic environment, rust-red mineral ground, subdued copper sunlight, nature-documentary landscape with readable soil texture. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40195585545,
+          "sha": "447deb62fdb8c50f9b5194efb72d700ad38ca20e",
+          "key": "2026-10-25-countdown-05"
+        }
+      }
+    ],
+    "o2": [
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o2.png",
+        "sha256": "7671fbd8b222bafd0eb34b6b97d8c9860b663527114d5c28c04e557a9d5eb9ad",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 173.3,
+          "raw_p99": 253.0,
+          "gamma": 1.6,
+          "spread": 166.0
+        },
+        "artifact_id": 12599311973,
+        "prompt": "A glassy hot lagoon on the Triassic equator, steam rising from pale turquoise water, white salt rims, photoreal painterly, vertical composition, one warm focal light from a blazing low sun. Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o2-alt1.png",
+        "sha256": "bc50a8c33d66ccc95b9a864a03524b8a0d6675d699b5c0af816a368e36b60c47",
+        "model": "klein4b-q8-768",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 170.2,
+          "raw_p99": 255.0,
+          "gamma": 1.6,
+          "spread": 191.0
+        },
+        "artifact_id": 12599311973,
+        "prompt": "A glassy hot lagoon on the Triassic equator, steam rising from pale turquoise water, white salt rims, photoreal painterly, vertical composition, one warm focal light from a blazing low sun. Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o3": [
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o3.png",
+        "sha256": "4951219ae8612ffd18b967297dea49b46703c736c747221ceebc0b665bee11b9",
+        "model": "klein4b-q8-768",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 93.4,
+          "raw_p99": 218.0,
+          "gamma": 0.671,
+          "spread": 122.0
+        },
+        "artifact_id": 12601580039,
+        "prompt": "Unoccupied ground-focused natural-history view of a sheltered bowl-shaped depression between large smooth red sand dunes in an arid Early Triassic desert. Fine curved ripple lines cover the near sand. Rounded dune slopes enclose a small low hollow in the centre of the composition. The rim of the nearest dune creates a broad clean arc across the upper third. A little hazy copper sky is visible above that rim, with one restrained warm setting-sun glow at the right. Only loose red sand, subtle wind ripples, rounded dune slopes and a small strip of sky occupy the picture. Soft heat haze and long warm shadows reveal the hollow shape. Photoreal painterly documentary landscape, vertical composition. Unoccupied arid Early Triassic environment, rust-red mineral ground, subdued copper sunlight, nature-documentary landscape with readable soil texture. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40195585545,
+          "sha": "447deb62fdb8c50f9b5194efb72d700ad38ca20e",
+          "key": "2026-10-25-countdown-05"
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o4.png",
+        "sha256": "e8aca9e02c9cbc3b1d95370a833dc3b89ffbd923411b9a39c23f7ec76a25948f",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 100.0,
+          "raw_p99": 252.0,
+          "gamma": 0.72,
+          "spread": 205.0
+        },
+        "artifact_id": 12599042320,
+        "prompt": "POV from inside a shallow cave in red sandstone cliffs, a shimmering bleached plain stretching outside, photoreal painterly, vertical composition, one warm focal light from a copper dusk sun. Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o4-alt1.png",
+        "sha256": "375dc1b342fd4fe9c96346325a0ec1de020e5038993bc3488b7ac47800d84702",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 98.6,
+          "raw_p99": 245.0,
+          "gamma": 0.709,
+          "spread": 194.0
+        },
+        "artifact_id": 12599042320,
+        "prompt": "POV from inside a shallow cave in red sandstone cliffs, a shimmering bleached plain stretching outside, photoreal painterly, vertical composition, one warm focal light from a copper dusk sun. Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o5": [
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o5.png",
+        "sha256": "add4a8c406d40692aeb9b8a3cc5f6970cce759ec232b75bd8c173dd3b9f7d04a",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 127.1,
+          "raw_p99": 251.0,
+          "gamma": 0.967,
+          "spread": 190.0
+        },
+        "artifact_id": 12599935999,
+        "prompt": "A colossal monsoon thunderstorm towering over an arid Pangaea plain, sheets of rain and lightning, dust racing ahead, photoreal painterly, vertical composition, one warm focal light from lightning. Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o5-alt1.png",
+        "sha256": "21bd3a3a5c292b0481019038b787a34702b5d5f2efead5f72c00b6cdfee44342",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 115.0,
+          "raw_p99": 254.0,
+          "gamma": 0.846,
+          "spread": 186.0
+        },
+        "artifact_id": 12599935999,
+        "prompt": "A colossal monsoon thunderstorm towering over an arid Pangaea plain, sheets of rain and lightning, dust racing ahead, photoreal painterly, vertical composition, one warm focal light from lightning. Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o6": [
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o6.png",
+        "sha256": "ae6676e4bbc39ee5411434f06531a5f5908fdb6aa48c5606540989c49c5a646e",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 148.2,
+          "raw_p99": 247.0,
+          "gamma": 1.242,
+          "spread": 178.0
+        },
+        "artifact_id": 12599314850,
+        "prompt": "A steaming volcanic hot spring in orange mineral terraces on a scorched Triassic plain, sulphur haze drifting, photoreal painterly, vertical composition, one warm focal light from a glowing vent. Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o6-alt1.png",
+        "sha256": "196e463dffee95ec8d5acfd44ac79efc2d7da2d71d7f3854c8a94d18848a8de3",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 141.8,
+          "raw_p99": 243.0,
+          "gamma": 1.148,
+          "spread": 163.0
+        },
+        "artifact_id": 12599314850,
+        "prompt": "A steaming volcanic hot spring in orange mineral terraces on a scorched Triassic plain, sulphur haze drifting, photoreal painterly, vertical composition, one warm focal light from a glowing vent. Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "o7": [
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o7.png",
+        "sha256": "82cbe0118314e55e6e647a00dd649010773f55bb3bb293b914cee14dd9705426",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 52.4,
+          "raw_p99": 155.0,
+          "gamma": 0.426,
+          "spread": 100.0
+        },
+        "artifact_id": 12599874540,
+        "prompt": "Unoccupied natural-history landscape of an Early Triassic ridge leading away from a hot arid basin toward distant cooler woodland. Rough rust-red mineral earth and scattered angular stones form the broad irregular ridge crest in the lower foreground. The ridge curves naturally rightward through the middle distance, revealing a low green belt of slender conifers and seed ferns across the far valley. A thin dusty ochre basin remains on the left below the ridge. Narrow conifer silhouettes rise beneath a deep blue twilight sky on the distant horizon. A restrained copper sunset glow touches one upper edge of the mineral ridge. The picture contains only bare natural ground, stones, sparse seed ferns, distant conifers and twilight sky. Photoreal painterly documentary landscape, vertical composition, readable warm midtones in the foreground. Empty natural mineral ridge, distant conifers and seed ferns under deep-blue twilight, restrained copper sunset, Early Triassic documentary landscape. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40196862089,
+          "sha": "982edcd82dc12db0ecc4312676fe6fad0f04e10c",
+          "key": "2026-10-25-countdown-05"
+        }
+      },
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o7-alt1.png",
+        "sha256": "ba5428ef825c5a09594dd8d197e56e185483201accb4b20724804982722dfa5d",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 51.8,
+          "raw_p99": 155.0,
+          "gamma": 0.423,
+          "spread": 98.0
+        },
+        "artifact_id": 12599874540,
+        "prompt": "Unoccupied natural-history landscape of an Early Triassic ridge leading away from a hot arid basin toward distant cooler woodland. Rough rust-red mineral earth and scattered angular stones form the broad irregular ridge crest in the lower foreground. The ridge curves naturally rightward through the middle distance, revealing a low green belt of slender conifers and seed ferns across the far valley. A thin dusty ochre basin remains on the left below the ridge. Narrow conifer silhouettes rise beneath a deep blue twilight sky on the distant horizon. A restrained copper sunset glow touches one upper edge of the mineral ridge. The picture contains only bare natural ground, stones, sparse seed ferns, distant conifers and twilight sky. Photoreal painterly documentary landscape, vertical composition, readable warm midtones in the foreground. Empty natural mineral ridge, distant conifers and seed ferns under deep-blue twilight, restrained copper sunset, Early Triassic documentary landscape. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40196862089,
+          "sha": "982edcd82dc12db0ecc4312676fe6fad0f04e10c",
+          "key": "2026-10-25-countdown-05"
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/o8.png",
+        "sha256": "54f1f321be849783f8ab68f7939f69c04935c285362bac3c2f100503d5804ed3",
+        "model": "klein4b-q8-768",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 180.1,
+          "raw_p99": 252.0,
+          "gamma": 1.6,
+          "spread": 171.0
+        },
+        "artifact_id": 12601170008,
+        "prompt": "The bleached heart of the Pangaea desert at noon, cracked salt pans to the horizon, air shimmering violently, photoreal painterly, vertical composition, one warm focal light from the blinding sun. Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "end": [
+      {
+        "file": "countdown-05-reviewed-environment-repair/art/end.png",
+        "sha256": "cd39eb7c8dceafe08a7704ef3d4dc740ed197bef2faaab8ebb19b1cf8be31c12",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 91.2,
+          "raw_p99": 228.0,
+          "gamma": 0.655,
+          "spread": 171.0
+        },
+        "artifact_id": 12600117593,
+        "prompt": "A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open calm sky in the upper half of the frame. Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ]
+  }
+}

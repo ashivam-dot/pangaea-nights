@@ -1,0 +1,121 @@
+{
+ "slot": "A",
+ "mode": "dry",
+ "day": "2026-10-25",
+ "run": "40196862089",
+ "key": "2026-10-25-countdown-05",
+ "premise": {
+  "id": "countdown-05",
+  "era": "Triassic",
+  "title": "Pangaea Is Overheating — Which Escape Plan Keeps You Alive? 🔥",
+  "banner": "The tropics turn lethal. Go where?",
+  "hook_vo": "Pangaea's tropics are too hot to live in.",
+  "art_direction": "Bleached white-gold desert glare, heat haze, hard noon shadows turning to copper dusk, ultra-wide 16mm.",
+  "options": [
+   {
+    "n": 1,
+    "label": "Shady tropical riverbank",
+    "vo": "Rest on a shady tropical riverbank.",
+    "danger": 1,
+    "image_prompt": "Unoccupied natural-history view along a narrow muddy river in an arid Early Triassic landscape. A slow brown-green water channel curves diagonally from the lower left into the far right distance. The near riverbank is dry rust-red mineral earth with exposed brown roots and scattered stones. Two sparse drought-stressed conifers cast thin long shadows across a small patch of bare ground beside the water. Beyond them lies a pale dusty plain in heat haze. Copper sunlight enters from the upper right behind the conifers, with warm readable soil and dark green foliage. Only river, bare dry ground, rocks, roots, conifers and hazy sky occupy the picture. Photoreal painterly documentary landscape, vertical composition, one warm copper sun accent.",
+    "art_direction": "Unoccupied arid Early Triassic environment, rust-red mineral ground, subdued copper sunlight, nature-documentary landscape with readable soil texture."
+   },
+   {
+    "n": 2,
+    "label": "Equator lagoon",
+    "vo": "Float in a warm equator lagoon.",
+    "danger": 2,
+    "image_prompt": "A glassy hot lagoon on the Triassic equator, steam rising from pale turquoise water, white salt rims, photoreal painterly, vertical composition, one warm focal light from a blazing low sun"
+   },
+   {
+    "n": 3,
+    "label": "Hollow in the dunes",
+    "vo": "Dig into a hollow between dunes.",
+    "danger": 3,
+    "image_prompt": "Unoccupied ground-focused natural-history view of a sheltered bowl-shaped depression between large smooth red sand dunes in an arid Early Triassic desert. Fine curved ripple lines cover the near sand. Rounded dune slopes enclose a small low hollow in the centre of the composition. The rim of the nearest dune creates a broad clean arc across the upper third. A little hazy copper sky is visible above that rim, with one restrained warm setting-sun glow at the right. Only loose red sand, subtle wind ripples, rounded dune slopes and a small strip of sky occupy the picture. Soft heat haze and long warm shadows reveal the hollow shape. Photoreal painterly documentary landscape, vertical composition.",
+    "art_direction": "Unoccupied arid Early Triassic environment, rust-red mineral ground, subdued copper sunlight, nature-documentary landscape with readable soil texture."
+   },
+   {
+    "n": 4,
+    "label": "Red cliff cave",
+    "vo": "Hide in a cave in red cliffs.",
+    "danger": 4,
+    "image_prompt": "POV from inside a shallow cave in red sandstone cliffs, a shimmering bleached plain stretching outside, photoreal painterly, vertical composition, one warm focal light from a copper dusk sun"
+   },
+   {
+    "n": 5,
+    "label": "Chase the monsoon storms",
+    "vo": "Chase the giant monsoon storms.",
+    "danger": 5,
+    "image_prompt": "A colossal monsoon thunderstorm towering over an arid Pangaea plain, sheets of rain and lightning, dust racing ahead, photoreal painterly, vertical composition, one warm focal light from lightning"
+   },
+   {
+    "n": 6,
+    "label": "Volcanic hot spring",
+    "vo": "Settle by a volcanic hot spring.",
+    "danger": 6,
+    "image_prompt": "A steaming volcanic hot spring in orange mineral terraces on a scorched Triassic plain, sulphur haze drifting, photoreal painterly, vertical composition, one warm focal light from a glowing vent"
+   },
+   {
+    "n": 7,
+    "label": "Trek to the far south",
+    "vo": "Trek thousands of kilometres south.",
+    "danger": 7,
+    "image_prompt": "Unoccupied natural-history landscape of an Early Triassic ridge leading away from a hot arid basin toward distant cooler woodland. Rough rust-red mineral earth and scattered angular stones form the broad irregular ridge crest in the lower foreground. The ridge curves naturally rightward through the middle distance, revealing a low green belt of slender conifers and seed ferns across the far valley. A thin dusty ochre basin remains on the left below the ridge. Narrow conifer silhouettes rise beneath a deep blue twilight sky on the distant horizon. A restrained copper sunset glow touches one upper edge of the mineral ridge. The picture contains only bare natural ground, stones, sparse seed ferns, distant conifers and twilight sky. Photoreal painterly documentary landscape, vertical composition, readable warm midtones in the foreground.",
+    "art_direction": "Empty natural mineral ridge, distant conifers and seed ferns under deep-blue twilight, restrained copper sunset, Early Triassic documentary landscape."
+   },
+   {
+    "n": 8,
+    "label": "Noon in the inland desert",
+    "vo": "Cross the inland desert at noon.",
+    "danger": 8,
+    "image_prompt": "The bleached heart of the Pangaea desert at noon, cracked salt pans to the horizon, air shimmering violently, photoreal painterly, vertical composition, one warm focal light from the blinding sun"
+   }
+  ],
+  "answer_n": 7,
+  "verdict_vo": "Real answer: number 7, because extreme heat may have left Pangaea's tropics empty of land vertebrates. Your best bet is far south.",
+  "fact": {
+   "text": "After the Permian–Triassic extinction, extreme heat may have made Pangaea's low latitudes uninhabitable for tetrapods, the land vertebrates.",
+   "wiki_title": "Permian–Triassic extinction event",
+   "wiki_revid": 1380638197,
+   "source_sentence": "A tetrapod gap may have existed from the Induan until the early Spathian between ~30 °N and ~ 40 °S due to extreme heat making these low latitudes uninhabitable for these animals."
+  },
+  "description": "Just after the Great Dying, the middle of Pangaea got so hot that land animals may have vanished from it. Eight ways to beat the heat, and the long walk the evidence points to.",
+  "tags": [
+   "Pangaea",
+   "Triassic",
+   "heat",
+   "supercontinent",
+   "prehistoric",
+   "survival",
+   "deep time",
+   "science"
+  ],
+  "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent",
+  "series": "countdown"
+ },
+ "gates": {
+  "premise": {
+   "ok": true,
+   "problems": []
+  },
+  "novelty_4gram": {
+   "value": 0.0,
+   "ceiling": 0.35,
+   "ok": true
+  },
+  "rotation": {
+   "ok": true,
+   "problems": []
+  },
+  "reuse": {
+   "ok": true
+  }
+ },
+ "script": "Pangaea's tropics are too hot to live in. Rest on a shady tropical riverbank. Float in a warm equator lagoon. Dig into a hollow between dunes. Hide in a cave in red cliffs. Chase the giant monsoon storms. Settle by a volcanic hot spring. Trek thousands of kilometres south. Cross the inland desert at noon. Real answer: number 7, because extreme heat may have left Pangaea's tropics empty of land vertebrates. Your best bet is far south. Comment your number.",
+ "created": "2026-10-25T13:16:58Z",
+ "image_replay": {
+  "path": ".github/replay/countdown05-route-art-only.json",
+  "sha256": "ddcfa05f2d80384ea64d8c0c52306e2406266ed692f984fc7e695ac6b6de2cfa"
+ }
+}

@@ -1,0 +1,79 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-1/o2.png",
+      "image_sha256": "7671fbd8b222bafd0eb34b6b97d8c9860b663527114d5c28c04e557a9d5eb9ad",
+      "decision": "pass",
+      "reason": "Direct native inspection: empty hot turquoise salt-rim lagoon with rising vapour, bare arid surroundings and one low warm sun. Fits the lagoon choice; no people, props, animals or embedded writing."
+    },
+    {
+      "file": "ladder-img-A-1/o2-alt1.png",
+      "image_sha256": "bc50a8c33d66ccc95b9a864a03524b8a0d6675d699b5c0af816a368e36b60c47",
+      "decision": "pass",
+      "reason": "Direct native inspection: empty hot turquoise salt-rim lagoon with rising vapour, bare arid surroundings and one low warm sun. Fits the lagoon choice; no people, props, animals or embedded writing."
+    },
+    {
+      "file": "ladder-img-A-3/o4.png",
+      "image_sha256": "e8aca9e02c9cbc3b1d95370a833dc3b89ffbd923411b9a39c23f7ec76a25948f",
+      "decision": "pass",
+      "reason": "Direct native inspection: empty red sandstone cave looking out onto a bleached hot plain under one warm sun. Readable cave shelter and distinct rocky foreground; no people, props, animals or writing."
+    },
+    {
+      "file": "ladder-img-A-3/o4-alt1.png",
+      "image_sha256": "375dc1b342fd4fe9c96346325a0ec1de020e5038993bc3488b7ac47800d84702",
+      "decision": "pass",
+      "reason": "Direct native inspection: empty red sandstone cave looking out onto a bleached hot plain under one warm sun. Readable cave shelter and distinct rocky foreground; no people, props, animals or writing."
+    },
+    {
+      "file": "ladder-img-A-4/o5.png",
+      "image_sha256": "add4a8c406d40692aeb9b8a3cc5f6970cce759ec232b75bd8c173dd3b9f7d04a",
+      "decision": "pass",
+      "reason": "Direct native inspection: towering monsoon storm and bright lightning over an empty arid plain, rain streaks and a low advancing dust front. Fits the storm choice; no people, modern props, animals or embedded writing."
+    },
+    {
+      "file": "ladder-img-A-4/o5-alt1.png",
+      "image_sha256": "21bd3a3a5c292b0481019038b787a34702b5d5f2efead5f72c00b6cdfee44342",
+      "decision": "pass",
+      "reason": "Direct native inspection: towering monsoon storm and bright lightning over an empty arid plain, rain streaks and a low advancing dust front. Fits the storm choice; no people, modern props, animals or embedded writing."
+    },
+    {
+      "file": "ladder-img-A-5/o6.png",
+      "image_sha256": "ae6676e4bbc39ee5411434f06531a5f5908fdb6aa48c5606540989c49c5a646e",
+      "decision": "pass",
+      "reason": "Direct native inspection: steaming natural geothermal pools in orange mineral terraces on a bare hot plain. Water and mineral rims are visible with a concentrated warm vent glow; no people, man-made objects or embedded writing. Fits the volcanic-hot-spring choice."
+    },
+    {
+      "file": "ladder-img-A-5/o6-alt1.png",
+      "image_sha256": "196e463dffee95ec8d5acfd44ac79efc2d7da2d71d7f3854c8a94d18848a8de3",
+      "decision": "pass",
+      "reason": "Direct native inspection: steaming natural geothermal pools in orange mineral terraces on a bare hot plain. Water and mineral rims are visible with a concentrated warm vent glow; no people, man-made objects or embedded writing. Fits the volcanic-hot-spring choice."
+    },
+    {
+      "file": "ladder-img-A-6/o7.png",
+      "image_sha256": "1af5a69fc5a2441b54cb345cda0f179e92f07d52c56db4d71341585b3fa6a663",
+      "decision": "hold",
+      "reason": "Direct native inspection: the escape-route pictures contain theropod/dinosaur-like animals and broad-crowned flowering-tree forms, which conflict with this episode about the immediate aftermath of the Permian-Triassic extinction. Narration needs a route toward cooler woodland, not animals. Preserve every spoken line and repair only this visual as an unoccupied ridge toward conifers and seed ferns."
+    },
+    {
+      "file": "ladder-img-A-6/o7-alt1.png",
+      "image_sha256": "ab6dc8c86b0db1f65659f972c8000060344cee71ce0df04219996742fe6a1da7",
+      "decision": "hold",
+      "reason": "Direct native inspection: the escape-route pictures contain theropod/dinosaur-like animals and broad-crowned flowering-tree forms, which conflict with this episode about the immediate aftermath of the Permian-Triassic extinction. Narration needs a route toward cooler woodland, not animals. Preserve every spoken line and repair only this visual as an unoccupied ridge toward conifers and seed ferns."
+    },
+    {
+      "file": "ladder-img-A-8/end.png",
+      "image_sha256": "cd39eb7c8dceafe08a7704ef3d4dc740ed197bef2faaab8ebb19b1cf8be31c12",
+      "decision": "pass",
+      "reason": "Direct native inspection: empty windswept red desert dunes with fine sand ripples, sparse dry vegetation and a low copper sun under twilight. No people, modern props, animals or writing. A general hot-Pangaea closing backdrop; final audiovisual alignment remains to be checked."
+    },
+    {
+      "file": "ladder-img-A-7/o8.png",
+      "image_sha256": "54f1f321be849783f8ab68f7939f69c04935c285362bac3c2f100503d5804ed3",
+      "decision": "pass",
+      "reason": "Directly inspected retained native o8 painting: empty cracked dry salt/mineral pan, heat shimmer, distant bare hills and bright desert sun. No people, limbs, vehicles, animals or text. Fits the inland-desert-noon beat; source-art approval only."
+    }
+  ],
+  "at": "2026-10-25T13:42:44.106460+00:00",
+  "scope": "Source paintings only",
+  "release_approval": false
+}
