@@ -621,6 +621,32 @@
     "containsSyntheticMedia": null,
     "uploadStatus": "processed"
    }
+  },
+  {
+   "premise": "how_deep-02",
+   "series": "how_deep",
+   "era": "Ediacaran",
+   "slot": "B",
+   "video_id": "mx2QfRD3zjo",
+   "url": "https://www.youtube.com/shorts/mx2QfRD3zjo",
+   "title": "Ocean Life Before Fish — How Deep Would You Go? 🌊",
+   "publish_at": "2026-10-26T00:30:00Z",
+   "uploaded_at": "2026-10-25T03:19:57Z",
+   "script": "Before fish, before shells. How deep do you go? One: warm shallows over slimy microbial mats. Two: waist-deep, quilted creatures on the sand. Three: ten metres, storm waves churning sand. Four: fifty metres, quiet and dim. Five: the lip of a deep slope. Six: two hundred metres down the cold slope. Seven: a deep, still meadow of feathery fronds. Eight: volcanic ash raining down to bury everything. Real answer: number 7, because Charnia probably lived in deep water, well below the wave base. That fits our dark frond meadow. Comment your number.",
+   "frame0": "qiNSJgEihJx9H42lXSOZKHQo2CRNKSWjth1qmDAfUCamrKIpkSlkp7Or5KZpIbWmqyUBK/Kf5qXopXuieqnIJSWk1Kj6pCkmUSNuKcwpuSyYC58osaVqKFqlVLAuJ9Um+KHqIbsiSBwoKO4kiacbKMKnIKMjkz+V8ajPGV2g+ybsph0lrqHRKIymDhl7p9KoiCTPp8Ak8xwdp3emJCFlqJUpyajKoiWpTyXjGWcjg6Y3p2OguiIVqMS5LBawpA4ptyBiIT2mnbGcKNypzqzuKTKohZmwrVsoayfmHUocPqoMFlmgLZ88qJubeaBNo1wqWaX3Jb0nSqxaqKocShzNpYshdCk0J8EoOal3La8lDyyeptGq3Jobp/qfCKC3pLgRkSRXn/6nzCklpa6gRx0CJjEmT6jmp16qwCipnEMcR6Bqp5moxg6QHxwYMqcGqT8s76AAIj8gdRd8kWelq6a4KJCsAiEsrRcdeiumIAqjCqb0poQYmiS7HmWjthsEnZWhQYqeKK8hLKV5KCWowycnpy0eGacAF9QlPySJpsMIGqGdJGgqXiXMKyiNlaJhpiaZLCtwKIyjuiJaKrWhfaQUqJcfCSLvEVuoiJ7SmDaYJx1npCgivh1gqfeMsqexJi4hzqPtJ+MnPJ3AIV6qdZNbJEShQ5T/oyqVUiFsjeiqqSeHmbQhhC5FlR0nr6YTJTQp9iDQp6CgHCbgo+yhEiikKOsVMpzXq1skQalgIASlLpVnIx8khScvnFkeMaSKrbKofBNJqLklJqUNl6wdD6j5IIspK50FKCgdZBYSrKShTyXdJnMj6p2FnZUo7w/dpFsrdi3uKCqgTKgHJZAtbqNPqVglzC8wp72pYKZ/oDmh9yiqo2In0KLppcgfD6Pkpw2iiyi3JdEd9SRLqFIdQKS+JNedPqCDmI0oQaRpJ4UitiOYp3Sk+yM5pS6kXKoOJFylw5ikJREqDiysqHwZ1SjzqaEk1CRDKjYoE6W7my8oSpUYJRiih6VuJ6Ylo6gloQikh53+G3ckWSJDosUoX6WCpE8pNx5DHDGpRhdWIiKqcijPnIEmgR5lpnsciqfsozMlLCcVqWQqLyaJn8gmBx2sImspkCH7oE8lH6nTqfAhua0Pn0qgrCK/nFCsN56fqn0fuR4Hnpcg86r8pxgYNKMoHpmVAh9lobUfnqS3pmMYzySfIxCibBvJoEMkKqrhEn+nnycgoO+kNaX8JI4fGaH6qkYqlyR8Ixojg6b2IaQmSCEIJKii6aTtp/ymsSL9pLCn7KccGyyeSCF9n4Am7qPlIBmjuplWpcKl7yiYqpAZLqZSodkmb56aoKwp3iJbpMOmZi7UoyOkZiCnofEp/5iTpQ==",
+   "related": "https://www.youtube.com/watch?v=Y_zpVf53Hwc",
+   "run": "40156818584",
+   "checkpoints": {},
+   "av_review_sha256": "9ea7bd9d2e95b75017646c9944fd564a53ce4a3bc3adc71ddb0f4cb23986d57d",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "private",
+    "publishAt": "2026-10-26T00:30:00Z",
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
