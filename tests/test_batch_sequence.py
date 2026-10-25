@@ -142,22 +142,26 @@ def args_run(args):
     return args[1].rsplit('/', 1)[-1]
 
 
+@pytest.mark.parametrize('with_hold', [False, True])
 @pytest.mark.parametrize('active_ids,extra_buffer,dispatch', [([11], 0, True), ([11, 99], 0, False),
                                                             ([11], 2, False)])
 def test_finished_future_preview_frees_producer_for_predecessor_repair(
-        monkeypatch, active_ids, extra_buffer, dispatch):
+        monkeypatch, active_ids, extra_buffer, dispatch, with_hold):
     repair = {'premise': 'repair', 'stage': 'planned', 'inputs': {'dry_run': 'true'}}
     running = {'premise': 'running', 'stage': 'building', 'run_id': 11, 'source_sha': 'abc'}
     finished = {'premise': 'finished', 'stage': 'building', 'run_id': 12, 'source_sha': 'abc'}
     data = {'jobs': [repair, running, finished] + [
         {'premise': f'buffer-{i}', 'stage': 'reviewed'} for i in range(extra_buffer)], 'halted': None}
+    if with_hold:
+        data['jobs'].insert(0, {'premise':'held', 'stage':'held', 'problems':['wrong image']})
+        data['halted'] = 'Repair held entry held: wrong image'
     monkeypatch.setattr(batch, 'load', lambda: data)
     monkeypatch.setattr(batch, 'builds', lambda *a: [{'id': i, 'status': 'in_progress'} for i in active_ids])
     monkeypatch.setattr(batch, 'materialize', lambda *a: pytest.fail('future preview reviewed before repair'))
     writes, checkpoints = [], []
     def gh(*args, **kw):
         if kw.get('body'):
-            assert checkpoints[-1]['jobs'][0]['stage'] == 'dispatch_unresolved'
+            assert next(j for j in checkpoints[-1]['jobs'] if j['premise']=='repair')['stage'] == 'dispatch_unresolved'
             writes.append(kw['body'])
             return None
         if args[1].endswith('/commits/main'):
@@ -172,7 +176,7 @@ def test_finished_future_preview_frees_producer_for_predecessor_repair(
     assert repair['stage'] == ('dispatch_unresolved' if dispatch else 'planned')
     assert running['stage'] == finished['stage'] == 'building'
     assert finished['cloud_status'] == 'completed' and not finished.get('review')
-    assert not data['halted']
+    assert bool(data['halted']) is with_hold
 
 
 

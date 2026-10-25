@@ -168,3 +168,5 @@ review and release retain their predecessor checks. Every pending dispatch is re
 - **Ambience.** CC0 recordings from Freesound and Wikimedia Commons, layered over a synthetic bed of the same kind
   (surf, rain, wind or deep-water rumble). Each recording's licence is re-checked at download, and recordings with
   sudden loud events are rejected.
+
+Producer metadata is refreshed independently of ordered review, including behind an editorial hold. A completed later preview still occupies the bounded buffer but never an active producer slot. This cannot clear a hold or approve media.

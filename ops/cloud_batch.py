@@ -296,6 +296,17 @@ def tick(adapter, mode, save=persist):
                     data["halted"] = "Uncertain dispatch; reconcile the run before any replacement"
                 save(data)
                 return data
+    # Release ordering must not hide producer completion behind an editorial hold.
+    # Refresh metadata only: this grants no review, upload or rotation permission.
+    production = {}
+    for job in data["jobs"]:
+        if job["stage"] != "building" or editorial_problems(job):
+            continue
+        run = gh("api", f"repos/{repo}/actions/runs/{job['run_id']}")
+        if job.get("source_sha") and run["head_sha"] != job["source_sha"]:
+            raise ValueError("production source differs from the saved dispatch intent")
+        job.update(cloud_status=run["status"], source_sha=run["head_sha"])
+        production[job["run_id"]] = run
     reviewed = 0
     for job in data["jobs"]:
         if problems := editorial_problems(job):
@@ -314,10 +325,7 @@ def tick(adapter, mode, save=persist):
         if job["stage"] not in ("building", "reviewed", "upload_intent"):
             continue
         if job["stage"] == "building":
-            run = gh("api", f"repos/{repo}/actions/runs/{job['run_id']}")
-            if job.get("source_sha") and run["head_sha"] != job["source_sha"]:
-                raise ValueError("production source differs from the saved dispatch intent")
-            job.update(cloud_status=run["status"], source_sha=run["head_sha"])
+            run = production[job["run_id"]]
             if run["status"] != "completed":
                 continue
             if run["conclusion"] != "success":
