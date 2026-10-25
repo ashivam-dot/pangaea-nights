@@ -332,7 +332,8 @@
           "label": "Airless black water",
           "vo": "Eight: the airless black bottom water.",
           "danger": 8,
-          "image_prompt": "A fully submerged underwater view across stagnant black bottom water in the Late Ordovician sea. In the lower foreground, sharply detailed dark shale ridges and flat broken shale flakes rise from fine charcoal mud, with thin suspended silt just above the bottom. The near shale is readable under soft neutral external cinematic fill, fading quickly into pitch black deep water in every direction. The view is entirely below water, angled slightly downward toward the barren seafloor. No animals or plants, no land or horizon, no sun or sky, no sunlight or water surface. Photoreal painterly nature-documentary frame, vertical composition."
+          "image_prompt": "Fully submerged underwater nature-documentary close view of a stagnant Ordovician deep-basin bottom in pitch black deep water. Three broad pale cream limestone slabs lie flat and half buried in fine grey mud in the near foreground, with crisp layered mineral edges, fine powdery sediment, and narrow rippled channels between the slabs. The slabs and detailed mud fill the lower two thirds of the vertical picture. Bright soft neutral external documentary fill evenly illuminates the entire pale foreground, revealing sharp rock texture and sediment grains. The illumination falls off rapidly behind the slabs into featureless black surrounding seawater. Tiny suspended particles remain close above the mud. Empty still bottom with no animals. No sky, sun, horizon, land, trees, sunlight, water surface or god-rays. Photoreal painterly, crisp detailed near-field documentary composition.",
+          "art_direction": "Pale cream layered limestone slabs and finely textured grey sediment, bright neutral external foreground fill, featureless black surrounding deep seawater, still empty submerged bottom"
         }
       ],
       "answer_n": 5,
