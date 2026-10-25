@@ -3831,6 +3831,50 @@
           "reason": "The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.",
           "evidence": {
             "ladder-img-A-3/o4.png": "203f32988e2f08555fde91cfab07f8375cec8c8a6cb9816db6a72822bf86f7b3"
+          },
+          "resolved_at": "2026-10-25T12:15:03+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "9e060be109b657a6a4c06a9da6996f737e5c3ec6",
+            "replay": ".github/replay/how_deep-04-shell-slope-repair.json",
+            "replay_sha256": "64f33fd557a427e0b648993d14e852706ab609554107fba83240d556773f1022",
+            "images": {
+              "o1": [
+                "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381",
+                "6c457b877b385ec0c9557818115d931c632e2cc5af306c27ba847ab1a558a7c3"
+              ],
+              "o2": [
+                "abb53c51100cc92ed691d7213c3021b6d82f4677ecbeab114ba9dc4346fc4584",
+                "68cbf073b2d214c58b3ebc1b5d8f14f3f08cd31aa81adb8a6f46aff1aefd8a31"
+              ],
+              "o3": [
+                "fec865f967d66340d14b8f4738da5627cf49fc848a6d7cb2c3450673af8e4ce9"
+              ],
+              "o4": [
+                "a489fc1eaece497ebf010e1b9d2a20b5a9faee24c24f0028e30ec707c4c2753e",
+                "70c7278011ea87ecda75f2061678af645877704bcef1625d654e76471a7ec8e7"
+              ],
+              "o5": [
+                "6a5f7bdfb274b51f2c445aeceafe3ba2f166392fbb86836a2cb81925e81009cf"
+              ],
+              "o6": [
+                "2ac3790b516770d68f3f388f2a70fe1dd54395efd4d00b9ba2daac0d278d3d3b",
+                "8df1e4dffb17e79422558416be4e283e555ccec9e17e030502fd5b6e0c294ec5"
+              ],
+              "o7": [
+                "31c232f8257eb1fc64b1dccb1ffba94640a98cafbb821b89772d4e2a3193553b",
+                "d7cfee01fa7777a2ddf837b3d26581f26b3fae8ebe06ccd1d32aa277420f9fc4"
+              ],
+              "o8": [
+                "73d2cad0d0e046103dc59118c712985c53503a86f8053e043ec8e2ad75b0e494"
+              ],
+              "end": [
+                "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/how_deep-04-shell-slope-repair/staged-input-repair.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -3841,6 +3885,50 @@
           "evidence": {
             "ladder-img-A-5/o6.png": "8fff09307f312d1e067a78569b81d90675835c447479793e93d3de6b14792f75",
             "ladder-img-A-5/o6-alt1.png": "6245fdae5c734dadaedbd935262093cfaef6505a33bf1b7c6c2edd4494a203f8"
+          },
+          "resolved_at": "2026-10-25T12:15:03+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "9e060be109b657a6a4c06a9da6996f737e5c3ec6",
+            "replay": ".github/replay/how_deep-04-shell-slope-repair.json",
+            "replay_sha256": "64f33fd557a427e0b648993d14e852706ab609554107fba83240d556773f1022",
+            "images": {
+              "o1": [
+                "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381",
+                "6c457b877b385ec0c9557818115d931c632e2cc5af306c27ba847ab1a558a7c3"
+              ],
+              "o2": [
+                "abb53c51100cc92ed691d7213c3021b6d82f4677ecbeab114ba9dc4346fc4584",
+                "68cbf073b2d214c58b3ebc1b5d8f14f3f08cd31aa81adb8a6f46aff1aefd8a31"
+              ],
+              "o3": [
+                "fec865f967d66340d14b8f4738da5627cf49fc848a6d7cb2c3450673af8e4ce9"
+              ],
+              "o4": [
+                "a489fc1eaece497ebf010e1b9d2a20b5a9faee24c24f0028e30ec707c4c2753e",
+                "70c7278011ea87ecda75f2061678af645877704bcef1625d654e76471a7ec8e7"
+              ],
+              "o5": [
+                "6a5f7bdfb274b51f2c445aeceafe3ba2f166392fbb86836a2cb81925e81009cf"
+              ],
+              "o6": [
+                "2ac3790b516770d68f3f388f2a70fe1dd54395efd4d00b9ba2daac0d278d3d3b",
+                "8df1e4dffb17e79422558416be4e283e555ccec9e17e030502fd5b6e0c294ec5"
+              ],
+              "o7": [
+                "31c232f8257eb1fc64b1dccb1ffba94640a98cafbb821b89772d4e2a3193553b",
+                "d7cfee01fa7777a2ddf837b3d26581f26b3fae8ebe06ccd1d32aa277420f9fc4"
+              ],
+              "o8": [
+                "73d2cad0d0e046103dc59118c712985c53503a86f8053e043ec8e2ad75b0e494"
+              ],
+              "end": [
+                "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/how_deep-04-shell-slope-repair/staged-input-repair.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -3850,6 +3938,50 @@
           "reason": "The long-shell procession has broad short pyramidal shells rather than elongated straight tapering cones. Preserve every spoken line and useful siblings; replace only this painting with clearly elongated straight-shell anatomy. All current picture, narration, render and audiovisual gates remain required.",
           "evidence": {
             "ladder-img-A-2/o3.png": "5728ab2e1499f4dbddd0b1e6b4fc18ca60f52e2a20c5ddace377ce38538e008d"
+          },
+          "resolved_at": "2026-10-25T12:15:03+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "9e060be109b657a6a4c06a9da6996f737e5c3ec6",
+            "replay": ".github/replay/how_deep-04-shell-slope-repair.json",
+            "replay_sha256": "64f33fd557a427e0b648993d14e852706ab609554107fba83240d556773f1022",
+            "images": {
+              "o1": [
+                "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381",
+                "6c457b877b385ec0c9557818115d931c632e2cc5af306c27ba847ab1a558a7c3"
+              ],
+              "o2": [
+                "abb53c51100cc92ed691d7213c3021b6d82f4677ecbeab114ba9dc4346fc4584",
+                "68cbf073b2d214c58b3ebc1b5d8f14f3f08cd31aa81adb8a6f46aff1aefd8a31"
+              ],
+              "o3": [
+                "fec865f967d66340d14b8f4738da5627cf49fc848a6d7cb2c3450673af8e4ce9"
+              ],
+              "o4": [
+                "a489fc1eaece497ebf010e1b9d2a20b5a9faee24c24f0028e30ec707c4c2753e",
+                "70c7278011ea87ecda75f2061678af645877704bcef1625d654e76471a7ec8e7"
+              ],
+              "o5": [
+                "6a5f7bdfb274b51f2c445aeceafe3ba2f166392fbb86836a2cb81925e81009cf"
+              ],
+              "o6": [
+                "2ac3790b516770d68f3f388f2a70fe1dd54395efd4d00b9ba2daac0d278d3d3b",
+                "8df1e4dffb17e79422558416be4e283e555ccec9e17e030502fd5b6e0c294ec5"
+              ],
+              "o7": [
+                "31c232f8257eb1fc64b1dccb1ffba94640a98cafbb821b89772d4e2a3193553b",
+                "d7cfee01fa7777a2ddf837b3d26581f26b3fae8ebe06ccd1d32aa277420f9fc4"
+              ],
+              "o8": [
+                "73d2cad0d0e046103dc59118c712985c53503a86f8053e043ec8e2ad75b0e494"
+              ],
+              "end": [
+                "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/how_deep-04-shell-slope-repair/staged-input-repair.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -3860,6 +3992,50 @@
           "evidence": {
             "ladder-img-A-6/o7.png": "4e2f48c235037bdbdcdf56f088682044f8a2c1aebf129843331a074877963cd8",
             "ladder-img-A-6/o7-alt1.png": "3ca0c635b67ae51a6d5f737696186de9a5080f7937815a9c0a671e5a6e19c044"
+          },
+          "resolved_at": "2026-10-25T12:15:03+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "9e060be109b657a6a4c06a9da6996f737e5c3ec6",
+            "replay": ".github/replay/how_deep-04-shell-slope-repair.json",
+            "replay_sha256": "64f33fd557a427e0b648993d14e852706ab609554107fba83240d556773f1022",
+            "images": {
+              "o1": [
+                "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381",
+                "6c457b877b385ec0c9557818115d931c632e2cc5af306c27ba847ab1a558a7c3"
+              ],
+              "o2": [
+                "abb53c51100cc92ed691d7213c3021b6d82f4677ecbeab114ba9dc4346fc4584",
+                "68cbf073b2d214c58b3ebc1b5d8f14f3f08cd31aa81adb8a6f46aff1aefd8a31"
+              ],
+              "o3": [
+                "fec865f967d66340d14b8f4738da5627cf49fc848a6d7cb2c3450673af8e4ce9"
+              ],
+              "o4": [
+                "a489fc1eaece497ebf010e1b9d2a20b5a9faee24c24f0028e30ec707c4c2753e",
+                "70c7278011ea87ecda75f2061678af645877704bcef1625d654e76471a7ec8e7"
+              ],
+              "o5": [
+                "6a5f7bdfb274b51f2c445aeceafe3ba2f166392fbb86836a2cb81925e81009cf"
+              ],
+              "o6": [
+                "2ac3790b516770d68f3f388f2a70fe1dd54395efd4d00b9ba2daac0d278d3d3b",
+                "8df1e4dffb17e79422558416be4e283e555ccec9e17e030502fd5b6e0c294ec5"
+              ],
+              "o7": [
+                "31c232f8257eb1fc64b1dccb1ffba94640a98cafbb821b89772d4e2a3193553b",
+                "d7cfee01fa7777a2ddf837b3d26581f26b3fae8ebe06ccd1d32aa277420f9fc4"
+              ],
+              "o8": [
+                "73d2cad0d0e046103dc59118c712985c53503a86f8053e043ec8e2ad75b0e494"
+              ],
+              "end": [
+                "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/how_deep-04-shell-slope-repair/staged-input-repair.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         },
         {
@@ -3870,6 +4046,50 @@
           "evidence": {
             "ladder-img-A-7/o8.png": "e5a23078a8bb130b929b41ea68b725cf648200f4e5c6f6df0e94ab573f9ffd49",
             "ladder-img-A-7/o8-alt1.png": "008548d082548ea8b4bc768ed99ef2c4ca4895a575f780ba26af113f634233af"
+          },
+          "resolved_at": "2026-10-25T12:15:03+00:00",
+          "resolution": {
+            "kind": "exclude_refused_bytes_and_recheck_exact_replan",
+            "source_sha": "9e060be109b657a6a4c06a9da6996f737e5c3ec6",
+            "replay": ".github/replay/how_deep-04-shell-slope-repair.json",
+            "replay_sha256": "64f33fd557a427e0b648993d14e852706ab609554107fba83240d556773f1022",
+            "images": {
+              "o1": [
+                "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381",
+                "6c457b877b385ec0c9557818115d931c632e2cc5af306c27ba847ab1a558a7c3"
+              ],
+              "o2": [
+                "abb53c51100cc92ed691d7213c3021b6d82f4677ecbeab114ba9dc4346fc4584",
+                "68cbf073b2d214c58b3ebc1b5d8f14f3f08cd31aa81adb8a6f46aff1aefd8a31"
+              ],
+              "o3": [
+                "fec865f967d66340d14b8f4738da5627cf49fc848a6d7cb2c3450673af8e4ce9"
+              ],
+              "o4": [
+                "a489fc1eaece497ebf010e1b9d2a20b5a9faee24c24f0028e30ec707c4c2753e",
+                "70c7278011ea87ecda75f2061678af645877704bcef1625d654e76471a7ec8e7"
+              ],
+              "o5": [
+                "6a5f7bdfb274b51f2c445aeceafe3ba2f166392fbb86836a2cb81925e81009cf"
+              ],
+              "o6": [
+                "2ac3790b516770d68f3f388f2a70fe1dd54395efd4d00b9ba2daac0d278d3d3b",
+                "8df1e4dffb17e79422558416be4e283e555ccec9e17e030502fd5b6e0c294ec5"
+              ],
+              "o7": [
+                "31c232f8257eb1fc64b1dccb1ffba94640a98cafbb821b89772d4e2a3193553b",
+                "d7cfee01fa7777a2ddf837b3d26581f26b3fae8ebe06ccd1d32aa277420f9fc4"
+              ],
+              "o8": [
+                "73d2cad0d0e046103dc59118c712985c53503a86f8053e043ec8e2ad75b0e494"
+              ],
+              "end": [
+                "78efab61288387c9dc6ff241cb8cf57dd52595dda7c62e3e95aa49e7cb54e381"
+              ]
+            },
+            "release_approval": false,
+            "editorial_replan": "evidence/pangaea-nights/how_deep-04-shell-slope-repair/staged-input-repair.json",
+            "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
         }
       ],
@@ -4466,5 +4686,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:01:50+00:00"
+  "updated_at": "2026-10-25T12:15:03+00:00"
 }
