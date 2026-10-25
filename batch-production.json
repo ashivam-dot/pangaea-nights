@@ -1613,7 +1613,7 @@
         "slot": "A",
         "premise": "survive_night-02"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 1,
       "source_sha": "f2ba146e52bc17c948d9d2d9738f9e308d08e79f",
       "before_ids": [
@@ -1657,7 +1657,22 @@
       ],
       "submitted_at": "2026-10-25T03:20:01+00:00",
       "run_id": 40157815850,
-      "cloud_status": "in_progress"
+      "cloud_status": "in_progress",
+      "editorial_holds": [
+        {
+          "id": "actual-cloud-modern-shoes-40157815850",
+          "run_id": 40157815850,
+          "observed_at": "2026-10-25T03:57:45+00:00",
+          "reason": "Direct inspection of both actual o4 salt-flat images shows human legs in modern trousers and shoes in the foreground. CHANNEL.md forbids humans on screen. Exclude both exact images; replace only the failed landscape inputs while preserving useful siblings and narration. Full video release remains held.",
+          "evidence": {
+            "ladder-img-A-3/o4.png": "8522940edabea2d2e73e781ff902ae50b016b0f2f0a5dd2eae1a6d5846a2cbe1",
+            "ladder-img-A-3/o4-alt1.png": "5f27431de35d336465453b3dd0b82da013318d5a241853d99494d37c62f3ddea"
+          }
+        }
+      ],
+      "problems": [
+        "Direct inspection of both actual o4 salt-flat images shows human legs in modern trousers and shoes in the foreground. CHANNEL.md forbids humans on screen. Exclude both exact images; replace only the failed landscape inputs while preserving useful siblings and narration. Full video release remains held."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -2004,7 +2019,7 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T03:49:04+00:00",
+  "updated_at": "2026-10-25T03:57:45+00:00",
   "quarantined_jobs": [
     {
       "at": "2026-10-25T03:03:48+00:00",
