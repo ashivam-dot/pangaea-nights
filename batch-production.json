@@ -979,7 +979,7 @@
     }
   ],
   "halted": "Repair held entry how_deep-01: production run failure",
-  "updated_at": "2026-10-25T00:37:27+00:00",
+  "updated_at": "2026-10-25T00:38:01+00:00",
   "complete": false,
   "health": {
     "public": 0,
