@@ -1103,7 +1103,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T01:57:38+00:00",
-      "cloud_status": "in_progress",
+      "cloud_status": "completed",
       "editorial_holds": [
         {
           "id": "direct-tsunami-high-ground-impact-scale-40147415761",
@@ -1216,7 +1216,55 @@
         40152163089
       ],
       "repair_reason": "Exact failed narration isolated cave-line boundary misrecognition; clearer cave/ocean speech measured at zero line and overall WER with production short-clip margins, 167.6wpm and 43.044s timeline. Facts, choices and reviewed images retained; all current gates required.",
-      "run_id": 40152622139
+      "run_id": 40152622139,
+      "review": {
+        "schema": 1,
+        "model": "gemini-3-flash-preview",
+        "duration": 43.035,
+        "video_sha256": "389cc197d2e9a09f1f03f2107e0aefb87ce5bce4ee064714cfdb3dce3f81f235",
+        "brief_sha256": "67078a892bef40d7087f044fcffe1cb866a6340532eb3f114c351ab75c1933f3",
+        "review_video_sha256": "57b53609aeb84b35b844e85d9cee402e11375aaf0b34e5cba6f29c8ab638dd6c",
+        "review_audio_sha256": "00feab8a885bd9771987a67dc53a29c8d877476115767c42ecb83a723e93fcbe",
+        "verdict": {
+          "decision": "pass",
+          "audio_listened": true,
+          "video_viewed": true,
+          "heard_opening": "The asteroid just hit the sea.",
+          "heard_ending": "Comment your number.",
+          "checks": {
+            "speech_clear": true,
+            "pronunciation_ok": true,
+            "music_balance_ok": true,
+            "captions_readable": true,
+            "visuals_match": true,
+            "continuity_ok": true,
+            "opening_clear": true,
+            "complete_payoff": true,
+            "no_material_factual_contradiction": true
+          },
+          "segments": [
+            {
+              "part": "opening",
+              "seconds": 1.0,
+              "seen": "Cave view of violet beach.",
+              "heard": "The asteroid just hit the sea."
+            },
+            {
+              "part": "middle",
+              "seconds": 22.0,
+              "seen": "High-altitude conifer forest valley.",
+              "heard": "Run inland for the faraway hills."
+            },
+            {
+              "part": "ending",
+              "seconds": 41.5,
+              "seen": "Sunset beach with call to action.",
+              "heard": "Comment your number."
+            }
+          ],
+          "issues": []
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -1656,5 +1704,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T02:13:16+00:00"
+  "updated_at": "2026-10-25T02:14:05+00:00"
 }
