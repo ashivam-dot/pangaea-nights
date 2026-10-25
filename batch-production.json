@@ -1065,7 +1065,7 @@
         "premise": "countdown-02",
         "replay": ".github/replay/countdown-high-ground-repair.json"
       },
-      "stage": "dispatch_unresolved",
+      "stage": "building",
       "attempts": 4,
       "source_sha": "34a87a170f45cde92bbc7b948cbb57e737cececc",
       "before_ids": [
@@ -1103,7 +1103,7 @@
         39766129149
       ],
       "submitted_at": "2026-10-25T01:57:38+00:00",
-      "cloud_status": "completed",
+      "cloud_status": "queued",
       "editorial_holds": [
         {
           "id": "direct-tsunami-high-ground-impact-scale-40147415761",
@@ -1215,7 +1215,8 @@
         40150491810,
         40152163089
       ],
-      "repair_reason": "Exact failed narration isolated cave-line boundary misrecognition; clearer cave/ocean speech measured at zero line and overall WER with production short-clip margins, 167.6wpm and 43.044s timeline. Facts, choices and reviewed images retained; all current gates required."
+      "repair_reason": "Exact failed narration isolated cave-line boundary misrecognition; clearer cave/ocean speech measured at zero line and overall WER with production short-clip margins, 167.6wpm and 43.044s timeline. Facts, choices and reviewed images retained; all current gates required.",
+      "run_id": 40152622139
     },
     {
       "repo": "pangaea-nights",
@@ -1640,5 +1641,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T01:57:38+00:00"
+  "updated_at": "2026-10-25T01:57:43+00:00"
 }
