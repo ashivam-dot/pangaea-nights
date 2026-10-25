@@ -14,7 +14,7 @@
         "premise": "how_deep-01",
         "replay": ".github/replay/snowball-verified-ice-reprise.json"
       },
-      "stage": "upload_intent",
+      "stage": "public",
       "attempts": 8,
       "obsolete_runs": [
         40121235398,
@@ -298,7 +298,28 @@
       },
       "archive": "batch-reviewed-40147925087",
       "intended_publish_at": null,
-      "upload_intent_at": "2026-10-25T00:59:54+00:00"
+      "upload_intent_at": "2026-10-25T00:59:54+00:00",
+      "delivery": {
+        "video_id": "AVcmS5eMv50",
+        "url": "https://www.youtube.com/shorts/AVcmS5eMv50",
+        "existing": false,
+        "title": "Snowball Earth May Have Frozen Over — How Deep Do You Go? 🧊",
+        "privacy": "public",
+        "publish_at": null,
+        "made_for_kids": false,
+        "self_declared_made_for_kids": false,
+        "upload_status": "uploaded",
+        "readback_problems": [],
+        "owner_readback": {
+          "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+          "privacyStatus": "public",
+          "publishAt": null,
+          "madeForKids": false,
+          "selfDeclaredMadeForKids": false,
+          "containsSyntheticMedia": null,
+          "uploadStatus": "processed"
+        }
+      }
     },
     {
       "repo": "pangaea-nights",
@@ -1246,7 +1267,7 @@
     }
   ],
   "halted": null,
-  "updated_at": "2026-10-25T00:59:54+00:00",
+  "updated_at": "2026-10-25T01:00:32+00:00",
   "complete": false,
   "health": {
     "public": 0,

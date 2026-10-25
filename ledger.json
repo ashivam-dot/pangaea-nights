@@ -517,6 +517,32 @@
    "related": "https://www.youtube.com/watch?v=-Pcx1fPHJHI",
    "run": "39924499144",
    "checkpoints": {}
+  },
+  {
+   "premise": "how_deep-01",
+   "series": "how_deep",
+   "era": "Cryogenian",
+   "slot": "A",
+   "video_id": "AVcmS5eMv50",
+   "url": "https://www.youtube.com/shorts/AVcmS5eMv50",
+   "title": "Snowball Earth May Have Frozen Over — How Deep Do You Go? 🧊",
+   "publish_at": "2026-10-25T01:00:31Z",
+   "uploaded_at": "2026-10-25T01:00:32Z",
+   "script": "Imagine the ocean frozen over. Pick your depth. One: standing on endless ice, wind howling. Two: right under the ice, faint light leaking through. Three: ten metres down, freezing blue twilight. Four: fifty metres, the last light fades. Five: two hundred metres. Total black. Six: one kilometre. Crushing cold, no light. Seven: the seafloor, kilometres under the ice. Eight: beside a superheated vent. Real answer: number 2, because photosynthesis can work under ice up to 20 metres thick. Life may have found a foothold there. Comment your number.",
+   "frame0": "EqAaHqImQSbZJRMZFymsJPkcUKFVK6qodih+kXGnp5g+qCQo8SZTFBKt/KS9pXqlGCSIKesn6qJCqpyhX6VTHnemGqe0Ea4loiKmKiImWS45I1kgOB2LGoAl+q8hJo4lialUKtukTJ4UKOMmfaXKJd6mCiBnoNIiCKi4oEuiuCcWqJwOB6QiowWezyQaqWokNCEFqAEeF6B5p8ilIKUHH9kp56PnkoqrXSuYpD8oSKK0pnuiWShBIGa50J8xqZUawhhMH0IjW7I6KQsa1KOhJB8kIiXOrYwmWCgLKJImbKvFE8qdxSHgpBgYHiELl/odvaRzKgIncafjoU8UuByEqOkh6SgQpC4rwahgLVMlDysjqMGoCanZpp6hoqWWpYwpUaTMpQSntyueqX6kUZ49JLggAx8FqFmsgiYjmvcVkylHo+ih9iLXptGkD6X5puQtJqTfpMcoNSVwoRiqDCBNpaGvqyJKqQ4d3yU+J7ao0R/tDmCk3CRKpIQefydtovYf6KMYJLUmiiV1K1gdUiiepuGmOaQooOMer6CgoyYkhiJrICoeb5spir6mopv4qTinOyhCJ4ejyKA4KXGdW6RKom4jayPsn8Kmsh8LJ9unsZzNI04qtaWRpQcVkqdVLMIlxY+XKlIm4qjoIDqpFKT4KR+jNyTdl6qVQ6miJNSo4h7JmvWl/iz9GaikswbdmvAtris1p5We/BmOqQyoN6ADm4gq1SgTpfwfUaVXJCEdrSYBKQkoBirfnH8mqCZyq8wgjB0QqM0n5pw3pgCqP6i3qTevN6EgJNioxyVJpoOVPixnIUamLiVvHHgMMByUqiwoXi0Un5qdrh7OJ2wnUCAGrPMp4y//GnOhliGapJ8b4Cxfjb4ZuaWEJZ4idafppm8jop3go58o0SsrqVSiH6IzJooox5vZJOcmpyKcJZQa5KZAhAaowZsuKUQpJKpCoF+lkCl0HBClWitWmyWk+qPkpo+WkCIJJ9QoIyc7o2QpWKDIKb0fiyRKJZchy6H8IDKppCHWJkOo6BMUpwimQSY8IuEkFSSxqIKpmxlvne+nvyGoI2go3CZvo4WfxyaVqpEjMSh+qC0tKp4poj+oKSBJG0cnU52rJNEqVRT3qXwcbK2VJCQmyyCGJmutOSbHpqqipattGvym/qp/pqUdvaiCl2UjFocgokwk1KQnpisoCB2DIEcL0CG+pAAkcqb1IQipdSceoeelsKtpG7IcNZivqJEmTQqJJEYagKhmoH0pZBKfKi+o1ym/qsmlj5GxoZCoYKCSJW2g8JwunwOhPqwDKG4lPiHaJlmsqyYGrAIg6yddKW4lNpyJo+UYyiYPIriq5C46n1+ehB9kpSko0pdGpQ==",
+   "related": "https://www.youtube.com/watch?v=Y_zpVf53Hwc",
+   "run": "40147925087",
+   "checkpoints": {},
+   "av_review_sha256": "996c5001d1b45d00609fffce85d3351c035e01ad839cdab1cab6391321044ae5",
+   "owner_readback": {
+    "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
+    "privacyStatus": "public",
+    "publishAt": null,
+    "madeForKids": false,
+    "selfDeclaredMadeForKids": false,
+    "containsSyntheticMedia": null,
+    "uploadStatus": "processed"
+   }
   }
  ],
  "ladder": {
