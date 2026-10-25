@@ -3861,13 +3861,24 @@
             "ladder-img-A-6/o7.png": "4e2f48c235037bdbdcdf56f088682044f8a2c1aebf129843331a074877963cd8",
             "ladder-img-A-6/o7-alt1.png": "3ca0c635b67ae51a6d5f737696186de9a5080f7937815a9c0a671e5a6e19c044"
           }
+        },
+        {
+          "id": "direct-howdeep04-bottom-surface",
+          "run_id": 40176094964,
+          "observed_at": "2026-10-25T09:46:24+00:00",
+          "reason": "Both airless-bottom paintings depict an open-water horizon, bright sun and turquoise overhead light rather than fully submerged stagnant black bottom water. Preserve every spoken line and useful sibling; replace only this final depth image with a readable foreground over black surrounding deep water. Every normal picture, narration, render and audiovisual gate remains required.",
+          "evidence": {
+            "ladder-img-A-7/o8.png": "e5a23078a8bb130b929b41ea68b725cf648200f4e5c6f6df0e94ab573f9ffd49",
+            "ladder-img-A-7/o8-alt1.png": "008548d082548ea8b4bc768ed99ef2c4ca4895a575f780ba26af113f634233af"
+          }
         }
       ],
       "problems": [
         "The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.",
         "Both slope paintings depict a dry sunlit canyon with trees and a stream instead of a fully submerged dark marine slope. Preserve every spoken line and useful sibling; replace only the affected paintings. All current picture, narration, render and audiovisual gates remain required.",
         "The long-shell procession has broad short pyramidal shells rather than elongated straight tapering cones. Preserve every spoken line and useful siblings; replace only this painting with clearly elongated straight-shell anatomy. All current picture, narration, render and audiovisual gates remain required.",
-        "Both basin-floor images show bright turquoise surface light and strong sunbeams instead of the specified cold black deep-basin environment. Preserve all speech; replace only this depth scene with black surrounding water and external foreground fill. All current picture, narration, render and audiovisual gates remain required."
+        "Both basin-floor images show bright turquoise surface light and strong sunbeams instead of the specified cold black deep-basin environment. Preserve all speech; replace only this depth scene with black surrounding water and external foreground fill. All current picture, narration, render and audiovisual gates remain required.",
+        "Both airless-bottom paintings depict an open-water horizon, bright sun and turquoise overhead light rather than fully submerged stagnant black bottom water. Preserve every spoken line and useful sibling; replace only this final depth image with a readable foreground over black surrounding deep water. Every normal picture, narration, render and audiovisual gate remains required."
       ]
     },
     {
@@ -4222,7 +4233,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry how_deep-04: The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.; Both slope paintings depict a dry sunlit canyon with trees and a stream instead of a fully submerged dark marine slope. Preserve every spoken line and useful sibling; replace only the affected paintings. All current picture, narration, render and audiovisual gates remain required.; The long-shell procession has broad short pyramidal shells rather than elongated straight tapering cones. Preserve every spoken line and useful siblings; replace only this painting with clearly elongated straight-shell anatomy. All current picture, narration, render and audiovisual gates remain required.; Both basin-floor images show bright turquoise surface light and strong sunbeams instead of the specified cold black deep-basin environment. Preserve all speech; replace only this depth scene with black surrounding water and external foreground fill. All current picture, narration, render and audiovisual gates remain required.",
+  "halted": "Repair held entry how_deep-04: The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.; Both slope paintings depict a dry sunlit canyon with trees and a stream instead of a fully submerged dark marine slope. Preserve every spoken line and useful sibling; replace only the affected paintings. All current picture, narration, render and audiovisual gates remain required.; The long-shell procession has broad short pyramidal shells rather than elongated straight tapering cones. Preserve every spoken line and useful siblings; replace only this painting with clearly elongated straight-shell anatomy. All current picture, narration, render and audiovisual gates remain required.; Both basin-floor images show bright turquoise surface light and strong sunbeams instead of the specified cold black deep-basin environment. Preserve all speech; replace only this depth scene with black surrounding water and external foreground fill. All current picture, narration, render and audiovisual gates remain required.; Both airless-bottom paintings depict an open-water horizon, bright sun and turquoise overhead light rather than fully submerged stagnant black bottom water. Preserve every spoken line and useful sibling; replace only this final depth image with a readable foreground over black surrounding deep water. Every normal picture, narration, render and audiovisual gate remains required.",
   "complete": false,
   "health": {
     "public": 2,
@@ -4230,5 +4241,5 @@
     "held": 2,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T09:44:35+00:00"
+  "updated_at": "2026-10-25T09:46:24+00:00"
 }
