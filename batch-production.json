@@ -3832,10 +3832,21 @@
           "evidence": {
             "ladder-img-A-3/o4.png": "203f32988e2f08555fde91cfab07f8375cec8c8a6cb9816db6a72822bf86f7b3"
           }
+        },
+        {
+          "id": "direct-howdeep04-dry-canyon",
+          "run_id": 40176094964,
+          "observed_at": "2026-10-25T09:11:02+00:00",
+          "reason": "Both slope paintings depict a dry sunlit canyon with trees and a stream instead of a fully submerged dark marine slope. Preserve every spoken line and useful sibling; replace only the affected paintings. All current picture, narration, render and audiovisual gates remain required.",
+          "evidence": {
+            "ladder-img-A-5/o6.png": "8fff09307f312d1e067a78569b81d90675835c447479793e93d3de6b14792f75",
+            "ladder-img-A-5/o6-alt1.png": "6245fdae5c734dadaedbd935262093cfaef6505a33bf1b7c6c2edd4494a203f8"
+          }
         }
       ],
       "problems": [
-        "The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates."
+        "The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.",
+        "Both slope paintings depict a dry sunlit canyon with trees and a stream instead of a fully submerged dark marine slope. Preserve every spoken line and useful sibling; replace only the affected paintings. All current picture, narration, render and audiovisual gates remain required."
       ]
     },
     {
@@ -4149,7 +4160,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry how_deep-04: The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.",
+  "halted": "Repair held entry how_deep-04: The shelf-edge focal cephalopod has a short bulbous swept-back shell, contradicting the specified elongated straight conical shell. Preserve every spoken line and useful sibling; repair only this visual with fossil-informed straight-shell anatomy. Keep all current picture, pairwise-image, narration, render and audiovisual gates.; Both slope paintings depict a dry sunlit canyon with trees and a stream instead of a fully submerged dark marine slope. Preserve every spoken line and useful sibling; replace only the affected paintings. All current picture, narration, render and audiovisual gates remain required.",
   "complete": false,
   "health": {
     "public": 2,
@@ -4157,5 +4168,5 @@
     "held": 0,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T09:04:05+00:00"
+  "updated_at": "2026-10-25T09:11:02+00:00"
 }
