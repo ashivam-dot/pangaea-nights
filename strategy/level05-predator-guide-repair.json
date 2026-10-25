@@ -1,0 +1,253 @@
+{
+  "at": "2026-10-25T19:21:01.567448+00:00",
+  "original": {
+    "id": "level_1_8-05",
+    "era": "Permian",
+    "title": "Level 1 to 8 Pangaea Guard Beast — Who Watches Your Night? 🌙",
+    "banner": "Which Permian beast guards your night?",
+    "hook_vo": "Pangaea, after dark. Pick something to stand guard.",
+    "art_direction": "Rust-red floodplain under a dusty violet sky, low 24mm lens in dry grass, one glowing ember of a lightning fire.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Burrowing Diictodon",
+        "vo": "Level one: a tiny grazer at its burrow.",
+        "danger": 1,
+        "image_prompt": "Life reconstruction informed by the supplied Diictodon skull reference: one small smooth-skinned beaked grazer at a red-earth burrow entrance in the Permian. A close three-quarter head and shoulders view shows a short broad skull covered with matte grey-brown living skin. Its short upper and lower horny beaks meet at the front of the mouth; one small white canine tusk descends from each side of the upper jaw behind the beak. The visible near tusk points downward. A tiny flat ear opening lies flush with the skin behind the eye. Two sturdy front feet rest on the red earth at the bottom of the frame, the body extends inside the burrow. Dusty violet night background, soft neutral moon fill and a restrained warm amber reflection on the cheek. Use the source only as an anatomical guide; every visible surface is living tissue or natural earth.",
+        "art_direction": "Close view of one small living beaked Diictodon at a red-earth burrow under the violet Permian night, warm amber cheek reflection."
+      },
+      {
+        "n": 2,
+        "label": "Tree-climbing Suminia",
+        "vo": "Level two: Suminia, clinging to a branch.",
+        "danger": 2,
+        "image_prompt": "Complete side view of one small Suminia crouching horizontally on TOP of a thick conifer branch. Its entire compact slender body, elongated neck, broad short blunt head and long tapering curling tail are visible. All four slender legs bend naturally at their joints, and all four feet grip the upper bark with long clearly separated toes. Its belly rests just above the branch and its head faces left along the branch. The long tail curves along the branch behind it. Small rounded scales, natural muted grey-brown skin, a large dark eye, a clearly closed mouth. The branch crosses the lower middle of the frame, with open violet sky behind and a warm ember reflection on the bark. Rust-red Permian floodplain under a dusty violet night sky, neutral soft moon fill and a restrained warm ember accent, photoreal painterly natural-history reconstruction, vertical composition.",
+        "art_direction": "A small four-legged Suminia crouches horizontally on top of a conifer branch with every foot gripping the bark and its long tail visible against the violet sky"
+      },
+      {
+        "n": 3,
+        "label": "Tusked Dicynodon",
+        "vo": "Level three: a beak and two great tusks.",
+        "danger": 3,
+        "image_prompt": "Life reconstruction informed by the supplied Dicynodon lacerticeps skull reference: a close three-quarter view of one living Dicynodon head and upper chest against a soft red-earth Permian floodplain. The broad short skull is covered in matte grey-brown leathery skin, with tiny flush ear openings. A prominent curved upper horny beak meets the lower beak at the front. Two long pale canine tusks descend from the left and right sides of the UPPER JAW behind the beak; both tusks are clearly visible, pointing down beside the lower jaw. A single broad neck descends to the low body outside the close frame. Muted violet night sky, neutral moon fill and a restrained warm amber cheek reflection. Use the source only as an anatomical guide; every visible surface is living tissue or natural landscape.",
+        "art_direction": "A close living Dicynodon portrait displays the broad horny beak and two downward upper-jaw tusks against a violet Permian night with warm amber cheek light."
+      },
+      {
+        "n": 4,
+        "label": "Bumpy Scutosaurus",
+        "vo": "Level four: a walking tank of bony bumps.",
+        "danger": 4,
+        "image_prompt": "One living Scutosaurus in a complete low side profile, standing on ALL FOUR short thick legs with its broad belly close to the ground. A heavy oval barrel-shaped torso, short neck, small broad blunt head and short stout tail form one continuous horizontal body silhouette. The head is much smaller than the torso. Low rounded bony knobs stud the skin of its broad back and flanks. Short blunt bony projections border the sides of the cheeks. Its small closed mouth has a blunt rounded muzzle. All four similarly sized weight-bearing feet are planted on the earth; the front legs and hind legs are equally sturdy. Natural grey-brown pebbled skin with a soft amber edge light. Rust-red Permian floodplain under a dusty violet night sky, neutral soft moon fill and a restrained warm ember accent, photoreal painterly natural-history reconstruction, vertical composition.",
+        "art_direction": "Complete side profile of a broad low Scutosaurus with a small blunt head, bony skin knobs, short tail and four sturdy weight-bearing legs"
+      },
+      {
+        "n": 5,
+        "label": "Moschorhinus",
+        "vo": "Level five: short snout, with a big bite.",
+        "danger": 5,
+        "image_prompt": "Tight near-side portrait of the head and upper neck of one living Moschorhinus. Its broad low skull ends in a very short blunt snout with large nostrils near the tip. A long straight upper canine descends just behind the small front teeth. The near cheek and complete closed jaw are clearly visible. Small natural ear openings lie flush with the skin behind the eye. The head has muted brown leathery skin with subtle texture. The head faces left, with a softly blurred ancient riverbank behind it. Rust-red Permian floodplain under a dusty violet night sky. Neutral soft moonlight makes anatomy readable, with a restrained warm amber reflection from a distant ember. Painterly photoreal natural-history reconstruction. Only prehistoric nature fills the view.",
+        "art_direction": "Near-side head portrait shows the broad blunt short snout and straight canine of Moschorhinus"
+      },
+      {
+        "n": 6,
+        "label": "Rubidgea",
+        "vo": "Level six: a massive skull, built for biting.",
+        "danger": 6,
+        "image_prompt": "Close near-side portrait of one living Rubidgea head and upper neck against a red ridge. A massive broad deep skull and strong lower jaw fill the upper half of the scene. Two long curved saber canines descend from the upper jaw, with the near canine clearly visible outside the almost closed mouth. A thick bony brow overhangs the small dark eye. The top of the broad snout is a continuous low surface. The skin is grey-brown with subtle natural texture. The head faces right and the shoulders remain low beneath it. Rust-red Permian floodplain under a dusty violet night sky. Neutral soft moonlight makes anatomy readable, with a restrained warm amber reflection from a distant ember. Painterly photoreal natural-history reconstruction. Only prehistoric nature fills the view.",
+        "art_direction": "Near-side portrait of the massive broad Rubidgea skull and its upper-jaw saber canine"
+      },
+      {
+        "n": 7,
+        "label": "Young Inostrancevia",
+        "vo": "Level seven: a young hunter, still learning.",
+        "danger": 7,
+        "image_prompt": "Use the supplied Inostrancevia skeletal reference for fossil-informed skull, torso and four-limb proportions. Reconstruct one smaller young Inostrancevia as a living animal in a complete side view stalking left beside sparse dry grass. All four clawed feet touch the red earth, and its front elbows turn slightly outward while its belly is held above the ground. The broad elongated skull has small natural ear openings and upper-jaw saber canines descending beside the closed lower jaw. Its horizontal back continues into a tapering tail. Natural grey-brown illustrative skin, slim rather than cute proportions. Replace the supplied background with the ancient floodplain. Rust-red Permian floodplain under a dusty violet night sky. Neutral soft moonlight makes anatomy readable, with a restrained warm amber reflection from a distant ember. Painterly photoreal natural-history reconstruction. Only prehistoric nature fills the view.",
+        "art_direction": "Complete side view of a smaller quadrupedal Inostrancevia stalking through sparse grass"
+      },
+      {
+        "n": 8,
+        "label": "Adult Inostrancevia",
+        "vo": "Level eight: the adult hunter with huge canines.",
+        "danger": 8,
+        "image_prompt": "Use the supplied Inostrancevia skeletal reference to preserve the large broad elongated skull, robust shoulders, low horizontal torso and all four weight-bearing limbs. Reconstruct one large living adult in a full three-quarter side view, facing right on a low natural ridge. All four clawed feet are planted on bare red earth. The near upper-jaw saber canine points downward beside the slightly open lower jaw. Its small natural ear opening sits behind the eye, and the back continues into a tapering tail. Muted dark grey-brown illustrative skin and readable neutral moon fill. Replace the supplied background with an entirely prehistoric natural landscape. Rust-red Permian floodplain under a dusty violet night sky. Neutral soft moonlight makes anatomy readable, with a restrained warm amber reflection from a distant ember. Painterly photoreal natural-history reconstruction. Only prehistoric nature fills the view.",
+        "art_direction": "Large adult Inostrancevia stands on four planted feet in a complete three-quarter view"
+      }
+    ],
+    "answer_n": 8,
+    "verdict_vo": "Real answer: number 8, because this animal's longest canines could reach 15 centimetres. Probably your best bet for keeping everything else away.",
+    "fact": {
+      "text": "Inostrancevia, a gorgonopsian, had large canines, the longest of which could reach 15 cm.",
+      "source_sentence": "It also has very advanced dentition, possessing large canines, the longest of which can reach 15 cm (5.9 in) and which may have been used to shear the skin of prey.",
+      "wiki_title": "Inostrancevia",
+      "wiki_revid": 1381178944
+    },
+    "description": "Long before dinosaurs, the top predators on Pangaea were sabre-toothed relatives of mammals. Eight Permian animals, from a shy burrower to the biggest gorgonopsian of all, and which one would really keep the night quiet.\n\nDiictodon feliceps 78.jpg anatomical skull reference: https://www.si.edu/object/diictodon-feliceps-owen-1876:nmnhpaleobiology_3450113, https://commons.wikimedia.org/wiki/File:Diictodon_feliceps_78.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), adapted as an AI life reconstruction with illustrative soft tissue and colour / Dicynodon lacerticeps Owen.jpg anatomical skull reference: https://www.si.edu/object/dicynodon-lacerticeps-owen:nmnhpaleobiology_3450212, https://commons.wikimedia.org/wiki/File:Dicynodon_lacerticeps_Owen.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), adapted as an AI life reconstruction with illustrative soft tissue and colour / Inostrancevia anatomical reference: Paleocolour, Inostrancevia skeletal mount.jpg, https://commons.wikimedia.org/wiki/File:Inostrancevia_skeletal_mount.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), AI reconstruction replaces the exhibit setting, with illustrative soft tissue, colour and young-animal proportions.",
+    "tags": [
+      "Pangaea",
+      "Permian",
+      "gorgonopsian",
+      "Inostrancevia",
+      "before the dinosaurs",
+      "prehistoric life",
+      "deep time",
+      "paleontology"
+    ],
+    "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
+  },
+  "replacement": {
+    "id": "level_1_8-05",
+    "era": "Permian",
+    "title": "Level 1 to 8 Pangaea Guard Beast — Who Watches Your Night? 🌙",
+    "banner": "Which Permian beast guards your night?",
+    "hook_vo": "Pangaea, after dark. Pick something to stand guard.",
+    "art_direction": "Rust-red floodplain under a dusty violet sky, low 24mm lens in dry grass, one glowing ember of a lightning fire.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Burrowing Diictodon",
+        "vo": "Level one: a tiny grazer at its burrow.",
+        "danger": 1,
+        "image_prompt": "Life reconstruction informed by the supplied Diictodon skull reference: one small smooth-skinned beaked grazer at a red-earth burrow entrance in the Permian. A close three-quarter head and shoulders view shows a short broad skull covered with matte grey-brown living skin. Its short upper and lower horny beaks meet at the front of the mouth; one small white canine tusk descends from each side of the upper jaw behind the beak. The visible near tusk points downward. A tiny flat ear opening lies flush with the skin behind the eye. Two sturdy front feet rest on the red earth at the bottom of the frame, the body extends inside the burrow. Dusty violet night background, soft neutral moon fill and a restrained warm amber reflection on the cheek. Use the source only as an anatomical guide; every visible surface is living tissue or natural earth.",
+        "art_direction": "Close view of one small living beaked Diictodon at a red-earth burrow under the violet Permian night, warm amber cheek reflection."
+      },
+      {
+        "n": 2,
+        "label": "Tree-climbing Suminia",
+        "vo": "Level two: Suminia, clinging to a branch.",
+        "danger": 2,
+        "image_prompt": "Complete side view of one small Suminia crouching horizontally on TOP of a thick conifer branch. Its entire compact slender body, elongated neck, broad short blunt head and long tapering curling tail are visible. All four slender legs bend naturally at their joints, and all four feet grip the upper bark with long clearly separated toes. Its belly rests just above the branch and its head faces left along the branch. The long tail curves along the branch behind it. Small rounded scales, natural muted grey-brown skin, a large dark eye, a clearly closed mouth. The branch crosses the lower middle of the frame, with open violet sky behind and a warm ember reflection on the bark. Rust-red Permian floodplain under a dusty violet night sky, neutral soft moon fill and a restrained warm ember accent, photoreal painterly natural-history reconstruction, vertical composition.",
+        "art_direction": "A small four-legged Suminia crouches horizontally on top of a conifer branch with every foot gripping the bark and its long tail visible against the violet sky"
+      },
+      {
+        "n": 3,
+        "label": "Tusked Dicynodon",
+        "vo": "Level three: a beak and two great tusks.",
+        "danger": 3,
+        "image_prompt": "Life reconstruction informed by the supplied Dicynodon lacerticeps skull reference: a close three-quarter view of one living Dicynodon head and upper chest against a soft red-earth Permian floodplain. The broad short skull is covered in matte grey-brown leathery skin, with tiny flush ear openings. A prominent curved upper horny beak meets the lower beak at the front. Two long pale canine tusks descend from the left and right sides of the UPPER JAW behind the beak; both tusks are clearly visible, pointing down beside the lower jaw. A single broad neck descends to the low body outside the close frame. Muted violet night sky, neutral moon fill and a restrained warm amber cheek reflection. Use the source only as an anatomical guide; every visible surface is living tissue or natural landscape.",
+        "art_direction": "A close living Dicynodon portrait displays the broad horny beak and two downward upper-jaw tusks against a violet Permian night with warm amber cheek light."
+      },
+      {
+        "n": 4,
+        "label": "Bumpy Scutosaurus",
+        "vo": "Level four: a walking tank of bony bumps.",
+        "danger": 4,
+        "image_prompt": "One living Scutosaurus in a complete low side profile, standing on ALL FOUR short thick legs with its broad belly close to the ground. A heavy oval barrel-shaped torso, short neck, small broad blunt head and short stout tail form one continuous horizontal body silhouette. The head is much smaller than the torso. Low rounded bony knobs stud the skin of its broad back and flanks. Short blunt bony projections border the sides of the cheeks. Its small closed mouth has a blunt rounded muzzle. All four similarly sized weight-bearing feet are planted on the earth; the front legs and hind legs are equally sturdy. Natural grey-brown pebbled skin with a soft amber edge light. Rust-red Permian floodplain under a dusty violet night sky, neutral soft moon fill and a restrained warm ember accent, photoreal painterly natural-history reconstruction, vertical composition.",
+        "art_direction": "Complete side profile of a broad low Scutosaurus with a small blunt head, bony skin knobs, short tail and four sturdy weight-bearing legs"
+      },
+      {
+        "n": 5,
+        "label": "Moschorhinus",
+        "vo": "Level five: short snout, with a big bite.",
+        "danger": 5,
+        "image_prompt": "Use the supplied Moschorhinus life-restoration head crop as the guide for its short blunt muzzle and broad deep head. Reconstruct one living Moschorhinus in a close side portrait at an ancient riverbank. The muzzle is short in front of the eye, with a broad rounded nose, small front incisors and one near-side upper canine descending immediately behind the incisors beside the nearly closed lower jaw. A small ear opening lies flush behind the eye. Natural matte grey-brown soft tissue is illustrative, with a thick low neck leaving the lower frame. Dusty violet Permian night and red earth replace the source background. Soft neutral moonlight and a restrained warm amber glow on the near cheek. Only the living animal and prehistoric nature fill the portrait.",
+        "art_direction": "Side portrait of a living short-muzzled Moschorhinus with a visible near upper canine, red ancient riverbank, violet night and restrained amber cheek glow."
+      },
+      {
+        "n": 6,
+        "label": "Rubidgea",
+        "vo": "Level six: a massive skull, built for biting.",
+        "danger": 6,
+        "image_prompt": "Reconstruct one living Rubidgea head in near-side profile using the supplied fossil holotype photograph as the skull-shape guide. Preserve its massive deep skull, short broad snout and thick bony brow over the small rear-set eye. Cover the bone in matte grey-brown natural living skin. A row of small front incisors precedes one long near upper canine descending from the upper jaw beside the closed lower jaw. The canine is a laterally flattened curved saber tooth, with its root inside the maxilla. The neck and low shoulders leave the lower side of the close portrait. A blurred red Permian ridge and dusty violet night replace all source plate areas. Neutral moon fill and restrained warm amber glow on the cheek. The complete final scene contains only living tissue and prehistoric natural landscape.",
+        "art_direction": "Near-side portrait of the massive broad Rubidgea skull under living skin, one visible upper saber canine, red ridge, violet night and restrained amber cheek glow."
+      },
+      {
+        "n": 7,
+        "label": "Young Inostrancevia",
+        "vo": "Level seven: a young hunter, still learning.",
+        "danger": 7,
+        "image_prompt": "Use the supplied Inostrancevia skeletal reference for fossil-informed skull, torso and four-limb proportions. Reconstruct one smaller young Inostrancevia as a living animal in a complete side view stalking left beside sparse dry grass. All four clawed feet touch the red earth, and its front elbows turn slightly outward while its belly is held above the ground. The broad elongated skull has small natural ear openings and upper-jaw saber canines descending beside the closed lower jaw. Its horizontal back continues into a tapering tail. Natural grey-brown illustrative skin, slim rather than cute proportions. Replace the supplied background with the ancient floodplain. Rust-red Permian floodplain under a dusty violet night sky. Neutral soft moonlight makes anatomy readable, with a restrained warm amber reflection from a distant ember. Painterly photoreal natural-history reconstruction. Only prehistoric nature fills the view.",
+        "art_direction": "Complete side view of a smaller quadrupedal Inostrancevia stalking through sparse grass"
+      },
+      {
+        "n": 8,
+        "label": "Adult Inostrancevia",
+        "vo": "Level eight: the adult hunter with huge canines.",
+        "danger": 8,
+        "image_prompt": "Use the supplied Inostrancevia skeletal reference to preserve the large broad elongated skull, robust shoulders, low horizontal torso and all four weight-bearing limbs. Reconstruct one large living adult in a full three-quarter side view, facing right on a low natural ridge. All four clawed feet are planted on bare red earth. The near upper-jaw saber canine points downward beside the slightly open lower jaw. Its small natural ear opening sits behind the eye, and the back continues into a tapering tail. Muted dark grey-brown illustrative skin and readable neutral moon fill. Replace the supplied background with an entirely prehistoric natural landscape. Rust-red Permian floodplain under a dusty violet night sky. Neutral soft moonlight makes anatomy readable, with a restrained warm amber reflection from a distant ember. Painterly photoreal natural-history reconstruction. Only prehistoric nature fills the view.",
+        "art_direction": "Large adult Inostrancevia stands on four planted feet in a complete three-quarter view"
+      }
+    ],
+    "answer_n": 8,
+    "verdict_vo": "Real answer: number 8, because this animal's longest canines could reach 15 centimetres. Probably your best bet for keeping everything else away.",
+    "fact": {
+      "text": "Inostrancevia, a gorgonopsian, had large canines, the longest of which could reach 15 cm.",
+      "source_sentence": "It also has very advanced dentition, possessing large canines, the longest of which can reach 15 cm (5.9 in) and which may have been used to shear the skin of prey.",
+      "wiki_title": "Inostrancevia",
+      "wiki_revid": 1381178944
+    },
+    "description": "Long before dinosaurs, the top predators on Pangaea were sabre-toothed relatives of mammals. Eight Permian animals, from a shy burrower to the biggest gorgonopsian of all, and which one would really keep the night quiet.\n\nMoschorhinus kitchingi.jpg reference: ДиБгд, https://commons.wikimedia.org/wiki/File:Moschorhinus_kitchingi.jpg (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), AI-adapted from a head crop from a modern reconstruction based on the 2024 postcranial study with illustrative soft tissue and colour / Rubidgea atrox.png reference: Christian F Kammerer, https://commons.wikimedia.org/wiki/File:Rubidgea_atrox.png (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), AI-adapted from a lateral photograph of holotype RC 13, including the small original plate label with illustrative soft tissue and colour / Diictodon feliceps 78.jpg anatomical skull reference: https://www.si.edu/object/diictodon-feliceps-owen-1876:nmnhpaleobiology_3450113, https://commons.wikimedia.org/wiki/File:Diictodon_feliceps_78.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), adapted as an AI life reconstruction with illustrative soft tissue and colour / Dicynodon lacerticeps Owen.jpg anatomical skull reference: https://www.si.edu/object/dicynodon-lacerticeps-owen:nmnhpaleobiology_3450212, https://commons.wikimedia.org/wiki/File:Dicynodon_lacerticeps_Owen.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), adapted as an AI life reconstruction with illustrative soft tissue and colour / Inostrancevia anatomical reference: Paleocolour, Inostrancevia skeletal mount.jpg, https://commons.wikimedia.org/wiki/File:Inostrancevia_skeletal_mount.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), AI reconstruction replaces the exhibit setting, with illustrative soft tissue, colour and young-animal proportions.",
+    "tags": [
+      "Pangaea",
+      "Permian",
+      "gorgonopsian",
+      "Inostrancevia",
+      "before the dinosaurs",
+      "prehistoric life",
+      "deep time",
+      "paleontology"
+    ],
+    "related_topic_hint": "Pangaea: One Night on Earth's Supercontinent"
+  },
+  "speech_changed": false,
+  "accepted_siblings_changed": false,
+  "release_approval": false,
+  "references": {
+    "o5": [
+      {
+        "file": "level05-predator-guides/o5.png",
+        "sha256": "a85c6846817b96e60ef5375b29521185e439318d587e7a295c6d0b097a5ef4cf",
+        "parent": {
+          "file": "level05-predator-guides/o5-parent.jpg",
+          "sha256": "b4b025e6bfd14a19ea8e406738b16e36e30abb63f57d85157e3811e54b04126c"
+        },
+        "license_evidence": {
+          "file": "level05-predator-guides/o5-commons.json",
+          "sha256": "708e64d4afc5b45ae5e67a115187c51509419c020d1b0f5eaabd84415679726c"
+        },
+        "crop_ltrb": [
+          12,
+          80,
+          305,
+          265
+        ],
+        "title": "File:Moschorhinus kitchingi.jpg",
+        "author": "ДиБгд",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Moschorhinus_kitchingi.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Moschorhinus_kitchingi.jpg/960px-Moschorhinus_kitchingi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Moschorhinus kitchingi.jpg reference: ДиБгд, https://commons.wikimedia.org/wiki/File:Moschorhinus_kitchingi.jpg (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), AI-adapted from a head crop from a modern reconstruction based on the 2024 postcranial study with illustrative soft tissue and colour"
+      }
+    ],
+    "o6": [
+      {
+        "file": "level05-predator-guides/o6.png",
+        "sha256": "503d97df1c606036d9ef5a9eb8ed8659145a33eb45d70728237a118523ff92bc",
+        "parent": {
+          "file": "level05-predator-guides/o6-parent.jpg",
+          "sha256": "19e7135d6b6eb53daa0f1c45649d4c26f3c6a179c0c1015410301995a548d0ae"
+        },
+        "license_evidence": {
+          "file": "level05-predator-guides/o6-commons.json",
+          "sha256": "4441c6e9d6db00c4ea6399593338a7d0615c854c86fe73ac1c42beca7fc2621e"
+        },
+        "crop_ltrb": [
+          0,
+          0,
+          635,
+          280
+        ],
+        "title": "File:Rubidgea atrox.png",
+        "author": "Christian F. Kammerer",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Rubidgea_atrox.png",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Rubidgea_atrox.png/1280px-Rubidgea_atrox.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Rubidgea atrox.png reference: Christian F Kammerer, https://commons.wikimedia.org/wiki/File:Rubidgea_atrox.png (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), AI-adapted from a lateral photograph of holotype RC 13, including the small original plate label with illustrative soft tissue and colour"
+      }
+    ]
+  },
+  "reference_scope": "Moschorhinus uses a modern reconstruction explicitly based on the 2024 skeletal study, not a fossil photograph. Rubidgea uses only the lateral holotype skull photograph, not the labelled interpretive diagrams. Final living colour, soft tissue and tooth completion are illustrative and require exact art review.",
+  "source_study": "https://doi.org/10.7717/peerj.17765",
+  "basis": "Both text-only Moschorhinus repairs still showed modern horse heads with external ears; both Rubidgea repairs showed dinosaur heads or elephant-like tusks. These exact bytes remain refused. No spoken fact, sibling visual, model settings or quality threshold changes."
+}

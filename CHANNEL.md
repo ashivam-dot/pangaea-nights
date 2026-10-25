@@ -201,3 +201,9 @@ license evidence by SHA; the normal take budget and image checks still apply. Th
 report records reference inputs, and staging preserves their proof and mandatory
 adaptation credit for the final publishing description. This path cannot run as an
 ordinary or cached-only replay and never approves or publishes a video.
+
+The same isolated reference path also accepts CC BY 3.0 and CC BY 4.0 guides when the
+saved Commons licence URL matches exactly and the complete author, source, licence
+link and AI-adaptation credit are present. The exact credit must reach the publishing
+description. ShareAlike, noncommercial and unverified licences remain unsupported.
+Reference inputs never establish the scientific accuracy of generated art or approve release.

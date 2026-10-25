@@ -1,0 +1,415 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "11330276": {
+        "pageid": 11330276,
+        "ns": 6,
+        "title": "File:Rubidgea.JPG",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Rubidgea.JPG/1280px-Rubidgea.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 709,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Rubidgea.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Rubidgea.JPG/1280px-Rubidgea.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 709,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Rubidgea.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Rubidgea.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Rubidgea.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=11330276",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-08-29 19:18:39",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Rubidgea",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Rubidgea|GFDL|Taken with Sony DSC-W30|Staatliches Museum f\u00fcr Naturkunde Stuttgart|License migration redundant|Self-published work|Gorgonopsia skulls",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "fossil of rubidgea",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Aug 2010 - Staatliches Museum f\u00fcr Naturkunde Stuttgart",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ghedoghedo\" title=\"User:Ghedoghedo\">Ghedoghedo</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "92833568": {
+        "pageid": 92833568,
+        "ns": 6,
+        "title": "File:Rubidgea Scale.svg",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Rubidgea_Scale.svg/1280px-Rubidgea_Scale.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 669,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Rubidgea_Scale.svg/3840px-Rubidgea_Scale.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Rubidgea_Scale.svg/1280px-Rubidgea_Scale.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 669,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Rubidgea_Scale.svg/3840px-Rubidgea_Scale.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Rubidgea_Scale.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Rubidgea_Scale.svg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=92833568",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-08-27 13:33:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Rubidgea Scale",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Rubidgea|Self-published work|PD-self|Synapsida size comparisons",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Size comparison of the large gorgonopsian <i>Rubidgea atrox</i>, scaled to a skull length of 45<span typeof=\"mw:Entity\">\u00a0</span>cm (18<span typeof=\"mw:Entity\">\u00a0</span>in). The human silhouette is from <a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/File:Silhouette_of_man_standing_and_facing_forward.svg\" title=\"File:Silhouette of man standing and facing forward.svg\">File:Silhouette of man standing and facing forward.svg</a> (CC0).\n\n<section data-mw-section-id=\"-1\" id=\"mwBQ\" aria-labelledby=\"References\"><div class=\"mw-heading mw-heading4\"><h4 id=\"References\">References</h4></div>\n<ul><li><cite style=\"font-style:normal\">Kammerer, Christian F.<span typeof=\"mw:Entity\"> </span>(2016).<span typeof=\"mw:Entity\"> </span>\"Systematics of the Rubidgeinae (Therapsida: Gorgonopsia)\". <i>PeerJ</i><span typeof=\"mw:Entity\"> </span><b>4</b>: e1608. <span lang=\"en\" dir=\"ltr\"><a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/Digital%20object%20identifier\" title=\"en:Digital object identifier\" class=\"extiw\">DOI</a></span>:<a rel=\"mw:ExtLink nofollow\" href=\"https://doi.org/10.7717/peerj.1608\" class=\"external text\">10.7717/peerj.1608</a>.</cite></li>\n<li><cite style=\"font-style:normal\">Retallack, Gregory J.; Smith, Roger M.; Ward, Peter D.<span typeof=\"mw:Entity\"> </span>(2003).<span typeof=\"mw:Entity\"> </span>\"<a rel=\"mw:ExtLink nofollow\" href=\"https://cpb-us-e1.wpmucdn.com/blogs.uoregon.edu/dist/d/3735/files/2013/07/karoopt_final-2hzot5q.pdf\" class=\"external text\">Vertebrate extinction across Permian\u2013Triassic boundary in Karoo Basin, South Africa</a>\". <i>GSA Bulletin</i><span typeof=\"mw:Entity\"> </span><b>115</b><span typeof=\"mw:Entity\"> </span>(9): 1133-1152.</cite></li></ul></section>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-08-02",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Slate_Weasel\" title=\"User:Slate Weasel\">User:Slate Weasel</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "77285851": {
+        "pageid": 77285851,
+        "ns": 6,
+        "title": "File:Rubidgea atrox.png",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Rubidgea_atrox.png/1280px-Rubidgea_atrox.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 584,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Rubidgea_atrox.png/3840px-Rubidgea_atrox.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Rubidgea_atrox.png/1280px-Rubidgea_atrox.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 584,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Rubidgea_atrox.png/3840px-Rubidgea_atrox.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Rubidgea_atrox.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Rubidgea_atrox.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=77285851",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-03-12 10:26:47",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Rubidgea atrox",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Rubidgea|Gorgonopsia skull illustrations|Gorgonopsia skulls",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>Holotype (RC 13) of Rubidgea atrox Broom, 1938 in (A) left lateral and (C) dorsal view (with (B) and (D) interpretive drawings).\n</p>\nAbbreviations: C, upper canine; d, dentary; db, dentary boss; fr, frontal; I, upper incisor; j, jugal; la, lacrimal; me, maxillary emargination; mx, maxilla; na, nasal; pa, parietal; pb, pineal boss; pmx, premaxilla; po, postorbital; pof, postfrontal; prf, prefrontal; rC, erupting replacement canine; rla, reflected lamina of angular; smx, septomaxilla; sq, squamosal; zb, zygomatic boss. Gray indicates matrix, hatching indicates plaster. Scale bar equals 10 cm.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://peerj.com/articles/1608/\">https://peerj.com/articles/1608/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Christian F. Kammerer",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "178632033": {
+        "pageid": 178632033,
+        "ns": 6,
+        "title": "File:Skulls of gorgonopsians.jpg",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Skulls_of_gorgonopsians.jpg/1280px-Skulls_of_gorgonopsians.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1000,
+            "thumbheight": 1259,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Skulls_of_gorgonopsians.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Skulls_of_gorgonopsians.jpg/1280px-Skulls_of_gorgonopsians.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1000,
+              "height": 1259,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Skulls_of_gorgonopsians.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Skulls_of_gorgonopsians.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Skulls_of_gorgonopsians.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=178632033",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-11-17 17:25:10",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Skulls of gorgonopsians",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Rubidgea|Self-published work|Inostrancevia skulls|Gorgonopsia skull illustrations",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Skulls of biggest gorgonopsians - Inostrancevia latifrons from North Dvina Late Permian and Rubidgea atrox from Late Permian of South Africa",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2025-11-17 15:57:30",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:%D0%94%D0%B8%D0%91%D0%B3%D0%B4&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:\u0414\u0438\u0411\u0433\u0434 (page does not exist)\">\u0414\u0438\u0411\u0433\u0434</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

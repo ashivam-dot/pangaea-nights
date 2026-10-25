@@ -45,6 +45,61 @@ def test_reference_is_bound_to_its_crop_and_commons_attribution(reference):
     assert ladder_reference.inputs(data, "o4") == []
 
 
+def attributed_reference(data, license_name="CC BY 4.0"):
+    row = data["references"]["o3"][0]
+    url = ladder_reference.ATTRIBUTION_LICENSES[license_name]
+    evidence_path = data["_folder"] / row["license_evidence"]["file"]
+    evidence = json.loads(evidence_path.read_text())
+    meta = evidence["query"]["pages"]["1"]["imageinfo"][0]["extmetadata"]
+    meta.update(LicenseShortName={"value": license_name}, LicenseUrl={"value": url})
+    evidence_path.write_text(json.dumps(evidence))
+    row["license_evidence"]["sha256"] = ladder_replay.digest(evidence_path)
+    row.update(license=license_name, license_url=url,
+               credit=f'Museum photographer, {row["page"]}, {license_name}, {url}, AI-adapted with illustrative colour')
+    return row
+
+
+@pytest.mark.parametrize("license_name", ["CC BY 3.0", "CC BY 4.0"])
+def test_attributed_references_require_the_matching_commons_license(reference, license_name):
+    _, data = reference
+    row = attributed_reference(data, license_name)
+    assert ladder_reference.inputs(data, "o3")[0]["proof"] == row
+    row["license_url"] = "https://creativecommons.org/licenses/by-nc/4.0"
+    with pytest.raises(ValueError, match="attribution"):
+        ladder_reference.inputs(data, "o3")
+
+
+@pytest.mark.parametrize("missing", ["Museum photographer", "https://commons.wikimedia.org/wiki/File:Museum.png",
+                                      "CC BY 4.0", "https://creativecommons.org/licenses/by/4.0", "AI-adapted"])
+def test_attributed_reference_cannot_omit_required_credit(reference, missing):
+    _, data = reference
+    row = attributed_reference(data)
+    row["credit"] = row["credit"].replace(missing, "")
+    with pytest.raises(ValueError, match="attribution"):
+        ladder_reference.inputs(data, "o3")
+
+
+@pytest.mark.parametrize("unsupported", ["CC BY-SA 4.0", "CC BY-NC 4.0", "Public domain", "unknown"])
+def test_additional_licences_do_not_silently_enter_reference_generation(reference, unsupported):
+    _, data = reference
+    row = attributed_reference(data)
+    row["license"] = unsupported
+    with pytest.raises(ValueError):
+        ladder_reference.inputs(data, "o3")
+
+
+def test_saved_licence_url_must_match_attribution_even_when_file_hash_is_valid(reference):
+    _, data = reference
+    row = attributed_reference(data)
+    evidence_path = data["_folder"] / row["license_evidence"]["file"]
+    evidence = json.loads(evidence_path.read_text())
+    evidence["query"]["pages"]["1"]["imageinfo"][0]["extmetadata"]["LicenseUrl"]["value"] = "https://creativecommons.org/licenses/by-nc/4.0"
+    evidence_path.write_text(json.dumps(evidence))
+    row["license_evidence"]["sha256"] = ladder_replay.digest(evidence_path)
+    with pytest.raises(ValueError, match="attribution"):
+        ladder_reference.inputs(data, "o3")
+
+
 @pytest.mark.parametrize("field,value", [("sha256", "0" * 64), ("file", "../outside.png"),
     ("author", "Someone else"), ("license", "unverified"), ("crop_ltrb", [0, 0, 8, 8]),
     ("crop_ltrb", [0, 0, 100, 100]), ("page", "https://example.org/unrelated")])
