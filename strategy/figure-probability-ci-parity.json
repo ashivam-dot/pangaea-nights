@@ -1,0 +1,8 @@
+{
+  "scope": "Actual original Torch calculation versus production NumPy calculation, using all saved source-bound CLIP embeddings",
+  "samples": 24,
+  "maximum_absolute_difference": 1.1920928955078125e-07,
+  "all_decisions_equal": true,
+  "threshold": 0.5,
+  "no_model_or_label_change": true
+}

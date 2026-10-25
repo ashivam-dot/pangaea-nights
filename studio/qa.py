@@ -147,6 +147,13 @@ FIGURE_LIMIT = 0.50
 _figure_emb = None
 
 
+def figure_probability(image_embedding: np.ndarray, text_embeddings: np.ndarray) -> float:
+    """The production CLIP contrast on normalized embeddings, without loading the model."""
+    logits = 100 * image_embedding @ text_embeddings.T
+    weights = np.exp(logits - logits.max())
+    return float(weights[len(FIGURE_NO):].sum() / weights.sum())
+
+
 def figure(img: Image.Image) -> float:
     """Probability mass on the people side of the FIGURE contrast (0-1)."""
     global _figure_emb
@@ -157,9 +164,7 @@ def figure(img: Image.Image) -> float:
         if _figure_emb is None:
             _figure_emb = model.encode_text(tok(FIGURE_NO + FIGURE_YES)).float()
             _figure_emb /= _figure_emb.norm(dim=-1, keepdim=True)
-        emb = torch.from_numpy(embed(img)).unsqueeze(0)
-        probs = (100 * emb @ _figure_emb.T).softmax(dim=-1)[0]
-    return float(probs[len(FIGURE_NO):].sum())
+        return figure_probability(embed(img), _figure_emb.numpy())
 
 
 def pack(vec: np.ndarray) -> str:
