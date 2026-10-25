@@ -294,7 +294,8 @@
           "label": "Among the long shells",
           "vo": "Three: among drifting long cone shells.",
           "danger": 3,
-          "image_prompt": "Fully submerged underwater nature-documentary view of three straight-shelled Ordovician cephalopods drifting diagonally through clear tropical seawater. Each animal has a very long slender rigid straight tapering CONICAL SHELL, narrow pointed apex far behind its small compact head, with a short cluster of arms projecting only from the wide open shell mouth. The shell is at least three times longer than the arms; smooth gently tapering elongated cone, realistic rounded cross-section. Side views clearly show the complete long shell silhouettes. Pale sandy seafloor below, blue water surrounding every edge, sunlight filtered through water above, one warm orange highlight. Photoreal painterly, vertical composition."
+          "image_prompt": "Underwater natural-history view among two very long empty straight nautiloid shells suspended above pale sand in clear blue Ordovician seawater. Each shell is a single rigid slender ivory cone with fine growth rings: one wide circular hollow open mouth at its lower-left end, tapering evenly to one narrow closed pointed apex at its upper-right end. The complete elongated cone is visible from end to end. The circular shell mouth is hollow and empty; no animal head, arms or tentacles emerge. One shell is closer and the second smaller shell is farther away. Fine sand and tiny reef fragments below, filtered light above, one warm orange glow on the sand. Photoreal painterly, vertical composition.",
+          "art_direction": "Clear tropical blue seawater, crisp ivory conical shells and finely textured pale sand, natural-history side views, one warm orange glow"
         },
         {
           "n": 4,
@@ -317,7 +318,7 @@
           "label": "Down the dark slope",
           "vo": "Six: down the slope into the dark.",
           "danger": 6,
-          "image_prompt": "Entire viewpoint and scene fully submerged hundreds of metres UNDER THE OCEAN, looking diagonally down a steep muddy SEAFLOOR SLOPE into dark indigo seawater. Unbroken dark water fills the upper half and surrounds every edge; the sea surface is far outside the frame. Soft suspended marine snow particles and fine dark mud establish the underwater environment. A dim neutral external documentary fill reveals the near slope, fading rapidly into blue-black water; a tiny warm orange distant underwater glimmer far up the slope. Bare marine sediment only, no plants, no trees, no river, no dry land, no open sky, no visible sun. Photoreal painterly, vertical composition."
+          "image_prompt": "Fully submerged close documentary view looking down a steep Ordovician seafloor slope into pitch black deep water. A sharply detailed broken carbonate outcrop fills the near lower-left foreground, with angular cracks, tiny pits and dark mud packed between thin rock layers. A bare muddy slope continues diagonally down to the right and disappears into black seawater. Bright enough soft neutral external cinematic fill resolves the near rock textures and individual sediment grains, fading rapidly beyond the foreground. Fine suspended marine snow establishes the water. No sky, sun, horizon, land, trees, river or water surface. Photoreal painterly, vertical composition."
         },
         {
           "n": 7,
