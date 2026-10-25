@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "a1618ba86554b9021390df62c479f0fb4e8b162f",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "Low ground-level view of one enormous rounded grey sandstone boulder at the edge of a moonlit Cretaceous conifer forest. The broad natural rock fills the middle of the frame, its rough weathered surface covered with green moss and small ferns. A sheltered hollow of soft fern fronds lies behind the boulder in the near foreground. Tall ancient conifer trunks recede through cold teal river mist. A distant lightning-struck stump glows amber beside the river. Gibbous moon above the treetops, low 24mm wide lens, natural wilderness, photoreal painterly deep-time scene, vertical composition. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 146618079
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "survive-night-exact-repair/art/o5-full-t1-raw.png",
+    "sha256": "87bda1ab1a80a139ed300701972b7381eb63dc045e4d44855e173f89a1217a75"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 70.2
+}

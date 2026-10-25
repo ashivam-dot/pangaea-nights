@@ -32,17 +32,17 @@
     },
     {
      "n": 4,
-     "label": "Inside a Triceratops skull",
-     "vo": "Curled up inside an old Triceratops skull.",
+     "label": "Between the tree roots",
+     "vo": "In a hollow between enormous tree roots.",
      "danger": 4,
-     "image_prompt": "POV from inside the hollow of a weathered Triceratops skull lying in tall ferns, looking out between the brow horns at a moonlit floodplain, ember glow in the distance, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "A close downward view of an empty shallow hollow in the ground between thick gnarled conifer roots. The great brown tree trunk rises along the left edge and its broad irregular roots stretch horizontally across the damp earth. Soft moss and small fern fronds line the recessed shelter. Detailed bark, wet fallen needles and brown soil fill the frame, without an arched doorway or open horizon. Cold teal moonlight illuminates the roots from above, with a gentle warm amber reflection on the bark. Ancient Cretaceous forest floor, photoreal painterly natural wilderness, vertical composition"
     },
     {
      "n": 5,
-     "label": "Between sleeping duckbills",
-     "vo": "Squeezed between a herd of sleeping duckbills.",
+     "label": "Behind a mossy boulder",
+     "vo": "Behind a mossy boulder at the treeline.",
      "danger": 5,
-     "image_prompt": "Low POV between the huge resting flanks of a herd of Edmontosaurus asleep in ferns on a moonlit Cretaceous floodplain, breath steaming, one ember-lit stump behind them, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Low ground-level view of one enormous rounded grey sandstone boulder at the edge of a moonlit Cretaceous conifer forest. The broad natural rock fills the middle of the frame, its rough weathered surface covered with green moss and small ferns. A sheltered hollow of soft fern fronds lies behind the boulder in the near foreground. Tall ancient conifer trunks recede through cold teal river mist. A distant lightning-struck stump glows amber beside the river. Gibbous moon above the treetops, low 24mm wide lens, natural wilderness, photoreal painterly deep-time scene, vertical composition"
     },
     {
      "n": 6,
@@ -53,17 +53,17 @@
     },
     {
      "n": 7,
-     "label": "In a T. rex footprint",
-     "vo": "Curled up in a fresh T. rex footprint.",
+     "label": "On the open mudflat",
+     "vo": "Exposed on the open mudflat.",
      "danger": 7,
-     "image_prompt": "POV from inside a huge fresh three-toed Tyrannosaurus footprint pressed into wet riverbank mud, moonlight pooling in it, deep fresh tracks leading into dark forest, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "A broad moonlit mudflat beside a Cretaceous river, wet cracked brown mud and shallow puddles filling the foreground. Bare exposed ground, scattered pebbles, distant conifer forest, low teal mist and an amber-glowing smouldering stump on the far bank. Natural wilderness landscape, photoreal painterly, vertical composition"
     },
     {
      "n": 8,
-     "label": "Behind a fresh carcass",
-     "vo": "Behind a fresh Triceratops carcass.",
+     "label": "Under T. rex's nose",
+     "vo": "Right under a T. rex's searching nose.",
      "danger": 8,
-     "image_prompt": "POV crouched behind a fallen Triceratops in moonlit ferns, the vast head of a Tyrannosaurus rex emerging from the dark treeline nostrils flared, ember glow on its scales, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Tight low-angle wildlife close-up of the head and thick neck of one Tyrannosaurus rex leaning down to sniff toward the foreground on a moonlit Cretaceous floodplain. Its massive blocky rectangular skull fills the upper two thirds of the image. A broad blunt snout with small nostril openings, low rounded bony eyebrows, small amber eyes, smooth hornless skull outline and thick muscular neck. Its heavy lower jaw is closed, natural leathery grey-green scales and pebbled skin. Only the head and upper neck are within this tight crop. Softly blurred fern fronds along the lower edge, teal conifer forest and river mist in the background, soft amber side light from a distant lightning-struck stump. Documentary animal portrait, photoreal painterly deep-time reconstruction, vertical composition"
     }
    ],
    "answer_n": 2,

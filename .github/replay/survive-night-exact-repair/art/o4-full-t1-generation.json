@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "e6a49e9b13ab469143af9f1a3cf57247c7318f32",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "A close downward view of an empty shallow hollow in the ground between thick gnarled conifer roots. The great brown tree trunk rises along the left edge and its broad irregular roots stretch horizontally across the damp earth. Soft moss and small fern fronds line the recessed shelter. Detailed bark, wet fallen needles and brown soil fill the frame, without an arched doorway or open horizon. Cold teal moonlight illuminates the roots from above, with a gentle warm amber reflection on the bark. Ancient Cretaceous forest floor, photoreal painterly natural wilderness, vertical composition. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 175949307
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "survive-night-exact-repair/art/o4-full-t1-raw.png",
+    "sha256": "2f26f4c1c93a58ff8b69253e1b3072b6b479debe46701ddc1167d3ab48e4062a"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 80.6
+}

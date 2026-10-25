@@ -1,0 +1,292 @@
+{
+  "schema": 1,
+  "premise": "survive_night-01",
+  "source": {
+    "run_id": 40143333505,
+    "sha": "80b5fb275f40b43928ae6ce722b92dc27c5370a7",
+    "key": "2026-10-24-survive_night-01"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "survive-night-exact-repair/art/o1-alt1.png",
+        "sha256": "bdd9a1905f716a740937a5c0fde71441eb48e99fcfa85a17758c326cdd237291",
+        "model": "klein4b-q8-768",
+        "prompt": "POV from inside a mossy hollow log looking out at a moonlit Cretaceous creek lined with horsetails and ferns, a smouldering stump glowing on the far bank, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12581305069,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 57.1,
+          "raw_p99": 201.0,
+          "gamma": 0.45,
+          "spread": 167.0
+        }
+      },
+      {
+        "file": "survive-night-exact-repair/art/o1.png",
+        "sha256": "51e329505b78a936c9a82d00559beae99b688527aaf1d88a79b2299c40da0c40",
+        "model": "klein4b-q8-768",
+        "prompt": "POV from inside a mossy hollow log looking out at a moonlit Cretaceous creek lined with horsetails and ferns, a smouldering stump glowing on the far bank, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12581305069,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 52.7,
+          "raw_p99": 225.2,
+          "gamma": 0.427,
+          "spread": 163.0
+        }
+      }
+    ],
+    "o2": [
+      {
+        "file": "survive-night-exact-repair/art/o2-alt1.png",
+        "sha256": "82009bf164f47d11afb3f24b0c49dce716f57b6c8e47a60c7f4cbb0ec32fd0e5",
+        "model": "klein4b-q8-768",
+        "prompt": "POV on a gravel bank across a wide moonlit river, wind blowing from a distant dark conifer forest toward the foreground gravel bank, river mist streaming toward the foreground, ember glow on the far shore, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12579819985,
+        "take": 2,
+        "exposure": {
+          "raw_mean": 63.4,
+          "raw_p99": 208.0,
+          "gamma": 0.484,
+          "spread": 126.0
+        }
+      },
+      {
+        "file": "survive-night-exact-repair/art/o2.png",
+        "sha256": "29e2a79b8e709d90cc03ddea359b7f6538bb1f8130f47302fe85bd55d8d87048",
+        "model": "klein4b-q8-768",
+        "prompt": "POV on a gravel bank across a wide moonlit river, wind blowing from a distant dark conifer forest toward the foreground gravel bank, river mist streaming toward the foreground, ember glow on the far shore, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12579819985,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 54.6,
+          "raw_p99": 193.0,
+          "gamma": 0.437,
+          "spread": 106.0
+        }
+      }
+    ],
+    "o3": [
+      {
+        "file": "survive-night-exact-repair/art/o3.png",
+        "sha256": "403dc058c6449d435672e90554f36cac70b5bfad5c7ca832b851b944d3faa731",
+        "model": "klein4b-q8-768",
+        "prompt": "POV looking down from the high branches of a towering Cretaceous conifer over a misty floodplain far below, moonlight on the canopy, a glowing stump deep below, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12580915914,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 56.2,
+          "raw_p99": 173.0,
+          "gamma": 0.446,
+          "spread": 142.0
+        }
+      },
+      {
+        "file": "survive-night-exact-repair/art/o3-alt1.png",
+        "sha256": "954728a4dd032bb7f67214b80e02649647d13c8c08e9a3f92668ca76456ae115",
+        "model": "klein4b-q8-768",
+        "prompt": "POV looking down from the high branches of a towering Cretaceous conifer over a misty floodplain far below, moonlight on the canopy, a glowing stump deep below, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12580915914,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 54.7,
+          "raw_p99": 174.0,
+          "gamma": 0.437,
+          "spread": 148.0
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "survive-night-exact-repair/art/o6.png",
+        "sha256": "c1a914a3c622f00a725829d675c6cf6e1b69926d155b1e4359fa88827bd41180",
+        "model": "klein4b-q8-768",
+        "prompt": "POV in dense ferns beside a mound nest of large speckled dinosaur eggs on a moonlit riverbank, a broad feathered shape stirring in the shadows, warm ember glow, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12580326352,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 53.5,
+          "raw_p99": 212.0,
+          "gamma": 0.431,
+          "spread": 113.0
+        }
+      },
+      {
+        "file": "survive-night-exact-repair/art/o6-alt1.png",
+        "sha256": "b574c7490ce691527dd2633d6c6bb6f9a4c97677604180b01ebe4781847cfb1f",
+        "model": "klein4b-q8-768",
+        "prompt": "POV in dense ferns beside a mound nest of large speckled dinosaur eggs on a moonlit riverbank, a broad feathered shape stirring in the shadows, warm ember glow, cold teal moonlit mist, amber ember glow, low 24mm wide angle, photoreal painterly, vertical composition, one warm focal light. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12580326352,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 47.2,
+          "raw_p99": 196.0,
+          "gamma": 0.399,
+          "spread": 122.0
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "survive-night-exact-repair/art/end.png",
+        "sha256": "8556d16482fa9210a513f604e2b3abebedd6f504de37479ef6c5d1f9beb3dc60",
+        "model": "klein4b-q8-768",
+        "prompt": "A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open calm sky in the upper half of the frame. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12579643342,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 73.8,
+          "raw_p99": 218.0,
+          "gamma": 0.543,
+          "spread": 160.0
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "survive-night-exact-repair/art/o4-full-t0.png",
+        "sha256": "524fc53e90767c433651fdfddc71ff249e384d32e9e0cea01007f1ec271e20bc",
+        "model": "klein4b-q8-768",
+        "prompt": "A close downward view of an empty shallow hollow in the ground between thick gnarled conifer roots. The great brown tree trunk rises along the left edge and its broad irregular roots stretch horizontally across the damp earth. Soft moss and small fern fronds line the recessed shelter. Detailed bark, wet fallen needles and brown soil fill the frame, without an arched doorway or open horizon. Cold teal moonlight illuminates the roots from above, with a gentle warm amber reflection on the bark. Ancient Cretaceous forest floor, photoreal painterly natural wilderness, vertical composition. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 50.2,
+          "raw_p99": 183.0,
+          "gamma": 0.415,
+          "spread": 128.0
+        },
+        "generation": {
+          "file": "survive-night-exact-repair/art/o4-full-t0-generation.json",
+          "sha256": "bf21d8f7413ab4a498de2d67a9ea50666d2fddceb5b1a7fc300a778d40df3675"
+        }
+      },
+      {
+        "file": "survive-night-exact-repair/art/o4-full-t1.png",
+        "sha256": "1d0ccc8b5cfba2b307a9f32cc3b948dddb76bb697ce84bf15b1d186cecbc4bd0",
+        "model": "klein4b-q8-768",
+        "prompt": "A close downward view of an empty shallow hollow in the ground between thick gnarled conifer roots. The great brown tree trunk rises along the left edge and its broad irregular roots stretch horizontally across the damp earth. Soft moss and small fern fronds line the recessed shelter. Detailed bark, wet fallen needles and brown soil fill the frame, without an arched doorway or open horizon. Cold teal moonlight illuminates the roots from above, with a gentle warm amber reflection on the bark. Ancient Cretaceous forest floor, photoreal painterly natural wilderness, vertical composition. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 50.4,
+          "raw_p99": 174.0,
+          "gamma": 0.416,
+          "spread": 121.0
+        },
+        "generation": {
+          "file": "survive-night-exact-repair/art/o4-full-t1-generation.json",
+          "sha256": "1f15503913b41e37a70f47b0d08399987a068d53e657c951677d8184a3ab7724"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "survive-night-exact-repair/art/o5-full-t1.png",
+        "sha256": "5f3e5c609a87ad339804a17c885d8c100a815027d683dcb2040320869c5e2369",
+        "model": "klein4b-q8-768",
+        "prompt": "Low ground-level view of one enormous rounded grey sandstone boulder at the edge of a moonlit Cretaceous conifer forest. The broad natural rock fills the middle of the frame, its rough weathered surface covered with green moss and small ferns. A sheltered hollow of soft fern fronds lies behind the boulder in the near foreground. Tall ancient conifer trunks recede through cold teal river mist. A distant lightning-struck stump glows amber beside the river. Gibbous moon above the treetops, low 24mm wide lens, natural wilderness, photoreal painterly deep-time scene, vertical composition. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 55.6,
+          "raw_p99": 192.0,
+          "gamma": 0.442,
+          "spread": 129.0
+        },
+        "generation": {
+          "file": "survive-night-exact-repair/art/o5-full-t1-generation.json",
+          "sha256": "9c65bf7c557b5704d979f0c3b93d65cb4b3d8e78e791de91feb56ffc18197e25"
+        }
+      },
+      {
+        "file": "survive-night-exact-repair/art/o5-full-t0.png",
+        "sha256": "b3b66414385ea79f78f3b5d7b3363d5c57068228c899f2ef9f729e0e21956dc2",
+        "model": "klein4b-q8-768",
+        "prompt": "Low ground-level view of one enormous rounded grey sandstone boulder at the edge of a moonlit Cretaceous conifer forest. The broad natural rock fills the middle of the frame, its rough weathered surface covered with green moss and small ferns. A sheltered hollow of soft fern fronds lies behind the boulder in the near foreground. Tall ancient conifer trunks recede through cold teal river mist. A distant lightning-struck stump glows amber beside the river. Gibbous moon above the treetops, low 24mm wide lens, natural wilderness, photoreal painterly deep-time scene, vertical composition. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 67.4,
+          "raw_p99": 198.0,
+          "gamma": 0.506,
+          "spread": 128.0
+        },
+        "generation": {
+          "file": "survive-night-exact-repair/art/o5-full-t0-generation.json",
+          "sha256": "63fd9397ce445d13863edf20de2b47223dee9e380b9b0f71a1b8561c51fcb0d0"
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "survive-night-exact-repair/art/o7-full-t0.png",
+        "sha256": "b1147802a57f55b89772853066865f5c4f82fdbd54d0e8ba08beacd53978175a",
+        "model": "klein4b-q8-768",
+        "prompt": "A broad moonlit mudflat beside a Cretaceous river, wet cracked brown mud and shallow puddles filling the foreground. Bare exposed ground, scattered pebbles, distant conifer forest, low teal mist and an amber-glowing smouldering stump on the far bank. Natural wilderness landscape, photoreal painterly, vertical composition. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 82.1,
+          "raw_p99": 228.0,
+          "gamma": 0.594,
+          "spread": 110.0
+        },
+        "generation": {
+          "file": "survive-night-exact-repair/art/o7-full-t0-generation.json",
+          "sha256": "4313088c38f44d08374fa4c2be19be845c44edd81390a9e8cd105e25ef90ecae"
+        }
+      },
+      {
+        "file": "survive-night-exact-repair/art/o7-full-t1.png",
+        "sha256": "2fc634e9fe047419ac810cd99d12c185ca9252270f4c6766e371554a40591eb2",
+        "model": "klein4b-q8-768",
+        "prompt": "A broad moonlit mudflat beside a Cretaceous river, wet cracked brown mud and shallow puddles filling the foreground. Bare exposed ground, scattered pebbles, distant conifer forest, low teal mist and an amber-glowing smouldering stump on the far bank. Natural wilderness landscape, photoreal painterly, vertical composition. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 76.7,
+          "raw_p99": 207.0,
+          "gamma": 0.561,
+          "spread": 83.0
+        },
+        "generation": {
+          "file": "survive-night-exact-repair/art/o7-full-t1-generation.json",
+          "sha256": "c8ed5bdbeef73748ef5d30d6e497a8bcb5bde92fcaa85b36d9ac8cd6714ee746"
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "survive-night-exact-repair/art/o8-full-t0.png",
+        "sha256": "8097f05dfe2d6b8cc0591bc2a4bf20aa05195d9bcc7d16c3275a472a2e20482c",
+        "model": "klein4b-q8-768",
+        "prompt": "Tight low-angle wildlife close-up of the head and thick neck of one Tyrannosaurus rex leaning down to sniff toward the foreground on a moonlit Cretaceous floodplain. Its massive blocky rectangular skull fills the upper two thirds of the image. A broad blunt snout with small nostril openings, low rounded bony eyebrows, small amber eyes, smooth hornless skull outline and thick muscular neck. Its heavy lower jaw is closed, natural leathery grey-green scales and pebbled skin. Only the head and upper neck are within this tight crop. Softly blurred fern fronds along the lower edge, teal conifer forest and river mist in the background, soft amber side light from a distant lightning-struck stump. Documentary animal portrait, photoreal painterly deep-time reconstruction, vertical composition. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 88.7,
+          "raw_p99": 240.0,
+          "gamma": 0.638,
+          "spread": 126.0
+        },
+        "generation": {
+          "file": "survive-night-exact-repair/art/o8-full-t0-generation.json",
+          "sha256": "9b0300fa8f75ffde8915514d38e508e0868ee67f9f3ca614010f1f49d412be41"
+        }
+      },
+      {
+        "file": "survive-night-exact-repair/art/o8-full-t1.png",
+        "sha256": "10a03e1cb6d5e67120281969feca257cc49f08e0bdd9381903a206e4754ef6ec",
+        "model": "klein4b-q8-768",
+        "prompt": "Tight low-angle wildlife close-up of the head and thick neck of one Tyrannosaurus rex leaning down to sniff toward the foreground on a moonlit Cretaceous floodplain. Its massive blocky rectangular skull fills the upper two thirds of the image. A broad blunt snout with small nostril openings, low rounded bony eyebrows, small amber eyes, smooth hornless skull outline and thick muscular neck. Its heavy lower jaw is closed, natural leathery grey-green scales and pebbled skin. Only the head and upper neck are within this tight crop. Softly blurred fern fronds along the lower edge, teal conifer forest and river mist in the background, soft amber side light from a distant lightning-struck stump. Documentary animal portrait, photoreal painterly deep-time reconstruction, vertical composition. Hell Creek floodplain under a gibbous moon: cold teal river mist, amber glow of a smouldering lightning-struck stump, low 24mm wide lens. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 85.3,
+          "raw_p99": 233.0,
+          "gamma": 0.615,
+          "spread": 120.0
+        },
+        "generation": {
+          "file": "survive-night-exact-repair/art/o8-full-t1-generation.json",
+          "sha256": "616429738fa55fa81028dd7abedf6bf044cc4f31e13f13370f0312cbbb95bd9a"
+        }
+      }
+    ]
+  },
+  "completed_images": {}
+}
