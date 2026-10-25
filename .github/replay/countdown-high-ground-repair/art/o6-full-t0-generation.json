@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "origin": "local-stable-diffusion.cpp",
+  "source_sha": "a7b2287537edda0cab77564e45980a64fa2408d3",
+  "binary_tag": "master-950-f2f168f",
+  "settings": {
+    "model": "klein4b-q8-768",
+    "prompt": "A vast elevated Cretaceous conifer forest valley seen from a high rough limestone ridge. Successive densely wooded ridges stretch toward sheer pale stone escarpments across the entire horizon. Ancient evergreen treetops fill the lower half, with fractured natural rock ledges at the high viewpoint. Warm amber sunset glow lights the far summit beneath violet storm clouds. Wide majestic prehistoric wilderness landscape, photoreal painterly, vertical composition. Violet storm sky over high inland conifer ridges, warm amber rim light. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+    "width": 432,
+    "height": 768,
+    "steps": 4,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "seed": 1626163257
+  },
+  "weights": [
+    {
+      "repo": "leejet/FLUX.2-klein-4B-GGUF",
+      "file": "flux-2-klein-4b-Q8_0.gguf",
+      "sha256": "0bba6951258ec8f92d51114a8fa13e66828297bfff58a738f52729b3ef66fa28"
+    },
+    {
+      "repo": "unsloth/Qwen3-4B-GGUF",
+      "file": "Qwen3-4B-Q8_0.gguf",
+      "sha256": "eed555233267a33c7e8ee31682762cc7751b3f6d224039086e0e846f05fffa5d"
+    },
+    {
+      "repo": "black-forest-labs/FLUX.2-small-decoder",
+      "file": "full_encoder_small_decoder.safetensors",
+      "sha256": "ea4273f02d1fafbf8e1d1c2cf6018ed8748652eb0bf34f2dd91171f16f15ab62"
+    }
+  ],
+  "raw": {
+    "file": "countdown-high-ground-repair/art/o6-full-t0-raw.png",
+    "sha256": "1581748cc4e3d73d6defa248809b046b98ec7e4f5f41dd5c292d6198a668a3c5"
+  },
+  "backend": "Darwin arm64 Metal",
+  "seconds": 82.8
+}

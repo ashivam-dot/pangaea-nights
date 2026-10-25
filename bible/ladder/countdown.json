@@ -119,7 +119,7 @@
     {
      "n": 4,
      "label": "Ride a giant sea turtle",
-     "vo": "Ride a giant Archelon out to sea.",
+     "vo": "Ride a giant sea turtle.",
      "danger": 4,
      "image_prompt": "A giant Archelon sea turtle swimming at the surface of a heaving dark sea, shell glistening, huge swells rising behind it under violet clouds, photoreal painterly, vertical composition, one warm focal light from lightning"
     },
@@ -135,7 +135,8 @@
      "label": "Run for the far hills",
      "vo": "Run inland for the faraway hills.",
      "danger": 6,
-     "image_prompt": "A moonlit coastal plain stretching inland to a line of high wooded hills, hadrosaurs fleeing across it, the dark sea far behind, photoreal painterly, vertical composition, one warm focal light from a warm moonrise"
+     "image_prompt": "A vast elevated Cretaceous conifer forest valley seen from a high rough limestone ridge. Successive densely wooded ridges stretch toward sheer pale stone escarpments across the entire horizon. Ancient evergreen treetops fill the lower half, with fractured natural rock ledges at the high viewpoint. Warm amber sunset glow lights the far summit beneath violet storm clouds. Wide majestic prehistoric wilderness landscape, photoreal painterly, vertical composition.",
+     "art_direction": "Violet storm sky over high inland conifer ridges, warm amber rim light."
     },
     {
      "n": 7,
@@ -146,14 +147,14 @@
     },
     {
      "n": 8,
-     "label": "Stand on the crater rim",
-     "vo": "Stand right on the edge of impact.",
+     "label": "Toward the impact cloud",
+     "vo": "Go toward the glowing impact cloud.",
      "danger": 8,
-     "image_prompt": "A smoking crater rim at the edge of a churning sea, molten rock glowing and steam erupting under a black violet sky, photoreal painterly, vertical composition, one warm focal light from the molten rock"
+     "image_prompt": "A blasted Cretaceous conifer forest with dark splintered tree trunks in the foreground. A towering wall of thick rust-orange impact dust rises beyond the broken forest, filling the entire horizon. Warm firelight and scattered orange embers illuminate jagged black trunks and shattered branches. The orange cloud glows intensely from within, under dark purple storm clouds. Cinematic prehistoric impact aftermath, photoreal painterly natural wilderness, vertical composition."
     }
    ],
    "answer_n": 6,
-   "verdict_vo": "Real answer: number 6, because the impact sent megatsunamis over 100 metres tall. Only high ground far inland probably stands a chance.",
+   "verdict_vo": "Real answer: number 6, because waves exceeded 100 metres. High ground far inland probably offers a chance.",
    "fact": {
     "text": "The Chicxulub impact spawned megatsunamis more than 100 metres tall.",
     "wiki_title": "Chicxulub crater",

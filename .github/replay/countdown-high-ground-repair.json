@@ -1,0 +1,280 @@
+{
+  "schema": 1,
+  "premise": "countdown-02",
+  "source": {
+    "run_id": 40147415761,
+    "sha": "e6a49e9b13ab469143af9f1a3cf57247c7318f32",
+    "key": "2026-10-25-countdown-02"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "countdown-high-ground-repair/art/o1.png",
+        "sha256": "2f3324490d9b59350eac24483c6e39e560ad0c397040977f64762f7ed44665d3",
+        "model": "klein4b-q8-768",
+        "prompt": "POV from inside a dry limestone sea cave looking out at a calm Cretaceous bay at night, violet sky, distant red glow on the horizon, photoreal painterly, vertical composition, one warm focal light from the distant glow. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12582125895,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 54.4,
+          "raw_p99": 150.0,
+          "gamma": 0.436,
+          "spread": 107.0
+        }
+      },
+      {
+        "file": "countdown-high-ground-repair/art/o1-alt1.png",
+        "sha256": "844dbddb3fb276856c36cbecdf30c5f65c8a43e54a4f3d64cc16a2af4d7f8394",
+        "model": "klein4b-q8-768",
+        "prompt": "POV from inside a dry limestone sea cave looking out at a calm Cretaceous bay at night, violet sky, distant red glow on the horizon, photoreal painterly, vertical composition, one warm focal light from the distant glow. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12582125895,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 57.9,
+          "raw_p99": 161.0,
+          "gamma": 0.454,
+          "spread": 131.0
+        }
+      }
+    ],
+    "o2": [
+      {
+        "file": "countdown-high-ground-repair/art/o2.png",
+        "sha256": "c7f16bc21a4570e437bb59ed332f85a12addc5842f8431b5aa842bc1c0518769",
+        "model": "klein4b-q8-768",
+        "prompt": "A tall pale sand dune above a Cretaceous beach, wind-whipped grass on its crest, a dark sea swelling under a violet storm sky, photoreal painterly, vertical composition, one warm focal light from a lightning flash. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12581591227,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 74.9,
+          "raw_p99": 220.0,
+          "gamma": 0.55,
+          "spread": 120.0
+        }
+      },
+      {
+        "file": "countdown-high-ground-repair/art/o2-alt1.png",
+        "sha256": "a9be70a1e9962069bcdf0e2fd4c2910fdb3e2c9c6322fe5b49ef1b66f3b59201",
+        "model": "klein4b-q8-768",
+        "prompt": "A tall pale sand dune above a Cretaceous beach, wind-whipped grass on its crest, a dark sea swelling under a violet storm sky, photoreal painterly, vertical composition, one warm focal light from a lightning flash. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12581591227,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 88.6,
+          "raw_p99": 214.0,
+          "gamma": 0.638,
+          "spread": 133.0
+        }
+      }
+    ],
+    "o3": [
+      {
+        "file": "countdown-high-ground-repair/art/o3.png",
+        "sha256": "ca10a27b9bf8482affb1582897017e685f6b080c7fec1f3e7519a306d52dd21e",
+        "model": "klein4b-q8-768",
+        "prompt": "Looking down from the crown of a towering swamp cypress over a flooded coastal forest, a strange dark line rising on the sea beyond, photoreal painterly, vertical composition, one warm focal light from a red horizon glow. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12581601688,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 59.5,
+          "raw_p99": 187.0,
+          "gamma": 0.463,
+          "spread": 132.0
+        }
+      },
+      {
+        "file": "countdown-high-ground-repair/art/o3-alt1.png",
+        "sha256": "93531c335580d33ca825410a6b78578d5269d067c544f9870374a7410d90bad3",
+        "model": "klein4b-q8-768",
+        "prompt": "Looking down from the crown of a towering swamp cypress over a flooded coastal forest, a strange dark line rising on the sea beyond, photoreal painterly, vertical composition, one warm focal light from a red horizon glow. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12581601688,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 57.1,
+          "raw_p99": 197.0,
+          "gamma": 0.45,
+          "spread": 122.0
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "countdown-high-ground-repair/art/o4.png",
+        "sha256": "7fca922e20fad923d0839194315b16cf79ecb900684b7422bb3dc573beebba6b",
+        "model": "klein4b-q8-768",
+        "prompt": "A giant Archelon sea turtle swimming at the surface of a heaving dark sea, shell glistening, huge swells rising behind it under violet clouds, photoreal painterly, vertical composition, one warm focal light from lightning. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12581926235,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 73.8,
+          "raw_p99": 229.0,
+          "gamma": 0.544,
+          "spread": 117.0
+        }
+      },
+      {
+        "file": "countdown-high-ground-repair/art/o4-alt1.png",
+        "sha256": "ca212c959f5a01e670becbf04754f3e7790ca82bec6666788a4be7f2d2401b2e",
+        "model": "klein4b-q8-768",
+        "prompt": "A giant Archelon sea turtle swimming at the surface of a heaving dark sea, shell glistening, huge swells rising behind it under violet clouds, photoreal painterly, vertical composition, one warm focal light from lightning. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12581926235,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 69.1,
+          "raw_p99": 237.0,
+          "gamma": 0.516,
+          "spread": 155.0
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "countdown-high-ground-repair/art/o5.png",
+        "sha256": "ec28b9f96d07371c63c0a252e9e704ed6b339f7abd3099e8865f40cea95817de",
+        "model": "klein4b-q8-768",
+        "prompt": "Low POV at the waterline of a wild surf zone at night, foaming breakers rolling in under a violet sky lit by distant fire, photoreal painterly, vertical composition, one warm focal light from the distant fire. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12582160635,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 54.3,
+          "raw_p99": 197.0,
+          "gamma": 0.436,
+          "spread": 123.0
+        }
+      },
+      {
+        "file": "countdown-high-ground-repair/art/o5-alt1.png",
+        "sha256": "cccfd7df1022ce617af1604d1e4f37a226a1cd55a1c76dd07a085ed84419d3df",
+        "model": "klein4b-q8-768",
+        "prompt": "Low POV at the waterline of a wild surf zone at night, foaming breakers rolling in under a violet sky lit by distant fire, photoreal painterly, vertical composition, one warm focal light from the distant fire. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12582160635,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 53.1,
+          "raw_p99": 176.0,
+          "gamma": 0.429,
+          "spread": 119.0
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "countdown-high-ground-repair/art/o7.png",
+        "sha256": "eec8c61841aed16bc035c6bd7104927380d356adcc960dbb354663fe717cb13a",
+        "model": "klein4b-q8-768",
+        "prompt": "Vast glistening tidal flats at night after the sea has drained far out, stranded fish and shells, the horizon swelling dark, photoreal painterly, vertical composition, one warm focal light from a red horizon glow. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12581436088,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 40.5,
+          "raw_p99": 162.0,
+          "gamma": 0.366,
+          "spread": 117.0
+        }
+      },
+      {
+        "file": "countdown-high-ground-repair/art/o7-alt1.png",
+        "sha256": "1524df7a03edc9d6ea88656cd65dbea937d729639a618a90f1565be1737dc25c",
+        "model": "klein4b-q8-768",
+        "prompt": "Vast glistening tidal flats at night after the sea has drained far out, stranded fish and shells, the horizon swelling dark, photoreal painterly, vertical composition, one warm focal light from a red horizon glow. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12581436088,
+        "take": 1,
+        "exposure": {
+          "raw_mean": 45.9,
+          "raw_p99": 197.0,
+          "gamma": 0.393,
+          "spread": 107.0
+        }
+      }
+    ],
+    "end": [
+      {
+        "file": "countdown-high-ground-repair/art/end.png",
+        "sha256": "3f521234805900132db6503d53371a2441441b06b3645d29cbe3a3588b927eb1",
+        "model": "klein4b-q8-768",
+        "prompt": "A wide quiet view of the same world at the end of the night, the horizon beginning to glow warm, open calm sky in the upper half of the frame. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "artifact_id": 12581860022,
+        "take": 0,
+        "exposure": {
+          "raw_mean": 65.9,
+          "raw_p99": 220.0,
+          "gamma": 0.498,
+          "spread": 116.0
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "countdown-high-ground-repair/art/o6-full-t0.png",
+        "sha256": "c02450dde322c7b5aaf745afba3a5a73f7b5b34a81a2a1c2f684c2eff4c22631",
+        "model": "klein4b-q8-768",
+        "prompt": "A vast elevated Cretaceous conifer forest valley seen from a high rough limestone ridge. Successive densely wooded ridges stretch toward sheer pale stone escarpments across the entire horizon. Ancient evergreen treetops fill the lower half, with fractured natural rock ledges at the high viewpoint. Warm amber sunset glow lights the far summit beneath violet storm clouds. Wide majestic prehistoric wilderness landscape, photoreal painterly, vertical composition. Violet storm sky over high inland conifer ridges, warm amber rim light. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 75.6,
+          "raw_p99": 250.0,
+          "gamma": 0.554,
+          "spread": 131.0
+        },
+        "generation": {
+          "file": "countdown-high-ground-repair/art/o6-full-t0-generation.json",
+          "sha256": "dbeaacde32555ea48a826c22e71114300689403bd70f84a13e02618352c25a7a"
+        }
+      },
+      {
+        "file": "countdown-high-ground-repair/art/o6-full-t1.png",
+        "sha256": "d9592a88c271a5ab99a6df2aa4cb8fd60494e349db3dc025f30816f8703c9e3f",
+        "model": "klein4b-q8-768",
+        "prompt": "A vast elevated Cretaceous conifer forest valley seen from a high rough limestone ridge. Successive densely wooded ridges stretch toward sheer pale stone escarpments across the entire horizon. Ancient evergreen treetops fill the lower half, with fractured natural rock ledges at the high viewpoint. Warm amber sunset glow lights the far summit beneath violet storm clouds. Wide majestic prehistoric wilderness landscape, photoreal painterly, vertical composition. Violet storm sky over high inland conifer ridges, warm amber rim light. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 75.9,
+          "raw_p99": 240.0,
+          "gamma": 0.556,
+          "spread": 122.0
+        },
+        "generation": {
+          "file": "countdown-high-ground-repair/art/o6-full-t1-generation.json",
+          "sha256": "44d87b452de29909e6a13d722240fb3fd6be83a219164d2672053a7ce7cc882f"
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "countdown-high-ground-repair/art/o8-full-t0.png",
+        "sha256": "8f587c5b98a26aadde1116eca409991ce2dbb6d596bdc910acc5f047eb41a19a",
+        "model": "klein4b-q8-768",
+        "prompt": "A blasted Cretaceous conifer forest with dark splintered tree trunks in the foreground. A towering wall of thick rust-orange impact dust rises beyond the broken forest, filling the entire horizon. Warm firelight and scattered orange embers illuminate jagged black trunks and shattered branches. The orange cloud glows intensely from within, under dark purple storm clouds. Cinematic prehistoric impact aftermath, photoreal painterly natural wilderness, vertical composition. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 66.7,
+          "raw_p99": 238.0,
+          "gamma": 0.502,
+          "spread": 138.0
+        },
+        "generation": {
+          "file": "countdown-high-ground-repair/art/o8-full-t0-generation.json",
+          "sha256": "787a5d2b3918c623023b01662f2ba3fae8948894373f7f5b58e8d6630c7d9bd0"
+        }
+      },
+      {
+        "file": "countdown-high-ground-repair/art/o8-full-t1.png",
+        "sha256": "650a52662e3f26bd14146d0ad6429b2471ba711b2a7e1575a871e1075e165b34",
+        "model": "klein4b-q8-768",
+        "prompt": "A blasted Cretaceous conifer forest with dark splintered tree trunks in the foreground. A towering wall of thick rust-orange impact dust rises beyond the broken forest, filling the entire horizon. Warm firelight and scattered orange embers illuminate jagged black trunks and shattered branches. The orange cloud glows intensely from within, under dark purple storm clouds. Cinematic prehistoric impact aftermath, photoreal painterly natural wilderness, vertical composition. Storm-green Gulf coast under a bruised violet sky, wet reflective sand, long 85mm compression, lightning on the horizon. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail.",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 64.1,
+          "raw_p99": 243.0,
+          "gamma": 0.488,
+          "spread": 142.0
+        },
+        "generation": {
+          "file": "countdown-high-ground-repair/art/o8-full-t1-generation.json",
+          "sha256": "e26fe1e30b8f80097b0fb090335050390a0a86664c12e085bd2a38b750bcd7f8"
+        }
+      }
+    ]
+  },
+  "completed_images": {}
+}
