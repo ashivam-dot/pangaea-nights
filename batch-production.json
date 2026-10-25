@@ -4224,7 +4224,7 @@
         "premise": "level_1_8-04",
         "replay": ".github/replay/level_1_8-04-anatomy-repair.json"
       },
-      "stage": "building",
+      "stage": "reviewed",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -4530,7 +4530,8 @@
           ],
           "issues": []
         }
-      }
+      },
+      "archive": "batch-reviewed-40188193823"
     },
     {
       "repo": "pangaea-nights",
@@ -4962,5 +4963,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T12:48:13+00:00"
+  "updated_at": "2026-10-25T12:48:19+00:00"
 }
