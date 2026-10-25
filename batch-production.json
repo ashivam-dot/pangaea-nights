@@ -1907,53 +1907,11 @@
       "inputs": {
         "dry_run": "true",
         "slot": "A",
-        "premise": "survive_night-02"
+        "premise": "survive_night-02",
+        "replay": ".github/replay/survive-night-02-shelter-repair.json"
       },
-      "stage": "held",
+      "stage": "planned",
       "attempts": 1,
-      "source_sha": "f2ba146e52bc17c948d9d2d9738f9e308d08e79f",
-      "before_ids": [
-        40156875292,
-        40156818584,
-        40154688202,
-        40154442347,
-        40152622139,
-        40152163089,
-        40151287146,
-        40150491810,
-        40149509321,
-        40148607387,
-        40148479040,
-        40148319091,
-        40147925087,
-        40147415761,
-        40146406019,
-        40144187249,
-        40143437986,
-        40143333505,
-        40140139736,
-        40138993804,
-        40136822897,
-        40136652437,
-        40135503878,
-        40131481179,
-        40128334178,
-        40124993101,
-        40122729549,
-        40121235398,
-        40119101082,
-        40077496948,
-        39924499144,
-        39830179361,
-        39803824162,
-        39787991414,
-        39780512299,
-        39772637874,
-        39766129149
-      ],
-      "submitted_at": "2026-10-25T03:20:01+00:00",
-      "run_id": 40157815850,
-      "cloud_status": "in_progress",
       "editorial_holds": [
         {
           "id": "actual-cloud-modern-shoes-40157815850",
@@ -2070,10 +2028,28 @@
           }
         }
       ],
-      "problems": [
-        "Direct inspection of both actual o4 salt-flat images shows human legs in modern trousers and shoes in the foreground. CHANNEL.md forbids humans on screen. Exclude both exact images; replace only the failed landscape inputs while preserving useful siblings and narration. Full video release remains held.",
-        "Direct full-resolution inspection of both o5 images shows a very narrow pointed triangular sail towering several body heights over an extremely squat armoured body, with stray dorsal spikes. UC Berkeley Museum of Paleontology describes a long low body, four short thick legs and skin-covered sail supports nearly one metre high on an animal about 3.5 metres long. These depictions materially distort the recognisable body plan. Exclude both exact images and deliberately replan this unbooked shelter option; preserve the fact-backed coast/interior verdict and useful siblings. Reference: https://ucmp.berkeley.edu/synapsids/pelycosaurs.html"
-      ]
+      "repair_history": [
+        {
+          "run_id": 40157815850,
+          "source_sha": "f2ba146e52bc17c948d9d2d9738f9e308d08e79f",
+          "stage": "held",
+          "problems": [
+            "Direct inspection of both actual o4 salt-flat images shows human legs in modern trousers and shoes in the foreground. CHANNEL.md forbids humans on screen. Exclude both exact images; replace only the failed landscape inputs while preserving useful siblings and narration. Full video release remains held.",
+            "Direct full-resolution inspection of both o5 images shows a very narrow pointed triangular sail towering several body heights over an extremely squat armoured body, with stray dorsal spikes. UC Berkeley Museum of Paleontology describes a long low body, four short thick legs and skin-covered sail supports nearly one metre high on an animal about 3.5 metres long. These depictions materially distort the recognisable body plan. Exclude both exact images and deliberately replan this unbooked shelter option; preserve the fact-backed coast/interior verdict and useful siblings. Reference: https://ucmp.berkeley.edu/synapsids/pelycosaurs.html"
+          ],
+          "inputs": {
+            "dry_run": "true",
+            "slot": "A",
+            "premise": "survive_night-02"
+          }
+        }
+      ],
+      "obsolete_runs": [
+        40157815850
+      ],
+      "repair_queued_at": "2026-10-25T04:20:28+00:00",
+      "repair_source_sha": "744991933557b158e997cb1d7bdd23b12a358645",
+      "repair_reason": "Exact reviewed salt-flat landscape and natural sandstone overhang replace modern shoes and distorted Dimetrodon; other original pixels and sourced coast/interior verdict stay. Actual narrator preflight WER0 and cached-image/pair gates pass; normal bounded producer capacity and full cloud/AV checks remain mandatory."
     },
     {
       "repo": "pangaea-nights",
@@ -2501,7 +2477,7 @@
       "attempts": 0
     }
   ],
-  "halted": "Repair held entry survive_night-02: Direct inspection of both actual o4 salt-flat images shows human legs in modern trousers and shoes in the foreground. CHANNEL.md forbids humans on screen. Exclude both exact images; replace only the failed landscape inputs while preserving useful siblings and narration. Full video release remains held.; Direct full-resolution inspection of both o5 images shows a very narrow pointed triangular sail towering several body heights over an extremely squat armoured body, with stray dorsal spikes. UC Berkeley Museum of Paleontology describes a long low body, four short thick legs and skin-covered sail supports nearly one metre high on an animal about 3.5 metres long. These depictions materially distort the recognisable body plan. Exclude both exact images and deliberately replan this unbooked shelter option; preserve the fact-backed coast/interior verdict and useful siblings. Reference: https://ucmp.berkeley.edu/synapsids/pelycosaurs.html",
+  "halted": null,
   "complete": false,
   "health": {
     "public": 1,
@@ -2509,5 +2485,5 @@
     "held": 1,
     "mode": "publish"
   },
-  "updated_at": "2026-10-25T04:20:23+00:00"
+  "updated_at": "2026-10-25T04:20:28+00:00"
 }
