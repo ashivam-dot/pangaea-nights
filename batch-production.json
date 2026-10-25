@@ -5213,7 +5213,7 @@
     "public": 3,
     "scheduled": 11,
     "held": 1,
-    "mode": "review"
+    "mode": "publish"
   },
-  "updated_at": "2026-10-25T15:03:10+00:00"
+  "updated_at": "2026-10-25T15:03:13+00:00"
 }
