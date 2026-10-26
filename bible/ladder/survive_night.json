@@ -461,63 +461,71 @@
    "title": "Dinosaur-Eating Crocodile Swamp — Where Do You Sleep Tonight? 🐊",
    "banner": "Croc swamp. Where do you sleep?",
    "hook_vo": "A crocodile big enough to eat dinosaurs. Pick your bed.",
-   "art_direction": "Late Cretaceous coastal bayou: olive-bronze water, Spanish-moss cypress, low fog, one amber glow of a burning snag, 50mm at water height.",
+   "art_direction": "Late Cretaceous coastal bayou at night: olive-bronze water, tall conifers, low silver fog beneath a dark indigo sky, pale amber moonlight and neutral documentary fill, 50mm at water height.",
    "options": [
     {
      "n": 1,
      "label": "Pine ridge, far from water",
      "vo": "A pine ridge, far from the water.",
      "danger": 1,
-     "image_prompt": "natural-history documentary view on a dry sandy ridge among tall conifers well back from a foggy Cretaceous bayou, the water a distant silver line, amber glow of a burning snag, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Natural-history documentary reconstruction at night in a Late Cretaceous coastal bayou. A dry sandy ridge among tall conifers well inland from the bayou, dark forest soil in the foreground and the water only a distant silver line. Olive-bronze water, low silver fog, dark indigo sky, pale amber moonlight with neutral external documentary fill so the subject is clearly visible. Photoreal painterly, vertical composition, 50mm lens. Only the described prehistoric plants, animals, rock and water; an unlit natural landscape.",
+     "lighting": "moonlight"
     },
     {
      "n": 2,
      "label": "Up a swamp cypress",
      "vo": "Up in a swamp cypress.",
      "danger": 2,
-     "image_prompt": "High documentary view down from the branches of a moss-draped swamp cypress over still olive water, fog curling between the trunks, an amber glow on the far bank, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
+     "image_prompt": "Natural-history documentary reconstruction at night in a Late Cretaceous coastal bayou. A high view down from the broad branches of a swamp cypress over still olive water, fog curling between the trunks. Olive-bronze water, low silver fog, dark indigo sky, pale amber moonlight with neutral external documentary fill so the subject is clearly visible. Photoreal painterly, vertical composition, 50mm lens. Only the described prehistoric plants, animals, rock and water; an unlit natural landscape.",
+     "lighting": "moonlight"
     },
     {
      "n": 3,
      "label": "Sandbank midstream",
      "vo": "A sandbank in the middle of the river.",
      "danger": 3,
-     "image_prompt": "natural-history documentary view on a narrow sandbank in the middle of a wide foggy estuary at night, dark water sliding past on both sides, amber glow on the shore, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Natural-history documentary reconstruction at night in a Late Cretaceous coastal bayou. A narrow bare sandbank in the middle of a wide estuary, dark water sliding past on both sides. Olive-bronze water, low silver fog, dark indigo sky, pale amber moonlight with neutral external documentary fill so the subject is clearly visible. Photoreal painterly, vertical composition, 50mm lens. Only the described prehistoric plants, animals, rock and water; an unlit natural landscape.",
+     "lighting": "moonlight"
     },
     {
      "n": 4,
      "label": "In a hadrosaur nest mound",
      "vo": "Inside a warm hadrosaur nest mound.",
      "danger": 4,
-     "image_prompt": "Close documentary view into a warm rotting-vegetation hadrosaur nest mound on a riverbank, eggs half buried, adult duckbills looming in the fog, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
+     "image_prompt": "Natural-history documentary reconstruction at night in a Late Cretaceous coastal bayou. A close view into a hadrosaur nest mound of rotting vegetation on a riverbank, eggs half buried, an adult duckbill dinosaur visible behind it. Olive-bronze water, low silver fog, dark indigo sky, pale amber moonlight with neutral external documentary fill so the subject is clearly visible. Photoreal painterly, vertical composition, 50mm lens. Only the described prehistoric plants, animals, rock and water; an unlit natural landscape.",
+     "lighting": "moonlight"
     },
     {
      "n": 5,
      "label": "On a floating log",
      "vo": "Asleep on a floating log.",
      "danger": 5,
-     "image_prompt": "Low documentary view across a floating log in a foggy Cretaceous bayou, olive water lapping at the bark, two eyes and a long armoured snout breaking the surface nearby, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
+     "image_prompt": "Natural-history documentary reconstruction at night in a Late Cretaceous coastal bayou. A floating fallen log spanning the foreground, olive water lapping at its bark, a broad low crocodilian snout and two eyes visible at the water surface nearby. Olive-bronze water, low silver fog, dark indigo sky, pale amber moonlight with neutral external documentary fill so the subject is clearly visible. Photoreal painterly, vertical composition, 50mm lens. Only the described prehistoric plants, animals, rock and water; an unlit natural landscape.",
+     "lighting": "moonlight"
     },
     {
      "n": 6,
      "label": "Shallows with turtles",
      "vo": "In the shallows with the sea turtles.",
      "danger": 6,
-     "image_prompt": "Low documentary view over warm shallows where large sea turtles rest at night, olive water rippling, a long armoured back drifting closer, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
+     "image_prompt": "Natural-history documentary reconstruction at night in a Late Cretaceous coastal bayou. A close view of shallow coastal water with a large sea turtle near the foreground, a low crocodilian armoured back breaking the surface farther away. Olive-bronze water, low silver fog, dark indigo sky, pale amber moonlight with neutral external documentary fill so the subject is clearly visible. Photoreal painterly, vertical composition, 50mm lens. Only the described prehistoric plants, animals, rock and water; an unlit natural landscape.",
+     "lighting": "moonlight"
     },
     {
      "n": 7,
      "label": "Beside a drinking duckbill",
      "vo": "Next to a duckbill drinking at the edge.",
      "danger": 7,
-     "image_prompt": "Low natural-history documentary view at the waterline beside a hadrosaur lowering its head to drink at a foggy bayou, the water bulging as something huge rises below, amber glow, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light"
+     "image_prompt": "Natural-history documentary reconstruction at night in a Late Cretaceous coastal bayou. A side view of a duckbill dinosaur lowering its head to drink at the bayou, a broad crocodilian snout just breaking the water nearby. Olive-bronze water, low silver fog, dark indigo sky, pale amber moonlight with neutral external documentary fill so the subject is clearly visible. Photoreal painterly, vertical composition, 50mm lens. Only the described prehistoric plants, animals, rock and water; an unlit natural landscape.",
+     "lighting": "moonlight"
     },
     {
      "n": 8,
      "label": "At the water's edge",
      "vo": "Right at the water's edge.",
      "danger": 8,
-     "image_prompt": "Low documentary view from mud at the very edge of a still olive bayou at night, the colossal head of Deinosuchus rising from the water just ahead, amber glow on its teeth, olive-bronze bayou water, low silver fog, hanging moss, amber glow of a burning snag, 50mm lens, photoreal painterly, vertical composition, one warm focal light Pure nature documentary scenery with only the described plants, rock, water and wildlife."
+     "image_prompt": "Natural-history documentary reconstruction at night in a Late Cretaceous coastal bayou. A low view from bare riverbank mud at the water edge, a broad long Deinosuchus head held horizontally at the surface, eyes high on the skull and a closed jaw. Olive-bronze water, low silver fog, dark indigo sky, pale amber moonlight with neutral external documentary fill so the subject is clearly visible. Photoreal painterly, vertical composition, 50mm lens. Only the described prehistoric plants, animals, rock and water; an unlit natural landscape.",
+     "lighting": "moonlight"
     }
    ],
    "answer_n": 1,

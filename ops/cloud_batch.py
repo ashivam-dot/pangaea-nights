@@ -199,7 +199,8 @@ def builds(repo, workflow):
 
 def resolve(repo, workflow, job):
     found = [r for r in builds(repo, workflow) if r["id"] not in job["before_ids"]
-             and r["head_sha"] == job["source_sha"] and r["event"] == "workflow_dispatch"]
+             and r["head_sha"] == job["source_sha"] and r["event"] == "workflow_dispatch"
+             and (not job.get("dispatch_run_id") or r["id"] == job["dispatch_run_id"])]
     if len(found) == 1:
         job.update(run_id=found[0]["id"], stage="building")
         return True
@@ -411,8 +412,11 @@ def tick(adapter, mode, save=persist):
                            before_ids=[r["id"] for r in builds(repo, adapter.WORKFLOW)], submitted_at=stamp(),
                            attempts=pending.get("attempts", 0) + 1)
             save(data)
-            gh("api", f"repos/{repo}/actions/workflows/{adapter.WORKFLOW}/dispatches", body={
-                "ref": "main", "inputs": pending["inputs"]}, raw=True)
+            response = gh("api", f"repos/{repo}/actions/workflows/{adapter.WORKFLOW}/dispatches", body={
+                "ref": "main", "inputs": pending["inputs"], "return_run_details": True})
+            if response and response.get("workflow_run_id"):
+                pending["dispatch_run_id"] = response["workflow_run_id"]
+                save(data)
     data["complete"] = all(j["stage"] in FINAL for j in data["jobs"])
     data["health"] = {"public": sum(j["stage"] == "public" for j in data["jobs"]),
                       "scheduled": sum(j["stage"] == "scheduled" for j in data["jobs"]),
