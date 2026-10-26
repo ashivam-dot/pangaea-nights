@@ -2310,6 +2310,17 @@
     "refusals": [
      "Art-only collection cannot publish"
     ]
+   },
+   {
+    "at": "2026-10-26T05:28:51Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "countdown-06",
+    "run": "40270449387",
+    "ok": false,
+    "failures": [],
+    "published": false,
+    "refusals": null
    }
   ],
   "alerts": [
