@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "premise": "how_deep-05",
+  "source": {
+    "run_id": 40207430412,
+    "sha": "bb978cf6940781ad265325cb3dd2f4937d5685b8",
+    "key": "2026-10-25-how_deep-05"
+  },
+  "art_only": [
+    "o7",
+    "o8"
+  ],
+  "images": {},
+  "references": {
+    "o7": [
+      {
+        "file": "howdeep05-eurypterid-references/pterygotus-claw-profile.png",
+        "sha256": "68485de039fce6d63c0b794e26d9efd7a00d08b113dfb354be3c0b2b953f2aec",
+        "parent": {
+          "file": "howdeep05-eurypterid-references/pterygotus-parent.jpg",
+          "sha256": "61f186222f3dea18440865eee5010855336f08b952c9cab5c40c8421dd928bce"
+        },
+        "license_evidence": {
+          "file": "howdeep05-eurypterid-references/pterygotus-commons.json",
+          "sha256": "1021bb7bdd50a5a1b6e53b69368207c315b9e2c44b164a358cf1093036ef1597"
+        },
+        "crop_ltrb": [
+          270,
+          425,
+          440,
+          520
+        ],
+        "title": "File:Pterygotus in enviroment.jpg",
+        "author": "Paleobiome",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Pterygotus_in_enviroment.jpg/960px-Pterygotus_in_enviroment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Pterygotus reference: Paleobiome, Pterygotus in enviroment.jpg, https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), head and cheliceral-claw crop of a modern illustrative reconstruction, not fossil evidence adapted into an AI life reconstruction with illustrative colour and soft tissue"
+      }
+    ],
+    "o8": [
+      {
+        "file": "howdeep05-eurypterid-references/pterygotus.png",
+        "sha256": "bfb24439ad381c4ec9ecf580845b432c1c1f25d46c7c215be77d9ff65e0a37ec",
+        "parent": {
+          "file": "howdeep05-eurypterid-references/pterygotus-parent.jpg",
+          "sha256": "61f186222f3dea18440865eee5010855336f08b952c9cab5c40c8421dd928bce"
+        },
+        "license_evidence": {
+          "file": "howdeep05-eurypterid-references/pterygotus-commons.json",
+          "sha256": "1021bb7bdd50a5a1b6e53b69368207c315b9e2c44b164a358cf1093036ef1597"
+        },
+        "crop_ltrb": [
+          160,
+          270,
+          600,
+          540
+        ],
+        "title": "File:Pterygotus in enviroment.jpg",
+        "author": "Paleobiome",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Pterygotus_in_enviroment.jpg/960px-Pterygotus_in_enviroment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Pterygotus reference: Paleobiome, Pterygotus in enviroment.jpg, https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), head and cheliceral-claw crop of a modern illustrative reconstruction, not fossil evidence adapted into an AI life reconstruction with illustrative colour and soft tissue"
+      }
+    ]
+  }
+}

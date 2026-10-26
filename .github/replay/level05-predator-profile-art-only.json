@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "premise": "level_1_8-05",
+  "source": {
+    "run_id": 40205103515,
+    "sha": "2d9d52a5aa76e667b9600b97986cbe14b2e25752",
+    "key": "2026-10-25-level_1_8-05"
+  },
+  "art_only": [
+    "o5",
+    "o6"
+  ],
+  "images": {},
+  "references": {
+    "o5": [
+      {
+        "file": "level05-predator-guides/o5.png",
+        "sha256": "a85c6846817b96e60ef5375b29521185e439318d587e7a295c6d0b097a5ef4cf",
+        "parent": {
+          "file": "level05-predator-guides/o5-parent.jpg",
+          "sha256": "b4b025e6bfd14a19ea8e406738b16e36e30abb63f57d85157e3811e54b04126c"
+        },
+        "license_evidence": {
+          "file": "level05-predator-guides/o5-commons.json",
+          "sha256": "708e64d4afc5b45ae5e67a115187c51509419c020d1b0f5eaabd84415679726c"
+        },
+        "crop_ltrb": [
+          12,
+          80,
+          305,
+          265
+        ],
+        "title": "File:Moschorhinus kitchingi.jpg",
+        "author": "\u0414\u0438\u0411\u0433\u0434",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Moschorhinus_kitchingi.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Moschorhinus_kitchingi.jpg/960px-Moschorhinus_kitchingi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Moschorhinus kitchingi.jpg reference: \u0414\u0438\u0411\u0433\u0434, https://commons.wikimedia.org/wiki/File:Moschorhinus_kitchingi.jpg (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), AI-adapted from a head crop from a modern reconstruction based on the 2024 postcranial study with illustrative soft tissue and colour"
+      }
+    ],
+    "o6": [
+      {
+        "file": "level05-predator-guides/o6.png",
+        "sha256": "503d97df1c606036d9ef5a9eb8ed8659145a33eb45d70728237a118523ff92bc",
+        "parent": {
+          "file": "level05-predator-guides/o6-parent.jpg",
+          "sha256": "19e7135d6b6eb53daa0f1c45649d4c26f3c6a179c0c1015410301995a548d0ae"
+        },
+        "license_evidence": {
+          "file": "level05-predator-guides/o6-commons.json",
+          "sha256": "4441c6e9d6db00c4ea6399593338a7d0615c854c86fe73ac1c42beca7fc2621e"
+        },
+        "crop_ltrb": [
+          0,
+          0,
+          635,
+          280
+        ],
+        "title": "File:Rubidgea atrox.png",
+        "author": "Christian F. Kammerer",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Rubidgea_atrox.png",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Rubidgea_atrox.png/1280px-Rubidgea_atrox.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Rubidgea atrox.png reference: Christian F Kammerer, https://commons.wikimedia.org/wiki/File:Rubidgea_atrox.png (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/), AI-adapted from a lateral photograph of holotype RC 13, including the small original plate label with illustrative soft tissue and colour"
+      }
+    ]
+  }
+}

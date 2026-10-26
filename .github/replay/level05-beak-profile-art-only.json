@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "premise": "level_1_8-05",
+  "source": {
+    "run_id": 40205103515,
+    "sha": "2d9d52a5aa76e667b9600b97986cbe14b2e25752",
+    "key": "2026-10-25-level_1_8-05"
+  },
+  "art_only": [
+    "o1",
+    "o3"
+  ],
+  "images": {},
+  "references": {
+    "o1": [
+      {
+        "file": "level05-beaked-skull-references/o1.png",
+        "sha256": "1fbae3240868c281184e0d6695a5227c13e92c2268efc3ec09d804c6f58d69bf",
+        "parent": {
+          "file": "level05-beaked-skull-references/o1-parent.jpg",
+          "sha256": "3aeaefa9de61aec12021d8018b159690b982f6ba8f74719ef0e89cf5422cd6c9"
+        },
+        "license_evidence": {
+          "file": "level05-beaked-skull-references/o1-commons.json",
+          "sha256": "dc1a900a66edd5d3cea02b65f5675417517d5ca8a352fa4fbbe94562cd733ef3"
+        },
+        "crop_ltrb": [
+          0,
+          0,
+          799,
+          475
+        ],
+        "title": "File:Diictodon feliceps 78.jpg",
+        "author": "https://www.si.edu/object/diictodon-feliceps-owen-1876:nmnhpaleobiology_3450113",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Diictodon_feliceps_78.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Diictodon_feliceps_78.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Diictodon feliceps 78.jpg anatomical skull reference: https://www.si.edu/object/diictodon-feliceps-owen-1876:nmnhpaleobiology_3450113, https://commons.wikimedia.org/wiki/File:Diictodon_feliceps_78.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), adapted as an AI life reconstruction with illustrative soft tissue and colour"
+      }
+    ],
+    "o3": [
+      {
+        "file": "level05-beaked-skull-references/o3.png",
+        "sha256": "9ac058b1555df7c6552f9cb3f680b70452d5e8fb21b287a2c97f96e74666b2e1",
+        "parent": {
+          "file": "level05-beaked-skull-references/o3-parent.jpg",
+          "sha256": "24ee08155e5282781c0f1730b59012c180ed4954de16cf19df50d293b7a99dea"
+        },
+        "license_evidence": {
+          "file": "level05-beaked-skull-references/o3-commons.json",
+          "sha256": "9cbd66386fb39bd91eec38b74b74a7aba49723a400883f809d3d14f93575a672"
+        },
+        "crop_ltrb": [
+          0,
+          0,
+          800,
+          489
+        ],
+        "title": "File:Dicynodon lacerticeps Owen.jpg",
+        "author": "https://www.si.edu/object/dicynodon-lacerticeps-owen:nmnhpaleobiology_3450212",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "page": "https://commons.wikimedia.org/wiki/File:Dicynodon_lacerticeps_Owen.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Dicynodon_lacerticeps_Owen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Dicynodon lacerticeps Owen.jpg anatomical skull reference: https://www.si.edu/object/dicynodon-lacerticeps-owen:nmnhpaleobiology_3450212, https://commons.wikimedia.org/wiki/File:Dicynodon_lacerticeps_Owen.jpg (CC0, https://creativecommons.org/publicdomain/zero/1.0/), adapted as an AI life reconstruction with illustrative soft tissue and colour"
+      }
+    ]
+  }
+}
