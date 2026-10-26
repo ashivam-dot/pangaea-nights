@@ -5464,7 +5464,7 @@
         "premise": "survive_night-05",
         "replay": ".github/replay/survive05-reviewed-moonlight-v1.json"
       },
-      "stage": "building",
+      "stage": "held",
       "attempts": 2,
       "editorial_holds": [
         {
@@ -5587,6 +5587,16 @@
             "editorial_replan": "evidence/pangaea-nights/survive05-moonlight-repair/final-staging.json",
             "remaining": "Current cloud picture/voice/render and complete audiovisual checks"
           }
+        },
+        {
+          "id": "survive05-cached-input-qa-held",
+          "run_id": 40277643057,
+          "observed_at": "2026-10-26T06:19:12+00:00",
+          "reason": "Exact cached preview40277643057 fails the unchanged image gates: the log crop has aesthetic3.9257 below4.6 and no retained o1/o7 pair meets the0.9 distinctness ceiling (best0.91099). No complete MP4 was produced. Replace only the log view and small-fire composition, preserving every spoken line, all passing siblings, the negative gate report and every final gate.",
+          "evidence": {
+            "ladder-out-A/gates.json": "b7a7dfa153a0a2ba65b0c9b89a7bab98845582468cd5fa6f939e7fcebea51daa"
+          },
+          "kind": "failed_production_quality_report"
         }
       ],
       "repair_history": [
@@ -5718,7 +5728,10 @@
       "run_id": 40277643057,
       "dispatch_run_id": 40277643057,
       "dispatch_bound_at": "2026-10-26T06:10:26+00:00",
-      "cloud_status": "completed"
+      "cloud_status": "completed",
+      "problems": [
+        "Exact cached preview40277643057 fails the unchanged image gates: the log crop has aesthetic3.9257 below4.6 and no retained o1/o7 pair meets the0.9 distinctness ceiling (best0.91099). No complete MP4 was produced. Replace only the log view and small-fire composition, preserving every spoken line, all passing siblings, the negative gate report and every final gate."
+      ]
     },
     {
       "repo": "pangaea-nights",
@@ -5982,5 +5995,5 @@
     "held": 3,
     "mode": "publish"
   },
-  "updated_at": "2026-10-26T06:16:27+00:00"
+  "updated_at": "2026-10-26T06:19:12+00:00"
 }
