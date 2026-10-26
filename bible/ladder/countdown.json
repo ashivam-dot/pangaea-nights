@@ -463,8 +463,8 @@
      "label": "Snowfield at the equator",
      "vo": "On the equator's frozen snow field.",
      "danger": 3,
-     "image_prompt": "An empty level Cryogenian snowfield seen close above its unbroken surface. Shallow wind-carved sastrugi form fine parallel white ridges across the foreground and continue onto a broad flat snowy plain. Fine granular snow crystals are readable on the near ridges. A very narrow strip of pale cyan sky lies at the upper edge, a tiny cold sun diffused through haze. A restrained warm reflection grazes one snow ridge. The entire ground is continuous snow with no exposed dark gap. Only snow, ice and sky.",
-     "art_direction": "Close granular white sastrugi on a continuous flat snowfield, a narrow pale cyan sky and restrained warm reflected sunlight."
+     "image_prompt": "Elevated wide natural-history landscape over a vast level Cryogenian snowfield. The broad empty white plain continues to a distant level horizon under a narrow band of pale cyan sky. Irregular shallow wind-scoured patches and a few soft low asymmetric snowdrifts interrupt the near surface. The drifts have unequal rounded edges and face different directions, separated by large smooth snowy patches. Tiny granular frost catches the low amber sunlight along the closest drift. Only continuous unbroken natural snow and empty sky fill this ancient equatorial landscape.",
+     "art_direction": "Elevated wide view of a level white snowfield with sparse unequal natural snowdrifts and large smooth snow patches under a narrow pale sky, amber low sunlight."
     },
     {
      "n": 4,
@@ -478,8 +478,8 @@
      "label": "Drifting ice floe",
      "vo": "A slab of drifting sea ice.",
      "danger": 5,
-     "image_prompt": "An isolated small flat sea-ice floe drifting in a broad pool of slushy grey-green seawater. An elevated oblique documentary composition shows the entire irregular pale blue slab and all of its edges, surrounded on every side by water and tiny loose ice fragments. Subtle shallow waves and frothy slush touch its thin vertical sides. The slab occupies the middle half of the frame, with green-grey water in every corner. A restrained warm sunset reflection lies on the water at the upper right. Empty Cryogenian ocean detail, only one separate slab and natural slush.",
-     "art_direction": "Elevated view of one fully separate pale blue ice slab surrounded by grey-green slushy seawater, warm reflected sunset at the upper right."
+     "image_prompt": "Natural-history ocean view of one low irregular crescent-shaped sea-ice floe in cold grey-green water. Its eroded perimeter has many uneven rounded melt scallops, one broad curved bay and several jagged narrow projections. The ice has a rough porous granular surface with trapped air bubbles, worn shallow ridges and translucent pale-blue edges of unequal thickness. The asymmetric floe lies diagonally across the near water, with small broken slush fragments drifting past every side. Soft amber sunset reflection shimmers in the rippled water beyond the floe. A completely empty ancient Cryogenian ocean with only natural ice, slush and water.",
+     "art_direction": "One asymmetric crescent-shaped porous ice floe with uneven melt-scalloped edges and jagged projections in rippling grey-green water, soft amber sunset reflections."
     },
     {
      "n": 6,

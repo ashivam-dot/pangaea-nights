@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "premise": "countdown-06",
+  "source": {
+    "run_id": 40218080484,
+    "sha": "bbb5a37e495b25e7038374cace91805f05b31d43",
+    "key": "2026-10-25-countdown-06"
+  },
+  "art_only": [
+    "o3",
+    "o5"
+  ],
+  "images": {}
+}
