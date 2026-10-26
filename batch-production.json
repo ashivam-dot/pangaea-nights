@@ -5718,7 +5718,7 @@
       "run_id": 40277643057,
       "dispatch_run_id": 40277643057,
       "dispatch_bound_at": "2026-10-26T06:10:26+00:00",
-      "cloud_status": "in_progress"
+      "cloud_status": "completed"
     },
     {
       "repo": "pangaea-nights",
@@ -5982,5 +5982,5 @@
     "held": 3,
     "mode": "publish"
   },
-  "updated_at": "2026-10-26T06:15:25+00:00"
+  "updated_at": "2026-10-26T06:15:27+00:00"
 }
