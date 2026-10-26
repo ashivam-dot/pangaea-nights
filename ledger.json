@@ -540,7 +540,15 @@
    "frame0": "EqAaHqImQSbZJRMZFymsJPkcUKFVK6qodih+kXGnp5g+qCQo8SZTFBKt/KS9pXqlGCSIKesn6qJCqpyhX6VTHnemGqe0Ea4loiKmKiImWS45I1kgOB2LGoAl+q8hJo4lialUKtukTJ4UKOMmfaXKJd6mCiBnoNIiCKi4oEuiuCcWqJwOB6QiowWezyQaqWokNCEFqAEeF6B5p8ilIKUHH9kp56PnkoqrXSuYpD8oSKK0pnuiWShBIGa50J8xqZUawhhMH0IjW7I6KQsa1KOhJB8kIiXOrYwmWCgLKJImbKvFE8qdxSHgpBgYHiELl/odvaRzKgIncafjoU8UuByEqOkh6SgQpC4rwahgLVMlDysjqMGoCanZpp6hoqWWpYwpUaTMpQSntyueqX6kUZ49JLggAx8FqFmsgiYjmvcVkylHo+ih9iLXptGkD6X5puQtJqTfpMcoNSVwoRiqDCBNpaGvqyJKqQ4d3yU+J7ao0R/tDmCk3CRKpIQefydtovYf6KMYJLUmiiV1K1gdUiiepuGmOaQooOMer6CgoyYkhiJrICoeb5spir6mopv4qTinOyhCJ4ejyKA4KXGdW6RKom4jayPsn8Kmsh8LJ9unsZzNI04qtaWRpQcVkqdVLMIlxY+XKlIm4qjoIDqpFKT4KR+jNyTdl6qVQ6miJNSo4h7JmvWl/iz9GaikswbdmvAtris1p5We/BmOqQyoN6ADm4gq1SgTpfwfUaVXJCEdrSYBKQkoBirfnH8mqCZyq8wgjB0QqM0n5pw3pgCqP6i3qTevN6EgJNioxyVJpoOVPixnIUamLiVvHHgMMByUqiwoXi0Un5qdrh7OJ2wnUCAGrPMp4y//GnOhliGapJ8b4Cxfjb4ZuaWEJZ4idafppm8jop3go58o0SsrqVSiH6IzJooox5vZJOcmpyKcJZQa5KZAhAaowZsuKUQpJKpCoF+lkCl0HBClWitWmyWk+qPkpo+WkCIJJ9QoIyc7o2QpWKDIKb0fiyRKJZchy6H8IDKppCHWJkOo6BMUpwimQSY8IuEkFSSxqIKpmxlvne+nvyGoI2go3CZvo4WfxyaVqpEjMSh+qC0tKp4poj+oKSBJG0cnU52rJNEqVRT3qXwcbK2VJCQmyyCGJmutOSbHpqqipattGvym/qp/pqUdvaiCl2UjFocgokwk1KQnpisoCB2DIEcL0CG+pAAkcqb1IQipdSceoeelsKtpG7IcNZivqJEmTQqJJEYagKhmoH0pZBKfKi+o1ym/qsmlj5GxoZCoYKCSJW2g8JwunwOhPqwDKG4lPiHaJlmsqyYGrAIg6yddKW4lNpyJo+UYyiYPIriq5C46n1+ehB9kpSko0pdGpQ==",
    "related": "https://www.youtube.com/watch?v=Y_zpVf53Hwc",
    "run": "40147925087",
-   "checkpoints": {},
+   "checkpoints": {
+    "24": {
+     "views": 173,
+     "viewed_pct": null,
+     "source": "data-api",
+     "age_h": 29.5,
+     "at": "2026-10-26T06:31:35Z"
+    }
+   },
    "av_review_sha256": "996c5001d1b45d00609fffce85d3351c035e01ad839cdab1cab6391321044ae5",
    "owner_readback": {
     "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
@@ -566,7 +574,15 @@
    "frame0": "1KSlqYWgzB9XqFmnVCRlKO0V8SU/JkKoryzSqIEm3ySCKWAmwioxJ6Osc6QNJQOpY6liJt8q0KanqjQV7iRLl78o5qmyKUUoQaXEKpwfqCRrpEigeiTMIXaejZ4IJ9sd6iXaJLYc2SYsIYWjeposIekXYyngqfMpKSpdod+qMB9rqB+r6aiYoykmyhzQrc6pPqgIqRKWPqghphOrG51IjNuh8aZ3pmGtzBvmFaol/qdiKD+k5iVvowS5CqXUq68m2iIYp6mtPJ7bJvYdKhoQK3Gj2BulqhAnUyhAkeUCCamCqK2nbajHpQWqxqCALRmgBKd/LTon0p7aJR+iU5QHFKqrSqLYIRydkxybLTCq/aF1pUaplyV/GD+dWqUNKBMnjqJiGWgiDiz/oNUTTia4Js6sUqlII8AgwitFpYKlUhtBH5QlHi0CI5sewhzaHocochnoJM2goKHBGRQd4aYbpAux8CB6JSarUSPIpZ+lG5pNJBUkRyHXqRupNY7tKIigUKPKqdyj2x9GJiulcKkmjfQizh+uqQIdDincoKQr1qWUmTQjdqZGpY8dGaJfme6kTKb4JnYs/idELh0saR+XqMUXhiXfHfel9R2KJSGgiRtBpCgqqqRpKnWjVx9rI2iu2aV/JIsqiKBIJcSFxSRnqDKmn6KilHuoNiWolyQh5KWOqWsiga1lo04aLybBqKodJCFql5GjACh2IJ6VvCbfJLooV5/WneOh0yRFpaioK6HWJN8kHSNHKK8gDyLyqpcUEaecISCbVJ8nKEWpKCAOqMyriSTpKfEoKiZuoC+quScnquiohCAJLI4rECg1qq0jmS1LpjSeJSKGoaYhAaKlpr4lHTFUqtom/aGFoZ4nGqB1LASi2ibIpiwg6yA0JoOfdylPp7UhHyn6pH6gFCUcpDIfySRBq4ykjSx4oa6s0aIbIu2spKE9Kj4kh5yQqZ0l/CtPIamkhSu4nuohcSC8pIedB6w9KOko7SdaoRSZO6IKLwwklBmcmZ4kqqysoSyhDCOxnrKpRqEloUuj/6cvqmiooiJKpl+quayHo4asDK1FJsUohSD0oPqhip3FqmweLZUQqKksGSYcrSilY6pmo06iNiFKqxGq2aGrHkErBKzRJkygNyXZliyr4aOQp1kngqxwGeSpoJnapE4pgKj9pFkiXyefJBApXSbwpCYjJ6S0GtaMTCRSJHumgSBeJEaldS0HGVsiwKevnwutnyhkJ2AsCKDHp1Os66K0JA0sCSaOILupkSdAqDIhV50QJoOnBCUtq7Yj8ai9pKUV6qKcFEGpGqGEKsqlASmDps4pQiP3GE0no6Tep+qhEBq0GPam8CuwnQ+ha6eyJsiinJh6pA==",
    "related": "https://www.youtube.com/watch?v=IRsQO5L4rz8",
    "run": "40148479040",
-   "checkpoints": {},
+   "checkpoints": {
+    "24": {
+     "views": 2,
+     "viewed_pct": null,
+     "source": "data-api",
+     "age_h": 24.0,
+     "at": "2026-10-26T06:31:35Z"
+    }
+   },
    "av_review_sha256": "034416b3156175049b0341d6dc28cbd9f9b0328587ec0348a4482487a5390364",
    "owner_readback": {
     "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
@@ -2494,6 +2510,40 @@
      "level_1_8-16",
      "survive_night-01",
      "countdown-02"
+    ],
+    "weights": {},
+    "queue": [],
+    "needs_bank": []
+   },
+   {
+    "at": "2026-10-26T06:31:35Z",
+    "day": "2026-10-26",
+    "checkpoints": [
+     {
+      "premise": "how_deep-01",
+      "h": 24,
+      "views": 173,
+      "viewed_pct": null,
+      "source": "data-api",
+      "age_h": 29.5,
+      "at": "2026-10-26T06:31:35Z"
+     },
+     {
+      "premise": "level_1_8-16",
+      "h": 24,
+      "views": 2,
+      "viewed_pct": null,
+      "source": "data-api",
+      "age_h": 24.0,
+      "at": "2026-10-26T06:31:35Z"
+     }
+    ],
+    "decisions": [],
+    "comments": [],
+    "released_today": [
+     "how_deep-02",
+     "level_1_8-13",
+     "survive_night-02"
     ],
     "weights": {},
     "queue": [],
