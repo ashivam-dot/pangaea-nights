@@ -1626,7 +1626,7 @@
       "series": "level_1_8",
       "slot": "A",
       "target": "2026-10-26T14:30:00Z",
-      "stage": "scheduled",
+      "stage": "public",
       "inputs": {
         "dry_run": "true",
         "slot": "A",
@@ -1885,7 +1885,7 @@
         "url": "https://www.youtube.com/shorts/fPrV4z_Yf_E",
         "existing": false,
         "title": "Asteroid Hits Tonight — Level 1 to 8 Hideout: Where Do You Hide? ☄️",
-        "privacy": "private",
+        "privacy": "public",
         "publish_at": "2026-10-26T14:30:00Z",
         "made_for_kids": null,
         "self_declared_made_for_kids": false,
@@ -1893,14 +1893,15 @@
         "readback_problems": [],
         "owner_readback": {
           "channel_id": "UCtVG78IUTqvP9rH-LLies0A",
-          "privacyStatus": "private",
-          "publishAt": "2026-10-26T14:30:00Z",
+          "privacyStatus": "public",
+          "publishAt": null,
           "madeForKids": false,
           "selfDeclaredMadeForKids": false,
           "containsSyntheticMedia": null,
           "uploadStatus": "processed"
         }
-      }
+      },
+      "public_verified_at": "2026-10-26T15:18:33.470639+00:00"
     },
     {
       "repo": "pangaea-nights",
@@ -5995,5 +5996,5 @@
     "held": 4,
     "mode": "publish"
   },
-  "updated_at": "2026-10-26T15:18:31+00:00"
+  "updated_at": "2026-10-26T15:18:37+00:00"
 }
