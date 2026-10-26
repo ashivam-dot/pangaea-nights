@@ -2347,6 +2347,21 @@
     "refusals": [
      "Art-only collection cannot publish"
     ]
+   },
+   {
+    "at": "2026-10-26T05:54:41Z",
+    "mode": "dry",
+    "slot": "A",
+    "premise": "how_deep-05",
+    "run": "40274368620",
+    "ok": false,
+    "failures": [
+     "Art collected only; no video or audiovisual release approval"
+    ],
+    "published": false,
+    "refusals": [
+     "Art-only collection cannot publish"
+    ]
    }
   ],
   "alerts": [
