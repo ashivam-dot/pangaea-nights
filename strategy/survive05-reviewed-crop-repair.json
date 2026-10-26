@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-26T05:50:00.159102+00:00",
+  "source_art_run": 40272367337,
+  "scope": "Same-shot crop removes the held upper broadleaf canopy, preserving the lycopod log, water and fern detail. The exact parent, source plan/report/artifact markers, refusal, crop bounds and direct crop review remain hash-bound. Current image QA and full final audiovisual review remain mandatory. All other source images are directly reviewed retained originals.",
+  "manifest": ".github/replay/survive05-reviewed-moonlight-v1.json",
+  "speech_changed": false,
+  "quality_thresholds_changed": false,
+  "release_approval": false,
+  "local_tests": {
+    "focused": 77,
+    "full": 439
+  }
+}

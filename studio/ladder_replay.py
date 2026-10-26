@@ -155,6 +155,10 @@ def candidates(replay, job, model, size):
                 raise ValueError("local closing reprise differs from its exact original image")
         local = local_generation(folder, row, job, model, size, replay["source"]["key"]) \
             if row.get("generation") else None
+        editorial = None
+        if row.get("editorial_crop"):
+            from . import ladder_editorial
+            editorial = ladder_editorial.verify(folder, row, job, model, size, replay["source"]["key"])
         if not local and (type(row.get("artifact_id")) is not int or row["artifact_id"] <= 0):
             raise ValueError("replay image lacks original artifact provenance")
         if row["take"] in seen_takes or row["sha256"] in seen_hashes:
@@ -183,6 +187,8 @@ def candidates(replay, job, model, size):
                 or origin.get("key") != replay["source"]["key"]:
             raise ValueError("cached image lacks its exact cloud source and seed key")
         provenance["source"] = local or origin
+        if editorial:
+            provenance["editorial_crop"] = editorial
         found.append((img, row["exposure"], row["take"], provenance))
     return found
 

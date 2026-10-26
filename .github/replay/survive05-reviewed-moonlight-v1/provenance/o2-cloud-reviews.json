@@ -1,0 +1,43 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-0/o1.png",
+      "image_sha256": "d22d9362e073a12433779a4fb90077dbb8c0337549c35b0a58882755a14e558d",
+      "decision": "pass",
+      "reason": "Direct native-resolution inspection: towering tree-fern trunks with fine divided fronds, natural fibrous bark, roots, litter and shallow swamp water. Stars above the canopy support the pale moonlit setting. No people, clothing, equipment, lettering or fire. Input art only; full AV and all remaining gates still apply."
+    },
+    {
+      "file": "ladder-img-A-0/o1-alt1.png",
+      "image_sha256": "a1ecba35de46768f26d148a20f1fdc59c7830d1903e1ffb0e0d99c59e8bc247e",
+      "decision": "pass",
+      "reason": "Direct native-resolution inspection: towering tree-fern trunks with fine divided fronds, natural fibrous bark, roots, litter and shallow swamp water. Stars above the canopy support the pale moonlit setting. No people, clothing, equipment, lettering or fire. Input art only; full AV and all remaining gates still apply."
+    },
+    {
+      "file": "ladder-img-A-2/o3.png",
+      "image_sha256": "7f816f27b473cd5b4cf660236212028ce0b67415a2665aafe890d45b9e735064",
+      "decision": "hold",
+      "reason": "Direct native-resolution inspection: modern broad-leaf tree crowns and woody branching frame the upper background, contradicting the Carboniferous coal-forest setting. The foreground bark also reads as rectangular modern scales rather than a clear repeated diamond leaf-scar pattern. Keep the automated QA results but refuse these exact pixels for editorial use. Preserve speech and replace only this log scene."
+    },
+    {
+      "file": "ladder-img-A-2/o3-alt1.png",
+      "image_sha256": "c3dc8ad59629ea7a87bb118870a00ec9a13bd77951c87e27db9cb21372b42a18",
+      "decision": "hold",
+      "reason": "Direct native-resolution inspection: modern broad-leaf tree crowns and woody branching frame the upper background, contradicting the Carboniferous coal-forest setting. The foreground bark also reads as rectangular modern scales rather than a clear repeated diamond leaf-scar pattern. Keep the automated QA results but refuse these exact pixels for editorial use. Preserve speech and replace only this log scene."
+    },
+    {
+      "file": "ladder-img-A-1/o2.png",
+      "image_sha256": "d986d673f5e89988d548551ae8fcba3d22127dfd41704ec2910a1db60e55b220",
+      "decision": "pass",
+      "reason": "Native paired review: empty uninterrupted sandbar, river, fern understory and tall trees under an explicit moon and starry sky. No fire, people, text or modern objects. The wide woodland silhouette does not support a finer taxonomic identification; the requested unlit sandbar is clearly shown. Source art only."
+    },
+    {
+      "file": "ladder-img-A-1/o2-alt1.png",
+      "image_sha256": "545eab689dc87bf2406dc05eddad16165cf0d6b8a1893974fbab475d64e9a72f",
+      "decision": "pass",
+      "reason": "Native paired review: empty uninterrupted sandbar, river, fern understory and tall trees under an explicit moon and starry sky. No fire, people, text or modern objects. The wide woodland silhouette does not support a finer taxonomic identification; the requested unlit sandbar is clearly shown. Source art only."
+    }
+  ],
+  "at": "2026-10-26T05:07:22.865487+00:00",
+  "scope": "Source paintings only",
+  "release_approval": false
+}

@@ -152,6 +152,82 @@ def test_cache_hashes_and_prompt_binding_cannot_be_ignored(cached):
     assert replay.candidates(data, job, "different model", (8, 8)) == []
 
 
+@pytest.fixture
+def cropped(cached):
+    path, job, data, exposure = cached
+    folder = path.parent
+    row = data['images']['o3'][0]
+    data['images']['o3'] = [row]
+    data['cached_only'] = True
+    parent = folder / 'parent.png'
+    Image.fromarray(np.arange(192, dtype=np.uint8).reshape(8, 8, 3)).save(parent)
+    with Image.open(parent) as source:
+        source.crop((0, 2, 6, 8)).resize((8, 8), Image.Resampling.LANCZOS).save(folder / row['file'])
+    row['sha256'] = replay.digest(folder / row['file'])
+    row['source'] = data['source']
+    proof = {'schema': 1, 'operation': 'crop_and_resize', 'resampling': 'Pillow LANCZOS',
+             'source_image': job['id'], 'source_prompt': job['prompt'], 'source': data['source'],
+             'crop_ltrb': [0, 2, 6, 8], 'output_size': [8, 8],
+             'parent_refusal_reason': 'Modern trees in the top edge', 'excluded_defects': ['Top edge removed']}
+    files = {'plan': {'key': 'original-key', 'premise': {'id': data['premise']}},
+             'report': {'premise': data['premise'], 'model': 'test', 'images': [{
+                 'id': 'o3', 'ok': True, 'kept': [{'plate': 'parent.jpg', 'take': 0}],
+                 'takes': [{'exposure': exposure}]}]},
+             'parent_reviews': {'images': [{'decision': 'hold', 'image_sha256': replay.digest(parent),
+                                           'reason': proof['parent_refusal_reason']}]},
+             'crop_reviews': {'images': [{'decision': 'pass', 'image_sha256': row['sha256']}]},
+             'plan_artifact': {'id': 98, 'run_id': 123, 'source_sha': 'a' * 40},
+             'image_artifact': {'id': 99, 'run_id': 123, 'source_sha': 'a' * 40}}
+    for label, content in files.items():
+        f = folder / f'{label}.json'; f.write_text(json.dumps(content))
+        proof[label] = {'file': f.name, 'sha256': replay.digest(f)}
+    proof['parent'] = {'file': parent.name, 'sha256': replay.digest(parent), 'source_file': parent.name}
+    receipt = folder / 'crop.json'; receipt.write_text(json.dumps(proof))
+    row['editorial_crop'] = {'file': receipt.name, 'sha256': replay.digest(receipt)}
+    return job, data, row, proof, receipt
+
+
+def test_crop_preserves_refusal_provenance_and_still_receives_current_qa(cropped, tmp_path, monkeypatch):
+    job, data, _, _, _ = cropped
+    found = replay.candidates(data, job, 'test', (8, 8))
+    assert found[0][3]['editorial_crop']['parent_refusal_reason'] == 'Modern trees in the top edge'
+    assert found[0][3]['source']['run_id'] == 123
+    monkeypatch.setattr(qa, 'review', lambda *a: verdict(['text 0.9']))
+    monkeypatch.setattr(li.sdcpp, 'Server', lambda *a: pytest.fail('cached crop loaded a painter'))
+    report = li.generate({'id': data['premise']}, 'original-key', tmp_path/'crop', 0, 1,
+                         model='test', replay=data)
+    assert not report['images'][0]['ok'] and not report['images'][0]['kept']
+
+
+@pytest.mark.parametrize('damage', ['pixels', 'bounds', 'boolean', 'parent', 'source', 'refusal', 'shot', 'artifact', 'review'])
+def test_crops_cannot_conceal_changed_pixels_sources_or_refusals(cropped, damage):
+    job, data, row, proof, receipt = cropped
+    if damage == 'pixels':
+        Image.new('RGB', (8, 8), 'green').save(receipt.parent / row['file'])
+        row['sha256'] = replay.digest(receipt.parent / row['file'])
+    elif damage == 'bounds':
+        proof['crop_ltrb'] = [0, 0, 8, 8]
+    elif damage == 'boolean':
+        proof['crop_ltrb'][0] = False
+    elif damage == 'parent':
+        (receipt.parent / proof['parent']['file']).write_bytes(b'changed')
+    elif damage == 'source':
+        proof['source'] = {**proof['source'], 'key': 'other-key'}
+    elif damage == 'refusal':
+        proof['parent_refusal_reason'] = 'No defects'
+    elif damage == 'shot':
+        proof['source_image'] = 'o4'
+    elif damage == 'artifact':
+        row['artifact_id'] += 1
+    else:
+        f = receipt.parent / proof['crop_reviews']['file']
+        d = json.loads(f.read_text()); d['images'][0]['decision'] = 'hold'; f.write_text(json.dumps(d))
+        proof['crop_reviews']['sha256'] = replay.digest(f)
+    receipt.write_text(json.dumps(proof)); row['editorial_crop']['sha256'] = replay.digest(receipt)
+    with pytest.raises(ValueError):
+        replay.candidates(data, job, 'test', (8, 8))
+
+
 def test_explicit_cached_only_repair_never_paints_unused_alternates(cached, tmp_path, monkeypatch):
     _, job, data, _ = cached
     data['cached_only'] = True

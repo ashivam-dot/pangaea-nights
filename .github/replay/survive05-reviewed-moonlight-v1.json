@@ -1,0 +1,310 @@
+{
+  "schema": 1,
+  "premise": "survive_night-05",
+  "cached_only": true,
+  "source": {
+    "run_id": 40211267149,
+    "sha": "bbb5a37e495b25e7038374cace91805f05b31d43",
+    "key": "2026-10-25-survive_night-05"
+  },
+  "images": {
+    "o1": [
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o1.png",
+        "sha256": "d22d9362e073a12433779a4fb90077dbb8c0337549c35b0a58882755a14e558d",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 52.0,
+          "raw_p99": 186.0,
+          "gamma": 0.424,
+          "spread": 131.0
+        },
+        "artifact_id": 12628907361,
+        "prompt": "An empty natural-history view among the rough trunks of towering Carboniferous tree ferns. Dense emerald fronds arch above the frame, tangled natural roots and leaf litter fill the close foreground, and still shallow swamp water lies behind them. Pale amber moonlight filters through a canopy gap and reflects on the damp bark. Only trunks, fronds, roots, water and night sky occupy this moonlit forest. Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270372416,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        }
+      },
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o1-alt1.png",
+        "sha256": "a1ecba35de46768f26d148a20f1fdc59c7830d1903e1ffb0e0d99c59e8bc247e",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 46.2,
+          "raw_p99": 186.0,
+          "gamma": 0.394,
+          "spread": 122.0
+        },
+        "artifact_id": 12628907361,
+        "prompt": "An empty natural-history view among the rough trunks of towering Carboniferous tree ferns. Dense emerald fronds arch above the frame, tangled natural roots and leaf litter fill the close foreground, and still shallow swamp water lies behind them. Pale amber moonlight filters through a canopy gap and reflects on the damp bark. Only trunks, fronds, roots, water and night sky occupy this moonlit forest. Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270372416,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        }
+      }
+    ],
+    "o2": [
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o2.png",
+        "sha256": "d986d673f5e89988d548551ae8fcba3d22127dfd41704ec2910a1db60e55b220",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 70.5,
+          "raw_p99": 185.0,
+          "gamma": 0.524,
+          "spread": 130.0
+        },
+        "artifact_id": 12628963386,
+        "prompt": "An empty bare pale sandbar crosses a slow river through a Carboniferous coal forest at night. Fine sand grains and low ripple ridges fill the near foreground, a narrow dark river channel curves around the sandbar, and distant emerald clubmoss trunks border the far bank. A small pale amber moon above the canopy gap gives reflected moonlight to the sand. Only undisturbed sand, river, distant trees and starry sky. Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270372416,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        }
+      },
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o2-alt1.png",
+        "sha256": "545eab689dc87bf2406dc05eddad16165cf0d6b8a1893974fbab475d64e9a72f",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 75.7,
+          "raw_p99": 173.0,
+          "gamma": 0.555,
+          "spread": 133.0
+        },
+        "artifact_id": 12628963386,
+        "prompt": "An empty bare pale sandbar crosses a slow river through a Carboniferous coal forest at night. Fine sand grains and low ripple ridges fill the near foreground, a narrow dark river channel curves around the sandbar, and distant emerald clubmoss trunks border the far bank. A small pale amber moon above the canopy gap gives reflected moonlight to the sand. Only undisturbed sand, river, distant trees and starry sky. Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270372416,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        }
+      }
+    ],
+    "o3": [
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o3-log-crop-preview.png",
+        "sha256": "65206cab5dee9853a22df8ed1e323bb37c6e47fde07fa4f4f723cccf9c02ad01",
+        "model": "klein4b-q8-768",
+        "take": 3,
+        "exposure": {
+          "raw_mean": 44.4,
+          "raw_p99": 177.0,
+          "gamma": 0.385,
+          "spread": 149.0
+        },
+        "artifact_id": 12629933406,
+        "prompt": "Tight high oblique natural-history view of one fallen giant Lepidodendron trunk spanning dark Carboniferous swamp water. The broad trunk fills the lower four fifths of the frame, extending from the near lower left toward the far upper right. Its intact grey-brown surface is covered in large clear diamond-shaped leaf scars arranged in offset diagonal rows; each raised elongated diamond has a small central leaf mark. This repeating rhombus pattern follows the curved trunk surface continuously. Coarse fibrous breaks at the far end and a few short bare branch stubs remain natural. A narrow background strip contains only cool dark water, straight clubmoss trunks and fine feathery tree-fern fronds. The living tree crowns lie outside this tight view. Pale amber reflected moonlight reveals the near leaf scars, with subdued emerald-blue moonlit water beyond. Only the log, finely divided fern fronds, clubmoss trunks and still water occupy the composition. Close oblique detail of a fallen Lepidodendron trunk with repeated diamond leaf scars, a narrow strip of dark water and feathery fern fronds, reflected amber moonlight and cool emerald shade. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40272367337,
+          "sha": "0849ff267fc2d0f7bcfe46b01b74b7883febcdf9",
+          "key": "2026-10-25-survive_night-05"
+        },
+        "editorial_crop": {
+          "file": "survive05-reviewed-moonlight-v1/art/o3-crop-receipt.json",
+          "sha256": "19067d83e9cdb3f8c1f6e567cd579a583f9143847ae96737832edf7b16e833df"
+        }
+      }
+    ],
+    "o4": [
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o4.png",
+        "sha256": "43e62c5791d00783643a94e9df59758a4df19b69fcf42252c4d293933db9a296",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 67.9,
+          "raw_p99": 210.0,
+          "gamma": 0.509,
+          "spread": 129.0
+        },
+        "artifact_id": 12628708764,
+        "prompt": "Low natural-history view beside a broad Arthropleura trackway pressed into damp Carboniferous leaf litter. One long low flattened millipede crawls away toward the upper right, its continuous oval-armoured body made of many similar overlapping segments and many short walking legs beneath both sides. Its small head is low and partly hidden by ferns. Pale amber moonlight picks out the near tracks and leaf veins in the cool moonlit forest. Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270411073,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        }
+      },
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o4-alt1.png",
+        "sha256": "61c76657291bf515e3e43b9cb3e342c3cf371a11ada7489c8032409adf652321",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 76.2,
+          "raw_p99": 231.0,
+          "gamma": 0.557,
+          "spread": 130.0
+        },
+        "artifact_id": 12628708764,
+        "prompt": "Low natural-history view beside a broad Arthropleura trackway pressed into damp Carboniferous leaf litter. One long low flattened millipede crawls away toward the upper right, its continuous oval-armoured body made of many similar overlapping segments and many short walking legs beneath both sides. Its small head is low and partly hidden by ferns. Pale amber moonlight picks out the near tracks and leaf veins in the cool moonlit forest. Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270411073,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        }
+      }
+    ],
+    "o5": [
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o5.png",
+        "sha256": "a5533404232a15ac1b9e4fb46c722df34c3537a3f21557d639cb027b76d1c588",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 67.7,
+          "raw_p99": 231.0,
+          "gamma": 0.508,
+          "spread": 139.0
+        },
+        "artifact_id": 12628039956,
+        "prompt": "Natural-history side view of one giant Meganeura griffinfly perched on a rough clubmoss branch above dark Carboniferous swamp water. Its elongated slender insect abdomen, six thin legs, two large compound eyes and four long translucent densely veined wings are clear against distant emerald tree ferns. Two wings extend to each side of the thorax. Reflected pale amber moonlight catches the wing veins in the cool moonlit canopy. Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270411073,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        }
+      }
+    ],
+    "o6": [
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o6.png",
+        "sha256": "fce5e6dee5b81bf66ae0cb552c38b8441a5bdfbac89f364a4a47c61be8bba9a4",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 52.1,
+          "raw_p99": 191.0,
+          "gamma": 0.424,
+          "spread": 98.0
+        },
+        "artifact_id": 12628093017,
+        "prompt": "Close environmental detail of one empty shallow hollow in completely dry crumbly brown peat between thick Carboniferous clubmoss roots. The hollow floor consists of dry fibrous plant fragments and curled brittle fern leaves, with clear coarse texture and uneven root ridges around its rim. The dry earth occupies nearly the whole frame, with a small emerald moonlit canopy patch high above. Pale amber moonlight makes the dry peat fibres readable. Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270411073,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        }
+      },
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o6-alt1.png",
+        "sha256": "55f232ae582085af04f48821848012a4c808b6b25ef8bb0965c492118ef32093",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 52.7,
+          "raw_p99": 166.0,
+          "gamma": 0.427,
+          "spread": 98.0
+        },
+        "artifact_id": 12628093017,
+        "prompt": "Close environmental detail of one empty shallow hollow in completely dry crumbly brown peat between thick Carboniferous clubmoss roots. The hollow floor consists of dry fibrous plant fragments and curled brittle fern leaves, with clear coarse texture and uneven root ridges around its rim. The dry earth occupies nearly the whole frame, with a small emerald moonlit canopy patch high above. Pale amber moonlight makes the dry peat fibres readable. Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270411073,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        }
+      }
+    ],
+    "o7": [
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o7.png",
+        "sha256": "bbb9b22c978433051c7d58bf2879dc86ae171bb45a4bb0af563b7f95fa9aa77a",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 27.1,
+          "raw_p99": 113.0,
+          "gamma": 0.301,
+          "spread": 92.0
+        },
+        "artifact_id": 12628574219,
+        "prompt": "A small controlled fire of a few short sticks sits on a damp bare mud patch at the edge of a Carboniferous fern swamp at night. Modest low orange flames and a few sparks are restricted to the small fire. Dark still water and towering tree-fern trunks recede into cool emerald-black moonlit shade. A narrow gap above the fronds reveals a dark indigo starry sky and a pale moon, with subdued neutral reflected moonlight on the nearby mud and bark. Only the small fire, prehistoric plants, natural ground and swamp water fill this night scene. Small controlled fire on damp mud beside dark swamp water, under a starry moonlit fern canopy with cool readable shadows. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270411073,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        }
+      },
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o7-alt1.png",
+        "sha256": "1bcc72b09a8624715f1b14846845ef8d8976648ac26a06c16fcb809f57342cee",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 23.9,
+          "raw_p99": 101.0,
+          "gamma": 0.3,
+          "spread": 77.0
+        },
+        "artifact_id": 12628574219,
+        "prompt": "A small controlled fire of a few short sticks sits on a damp bare mud patch at the edge of a Carboniferous fern swamp at night. Modest low orange flames and a few sparks are restricted to the small fire. Dark still water and towering tree-fern trunks recede into cool emerald-black moonlit shade. A narrow gap above the fronds reveals a dark indigo starry sky and a pale moon, with subdued neutral reflected moonlight on the nearby mud and bark. Only the small fire, prehistoric plants, natural ground and swamp water fill this night scene. Small controlled fire on damp mud beside dark swamp water, under a starry moonlit fern canopy with cool readable shadows. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270411073,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        }
+      }
+    ],
+    "o8": [
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o8.png",
+        "sha256": "2cc427fcbba7826376dff089f788b524906e5948572631294cc0309050af20e3",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 38.1,
+          "raw_p99": 225.0,
+          "gamma": 0.354,
+          "spread": 128.0
+        },
+        "artifact_id": 12607370582,
+        "prompt": "Low wide view of a roaring orange bonfire on dry peat in a Carboniferous coal forest, flames leaping into the tree-fern canopy, smoke and sparks filling the night, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light. Carboniferous coal swamp: oily green-black water, emerald tree-fern canopy, total dark broken by one far orange flame, 16mm ultra-wide. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      },
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o8-alt1.png",
+        "sha256": "9c17ac0612c7f1cc536da326842e07fdcba7d6b3fcf263e836688d1ced69c7cb",
+        "model": "klein4b-q8-768",
+        "take": 1,
+        "exposure": {
+          "raw_mean": 52.8,
+          "raw_p99": 230.0,
+          "gamma": 0.428,
+          "spread": 141.0
+        },
+        "artifact_id": 12607370582,
+        "prompt": "Low wide view of a roaring orange bonfire on dry peat in a Carboniferous coal forest, flames leaping into the tree-fern canopy, smoke and sparks filling the night, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light. Carboniferous coal swamp: oily green-black water, emerald tree-fern canopy, total dark broken by one far orange flame, 16mm ultra-wide. photoreal painterly deep-time scene, tall vertical composition, vivid well-exposed cinematic lighting, one bright warm glowing focal light, clear readable midtones, cinematic depth, rich fine detail."
+      }
+    ],
+    "end": [
+      {
+        "file": "survive05-reviewed-moonlight-v1/art/o2.png",
+        "sha256": "d986d673f5e89988d548551ae8fcba3d22127dfd41704ec2910a1db60e55b220",
+        "model": "klein4b-q8-768",
+        "take": 0,
+        "exposure": {
+          "raw_mean": 70.5,
+          "raw_p99": 185.0,
+          "gamma": 0.524,
+          "spread": 130.0
+        },
+        "artifact_id": 12628963386,
+        "prompt": "An empty bare pale sandbar crosses a slow river through a Carboniferous coal forest at night. Fine sand grains and low ripple ridges fill the near foreground, a narrow dark river channel curves around the sandbar, and distant emerald clubmoss trunks border the far bank. A small pale amber moon above the canopy gap gives reflected moonlight to the sand. Only undisturbed sand, river, distant trees and starry sky. Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+        "source": {
+          "run_id": 40270372416,
+          "sha": "cd6781fbba107749ae197c652e4b65d7517f6ae1",
+          "key": "2026-10-25-survive_night-05"
+        },
+        "source_image": "o2"
+      }
+    ]
+  }
+}

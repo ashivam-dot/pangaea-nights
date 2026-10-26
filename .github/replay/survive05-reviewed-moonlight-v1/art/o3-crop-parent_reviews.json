@@ -1,0 +1,13 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-0/o3.png",
+      "image_sha256": "fbe23822fc8e018a80e26caa2ff89e9bea32d0b0b40056cc187bd837480d5699",
+      "decision": "hold",
+      "reason": "Direct native inspection: the diamond-barked log and lower water/fern detail are usable, but the upper canopy contains modern-looking broadleaf crowns and branching tree silhouettes. Full image is held. A separately hash-bound crop excluding the complete upper canopy may be reviewed without adding objects or changing speech."
+    }
+  ],
+  "at": "2026-10-26T05:46:13.878028+00:00",
+  "scope": "Source paintings only",
+  "release_approval": false
+}

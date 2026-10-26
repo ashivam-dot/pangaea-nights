@@ -1,0 +1,55 @@
+{
+  "images": [
+    {
+      "file": "ladder-img-A-0/o4.png",
+      "image_sha256": "43e62c5791d00783643a94e9df59758a4df19b69fcf42252c4d293933db9a296",
+      "decision": "pass",
+      "reason": "Native-resolution paired review: a low many-segmented millipede and its trackway sit among ferns and trunks. Pale lunar disc and cool forest shadows support the moonlit direction; no literal flames or human artifacts are visible. This approves only these source paintings."
+    },
+    {
+      "file": "ladder-img-A-0/o4-alt1.png",
+      "image_sha256": "61c76657291bf515e3e43b9cb3e342c3cf371a11ada7489c8032409adf652321",
+      "decision": "pass",
+      "reason": "Native-resolution paired review: a low many-segmented millipede and its trackway sit among ferns and trunks. Pale lunar disc and cool forest shadows support the moonlit direction; no literal flames or human artifacts are visible. This approves only these source paintings."
+    },
+    {
+      "file": "ladder-img-A-2/o6.png",
+      "image_sha256": "fce5e6dee5b81bf66ae0cb552c38b8441a5bdfbac89f364a4a47c61be8bba9a4",
+      "decision": "pass",
+      "reason": "Native-resolution paired review: empty dry fibrous peat and curled leaf litter occupy the root-edged hollow. The moonlit fern background contains no flames; the hollow is visibly dry rather than flooded. These are source-input decisions, with rendered audio, labels, exposure and full audiovisual checks still required."
+    },
+    {
+      "file": "ladder-img-A-2/o6-alt1.png",
+      "image_sha256": "55f232ae582085af04f48821848012a4c808b6b25ef8bb0965c492118ef32093",
+      "decision": "pass",
+      "reason": "Native-resolution paired review: empty dry fibrous peat and curled leaf litter occupy the root-edged hollow. The moonlit fern background contains no flames; the hollow is visibly dry rather than flooded. These are source-input decisions, with rendered audio, labels, exposure and full audiovisual checks still required."
+    },
+    {
+      "file": "ladder-img-A-3/o7.png",
+      "image_sha256": "bbb9b22c978433051c7d58bf2879dc86ae171bb45a4bb0af563b7f95fa9aa77a",
+      "decision": "pass",
+      "reason": "Native paired review of source art: small low orange fires remain confined to damp bare ground beside swamp water. Tree ferns, the visible moon and starry sky support the night setting. No people or modern cooking objects are visible. Full audiovisual checks remain required."
+    },
+    {
+      "file": "ladder-img-A-3/o7-alt1.png",
+      "image_sha256": "1bcc72b09a8624715f1b14846845ef8d8976648ac26a06c16fcb809f57342cee",
+      "decision": "pass",
+      "reason": "Native paired review of source art: small low orange fires remain confined to damp bare ground beside swamp water. Tree ferns, the visible moon and starry sky support the night setting. No people or modern cooking objects are visible. Full audiovisual checks remain required."
+    },
+    {
+      "file": "ladder-img-A-1/o5.png",
+      "image_sha256": "a5533404232a15ac1b9e4fb46c722df34c3537a3f21557d639cb027b76d1c588",
+      "decision": "pass",
+      "reason": "Native source-image review: recognizable large dragonfly-like insect has four veined translucent wings, six legs, large eyes and a segmented abdomen above the swamp. Moon and cool shadows support the requested setting; no fire, people or modern artifacts. Only this base take passes direct input review."
+    },
+    {
+      "file": "ladder-img-A-1/o5-alt1.png",
+      "image_sha256": "6d806102564e81ccf6fc50a2fad354687713be2bc8b63738d704f58d3da4a5cf",
+      "decision": "hold",
+      "reason": "Native source-image review refuses the conspicuous long club-tipped antennae, which read as a different insect rather than the requested Meganeura griffinfly. Preserve the separately reviewed base take and exclude this alternate."
+    }
+  ],
+  "at": "2026-10-26T05:07:23.268849+00:00",
+  "scope": "Source paintings only",
+  "release_approval": false
+}

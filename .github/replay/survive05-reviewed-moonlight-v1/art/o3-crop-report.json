@@ -1,0 +1,123 @@
+{
+ "shard": 0,
+ "of": 1,
+ "model": "klein4b-q8-768",
+ "premise": "survive_night-05",
+ "images": [
+  {
+   "id": "o3",
+   "takes": [
+    {
+     "seconds": 481.4,
+     "problems": [
+      "aesthetic 4.30"
+     ],
+     "exposure": {
+      "raw_mean": 52.0,
+      "raw_p99": 195.0,
+      "gamma": 0.424,
+      "spread": 137.0
+     },
+     "figure": 0.161,
+     "ok": false,
+     "reasons": [
+      "aesthetic 4.30"
+     ],
+     "person": 0.0365,
+     "text": 0.0325,
+     "broken": 0.0211,
+     "similarity": 0.2707,
+     "aesthetic": 4.3,
+     "brightness": 114.4721,
+     "contrast": 52.8117,
+     "sharpness": 19.6509
+    },
+    {
+     "seconds": 442.1,
+     "problems": [
+      "prompt similarity 0.234 < 0.25"
+     ],
+     "exposure": {
+      "raw_mean": 42.5,
+      "raw_p99": 163.0,
+      "gamma": 0.376,
+      "spread": 140.0
+     },
+     "figure": 0.4668,
+     "ok": true,
+     "reasons": [],
+     "person": 0.1648,
+     "text": 0.1455,
+     "broken": 0.0977,
+     "similarity": 0.2337,
+     "aesthetic": 4.7413,
+     "brightness": 113.121,
+     "contrast": 49.6479,
+     "sharpness": 18.4934
+    },
+    {
+     "seconds": 441.2,
+     "problems": [
+      "aesthetic 3.96"
+     ],
+     "exposure": {
+      "raw_mean": 47.6,
+      "raw_p99": 178.0,
+      "gamma": 0.401,
+      "spread": 127.0
+     },
+     "figure": 0.1744,
+     "ok": false,
+     "reasons": [
+      "aesthetic 3.96"
+     ],
+     "person": 0.0989,
+     "text": 0.1644,
+     "broken": 0.0746,
+     "similarity": 0.2748,
+     "aesthetic": 3.9568,
+     "brightness": 115.5901,
+     "contrast": 48.2904,
+     "sharpness": 15.9403
+    },
+    {
+     "seconds": 443.0,
+     "problems": [],
+     "exposure": {
+      "raw_mean": 44.4,
+      "raw_p99": 177.0,
+      "gamma": 0.385,
+      "spread": 149.0
+     },
+     "figure": 0.1408,
+     "ok": true,
+     "reasons": [],
+     "person": 0.1538,
+     "text": 0.2021,
+     "broken": 0.0487,
+     "similarity": 0.2673,
+     "aesthetic": 5.3069,
+     "brightness": 109.4875,
+     "contrast": 55.2465,
+     "sharpness": 26.1221
+    }
+   ],
+   "kept": [
+    {
+     "plate": "o3.jpg",
+     "depth": "o3.depth.png",
+     "take": 3,
+     "similarity": 0.2673,
+     "luma": 109.5,
+     "embedding": "eydiHaGXfaS1pJek3iX1Kr+hHSktLV4gNiz4pBOmZKK3oKYo0yWsnaWpByF3Ii6jHijJICeoPqlQoVInfSS/JksjiiWJpXAoPhiKKFMm2S5NpfAkS6jyFtWkILDXIDIog6hCoUOb+is/HPWkwabkITGfqSE/oJWkQqadFLerp6QCpB6k+ScvK6AkkyZdoGmpnB+PoKgiGKbJHk+mRyczpD0mRiwOqTuq0yGiJxqUaRjgokCm1SbgoGe5aC+hkJUk36TnKuyobawvoDqoDp73JSgnryp4r86gNyJnpISn7iZSIMYY9aLhql6o5qmzI0kmwiknoOupSCE6pKIjIaMBHGooAipoqogmeiGfLSkpLCslnIcnlKWtpuQnDA2gqPgqg5+lqZOjNRQDnXoscqHanC6aR6A1IAaKHicyrLwnpKM4qHOmnyj5GvGoO6R8pEMn1xvapVKadp8Kkxemp6QMpoKqVSOhrfWihiy5EU2gYR6CJvkgZilGH+Ic1ZzKH+okoqXAJPCjZ6n0nzerCp+epRomjqcJI70pcB3qID6nmKZPpSkdhBbVH7uixih6q+6i1SSipICrQ6GDJKAs4Z+SqUIiQymQqFKoNCF/GYqp26hjKBueBpzsqVAo5Sg6KdkpVKaWKG0nVqHqpBGqnSEnKnKfRijOJHWnliQrpbklZCNro0Mi7yxNJ6wdIqUepcunUyHkIyKg+ilgITKkpqWCIDeqIBr4n2obu6XSoVUaqqXVJBGYFxzWpWSh9aa+JzmkWR+xlVYpL6vlGOMe66oHoBMt4KQQIVWdXyADqh+pABSSouClHqs6nQWaFhH9oD4oni1toL4nBaOuKnEow6otrxUr0izAqGKixCSYnW0euCJ/pfgmkijYImynhKxgImQaAyb1JlMluZuOpsmoV6GgoP+l8SdJpGAmIiaXI7oqxKZYKD6eE578rfwplKQLo+geqSerpUkkNSFErEGZjB4crBmZ/CRtlgstMSW5qjQgSSHiKzsks6G9KcUhVKRlpauqHSXUIl2izBrOo+Qk/akxpBya4xmtoZifv6XFIGWimqathTwGx6VVpOUkyyHQpWIphSmZpBgoNSXRJJMm7qFLn4cr5B7FpcclYSWYG94kW6nWmaWjJpg3pGOwfRjLpL0mlh/cmtgeNqR0qgQnSqi0H1KpeyuxnkEoYJZBKfckhafDpV6dmKWwIAQgDatNI2aoNiofIwCojaTHngYpt50apZ0rPac5KIoqO6FSqI6iwyNXKNqoYCiNqvAfgSbNIlqozBzZpcWgvSGYHmud/Kk+I2qjt6GaKnyiHB4Vqi2m555mlJQFLZ5gq/MnuiT2pUamsSwqqNUiq6vgK+ksTaEhJQ==",
+     "score": 6.947,
+     "fallback": false
+    }
+   ],
+   "ok": true
+  }
+ ],
+ "cached_only": false,
+ "load_s": 2.0,
+ "seconds": 1873.6
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "operation": "crop_and_resize",
+  "resampling": "Pillow LANCZOS",
+  "source_image": "o3",
+  "source_prompt": "Tight high oblique natural-history view of one fallen giant Lepidodendron trunk spanning dark Carboniferous swamp water. The broad trunk fills the lower four fifths of the frame, extending from the near lower left toward the far upper right. Its intact grey-brown surface is covered in large clear diamond-shaped leaf scars arranged in offset diagonal rows; each raised elongated diamond has a small central leaf mark. This repeating rhombus pattern follows the curved trunk surface continuously. Coarse fibrous breaks at the far end and a few short bare branch stubs remain natural. A narrow background strip contains only cool dark water, straight clubmoss trunks and fine feathery tree-fern fronds. The living tree crowns lie outside this tight view. Pale amber reflected moonlight reveals the near leaf scars, with subdued emerald-blue moonlit water beyond. Only the log, finely divided fern fronds, clubmoss trunks and still water occupy the composition. Close oblique detail of a fallen Lepidodendron trunk with repeated diamond leaf scars, a narrow strip of dark water and feathery fern fronds, reflected amber moonlight and cool emerald shade. photoreal painterly deep-time scene, tall vertical composition, well-exposed reflected pale amber moonlight, clear readable midtones, matte natural surfaces, cinematic depth, rich fine detail.",
+  "source": {
+    "run_id": 40272367337,
+    "sha": "0849ff267fc2d0f7bcfe46b01b74b7883febcdf9",
+    "key": "2026-10-25-survive_night-05"
+  },
+  "crop_ltrb": [
+    72,
+    256,
+    360,
+    768
+  ],
+  "output_size": [
+    432,
+    768
+  ],
+  "parent_refusal_reason": "Direct native inspection: the diamond-barked log and lower water/fern detail are usable, but the upper canopy contains modern-looking broadleaf crowns and branching tree silhouettes. Full image is held. A separately hash-bound crop excluding the complete upper canopy may be reviewed without adding objects or changing speech.",
+  "excluded_defects": [
+    "All modern-looking broadleaf crowns and upper branching tree silhouettes are outside the crop."
+  ],
+  "parent": {
+    "file": "survive05-reviewed-moonlight-v1/art/o3-crop-parent.png",
+    "sha256": "fbe23822fc8e018a80e26caa2ff89e9bea32d0b0b40056cc187bd837480d5699",
+    "source_file": "o3.png"
+  },
+  "plan": {
+    "file": "survive05-reviewed-moonlight-v1/art/o3-crop-plan.json",
+    "sha256": "2f903485028852da57fdcddfbbdf7cfafb1714f8c3e59b74024fde99787de9f5"
+  },
+  "report": {
+    "file": "survive05-reviewed-moonlight-v1/art/o3-crop-report.json",
+    "sha256": "45737d24d13dabd0bd27d417de7441166120619cdae0593a7c3864ad0d81a026"
+  },
+  "parent_reviews": {
+    "file": "survive05-reviewed-moonlight-v1/art/o3-crop-parent_reviews.json",
+    "sha256": "513bf4bda444f225e2d45caeefe683e625a999558f91e6ba8495bd3131838ca1"
+  },
+  "crop_reviews": {
+    "file": "survive05-reviewed-moonlight-v1/art/o3-crop-crop_reviews.json",
+    "sha256": "6cbb247b5bdace74ca3106cb9f81dde70a80cfa74b35b8a209ed28c9fcf96900"
+  },
+  "plan_artifact": {
+    "file": "survive05-reviewed-moonlight-v1/art/o3-crop-plan_artifact.json",
+    "sha256": "d07c2b5bef1502e06a33f2af0caefba0e58a8dcc8b4c2ef9351b182125972256"
+  },
+  "image_artifact": {
+    "file": "survive05-reviewed-moonlight-v1/art/o3-crop-image_artifact.json",
+    "sha256": "f7d65b11c771f98ccefb7f4b8f9025fd9bdb46d83997116d4b811569d8263c3b"
+  }
+}

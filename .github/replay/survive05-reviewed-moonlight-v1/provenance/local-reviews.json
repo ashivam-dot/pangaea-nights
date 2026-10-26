@@ -1,0 +1,13 @@
+{
+  "images": [
+    {
+      "file": "o3-log-crop-preview.png",
+      "image_sha256": "65206cab5dee9853a22df8ed1e323bb37c6e47fde07fa4f4f723cccf9c02ad01",
+      "decision": "pass",
+      "reason": "Direct inspection of exact 432x768 crop: only diamond-barked lycopod log, water, fern fronds and reflected primitive stems remain. Complete broadleaf canopy and branching crowns are outside the frame. No added objects, labels or people; readable log crossing the flooded swamp matches the spoken choice."
+    }
+  ],
+  "at": "2026-10-26T05:47:58.463630+00:00",
+  "scope": "Derived source image only",
+  "release_approval": false
+}
