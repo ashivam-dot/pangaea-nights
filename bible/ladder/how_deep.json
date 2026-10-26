@@ -411,8 +411,8 @@
           "label": "Cold silt bottom",
           "vo": "Six: the cold silt floor, blind.",
           "danger": 6,
-          "image_prompt": "Straight downward close view of a cold silty seafloor in pitch black deep water. Continuous fine matte grey mud fills the complete frame from corner to corner. Two shallow winding animal trackways and small low sediment ripple ridges cross the near silt diagonally. Crisp tiny mineral grains and small scattered mud clumps remain natural and uneven. Soft neutral external documentary fill reveals only this close patch of sediment. The open dark water lies outside this tight downward view. Only undisturbed mineral sediment and tracks are visible.",
-          "art_direction": "Downward close-up of continuous cold grey silt and shallow winding trackways filling the complete frame under soft external documentary fill.",
+          "image_prompt": "Downward oblique close natural-history view across an ancient Silurian silty seafloor in pitch black deep water. The foreground has eight broad irregular shallow current-ripple ridges made of coarse cold grey silt. Small angular mudstone chips, broken pale shell fragments and darker mineral grains interrupt the ridges at irregular positions. Crisp granular texture and rough asymmetric ripple edges are clear across the near ground. The rippled sediment covers the whole downward frame with no horizon. Soft neutral external documentary fill illuminates the nearby silt and fragments while more distant submerged sediment stays dark charcoal-grey. Only natural rippled sediment and scattered geological debris occupy the scene.",
+          "art_direction": "Downward oblique close view of coarse cold grey current-rippled silt, irregular shell fragments and angular mineral chips under neutral external documentary fill, distant dark submerged sediment.",
           "framing": "seafloor_macro"
         },
         {
