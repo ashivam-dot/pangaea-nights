@@ -1,0 +1,211 @@
+{
+  "at": "2026-10-26T05:01:03.399147+00:00",
+  "original": {
+    "id": "survive_night-05",
+    "era": "Carboniferous",
+    "title": "Giant Bug Swamp at Night — Which Plan Keeps You Alive? 🪲",
+    "banner": "Giant bugs. Which plan?",
+    "hook_vo": "Coal forest, giant bugs, one night. Pick your plan.",
+    "art_direction": "Carboniferous coal swamp: oily green-black water, emerald tree-fern canopy, total dark broken by one far orange flame, 16mm ultra-wide.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Among the tree ferns",
+        "vo": "Tucked among the tree ferns.",
+        "danger": 1,
+        "image_prompt": "An empty natural-history view among the rough trunks of towering Carboniferous tree ferns. Dense emerald fronds arch above the frame, tangled natural roots and leaf litter fill the close foreground, and still shallow swamp water lies behind them. Pale amber moonlight filters through a canopy gap and reflects on the damp bark. Only trunks, fronds, roots, water and night sky occupy this moonlit forest.",
+        "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 2,
+        "label": "Bare sandbar, stay dark",
+        "vo": "A bare sandbar, and no fire at all.",
+        "danger": 2,
+        "image_prompt": "An empty bare pale sandbar crosses a slow river through a Carboniferous coal forest at night. Fine sand grains and low ripple ridges fill the near foreground, a narrow dark river channel curves around the sandbar, and distant emerald clubmoss trunks border the far bank. A small pale amber moon above the canopy gap gives reflected moonlight to the sand. Only undisturbed sand, river, distant trees and starry sky.",
+        "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 3,
+        "label": "On a fallen clubmoss log",
+        "vo": "On top of a fallen giant club moss.",
+        "danger": 3,
+        "image_prompt": "An empty fallen giant Lepidodendron trunk spans a Carboniferous swamp. The natural log fills the lower foreground diagonally, its coarse repeating diamond leaf-scar bark clearly visible. Broken woody branch stubs and tree-fern fronds are visible along the sides, with dark still water below the log. Pale amber moonlight from above reflects on the bark, with a cool emerald moonlit canopy behind.",
+        "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 4,
+        "label": "Next to a millipede trail",
+        "vo": "Next to a giant millipede trail.",
+        "danger": 4,
+        "image_prompt": "Low natural-history view beside a broad Arthropleura trackway pressed into damp Carboniferous leaf litter. One long low flattened millipede crawls away toward the upper right, its continuous oval-armoured body made of many similar overlapping segments and many short walking legs beneath both sides. Its small head is low and partly hidden by ferns. Pale amber moonlight picks out the near tracks and leaf veins in the cool moonlit forest.",
+        "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 5,
+        "label": "Catch a giant dragonfly",
+        "vo": "Catch a giant dragonfly for dinner.",
+        "danger": 5,
+        "image_prompt": "Natural-history side view of one giant Meganeura griffinfly perched on a rough clubmoss branch above dark Carboniferous swamp water. Its elongated slender insect abdomen, six thin legs, two large compound eyes and four long translucent densely veined wings are clear against distant emerald tree ferns. Two wings extend to each side of the thorax. Reflected pale amber moonlight catches the wing veins in the cool moonlit canopy.",
+        "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 6,
+        "label": "Sleep in a peat hollow",
+        "vo": "Sleep in a soft hollow of dry peat.",
+        "danger": 6,
+        "image_prompt": "Close environmental detail of one empty shallow hollow in completely dry crumbly brown peat between thick Carboniferous clubmoss roots. The hollow floor consists of dry fibrous plant fragments and curled brittle fern leaves, with clear coarse texture and uneven root ridges around its rim. The dry earth occupies nearly the whole frame, with a small emerald moonlit canopy patch high above. Pale amber moonlight makes the dry peat fibres readable.",
+        "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 7,
+        "label": "Small fire for dinner",
+        "vo": "A small cooking fire under the ferns.",
+        "danger": 7,
+        "image_prompt": "A small controlled fire of a few short sticks sits on a damp bare mud patch at the edge of a Carboniferous fern swamp at night. Modest low orange flames and a few sparks are restricted to the small fire. Dark still water and towering tree-fern trunks recede into cool emerald-black moonlit shade. A narrow gap above the fronds reveals a dark indigo starry sky and a pale moon, with subdued neutral reflected moonlight on the nearby mud and bark. Only the small fire, prehistoric plants, natural ground and swamp water fill this night scene.",
+        "art_direction": "Small controlled fire on damp mud beside dark swamp water, under a starry moonlit fern canopy with cool readable shadows.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 8,
+        "label": "Bonfire in dry peat",
+        "vo": "A huge bonfire on dry peat.",
+        "danger": 8,
+        "image_prompt": "Low wide view of a roaring orange bonfire on dry peat in a Carboniferous coal forest, flames leaping into the tree-fern canopy, smoke and sparks filling the night, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+      }
+    ],
+    "answer_n": 2,
+    "verdict_vo": "Real answer: number 2, because oxygen climbed to 25 to 30 percent, so any fire would probably spread fast. Stay dark.",
+    "fact": {
+      "text": "Atmospheric oxygen rose from 15-20% at the start of the Carboniferous to highs of 25-30% during the period.",
+      "wiki_title": "Carboniferous",
+      "wiki_revid": 1380624760,
+      "source_sentence": "However, whilst exact numbers vary, all models show an overall increase in atmospheric oxygen levels from a low of between 15 and 20% at the beginning of the Carboniferous to highs of 25–30% during the Period."
+    },
+    "description": "The coal forests of the Carboniferous, with millipedes longer than you and dragonflies the size of hawks. Eight plans for one night. Pick yours, then hear why the air itself changes the answer.",
+    "tags": [
+      "giant insects",
+      "Carboniferous",
+      "coal forest",
+      "prehistoric",
+      "survival",
+      "deep time",
+      "Arthropleura",
+      "would you rather"
+    ],
+    "related_topic_hint": "Giant Insects of the Coal Forests",
+    "end_image": "o2"
+  },
+  "replacement": {
+    "id": "survive_night-05",
+    "era": "Carboniferous",
+    "title": "Giant Bug Swamp at Night — Which Plan Keeps You Alive? 🪲",
+    "banner": "Giant bugs. Which plan?",
+    "hook_vo": "Coal forest, giant bugs, one night. Pick your plan.",
+    "art_direction": "Carboniferous coal swamp: oily green-black water, emerald tree-fern canopy, total dark broken by one far orange flame, 16mm ultra-wide.",
+    "options": [
+      {
+        "n": 1,
+        "label": "Among the tree ferns",
+        "vo": "Tucked among the tree ferns.",
+        "danger": 1,
+        "image_prompt": "An empty natural-history view among the rough trunks of towering Carboniferous tree ferns. Dense emerald fronds arch above the frame, tangled natural roots and leaf litter fill the close foreground, and still shallow swamp water lies behind them. Pale amber moonlight filters through a canopy gap and reflects on the damp bark. Only trunks, fronds, roots, water and night sky occupy this moonlit forest.",
+        "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 2,
+        "label": "Bare sandbar, stay dark",
+        "vo": "A bare sandbar, and no fire at all.",
+        "danger": 2,
+        "image_prompt": "An empty bare pale sandbar crosses a slow river through a Carboniferous coal forest at night. Fine sand grains and low ripple ridges fill the near foreground, a narrow dark river channel curves around the sandbar, and distant emerald clubmoss trunks border the far bank. A small pale amber moon above the canopy gap gives reflected moonlight to the sand. Only undisturbed sand, river, distant trees and starry sky.",
+        "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 3,
+        "label": "On a fallen clubmoss log",
+        "vo": "On top of a fallen giant club moss.",
+        "danger": 3,
+        "image_prompt": "Tight high oblique natural-history view of one fallen giant Lepidodendron trunk spanning dark Carboniferous swamp water. The broad trunk fills the lower four fifths of the frame, extending from the near lower left toward the far upper right. Its intact grey-brown surface is covered in large clear diamond-shaped leaf scars arranged in offset diagonal rows; each raised elongated diamond has a small central leaf mark. This repeating rhombus pattern follows the curved trunk surface continuously. Coarse fibrous breaks at the far end and a few short bare branch stubs remain natural. A narrow background strip contains only cool dark water, straight clubmoss trunks and fine feathery tree-fern fronds. The living tree crowns lie outside this tight view. Pale amber reflected moonlight reveals the near leaf scars, with subdued emerald-blue moonlit water beyond. Only the log, finely divided fern fronds, clubmoss trunks and still water occupy the composition.",
+        "art_direction": "Close oblique detail of a fallen Lepidodendron trunk with repeated diamond leaf scars, a narrow strip of dark water and feathery fern fronds, reflected amber moonlight and cool emerald shade",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 4,
+        "label": "Next to a millipede trail",
+        "vo": "Next to a giant millipede trail.",
+        "danger": 4,
+        "image_prompt": "Low natural-history view beside a broad Arthropleura trackway pressed into damp Carboniferous leaf litter. One long low flattened millipede crawls away toward the upper right, its continuous oval-armoured body made of many similar overlapping segments and many short walking legs beneath both sides. Its small head is low and partly hidden by ferns. Pale amber moonlight picks out the near tracks and leaf veins in the cool moonlit forest.",
+        "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 5,
+        "label": "Catch a giant dragonfly",
+        "vo": "Catch a giant dragonfly for dinner.",
+        "danger": 5,
+        "image_prompt": "Natural-history side view of one giant Meganeura griffinfly perched on a rough clubmoss branch above dark Carboniferous swamp water. Its elongated slender insect abdomen, six thin legs, two large compound eyes and four long translucent densely veined wings are clear against distant emerald tree ferns. Two wings extend to each side of the thorax. Reflected pale amber moonlight catches the wing veins in the cool moonlit canopy.",
+        "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 6,
+        "label": "Sleep in a peat hollow",
+        "vo": "Sleep in a soft hollow of dry peat.",
+        "danger": 6,
+        "image_prompt": "Close environmental detail of one empty shallow hollow in completely dry crumbly brown peat between thick Carboniferous clubmoss roots. The hollow floor consists of dry fibrous plant fragments and curled brittle fern leaves, with clear coarse texture and uneven root ridges around its rim. The dry earth occupies nearly the whole frame, with a small emerald moonlit canopy patch high above. Pale amber moonlight makes the dry peat fibres readable.",
+        "art_direction": "Carboniferous emerald tree ferns and clubmoss forest in reflected pale amber moonlight, readable cool shadows and matte natural surfaces.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 7,
+        "label": "Small fire for dinner",
+        "vo": "A small cooking fire under the ferns.",
+        "danger": 7,
+        "image_prompt": "A small controlled fire of a few short sticks sits on a damp bare mud patch at the edge of a Carboniferous fern swamp at night. Modest low orange flames and a few sparks are restricted to the small fire. Dark still water and towering tree-fern trunks recede into cool emerald-black moonlit shade. A narrow gap above the fronds reveals a dark indigo starry sky and a pale moon, with subdued neutral reflected moonlight on the nearby mud and bark. Only the small fire, prehistoric plants, natural ground and swamp water fill this night scene.",
+        "art_direction": "Small controlled fire on damp mud beside dark swamp water, under a starry moonlit fern canopy with cool readable shadows.",
+        "lighting": "moonlight"
+      },
+      {
+        "n": 8,
+        "label": "Bonfire in dry peat",
+        "vo": "A huge bonfire on dry peat.",
+        "danger": 8,
+        "image_prompt": "Low wide view of a roaring orange bonfire on dry peat in a Carboniferous coal forest, flames leaping into the tree-fern canopy, smoke and sparks filling the night, emerald tree-fern canopy, oily green-black swamp water, single orange flame glow, 16mm wide angle, photoreal painterly, vertical composition, one warm focal light"
+      }
+    ],
+    "answer_n": 2,
+    "verdict_vo": "Real answer: number 2, because oxygen climbed to 25 to 30 percent, so any fire would probably spread fast. Stay dark.",
+    "fact": {
+      "text": "Atmospheric oxygen rose from 15-20% at the start of the Carboniferous to highs of 25-30% during the period.",
+      "wiki_title": "Carboniferous",
+      "wiki_revid": 1380624760,
+      "source_sentence": "However, whilst exact numbers vary, all models show an overall increase in atmospheric oxygen levels from a low of between 15 and 20% at the beginning of the Carboniferous to highs of 25–30% during the Period."
+    },
+    "description": "The coal forests of the Carboniferous, with millipedes longer than you and dragonflies the size of hawks. Eight plans for one night. Pick yours, then hear why the air itself changes the answer.",
+    "tags": [
+      "giant insects",
+      "Carboniferous",
+      "coal forest",
+      "prehistoric",
+      "survival",
+      "deep time",
+      "Arthropleura",
+      "would you rather"
+    ],
+    "related_topic_hint": "Giant Insects of the Coal Forests",
+    "end_image": "o2"
+  },
+  "basis": "Both o3 images from 40270372416 showed broad-leaf crowns in a Carboniferous forest; the bark lacked a clear diamond leaf-scar pattern. Tighten only the failed log composition and preserve the directly passing o1 opening and all other active scene repairs.",
+  "speech_changed": false,
+  "accepted_siblings_changed": false,
+  "quality_thresholds_changed": false,
+  "original_refusals_preserved": true,
+  "release_approval": false
+}
