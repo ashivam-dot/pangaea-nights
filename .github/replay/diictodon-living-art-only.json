@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "premise": "level_1_8-05",
+  "source": {
+    "run_id": 40205103515,
+    "sha": "2d9d52a5aa76e667b9600b97986cbe14b2e25752",
+    "key": "2026-10-25-level_1_8-05"
+  },
+  "art_only": [
+    "o1"
+  ],
+  "images": {},
+  "references": {
+    "o1": [
+      {
+        "file": "diictodon-living-references/reference.png",
+        "sha256": "edc8c79d98f08a1a9f614e5001b38c51bb024a80b9673971746a052990858c53",
+        "parent": {
+          "file": "diictodon-living-references/parent.jpg",
+          "sha256": "8b95d1e1035a0760f603830fd740366c28f70fb92cb71170d4f9621029f09304"
+        },
+        "license_evidence": {
+          "file": "diictodon-living-references/commons.json",
+          "sha256": "279d0a89239534c920d642373b439b97f09fd5433340dac78497b7faa181762c"
+        },
+        "crop_ltrb": [
+          105,
+          205,
+          425,
+          620
+        ],
+        "title": "File:Cuddling Diictodon.jpg",
+        "author": "LiterallyMiguel",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Cuddling_Diictodon.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Cuddling_Diictodon.jpg/1280px-Cuddling_Diictodon.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Cuddling Diictodon.jpg living illustration reference: LiterallyMiguel, https://commons.wikimedia.org/wiki/File:Cuddling_Diictodon.jpg (CC BY 4.0, https://creativecommons.org/licenses/by/4.0), AI-adapted from a modern life reconstruction, with illustrative soft tissue and colour, original pose and body proportions retained"
+      }
+    ]
+  }
+}

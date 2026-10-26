@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "premise": "how_deep-05",
+  "source": {
+    "run_id": 40207430412,
+    "sha": "bb978cf6940781ad265325cb3dd2f4937d5685b8",
+    "key": "2026-10-25-how_deep-05"
+  },
+  "art_only": [
+    "o8"
+  ],
+  "images": {},
+  "references": {
+    "o8": [
+      {
+        "file": "pterygotus-whole-references/reference.png",
+        "sha256": "789353c632ba2911be27b20ad721d317bb9f9ac9a16a881129a0f46886476556",
+        "parent": {
+          "file": "pterygotus-whole-references/parent.jpg",
+          "sha256": "61f186222f3dea18440865eee5010855336f08b952c9cab5c40c8421dd928bce"
+        },
+        "license_evidence": {
+          "file": "pterygotus-whole-references/commons.json",
+          "sha256": "1021bb7bdd50a5a1b6e53b69368207c315b9e2c44b164a358cf1093036ef1597"
+        },
+        "crop_ltrb": [
+          0,
+          0,
+          960,
+          540
+        ],
+        "title": "File:Pterygotus in enviroment.jpg",
+        "author": "Paleobiome",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "page": "https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Pterygotus_in_enviroment.jpg/960px-Pterygotus_in_enviroment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Pterygotus in enviroment.jpg living illustration reference: Paleobiome, https://commons.wikimedia.org/wiki/File:Pterygotus_in_enviroment.jpg (CC0, http://creativecommons.org/publicdomain/zero/1.0/deed.en), AI-adapted from a modern life reconstruction, with illustrative soft tissue and colour, original pose and body proportions retained"
+      }
+    ]
+  }
+}
